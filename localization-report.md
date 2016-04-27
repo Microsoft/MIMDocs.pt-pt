@@ -162,7 +162,7 @@
  ----------- | ------ | ------- 
  [.gitignore](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.gitignore) | Ignored | [Details](#7c4de7495fb4bb76bd8b9102a4ab583ce46e5cad0)
  [.gitmodules](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.gitmodules) | Ignored | [Details](#61a50d8559c22a2eaef79ba50bd6d3a8af9372d21)
- [.localization-config](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.localization-config) | Ignored | [Details](#1d121923d85e7801b2cdddaa1a7a5931e93074542)
+ [.localization-config](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.localization-config) | Ignored | [Details](#86958c7517c267426c6bfd2cd1d61886a0cac78a2)
  [.openpublishing.build.ps1](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.openpublishing.publish.config.json) | Ignored | [Details](#e2140f473f95e0bec10c3efefa750d72e6bec1f64)
  [MIMDocs\DeployUse\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/MIMDocs/DeployUse/docfx.json) | Ignored | [Details](#da6b40be764789e41be27fb941b0f24dc735837f8)
@@ -341,7 +341,7 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='1d121923d85e7801b2cdddaa1a7a5931e93074542'></a> Source: [.localization-config](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.localization-config)
+##### <a name='86958c7517c267426c6bfd2cd1d61886a0cac78a2'></a> Source: [.localization-config](https://github.com/Microsoft/MIMDocs-pr/blob/a7ec4b4b786fe7952e4c0e90fa1b5afd4cbb386a/.localization-config)
 * Status: Ignored
 * Target File: 
 * Handoff File: 

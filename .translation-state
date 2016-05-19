@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "26cdf18ca132be9cd34d1a036c505de7817a59c5",
-  "LastTranslatedCommit": "de75681e261c1f7a40a275fc65e9cff8c95e5c4a",
+  "LastTranslatedCommit": "91593c981ae50b22e7207f1716cc819bb6fb942b",
   "Items": {
     "50c0edd60abfa6550cb5a873d32a842e8c099811": {
       "FileHash": "50c0edd60abfa6550cb5a873d32a842e8c099811",
@@ -79,14 +79,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "91593c981ae50b22e7207f1716cc819bb6fb942b",
+      "TargetFilePath": "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\MIMDocs-pr.pt-pt\\master\\deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.pt-pt.xlf",
+      "HandbackFileCommit": "755cac4ae66feb5329e2601843b1b9c57a4dc3c9",
+      "HandbackDateTime": "2016-05-19T01:11:14.8898485Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-05-19T01:11:14.8898485Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\archive\\deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.pt-pt.xlf",
       "ArchiveFileCommit": "df866b9b87ed439bc8c065bdefe71d13368bdbc4",
       "ArchiveFileDateTime": "2016-04-28T12:35:37.426226Z",

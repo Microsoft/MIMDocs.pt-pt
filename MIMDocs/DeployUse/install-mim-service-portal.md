@@ -55,23 +55,23 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 6. Na página **Configurar a ligação à base de dados do MIM**, escolha **Criar uma nova base de dados**.
 
-    ![Configurar a imagem da ligação à base de dados do MIM](media/MIM-Install10.png)
+    ![Imagem da configuração da ligação à base de dados do MIM](media/MIM-Install10.png)
 
 7. Em **Configurar a ligação ao servidor de e-mail**, introduza o nome do servidor Exchange como **Servidor de E-mail**. Se não tiver um servidor de e-mail configurado, utilize **localhost** como o nome do servidor de e-mail e desmarque as duas caixas de verificação superiores. Clique em **Seguinte**.
 
-    ![Configurar a imagem de ligação ao servidor de e-mail](media/MIM-Install11.png)
+    ![Imagem da configuração da ligação ao servidor de e-mail](media/MIM-Install11.png)
 
 8. Especifique que pretende gerar um novo certificado autoassinado ou selecione o certificado relevante.
 
 9. Especifique o nome da Conta de Serviço a utilizar, por exemplo, *ServiçoMIM*, e a palavra-passe da Conta de Serviço, por exemplo, *Palavra@passe1*, o domínio de Conta de Serviço, por exemplo, *contoso* e a Conta de E-mail do Serviço, por exemplo, *contoso*.
 
-    ![Configurar a imagem da conta de serviço MIM](media/MIM-Install12.png)
+    ![Imagem da configuração da conta de serviço MIM](media/MIM-Install12.png)
 
 10. Tenha em atenção que poderá aparecer um aviso a indicar que a Conta de Serviço não está protegida na configuração atual.
 
 11. Aceite as predefinições para a localização do Servidor de Sincronização e especifique a conta do Agente de Gestão do MIM como *contoso\SincronizaçãoMIM*.
 
-    ![Configurar a imagem do Portal e do Serviço MIM](media/MIM-Install13.png)
+    ![Imagem da configuração do Portal e do Serviço MIM](media/MIM-Install13.png)
 
 12. Especifique *CORPIDM* (o nome deste computador) como o endereço do servidor do Serviço MIM para o Portal do MIM.
 
@@ -89,7 +89,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 2.  Especifique *CORPIDM* como o Nome do Anfitrião para o Registo de Palavras-passe do MIM e defina a porta para **8080**. Ative a opção **Abrir porta na firewall**.
 
-    ![Introduzir as informações de configuração utilizadas pela imagem do IIS](media/MIM-Install14.png)
+    ![Imagem da introdução das informações de configuração utilizadas pelo IIS](media/MIM-Install14.png)
 
 3.  Será apresentado um aviso. Leia-o e clique em **Seguinte**.
 
@@ -101,7 +101,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 2.  Especifique *CORPIDM* como o Nome do Anfitrião para o Registo de Palavras-passe do MIM e defina a porta para **8080**. Ative a opção **Abrir porta na firewall**.
 
-    ![Introduzir as informações de configuração utilizadas pela imagem do IIS](media/MIM-Install15.png)
+    ![Imagem da introdução das informações de configuração utilizadas pelo IIS](media/MIM-Install15.png)
 
 3.  Será apresentado um aviso. Leia-o e clique em **Seguinte**.
 

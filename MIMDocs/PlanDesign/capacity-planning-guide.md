@@ -88,7 +88,7 @@ Os objetos de configuração de políticas do Microsoft Identity Manager incluem
 
 A configuração de políticas do MIM também inclui as decisões sobre o aprovisionamento no seu ambiente. Certifique-se de que tem em consideração o seguinte:
 
-- Pensa aprovisionar princípios de segurança externos em várias florestas dos Serviços de Domínio do Active Directory (AD DS)? Se o fizer, irá gerar mais fluxos de trabalho e pedidos, o que resultará numa carga adicional no sistema.
+- Pensa aprovisionar princípios de segurança externos em várias florestas dos Serviços de Domínio do Active Directory (AD DS)? Se o fizer, irá gerar mais fluxos de trabalho e pedidos, o que resultará numa carga adicional no sistema.
 
 - Pensa utilizar o aprovisionamento sem código? Se o fizer, isso afetará o número de entradas de regras esperadas, bem como os fluxos de trabalho e os pedidos associados no sistema.
 

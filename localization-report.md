@@ -510,11 +510,11 @@
 * Handoff File: [15fff62827350f7c645f5f6a3e027caa8d471a8c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/15fff62827350f7c645f5f6a3e027caa8d471a8c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\prepare-server-sharepoint.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\prepare-server-sharepoint.md
 * [Back to Top](#report-top)
 
 ##### <a name='1480f345e6fc12e8ad603b50ef2781697be09b9716'></a> Source: [MIMDocs\DeployUse\media\MIM-DeploySP2.png](https://github.com/Microsoft/MIMDocs-pr/blob/ef028bca1752cb720003cf76a148a097ff5a297b/MIMDocs/DeployUse/media/MIM-DeploySP2.png)
@@ -523,11 +523,11 @@
 * Handoff File: [1480f345e6fc12e8ad603b50ef2781697be09b97.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/1480f345e6fc12e8ad603b50ef2781697be09b97.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\prepare-server-sharepoint.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\prepare-server-sharepoint.md
 * [Back to Top](#report-top)
 
 ##### <a name='faa4f7f1b6a3337d8dede5d3aff03a218eaa537617'></a> Source: [MIMDocs\DeployUse\media\MIM-DeployWS2.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-DeployWS2.png)
@@ -536,11 +536,11 @@
 * Handoff File: [faa4f7f1b6a3337d8dede5d3aff03a218eaa5376.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/faa4f7f1b6a3337d8dede5d3aff03a218eaa5376.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\prepare-server-ws2012r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\prepare-server-ws2012r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='319d2a29ee531bb584574825c60b698ab5a6357518'></a> Source: [MIMDocs\DeployUse\media\MIM-DeployWS3.png](https://github.com/Microsoft/MIMDocs-pr/blob/ef028bca1752cb720003cf76a148a097ff5a297b/MIMDocs/DeployUse/media/MIM-DeployWS3.png)
@@ -549,11 +549,11 @@
 * Handoff File: [319d2a29ee531bb584574825c60b698ab5a63575.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/319d2a29ee531bb584574825c60b698ab5a63575.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\prepare-server-ws2012r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\prepare-server-ws2012r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='f21f8cd1fd0c882b8768f543e10487140c67dc1c19'></a> Source: [MIMDocs\DeployUse\media\MIM-Hybrid-passwordreset.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Hybrid-passwordreset.jpg)
@@ -562,11 +562,11 @@
 * Handoff File: [f21f8cd1fd0c882b8768f543e10487140c67dc1c.jpg](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/f21f8cd1fd0c882b8768f543e10487140c67dc1c.jpg)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md
 * [Back to Top](#report-top)
 
 ##### <a name='654d8d73d70e3a97280711ab65efd5ccdbef780720'></a> Source: [MIMDocs\DeployUse\media\MIM-Install1.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install1.png)
@@ -575,11 +575,11 @@
 * Handoff File: [654d8d73d70e3a97280711ab65efd5ccdbef7807.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/654d8d73d70e3a97280711ab65efd5ccdbef7807.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='5f2c0134cddca6319c8df69af780633f3aeef48221'></a> Source: [MIMDocs\DeployUse\media\MIM-Install10.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install10.png)
@@ -588,11 +588,11 @@
 * Handoff File: [5f2c0134cddca6319c8df69af780633f3aeef482.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5f2c0134cddca6319c8df69af780633f3aeef482.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * [Back to Top](#report-top)
 
 ##### <a name='5902b5dd9caf9a4505f491bdfd371054709d613522'></a> Source: [MIMDocs\DeployUse\media\MIM-Install11.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install11.png)
@@ -601,11 +601,11 @@
 * Handoff File: [5902b5dd9caf9a4505f491bdfd371054709d6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5902b5dd9caf9a4505f491bdfd371054709d6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='86552c75a719abf0e4adbe967a98d3a5cf3167c123'></a> Source: [MIMDocs\DeployUse\media\MIM-Install12.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install12.png)
@@ -614,11 +614,11 @@
 * Handoff File: [86552c75a719abf0e4adbe967a98d3a5cf3167c1.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/86552c75a719abf0e4adbe967a98d3a5cf3167c1.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd224'></a> Source: [MIMDocs\DeployUse\media\MIM-Install13.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install13.png)
@@ -627,11 +627,11 @@
 * Handoff File: [5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * [Back to Top](#report-top)
 
 ##### <a name='8752c0063eb59f3849d5c8c2834f736b7bdbdf4c25'></a> Source: [MIMDocs\DeployUse\media\MIM-Install14.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install14.png)
@@ -640,11 +640,11 @@
 * Handoff File: [8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5de3abcdc01ccfbf2cec14641636a1a487cef40d26'></a> Source: [MIMDocs\DeployUse\media\MIM-Install15.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install15.png)
@@ -653,11 +653,11 @@
 * Handoff File: [5de3abcdc01ccfbf2cec14641636a1a487cef40d.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5de3abcdc01ccfbf2cec14641636a1a487cef40d.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5209ec61770fd5fbf32f21df0f46081d58d5c67e27'></a> Source: [MIMDocs\DeployUse\media\MIM-Install16.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-Install16.png)
@@ -666,11 +666,11 @@
 * Handoff File: [5209ec61770fd5fbf32f21df0f46081d58d5c67e.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5209ec61770fd5fbf32f21df0f46081d58d5c67e.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='2107373de6a5ad0115d29fd854338f1de1b014ff28'></a> Source: [MIMDocs\DeployUse\media\MIM-Install2.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install2.png)
@@ -679,11 +679,11 @@
 * Handoff File: [2107373de6a5ad0115d29fd854338f1de1b014ff.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/2107373de6a5ad0115d29fd854338f1de1b014ff.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='b3bfc6c071bc0e9e9acd63c595a8e5211dac489229'></a> Source: [MIMDocs\DeployUse\media\MIM-Install3.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install3.png)
@@ -692,11 +692,11 @@
 * Handoff File: [b3bfc6c071bc0e9e9acd63c595a8e5211dac4892.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/b3bfc6c071bc0e9e9acd63c595a8e5211dac4892.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='604aa21115c1fc97046b7db7788d5e2b2a397f9530'></a> Source: [MIMDocs\DeployUse\media\MIM-Install4.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install4.png)
@@ -705,11 +705,11 @@
 * Handoff File: [604aa21115c1fc97046b7db7788d5e2b2a397f95.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/604aa21115c1fc97046b7db7788d5e2b2a397f95.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='118d113aaea7645d7b4e43492ea26776ef750d1831'></a> Source: [MIMDocs\DeployUse\media\MIM-Install5.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install5.png)
@@ -718,11 +718,11 @@
 * Handoff File: [118d113aaea7645d7b4e43492ea26776ef750d18.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/118d113aaea7645d7b4e43492ea26776ef750d18.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf32'></a> Source: [MIMDocs\DeployUse\media\MIM-Install6.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-Install6.png)
@@ -731,11 +731,11 @@
 * Handoff File: [90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='829797a06946c3fa724e6af395d084858cfa715733'></a> Source: [MIMDocs\DeployUse\media\MIM-Install7.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-Install7.png)
@@ -744,11 +744,11 @@
 * Handoff File: [829797a06946c3fa724e6af395d084858cfa7157.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/829797a06946c3fa724e6af395d084858cfa7157.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='e2495f3a3af2ca7b105187bca71dfeb665cc613534'></a> Source: [MIMDocs\DeployUse\media\MIM-Install8.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-Install8.png)
@@ -757,11 +757,11 @@
 * Handoff File: [e2495f3a3af2ca7b105187bca71dfeb665cc6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e2495f3a3af2ca7b105187bca71dfeb665cc6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='c8dfc3f1495deeaa1ff2239f44a454c2899358bd35'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-account-unlock.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-account-unlock.JPG)
@@ -770,11 +770,11 @@
 * Handoff File: [c8dfc3f1495deeaa1ff2239f44a454c2899358bd.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/c8dfc3f1495deeaa1ff2239f44a454c2899358bd.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='50edb5dfa84929fc614b735bcf3536b50765516836'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-accountUnlock.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-accountUnlock.JPG)
@@ -783,11 +783,11 @@
 * Handoff File: [50edb5dfa84929fc614b735bcf3536b507655168.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/50edb5dfa84929fc614b735bcf3536b507655168.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='773d7c2a80e98ba6e602103140f6828886458e3537'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-Azure-MFA.png](https://github.com/Microsoft/MIMDocs-pr/blob/bc92efa83b27bec8d7ce9d0d22d61a8bb781f449/MIMDocs/DeployUse/media/MIM-SSPR-Azure-MFA.png)
@@ -796,11 +796,11 @@
 * Handoff File: [773d7c2a80e98ba6e602103140f6828886458e35.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/773d7c2a80e98ba6e602103140f6828886458e35.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='05c612cab12ab17981567ac30a24c8f056ac439939'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-Azureportal.png](https://github.com/Microsoft/MIMDocs-pr/blob/bc92efa83b27bec8d7ce9d0d22d61a8bb781f449/MIMDocs/DeployUse/media/MIM-SSPR-Azureportal.png)
@@ -809,11 +809,11 @@
 * Handoff File: [05c612cab12ab17981567ac30a24c8f056ac4399.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/05c612cab12ab17981567ac30a24c8f056ac4399.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='41e36ef43e62d24a1ffa3c74c585e9b9579e72e238'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-Azureportal-2.png](https://github.com/Microsoft/MIMDocs-pr/blob/bc92efa83b27bec8d7ce9d0d22d61a8bb781f449/MIMDocs/DeployUse/media/MIM-SSPR-Azureportal-2.png)
@@ -822,11 +822,11 @@
 * Handoff File: [41e36ef43e62d24a1ffa3c74c585e9b9579e72e2.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/41e36ef43e62d24a1ffa3c74c585e9b9579e72e2.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='5c7b53097393ddeeb4ae606c968a6d01ac1458bb40'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-keepcurrentorsetnewpwd.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-keepcurrentorsetnewpwd.JPG)
@@ -835,11 +835,11 @@
 * Handoff File: [5c7b53097393ddeeb4ae606c968a6d01ac1458bb.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5c7b53097393ddeeb4ae606c968a6d01ac1458bb.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='98580a3dcd4d4d6e166dfaa59af61ae8f986907741'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-ManageButton.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-ManageButton.png)
@@ -848,11 +848,11 @@
 * Handoff File: [98580a3dcd4d4d6e166dfaa59af61ae8f9869077.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/98580a3dcd4d4d6e166dfaa59af61ae8f9869077.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='cb3fff029779bf2fc3efd96fe3f90f38f2129dc842'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-mobilephoneverification.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-mobilephoneverification.JPG)
@@ -861,11 +861,11 @@
 * Handoff File: [cb3fff029779bf2fc3efd96fe3f90f38f2129dc8.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/cb3fff029779bf2fc3efd96fe3f90f38f2129dc8.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='1ff0807544bfe5121656e9472e43c792d804af7f43'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-pFile.png](https://github.com/Microsoft/MIMDocs-pr/blob/bc92efa83b27bec8d7ce9d0d22d61a8bb781f449/MIMDocs/DeployUse/media/MIM-SSPR-pFile.png)
@@ -874,11 +874,11 @@
 * Handoff File: [1ff0807544bfe5121656e9472e43c792d804af7f.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/1ff0807544bfe5121656e9472e43c792d804af7f.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='b6355f089a1e13e5f99415f6a4a6b4b6461043b944'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-PhoneVerification.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-PhoneVerification.JPG)
@@ -887,11 +887,11 @@
 * Handoff File: [b6355f089a1e13e5f99415f6a4a6b4b6461043b9.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/b6355f089a1e13e5f99415f6a4a6b4b6461043b9.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca845'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-PR1.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-PR1.JPG)
@@ -900,11 +900,11 @@
 * Handoff File: [e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='a83ceb5eb5779c23e5a3cac682c6e9c21a23f08646'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-problemsloggingin.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-problemsloggingin.JPG)
@@ -913,11 +913,11 @@
 * Handoff File: [a83ceb5eb5779c23e5a3cac682c6e9c21a23f086.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/a83ceb5eb5779c23e5a3cac682c6e9c21a23f086.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='7ec434bf74c833488130414bb563ce050dd858dc47'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-PwdResetAuthNworkflow.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-PwdResetAuthNworkflow.jpg)
@@ -926,11 +926,11 @@
 * Handoff File: [7ec434bf74c833488130414bb563ce050dd858dc.jpg](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/7ec434bf74c833488130414bb563ce050dd858dc.jpg)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='88a42605d95ab1540935a549885dcea0237547bc48'></a> Source: [MIMDocs\DeployUse\media\MIM-SSPR-workflow.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-SSPR-workflow.jpg)
@@ -939,11 +939,11 @@
 * Handoff File: [88a42605d95ab1540935a549885dcea0237547bc.jpg](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/88a42605d95ab1540935a549885dcea0237547bc.jpg)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='7a0dcd58442a2d039d0173992124e04205475e6849'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgFIM1.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgFIM1.PNG)
@@ -952,11 +952,11 @@
 * Handoff File: [7a0dcd58442a2d039d0173992124e04205475e68.PNG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/7a0dcd58442a2d039d0173992124e04205475e68.PNG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='604aa21115c1fc97046b7db7788d5e2b2a397f9550'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgFIM3.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-UpgFIM3.png)
@@ -965,11 +965,11 @@
 * Handoff File: [604aa21115c1fc97046b7db7788d5e2b2a397f95.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/604aa21115c1fc97046b7db7788d5e2b2a397f95.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='118d113aaea7645d7b4e43492ea26776ef750d1851'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgFIM4.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-UpgFIM4.png)
@@ -978,11 +978,11 @@
 * Handoff File: [118d113aaea7645d7b4e43492ea26776ef750d18.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/118d113aaea7645d7b4e43492ea26776ef750d18.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf52'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgFIM7.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgFIM7.png)
@@ -991,11 +991,11 @@
 * Handoff File: [90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='dc2e89455a4ff0d4c93bb8f51372b324408547eb53'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgFIM9.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgFIM9.PNG)
@@ -1004,11 +1004,11 @@
 * Handoff File: [dc2e89455a4ff0d4c93bb8f51372b324408547eb.PNG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/dc2e89455a4ff0d4c93bb8f51372b324408547eb.PNG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='e2495f3a3af2ca7b105187bca71dfeb665cc613554'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP1.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgSP1.png)
@@ -1017,11 +1017,11 @@
 * Handoff File: [e2495f3a3af2ca7b105187bca71dfeb665cc6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e2495f3a3af2ca7b105187bca71dfeb665cc6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='b1783547058b69272ea97171d8f75f7b95668d5555'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP10.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgSP10.png)
@@ -1030,11 +1030,11 @@
 * Handoff File: [b1783547058b69272ea97171d8f75f7b95668d55.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/b1783547058b69272ea97171d8f75f7b95668d55.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='8752c0063eb59f3849d5c8c2834f736b7bdbdf4c56'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP15.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-UpgSP15.png)
@@ -1043,11 +1043,11 @@
 * Handoff File: [8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='8752c0063eb59f3849d5c8c2834f736b7bdbdf4c57'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP16.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-UpgSP16.png)
@@ -1056,11 +1056,11 @@
 * Handoff File: [8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5de3abcdc01ccfbf2cec14641636a1a487cef40d58'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP17.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-UpgSP17.png)
@@ -1069,11 +1069,11 @@
 * Handoff File: [5de3abcdc01ccfbf2cec14641636a1a487cef40d.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5de3abcdc01ccfbf2cec14641636a1a487cef40d.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5209ec61770fd5fbf32f21df0f46081d58d5c67e59'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP2.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgSP2.png)
@@ -1082,11 +1082,11 @@
 * Handoff File: [5209ec61770fd5fbf32f21df0f46081d58d5c67e.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5209ec61770fd5fbf32f21df0f46081d58d5c67e.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='e76ee275db2754bc2bef6b739b7a735a10d89fe060'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP4.png](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgSP4.png)
@@ -1095,11 +1095,11 @@
 * Handoff File: [e76ee275db2754bc2bef6b739b7a735a10d89fe0.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e76ee275db2754bc2bef6b739b7a735a10d89fe0.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5902b5dd9caf9a4505f491bdfd371054709d613561'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP6.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-UpgSP6.png)
@@ -1108,11 +1108,11 @@
 * Handoff File: [5902b5dd9caf9a4505f491bdfd371054709d6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5902b5dd9caf9a4505f491bdfd371054709d6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='1f1a18f843216bed4052f09815b6b75fd759cbb962'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP7.png](https://github.com/Microsoft/MIMDocs-pr/blob/bc92efa83b27bec8d7ce9d0d22d61a8bb781f449/MIMDocs/DeployUse/media/MIM-UpgSP7.png)
@@ -1121,11 +1121,11 @@
 * Handoff File: [1f1a18f843216bed4052f09815b6b75fd759cbb9.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/1f1a18f843216bed4052f09815b6b75fd759cbb9.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='a0c86274e483e6f9a8ffd55b1884e70cee24560d63'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP8.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/00d53f5d2d0cf5766279b4a19047f30398f421f9/MIMDocs/DeployUse/media/MIM-UpgSP8.PNG)
@@ -1134,11 +1134,11 @@
 * Handoff File: [a0c86274e483e6f9a8ffd55b1884e70cee24560d.PNG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/a0c86274e483e6f9a8ffd55b1884e70cee24560d.PNG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='86552c75a719abf0e4adbe967a98d3a5cf3167c164'></a> Source: [MIMDocs\DeployUse\media\MIM-UpgSP9.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/DeployUse/media/MIM-UpgSP9.png)
@@ -1147,11 +1147,11 @@
 * Handoff File: [86552c75a719abf0e4adbe967a98d3a5cf3167c1.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/86552c75a719abf0e4adbe967a98d3a5cf3167c1.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='24a7bf5bfb0a7450becd08be6743ed7ab175555965'></a> Source: [MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md](https://github.com/Microsoft/MIMDocs-pr/blob/7e61e201b277a2e8ec9fee785e9e34fca3b1cb29/MIMDocs/DeployUse/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md)
@@ -1565,11 +1565,11 @@
 * Handoff File: [15fff62827350f7c645f5f6a3e027caa8d471a8c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/15fff62827350f7c645f5f6a3e027caa8d471a8c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\prepare-server-sharepoint.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\prepare-server-sharepoint.md
 * [Back to Top](#report-top)
 
 ##### <a name='822dbf0d65d682e1ffd044f05f147e6cf108677999'></a> Source: [MIMDocs\media\MIM_DeploySP2.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_DeploySP2.png)
@@ -1602,11 +1602,11 @@
 * Handoff File: [faa4f7f1b6a3337d8dede5d3aff03a218eaa5376.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/faa4f7f1b6a3337d8dede5d3aff03a218eaa5376.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\prepare-server-ws2012r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\prepare-server-ws2012r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='f66a1370cba0a6d036ea48a660f8d9c07101e8e6102'></a> Source: [MIMDocs\media\MIM_Guide_Arch.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Guide_Arch.PNG)
@@ -1711,11 +1711,11 @@
 * Handoff File: [e76ee275db2754bc2bef6b739b7a735a10d89fe0.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e76ee275db2754bc2bef6b739b7a735a10d89fe0.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='2f44301347d452913c254cc9a8efb016ea70fb39111'></a> Source: [MIMDocs\media\MIM_Guide_Step4.2.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Guide_Step4.2.png)
@@ -1820,11 +1820,11 @@
 * Handoff File: [f21f8cd1fd0c882b8768f543e10487140c67dc1c.jpg](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/f21f8cd1fd0c882b8768f543e10487140c67dc1c.jpg)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md
 * [Back to Top](#report-top)
 
 ##### <a name='462cce004d1e1de70767e34a56eb829cb5528fd4120'></a> Source: [MIMDocs\media\MIM_InsPCNS1.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_InsPCNS1.PNG)
@@ -1905,11 +1905,11 @@
 * Handoff File: [654d8d73d70e3a97280711ab65efd5ccdbef7807.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/654d8d73d70e3a97280711ab65efd5ccdbef7807.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='5f2c0134cddca6319c8df69af780633f3aeef482127'></a> Source: [MIMDocs\media\MIM_Install10.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install10.png)
@@ -1918,11 +1918,11 @@
 * Handoff File: [5f2c0134cddca6319c8df69af780633f3aeef482.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5f2c0134cddca6319c8df69af780633f3aeef482.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * [Back to Top](#report-top)
 
 ##### <a name='5902b5dd9caf9a4505f491bdfd371054709d6135128'></a> Source: [MIMDocs\media\MIM_Install11.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install11.png)
@@ -1931,11 +1931,11 @@
 * Handoff File: [5902b5dd9caf9a4505f491bdfd371054709d6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5902b5dd9caf9a4505f491bdfd371054709d6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='86552c75a719abf0e4adbe967a98d3a5cf3167c1129'></a> Source: [MIMDocs\media\MIM_Install12.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install12.png)
@@ -1944,11 +1944,11 @@
 * Handoff File: [86552c75a719abf0e4adbe967a98d3a5cf3167c1.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/86552c75a719abf0e4adbe967a98d3a5cf3167c1.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2130'></a> Source: [MIMDocs\media\MIM_Install13.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install13.png)
@@ -1957,11 +1957,11 @@
 * Handoff File: [5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md
 * [Back to Top](#report-top)
 
 ##### <a name='8752c0063eb59f3849d5c8c2834f736b7bdbdf4c131'></a> Source: [MIMDocs\media\MIM_Install14.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install14.png)
@@ -1970,11 +1970,11 @@
 * Handoff File: [8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5de3abcdc01ccfbf2cec14641636a1a487cef40d132'></a> Source: [MIMDocs\media\MIM_Install15.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install15.png)
@@ -1983,11 +1983,11 @@
 * Handoff File: [5de3abcdc01ccfbf2cec14641636a1a487cef40d.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5de3abcdc01ccfbf2cec14641636a1a487cef40d.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5209ec61770fd5fbf32f21df0f46081d58d5c67e133'></a> Source: [MIMDocs\media\MIM_Install16.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install16.png)
@@ -1996,11 +1996,11 @@
 * Handoff File: [5209ec61770fd5fbf32f21df0f46081d58d5c67e.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5209ec61770fd5fbf32f21df0f46081d58d5c67e.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='2107373de6a5ad0115d29fd854338f1de1b014ff134'></a> Source: [MIMDocs\media\MIM_Install2.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install2.png)
@@ -2009,11 +2009,11 @@
 * Handoff File: [2107373de6a5ad0115d29fd854338f1de1b014ff.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/2107373de6a5ad0115d29fd854338f1de1b014ff.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='b3bfc6c071bc0e9e9acd63c595a8e5211dac4892135'></a> Source: [MIMDocs\media\MIM_Install3.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install3.png)
@@ -2022,11 +2022,11 @@
 * Handoff File: [b3bfc6c071bc0e9e9acd63c595a8e5211dac4892.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/b3bfc6c071bc0e9e9acd63c595a8e5211dac4892.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='604aa21115c1fc97046b7db7788d5e2b2a397f95136'></a> Source: [MIMDocs\media\MIM_Install4.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install4.png)
@@ -2035,11 +2035,11 @@
 * Handoff File: [604aa21115c1fc97046b7db7788d5e2b2a397f95.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/604aa21115c1fc97046b7db7788d5e2b2a397f95.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='118d113aaea7645d7b4e43492ea26776ef750d18137'></a> Source: [MIMDocs\media\MIM_Install5.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install5.png)
@@ -2048,11 +2048,11 @@
 * Handoff File: [118d113aaea7645d7b4e43492ea26776ef750d18.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/118d113aaea7645d7b4e43492ea26776ef750d18.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf138'></a> Source: [MIMDocs\media\MIM_Install6.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install6.png)
@@ -2061,11 +2061,11 @@
 * Handoff File: [90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='829797a06946c3fa724e6af395d084858cfa7157139'></a> Source: [MIMDocs\media\MIM_Install7.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install7.png)
@@ -2074,11 +2074,11 @@
 * Handoff File: [829797a06946c3fa724e6af395d084858cfa7157.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/829797a06946c3fa724e6af395d084858cfa7157.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='e2495f3a3af2ca7b105187bca71dfeb665cc6135140'></a> Source: [MIMDocs\media\MIM_Install8.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install8.png)
@@ -2087,11 +2087,11 @@
 * Handoff File: [e2495f3a3af2ca7b105187bca71dfeb665cc6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e2495f3a3af2ca7b105187bca71dfeb665cc6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='2107373de6a5ad0115d29fd854338f1de1b014ff141'></a> Source: [MIMDocs\media\MIM_Install9.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_Install9.png)
@@ -2100,11 +2100,11 @@
 * Handoff File: [2107373de6a5ad0115d29fd854338f1de1b014ff.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/2107373de6a5ad0115d29fd854338f1de1b014ff.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md
 * [Back to Top](#report-top)
 
 ##### <a name='05b50925245bfca2c89fa412e8af23eff305fc61142'></a> Source: [MIMDocs\media\MIM_PIM_howitworks.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_PIM_howitworks.png)
@@ -2233,11 +2233,11 @@
 * Handoff File: [50edb5dfa84929fc614b735bcf3536b507655168.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/50edb5dfa84929fc614b735bcf3536b507655168.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='eb16bf2dbbe30b0919cdba186f097ee64c93993d154'></a> Source: [MIMDocs\media\MIM_SSPR_Azure_MFA.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_Azure_MFA.png)
@@ -2270,11 +2270,11 @@
 * Handoff File: [5c7b53097393ddeeb4ae606c968a6d01ac1458bb.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5c7b53097393ddeeb4ae606c968a6d01ac1458bb.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='98580a3dcd4d4d6e166dfaa59af61ae8f9869077157'></a> Source: [MIMDocs\media\MIM_SSPR_ManageButton.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_ManageButton.png)
@@ -2283,11 +2283,11 @@
 * Handoff File: [98580a3dcd4d4d6e166dfaa59af61ae8f9869077.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/98580a3dcd4d4d6e166dfaa59af61ae8f9869077.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='cb3fff029779bf2fc3efd96fe3f90f38f2129dc8158'></a> Source: [MIMDocs\media\MIM_SSPR_mobilephoneverification.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_mobilephoneverification.JPG)
@@ -2296,11 +2296,11 @@
 * Handoff File: [cb3fff029779bf2fc3efd96fe3f90f38f2129dc8.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/cb3fff029779bf2fc3efd96fe3f90f38f2129dc8.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='f06bbd988080f2be18b0b8cfdcdbd343ef02d16a159'></a> Source: [MIMDocs\media\MIM_SSPR_pFile.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_pFile.png)
@@ -2321,11 +2321,11 @@
 * Handoff File: [b6355f089a1e13e5f99415f6a4a6b4b6461043b9.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/b6355f089a1e13e5f99415f6a4a6b4b6461043b9.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8161'></a> Source: [MIMDocs\media\MIM_SSPR_PR1.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_PR1.JPG)
@@ -2334,11 +2334,11 @@
 * Handoff File: [e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='cea2fd7f210e962825520e937926350c0f5e0f01162'></a> Source: [MIMDocs\media\MIM_SSPR_PR2.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_PR2.jpg)
@@ -2359,11 +2359,11 @@
 * Handoff File: [a83ceb5eb5779c23e5a3cac682c6e9c21a23f086.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/a83ceb5eb5779c23e5a3cac682c6e9c21a23f086.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='7ec434bf74c833488130414bb563ce050dd858dc164'></a> Source: [MIMDocs\media\MIM_SSPR_PwdResetAuthNworkflow.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_PwdResetAuthNworkflow.jpg)
@@ -2372,11 +2372,11 @@
 * Handoff File: [7ec434bf74c833488130414bb563ce050dd858dc.jpg](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/7ec434bf74c833488130414bb563ce050dd858dc.jpg)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='88a42605d95ab1540935a549885dcea0237547bc165'></a> Source: [MIMDocs\media\MIM_SSPR_workflow.jpg](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR_workflow.jpg)
@@ -2385,11 +2385,11 @@
 * Handoff File: [88a42605d95ab1540935a549885dcea0237547bc.jpg](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/88a42605d95ab1540935a549885dcea0237547bc.jpg)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='c8dfc3f1495deeaa1ff2239f44a454c2899358bd152'></a> Source: [MIMDocs\media\MIM_SSPR-account-unlock.JPG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_SSPR-account-unlock.JPG)
@@ -2398,11 +2398,11 @@
 * Handoff File: [c8dfc3f1495deeaa1ff2239f44a454c2899358bd.JPG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/c8dfc3f1495deeaa1ff2239f44a454c2899358bd.JPG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-self-service-password-reset.md
 * [Back to Top](#report-top)
 
 ##### <a name='7a0dcd58442a2d039d0173992124e04205475e68166'></a> Source: [MIMDocs\media\MIM_UpgFIM1.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgFIM1.PNG)
@@ -2411,11 +2411,11 @@
 * Handoff File: [7a0dcd58442a2d039d0173992124e04205475e68.PNG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/7a0dcd58442a2d039d0173992124e04205475e68.PNG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='afe6f0ce4e4361e1b9c8ea1e87670a5008dc35f3167'></a> Source: [MIMDocs\media\MIM_UpgFIM2.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgFIM2.PNG)
@@ -2436,11 +2436,11 @@
 * Handoff File: [604aa21115c1fc97046b7db7788d5e2b2a397f95.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/604aa21115c1fc97046b7db7788d5e2b2a397f95.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='118d113aaea7645d7b4e43492ea26776ef750d18169'></a> Source: [MIMDocs\media\MIM_UpgFIM4.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgFIM4.png)
@@ -2449,11 +2449,11 @@
 * Handoff File: [118d113aaea7645d7b4e43492ea26776ef750d18.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/118d113aaea7645d7b4e43492ea26776ef750d18.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-sync.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='08b3d59ab5a43ee10c05af5da135b3fb3575fad9170'></a> Source: [MIMDocs\media\MIM_UpgFIM5.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgFIM5.PNG)
@@ -2486,11 +2486,11 @@
 * Handoff File: [90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='b8981da764e5f7983ed468682aa08676ee559849173'></a> Source: [MIMDocs\media\MIM_UpgFIM8.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgFIM8.PNG)
@@ -2511,11 +2511,11 @@
 * Handoff File: [dc2e89455a4ff0d4c93bb8f51372b324408547eb.PNG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/dc2e89455a4ff0d4c93bb8f51372b324408547eb.PNG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='e2495f3a3af2ca7b105187bca71dfeb665cc6135175'></a> Source: [MIMDocs\media\MIM_UpgSP1.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP1.png)
@@ -2524,11 +2524,11 @@
 * Handoff File: [e2495f3a3af2ca7b105187bca71dfeb665cc6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e2495f3a3af2ca7b105187bca71dfeb665cc6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='b1783547058b69272ea97171d8f75f7b95668d55176'></a> Source: [MIMDocs\media\MIM_UpgSP10.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP10.png)
@@ -2537,11 +2537,11 @@
 * Handoff File: [b1783547058b69272ea97171d8f75f7b95668d55.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/b1783547058b69272ea97171d8f75f7b95668d55.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='1186ff360086d5581e6b1295dbb8369630bd470f177'></a> Source: [MIMDocs\media\MIM_UpgSP11.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP11.PNG)
@@ -2598,11 +2598,11 @@
 * Handoff File: [8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='8752c0063eb59f3849d5c8c2834f736b7bdbdf4c182'></a> Source: [MIMDocs\media\MIM_UpgSP16.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP16.png)
@@ -2611,11 +2611,11 @@
 * Handoff File: [8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5de3abcdc01ccfbf2cec14641636a1a487cef40d183'></a> Source: [MIMDocs\media\MIM_UpgSP17.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP17.png)
@@ -2624,11 +2624,11 @@
 * Handoff File: [5de3abcdc01ccfbf2cec14641636a1a487cef40d.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5de3abcdc01ccfbf2cec14641636a1a487cef40d.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='ca2905ee21d8c0a8576bb399d33b94abe6473f08184'></a> Source: [MIMDocs\media\MIM_UpgSP18.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP18.PNG)
@@ -2649,11 +2649,11 @@
 * Handoff File: [5209ec61770fd5fbf32f21df0f46081d58d5c67e.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5209ec61770fd5fbf32f21df0f46081d58d5c67e.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='5209ec61770fd5fbf32f21df0f46081d58d5c67e186'></a> Source: [MIMDocs\media\MIM_UpgSP2.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP2.png)
@@ -2662,11 +2662,11 @@
 * Handoff File: [5209ec61770fd5fbf32f21df0f46081d58d5c67e.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5209ec61770fd5fbf32f21df0f46081d58d5c67e.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='3443675abc1e3e5ab7b3d465ac8df9742df00116187'></a> Source: [MIMDocs\media\MIM_UpgSP20.1.PNG](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP20.1.PNG)
@@ -2711,11 +2711,11 @@
 * Handoff File: [e76ee275db2754bc2bef6b739b7a735a10d89fe0.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/e76ee275db2754bc2bef6b739b7a735a10d89fe0.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='01d253e1cf067b7535e6294eaf7f12bb124bf732191'></a> Source: [MIMDocs\media\MIM_UpgSP5.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP5.png)
@@ -2736,11 +2736,11 @@
 * Handoff File: [5902b5dd9caf9a4505f491bdfd371054709d6135.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/5902b5dd9caf9a4505f491bdfd371054709d6135.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='2fc132e83f6d875b2b872ece9db8f11b87c06c92193'></a> Source: [MIMDocs\media\MIM_UpgSP7.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP7.png)
@@ -2761,11 +2761,11 @@
 * Handoff File: [a0c86274e483e6f9a8ffd55b1884e70cee24560d.PNG](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/a0c86274e483e6f9a8ffd55b1884e70cee24560d.PNG)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='86552c75a719abf0e4adbe967a98d3a5cf3167c1195'></a> Source: [MIMDocs\media\MIM_UpgSP9.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/MIM_UpgSP9.png)
@@ -2774,11 +2774,11 @@
 * Handoff File: [86552c75a719abf0e4adbe967a98d3a5cf3167c1.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/86552c75a719abf0e4adbe967a98d3a5cf3167c1.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\install-mim-service-portal.md, MIMDocs\DeployUse\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md
 * [Back to Top](#report-top)
 
 ##### <a name='dff58a3131b39009831a87d95625116040d7f3a0205'></a> Source: [MIMDocs\media\PAM_GS_Configur_PAM_Monitoring_service.png](https://github.com/Microsoft/MIMDocs-pr/blob/f136c2516810ec3b143052ba243358da1bb19ff9/MIMDocs/media/PAM_GS_Configur_PAM_Monitoring_service.png)
@@ -3126,11 +3126,11 @@
 * Handoff File: [ff89d0e903b04df6182700b474bc3aef1b0ba24d.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/ff89d0e903b04df6182700b474bc3aef1b0ba24d.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\PlanDesign\topology-considerations.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\PlanDesign\topology-considerations.md
 * [Back to Top](#report-top)
 
 ##### <a name='c465fc00bd089b73b86daa72968dd67dab832aee224'></a> Source: [MIMDocs\PlanDesign\media\MIM-topo-multitier-multiservice.png](https://github.com/Microsoft/MIMDocs-pr/blob/90bc65826ae511cf50473ee95c73edf2b719b231/MIMDocs/PlanDesign/media/MIM-topo-multitier-multiservice.png)
@@ -3139,11 +3139,11 @@
 * Handoff File: [c465fc00bd089b73b86daa72968dd67dab832aee.png](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/c465fc00bd089b73b86daa72968dd67dab832aee.png)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\PlanDesign\topology-considerations.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\PlanDesign\topology-considerations.md
 * [Back to Top](#report-top)
 
 ##### <a name='bb3e3abfdc12d78108676d4a9f029531d9df17fd226'></a> Source: [MIMDocs\PlanDesign\microsoft-identity-manager-2016-supported-platforms.md](https://github.com/Microsoft/MIMDocs-pr/blob/a59e7471a8aaafc6752c9be34d52fd3509104dec/MIMDocs/PlanDesign/microsoft-identity-manager-2016-supported-platforms.md)
@@ -3779,11 +3779,11 @@
 * Handoff File: [f21f8cd1fd0c882b8768f543e10487140c67dc1c.jpg](https://github.com/Microsoft/EM.handoff/blob/1a952ff58b06bead95f107d6346823c2de665bc8/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/f21f8cd1fd0c882b8768f543e10487140c67dc1c.jpg)
 * Handoff Datetime: 2016-04-27 19:56:56
 * Handoff Reason: IsDependency
+* Dependency From: MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Dependency From: MIMDocs\DeployUse\working-with-identity-manager-hybrid-reporting.md
 * [Back to Top](#report-top)
 
 ##### <a name='df2f52159b6ff77dd9b28bb934795c685a72210d279'></a> Source: [MIMDocs\Understand\microsoft-identity-manager-2016.md](https://github.com/Microsoft/MIMDocs-pr/blob/c023d147d0fcc1525fefbe866c952e217f7bee6b/MIMDocs/Understand/microsoft-identity-manager-2016.md)

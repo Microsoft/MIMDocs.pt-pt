@@ -6,7 +6,7 @@ description: Utilize este guia para compreender as variáveis que devem ser cons
 keywords:
 author: kgremban
 manager: stevenpo
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -27,7 +27,9 @@ ms.suite: ems
 
 # Guia de planeamento de capacidade
 
-Quando estiver pronto para implementar o Microsoft Identity Manager (MIM), utilize este guia, bem como ambientes de teste, para estruturar a implementação. Este artigo explica vários fatores comuns que deve ter em consideração. Uma vez que cada implementação é exclusiva, testar os cenários num laboratório continua a ser a melhor forma de determinar os servidores, o hardware ou as topologias que melhor se adequam às suas necessidades.
+O Microsoft Identity Manager (MIM) permite criar, atualizar e remover contas de utilizador em toda a organização. Também proporciona aos utilizadores finais a capacidade de gerir as próprias funcionalidades de gestão personalizada de contas. Mesmo num ambiente pequeno, todas estas ações podem aumentar rapidamente.
+
+Antes de iniciar o MIM, utilize este guia, juntamente com ambientes de teste, para compreender o âmbito adequado para a implementação. Este artigo explica vários fatores comuns que deve ter em consideração. Uma vez que cada implementação é exclusiva, testar os cenários num laboratório continua a ser a melhor forma de determinar os servidores, o hardware ou as topologias que melhor se adequam às suas necessidades.
 
 Se ainda não estiver familiarizado com o MIM 2016 e os respetivos componentes, obtenha mais detalhes acerca do [Microsoft Identity Manager 2016](/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016) antes de continuar.
 
@@ -98,6 +100,6 @@ A configuração de políticas do MIM também inclui as decisões sobre o aprovi
 - O [Guia de Planeamento da Capacidade do Forefront Identity Manager (FIM) 2010](http://go.microsoft.com/fwlink/?LinkId=200180) transferível fornece mais detalhes sobre uma compilação de teste e os resultados de testes de desempenho.
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

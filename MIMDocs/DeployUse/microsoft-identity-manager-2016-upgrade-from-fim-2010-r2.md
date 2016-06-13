@@ -6,7 +6,7 @@ description: Saiba como atualizar os componentes do FIM 2010 R2 e, em seguida, 
 keywords:
 author: kgremban
 manager: stevenpo
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -25,16 +25,22 @@ ms.suite: ems
 
 ---
 
-# Atualizar do Forefront Identity Manager 2010 R2 para o Microsoft Identity Manager 2016
-Esta secção explica como atualizar um sistema FIM 2010 R2 de teste existente para o MIM 2016. Os instaladores utilizados para atualizar são os mesmos utilizados para uma nova implementação.
+# Atualização do Forefront Identity Manager 2010 R2
 
-Esta secção assume que tem uma solução de FIM 2010 R2 existente implementada num ambiente de teste. Os seus servidores estão a ser executados no Windows Server 2012, Windows Server 2012 R2 ou Windows Server 2008 R2, que são os sistemas operativos comuns para os servidores do FIM 2010 R2, e todos os pré-requisitos locais e ambientais (SQL Server, Exchange Server, SharePoint Services, etc.) estão configurados para o FIM 2010 R2.
+Se tiver um ambiente do Forefront Identity Manager (FIM) 2010 R2 e pretender experimentar o Microsoft Identity Manager (MIM) 2016, utilize este artigo como guia. Existem três fases nesta atualização:
 
-1.  Em primeiro lugar, o Serviço de Sincronização do MIM (Sincronização) será instalado e executado num servidor que está associado ao domínio do AD e substitui a instância de Sincronização do FIM 2010 R2.
+1.  Instalar o Serviço de Sincronização do MIM (Sincronização) num servidor que está associado ao domínio do Active Directory (AD). Esta ação substitui a instância do FIM 2010 R2 de Sincronização.
 
-2.  Depois, será instalado o Portal e o Serviço MIM, opcionalmente, incluindo o Portal de Registo SSPR e o Portal de Serviço SSPR e excluindo o conjunto de funcionalidades do Privileged Access Management.
+2.  Instale o Serviço e Portal do MIM. Nesta altura, também pode optar por instalar o portal de registo de reposição de palavra-passe (SSPR) de gestão personalizada e o portal de serviço. e, excluindo o conjunto de funcionalidades do Privileged Access Management, será então instalado.
 
-3.  Em seguida, podem ser implementados Suplementos e Extensões do MIM, incluindo o cliente integrado do Início de Sessão do Windows SSPR num computador cliente separado.
+3.  Implemente extensões e suplementos do MIM num computador cliente separado. Isto inclui o cliente integrado de início de sessão do Windows SSPR.
+
+
+Este guia pressupõe que já configurou o seguinte:
+- FIM 2010 R2 implementado num ambiente de teste
+- Servidores que executam o Windows Server 2012, o Windows Server 2012 R2 ou o Windows Server 2008 R2
+- Pré-requisitos locais e ambientais (SQL Server, Exchange Server, SharePoint Services, etc.) que estão configurados para o FIM 2010 R2.
+
 
 ## Preparação
 
@@ -62,7 +68,7 @@ Esta secção assume que tem uma solução de FIM 2010 R2 existente implementad
 
     ![Imagem da configuração da conta de serviço da Sincronização do MIM](media/MIM-UpgFIM3.png)
 
-7.  Confirme se os nomes de grupos de segurança estão corretos e clique em **Seguinte**.
+7.  Confirme se os nomes dos grupos de segurança estão corretos e clique em **Seguinte**.
 
     ![Imagem da configuração dos grupos de segurança da Sincronização do MIM](media/MIM-UpgFIM4.png)
 
@@ -201,6 +207,6 @@ Esta secção assume que tem uma solução de FIM 2010 R2 existente implementad
 Nota: se, atualmente, os Suplementos e as Extensões do FIM estiverem implementados nos computadores do utilizador para SSPR, não configure as novas portas do telefone MFA para a reposição da palavra-passe antes da atualização de todos os Suplementos e as Extensões do FIM para o MIM 2016.  Uma vez que os Suplementos e as Extensões do FIM 2010 e do FIM 2010 R2 não reconhecem as novas portas, tal resultará num erro e o utilizador não poderá concluir a reposição da palavra-passe.
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

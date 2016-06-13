@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Criação de Relatórios Híbridos do Identity Manager no Azure | Microsoft Identity Manager
+title: Relatórios de gestão de identidade híbrida | Microsoft Identity Manager
 description: A criação de relatórios híbridos do Azure Active Directory permite-lhe criar relatórios personalizados que incluem eventos na nuvem e no local.
 keywords:
 author: kgremban
 manager: stevenpo
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -25,8 +25,8 @@ ms.suite: ems
 
 ---
 
-# Criação de Relatórios Híbridos do Identity Manager no Azure
-Com o Azure Active Directory (AD), pode criar um único relatório para ver a atividade da gestão de identidades ocorrida no local ou na nuvem. Esta capacidade de geração de relatórios dá-lhe um local consolidado a partir do qual pode gerir dados de acesso e de identidade, reduzindo os custos globais.
+# Relatórios de gestão de identidade híbrida no Azure
+Com o Azure Active Directory (AD), pode criar um único relatório para monitorizar a atividade da gestão de identidades que ocorre no local ou na nuvem. Esta funcionalidade permite gerir todos os dados de identidade e acesso num único local, poupando tempo e reduzindo os custos globais.
 
 ## O que é a criação de relatórios híbridos do Azure AD?
 A criação de relatórios híbridos ajuda os profissionais de TI a resolver desafios comuns relacionados com os relatórios de gestão de identidades.
@@ -52,6 +52,6 @@ O processo de criação de relatórios híbridos segue estes passos:
 - Obter mais detalhes sobre como [Trabalhar com a Criação de Relatórios Híbridos do Identity Manager](/microsoft-identity-manager/deploy-use/working-with-identity-manager-hybrid-reporting)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

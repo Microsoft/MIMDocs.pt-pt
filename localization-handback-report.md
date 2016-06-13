@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/b2578d50f855486183ae182330bacb688011c273/MIMDocs/DeployUse/preparing-domain.md) | InSyncHandedBackSuccess | [Details](#b84a6c7c7b53a122eefc3846ba93b92b34edb6ce71)
 
 ## Item Details
-##### <a name='b84a6c7c7b53a122eefc3846ba93b92b34edb6ce71'></a> Source: [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr/blob/b2578d50f855486183ae182330bacb688011c273/MIMDocs/DeployUse/preparing-domain.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [MIMDocs\DeployUse\preparing-domain.md](https://github.com/Microsoft/MIMDocs-pr.pt-pt/blob/cabc5f6206fbe6fa25712e4be00b6610dee653d7/MIMDocs/DeployUse/preparing-domain.md)
-* Handoff File: [preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/49d546786303330e6e5b88ac4f3c8806d6a39225/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf)
-* Handoff Datetime: 2016-06-02 21:15:41
-* Handoff Reason: Include
-* Archive File: [preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/d7cf939ce0d9c398ace6699be1f763982183fcbf/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/archive/preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf)
-* Archive Datetime: 2016-06-09 00:25:21
-* Handback File: [preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/c180a854c2e21f820bcd756f3b2e9f6679d5e52d/ol-handback/Microsoft/MIMDocs-pr.pt-pt/master/preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf)
-* Handback Datetime: 2016-06-13 13:39:32
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

@@ -21,29 +21,29 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
     <section id="hero-content">
       <h1>Documentação do Microsoft Identity Manager</h1>
       <h2>O Microsoft Identity Manager (MIM) fornece capacidades de gestão do acesso e da identidade no local, incluindo a sincronização de identidade, o bloqueio do roubo de identidade e muito mais</h2>
-      <h3>É a primeira vez que utiliza o MIM? <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-identity-manager/" target="_blank">Visitar a página de produto &rarr;</a></h3>
+      <h3>É a primeira vez que utiliza o MIM? <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-identity-manager/" target="\_blank">Visitar a página de produto &rarr;</a></h3>     
     </section>
-
     <aside class="alert section-border">
-      <p>Ready to get hands-on?</p>
+      <p>Está pronto para praticar?</p>
       <ol class="action-list">
-        <li><a href="https://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-identity-manager-2016" target="_blank" class="button-bordered button-translucent">Try Now</a></li>
+        <li><a href="https://www.microsoft.com/evalcenter/evaluate-microsoft-identity-manager-2016" target="\_blank" class="button-bordered button-translucent">Iniciar uma avaliação gratuita</a></li>
+      </ol>
+      <ol class="action-list">
+        <li><a href="http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=61395" target="\_blank" class="button-bordered button-translucent">Pré-visualizar funcionalidades futuras</a></li>
       </ol>
     </aside>
-
     <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
+      <h2 class="section-heading"><span class="icon icon-warning"></span> Conteúdo em Destaque</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">What is Microsoft Identity Manager?</a></li>
-          <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Privileged Identity Management REST API Reference</a></li>
+          <li><a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">O que é o Microsoft Identity Manager?</a></li>
+          <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Referência à API REST do Privileged Identity Management</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">Deploy MIM software on a Fresh Server</a></li>
+          <li><a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">Implementar o software MIM num Servidor de Raiz</a></li>
         </ul>
       </div>
     </section>
-
     <div id="journeys">
       <section class="container">
         <ul class="journeys-list">
@@ -52,9 +52,9 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
               <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
                 <div class="title column-third">
                   <span class="step-number">1</span>
-                  <p>Understand &amp; Explore</p>
+                  <p>Compreender &amp; Explorar</p>
                 </div>
-                <p class="description column-two-thirds">Learn the high-level concepts, features, and capabilities of Microsoft Identity Manager.
+                <p class="description column-two-thirds">Conheça os conceitos, as funcionalidades e as capacidades de alto nível do Microsoft Identity Manager.
                 </p>
               </a>
             </header>
@@ -62,20 +62,20 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
               <ul class="row">
                 <li class="column-third">
                   <a href="/microsoft-identity-manager/understand-explore/microsoft-identity-manager-2016">
-                    <h3>What is MIM 2016?</h3>
-                    <p>Learn how MIM 2016 provides on-premises &amp; hybrid identity and access management capabilities.</p>
+                    <h3>O que é o MIM 2016?</h3>
+                    <p>Saiba como o MIM 2016 fornece capacidades de gestão de identidades híbridas e acessos do &amp;, no local.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/microsoft-identity-manager/understand-explore/identity-manager-hybrid-reporting-azure">
-                    <h3>Hybrid Reporting in Azure</h3>
-                    <p>Create a single report of events that occur on-premises and in the cloud.</p>
+                    <h3>Criação de Relatórios Híbridos no Azure</h3>
+                    <p>Crie um único relatório dos eventos que ocorrem no local e na nuvem.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/microsoft-identity-manager/plan-design/microsoft-identity-manager-2016-supported-platforms">
-                    <h3>Supported Platforms</h3>
-                    <p>The list of platforms, servers, and applications supported by MIM.</p>
+                    <h3>Plataformas Suportadas</h3>
+                    <p>A lista de plataformas, servidores e aplicações suportadas por MIM.</p>
                   </a>
                 </li>
               </ul>
@@ -86,9 +86,9 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
               <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
                 <div class="title column-third">
                   <span class="step-number">2</span>
-                  <p>Deploy &amp; Use</p>
+                  <p>Implementar &amp; Utilizar</p>
                 </div>
-                <p class="description column-two-thirds">Deploy and use MIM.
+                <p class="description column-two-thirds">Implementar e utilizar o MIM.
                 </p>
               </a>
             </header>
@@ -96,20 +96,20 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
               <ul class="row">
                 <li class="column-third">
                   <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
-                    <h3>First Time Deployment</h3>
-                    <p>Deploy MIM on a fresh server that has not previously had FIM or MIM.</p>
+                    <h3>Primeira Implementação</h3>
+                    <p>Implemente o MIM num servidor de raiz, que não tinha FIM ou MIM anteriormente.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-R2">
-                    <h3>Upgrading from FIM 2010 R2</h3>
-                    <p>Upgrade an existing FIM 2010 R2 test system to MIM 2016.</p>
+                    <h3>Atualizar a partir do FIM 2010 R2</h3>
+                    <p>Atualize um sistema de teste do FIM 2010 R2 existente para o MIM 2016.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/microsoft-identity-manager/deploy-use/deploying-mim-password-change-notification-service-on-domain-controller">
-                    <h3>Password Change Notification Service</h3>
-                    <p>Install PCNS on each domain controller server to enable password synchronization.</p>
+                    <h3>Serviço de Notificação de Alteração de Palavra-passe</h3>
+                    <p>Instale o PCNS em cada servidor de controlador de domínio para permitir a sincronização de palavras-passe.</p>
                   </a>
                 </li>
               </ul>
@@ -118,30 +118,28 @@ ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
         </ul>
       </section>
     </div>
-
     <div class="section-border">
       <section class="resources container">
-        <h2 class="section-heading"><span class="icon icon-options"></span> Developer Reference</h2>
+        <h2 class="section-heading"><span class="icon icon-options"></span> Referência para Programadores</h2>
         <div class="resource-list row">
           <ul class="column-half">
-            <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Privileged Access Management REST API Reference</a></li>
+            <li><a href="/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference">Referência à API REST do Privileged Access Management</a></li>
           </ul>
           <ul class="column-half">
-            <li><a href="/microsoft-identity-manager/reference/certificate-management-rest-api-reference">Certificate Management REST API Reference</a></li>
+            <li><a href="/microsoft-identity-manager/reference/certificate-management-rest-api-reference">Referência à API REST da Gestão de Certificados</a></li>
           </ul>
         </div>
       </section>
     </div>
-
     <aside class="alert alert-social">
-      <p>Keep up with MIM support news</p>
+      <p>Manter-se atualizado com as novidades de suporte do MIM</p>
       <ol class="action-list">
-        <li><a href="https://blogs.technet.microsoft.com/iamsupport/" target="_blank" class="button-bordered button-translucent">official support blog</a></li>
+        <li><a href="https://blogs.technet.microsoft.com/iamsupport/" target="\_blank" class="button-bordered button-translucent">blogue oficial de suporte</a></li>
       </ol>
     </aside>
 </article>
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

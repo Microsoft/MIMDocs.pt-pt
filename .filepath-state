@@ -38,6 +38,9 @@
   "b84a6c7c7b53a122eefc3846ba93b92b34edb6ce": [
     "MIMDocs\\DeployUse\\preparing-domain.md"
   ],
+  "15f742d950ce73c665c5c7c1644a23153d6aa363": [
+    "MIMDocs\\DeployUse\\TOC.md"
+  ],
   "2a5810d92b29e1200c68aacdcf180229eae342cd": [
     "MIMDocs\\DeployUse\\TOC.md"
   ],
@@ -66,11 +69,17 @@
   "bb3e3abfdc12d78108676d4a9f029531d9df17fd": [
     "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
   ],
+  "fccf9b584e84cdd7c72dadded4a0e1126789d7c2": [
+    "MIMDocs\\PlanDesign\\TOC.md"
+  ],
   "e6ac8e7f786ea4cd7696361d045dc8ce298ae133": [
     "MIMDocs\\PlanDesign\\TOC.md"
   ],
   "e33a08d77a0b5c422cdbc8c19516b55df980a2c6": [
     "MIMDocs\\PlanDesign\\topology-considerations.md"
+  ],
+  "511bb7e106b832056f9743419fe24c066366090a": [
+    "MIMDocs\\toc.md"
   ],
   "6381d8816a5d3acc8ee03ca699d93fa111182048": [
     "MIMDocs\\toc.md"
@@ -81,7 +90,64 @@
   "df2f52159b6ff77dd9b28bb934795c685a72210d": [
     "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
   ],
+  "0a32b3c5b574f121bcd34d97a9430d0dfd553ca8": [
+    "MIMDocs\\Understand\\TOC.md"
+  ],
   "b705688c313ca52d6af7062a858e0321ba5c9aba": [
     "MIMDocs\\Understand\\TOC.md"
+  ],
+  "c9f2cf2ba1f42ea1513ae38d8089839d85ae5553": [
+    "MIMDocs\\pam\\configuring-mim-environment-for-pam.md"
+  ],
+  "7ba6f744f7fb7a1c5052b14669aa3de2cd10ddbb": [
+    "MIMDocs\\pam\\defining-roles-for-pam.md"
+  ],
+  "a01cb2e1df52f3157b3d84a4eab837cececfbe1b": [
+    "MIMDocs\\pam\\environment-overview.md"
+  ],
+  "77e7174e94ea8032c4e57155db489f493ce18177": [
+    "MIMDocs\\pam\\hardware-software-requirements.md"
+  ],
+  "44f2b87efeee8088928c94d46aafcfb1eb16008b": [
+    "MIMDocs\\pam\\high-availability-disaster-recovery-considerations-bastion-environment.md"
+  ],
+  "0ed48d43825e1a876c4d96cafcb6c17cac26610f": [
+    "MIMDocs\\pam\\planning-bastion-environment.md"
+  ],
+  "49f47050703095d402a1514342baf4e928f66c70": [
+    "MIMDocs\\pam\\principles-of-operation.md"
+  ],
+  "2ed625fd9450bebbcb63aab7bad4a727c8b7ee02": [
+    "MIMDocs\\pam\\privileged-identity-management-for-active-directory-domain-services.md"
+  ],
+  "4d59ec5bb28b6a2f3602628618a536dcdb7b73b6": [
+    "MIMDocs\\pam\\step-1-prepare-corp-domain.md"
+  ],
+  "febb446708ba8d8001a4aeabccf57933ae1b6201": [
+    "MIMDocs\\pam\\step-2-prepare-priv-domain-controller.md"
+  ],
+  "a6253665577ade04d7a1c8cdb59696549b7373db": [
+    "MIMDocs\\pam\\step-3-prepare-pam-server.md"
+  ],
+  "0bca00af16d83d2069ed10140add975c01516984": [
+    "MIMDocs\\pam\\step-4-install-mim-components-on-pam-server.md"
+  ],
+  "1260b4e1792bf43a7288866cf3afa41fabe79fe9": [
+    "MIMDocs\\pam\\step-5-establish-trust-between-priv-corp-forests.md"
+  ],
+  "b21e2fed4588572fd1b793c4942860871ae9a51c": [
+    "MIMDocs\\pam\\step-6-transition-group-to-pam.md"
+  ],
+  "e03309249a7040dd7837c4fa5852108743a0f568": [
+    "MIMDocs\\pam\\step-7-elevate-user-access.md"
+  ],
+  "6821944db0a02338c9b5faa221e0c92dffd65cf0": [
+    "MIMDocs\\pam\\tier-model-for-partitioning-administrative-privileges.md"
+  ],
+  "6c59c7c73fd09a041b2fb130b533c516c036d540": [
+    "MIMDocs\\pam\\TOC.md"
+  ],
+  "139787f53f27d020c617f37d9c5c8b0f2de0b64b": [
+    "MIMDocs\\pam\\use-azure-mfa-for-activation.md"
   ]
 }

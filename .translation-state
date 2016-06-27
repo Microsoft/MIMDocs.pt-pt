@@ -13,6 +13,7 @@
         "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\certificate-manager-for-non-administrators.2d024c7e4e9ca80f8293c9ea15d5d5fe93a207d7.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -47,6 +48,7 @@
         "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\certificate-manager-for-software-certificates.e916e294593565422260dde1e4f131163490451c.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -81,6 +83,7 @@
         "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\deploying-mim-password-change-notification-service-on-domain-controller.afdb373626bbd0d122da747e9f586318deea2e70.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -115,6 +118,7 @@
         "MIMDocs\\DeployUse\\install-mim-service-portal.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\install-mim-service-portal.bc0a636322f2b40d28e326917fd5d60c15ff855e.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -149,6 +153,7 @@
         "MIMDocs\\DeployUse\\install-mim-sync.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\install-mim-sync.187fbc84d7198ab90d1445b38ea0a3044b228547.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -183,6 +188,7 @@
         "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -219,6 +225,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-DeploySP1.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\15fff62827350f7c645f5f6a3e027caa8d471a8c.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -255,6 +262,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-DeploySP2.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\1480f345e6fc12e8ad603b50ef2781697be09b97.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -291,6 +299,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-DeployWS2.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\faa4f7f1b6a3337d8dede5d3aff03a218eaa5376.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -327,6 +336,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-DeployWS3.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\319d2a29ee531bb584574825c60b698ab5a63575.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -363,6 +373,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-Hybrid-passwordreset.jpg"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\f21f8cd1fd0c882b8768f543e10487140c67dc1c.jpg",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -399,6 +410,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-Install1.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\654d8d73d70e3a97280711ab65efd5ccdbef7807.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -435,6 +447,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-Install10.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\5f2c0134cddca6319c8df69af780633f3aeef482.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -473,6 +486,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP6.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\5902b5dd9caf9a4505f491bdfd371054709d6135.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -511,6 +525,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP9.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\86552c75a719abf0e4adbe967a98d3a5cf3167c1.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -547,6 +562,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-Install13.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\5ee68a6ebd1a59b06c624da17ed0a27f8fef0dd2.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -585,6 +601,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP15.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\8752c0063eb59f3849d5c8c2834f736b7bdbdf4c.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -623,6 +640,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP17.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\5de3abcdc01ccfbf2cec14641636a1a487cef40d.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -659,6 +677,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-Install2.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\2107373de6a5ad0115d29fd854338f1de1b014ff.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -695,6 +714,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-Install3.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\b3bfc6c071bc0e9e9acd63c595a8e5211dac4892.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -733,6 +753,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM3.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\604aa21115c1fc97046b7db7788d5e2b2a397f95.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -771,6 +792,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM4.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\118d113aaea7645d7b4e43492ea26776ef750d18.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -807,6 +829,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-Install7.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\829797a06946c3fa724e6af395d084858cfa7157.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -843,6 +866,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-account-unlock.JPG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\c8dfc3f1495deeaa1ff2239f44a454c2899358bd.JPG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -879,6 +903,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-accountUnlock.JPG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\50edb5dfa84929fc614b735bcf3536b507655168.JPG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -915,6 +940,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azure-MFA.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\773d7c2a80e98ba6e602103140f6828886458e35.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -951,6 +977,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\05c612cab12ab17981567ac30a24c8f056ac4399.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -987,6 +1014,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-Azureportal-2.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\41e36ef43e62d24a1ffa3c74c585e9b9579e72e2.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1023,6 +1051,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-keepcurrentorsetnewpwd.JPG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\5c7b53097393ddeeb4ae606c968a6d01ac1458bb.JPG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1059,6 +1088,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-ManageButton.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\98580a3dcd4d4d6e166dfaa59af61ae8f9869077.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1095,6 +1125,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-mobilephoneverification.JPG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\cb3fff029779bf2fc3efd96fe3f90f38f2129dc8.JPG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1131,6 +1162,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-pFile.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\1ff0807544bfe5121656e9472e43c792d804af7f.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1167,6 +1199,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-PhoneVerification.JPG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\b6355f089a1e13e5f99415f6a4a6b4b6461043b9.JPG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1203,6 +1236,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-PR1.JPG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\e5ed1583b31bdf6ce64d2e10c6433f851e3a6ca8.JPG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1239,6 +1273,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-problemsloggingin.JPG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\a83ceb5eb5779c23e5a3cac682c6e9c21a23f086.JPG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1275,6 +1310,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-PwdResetAuthNworkflow.jpg"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\7ec434bf74c833488130414bb563ce050dd858dc.jpg",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1311,6 +1347,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-SSPR-workflow.jpg"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\88a42605d95ab1540935a549885dcea0237547bc.jpg",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1347,6 +1384,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM1.PNG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\7a0dcd58442a2d039d0173992124e04205475e68.PNG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1383,6 +1421,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM7.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\90669e138cdb9e8bd3f650e9d7eb28d87d8a6abf.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1419,6 +1458,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgFIM9.PNG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\dc2e89455a4ff0d4c93bb8f51372b324408547eb.PNG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1455,6 +1495,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP1.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\e2495f3a3af2ca7b105187bca71dfeb665cc6135.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1491,6 +1532,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP10.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\b1783547058b69272ea97171d8f75f7b95668d55.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1527,6 +1569,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP2.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\5209ec61770fd5fbf32f21df0f46081d58d5c67e.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1563,6 +1606,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP4.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\e76ee275db2754bc2bef6b739b7a735a10d89fe0.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1599,6 +1643,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP7.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\1f1a18f843216bed4052f09815b6b75fd759cbb9.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1635,6 +1680,7 @@
         "MIMDocs\\DeployUse\\media\\MIM-UpgSP8.PNG"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\a0c86274e483e6f9a8ffd55b1884e70cee24560d.PNG",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1669,6 +1715,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1703,6 +1750,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\microsoft-identity-manager-deploy.44247d56914b6ca85c7193b74b9004ace0e1246d.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1737,6 +1785,7 @@
         "MIMDocs\\DeployUse\\prepare-server-exchange.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\prepare-server-exchange.62b650aec624862b1ad85b574bfdb8525ebc36e5.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1771,6 +1820,7 @@
         "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\prepare-server-sharepoint.ea9bf41d1869c4bf8841649fee7599cbc80b640e.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1805,6 +1855,7 @@
         "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\prepare-server-sql2014.908ce04c42d7be500304a71be06bc4b1acfdd6b7.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1839,6 +1890,7 @@
         "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\prepare-server-ws2012r2.da656f0c9d903e4ab85b248548bd985fcaa0c74a.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1873,6 +1925,7 @@
         "MIMDocs\\DeployUse\\preparing-domain.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1907,6 +1960,7 @@
         "MIMDocs\\DeployUse\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.113860bc4c6a12249fc3a8d5e5f59fce2f8ca102.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1941,6 +1995,7 @@
         "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\working-with-identity-manager-hybrid-reporting.5a9babf73d10bd3782be289eab3b82b139127433.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -1975,6 +2030,7 @@
         "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\working-with-mim-certificate-manager.96aa090a3f47ac4d3cab460f5cd884461f8c2180.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2009,6 +2065,7 @@
         "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\working-with-self-service-password-reset.bcd57dd12a02054bccbba77422a81b03c5e3b624.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2044,6 +2101,7 @@
         "MIMDocs\\Troubleshoot\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.402c587164e5dc6d994d6d89f44517503a7bfa2b.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2078,6 +2136,7 @@
         "MIMDocs\\index.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2112,6 +2171,7 @@
         "MIMDocs\\microsoft-identity-manager-2016-release-notes.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\microsoft-identity-manager-2016-release-notes.bb80432114b9927d6f332b2605274e3406715709.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2146,6 +2206,7 @@
         "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2182,6 +2243,7 @@
         "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\ff89d0e903b04df6182700b474bc3aef1b0ba24d.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2218,6 +2280,7 @@
         "MIMDocs\\PlanDesign\\media\\MIM-topo-multitier-multiservice.png"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\c465fc00bd089b73b86daa72968dd67dab832aee.png",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2252,6 +2315,7 @@
         "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\microsoft-identity-manager-2016-supported-platforms.4b048f6545582058fc7c39478e8dcee91c096f40.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2286,6 +2350,7 @@
         "MIMDocs\\PlanDesign\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.4ef4520be73ef9e7aa69c2f08e700c80a68a239d.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2320,6 +2385,7 @@
         "MIMDocs\\PlanDesign\\topology-considerations.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\topology-considerations.d6cd599c7ba227a86e53f481eef3d2a96ce028cd.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2354,6 +2420,7 @@
         "MIMDocs\\toc.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2388,6 +2455,7 @@
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2422,6 +2490,7 @@
         "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\microsoft-identity-manager-2016.c859ce21f65f43a82f84385a63d9b72e566e0aa6.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2456,6 +2525,7 @@
         "MIMDocs\\Understand\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.cf3c9303083fb125b50bea7db798a930a73afc51.pt-pt.xlf",
       "HandoffFileCommit": "1a952ff58b06bead95f107d6346823c2de665bc8",
       "HandoffDateTime": "2016-04-27T19:56:56.8414934Z",
@@ -2490,6 +2560,7 @@
         "MIMDocs\\DeployUse\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.113860bc4c6a12249fc3a8d5e5f59fce2f8ca102.pt-pt.xlf",
       "HandoffFileCommit": "9e5ea621abe9a210432a40fb116d1339b823b32d",
       "HandoffDateTime": "2016-04-27T22:22:37.237609Z",
@@ -2524,6 +2595,7 @@
         "MIMDocs\\index.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf",
       "HandoffFileCommit": "9e5ea621abe9a210432a40fb116d1339b823b32d",
       "HandoffDateTime": "2016-04-27T22:22:37.237609Z",
@@ -2558,6 +2630,7 @@
         "MIMDocs\\PlanDesign\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.4ef4520be73ef9e7aa69c2f08e700c80a68a239d.pt-pt.xlf",
       "HandoffFileCommit": "9e5ea621abe9a210432a40fb116d1339b823b32d",
       "HandoffDateTime": "2016-04-27T22:22:37.237609Z",
@@ -2592,6 +2665,7 @@
         "MIMDocs\\toc.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.pt-pt.xlf",
       "HandoffFileCommit": "9e5ea621abe9a210432a40fb116d1339b823b32d",
       "HandoffDateTime": "2016-04-27T22:22:37.237609Z",
@@ -2626,6 +2700,7 @@
         "MIMDocs\\Understand\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.cf3c9303083fb125b50bea7db798a930a73afc51.pt-pt.xlf",
       "HandoffFileCommit": "9e5ea621abe9a210432a40fb116d1339b823b32d",
       "HandoffDateTime": "2016-04-27T22:22:37.237609Z",
@@ -2660,6 +2735,7 @@
         "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.436268391a37f93654c5a63fc781f1eae0c91603.pt-pt.xlf",
       "HandoffFileCommit": "49d546786303330e6e5b88ac4f3c8806d6a39225",
       "HandoffDateTime": "2016-06-02T21:15:41.5948819Z",
@@ -2694,6 +2770,7 @@
         "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\capacity-planning-guide.a5b5577289101cd375376319cbd1fa3f32f4d38f.pt-pt.xlf",
       "HandoffFileCommit": "49d546786303330e6e5b88ac4f3c8806d6a39225",
       "HandoffDateTime": "2016-06-02T21:15:41.5948819Z",
@@ -2728,6 +2805,7 @@
         "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\identity-manager-hybrid-reporting-azure.50c26252fc76f6c50be4c477e24cfaf05cf3c4c7.pt-pt.xlf",
       "HandoffFileCommit": "49d546786303330e6e5b88ac4f3c8806d6a39225",
       "HandoffDateTime": "2016-06-02T21:15:41.5948819Z",
@@ -2762,6 +2840,7 @@
         "MIMDocs\\index.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf",
       "HandoffFileCommit": "49d546786303330e6e5b88ac4f3c8806d6a39225",
       "HandoffDateTime": "2016-06-02T21:15:41.5948819Z",
@@ -2796,6 +2875,7 @@
         "MIMDocs\\DeployUse\\preparing-domain.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\preparing-domain.9b77cd90d5739c58d60a5f1157edad1db6f26bb3.pt-pt.xlf",
       "HandoffFileCommit": "49d546786303330e6e5b88ac4f3c8806d6a39225",
       "HandoffDateTime": "2016-06-02T21:15:41.5948819Z",
@@ -2830,6 +2910,7 @@
         "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\install-mim-sync-ad-service.2a07d4547ca2bf0ca43e7ed04fa3bf20de000a33.pt-pt.xlf",
       "HandoffFileCommit": "f299384aecda2fb1ff986214a42558a9fe6c0932",
       "HandoffDateTime": "2016-06-03T18:49:09.3741776Z",
@@ -2864,6 +2945,7 @@
         "MIMDocs\\index.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf",
       "HandoffFileCommit": "f9e272b36c886ef9dca2b84887c641e33abcddcf",
       "HandoffDateTime": "2016-06-03T21:49:15.1011332Z",
@@ -2898,6 +2980,7 @@
         "MIMDocs\\DeployUse\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.113860bc4c6a12249fc3a8d5e5f59fce2f8ca102.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -2932,6 +3015,7 @@
         "MIMDocs\\pam\\configuring-mim-environment-for-pam.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\configuring-mim-environment-for-pam.6c5e61dff50f6c08c87838ff21b1b74adaf21e0a.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -2966,6 +3050,7 @@
         "MIMDocs\\pam\\defining-roles-for-pam.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\defining-roles-for-pam.6070a9a9a05cb8d06b95d60d5a5e88194ef4da70.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3000,6 +3085,7 @@
         "MIMDocs\\pam\\environment-overview.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\environment-overview.bb4de564171ac6e2bf6596116a55ccf27dd4f0f8.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3034,6 +3120,7 @@
         "MIMDocs\\pam\\hardware-software-requirements.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\hardware-software-requirements.1f31099e57fc2b7c2085aeee5c491893b46c9c93.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3068,6 +3155,7 @@
         "MIMDocs\\pam\\high-availability-disaster-recovery-considerations-bastion-environment.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\high-availability-disaster-recovery-considerations-bastion-environment.653fdd9baf4ad465337a2a3b0c87b67f9d67a56a.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3102,6 +3190,7 @@
         "MIMDocs\\pam\\planning-bastion-environment.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\planning-bastion-environment.e20595ec88b31a646dc2435e8927f0ba5ef223f3.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3136,6 +3225,7 @@
         "MIMDocs\\pam\\principles-of-operation.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\principles-of-operation.8db1f353b59421a36c5a15d6934abe99df207c9f.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3170,6 +3260,7 @@
         "MIMDocs\\pam\\privileged-identity-management-for-active-directory-domain-services.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\privileged-identity-management-for-active-directory-domain-services.e2a12990492f5bccc510cae45a3630a3929d7008.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3204,6 +3295,7 @@
         "MIMDocs\\pam\\step-1-prepare-corp-domain.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\step-1-prepare-corp-domain.3299162240531aab6e6a826d154cd65f4f0408ab.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3238,6 +3330,7 @@
         "MIMDocs\\pam\\step-2-prepare-priv-domain-controller.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\step-2-prepare-priv-domain-controller.66ce6c646c01f1b5fedc869c5fd6591c62ca7c39.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3272,6 +3365,7 @@
         "MIMDocs\\pam\\step-3-prepare-pam-server.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\step-3-prepare-pam-server.40d95fbd4a1439bad8c212bee9025658fa021d6f.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3306,6 +3400,7 @@
         "MIMDocs\\pam\\step-4-install-mim-components-on-pam-server.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\step-4-install-mim-components-on-pam-server.4677a6f6312d5d742c28aa62d8b27ad483ddcd27.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3340,6 +3435,7 @@
         "MIMDocs\\pam\\step-5-establish-trust-between-priv-corp-forests.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\step-5-establish-trust-between-priv-corp-forests.fde2d78c7546a64b8b6a7c4e6606df9e68523c62.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3374,6 +3470,7 @@
         "MIMDocs\\pam\\step-6-transition-group-to-pam.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\step-6-transition-group-to-pam.3da4e6e10d0a1601bae157e78307b689be5b4641.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3408,6 +3505,7 @@
         "MIMDocs\\pam\\step-7-elevate-user-access.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\step-7-elevate-user-access.7eb7ad35ff66c63dde2e6574342e5904acd2fc99.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3442,6 +3540,7 @@
         "MIMDocs\\pam\\tier-model-for-partitioning-administrative-privileges.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\tier-model-for-partitioning-administrative-privileges.6639edb68392c9650bb3d50e993b39cabc82789d.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3476,6 +3575,7 @@
         "MIMDocs\\pam\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.415c292cbd208d0c96e050179393e36f72955690.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3510,6 +3610,7 @@
         "MIMDocs\\pam\\use-azure-mfa-for-activation.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\use-azure-mfa-for-activation.08bc8d0c217d3ba482cd2cc8b65beab8fb9d6bfa.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3544,6 +3645,7 @@
         "MIMDocs\\PlanDesign\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.4ef4520be73ef9e7aa69c2f08e700c80a68a239d.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3578,6 +3680,7 @@
         "MIMDocs\\toc.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\toc.6a59cd1e48b1263518d5152d0f44ced431e431a3.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3612,6 +3715,7 @@
         "MIMDocs\\Understand\\TOC.md"
       ],
       "HasMetadata": false,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\TOC.cf3c9303083fb125b50bea7db798a930a73afc51.pt-pt.xlf",
       "HandoffFileCommit": "3db478dc1701cb1a26b30bf91a9d30bfedc8059e",
       "HandoffDateTime": "2016-06-21T23:03:56.3896806Z",
@@ -3646,6 +3750,7 @@
         "MIMDocs\\index.md"
       ],
       "HasMetadata": true,
+      "TranslationType": 0,
       "HandoffFilePath": "ol-handoff\\Microsoft\\MIMDocs-pr.pt-pt\\master\\index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf",
       "HandoffFileCommit": "1712756327edb18d269e960f46143aa6b807add9",
       "HandoffDateTime": "2016-06-23T23:18:48.6166199Z",

@@ -26,6 +26,9 @@
   "b69ea20f375869d4ad08987a08aba05913fd1db1": [
     "MIMDocs\\DeployUse\\prepare-server-exchange.md"
   ],
+  "b144f28b41eb8e02afa44495c0019ccc81022005": [
+    "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
+  ],
   "4333d587041fcfa24620812872e312c6e9dc97d8": [
     "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
   ],
@@ -52,6 +55,10 @@
   ],
   "3a4350e54383dc1098c778090bb29b435082045f": [
     "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
+  ],
+  "260aec3bd3dd61ecfd8abbeb1a01aa9d7126baa8": [
+    "MIMDocs\\GetStarted\\TOC.md",
+    "MIMDocs\\Troubleshoot\\TOC.md"
   ],
   "3036877a4f389967e58c7aa350a9c1fa54ecb5a4": [
     "MIMDocs\\GetStarted\\TOC.md",
@@ -87,6 +94,9 @@
   "b3f3982ade46932b18fb730fe5c16d52cde188a1": [
     "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
   ],
+  "5247cce895344ac6148b735fe550eb16c39103c7": [
+    "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
+  ],
   "d6aaf5372efe39da005d05e8a0f2ea80ad303658": [
     "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
   ],
@@ -111,6 +121,9 @@
   "77e7174e94ea8032c4e57155db489f493ce18177": [
     "MIMDocs\\pam\\hardware-software-requirements.md"
   ],
+  "1d9e005bfb3e26f9a2b818667f14acd3e5239523": [
+    "MIMDocs\\pam\\high-availability-disaster-recovery-considerations-bastion-environment.md"
+  ],
   "44f2b87efeee8088928c94d46aafcfb1eb16008b": [
     "MIMDocs\\pam\\high-availability-disaster-recovery-considerations-bastion-environment.md"
   ],
@@ -120,17 +133,32 @@
   "49f47050703095d402a1514342baf4e928f66c70": [
     "MIMDocs\\pam\\principles-of-operation.md"
   ],
+  "959c92f2e98fe712703ca23d3e38cdec6a8b85dc": [
+    "MIMDocs\\pam\\privileged-identity-management-for-active-directory-domain-services.md"
+  ],
   "2ed625fd9450bebbcb63aab7bad4a727c8b7ee02": [
     "MIMDocs\\pam\\privileged-identity-management-for-active-directory-domain-services.md"
+  ],
+  "7d6888ad4d694ad0ed746598563de32d7c363936": [
+    "MIMDocs\\pam\\step-1-prepare-corp-domain.md"
   ],
   "4d59ec5bb28b6a2f3602628618a536dcdb7b73b6": [
     "MIMDocs\\pam\\step-1-prepare-corp-domain.md"
   ],
+  "62d80222ea85fe5066cfa396b5e5a10bced4d3cd": [
+    "MIMDocs\\pam\\step-2-prepare-priv-domain-controller.md"
+  ],
   "febb446708ba8d8001a4aeabccf57933ae1b6201": [
     "MIMDocs\\pam\\step-2-prepare-priv-domain-controller.md"
   ],
+  "ec65078cea33b73aa9482e831a1870df477c6581": [
+    "MIMDocs\\pam\\step-3-prepare-pam-server.md"
+  ],
   "a6253665577ade04d7a1c8cdb59696549b7373db": [
     "MIMDocs\\pam\\step-3-prepare-pam-server.md"
+  ],
+  "4e0298099dad9b11812d533e23101fb995fe33d5": [
+    "MIMDocs\\pam\\step-4-install-mim-components-on-pam-server.md"
   ],
   "0bca00af16d83d2069ed10140add975c01516984": [
     "MIMDocs\\pam\\step-4-install-mim-components-on-pam-server.md"
@@ -141,14 +169,23 @@
   "b21e2fed4588572fd1b793c4942860871ae9a51c": [
     "MIMDocs\\pam\\step-6-transition-group-to-pam.md"
   ],
+  "ee47c69788a98075372ca62943e0c4b101c5354f": [
+    "MIMDocs\\pam\\step-7-elevate-user-access.md"
+  ],
   "e03309249a7040dd7837c4fa5852108743a0f568": [
     "MIMDocs\\pam\\step-7-elevate-user-access.md"
+  ],
+  "509c05bbda5f0a0b936518fb023000771c45d4f7": [
+    "MIMDocs\\pam\\tier-model-for-partitioning-administrative-privileges.md"
   ],
   "6821944db0a02338c9b5faa221e0c92dffd65cf0": [
     "MIMDocs\\pam\\tier-model-for-partitioning-administrative-privileges.md"
   ],
   "6c59c7c73fd09a041b2fb130b533c516c036d540": [
     "MIMDocs\\pam\\TOC.md"
+  ],
+  "d6f6927eec479c705fd9ef7f33fafdeec05857e0": [
+    "MIMDocs\\pam\\use-azure-mfa-for-activation.md"
   ],
   "139787f53f27d020c617f37d9c5c8b0f2de0b64b": [
     "MIMDocs\\pam\\use-azure-mfa-for-activation.md"

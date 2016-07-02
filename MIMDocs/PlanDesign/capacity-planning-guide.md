@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Guia de planeamento de capacidade | Microsoft Identity Manager
-description: Utilize este guia para compreender as variáveis que devem ser consideradas antes de implementar o 2016 MIM, incluindo os níveis de carga e as decisões de políticas.
-keywords:
+description: "Utilize este guia para compreender as variáveis que devem ser consideradas antes de implementar o 2016 MIM, incluindo os níveis de carga e as decisões de políticas."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0ea8b3d9032a01bd6a6b1faad8ea27d2cb889fc6
+ms.openlocfilehash: 323a875aba14a238aa7cb3a0e6df192729ce53d6
+
 
 ---
 
@@ -41,7 +35,7 @@ Os principais fatores que afetam a capacidade e o desempenho que se podem espera
 | Fator da Estrutura | Considerações |
 | ------------- | -------------- |
 | Topologia | A distribuição dos serviços MIM entre os computadores na rede. |
-| Hardware | O hardware físico e quaisquer especificações de hardware virtualizadas em execução para cada componente do MIM. Isto inclui a CPU, a memória, a placa de rede e a configuração de disco rígido. |
+| Hardware | O hardware físico e quaisquer especificações de hardware virtualizadas em execução para cada componente do MIM. Isto inclui a CPU, a memória, o adaptador de rede e a configuração de disco rígido. |
 | Objetos de configuração de políticas do MIM | O número e o tipo dos objetos de configuração de políticas do MIM, incluindo conjuntos, Regras de Política de Gestão (MPRs) e fluxos de trabalho. |
 | Escala | O número de utilizadores, grupos, grupos calculados e tipos de objetos personalizados, tais como computadores que serão geridos pelo MIM 2016. Além disso, considere a complexidade dos grupos dinâmicos e não se esqueça de ter em consideração o aninhamento de grupos. |
 | Carga | Frequência de utilização. Por exemplo, a frequência esperada para a criação de novos grupos ou utilizadores, a reposição das palavras-passe ou as visitas ao portal num determinado período de tempo. Tenha em atenção que a carga pode variar no decorrer de uma hora, um dia, uma semana ou um ano. Consoante o componente, pode optar por conceber para o pico de carga ou a carga média. |
@@ -100,6 +94,7 @@ A configuração de políticas do MIM também inclui as decisões sobre o aprovi
 - O [Guia de Planeamento da Capacidade do Forefront Identity Manager (FIM) 2010](http://go.microsoft.com/fwlink/?LinkId=200180) transferível fornece mais detalhes sobre uma compilação de teste e os resultados de testes de desempenho.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

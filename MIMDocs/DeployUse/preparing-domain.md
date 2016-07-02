@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configurar um domínio | Microsoft Identity Manager
-description: Criar um controlador de domínio do Active Directory antes de instalar o MIM 2016
-keywords:
+title: "Configurar um domínio | Microsoft Identity Manager"
+description: "Criar um controlador de domínio do Active Directory antes de instalar o MIM 2016"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,22 +10,18 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b2578d50f855486183ae182330bacb688011c273
+ms.openlocfilehash: b84a6c7c7b53a122eefc3846ba93b92b34edb6ce
+
 
 ---
 
 # Configurar um domínio
 
->[!div class="passo a passo"]  
+>[!div class="step-by-step"]  
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
 O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directory (AD). Já deve ter o AD instalado, e certifique-se de que tem um controlador de domínio no seu ambiente para um domínio que possa administrar.
@@ -95,10 +89,11 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     setspn -S MIMSync/mimservername.contoso.local Contoso\MIMSync
     ```
 
->[!div class="passo a passo"]  
+>[!div class="step-by-step"]  
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

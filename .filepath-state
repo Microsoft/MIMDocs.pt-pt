@@ -72,6 +72,9 @@
   "bb3e3abfdc12d78108676d4a9f029531d9df17fd": [
     "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
   ],
+  "4cb419fa58037307e1352dd813e5f9b1767cfac5": [
+    "MIMDocs\\PlanDesign\\TOC.md"
+  ],
   "fccf9b584e84cdd7c72dadded4a0e1126789d7c2": [
     "MIMDocs\\PlanDesign\\TOC.md"
   ],
@@ -185,5 +188,8 @@
   ],
   "139787f53f27d020c617f37d9c5c8b0f2de0b64b": [
     "MIMDocs\\pam\\use-azure-mfa-for-activation.md"
+  ],
+  "e1f18ad9bfc7946a751af0b73bba4faf0689c265": [
+    "MIMDocs\\PlanDesign\\supported-management-agents.md"
   ]
 }

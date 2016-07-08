@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Criar certificados de software | Microsoft Identity Manager
 description: Saiba como utilizar o Gestor de Certificados para criar e renovar certificados de software com modelos de perfil.
-keywords:
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 6b58093744656b9bfa62c1cfcab340ea88e6e168
+
 
 ---
 
@@ -34,7 +28,7 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
 2.  Clique em **Ficheiro** e, em seguida, em **Adicionar/Remover Snap-in**.
 
-3.  Na lista de snap-ins disponíveis, clique em **Modelos de Certificado** e, em seguida, em **Adicionar**.
+3.  Na lista Snap-ins disponíveis, clique em **Modelos de Certificado** e, em seguida, em **Adicionar**.
 
 4.  Agora, os **Modelos de Certificado** encontram-se na Raiz da Consola na MMC. Faça duplo clique para ver todos os modelos de certificado disponíveis.
 
@@ -103,6 +97,7 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 11. Se estiver a utilizar o CM do Smart Card Virtual, terá de desativar os itens de recolha de dados, pois não funciona com a recolha de dados ativada. Desative a recolha de dados para todas as políticas ao clicar na política no painel esquerdo e ao desmarcar a caixa junto a **Item de dados de exemplo** e, em seguida, clique em **Eliminar itens de recolha de dados**. Em seguida, clique em **OK**.
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Microsoft Identity Manager 2016 | Microsoft Identity Manager
-description: Compreenda como funciona o MIM 2016 para criar uma experiência de gestão de identidades mais segura e conveniente na nuvem e no local.
-keywords:
+description: "Compreenda como funciona o MIM 2016 para criar uma experiência de gestão de identidades mais segura e conveniente na nuvem e no local."
+keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
+ms.openlocfilehash: 5247cce895344ac6148b735fe550eb16c39103c7
+
 
 ---
 
@@ -36,21 +30,10 @@ O Microsoft Identity Manager 2016 funciona em conjunto com o Azure para lhe dar 
 ## Privileged Identity Management
 O Privileged Identity Management controla e gere o acesso administrativo ao conceder acesso temporário e baseado em tarefas a recursos confidenciais. Isto significa que pode dar aos utilizadores apenas a permissão necessária, o que reduz as possibilidades de um atacante informático obter acesso administrativo total. Além disso, o Privileged Identity Management extrai e isola as contas administrativas de florestas do Active Directory existentes.
 
-## Plataformas suportadas
-
-O MIM suporta uma lista atualizada de produtos e plataformas, incluindo as pilhas do servidor/Office e plataformas Microsoft mais recentes, SO de Cliente do Windows, SO do Windows Server, SharePoint, SQL e Outlook, especificamente:
-
--   Windows 8.1 com o Internet Explorer 8 e superior
-
--   Windows Server 2012 R2
-
--   SQL 2014
-
--   Outlook 2013
-
--   System Center Service Manager 2012 e 2012 R2
+O MIM suporta uma solução de Privileged Identity Management no local para gerir Active Directors. Para começar, [Utilize o Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services).
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO5-->
 
 

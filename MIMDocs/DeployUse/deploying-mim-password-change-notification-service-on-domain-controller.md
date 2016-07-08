@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Implementar o Serviço de Notificação de Alteração de Palavra-passe | Microsoft Identity Manager
-description: Obtenha os passos para instalar e configurar o Serviço de Notificação de Alteração de Palavra-passe do MIM no controlador de domínio.
-keywords:
+title: "Implementar o Serviço de Notificação de Alteração de Palavra-passe | Microsoft Identity Manager"
+description: "Obtenha os passos para instalar e configurar o Serviço de Notificação de Alteração de Palavra-passe do MIM no controlador de domínio."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 875ed6b96929822ac166a4a262cc8547a4ea3b2a
+ms.openlocfilehash: 85e83b85f047ca2c2648b42ec68b832caae645ee
+
 
 ---
 
@@ -36,7 +30,7 @@ O Serviço de Notificação de Alteração de Palavra-passe (PCNS) é um serviç
 
 3.  Localize o ficheiro *Serviço de Notificação de Alteração de Palavra-passe.msi*, clique com o botão direito do rato no ficheiro e crie um atalho.
 
-4.  Localize o ficheiro de atalho, clique com o botão direito do rato no ficheiro para ver as **Propriedades**.
+4.  Localize o ficheiro de atalho e clique com o botão direito do rato no ficheiro para ver as **Propriedades**.
 
 5.  No campo Destino, adicione o preâmbulo *msiexec.exe /i* antes do caminho para o ficheiro msi e o sufixo *SCHEMAONLY=TRUE* depois do caminho de msi. Por exemplo, se a pasta de configuração for *C:\PCNS*, o comando a executar terá o seguinte aspeto: (tudo numa só linha).
 
@@ -66,6 +60,7 @@ O Serviço de Notificação de Alteração de Palavra-passe (PCNS) é um serviç
 Quando estiver novamente ligado ao servidor DC como um administrador de domínio, aceda a *C:\Programas\Serviço de Notificação de Alteração de Palavra-passe.* Execute o ficheiro *pcnscfg.exe*.
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

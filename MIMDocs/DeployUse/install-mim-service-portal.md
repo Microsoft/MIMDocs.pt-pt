@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Instalar o MIM 2016&#58; Portal e Serviço MIM | Microsoft Identity Manager
-description: Obter os passos para configurar e instalar o Portal e o Serviço MIM do Microsoft Identity Manager 2016
-keywords:
+title: "Instalar o MIM 2016&#58; Portal e Serviço MIM | Microsoft Identity Manager"
+description: "Obter os passos para configurar e instalar o Portal e o Serviço MIM do Microsoft Identity Manager 2016"
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,24 +10,20 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: eb2af412d9638035de591197fa191e990ade0ca1
+
 
 ---
 
 # Instalar o MIM 2016: Portal e Serviço MIM
 
->[!div class="passo a passo"]
-[« Serviço de Sincronização do MIM](install-mim-sync.md)
-[Sincronizar as bases de dados »](install-mim-sync-ad-service.md)
+>[!div class="step-by-step"]
+[«Serviço de Sincronização do MIM](install-mim-sync.md)
+[Sincronizar bases de dados»](install-mim-sync-ad-service.md)
 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
@@ -59,7 +53,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 7. Em **Configurar a ligação ao servidor de e-mail**, introduza o nome do servidor Exchange como **Servidor de E-mail**. Se não tiver um servidor de e-mail configurado, utilize **localhost** como o nome do servidor de e-mail e desmarque as duas caixas de verificação superiores. Clique em **Seguinte**.
 
-    ![Imagem da configuração da ligação ao servidor de e-mail](media/MIM-Install11.png)
+    ![Imagem da configuração da ligação ao servidor de correio](media/MIM-Install11.png)
 
 8. Especifique que pretende gerar um novo certificado autoassinado ou selecione o certificado relevante.
 
@@ -152,11 +146,12 @@ Depois de concluída a instalação, verifique se o Portal do MIM está ativo.
 > [!NOTE]
 > Opcional: nesta fase, pode instalar os suplementos e as extensões do MIM.
 
->[!div class="passo a passo"]  
-[« Serviço de Sincronização do MIM](install-mim-sync.md)
-[Sincronizar as bases de dados »](install-mim-sync-ad-service.md)
+>[!div class="step-by-step"]  
+[«Serviço de Sincronização do MIM](install-mim-sync.md)
+[Sincronizar bases de dados»](install-mim-sync-ad-service.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

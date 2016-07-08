@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configurar um servidor de gestão de identidades&#58; Exchange | Microsoft Identity Manager
+title: "Configurar um servidor de gestão de identidades&#58; Exchange | Microsoft Identity Manager"
 description: Como um passo opcional, implemente o Exchange Server para permitir que o MIM 2016 envie correio e crie caixas de correio.
-keywords:
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,22 +10,18 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
+ms.openlocfilehash: b69ea20f375869d4ad08987a08aba05913fd1db1
+
 
 ---
 
 # Configurar um servidor de gestão de identidades: Exchange
 
->[!div class="passo a passo"]
+>[!div class="step-by-step"]
 [« SharePoint](prepare-server-sharepoint.md)
 [Serviço de Sincronização do MIM »](install-mim-sync.md)
 
@@ -44,11 +38,12 @@ Se pretender configurar o MIM para enviar e receber e-mails ou aprovisionar caix
 
 3. Transferir e instalar a [Versão de avaliação de 180 dias do MS Exchange Server 2013](http://www.microsoft.com/en-us/evalcenter/evaluate-exchange-server-2013)
 
->[!div class="passo a passo"]  
+>[!div class="step-by-step"]  
 [« SharePoint](prepare-server-sharepoint.md)
 [Serviço de Sincronização do MIM »](install-mim-sync.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

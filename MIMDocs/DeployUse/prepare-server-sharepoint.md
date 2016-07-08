@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configurar um servidor de gestão de identidades&#58; SharePoint | Microsoft Identity Manager
-description: Instalar e configurar o SharePoint Foundation para que possa alojar a página do Portal do MIM.
-keywords:
+title: "Configurar um servidor de gestão de identidades&#58; SharePoint | Microsoft Identity Manager"
+description: "Instalar e configurar o SharePoint Foundation para que possa alojar a página do Portal do MIM."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,24 +10,20 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
+ms.openlocfilehash: b144f28b41eb8e02afa44495c0019ccc81022005
+
 
 ---
 
 # Configurar um servidor de gestão de identidades: SharePoint
 
->[!div class="passo a passo"]
+>[!div class="step-by-step"]
 [« SQL Server 2014](prepare-server-sql2014.md)
-[Exchange Server »](prepare-server-exchange.md)
+[ Exchange Server »](prepare-server-exchange.md)
 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
@@ -98,7 +92,8 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
     -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://corpidm.contoso.local
     ```
 
-    > [!NOTE] Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder. Quando concluir, a saída indicará o URL do novo portal. Mantenha a janela do **Shell de Gestão do SharePoint 2013** aberta para consultar mais tarde.
+    > [!NOTE] 
+    > Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder. Quando concluir, a saída indicará o URL do novo portal. Mantenha a janela do **Shell de Gestão do SharePoint 2013** aberta para consultar mais tarde.
 
 2. Inicie o Shell de Gestão do SharePoint 2013 e execute o seguinte script do PowerShell para criar uma **Coleção de Sites do SharePoint** associada a essa aplicação Web.
 
@@ -112,7 +107,8 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
   $s.CompatibilityLevel
   ```
 
-  > [!NOTE] Verifique se o resultado da variável *NívelDeCompatibilidade* é “14”. Se o resultado for “15”, significa que a coleção de sites não foi criada para a versão da experiência de 2010; elimine a coleção de sites e reformule-a.
+  > [!NOTE] 
+  > Verifique se o resultado da variável *NívelDeCompatibilidade* é “14”. Se o resultado for “15”, significa que a coleção de sites não foi criada para a versão da experiência de 2010; elimine a coleção de sites e reformule-a.
 
 3. Desative o **Viewstate do Lado do Servidor do SharePoint** e a tarefa do SharePoint “Tarefa de Análise do Estado de Funcionamento (Hora a Hora, Temporizador do Microsoft SharePoint Foundation, Todos os Servidores)” ao executar os seguintes comandos do PowerShell no **Shell de Gestão do SharePoint 2013**:
 
@@ -135,11 +131,12 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
 7. Abra o programa **Ferramentas Administrativas**, navegue até **Serviços**, localize o serviço de Administração do SharePoint e inicie-o se ainda não estiver em execução.
 
->[!div class="passo a passo"]  
+>[!div class="step-by-step"]  
 [« SQL Server 2014](prepare-server-sql2014.md)
-[Exchange Server »](prepare-server-exchange.md)
+[ Exchange Server »](prepare-server-exchange.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO5-->
 
 

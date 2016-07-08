@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Configurar um servidor de gestão de identidades&#58; Windows Server 2012 R2 | Microsoft Identity Manager
-description: Obter os passos e requisitos mínimos para preparar o Windows Server 2012 RS para funcionar com o MIM 2016.
-keywords:
+title: "Configurar um servidor de gestão de identidades&#58; Windows Server 2012 R2 | Microsoft Identity Manager"
+description: "Obter os passos e requisitos mínimos para preparar o Windows Server 2012 RS para funcionar com o MIM 2016."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,22 +10,18 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: af9f7f75f19bb29f2e29577c787252f6b7fabb7d
+ms.openlocfilehash: cd4ac84af4e5416512cf546a5d23b342ebe13c39
+
 
 ---
 
 # Configurar um servidor de gestão de identidades: Windows Server 2012 R2
 
->[!div class="passo a passo"]
+>[!div class="step-by-step"]
 [« Preparar um domínio](preparing-domain.md)
 [SQL Server 2014 »](prepare-server-sql2014.md)
 
@@ -111,11 +105,12 @@ Configure a política de segurança do servidor para permitir que as contas rece
     iisreset /START
     ```
 
->[!div class="passo a passo"]  
+>[!div class="step-by-step"]  
 [« Preparar um domínio](preparing-domain.md)
 [SQL Server 2014 »](prepare-server-sql2014.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

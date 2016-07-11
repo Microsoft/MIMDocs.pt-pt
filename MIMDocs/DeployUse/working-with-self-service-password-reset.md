@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Trabalhar com a Reposição Personalizada de Palavra-passe | Microsoft Identity Manager
-description: Veja as novidades da Reposição Personalizada de Palavra-passe no MIM 2016, incluindo como o SSPR funciona com a autenticação multifator. 
-keywords:
+title: "Trabalhar com a Reposição Personalizada de Palavra-passe | Microsoft Identity Manager"
+description: "Veja as novidades da Reposição Personalizada de Palavra-passe no MIM 2016, incluindo como o SSPR funciona com a autenticação multifator."
+keywords: 
 author: kgremban
 manager: stevenpo
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mwahl
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
+ms.openlocfilehash: 3a4350e54383dc1098c778090bb29b435082045f
+
 
 ---
 
@@ -211,6 +205,7 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
     ![Imagem de Reposição de Palavra-passe do Assistente de Início de Sessão do MIM](media/MIM-SSPR-PR1.JPG)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -5,9 +5,7 @@
   "docsets_to_publish": [
     {
       "docset_name": "MIMDeployUse",
-      "build_source_folder": null,
       "build_output_subfolder": "/microsoft-identity-manager/deploy-use",
-      "build_entry_point": "docs.ps1",
       "locale": "pt-pt",
       "version": 0,
       "open_to_public_contributors": false,
@@ -15,13 +13,12 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      }
+      },
+      "build_entry_point": "docs.ps1"
     },
     {
       "docset_name": "MIMdevelop",
-      "build_source_folder": null,
       "build_output_subfolder": "/microsoft-identity-manager/develop",
-      "build_entry_point": "docs.ps1",
       "locale": "pt-pt",
       "version": 0,
       "open_to_public_contributors": false,
@@ -29,13 +26,12 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      }
+      },
+      "build_entry_point": "docs.ps1"
     },
     {
       "docset_name": "MIMTroubleshoot",
-      "build_source_folder": null,
       "build_output_subfolder": "/microsoft-identity-manager/troubleshoot",
-      "build_entry_point": "docs.ps1",
       "locale": "pt-pt",
       "version": 0,
       "open_to_public_contributors": false,
@@ -43,13 +39,12 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      }
+      },
+      "build_entry_point": "docs.ps1"
     },
     {
       "docset_name": "MIMGetStarted",
-      "build_source_folder": null,
       "build_output_subfolder": "/microsoft-identity-manager/get-started",
-      "build_entry_point": "docs.ps1",
       "locale": "pt-pt",
       "version": 0,
       "open_to_public_contributors": false,
@@ -57,13 +52,12 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      }
+      },
+      "build_entry_point": "docs.ps1"
     },
     {
       "docset_name": "MIMDocs",
-      "build_source_folder": null,
       "build_output_subfolder": "/microsoft-identity-manager",
-      "build_entry_point": "docs.ps1",
       "locale": "pt-pt",
       "version": 0,
       "open_to_public_contributors": false,
@@ -71,13 +65,12 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      }
+      },
+      "build_entry_point": "docs.ps1"
     },
     {
       "docset_name": "MIMPlanDesign",
-      "build_source_folder": null,
       "build_output_subfolder": "/microsoft-identity-manager/plan-design",
-      "build_entry_point": "docs.ps1",
       "locale": "pt-pt",
       "version": 0,
       "open_to_public_contributors": false,
@@ -85,13 +78,12 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      }
+      },
+      "build_entry_point": "docs.ps1"
     },
     {
       "docset_name": "MIMUnderstand",
-      "build_source_folder": null,
       "build_output_subfolder": "/microsoft-identity-manager/understand-explore",
-      "build_entry_point": "docs.ps1",
       "locale": "pt-pt",
       "version": 0,
       "open_to_public_contributors": false,
@@ -99,8 +91,16 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
-      }
+      },
+      "build_entry_point": "docs.ps1"
     }
   ],
-  "notification_subscribers": null
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pt-pt",
+      "branch": "master"
+    }
+  ]
 }

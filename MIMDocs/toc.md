@@ -5,6 +5,6 @@
 # [Referência para Programadores](/reference/microsoft-identity-manager-2016-developer-reference.md)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

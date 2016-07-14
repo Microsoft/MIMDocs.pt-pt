@@ -37,10 +37,11 @@ Estes passos são apresentados para que possa começar do zero e criar um ambien
 
 7.  Demonstram a utilização de pedidos, receções e execuções de acesso elevado privilegiado a um recurso protegido.
 
->[!div class="step-by-step"] [ Iniciar »](step-1-prepare-corp-domain.md)
+>[!div class="step-by-step"]
+[[!div class="step-by-step"] [ Iniciar »](step-1-prepare-corp-domain.md)](step-1-prepare-corp-domain.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

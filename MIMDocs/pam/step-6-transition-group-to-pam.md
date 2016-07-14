@@ -20,7 +20,8 @@ ms.openlocfilehash: b21e2fed4588572fd1b793c4942860871ae9a51c
 
 # Passo 6 - Transição de um grupo o Privileged Access Management
 
->[!div class="step-by-step"] [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"] [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [Passo 7 »](step-7-elevate-user-access.md)
 
 A criação da conta com privilégios na floresta PRIV é efetuada utilizando cmdlets do PowerShell. Estes cmdlets executam as seguintes funções:
@@ -82,11 +83,12 @@ Os cmdlets devem ser executados uma vez para cada grupo e uma vez para cada memb
 
 Se pretender demonstrar que direitos de acesso de múltiplas florestas são eficazes para a conta de administrador do utilizador, continue para o passo seguinte.
 
->[!div class="step-by-step"] [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)
+>[!div class="step-by-step"]
+[!div class="step-by-step"] [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [Passo 7 »](step-7-elevate-user-access.md)
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

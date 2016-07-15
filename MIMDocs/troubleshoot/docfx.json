@@ -1,0 +1,39 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "microsoft-identity-manager/troubleshoot/**"
+        ],
+        "src": null,
+        "dest": null
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "microsoft-identity-manager/troubleshoot/**"
+        ],
+        "src": null,
+        "dest": null
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {},
+    "fileMetadata": {},
+    "template": [
+      "docs.html"
+    ],
+    "dest": "microsoft-identity-manager/troubleshoot"
+  }
+}

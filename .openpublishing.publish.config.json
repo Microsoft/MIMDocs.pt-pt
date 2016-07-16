@@ -1,106 +1,83 @@
 {
-  "build_entry_point": "",
+  "build_entry_point": "docs.ps1",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "MIMDeployUse",
-      "build_source_folder": null,
-      "build_output_subfolder": "/microsoft-identity-manager/deploy-use",
-      "build_entry_point": "docs.ps1",
-      "locale": "pt-pt",
-      "version": 0,
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      }
-    },
-    {
-      "docset_name": "MIMdevelop",
-      "build_source_folder": null,
-      "build_output_subfolder": "/microsoft-identity-manager/develop",
-      "build_entry_point": "docs.ps1",
-      "locale": "pt-pt",
-      "version": 0,
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      }
-    },
-    {
-      "docset_name": "MIMTroubleshoot",
-      "build_source_folder": null,
-      "build_output_subfolder": "/microsoft-identity-manager/troubleshoot",
-      "build_entry_point": "docs.ps1",
-      "locale": "pt-pt",
-      "version": 0,
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      }
-    },
-    {
-      "docset_name": "MIMGetStarted",
-      "build_source_folder": null,
-      "build_output_subfolder": "/microsoft-identity-manager/get-started",
-      "build_entry_point": "docs.ps1",
-      "locale": "pt-pt",
-      "version": 0,
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      }
-    },
-    {
       "docset_name": "MIMDocs",
-      "build_source_folder": null,
-      "build_output_subfolder": "/microsoft-identity-manager",
-      "build_entry_point": "docs.ps1",
+      "build_output_subfolder": "MIMDocs",
       "locale": "pt-pt",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      }
-    },
-    {
-      "docset_name": "MIMPlanDesign",
-      "build_source_folder": null,
-      "build_output_subfolder": "/microsoft-identity-manager/plan-design",
-      "build_entry_point": "docs.ps1",
-      "locale": "pt-pt",
-      "version": 0,
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
+        "Conceptual": "Content"
       }
     },
     {
       "docset_name": "MIMUnderstand",
-      "build_source_folder": null,
-      "build_output_subfolder": "/microsoft-identity-manager/understand-explore",
-      "build_entry_point": "docs.ps1",
+      "build_output_subfolder": "MIMDocs/Understand",
       "locale": "pt-pt",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMPlanDesign",
+      "build_output_subfolder": "MIMDocs/PlanDesign",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMGetStarted",
+      "build_output_subfolder": "MIMDocs/GetStarted",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMDeployUse",
+      "build_output_subfolder": "MIMDocs/DeployUse",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMTroubleshoot",
+      "build_output_subfolder": "MIMDocs/Troubleshoot",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
       }
     }
   ],
-  "notification_subscribers": null
+  "notification_subscribers": [
+    ""
+  ],
+  "branches_to_filter": [
+    "master-oldev"
+  ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/MIMDocs.pt-pt",
+  "git_repository_branch_open_to_public_contributors": "live",
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pt-pt",
+      "branch": "master"
+    }
+  ]
 }

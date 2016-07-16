@@ -1,0 +1,156 @@
+{
+  "50c0edd60abfa6550cb5a873d32a842e8c099811": [
+    "MIMDocs\\DeployUse\\certificate-manager-for-non-administrators.md"
+  ],
+  "6b58093744656b9bfa62c1cfcab340ea88e6e168": [
+    "MIMDocs\\DeployUse\\certificate-manager-for-software-certificates.md"
+  ],
+  "85e83b85f047ca2c2648b42ec68b832caae645ee": [
+    "MIMDocs\\DeployUse\\deploying-mim-password-change-notification-service-on-domain-controller.md"
+  ],
+  "eb2af412d9638035de591197fa191e990ade0ca1": [
+    "MIMDocs\\DeployUse\\install-mim-service-portal.md"
+  ],
+  "8a99b3a291d2b145f453732a72244c43f9c535d6": [
+    "MIMDocs\\DeployUse\\install-mim-sync.md"
+  ],
+  "a095f58b7f95000db9fe385e53d09c62fb109dc0": [
+    "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
+  ],
+  "f4e94980c6a03b08221fd46e19c421cce226086d": [
+    "MIMDocs\\DeployUse\\install-mim-sync-ad-service.md"
+  ],
+  "24a7bf5bfb0a7450becd08be6743ed7ab1755559": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md"
+  ],
+  "a56ead9777f1dad1aa0d214a506cf1242f51e167": [
+    "MIMDocs\\DeployUse\\microsoft-identity-manager-deploy.md"
+  ],
+  "b69ea20f375869d4ad08987a08aba05913fd1db1": [
+    "MIMDocs\\DeployUse\\prepare-server-exchange.md"
+  ],
+  "b144f28b41eb8e02afa44495c0019ccc81022005": [
+    "MIMDocs\\DeployUse\\prepare-server-sharepoint.md"
+  ],
+  "2c0ff0bdbba4bcf979def8d5c7aa381947d6cc87": [
+    "MIMDocs\\DeployUse\\prepare-server-sql2014.md"
+  ],
+  "cd4ac84af4e5416512cf546a5d23b342ebe13c39": [
+    "MIMDocs\\DeployUse\\prepare-server-ws2012r2.md"
+  ],
+  "b84a6c7c7b53a122eefc3846ba93b92b34edb6ce": [
+    "MIMDocs\\DeployUse\\preparing-domain.md"
+  ],
+  "15f742d950ce73c665c5c7c1644a23153d6aa363": [
+    "MIMDocs\\DeployUse\\TOC.md"
+  ],
+  "e2d0bd6120628d4fd2a14718fc205cde976c7785": [
+    "MIMDocs\\DeployUse\\working-with-identity-manager-hybrid-reporting.md"
+  ],
+  "3e0e6cea0b268836bb6347e81694deec93320ce3": [
+    "MIMDocs\\DeployUse\\working-with-mim-certificate-manager.md"
+  ],
+  "3a4350e54383dc1098c778090bb29b435082045f": [
+    "MIMDocs\\DeployUse\\working-with-self-service-password-reset.md"
+  ],
+  "260aec3bd3dd61ecfd8abbeb1a01aa9d7126baa8": [
+    "MIMDocs\\GetStarted\\TOC.md",
+    "MIMDocs\\Troubleshoot\\TOC.md"
+  ],
+  "e3e755779dfa60f0f5b2af0d4aae25de6b07afa6": [
+    "MIMDocs\\index.md"
+  ],
+  "f589140e0feac52474256e7ab29b9d3a7a36c5ec": [
+    "MIMDocs\\index.md"
+  ],
+  "12f245624e644b12825239e378a26752f7a86846": [
+    "MIMDocs\\microsoft-identity-manager-2016-release-notes.md"
+  ],
+  "323a875aba14a238aa7cb3a0e6df192729ce53d6": [
+    "MIMDocs\\PlanDesign\\capacity-planning-guide.md"
+  ],
+  "bb3e3abfdc12d78108676d4a9f029531d9df17fd": [
+    "MIMDocs\\PlanDesign\\microsoft-identity-manager-2016-supported-platforms.md"
+  ],
+  "4cb419fa58037307e1352dd813e5f9b1767cfac5": [
+    "MIMDocs\\PlanDesign\\TOC.md"
+  ],
+  "e33a08d77a0b5c422cdbc8c19516b55df980a2c6": [
+    "MIMDocs\\PlanDesign\\topology-considerations.md"
+  ],
+  "84a2f5e4796c1d7e0a407cfc4a336de1bf65c5f3": [
+    "MIMDocs\\toc.md"
+  ],
+  "511bb7e106b832056f9743419fe24c066366090a": [
+    "MIMDocs\\toc.md"
+  ],
+  "b3f3982ade46932b18fb730fe5c16d52cde188a1": [
+    "MIMDocs\\Understand\\identity-manager-hybrid-reporting-azure.md"
+  ],
+  "5247cce895344ac6148b735fe550eb16c39103c7": [
+    "MIMDocs\\Understand\\microsoft-identity-manager-2016.md"
+  ],
+  "0a32b3c5b574f121bcd34d97a9430d0dfd553ca8": [
+    "MIMDocs\\Understand\\TOC.md"
+  ],
+  "c9f2cf2ba1f42ea1513ae38d8089839d85ae5553": [
+    "MIMDocs\\pam\\configuring-mim-environment-for-pam.md"
+  ],
+  "7ba6f744f7fb7a1c5052b14669aa3de2cd10ddbb": [
+    "MIMDocs\\pam\\defining-roles-for-pam.md"
+  ],
+  "a01cb2e1df52f3157b3d84a4eab837cececfbe1b": [
+    "MIMDocs\\pam\\environment-overview.md"
+  ],
+  "77e7174e94ea8032c4e57155db489f493ce18177": [
+    "MIMDocs\\pam\\hardware-software-requirements.md"
+  ],
+  "1d9e005bfb3e26f9a2b818667f14acd3e5239523": [
+    "MIMDocs\\pam\\high-availability-disaster-recovery-considerations-bastion-environment.md"
+  ],
+  "0ed48d43825e1a876c4d96cafcb6c17cac26610f": [
+    "MIMDocs\\pam\\planning-bastion-environment.md"
+  ],
+  "49f47050703095d402a1514342baf4e928f66c70": [
+    "MIMDocs\\pam\\principles-of-operation.md"
+  ],
+  "959c92f2e98fe712703ca23d3e38cdec6a8b85dc": [
+    "MIMDocs\\pam\\privileged-identity-management-for-active-directory-domain-services.md"
+  ],
+  "7d6888ad4d694ad0ed746598563de32d7c363936": [
+    "MIMDocs\\pam\\step-1-prepare-corp-domain.md"
+  ],
+  "62d80222ea85fe5066cfa396b5e5a10bced4d3cd": [
+    "MIMDocs\\pam\\step-2-prepare-priv-domain-controller.md"
+  ],
+  "ec65078cea33b73aa9482e831a1870df477c6581": [
+    "MIMDocs\\pam\\step-3-prepare-pam-server.md"
+  ],
+  "4e0298099dad9b11812d533e23101fb995fe33d5": [
+    "MIMDocs\\pam\\step-4-install-mim-components-on-pam-server.md"
+  ],
+  "1260b4e1792bf43a7288866cf3afa41fabe79fe9": [
+    "MIMDocs\\pam\\step-5-establish-trust-between-priv-corp-forests.md"
+  ],
+  "b21e2fed4588572fd1b793c4942860871ae9a51c": [
+    "MIMDocs\\pam\\step-6-transition-group-to-pam.md"
+  ],
+  "1f4627bfd1616c2fd5b6a6115ea892801c381dc0": [
+    "MIMDocs\\pam\\step-7-elevate-user-access.md"
+  ],
+  "ee47c69788a98075372ca62943e0c4b101c5354f": [
+    "MIMDocs\\pam\\step-7-elevate-user-access.md"
+  ],
+  "509c05bbda5f0a0b936518fb023000771c45d4f7": [
+    "MIMDocs\\pam\\tier-model-for-partitioning-administrative-privileges.md"
+  ],
+  "6c59c7c73fd09a041b2fb130b533c516c036d540": [
+    "MIMDocs\\pam\\TOC.md"
+  ],
+  "d6f6927eec479c705fd9ef7f33fafdeec05857e0": [
+    "MIMDocs\\pam\\use-azure-mfa-for-activation.md"
+  ],
+  "e1f18ad9bfc7946a751af0b73bba4faf0689c265": [
+    "MIMDocs\\PlanDesign\\supported-management-agents.md"
+  ]
+}

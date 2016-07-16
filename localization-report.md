@@ -9,9 +9,9 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 4
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 3
 [ In Sync Handback Files ](#insync-handback-success-list)| 44
-[ Ignored Files ](#ignored-list)| 157
+[ Ignored Files ](#ignored-list)| 158
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
 
@@ -128,7 +128,6 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [MIMDocs\DeployUse\install-mim-sync-ad-service.md](https://github.com/Microsoft/MIMDocs-pr/blob/a63ee7c239fd47bf78f6ff60ca516a612753539d/MIMDocs/DeployUse/install-mim-sync-ad-service.md) | OutofSyncHandedBackSuccess | [Details](#a095f58b7f95000db9fe385e53d09c62fb109dc010)
- [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/6b6e324c2c2400145573c00c964c69d01ecf7e39/MIMDocs/index.md) | OutofSyncHandedBackSuccess | [Details](#e3e755779dfa60f0f5b2af0d4aae25de6b07afa680)
  [MIMDocs\pam\step-7-elevate-user-access.md](https://github.com/Microsoft/MIMDocs-pr/blob/2247e05242dedf23a59e41f75d2acbfd5f59d1e7/MIMDocs/pam/step-7-elevate-user-access.md) | OutofSyncHandedBackSuccess | [Details](#1f4627bfd1616c2fd5b6a6115ea892801c381dc0236)
  [MIMDocs\toc.md](https://github.com/Microsoft/MIMDocs-pr/blob/3b6b7df0a2836f23795c5bc6d5af6c561d361331/MIMDocs/toc.md) | OutofSyncHandedBackSuccess | [Details](#84a2f5e4796c1d7e0a407cfc4a336de1bf65c5f3288)
 
@@ -195,6 +194,7 @@
  [MIMDocs\GetStarted\docfx.json](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/GetStarted/docfx.json) | Ignored | [Details](#e49c9fcfca51a89feed10090d42d8a94a1630fb976)
  [MIMDocs\GetStarted\md.style](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/GetStarted/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda77)
  [MIMDocs\GetStarted\media\150x150.png](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/GetStarted/media/150x150.png) | Ignored | [Details](#84421bf7f4ba657e685239fb27f4798a46485f7178)
+ [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/index.md) | Ignored | [Details](#479e4d5a1b21ea51b871257458618aca2407d35d80)
  [MIMDocs\md.style](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/md.style) | Ignored | [Details](#755db60abb7859af5065e2c5ddfbfc6cfb7aeeda81)
  [MIMDocs\media\150x150.png](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/media/150x150.png) | Ignored | [Details](#84421bf7f4ba657e685239fb27f4798a46485f7182)
  [MIMDocs\media\AzureWebsiteIcons-enroll.png](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/media/AzureWebsiteIcons-enroll.png) | Ignored | [Details](#5e9287dcfe1e1fad1a9320d535b75ce74b5275ed83)
@@ -1355,19 +1355,16 @@
 * Handback Datetime: 2016-07-13 08:52:50
 * [Back to Top](#report-top)
 
-##### <a name='e3e755779dfa60f0f5b2af0d4aae25de6b07afa680'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/6b6e324c2c2400145573c00c964c69d01ecf7e39/MIMDocs/index.md)
-* Status: OutofSyncHandedBackSuccess
+##### <a name='479e4d5a1b21ea51b871257458618aca2407d35d80'></a> Source: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/index.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf](https://github.com/Microsoft/EM.handoff/blob/958371cd9393b6b0fdb0fb336603f4a897cc88ee/ol-handoff/Microsoft/MIMDocs-pr.pt-pt/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf)
-* Handoff Datetime: 2016-07-11 20:30:38
-* Handoff Reason: Include
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [MIMDocs\index.md](https://github.com/Microsoft/MIMDocs-pr.pt-pt/blob/b156211ac58c6795b5213b44e78fbb3bc753fa02/MIMDocs/index.md)
-* Current Handback File: [index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf](https://github.com/Microsoft/EM.handback/blob/9f8b162341bc4b947746ed0203339c8407262867/ol-handback/Microsoft/MIMDocs-pr.pt-pt/master/index.a54b2324d63a6d513b6900195023b9a8089553b4.pt-pt.xlf)
-* Current Handback Datetime: 2016-07-13 08:52:50
 * [Back to Top](#report-top)
 
 ##### <a name='755db60abb7859af5065e2c5ddfbfc6cfb7aeeda81'></a> Source: [MIMDocs\md.style](https://github.com/Microsoft/MIMDocs-pr/blob/7ed9d23662455d08442de01193153ce1b4d89008/MIMDocs/md.style)

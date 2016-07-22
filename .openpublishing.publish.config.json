@@ -1,0 +1,83 @@
+{
+  "build_entry_point": "docs.ps1",
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "docsets_to_publish": [
+    {
+      "docset_name": "MIMDocs",
+      "build_output_subfolder": "MIMDocs",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMUnderstand",
+      "build_output_subfolder": "MIMDocs/Understand",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMPlanDesign",
+      "build_output_subfolder": "MIMDocs/PlanDesign",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMGetStarted",
+      "build_output_subfolder": "MIMDocs/GetStarted",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMDeployUse",
+      "build_output_subfolder": "MIMDocs/DeployUse",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
+      "docset_name": "MIMTroubleshoot",
+      "build_output_subfolder": "MIMDocs/Troubleshoot",
+      "locale": "pt-pt",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    }
+  ],
+  "notification_subscribers": [
+    ""
+  ],
+  "branches_to_filter": [
+    "master-oldev"
+  ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/MIMDocs.pt-pt",
+  "git_repository_branch_open_to_public_contributors": "live",
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pt-pt",
+      "branch": "master"
+    }
+  ]
+}

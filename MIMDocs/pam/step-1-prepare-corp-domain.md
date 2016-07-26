@@ -1,10 +1,10 @@
 ---
-title: "Passo 1 – preparar o anfitrião e o domínio CORP | Microsoft Identity Manager"
-description: 
+title: "Implementação PAM Passo 1 – domínio CORP| Microsoft Identity Manager"
+description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido por Privileged Identity Manager"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/10/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 7d6888ad4d694ad0ed746598563de32d7c363936
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 9a2fafa86c5c928339ff8d7ad1593472046ccb98
 
 
 ---
@@ -94,7 +94,7 @@ Em alguns casos o grupo já pode existir - isto é normal se o domínio também 
 
 Se tiver criado um novo domínio CORP, deve criar utilizadores e grupos adicionais para demonstrar o cenário de PAM. O utilizador e o grupo para fins de demonstração não devem ser administradores de domínio ou controlados pelas definições de adminSDHolder no AD.
 
-> [!NOTE] 
+> [!NOTE]
 > Se já tiver um domínio que irá utilizar como o domínio CORP e tem um utilizador e um grupo que pode utilizar para fins de demonstração, pode saltar para a secção [Configurar a auditoria](#configure-auditing).
 
 Vamos criar um grupo de segurança denominado *CorpAdmins* e um utilizador com o nome *Jen*. Pode utilizar nomes diferentes se desejar.
@@ -133,9 +133,9 @@ Para cada domínio, inicie sessão no controlador de domínio como um administra
 
 4. Na janela Editor de Gestão de Políticas de Grupo, na árvore da Política de Controladores de Domínio Predefinida, navegue para **Configuração do Computador** > **Políticas** > **Definições do Windows** > **Definições de Segurança** > **Políticas Locais** > **Política de Auditoria**.
 
-5. No painel de detalhes, clique com o botão direito do rato em **Gestão de contas de auditoria** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e **OK**.
+5. No painel de detalhes, clique com o botão direito do rato em **Gestão de contas de auditoria** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e em **OK**.
 
-6. No painel de detalhes, clique com o botão direito do rato em **Acesso de serviço de diretório de auditoria** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e **OK**.
+6. No painel de detalhes, clique com o botão direito do rato em **Auditar acesso ao serviço de diretórios** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e **OK**.
 
 7. Feche a janela Editor de Gestão de Políticas de Grupo e a janela Gestão de Políticas de Grupo.
 
@@ -167,7 +167,7 @@ Esta ação irá reiniciar o controlador de domínio, CORPDC. Para obter mais in
 
 Se ainda não tiver um computador de estação de trabalho associado ao domínio, siga estas instruções para preparar um.  
 
-> [!NOTE] 
+> [!NOTE]
 > Se já tiver uma estação de trabalho associada ao domínio, avance para [Criar um recurso para fins de demonstração](#create-a-resource-for-demonstration-purposes).
 
 ### Instalar o Windows 8.1 ou Windows 10 Enterprise como uma VM
@@ -215,6 +215,6 @@ No próximo passo, irá preparar o controlador de domínio do PRIV.
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

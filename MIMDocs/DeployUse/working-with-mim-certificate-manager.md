@@ -1,10 +1,10 @@
 ---
-title: Trabalhar com o Gestor de Certificados do MIM | Microsoft Identity Manager
+title: Gestor de Certificados do MIM | Microsoft Identity Manager
 description: "Saiba como implementar a aplicação Gestor de Certificados para permitir aos utilizadores gerirem os respetivos direitos de acesso."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: 3e0e6cea0b268836bb6347e81694deec93320ce3
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
 
 
 ---
@@ -256,6 +256,6 @@ Ao configurar a aplicação CM, no Centro de Transferências, transfira o fichei
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

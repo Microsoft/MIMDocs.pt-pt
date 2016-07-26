@@ -1,10 +1,10 @@
 ---
-title: "Descrição geral do Ambiente | Microsoft Identity Manager"
-description: 
+title: "Descrição geral do ambiente PAM | Microsoft Identity Manager"
+description: "Localizar o número e a configuração necessários de máquinas virtuais a implementar Privileged Access Management com êxito"
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,15 +12,16 @@ ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: b8af77d2354428da19d91d5f02b490012835f544
-ms.openlocfilehash: a01cb2e1df52f3157b3d84a4eab837cececfbe1b
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 3057618c609ed251efe1f6cc6b2d3694ac61eafd
 
 
 ---
 
-# Descrição geral do Ambiente
+# Descrição geral do ambiente
 
-PAM trabalha com as máquinas virtuais (VMs) com unidades separadas que estão ligadas entre si numa rede partilhada. Estas máquinas virtuais podem ser alojadas pelo Windows 8.1, pelo Windows Server 2012 R2 ou por outras plataformas de sistema operativo.
+Privileged Access Management trabalha com as máquinas virtuais (VMs) com unidades separadas que estão ligadas entre si numa rede partilhada. Estas máquinas virtuais podem ser alojadas pelo Windows 8.1, pelo Windows Server 2012 R2 ou por outras plataformas de sistema operativo.
 
 ![Servidores de PAM: relações e plataformas suportadas - diagrama](media/pam-test-lab-architecture.png)
 
@@ -33,6 +34,6 @@ As unidades onde as imagens de disco da máquina virtual serão armazenadas nece
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

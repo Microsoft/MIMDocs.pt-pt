@@ -1,10 +1,10 @@
 ---
-title: "Passo 2 - Preparar o controlador de domínio PRIV | Microsoft Identity Manager"
-description: 
+title: "Implementação PAM passo 2 – PRIV DC | Microsoft Identity Manager"
+description: "Prepare o controlador de domínio PRIV, que irá fornecer o ambiente de bastião onde está o Privileged Access Management está isolada."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 62d80222ea85fe5066cfa396b5e5a10bced4d3cd
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 048a17c6b8150501185b7a13c3d2cb292791c9e8
 
 
 ---
@@ -221,7 +221,7 @@ Com o PowerShell no PRIVDC, configure o reencaminhamento do nome DNS para que o 
   Add-DnsServerConditionalForwarderZone –name "contoso.local" –masterservers 10.1.1.31
   ```
 
-> [!NOTE] 
+> [!NOTE]
 > As outras florestas também têm de estar preparadas para encaminhar consultas DNS da floresta PRIV para este controlador de domínio.  Se tiver várias florestas do Active Directory existentes, tem também de adicionar um reencaminhador condicional de DNS a cada uma dessas florestas.
 
 ### Configurar o Kerberos
@@ -235,7 +235,7 @@ Com o PowerShell no PRIVDC, configure o reencaminhamento do nome DNS para que o 
   setspn -S FIMService/pamsrv PRIV\MIMService
   ```
 
-> [!NOTE] 
+> [!NOTE]
 > Os passos seguintes deste documento descrevem como instalar os componentes do servidor MIM 2016 num único computador. Se planear adicionar outro servidor para elevada disponibilidade, precisará de configuração de Kerberos adicional, conforme descrito em [FIM 2010: Kerberos Authentication Setup (FIM 2010: Configuração de Autenticação Kerberos)](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx).
 
 ### Configurar a delegação para dar acesso a contas de serviço MIM
@@ -307,6 +307,6 @@ No próximo passo, irá preparar um servidor de PAM.
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

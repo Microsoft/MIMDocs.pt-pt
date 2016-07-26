@@ -1,10 +1,10 @@
 ---
-title: "Configurar um servidor de gestão de identidades&#58; Windows Server 2012 R2 | Microsoft Identity Manager"
+title: Configurar o Windows Server | Microsoft Identity Manager
 description: "Obter os passos e requisitos mínimos para preparar o Windows Server 2012 RS para funcionar com o MIM 2016."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af9f7f75f19bb29f2e29577c787252f6b7fabb7d
-ms.openlocfilehash: cd4ac84af4e5416512cf546a5d23b342ebe13c39
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: e1d69eb7946f9adfdfa7c55cecd3fa1d799a2cd3
 
 
 ---
@@ -111,6 +111,6 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

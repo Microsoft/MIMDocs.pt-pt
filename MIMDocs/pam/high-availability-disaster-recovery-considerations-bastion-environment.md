@@ -1,10 +1,10 @@
 ---
-title: "Considerações de recuperação após desastre e elevada disponibilidade para o ambiente bastion | Microsoft Identity Manager"
-description: 
+title: "Recuperação após desastre PAM | Microsoft Identity Manager"
+description: "Saiba como configurar Privileged Access Management para uma elevada disponibilidade e para a recuperação após desastre."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 1d9e005bfb3e26f9a2b818667f14acd3e5239523
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 9164e48bf10fa27ff6c87ba3816b586a940dda69
 
 
 ---
@@ -161,7 +161,7 @@ Uma implementação de produção normal da gestão de acesso privilegiado inclu
 
 É possível encontrar o procedimento para adicionar um controlador de domínio adicional em [Instalar uma Réplica do Controlador de Domínio do Windows Server 2012 num Domínio Existente (Nível 200)](https://technet.microsoft.com/library/jj574134.aspx).  
 
->[!NOTE] 
+>[!NOTE]
 > Se o controlador de domínio está a ser alojado numa plataforma de virtualização, como o Hyper-V, reveja as advertências na [Configuração e Implementação do Controlador de Domínio Virtualizado](https://technet.microsoft.com/library/jj574223.aspx).
 
 #### Recuperação
@@ -199,7 +199,7 @@ Para elevada disponibilidade, consulte os documentos do Windows Server para [Op�
 
 Para implementação de produção por vários servidores, pode utilizar o Balanceamento de Carga na Rede (NLB) para distribuir a carga de processamento.  Também deverá ter um alias único (por exemplo, registos A ou CNAME) para que um nome comum seja exposto ao utilizador.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > Se utilizar uma tecnologia de balanceamento de carga que não seja a funcionalidade NLB no Windows Server 2012 R2, certifique-se de que a sua solução irá redirecionar uma sessão para o mesmo servidor e não para um servidor aleatório.
 
 Numa implementação MIM com vários servidores, cada Serviço MIM tem um nome de anfitrião externo, um nome de serviço e um nome de partição de serviço.  O valor predefinido do nome do serviço é o nome do computador e o valor predefinido do nome de partição de serviço e nome de anfitrião externo são configurados durante a instalação do Serviço MIM no ecrã que lhe pede o endereço do Servidor do Serviço MIM. Estes três nomes estão armazenados no ficheiro %ProgramFiles%\Microsoft Forefront Identity Manager\Service\Microsoft.ResourceManagementService.exe.config como atributos `externalHostName`, `serviceName` e `servicePartitionName` do nó configuração do `resourceManagementService`.  
@@ -224,6 +224,6 @@ Se o nível funcional do ambiente de floresta de bastion for o Windows Server 20
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

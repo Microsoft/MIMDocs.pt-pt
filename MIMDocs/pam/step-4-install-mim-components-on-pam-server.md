@@ -1,10 +1,10 @@
 ---
-title: "Passo 4 – Instalar os componentes do MIM no servidor e estação de trabalho de PAM | Microsoft Identity Manager"
-description: 
+title: "Implementação PAM passo 4 – Instalar o MIM | Microsoft Identity Manager"
+description: "Instalar e configurar o Serviço MIM e o Portal no servidor Privileged Access Management e nas estações de trabalho."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 92939d32da25896d07bec61e4633f58230a78181
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 4e0298099dad9b11812d533e23101fb995fe33d5
 
 No PAMSRV, inicie sessão como PRIV\Administrator para instalar o Portal e o Serviço MIM, bem como a aplicação Web do portal de exemplo.
 
-  > [!NOTE] 
+  > [!NOTE]
   > Tem de ser um administrador de domínio; se não estiver a executar os seguintes comandos como administrador de domínio, as verificações de validação de confiança no próximo passo não serão concluídas.
 
 Se tiver transferido o MIM, descompacte o arquivo de instalação para uma nova pasta.
@@ -44,7 +44,7 @@ Siga as diretrizes do instalador e conclua a instalação.
 
 2.  Quando configurar serviços comuns e a ligação da base de dados MIM, especifique **Criar uma nova base de dados**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Se instalar o Serviço MIM várias vezes para elevada disponibilidade, especifique **Utilizar uma base de dados existente** para todas as instalações subsequentes.
 
 3.  Quando configurar uma ligação de servidor de correio, defina o servidor de correio para o nome de anfitrião de um servidor do Exchange ou SMTP para o ambiente CORP (utilize corpdc.contoso.local se não tiver um servidor de correio) e desmarque as caixas de verificação **Utilizar SSL** e **O Servidor de Correio é Exchange Server 2007 ou Exchange Server 2010**.
@@ -193,6 +193,6 @@ No próximo passo, irá estabelecer confiança entre florestas PRIV e CORP.
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

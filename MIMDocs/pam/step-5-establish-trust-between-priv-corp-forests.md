@@ -1,10 +1,10 @@
 ---
-title: "Passo 5 – Estabelecer confiança entre florestas PRIV e CORP | Microsoft Identity Manager"
-description: 
+title: "Implementação PAM passo 5 – ligação à Floresta | Microsoft Identity Manager"
+description: "Estabelecer confiança entre as florestas PRIV e as florestas CORP para que os utilizadores com privilégios no PRIV passa, ainda assim, aceder aos recursos no CORP."
 keywords: 
-author: 
+author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -12,8 +12,9 @@ ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.sourcegitcommit: 06319438d93d8d92edc833e2d0bf6492dd5919a6
-ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
+translationtype: Human Translation
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 3a7039f5d7c950cd0d4c8ab713a7beacc5c45526
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: 1260b4e1792bf43a7288866cf3afa41fabe79fe9
 # Passo 5 - Estabelecer confiança entre florestas PRIV e CORP
 
 >[!div class="step-by-step"]
-[!div class="step-by-step"] [« Passo 4](step-4-install-mim-components-on-pam-server.md)
+[« Passo 4](step-4-install-mim-components-on-pam-server.md)
 [Passo 6 »](step-6-transition-group-to-pam.md)
 
 
@@ -106,11 +107,11 @@ Para cada floresta existente, ative o acesso de leitura para o AD pelos administ
 No próximo passo, irá mover um grupo para o PAM.
 
 >[!div class="step-by-step"]
-[!div class="step-by-step"] [« Passo 4](step-4-install-mim-components-on-pam-server.md)
+[« Passo 4](step-4-install-mim-components-on-pam-server.md)
 [Passo 6 »](step-6-transition-group-to-pam.md)
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

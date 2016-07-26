@@ -1,10 +1,10 @@
 ---
-title: "Plataformas Suportadas para o MIM 2016 | Microsoft Identity Manager"
+title: Plataformas de software suportadas| Microsoft Identity Manager
 description: "Localizar os produtos e versões que são compatíveis com cada um dos componentes do MIM 2016"
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,13 +13,13 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a59e7471a8aaafc6752c9be34d52fd3509104dec
-ms.openlocfilehash: bb3e3abfdc12d78108676d4a9f029531d9df17fd
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: b276b1970796f3769006e2f2ef229cdb616e0675
 
 
 ---
 
-# Plataformas Suportadas para o MIM 2016
+# Plataformas suportadas para o MIM 2016
 
 | **Componente do MIM** | **Plataforma** | **Versão** |
 |-------------------|--------------|-------------|
@@ -59,6 +59,6 @@ ms.openlocfilehash: bb3e3abfdc12d78108676d4a9f029531d9df17fd
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

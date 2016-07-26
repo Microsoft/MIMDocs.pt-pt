@@ -1,10 +1,10 @@
 ---
-title: "Configurar um servidor de gestão de identidades&#58; SharePoint | Microsoft Identity Manager"
+title: Configurar o SharePoint | Microsoft Identity Manager
 description: "Instalar e configurar o SharePoint Foundation para que possa alojar a página do Portal do MIM."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: b144f28b41eb8e02afa44495c0019ccc81022005
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 9885579d9fb72dd4e73ec5a8a359b35c49d10440
 
 
 ---
@@ -92,7 +92,7 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
     -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://corpidm.contoso.local
     ```
 
-    > [!NOTE] 
+    > [!NOTE]
     > Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder. Quando concluir, a saída indicará o URL do novo portal. Mantenha a janela do **Shell de Gestão do SharePoint 2013** aberta para consultar mais tarde.
 
 2. Inicie o Shell de Gestão do SharePoint 2013 e execute o seguinte script do PowerShell para criar uma **Coleção de Sites do SharePoint** associada a essa aplicação Web.
@@ -107,7 +107,7 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
   $s.CompatibilityLevel
   ```
 
-  > [!NOTE] 
+  > [!NOTE]
   > Verifique se o resultado da variável *NívelDeCompatibilidade* é “14”. Se o resultado for “15”, significa que a coleção de sites não foi criada para a versão da experiência de 2010; elimine a coleção de sites e reformule-a.
 
 3. Desative o **Viewstate do Lado do Servidor do SharePoint** e a tarefa do SharePoint “Tarefa de Análise do Estado de Funcionamento (Hora a Hora, Temporizador do Microsoft SharePoint Foundation, Todos os Servidores)” ao executar os seguintes comandos do PowerShell no **Shell de Gestão do SharePoint 2013**:
@@ -137,6 +137,6 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

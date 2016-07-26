@@ -1,10 +1,10 @@
 ---
-title: "Trabalhar com a Criação de Relatórios Híbridos do Identity Manager | Microsoft Identity Manager"
+title: "Criação de relatórios híbridos no Azure | Microsoft Identity Manager"
 description: "Saiba como combinar dados no local e na nuvem em relatórios híbridos no Azure e como gerir e ver estes relatórios."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: e2d0bd6120628d4fd2a14718fc205cde976c7785
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 0a104a5f79dd48cb2dfc3d739e3ce8dcbd236c0f
 
 
 ---
@@ -103,6 +103,6 @@ Os eventos gerados pelo Microsoft Identity Manager são registados no Registo de
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

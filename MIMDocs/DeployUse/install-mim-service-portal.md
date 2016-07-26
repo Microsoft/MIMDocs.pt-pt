@@ -1,10 +1,10 @@
 ---
-title: "Instalar o MIM 2016&#58; Portal e Serviço MIM | Microsoft Identity Manager"
+title: "Instalar Serviço e Portal MIM | Microsoft Identity Manager"
 description: "Obter os passos para configurar e instalar o Portal e o Serviço MIM do Microsoft Identity Manager 2016"
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
-ms.openlocfilehash: eb2af412d9638035de591197fa191e990ade0ca1
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: c18ea7b0390ca11c213ed66bfd1476454cf86951
 
 
 ---
@@ -152,6 +152,6 @@ Depois de concluída a instalação, verifique se o Portal do MIM está ativo.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

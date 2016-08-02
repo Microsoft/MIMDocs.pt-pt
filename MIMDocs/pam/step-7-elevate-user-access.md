@@ -13,8 +13,8 @@ ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: b4b3f4c0605fabc7166e8ff8309078f80461301e
+ms.sourcegitcommit: 9b5b7460e6307ab38b1b9356a638eb0200fd97d1
+ms.openlocfilehash: 009091a65dba31de2066e45930e438442fcd89a0
 
 
 ---
@@ -93,7 +93,7 @@ Ative pedindo acesso privilegiado através do portal de amostra de PAM.
 8. No separador à esquerda, clique em **Ativar**. Selecione a **Função PAM** e, em seguida, clique em **Ativar**.
 
 > [!Note]
-> Neste ambiente, também pode aprender como desenvolver aplicações que utilizam a REST API de PAM, descrita em [Referência de API REST de Privileged Access Management](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference.md).
+> Neste ambiente, também pode aprender como desenvolver aplicações que utilizam a API REST do PAM, descrita em [Referência à API REST do Privileged Access Management](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference).
 
 ## Resumo
 Depois de concluir os passos nestas instruções, terá demonstrado um cenário de Privileged Access Management, no qual os privilégios de utilizador são elevados durante um período limitado de tempo, permitindo que o utilizador aceda a recursos protegidos com uma conta com privilégios separada. Assim que a sessão de elevação expira, a conta com privilégios já não consegue aceder ao recurso protegido. A decisão sobre que grupos de segurança representam funções com privilégios é coordenada pelo administrador de PAM. Depois dos direitos de acesso serem migrados para o sistema de Privileged Access Management, o acesso que era anteriormente possível com a conta de utilizador original é, agora, possível apenas ao iniciar sessão com uma conta com privilégios especiais, e disponibilizado após pedido. Como resultado, as associações de grupo para os grupos com privilégios elevados são eficazes durante um período limitado de tempo.
@@ -103,6 +103,6 @@ Depois de concluir os passos nestas instruções, terá demonstrado um cenário 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

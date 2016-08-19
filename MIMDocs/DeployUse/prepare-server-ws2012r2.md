@@ -1,10 +1,10 @@
 ---
-title: "Configurar um servidor de gestão de identidades&#58; Windows Server 2012 R2 | Microsoft Identity Manager"
+title: Configurar o Windows Server | Microsoft Identity Manager
 description: "Obter os passos e requisitos mínimos para preparar o Windows Server 2012 RS para funcionar com o MIM 2016."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af9f7f75f19bb29f2e29577c787252f6b7fabb7d
-ms.openlocfilehash: cd4ac84af4e5416512cf546a5d23b342ebe13c39
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 
 
 ---
@@ -74,7 +74,7 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
     ![Imagem da Política de Segurança Local](media/MIM-DeployWS3.png)
 
-4. Clique em **Adicionar Utilizador ou Grupo**, no tipo de caixa de texto `contoso\mimsync; contoso\mimma; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\mimsspr`, clique em **Verificar Nomes** e clique em **OK**.
+4. Clique em **Adicionar Utilizador ou Grupo**, e no tipo de caixa de texto `contoso\MIMSync; contoso\MIMMA; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\MIMSSPR`, clique em **Verificar Nomes**, e clique em **OK**.
 
 5. Clique em **OK** para fechar a janela de **Propriedades Iniciar sessão como um serviço**.
 
@@ -111,6 +111,6 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

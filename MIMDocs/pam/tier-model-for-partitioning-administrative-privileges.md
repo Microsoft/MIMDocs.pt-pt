@@ -1,10 +1,10 @@
 ---
-title: "Modelo de camada para criação de partições de privilégios administrativos | Microsoft Identity Manager"
-description: 
+title: Modelo de camada do ambiente PAM | Microsoft Identity Manager
+description: Saiba mais sobre o modelo de camada que segrega o sistema com base na vulnerabilidade a riscos.
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/14/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: 509c05bbda5f0a0b936518fb023000771c45d4f7
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 1a750bedee2aac667c84113d2d08daa20428c260
 
 
 ---
@@ -44,7 +44,7 @@ As restrições de início de sessão devem ser impostas para assegurar que as c
 - Os admins de domínio (camada 0) não podem iniciar sessão nos servidores da empresa (camada 1) e estações de trabalho de utilizador padrão (camada 2).
 - Os administradores de servidor (camada 1) não podem iniciar sessão em estações de trabalho de utilizador padrão (camada 2).
 
->[!NOTE] 
+>[!NOTE]
 > Os administradores de servidor não devem estar no grupo de administradores de domínio. Devem ser dadas contas separadas ao pessoal com responsabilidades para gerir controladores de domínio e servidores empresariais.
 
 As restrições de início de sessão podem ser impostas com:
@@ -62,6 +62,6 @@ O artigo seguinte, [Planear um ambiente bastion](planning-bastion-environment.md
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

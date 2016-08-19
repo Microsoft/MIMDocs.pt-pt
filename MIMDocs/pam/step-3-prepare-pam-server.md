@@ -1,10 +1,10 @@
 ---
-title: "Passo 3 – Preparar um servidor de PAM | Microsoft Identity Manager"
-description: 
+title: "Implementação PAM passo 3 – servidor PAM | Microsoft Identity Manager"
+description: "Prepare um servidor PAM que irá alojar o SQL e SharePoint para a implementação Privileged Access Management."
 keywords: 
-author: 
+author: kgremban
 manager: femila
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: ec65078cea33b73aa9482e831a1870df477c6581
+ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
+ms.openlocfilehash: 1a21399df9528f689b811400a660543853d88472
 
 
 ---
@@ -118,7 +118,7 @@ Se o SQL Server ainda não estiver no ambiente bastion, instale o SQL Server 201
 
 Utilizando o SharePoint Foundation 2013 com o instalador SP1, instale os pré-requisitos de software do SharePoint no PAMSRV.
 
-> [!NOTE] 
+> [!NOTE]
 > Este instalador requer uma ligação à Internet para transferir os pré-requisitos. Depois de serem instalados, o servidor será reiniciado.
 
 1. Clique com o botão direito do rato no PowerShell e selecione **Executar como administrador**.  
@@ -158,7 +158,7 @@ Após a conclusão dos assistentes, utilize o PowerShell para criar uma aplicaç
 
 2. Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder.  Quando concluir, a saída indicará o URL do novo portal.
 
-> [!NOTE] 
+> [!NOTE]
 > Mantenha a janela da Shell de Gestão do SharePoint 2013 aberta para utilizá-la no passo seguinte.
 
 ## Criar uma coleção de sites do Sharepoint
@@ -212,6 +212,6 @@ No Passo 4, começará a instalar os componentes do MIM no servidor de PAM.
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

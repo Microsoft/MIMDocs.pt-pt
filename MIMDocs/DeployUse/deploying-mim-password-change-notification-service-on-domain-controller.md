@@ -1,10 +1,10 @@
 ---
-title: "Implementar o Serviço de Notificação de Alteração de Palavra-passe | Microsoft Identity Manager"
+title: "Notificações de alteração de palavra-passe | Microsoft Identity Manager"
 description: "Obtenha os passos para instalar e configurar o Serviço de Notificação de Alteração de Palavra-passe do MIM no controlador de domínio."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 875ed6b96929822ac166a4a262cc8547a4ea3b2a
-ms.openlocfilehash: 85e83b85f047ca2c2648b42ec68b832caae645ee
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: e25f4b3a60f2c432cd33c8f84c750110cbe605ee
 
 
 ---
@@ -61,6 +61,6 @@ Quando estiver novamente ligado ao servidor DC como um administrador de domínio
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

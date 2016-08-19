@@ -1,10 +1,10 @@
 ---
-title: "Plataformas Suportadas para o MIM 2016 | Microsoft Identity Manager"
+title: Plataformas de software suportadas| Microsoft Identity Manager
 description: "Localizar os produtos e versões que são compatíveis com cada um dos componentes do MIM 2016"
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 08/18/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,13 +13,13 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a59e7471a8aaafc6752c9be34d52fd3509104dec
-ms.openlocfilehash: bb3e3abfdc12d78108676d4a9f029531d9df17fd
+ms.sourcegitcommit: b4527c61dcdbef21c46414e190e0f0d0852e3aa3
+ms.openlocfilehash: d3995474ac91f109052c004ec9b84ac66efafbc7
 
 
 ---
 
-# Plataformas Suportadas para o MIM 2016
+# Plataformas suportadas para o MIM 2016
 
 | **Componente do MIM** | **Plataforma** | **Versão** |
 |-------------------|--------------|-------------|
@@ -44,13 +44,13 @@ ms.openlocfilehash: bb3e3abfdc12d78108676d4a9f029531d9df17fd
 || Base de dados do armazém de dados | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 |
 | **Portais de Registo e Reposição de Palavras-passe do MIM** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 |
 || browser | Internet Explorer 7, 8, 9, 10 ou 11<br/>Outros browsers |
-| **Extensões e Suplementos do MIM** | Windows | Windows 7<br/>Windows 8<br/>Windows 8.1<br/>Windows 10 |
+| **Extensões e Suplementos do MIM** | Windows | Windows 7<br/>Windows 8<br/>Windows 8,1<br/>Windows 10 |
 || Integração com o Outlook (opcional) | Outlook 2007 SP2<br/>Outlook 2010<br/>Outlook 2013 |
 || Cmdlets de requerente do PowerShell de PAM (opcionais) | Windows 8.1<br/>Windows 10 |
 | **Gestão de Certificados do MIM** (integração com o Servidor e a AC) | Windows server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 |
 || Autoridade de certificação | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 |
-|| Base de dados do MIM CM | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 |
-| **Gestão de Certificados do MIM** (Aplicação) | Windows | Windows 8<br/>Windows 8.1<br/>Windows 10 |
+|| Base de dados do MIM CM | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 |
+| **Gestão de Certificados do MIM** (Aplicação) | Windows | Windows 8<br/>Windows 8,1<br/>Windows 10 |
 | **Gestão de Certificados do MIM** (Cliente e Cliente em Massa) | Windows | Windows 7 |
 | **MIM BHOLD Suite** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 |
 || Base de dados do BHOLD | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 |
@@ -59,6 +59,6 @@ ms.openlocfilehash: bb3e3abfdc12d78108676d4a9f029531d9df17fd
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

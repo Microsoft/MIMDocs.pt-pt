@@ -3,8 +3,8 @@ title: Criar certificados de software | Microsoft Identity Manager
 description: Saiba como utilizar o Gestor de Certificados para criar e renovar certificados de software com modelos de perfil.
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f9b01ac2cee2b96f64a9fda917f4f4146ca2eeda
-ms.openlocfilehash: 6b58093744656b9bfa62c1cfcab340ea88e6e168
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: d5c8fc4f9a3eaab95441f7a915f7e02d55042ae9
 
 
 ---
@@ -98,6 +98,6 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

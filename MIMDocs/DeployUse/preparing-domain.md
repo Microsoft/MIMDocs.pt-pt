@@ -3,8 +3,8 @@ title: "Configurar um domínio | Microsoft Identity Manager"
 description: "Criar um controlador de domínio do Active Directory antes de instalar o MIM 2016"
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b2578d50f855486183ae182330bacb688011c273
-ms.openlocfilehash: b84a6c7c7b53a122eefc3846ba93b92b34edb6ce
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 9c029a9edee015f8843f6001d23c72e3ef98b5af
 
 
 ---
@@ -94,6 +94,6 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

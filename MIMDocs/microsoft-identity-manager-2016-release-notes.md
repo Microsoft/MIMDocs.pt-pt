@@ -1,10 +1,10 @@
 ---
 title: "Notas de Versão do MIM 2016 | Microsoft Identity Manager"
-description: 
+description: "Encontre informações sobre os lançamentos do MIM recentes."
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 297e25a5-668b-45a4-b2de-7767ebc59100
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 62108908497d1dcf69579ba144545346b6a42266
-ms.openlocfilehash: 12f245624e644b12825239e378a26752f7a86846
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: ee44489d6b45746bacb4d273754735ef7dd69b6a
 
 
 ---
@@ -23,6 +23,7 @@ ms.openlocfilehash: 12f245624e644b12825239e378a26752f7a86846
 De momento, não existem notas de versão.
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

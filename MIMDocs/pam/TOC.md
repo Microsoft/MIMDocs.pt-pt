@@ -11,7 +11,7 @@
 ### [Definir funções](defining-roles-for-pam.md)
 ### [Recuperação de elevada disponibilidade e após desastre](high-availability-disaster-recovery-considerations-bastion-environment.md)
 ### [Requisitos de hardware e software](hardware-software-requirements.md)
-## [Implemente o MIM para o Privileged Access Management](configuring-mim-environment-for-pam.md)
+## [Configure o MIM para o Privileged Access Management](configuring-mim-environment-for-pam.md)
 ### [Passo 1 - domínio CORP](step-1-prepare-corp-domain.md)
 ### [Passo 2 - controlador de domínio PRIV](step-2-prepare-priv-domain-controller.md)
 ### [Passo 3 - servidor PAM](step-3-prepare-pam-server.md)
@@ -23,6 +23,6 @@
 # [Referência para Programadores](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

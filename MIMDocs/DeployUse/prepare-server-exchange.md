@@ -1,10 +1,10 @@
 ---
-title: "Configurar um servidor de gestão de identidades&#58; Exchange | Microsoft Identity Manager"
+title: Configurar o servidor Exchange | Microsoft Identity Manager
 description: Como um passo opcional, implemente o Exchange Server para permitir que o MIM 2016 envie correio e crie caixas de correio.
 keywords: 
 author: kgremban
-manager: stevenpo
-ms.date: 04/28/2016
+manager: femila
+ms.date: 07/21/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c023d147d0fcc1525fefbe866c952e217f7bee6b
-ms.openlocfilehash: b69ea20f375869d4ad08987a08aba05913fd1db1
+ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
+ms.openlocfilehash: 77e790f57f9060310a99f8bd3f2a446323a9fafc
 
 
 ---
@@ -44,6 +44,6 @@ Se pretender configurar o MIM para enviar e receber e-mails ou aprovisionar caix
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

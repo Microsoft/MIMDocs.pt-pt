@@ -1,10 +1,10 @@
 ---
-title: "Passo 7 – Elevar o acesso de um utilizador | Microsoft Identity Manager"
-description: 
+title: "Implementação PAM passo 7 – acesso de utilizador| Microsoft Identity Manager"
+description: "Como passo final, conceda acesso temporário de utilizador com privilégios para demonstrar que a implementação Privileged Access Management foi concluída com êxito."
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 06/16/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e5f51d5ca731b3564b8262db0f4cddeb850231a
-ms.openlocfilehash: ee47c69788a98075372ca62943e0c4b101c5354f
+ms.sourcegitcommit: 9b5b7460e6307ab38b1b9356a638eb0200fd97d1
+ms.openlocfilehash: 009091a65dba31de2066e45930e438442fcd89a0
 
 
 ---
@@ -46,7 +46,7 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 2. Quando lhe for pedido, escreva a palavra-passe para a conta PRIV.Jen. Será apresentada uma nova janela de linha de comandos.
 3. Quando for apresentada a janela do PowerShell, escreva os comandos seguintes.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Depois de executar estes comandos, os seguintes passos são sensíveis ao tempo.
 
     ```
@@ -92,8 +92,8 @@ Ative pedindo acesso privilegiado através do portal de amostra de PAM.
 7. Feche a caixa de diálogo **Opções da Internet**.
 8. No separador à esquerda, clique em **Ativar**. Selecione a **Função PAM** e, em seguida, clique em **Ativar**.
 
-> [!Note] 
-> Neste ambiente, também pode aprender como desenvolver aplicações que utilizam a REST API de PAM, descrita em [Referência de API REST de Privileged Access Management](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference.md).
+> [!Note]
+> Neste ambiente, também pode aprender como desenvolver aplicações que utilizam a API REST do PAM, descrita em [Referência à API REST do Privileged Access Management](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference).
 
 ## Resumo
 Depois de concluir os passos nestas instruções, terá demonstrado um cenário de Privileged Access Management, no qual os privilégios de utilizador são elevados durante um período limitado de tempo, permitindo que o utilizador aceda a recursos protegidos com uma conta com privilégios separada. Assim que a sessão de elevação expira, a conta com privilégios já não consegue aceder ao recurso protegido. A decisão sobre que grupos de segurança representam funções com privilégios é coordenada pelo administrador de PAM. Depois dos direitos de acesso serem migrados para o sistema de Privileged Access Management, o acesso que era anteriormente possível com a conta de utilizador original é, agora, possível apenas ao iniciar sessão com uma conta com privilégios especiais, e disponibilizado após pedido. Como resultado, as associações de grupo para os grupos com privilégios elevados são eficazes durante um período limitado de tempo.
@@ -103,6 +103,6 @@ Depois de concluir os passos nestas instruções, terá demonstrado um cenário 
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

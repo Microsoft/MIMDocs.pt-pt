@@ -4,7 +4,7 @@ description: "Obter os passos para configurar e instalar o Portal e o Serviço M
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: c18ea7b0390ca11c213ed66bfd1476454cf86951
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: 438754773057043b8560562bab0ae260fb3a4bc2
 
 
 ---
@@ -93,7 +93,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 1.  Defina o nome da conta de serviço do Registo SSPR para *Contoso\ServiçosMIMSSPR* e a respetiva palavra-passe para *Palavra@passe1*.
 
-2.  Especifique *CORPIDM* como o Nome do Anfitrião para o Registo de Palavras-passe do MIM e defina a porta para **8080**. Ative a opção **Abrir porta na firewall**.
+2.  Especifique *CORPIDM* como o Nome do Anfitrião para o Portal de Reposição de Palavras-Passe do MIM e defina a porta para **8088**. Ative a opção **Abrir porta na firewall**.
 
     ![Imagem da introdução das informações de configuração utilizadas pelo IIS](media/MIM-Install15.png)
 
@@ -152,6 +152,6 @@ Depois de concluída a instalação, verifique se o Portal do MIM está ativo.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

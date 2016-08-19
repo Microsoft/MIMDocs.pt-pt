@@ -4,7 +4,7 @@ description: "Utilizar conectores para gerir a transferência de dados entre MIM
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 28847b6d494cf5166e22be31b63fdfb027f96ed0
+ms.sourcegitcommit: 309011c81959971e696d70aa4ec5e1610cc8a2f0
+ms.openlocfilehash: f0842781e3730dae5548ce02a3cb247376d12dc8
 
 
 ---
@@ -54,8 +54,12 @@ Este artigo abrange os conectores que estão incluídos no MIM, mas o conetor pa
 | Ficheiro de texto de largura fixa | Ficheiros de texto de largura fixa |
 | LDAP Data Interchange Format (LDIF) | LDAP Data Interchange Format (LDIF) |
 
+## Tópicos relacionados
+
+[Agentes de gestão no FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO2-->
 
 

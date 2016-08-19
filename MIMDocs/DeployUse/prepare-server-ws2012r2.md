@@ -4,7 +4,7 @@ description: "Obter os passos e requisitos mínimos para preparar o Windows Serv
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: e1d69eb7946f9adfdfa7c55cecd3fa1d799a2cd3
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: bdf1f4b7c5762095f4986506f9e17369dadea011
 
 
 ---
@@ -74,7 +74,7 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
     ![Imagem da Política de Segurança Local](media/MIM-DeployWS3.png)
 
-4. Clique em **Adicionar Utilizador ou Grupo**, no tipo de caixa de texto `contoso\mimsync; contoso\mimma; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\mimsspr`, clique em **Verificar Nomes** e clique em **OK**.
+4. Clique em **Adicionar Utilizador ou Grupo**, e no tipo de caixa de texto `contoso\MIMSync; contoso\MIMMA; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\MIMSSPR`, clique em **Verificar Nomes**, e clique em **OK**.
 
 5. Clique em **OK** para fechar a janela de **Propriedades Iniciar sessão como um serviço**.
 
@@ -111,6 +111,6 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

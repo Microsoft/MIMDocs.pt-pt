@@ -4,7 +4,7 @@ description: "Comece a trabalhar com os componentes do MIM 2016 ao instalar e co
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 08/11/2016
 ms.topic: get-started-article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 2dfc89d32ef3b615201f1eb57ed3b8f5daed513e
+ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
+ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
 
 
 ---
@@ -53,7 +53,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
     ![Imagem da Configuração Personalizada](media/MIM-Install2.png)
 
-6.  No ecrã Configuração da base de dados de sincronização, selecione:
+6.  No ecrã de configuração da base de dados do Serviço de Sincronização, selecione:
 
     1.  O SQL Server está localizado: **Neste computador**.
 
@@ -71,7 +71,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
     ![Imagem da conta de serviço](media/MIM-Install4.png)
 
-8.  Indique no instalador da Sincronização do MIM os grupos de segurança relevantes:
+8.  Indique no instalador do Serviço de Sincronização do MIM os grupos de segurança relevantes:
 
     1. Administrador = *contoso\AdministradoresSincronizaçãoMIM*
 
@@ -87,11 +87,11 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 9. No ecrã de definições de segurança, selecione **Ativar regras de firewall para comunicações de RPC de entrada** e clique em **Seguinte**.
 
-10. Clique em **Instalar** para iniciar a instalação da Sincronização do MIM.
+10. Clique em **Instalar** para iniciar a instalação do Serviço de Sincronização do MIM.
 
     1. Pode ser apresentado um aviso relativo à conta de serviço de Sincronização do MIM – clique em **OK**.
 
-    2. A Sincronização do MIM será instalada.
+    2. Irá instalar o Serviço de Sincronização de MIM.
 
     3. É apresentado um aviso relativo à criação de uma cópia de segurança da chave de encriptação – clique em **OK** e, em seguida, selecione uma pasta para armazenar a cópia de segurança da chave de encriptação.
 
@@ -107,6 +107,6 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

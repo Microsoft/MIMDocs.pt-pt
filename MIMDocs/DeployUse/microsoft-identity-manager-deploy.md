@@ -4,7 +4,7 @@ description: "Obtenha a lista completa dos passos envolvidos na implementação 
 keywords: 
 author: kgremban
 manager: femila
-ms.date: 08/11/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
@@ -13,8 +13,8 @@ ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 406269e3c8dc3137c2dcd625c50c6cf4eb126d86
-ms.openlocfilehash: 74d7bfd1e0c89c880b2b6a06756f84ad63d3a8cc
+ms.sourcegitcommit: 40dbec941eb2f0b1a01de0f47d44e01717aaca21
+ms.openlocfilehash: 77dae279f9078c55abf342a8956aaf77c62773d5
 
 
 ---
@@ -25,7 +25,7 @@ Os artigos nesta secção fornecem instruções passo a passo para a implementa�
 > [!NOTE]
 > A topologia de implementação descrita nesta secção destina-se apenas à introdução e à aprendizagem do MIM.  O [guia de planeamento de capacidade](/microsoft-identity-manager/plan-design/capacity-planning-guide) fornece mais informações sobre topologias para implementações de produção.  É recomendável rever a referida documentação antes de implementar o MIM na utilização ou na escala de produção.
 
-O cenário de gestão de acesso privilegiado é implementado de forma diferente de outros cenários MIM, porque requer um ambiente dedicado de bastião de floresta.  Se pretender saber mais sobre a implementação de MIM para Privileged Identity Management, consulte o artigo [Introdução ao Privileged Access Management](/microsoft-identity-manager/pam/privileged-access-management-get-started).
+O cenário de gestão de acesso privilegiado é implementado de forma diferente de outros cenários MIM, porque requer um ambiente dedicado de bastião de floresta.  Se quiser saber mais sobre implementar o MIM para Privileged Identity Management, consulte [Configuração do ambiente de MIM para Privileged Access Management](/microsoft-identity-manager/pam/configuring-mim-environment-for-pam).
 
 O processo de implementação MIM 2016 é muito semelhante ao processo para o respetivo predecessor, FIM 2010 R2. Se pretende referir-se à documentação FIM, Consultar o [Guia de Implementação do Forefront Identity Manager 2010 R2](https://technet.microsoft.com/library/jj134310).
 
@@ -48,6 +48,6 @@ Depois de configurar o domínio e o servidor, está pronto para instalar os comp
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO2-->
 
 

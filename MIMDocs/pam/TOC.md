@@ -24,7 +24,7 @@
 ### [Passo 1: Configurar o domínio Priv](sp1-step1-configuring-priv-domain.md)
 ### [Passo 2: Configurar o domínio CORP](sp1-step2-configuring-corp-domain.md)
 ### [Passo 3: Configurar o SQL](sp1-step3-installing-configuring-sql.md)
-### [Passo 4: Configurar o SharePoint](sp1-step4-configuring-sharepoiint.md)
+### [Passo 4: Configurar o SharePoint](sp1-step4-configuring-sharepoint.md)
 ### [Passo 5: Instalar/Configurar a PAM](sp1-step5-configuring-pam.md)
 ### [Passo 6: Configurar a confiança de PAM](sp1-step6-setup-pam-trust.md)
 ### [Passo 7: Configurar o histórico/filtragem do SID](sp1-step7-setup-sidhistory-sidfiltering.md)

@@ -51,7 +51,7 @@ Adicione as funções de Servidor Web (IIS) e Servidor Aplicacional, as funciona
 
 1.  Inicie sessão como um administrador de domínio PRIV (PRIV\Administrator) e inicie o PowerShell.
 
-2.  Escreva os seguintes comandos. Tenha em atenção que poderá ser necessário especificar uma localização diferente para os ficheiros de origem das funcionalidades do .NET Framework 3.5. Normalmente, estas funcionalidades não estão presentes quando o Windows Server é instalado, mas estão disponíveis na pasta lado a lado (SxS) na pasta de origens do disco de instalação do SO, por exemplo, d:\Sources\SxS\.
+2.  Escreva os seguintes comandos. Tenha em atenção que poderá ser necessário especificar uma localização diferente para os ficheiros de origem das funcionalidades do .NET Framework 3.5. Normalmente, estas funcionalidades não estão presentes quando o Windows Server é instalado, mas estão disponíveis na pasta lado a lado (SxS) na pasta de origens do disco de instalação do SO, por exemplo, “*d:\Fontes\SxS”.
 
     ```
     import-module ServerManager
@@ -212,6 +212,6 @@ No Passo 4, começará a instalar os componentes do MIM no servidor de PAM.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

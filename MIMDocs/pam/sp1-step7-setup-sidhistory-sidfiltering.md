@@ -13,13 +13,13 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 689c2ef0e4e4a681a398ba7e94fb3def525937ea
-ms.openlocfilehash: 4c5cfa92f3111a6d298f586ba547a1eca2502853
+ms.sourcegitcommit: bc56b57a06592527bab13aad879ca13466e968b3
+ms.openlocfilehash: 4ad5d755de100ad598c6cebd209296edd361e8c5
 
 
 ---
 
-# Configurar o histórico/filtragem do SID
+# Passo 7: Configurar o histórico/filtragem do SID
 
 **A configuração não é necessária para um ambiente apenas PRIV**. Inicie sessão no PAMServer com a conta de MIMAdmin.
 
@@ -35,8 +35,12 @@ Para a filtragem do SID: <br/></br>
 Para o histórico do SID: </br></br>
 “A ativar o histórico de SIDs para esta fidedignidade” ou “O histórico de SIDs já está ativado para esta fidedignidade”.
 
+>[!div class="step-by-step"]
+[« Passo 6](sp1-step6-setup-pam-trust.md)
+[Passo 8 »](sp1-step8-pam-deployment-verification.md)
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: "Preparar o domínio CORP com identidades novas ou existentes para 
 keywords: 
 author: barclayn
 manager: MBaldwin
-ms.date: 09/27/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -13,18 +13,19 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 689c2ef0e4e4a681a398ba7e94fb3def525937ea
-ms.openlocfilehash: 743ba586374ccc04e9ddafff759a00574e13f6ac
+ms.sourcegitcommit: 99b1ff9f622ddd357866b2a3f9f4cc8e0fc88005
+ms.openlocfilehash: 9a617d8a5fbe8bcdac40cdf3250e5efedb7a0b84
 
 
 ---
 
 # Passo 8: Verificação de implementação da PAM
 
-O Pacote de implementação inclui scripts de verificação que podem executar um cenário de PAM para validar se a implementação da PAM está a funcionar conforme esperado.
+O Pacote de implementação inclui scripts de verificação que podem executar um cenário da PAM para validar se a implementação da PAM está a funcionar conforme esperado.
 Para utilizar a Verificação de Implementação, modifique a secção PAMDeploymentConfig.xml denominada <PamValidation/>.
 
->[!Note] A validação exige um computador Cliente associado ao Domínio CORP com os componentes do lado do cliente da PAM instalados. Veja a Adenda para obter os scripts sobre como instalar um cliente.
+>[!NOTE]
+>A validação exige um computador Cliente associado ao Domínio CORP com os componentes do lado do cliente da PAM instalados. Veja a Adenda para obter os scripts sobre como instalar um cliente.
 
 O nome do computador cliente tem de ser atualizado na etiqueta <PAMValidationClient/> do PAMDeploymentConfig.xml. Os restantes dados no nó <PAMValidation/> terão de ser editados apenas se estiverem em conflito com os utilizadores/grupos existentes, dado que esta validação tentará criá-los.
 Utilize os seguintes passos para realizar a validação:
@@ -47,7 +48,7 @@ Passo 2:
 4. import-module .\PAMValidation.psm1
 5. move-PAMVAlidationUsersToPAM
 
-Este passo migra os utilizadores e os grupos para o ambiente de PAM
+Este passo migra os utilizadores e os grupos para o ambiente da PAM
 
 Passo 3:
 
@@ -72,8 +73,12 @@ Na janela do PowerShell, escreva:
   Inicialmente, o utilizador não terá acesso ao recurso. Depois de o utilizador ser adicionado Just-In-Time à função, é-lhe concedido acesso. Depois de expirar a duração do pedido, o utilizador deixará de ter novamente acesso.
   O script utiliza a predefinição (11 minutos) para o pedido expirar.
 
+>[!div class="step-by-step"]
+[« Passo 7](sp1-step7-setup-sidhistory-sidfiltering.md)
+[Adenda »](sp1-pam-deployment-addendum.md)
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO1-->
 
 

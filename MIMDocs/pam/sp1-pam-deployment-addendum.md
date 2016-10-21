@@ -13,12 +13,12 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 689c2ef0e4e4a681a398ba7e94fb3def525937ea
-ms.openlocfilehash: 482cfbbac3ea668ca4bf9d8a4a45469e61634f98
+ms.sourcegitcommit: bc56b57a06592527bab13aad879ca13466e968b3
+ms.openlocfilehash: cdd859ceb13d187af3303235c0fe1e496f2bfb6e
 
 
 ---
-# Adenda:
+# Adenda de scripts de implementação da PAM:
 
 ## Adenda 1: Configurar o domínio PRIV
 
@@ -40,7 +40,7 @@ O DC reiniciará automaticamente após a conclusão. A palavra-passe de administ
 
 ## Adenda 2: Configurar o domínio CORP
 
-Se estiver a começar com o PAM e pretender configurar um ambiente de teste, o script também permitirá a configuração de um Domínio CORP. Após descomprimir o ficheiro comprimido para a pasta $env:SYSTEMDRIVE\PAM, edite o PAMDeploymentConfig.xml ao adicionar os detalhes da floresta CORP. Atualize o DNSName, o NetbiosName, o DC, o nome, o Caminho da Base de Dados/do Registo e o Caminho do Sysvol. O nível funcional deve ser, pelo menos, o Windows Server 2012 R2.
+Se estiver a começar com a PAM e pretender configurar um ambiente de teste, o script também permitirá a configuração de um Domínio CORP. Após descomprimir o ficheiro comprimido para a pasta $env:SYSTEMDRIVE\PAM, edite o PAMDeploymentConfig.xml ao adicionar os detalhes da floresta CORP. Atualize o DNSName, o NetbiosName, o DC, o nome, o Caminho da Base de Dados/do Registo e o Caminho do Sysvol. O nível funcional deve ser, pelo menos, o Windows Server 2012 R2.
 
 1. Inicie sessão no DC do domínio CORP como Administrador
 2. Execute o PowerShell como Administrador
@@ -57,23 +57,23 @@ Inicie sessão como um administrador local e execute os seguintes comandos numa 
 
 1. cd $env:SYSTEMDRIVE\PAM
 2. Import-module .\PAMDeployment.ps1
-3. Selecione a Opção 7 do Menu (Configuração do Cliente de PAM do MIM)
+3. Selecione a Opção 7 do Menu (Configuração do Cliente da PAM do MIM)
 
 
 Se a máquina não estiver associada a um domínio, solicitará as credenciais do administrador CORP para executar uma associação a um domínio. O computador tem de ser reiniciado após a associação a um domínio. Inicie sessão no cliente novamente como um administrador local e execute os seguintes comandos numa janela do PowerShell elevada:
 
 1. cd $env:SYSTEMDRIVE\PAM
 2. Import-module .\PAMDeployment.ps1
-3. Selecione a Opção 7 do Menu (Configuração do Cliente de PAM do MIM)
+3. Selecione a Opção 7 do Menu (Configuração do Cliente da PAM do MIM)
 
 Prossiga com o Passo 8 indicado acima.
 
 ## Adenda 4: Se ocorrer um erro
 
-Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e envie por e-mail para [mim2016@microsoft.com](mim2016@microsoft.com), juntamente com os detalhes da operação e do erro.
+Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e envie por e-mail para [mim2016@microsoft.com](mailto:mim2016@microsoft.com), juntamente com os detalhes da operação e do erro.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

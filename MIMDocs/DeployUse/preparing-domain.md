@@ -13,15 +13,15 @@ ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 9c029a9edee015f8843f6001d23c72e3ef98b5af
+ms.sourcegitcommit: 80fde32862a322a7a067982d0b02c99a8b43063e
+ms.openlocfilehash: 4ee1742e388da1ccb973b64316629debe570add0
 
 
 ---
 
 # Configurar um domínio
 
->[!div class="step-by-step"]  
+>[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
 O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directory (AD). Já deve ter o AD instalado, e certifique-se de que tem um controlador de domínio no seu ambiente para um domínio que possa administrar.
@@ -68,7 +68,7 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
     ```
 
-2.  Crie grupos de segurança para todos os grupos.
+3.  Crie grupos de segurança para todos os grupos.
 
     ```
     New-ADGroup –name MIMSyncAdmins –GroupCategory Security –GroupScope Global      –SamAccountName MIMSyncAdmins
@@ -80,20 +80,20 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     Add-ADGroupmember -identity MIMSyncAdmins -Members MIMService
     ```
 
-3.  Adicionar SPNs para ativar a autenticação Kerberos nas contas de serviço
+4.  Adicionar SPNs para ativar a autenticação Kerberos nas contas de serviço
 
     ```
     setspn -S http/mimservername.contoso.local Contoso\SharePoint
     setspn -S http/mimservername Contoso\SharePoint
-    setspn -S MIMService/mimservername.contoso.local Contoso\MIMService
-    setspn -S MIMSync/mimservername.contoso.local Contoso\MIMSync
+    setspn -S FIMService/mimservername.contoso.local Contoso\MIMService
+    setspn -S FIMSynchronizationService/mimservername.contoso.local Contoso\MIMSync
     ```
 
->[!div class="step-by-step"]  
+>[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

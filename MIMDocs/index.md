@@ -6,7 +6,7 @@ description: "Documentação técnica para a Documentação do Microsoft Identit
 keywords: identity manager documentation, microsoft identity manager, MIM
 author: kgremban
 manager: femila
-ms.date: 09/25/2016
+ms.date: 10/25/2016
 ms.topic: hubpage
 ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
@@ -14,8 +14,8 @@ ms.technology: security
 ms.suite: ems
 ms.assetid: 90d66a75-a7ec-4fa1-911c-cce683908838
 translationtype: Human Translation
-ms.sourcegitcommit: 75b316ef30d16eee573f40e2ddcd9390dd5c695f
-ms.openlocfilehash: 1bf743563c2e61463071ac26ccf8bfe92d946a2d
+ms.sourcegitcommit: 584efc6cc60eebe69fb32e7a0bdff25f568eee7f
+ms.openlocfilehash: b857664f1065f975e6d7e95508928b679548b52c
 
 
 ---
@@ -130,6 +130,11 @@ ms.openlocfilehash: 1bf743563c2e61463071ac26ccf8bfe92d946a2d
             <li><a href="/microsoft-identity-manager/reference/certificate-management-rest-api-reference">Referência à API REST da Gestão de Certificados</a></li>
           </ul>
         </div>
+        <div class="resource-list row">
+          <ul class="column-half">
+            <li><a href="https://technet.microsoft.com/library/mt604080.aspx">Cmdlets de Gestão de Acesso Privilegiado</a></li>
+          </ul>
+        </div>
       </section>
     </div>
     <aside class="alert alert-social">
@@ -142,6 +147,6 @@ ms.openlocfilehash: 1bf743563c2e61463071ac26ccf8bfe92d946a2d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

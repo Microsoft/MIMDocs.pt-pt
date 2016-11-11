@@ -3,23 +3,27 @@ title: "Passo 6: Configurar a confiança da PAM"
 description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/04/2016
+ms.date: 10/25/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc56b57a06592527bab13aad879ca13466e968b3
-ms.openlocfilehash: 52226bfa5742e39d834f80dac69317e10b6259c7
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 5bcf4f4ef201236746ec1bf75c1c8900841a6c79
 
 
 ---
 
-# Passo 6: Configurar a confiança da PAM
+# <a name="step-6-set-up-the-pam-trust"></a>Passo 6: Configurar a confiança da PAM
+
+>[!div class="step-by-step"]
+[« Passo 5](sp1-step5-configuring-pam.md)
+[Passo 7 »](sp1-step7-setup-sidhistory-sidfiltering.md)
 
 **A configuração não é necessária para um ambiente apenas PRIV**. Inicie sessão no PAMServer com a conta de MIMAdmin.
 
@@ -37,6 +41,6 @@ ms.openlocfilehash: 52226bfa5742e39d834f80dac69317e10b6259c7
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

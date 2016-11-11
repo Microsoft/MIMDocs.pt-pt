@@ -3,10 +3,10 @@ title: Adenda
 description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
 ms.date: 09/27/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
@@ -18,9 +18,9 @@ ms.openlocfilehash: cdd859ceb13d187af3303235c0fe1e496f2bfb6e
 
 
 ---
-# Adenda de scripts de implementação da PAM:
+# <a name="pam-deployment-scripts-addendum"></a>Adenda de scripts de implementação da PAM:
 
-## Adenda 1: Configurar o domínio PRIV
+## <a name="addendum-1-setting-up-the-priv-domain"></a>Adenda 1: Configurar o domínio PRIV
 
 Após descomprimir o ficheiro comprimido para a pasta $env:SYSTEMDRIVE\PAM, edite o PAMDeploymentConfig.xml para fornecer detalhes da floresta PRIV. Atualize o DNSName, o NetbiosName, o nome de DC, o Caminho da Base de Dados/do Registo e o Caminho do Sysvol. Atualize também o Domínio e o ForestMode. Se estiver a testar o Windows Server Technical Preview 5, defina o DomainMode e o ForestMode como WinThreshold.
 
@@ -38,7 +38,7 @@ O DC reiniciará automaticamente após a conclusão. A palavra-passe de administ
   * A palavra-passe contém, pelo menos, um caráter em MAIÚSCULAS
   * A palavra-passe contém, pelo menos, um digito ou caráter especial
 
-## Adenda 2: Configurar o domínio CORP
+## <a name="addendum-2-setting-up-the-corp-domain"></a>Adenda 2: Configurar o domínio CORP
 
 Se estiver a começar com a PAM e pretender configurar um ambiente de teste, o script também permitirá a configuração de um Domínio CORP. Após descomprimir o ficheiro comprimido para a pasta $env:SYSTEMDRIVE\PAM, edite o PAMDeploymentConfig.xml ao adicionar os detalhes da floresta CORP. Atualize o DNSName, o NetbiosName, o DC, o nome, o Caminho da Base de Dados/do Registo e o Caminho do Sysvol. O nível funcional deve ser, pelo menos, o Windows Server 2012 R2.
 
@@ -50,7 +50,7 @@ Se estiver a começar com a PAM e pretender configurar um ambiente de teste, o s
 
 O controlador de domínio será reiniciado automaticamente após a conclusão
 
-## Adenda 3: Configurar um cliente CORP para fazer a validação
+## <a name="addendum-3-setting-up-a-corp-client-to-do-the-validation"></a>Adenda 3: Configurar um cliente CORP para fazer a validação
 
 A ClientBinaryLocation no ficheiro de configuração tem de apontar para a localização onde se encontra o setup.exe.
 Inicie sessão como um administrador local e execute os seguintes comandos numa janela do PowerShell elevada:
@@ -68,7 +68,7 @@ Se a máquina não estiver associada a um domínio, solicitará as credenciais d
 
 Prossiga com o Passo 8 indicado acima.
 
-## Adenda 4: Se ocorrer um erro
+## <a name="addendum-4-if-something-goes-wrong"></a>Adenda 4: Se ocorrer um erro
 
 Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e envie por e-mail para [mim2016@microsoft.com](mailto:mim2016@microsoft.com), juntamente com os detalhes da operação e do erro.
 

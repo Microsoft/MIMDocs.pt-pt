@@ -1,35 +1,35 @@
 ---
-title: Modelo de camada do ambiente PAM | Microsoft Identity Manager
+title: Modelo de camada do ambiente do PAM | Documentos da Microsoft
 description: Saiba mais sobre o modelo de camada que segrega o sistema com base na vulnerabilidade a riscos.
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 1a750bedee2aac667c84113d2d08daa20428c260
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 659a9d8ff53372300c0e52432116c7c295d59a4b
 
 
 ---
 
-# Modelo de camada para criação de partições de privilégios administrativos
+# <a name="tier-model-for-partitioning-administrative-privileges"></a>Modelo de camada para criação de partições de privilégios administrativos
 
 No ambiente de ameaças atual, a questão não é se um atacante irá obter acesso aos seus sistemas, mas quando. Isto significa que a segurança interna é tão importante como uma defesa de perímetro forte. Este artigo descreve um modelo de segurança destinado a proteger contra a elevação de privilégios segregando as atividades de privilégios elevados das zonas de alto risco. Este modelo fornece uma boa experiência de utilizador ao cumprir as melhores práticas e os princípios de segurança.
 
-## Elevação de Privilégios em florestas do Active Directory
+## <a name="elevation-of-privilege-in-active-directory-forests"></a>Elevação de Privilégios em florestas do Active Directory
 
 Os utilizadores, serviços ou contas de aplicações às quais são concedidos privilégios administrativos permanentes a florestas do Windows Server Active Directory (AD) introduzem uma quantidade significativa de risco para a missão e o negócio da sua organização. Estas contas são muitas vezes alvos para os pelos atacantes porque, se ficarem comprometidas, o atacante terá o privilégio de se ligar a outros servidores ou aplicações no domínio.
 
 O modelo de camada cria divisões entre os administradores com base nos recursos que gerem. Os administradores com controlo sobre as estações de trabalho do utilizador estão separados dos que controlam as aplicações ou gerem as identidades de empresa. Saiba mais sobre este modelo no [Material de referência para proteger o acesso privilegiado](http://aka.ms/tiermodel).
 
-## Restringir a exposição de credenciais com restrições de início de sessão
+## <a name="restricting-credential-exposure-with-logon-restrictions"></a>Restringir a exposição de credenciais com restrições de início de sessão
 
 A redução do risco de roubo de credenciais para contas administrativas normalmente requer a reformulação das práticas administrativas para limitar a exposição aos atacantes. Como primeiro passo, as organizações são aconselhadas a:
 
@@ -62,6 +62,6 @@ O artigo seguinte, [Planear um ambiente bastion](planning-bastion-environment.md
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -1,25 +1,25 @@
 ---
-title: "Instalar Serviço de Sincronização MIM | Microsoft Identity Manager"
+title: "Instalar o Serviço de Sincronização do MIM | Documentos da Microsoft"
 description: "Comece a trabalhar com os componentes do MIM 2016 ao instalar e configurar o Serviço de Sincronização."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 08/11/2016
 ms.topic: get-started-article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 739797502e09c2b92e35767e2c943308cd1de5c9
-ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: dc1f7ff40ed5f657c24e7293ff76241c3a7082f1
 
 
 ---
 
-# Instalar o MIM 2016: Serviço de Sincronização do MIM
+# <a name="install-mim-2016-mim-synchronization-service"></a>Instalar o MIM 2016: Serviço de Sincronização do MIM
 
 >[!div class="step-by-step"]
 [« Exchange Server](prepare-server-exchange.md)
@@ -29,7 +29,7 @@ ms.openlocfilehash: ba399da1431ea1d2d1633d0469e054ffd89f1d34
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
 > - Nome do controlador de domínio – **nomedoservidormim**
 > - Nome de domínio – **contoso**
-> - Palavra-passe – **Palavra@passe1**
+> - Palavra-passe – **Pass@word1**
 
 Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro o pacote de instalação.
 
@@ -37,7 +37,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.
 
-## Instalar o Serviço de Sincronização do MIM 2016
+## <a name="install-mim-2016-synchronization-service"></a>Instalar o Serviço de Sincronização do MIM 2016
 
 1. Na pasta de instalação descompactada do MIM, navegue até à pasta **Serviço de Sincronização**.
 
@@ -65,7 +65,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
     1.  Conta de serviço: *SincronizaçãoMIM*
 
-    2.  Palavra-passe: *Palavra@passe1*
+    2.  Palavra-passe: *Pass@word1*
 
     3.  Domínio da Conta de Serviço ou nome do computador local: *contoso*
 
@@ -107,6 +107,6 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

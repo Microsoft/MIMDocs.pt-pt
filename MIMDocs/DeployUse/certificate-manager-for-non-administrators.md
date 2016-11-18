@@ -1,28 +1,28 @@
 ---
-title: "Renovação do self-service de smart card | Microsoft Identity Manager"
+title: "Renovação self-service de smart cards | Documentos da Microsoft"
 description: Saiba como inscrever smart cards para utilizadores sem acesso de administrador aos respetivos computadores para que possam utilizar o Gestor de Certificados.
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 2fddede481b5ba677d0d463be4b14cda4b463865
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 76d72211e1dbddb2647729c796ac19eb82a3b2c6
 
 
 ---
 
-# Inscrição de smart cards para não administradores
+# <a name="enroll-smart-cards-for-nonadministrators"></a>Inscrição de smart cards para não administradores
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
 
-## Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
+## <a name="enabling-smart-card-renewal-for-nonadmins-in-mim-2016-certificate-manager"></a>Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
 
 1.  **Descompactar o ficheiro appx**
 
@@ -84,7 +84,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     Os utilizadores que não são administradores não podem criar smart cards virtuais no TPM, pelo que tem de os criar em seu nome.
 
-6.  **Criar um smart card virtual através do TpmVscMgr**
+6.  **Criar um smart card virtual com o TpmVscMgr**
 
     Efetue o seguinte (ainda como o administrador) para criar um smart card virtual em branco num computador. Isto pode ser efetuado através do Intune, do SCCM ou das políticas de grupo.
 
@@ -96,6 +96,6 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

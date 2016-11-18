@@ -1,25 +1,25 @@
 ---
-title: Gestor de Certificados do MIM | Microsoft Identity Manager
+title: Gestor de Certificados do MIM | Documentos da Microsoft
 description: "Saiba como implementar a aplicação Gestor de Certificados para permitir aos utilizadores gerirem os respetivos direitos de acesso."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/21/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3ab1b9376c9b613739d87c812f4b16a4e17e6de
-ms.openlocfilehash: 1aea9543af4dd7f3eab4f01eab52d8c11b36191d
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: a2be6b5640dde5e2908dce36ea13d920a6643874
 
 
 ---
 
-# Trabalhar com o Gestor de Certificados do MIM
+# <a name="working-with-the-mim-certificate-manager"></a>Trabalhar com o Gestor de Certificados do MIM
 Quando tiver o MIM 2016 e o Gestor de Certificados configurados e a funcionar, pode implementar a aplicação da loja Windows do Gestor de Certificados do MIM para que os utilizadores possam gerir facilmente os smart cards físicos, smart cards virtuais e certificados de software. Os passos para implementar a aplicação MIM CM são os seguintes:
 
 1.  Crie um modelo de certificado.
@@ -30,7 +30,7 @@ Quando tiver o MIM 2016 e o Gestor de Certificados configurados e a funcionar, 
 
 4.  Implemente a aplicação através do SCCM ou do Intune.
 
-## Criar um modelo de certificado
+## <a name="create-a-certificate-template"></a>Criar um modelo de certificado
 Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-se de que o modelo de certificado tem uma versão igual ou superior à 3.
 
 1.  Inicie sessão no servidor com o AD CS executado (o servidor de certificados).
@@ -69,7 +69,7 @@ Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-
 
 16. Na lista, selecione o novo modelo que criou e clique em **OK**.
 
-## Criar um modelo de perfil
+## <a name="create-a-profile-template"></a>Criar um modelo de perfil
 Quando cria um modelo de perfil, certifique-se de que o configura para criar/destruir o vSC e remover a recolha de dados. A aplicação CM não consegue processar os dados recolhidos, pelo que é importante desativá-los da seguinte forma.
 
 1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
@@ -94,7 +94,7 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 11. Tem de desativar os itens de recolha de dados para todas as políticas ao clicar na política no painel esquerdo e ao selecionar a caixa junto a **Item de dados de exemplo** e, em seguida, clique em **Eliminar itens de recolha de dados**. Em seguida, clique em **OK**.
 
-## Preparar a aplicação CM para a implementação
+## <a name="prepare-the-cm-app-for-deployment"></a>Preparar a aplicação CM para a implementação
 
 1.  Na linha de comandos, execute o seguinte comando para descompactar a aplicação e extrair os conteúdos para uma nova subpasta denominada appx e crie uma cópia para não modificar o ficheiro original.
 
@@ -251,11 +251,11 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
     -   Para obter ajuda com o script **ConfigureMIimCMClientAndRelyingParty.ps1**, execute `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
 
-## Implementar a aplicação
+## <a name="deploy-the-app"></a>Implementar a aplicação
 Ao configurar a aplicação CM, no Centro de Transferências, transfira o ficheiro MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip e extraia todos os respetivos conteúdos. O ficheiro .appx é o instalador. Pode implementá-la da forma que normalmente implementa aplicações da loja Windows, através do [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx) ou do [Intune](https://technet.microsoft.com/library/dn613839.aspx) para o sideload da aplicação para que os utilizadores tenham de aceder através do Portal da Empresa ou obtenham a aplicação diretamente nos respetivos computadores.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

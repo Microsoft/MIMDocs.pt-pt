@@ -1,8 +1,9 @@
 ---
-title: Microsoft Identity Manager 2016 | Microsoft Identity Manager
+title: Microsoft Identity Manager 2016 | Documentos da Microsoft
 description: "Compreenda como funciona o MIM 2016 para criar uma experiência de gestão de identidades mais segura e conveniente na nuvem e no local."
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: mbaldwin
 ms.date: 09/28/2016
 ms.topic: article
@@ -12,8 +13,8 @@ ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 94813519554652a5554af914611d06b8a4d96ea4
-ms.openlocfilehash: b791b18fa3775295e9c199086aa11a0d6c6a55e7
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: ed477de53abbf646f47efb90e617b04184bc29a9
 
 
 ---
@@ -84,6 +85,6 @@ Tem de criar uma cópia de segurança das bases de dados de Sincronização do M
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

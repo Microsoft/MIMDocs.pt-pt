@@ -1,25 +1,25 @@
 ---
-title: "Definir funções com privilégios para o PAM | Microsoft Identity Manager"
+title: "Definir funções com privilégios para o PAM | Documentos da Microsoft"
 description: "Decidir que funções com privilégios devem ser geridas e definir a política de gestão para cada uma."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: 442b596107d9ade0ca466500440a32b2dd26fa14
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: ae582e6aff2449aeee8b68ebe90b22b18e5a67d2
 
 
 ---
 
-# Definir funções para o Privileged Access Management
+# <a name="define-roles-for-privileged-access-management"></a>Definir funções para o Privileged Access Management
 
 Com o Privileged Access Management, pode atribuir utilizadores a funções com privilégios, que estes podem ativar conforme necessário para obterem acesso just-in-time. Estas funções são definidas manualmente e estabelecidas no ambiente bastion. Este artigo orienta-o no processo de decidir que funções gerir através do PAM e como defini-las com as restrições e permissões adequadas.
 
@@ -33,7 +33,7 @@ As permissões de função dependem das aplicações que estão a ser geridas. E
 
 - As necessárias para gerir os dados contidos no Active Directory (por exemplo, criar utilizadores e grupos)
 
-## Identificar funções
+## <a name="identify-roles"></a>Identificar funções
 
 Comece por identificar todas as funções que poderá querer gerir com o PAM. Na folha de cálculo, cada função potencial terá a sua própria linha.
 
@@ -57,7 +57,7 @@ Outras considerações na determinação do âmbito das permissões para incluir
 
 - É possível separar a administração e a auditoria, para que um utilizador numa função administrativa não possa apagar os registos de auditoria das respetivas ações?
 
-## Estabelecer requisitos de governação de funções
+## <a name="establish-role-governance-requirements"></a>Estabelecer requisitos de governação de funções
 
 À medida que identificar funções candidatas, comece a preencher a folha de cálculo. Crie colunas para os requisitos que são relevantes para a sua organização. Alguns requisitos a ter em consideração incluem:
 
@@ -79,7 +79,7 @@ Outras considerações na determinação do âmbito das permissões para incluir
 
 - Que permissões de aplicação (veja a lista de exemplo para o AD abaixo) estão associadas a esta função?
 
-## Selecionar um método de acesso
+## <a name="select-an-access-method"></a>Selecionar um método de acesso
 
 Podem existir várias funções num sistema de Privileged Access Management com as mesmas permissões atribuídas se comunidades diferentes de utilizadores tiverem requisitos distintos de governação de acesso. Por exemplo, uma organização pode aplicar políticas diferentes aos seus funcionários a tempo inteiro do que as políticas que aplica a funcionários de TI externos de outra organização.
 
@@ -95,7 +95,7 @@ Em alguns casos, um utilizador pode ser permanentemente atribuído a uma funçã
 
 Para as organizações preocupadas com a possibilidade de roubo ou de utilização indevida de credenciais, o guia [Utilizar o MFA do Azure para ativação](use-azure-mfa-for-activation.md) inclui instruções sobre como configurar o MIM para exigir uma verificação extraordinária no momento da ativação da função.
 
-## Delegar permissões do Active Directory
+## <a name="delegate-active-directory-permissions"></a>Delegar permissões do Active Directory
 
 O Windows Server cria automaticamente grupos predefinidos, tais como "Admins do domínio" quando são criados novos domínios. Estes grupos simplificam a introdução e podem ser adequados para organizações mais pequenas. No entanto, as organizações de maior dimensão, ou aquelas que precisam de mais isolamento de privilégios administrativos, devem esvaziar grupos como Admins do domínio e substituí-los por grupos que fornecem permissões detalhadas.
 
@@ -106,7 +106,7 @@ Uma limitação do grupo Admins do domínio é o facto de não poder ter membros
 
 Em vez de grupos predefinidos, como Admins do domínio, crie novos grupos de segurança que forneçam apenas as permissões necessárias e utilize o MIM para fornecer dinamicamente contas de administrador com essas associações a grupos.
 
-### Permissões de gestão de serviços
+### <a name="service-management-permissions"></a>Permissões de gestão de serviços
 
 A tabela seguinte fornece exemplos de permissões que seriam relevantes de incluir em funções para gerir o AD.
 
@@ -122,7 +122,7 @@ A tabela seguinte fornece exemplos de permissões que seriam relevantes de inclu
 | Gerir Zonas | Criar, eliminar e modificar Zonas DNS e objetos no Active Directory |
 | Modificar UOs de Camada 0 | Modificar UOs de camada 0 e objetos contidos no Active Directory |
 
-### Permissões de gestão de dados
+### <a name="data-management-permissions"></a>Permissões de gestão de dados
 
 A tabela seguinte fornece exemplos de permissões que seriam relevantes de incluir em funções para gerir ou utilizar os dados contidos no AD.
 
@@ -138,13 +138,13 @@ A tabela seguinte fornece exemplos de permissões que seriam relevantes de inclu
 | Associar Admin Local/PC                    | Direitos administrativos locais para todas as estações de trabalho                               |
 | Associar Admin Local/Srv                   | Direitos administrativos locais para todos os servidores                                    |
 
-## Exemplo de definições de funções
+## <a name="example-role-definitions"></a>Exemplo de definições de funções
 
 A escolha das definições de funções dependerá da camada dos servidores que estão a ser geridos pelas contas com privilégios. Também dependerá da escolha das aplicações que estão a ser geridas, uma vez que as aplicações, como o Exchange ou produtos enterprise de terceiros como o SAP, muitas vezes trarão as suas próprias definições de funções adicionais para administração delegada.
 
 As secções seguintes fornecem exemplos para cenários típicos de empresas.
 
-### Camada 0 - Floresta administrativa
+### <a name="tier-0-administrative-forest"></a>Camada 0 - Floresta administrativa
 
 As funções adequadas a contas no ambiente bastion poderão incluir:
 
@@ -153,7 +153,7 @@ As funções adequadas a contas no ambiente bastion poderão incluir:
 - Utilizadores que são administradores da floresta de produção
 - Utilizadores a quem são delegados direitos administrativos a aplicações na floresta de produção
 
-### Camada 0 - Floresta de produção empresarial
+### <a name="tier-0-enterprise-production-forest"></a>Camada 0 - Floresta de produção empresarial
 
 As funções adequadas à gestão das contas e recursos da floresta de produção de camada 0 poderão incluir:
 
@@ -170,7 +170,7 @@ As funções adequadas à gestão das contas e recursos da floresta de produçã
 - Administradores de cópia de segurança para a camada 0
 - Utilizadores de controladores BMC e fora de banda (para gestão integral ou de KVM) ligados a anfitriões de camada 0
 
-### Nível 1
+### <a name="tier-1"></a>Nível 1
 
 As funções para a gestão e cópia de segurança de servidores na camada 1 poderão incluir:
 
@@ -192,7 +192,7 @@ Além disso, as funções para a gestão de aplicações empresariais na camada 
 - Administradores de um serviço em nuvem, por exemplo, um site de uma empresa ou DNS público
 - Administradores de sistemas HCM, Financeiros e Jurídicos
 
-### Camada 2
+### <a name="tier-2"></a>Camada 2
 
 As funções para a gestão de utilizadores e computadores não administrativos poderão incluir:
 
@@ -203,6 +203,6 @@ As funções para a gestão de utilizadores e computadores não administrativos 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

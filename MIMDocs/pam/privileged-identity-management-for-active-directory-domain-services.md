@@ -1,12 +1,12 @@
 ---
-title: "O que é o PAM para o ADDS? | Microsoft Identity Manager"
+title: "O que é o PAM para o ADDS? | Documentos da Microsoft"
 description: Saiba mais sobre Privileged Access Management e como pode ajudar a gerir e proteger o ambiente do Active Directory.
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
-ms.date: 07/27/2016
+ms.date: 10/25/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
@@ -15,12 +15,12 @@ ms.suite: ems
 experimental: true
 experiment_id: kgremban_images
 translationtype: Human Translation
-ms.sourcegitcommit: e695dd47e4bd31c4004c7d0d9ec76498d52fb56a
-ms.openlocfilehash: b46c2b50873023d504fb7b440a1d4e40e8fa3ac7
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 4b3779f33a8bbd2ad62c88343ef3611b17fc81a2
 
 ---
 
-# Privileged Access Management para Serviços de Domínio do Active Directory
+# <a name="privileged-access-management-for-active-directory-domain-services"></a>Privileged Access Management para Serviços de Domínio do Active Directory
 O Privileged Access Management (PAM) é uma solução que ajuda as organizações a restringir o acesso privilegiado num ambiente do Active Directory existente.
 
 O Privileged Access Management concretiza dois objetivos:
@@ -31,14 +31,14 @@ O Privileged Access Management concretiza dois objetivos:
 > [!NOTE]
 > O PAM é uma instância do [Privileged Identity Management](https://azure.microsoft.com/documentation/articles/active-directory-privileged-identity-management-configure/) (PIM) que é implementado com o Microsoft Identity Manager (MIM).
 
-## Que problemas o PAM ajuda a resolver?
+## <a name="what-problems-does-pam-help-solve"></a>Que problemas o PAM ajuda a resolver?
 Uma preocupação real para as empresas da atualidade é o acesso a recursos num ambiente do Active Directory. Particularmente inquietantes são as notícias sobre vulnerabilidades, escalamentos de privilégios não autorizados e outros tipos de acesso não autorizado, incluindo comprometimentos «pass-the-hash», «pass-the-ticket», «spear phishing» e de Kerberos.
 
 Hoje em dia, é demasiado fácil para os atacantes obterem credenciais de contas de Administradores de domínio e demasiado difícil descobrir estes ataques depois de ocorrerem. O objetivo do PAM é reduzir as oportunidades de utilizadores mal intencionados obterem acesso, aumentando simultaneamente o seu controlo e o conhecimento do ambiente.
 
 O PAM dificulta a capacidade dos atacantes de penetrarem numa rede e obterem acesso a contas com privilégios. O PAM adiciona proteção aos grupos com privilégios que controlam o acesso numa série de computadores associados a um domínio e de aplicações nesses computadores. Também adiciona mais monitorização, mais visibilidade e mais controlos detalhados, para que as organizações possam ver quem são os seus administradores com privilégios e o que estão a fazer. O PAM dá às organizações uma visão mais ampla de como as contas administrativas são utilizadas no ambiente.
 
-## Como é configurado o PAM?
+## <a name="how-is-pam-set-up"></a>Como é configurado o PAM?
 O PAM baseia-se no princípio de administração just-in-time, que está relacionada com a [administração just enough (JEA)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362). O JEA é um toolkit do Windows PowerShell que define um conjunto de comandos para realizar atividades com privilégios e um ponto final onde os administradores podem obter autorização para executar esses comandos. No JEA, um administrador decide que os utilizadores com um determinado privilégio podem executar uma determinada tarefa. Sempre que um utilizador elegível precisar de realizar essa tarefa, o administrador ativa essa permissão. As permissões expiram após um período de tempo especificado, para que um utilizador mal intencionado não possa roubar o acesso.
 
 A configuração e a operação do PAM tem quatro passos.
@@ -53,7 +53,7 @@ A configuração e a operação do PAM tem quatro passos.
 
 4.  **Monitorizar**: o PAM adiciona auditoria, alertas e relatórios de pedidos de acesso privilegiado. Pode rever o histórico de acesso privilegiado e ver quem realizou uma atividade. Pode decidir se a atividade é válida ou não e identificar facilmente uma atividade não autorizada, tal como uma tentativa de adicionar um utilizador diretamente a um grupo com privilégios na floresta original. Este passo é importante não só para identificar software malicioso, mas também para controlar atacantes "internos".
 
-## Como funciona o PAM?
+## <a name="how-does-pam-work"></a>Como funciona o PAM?
 O PAM baseia-se em novas capacidades do AD DS, particularmente para autorização e autenticação de contas de domínio, e em novas capacidades do Microsoft Identity Manager. O PAM separa as contas com privilégios de um ambiente do Active Directory existente. Quando é preciso utilizar uma conta com privilégios, primeiro tem de ser pedida e, em seguida, aprovada. Após a aprovação, a conta com privilégios obtém permissão através de um grupo principal externo numa nova floresta bastion, em vez de na floresta atual do utilizador ou aplicação. A utilização de uma floresta bastion dá à organização um maior controlo, como, por exemplo, quando um utilizador pode ser membro de um grupo com privilégios, e como o utilizador precisa de fazer a autenticação.
 
 O Active Directory, o Serviço MIM e outras partes desta solução também podem ser implementados numa configuração de elevada disponibilidade.
@@ -76,13 +76,15 @@ O PAM oferece as seguintes vantagens:
 
 -   **Fluxo de trabalho personalizável**: os fluxos de trabalho do MIM podem ser configurados para diferentes cenários e podem ser utilizados vários fluxos de trabalho, com base nos parâmetros do utilizador requerente ou das funções pedidas.
 
-## Como é que os utilizadores pedem acesso privilegiado?
+## <a name="how-do-users-request-privileged-access"></a>Como é que os utilizadores pedem acesso privilegiado?
 Existem várias formas de um utilizador poder submeter um pedido, incluindo:  
 - A API dos Serviços Web dos Serviços MIM  
 - Um ponto final de REST  
 - Windows PowerShell (`New-PAMRequest`)
 
-## Que fluxos de trabalho e opções de monitorização estão disponíveis?
+Obter detalhes acerca dos [cmdlets de Gestão de Acesso Privilegiado](https://technet.microsoft.com/library/mt604080.aspx).
+
+## <a name="what-workflows-and-monitoring-options-are-available"></a>Que fluxos de trabalho e opções de monitorização estão disponíveis?
 Por exemplo, imaginemos que um utilizador foi membro de um grupo administrativo antes de o PIM ser configurado. Como parte da configuração do PIM, o utilizador é removido do grupo administrativo e é criada uma política no MIM. A política especifica que, se esse utilizador pedir privilégios administrativos e for autenticado pelo MFA, o pedido é aprovado e uma conta separada para o utilizador será adicionada ao grupo com privilégios na floresta bastion.
 
 Partindo do princípio de que o pedido é aprovado, o fluxo de trabalho da ação comunica diretamente com a floresta bastion do Active Directory para colocar um utilizador num grupo. Por exemplo, quando a Joana pede para administrar a base de dados de RH, a conta administrativa da Joana é adicionada ao grupo com privilégios na floresta bastion dentro de segundos. A associação da Joana à sua conta administrativa nesse grupo irá expirar após um limite de tempo. Com o Windows Server Technical Preview, essa associação é associada no Active Directory com um limite de tempo; com o Windows Server 2012 R2 na floresta bastion, esse limite de tempo é imposto pelo MIM.
@@ -96,6 +98,6 @@ Este fluxo de trabalho destina-se especificamente a estas contas administrativas
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -1,25 +1,25 @@
 ---
-title: Compreender os componentes do PAM | Microsoft Identity Manager
+title: Compreender os componentes do PAM | Documentos da Microsoft
 description: "A Gestão de Acesso Privilegiado partilha alguns componentes com o MIM e tem de alguns próprios. Saiba como estes funcionam em conjunto."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: identity-manager-2015
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ae4c40c73dd9d5860f42e00765a7e34e8ca397a9
-ms.openlocfilehash: d17feb5d78b864bef8f0b96bfbf92a18c3c91694
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: 043d617bcd2addf7c6dc7ecd210790fc55f12c28
 
 
 ---
 
-# Compreender os componentes de PAM
+# <a name="understand-the-components-of-pam"></a>Compreender os componentes de PAM
 
 A Gestão de Acesso Privilegiado mantém o acesso administrativo separado das contas de utilizador quotidianas. Esta solução depende de florestas paralelas:
 
@@ -43,6 +43,6 @@ Além disso, estas associações têm tempo limitado para que, após um interval
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

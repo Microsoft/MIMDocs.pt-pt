@@ -1,25 +1,25 @@
 ---
-title: "Implementação PAM passo 7 – acesso de utilizador| Microsoft Identity Manager"
+title: "Implementar o PAM passo 7 – acesso de utilizador| Documentos da Microsoft"
 description: "Como passo final, conceda acesso temporário de utilizador com privilégios para demonstrar que a implementação Privileged Access Management foi concluída com êxito."
 keywords: 
 author: kgremban
+ms.author: kgremban
 manager: femila
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9b5b7460e6307ab38b1b9356a638eb0200fd97d1
-ms.openlocfilehash: 009091a65dba31de2066e45930e438442fcd89a0
+ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
+ms.openlocfilehash: e543453946ea70c2c7360363df87946d973322bf
 
 
 ---
 
-# Passo 7 – Elevar o acesso de um utilizador
+# <a name="step-7-elevate-a-users-access"></a>Passo 7 – Elevar o acesso de um utilizador
 
 >[!div class="step-by-step"]
 [« Passo 6 ](step-6-transition-group-to-pam.md)
@@ -27,7 +27,7 @@ ms.openlocfilehash: 009091a65dba31de2066e45930e438442fcd89a0
 
 Este passo demonstra que um utilizador pode pedir acesso a uma função através de MIM.
 
-## Certifique-se que a Jen não pode aceder ao recurso com privilégios
+## <a name="verify-that-jen-cannot-access-the-privileged-resource"></a>Certifique-se que a Jen não pode aceder ao recurso com privilégios
 Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na floresta CORP.
 
 1. Terminar sessão no CORPWKSTN para remover quaisquer ligações abertas em cache.
@@ -36,7 +36,7 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 4. Escreva o comando `dir \\corpwkstn\corpfs`. A mensagem de erro **Acesso negado** deve aparecer.
 5. Deixe a janela de linha de comandos aberta.
 
-## Pedir acesso privilegiado do MIM.
+## <a name="request-privileged-access-from-mim"></a>Pedir acesso privilegiado do MIM.
 1. No CORPWKSTN, ainda como CONTOSO\Jen, escreva o seguinte comando.
 
     ```
@@ -65,7 +65,7 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 
 6. Escreva a palavra-passe para a conta PRIV.Jen. Será apresentada uma nova janela de linha de comandos.
 
-## Valide o acesso elevado.
+## <a name="validate-the-elevated-access"></a>Valide o acesso elevado.
 Na janela de linha de comandos recém aberta, escreva os seguintes comandos.
 
 ```
@@ -75,7 +75,7 @@ dir \\corpwkstn\corpfs
 
 Se o comando dir falhar com a mensagem de erro **Acesso negado**, verifique novamente a relação de fidedignidade.
 
-## Ativar a função com privilégios
+## <a name="activate-the-privileged-role"></a>Ativar a função com privilégios
 Ative pedindo acesso privilegiado através do portal de amostra de PAM.
 
 1. No CORPWKSTN, certifique-se de que tem sessão iniciada como CORP\Jen.
@@ -95,7 +95,7 @@ Ative pedindo acesso privilegiado através do portal de amostra de PAM.
 > [!Note]
 > Neste ambiente, também pode aprender como desenvolver aplicações que utilizam a API REST do PAM, descrita em [Referência à API REST do Privileged Access Management](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference).
 
-## Resumo
+## <a name="summary"></a>Resumo
 Depois de concluir os passos nestas instruções, terá demonstrado um cenário de Privileged Access Management, no qual os privilégios de utilizador são elevados durante um período limitado de tempo, permitindo que o utilizador aceda a recursos protegidos com uma conta com privilégios separada. Assim que a sessão de elevação expira, a conta com privilégios já não consegue aceder ao recurso protegido. A decisão sobre que grupos de segurança representam funções com privilégios é coordenada pelo administrador de PAM. Depois dos direitos de acesso serem migrados para o sistema de Privileged Access Management, o acesso que era anteriormente possível com a conta de utilizador original é, agora, possível apenas ao iniciar sessão com uma conta com privilégios especiais, e disponibilizado após pedido. Como resultado, as associações de grupo para os grupos com privilégios elevados são eficazes durante um período limitado de tempo.
 
 >[!div class="step-by-step"]
@@ -103,6 +103,6 @@ Depois de concluir os passos nestas instruções, terá demonstrado um cenário 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

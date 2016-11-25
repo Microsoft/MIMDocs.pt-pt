@@ -3,23 +3,27 @@ title: "Passo 8: Verificação de implementação da PAM"
 description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
 keywords: 
 author: barclayn
+ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/04/2016
+ms.date: 10/25/2016
 ms.topic: article
-ms.prod: microsoft-identity-manager
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b1ff9f622ddd357866b2a3f9f4cc8e0fc88005
-ms.openlocfilehash: 9a617d8a5fbe8bcdac40cdf3250e5efedb7a0b84
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 7709b4df5bb196aba6abf056830bc73e024174ef
 
 
 ---
 
-# Passo 8: Verificação de implementação da PAM
+# <a name="step-8-pam-deployment-verification"></a>Passo 8: Verificação de implementação da PAM
+
+>[!div class="step-by-step"]
+[« Passo 7](sp1-step7-setup-sidhistory-sidfiltering.md)
+[Adenda »](sp1-pam-deployment-addendum.md)
 
 O Pacote de implementação inclui scripts de verificação que podem executar um cenário da PAM para validar se a implementação da PAM está a funcionar conforme esperado.
 Para utilizar a Verificação de Implementação, modifique a secção PAMDeploymentConfig.xml denominada <PamValidation/>.
@@ -79,6 +83,6 @@ Na janela do PowerShell, escreva:
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

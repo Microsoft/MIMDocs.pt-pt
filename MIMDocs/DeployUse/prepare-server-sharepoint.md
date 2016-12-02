@@ -5,7 +5,7 @@ keywords:
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 12/01/2016
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: f67bb8260f0f1e6ef491a5de7e7ef95009651cf2
+ms.sourcegitcommit: c26816322bf6d281ae32f7fee69ed9f8e002e7c7
+ms.openlocfilehash: 94c0f931ad9a1e8f8f9196288107e4f75c72a211
 
 
 ---
@@ -88,8 +88,7 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
     ```
     $dbManagedAccount = Get-SPManagedAccount -Identity contoso\SharePoint
-    New-SpWebApplication -Name "MIM Portal" -ApplicationPool "MIMAppPool"
-    -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://corpidm.contoso.local
+    New-SpWebApplication -Name "MIM Portal" -ApplicationPool "MIMAppPool" -ApplicationPoolAccount $dbManagedAccount -AuthenticationMethod "Kerberos" -Port 82 -URL http://corpidm.contoso.local
     ```
 
     > [!NOTE]
@@ -137,6 +136,6 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

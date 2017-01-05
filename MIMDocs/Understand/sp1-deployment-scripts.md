@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b1ff9f622ddd357866b2a3f9f4cc8e0fc88005
-ms.openlocfilehash: 82500ff42e24f5b155bfdd336566a2cd3d87fe7e
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 2bf445f2103c2793d613e001f15e06bdc8b9ad54
 
 
 ---
@@ -37,6 +37,6 @@ Pronto para começar com os scripts de implementação da PAM? Comece em [Config
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

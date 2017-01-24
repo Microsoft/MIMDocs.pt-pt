@@ -1,11 +1,11 @@
 ---
 title: Microsoft Identity Manager 2016 | Documentos da Microsoft
-description: "Compreenda como funciona o MIM 2016 para criar uma experiência de gestão de identidades mais segura e conveniente na nuvem e no local."
+description: "O MIM inclui as funcionalidades de gestão de acesso do FIM 2010 e ajuda-o a gerir utilizadores, credenciais, políticas e acesso dentro da sua organização."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 08/11/2016
+ms.date: 01/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 74d93047ad30d81546940fc4ece3d892fe6df2f8
+ms.sourcegitcommit: 4f7af7cfc258f95bf1fff77e732e5cf11d0ae239
+ms.openlocfilehash: 9db813d870de433757ff3dac69c82771bb7fbd7b
 
 
 ---
@@ -30,13 +30,13 @@ O Microsoft Identity Manager 2016 funciona em conjunto com o Azure para lhe dar 
 ## <a name="privileged-identity-management"></a>Privileged Identity Management
 O Privileged Identity Management controla e gere o acesso administrativo ao conceder acesso temporário e baseado em tarefas a recursos confidenciais. Isto significa que pode dar aos utilizadores apenas a permissão necessária, o que reduz as possibilidades de um atacante informático obter acesso administrativo total. Além disso, o Privileged Identity Management extrai e isola as contas administrativas de florestas do Active Directory existentes.
 
-O MIM suporta uma solução de Privileged Identity Management no local para gerir Active Directors. Para começar, [Utilize o Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services).
+O MIM suporta uma solução de Privileged Identity Management no local para gerir Active Directory. Para começar, [Utilize o Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 Microsoft Identity Manager está ainda intimamente relacionado com o respetivo predecessor, o Forefront Identity Manager. Se ainda utilizar FIM ou desejar referir-se a documentação adicional, observe o [Mapa de Documentação do FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx).
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO3-->
 
 

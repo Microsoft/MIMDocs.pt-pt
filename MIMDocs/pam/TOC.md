@@ -18,21 +18,21 @@
 ### [Passo 4 – instalar o MIM no servidor de PAM](step-4-install-mim-components-on-pam-server.md)
 ### [Passo 5 – estabelecer fidedignidade entre PRIV e a rede empresarial](step-5-establish-trust-between-priv-corp-forests.md)
 ### [Passo 6 – criar contas com privilégios](step-6-transition-group-to-pam.md)
-### [Passo 7 – elevar o acesso de um utilizador](step-7-elevate-user-access.md)
+### [Passo 7 – Elevar o acesso de um utilizador](step-7-elevate-user-access.md)
 ### [Configurar a MFA do Azure](use-azure-mfa-for-activation.md)
 ## [Configurar a PAM através de scripts](sp1-pam-configure-using-scripts.md)
 ### [Passo 1: Configurar o domínio Priv](sp1-step1-configuring-priv-domain.md)
 ### [Passo 2: Configurar o domínio CORP](sp1-step2-configuring-corp-domain.md)
 ### [Passo 3: Configurar o SQL](sp1-step3-installing-configuring-sql.md)
 ### [Passo 4: Configurar o SharePoint](sp1-step4-configuring-sharepoint.md)
-### [Passo 5: Instalar/Configurar a PAM](sp1-step5-configuring-pam.md)
-### [Passo 6: Configurar a confiança de PAM](sp1-step6-setup-pam-trust.md)
+### [Passo 5: Instalar/configurar a PAM](sp1-step5-configuring-pam.md)
+### [Passo 6: Configurar a confiança da PAM](sp1-step6-setup-pam-trust.md)
 ### [Passo 7: Configurar o histórico/filtragem do SID](sp1-step7-setup-sidhistory-sidfiltering.md)
 ### [Passo 8: Verificação de implementação da PAM](sp1-step8-pam-deployment-verification.md)
 ### [Adenda](sp1-pam-deployment-addendum.md)
 # [Referência para Programadores](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

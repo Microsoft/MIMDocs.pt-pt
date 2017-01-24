@@ -13,8 +13,8 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc56b57a06592527bab13aad879ca13466e968b3
-ms.openlocfilehash: cdd859ceb13d187af3303235c0fe1e496f2bfb6e
+ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
+ms.openlocfilehash: 7f859a74d13a6741dbaf08a1641a73ae986c8343
 
 
 ---
@@ -74,6 +74,6 @@ Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Configurar o Windows Server | Documentos da Microsoft
+title: Configurar o Windows Server 2012 R2 para o MIM 2016 | Documentos da Microsoft
 description: "Obter os passos e requisitos mínimos para preparar o Windows Server 2012 RS para funcionar com o MIM 2016."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 08/11/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 06d2365808858dc09d04ab37eafa9d6e3212cbcf
+ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
+ms.openlocfilehash: 1cb0d6cd310372ecaeff47c9cc4461ebc43b3390
 
 
 ---
@@ -111,6 +111,6 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

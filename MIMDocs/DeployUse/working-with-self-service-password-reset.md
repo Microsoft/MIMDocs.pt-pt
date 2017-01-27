@@ -1,11 +1,11 @@
 ---
-title: "Recuperação de Palavra-passe Self-Service | Documentos da Microsoft"
+title: "Trabalhar com o portal de Reposição Personalizada de Palavra-passe | Documentos da Microsoft"
 description: "Veja as novidades da Reposição Personalizada de Palavra-passe no MIM 2016, incluindo como o SSPR funciona com a autenticação multifator."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,29 +13,29 @@ ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 7d53579b8f0b069880aac256654506eb38060fe5
+ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
+ms.openlocfilehash: 72c773601cd722290b6e7a9d5d13458f0409cfdc
 
 
 ---
 
-# <a name="working-with-selfservice-password-reset"></a>Trabalhar com a Reposição Personalizada de Palavra-passe
+# <a name="working-with-self-service-password-reset"></a>Trabalhar com a Reposição Personalizada de Palavra-passe
 O Microsoft Identity Manager 2016 fornece funcionalidades adicionais para a opção Reposição Personalizada de Palavra-passe. Esta opção foi melhorada com várias funcionalidades importantes:
 
--   O portal Reposição Personalizada de Palavra-passe e o ecrã Início de Sessão do Windows permitem agora que os utilizadores desbloqueiem as respetivas contas sem alterarem as palavras-passe ou contactarem os administradores de suporte. Os utilizadores podem ficar com as contas bloqueadas por variados motivos legítimos como, por exemplo, se introduzirem uma palavra-passe antiga, utilizarem computadores bilingues e tiverem o teclado definido para o idioma errado ou tentarem iniciar sessão numa estação de trabalho partilhada já aberta na conta de outra pessoa.
+-   O portal de Reposição Personalizada de Palavra-passe e o ecrã Início de Sessão do Windows permitem agora que os utilizadores desbloqueiem as respetivas contas sem alterarem as palavras-passe ou contactarem os administradores de suporte. Os utilizadores podem ficar com as contas bloqueadas por variados motivos legítimos como, por exemplo, se introduzirem uma palavra-passe antiga, utilizarem computadores bilingues e tiverem o teclado definido para o idioma errado ou tentarem iniciar sessão numa estação de trabalho partilhada já aberta na conta de outra pessoa.
 
 -   Foi adicionada a nova porta de autenticação Porta de Telefone. Isto permite a autenticação do utilizador através de uma chamada telefónica.
 
 -   Foi adicionado o suporte para o serviço Multi-Factor Authentication (MFA) do Microsoft Azure. Isto pode ser utilizado para a Porta da Palavra-passe Monouso por SMS ou para a nova Porta de Telefone.
 
-## <a name="azure-for-multifactor-authentication"></a>Multi-Factor Authentication do Azure
+## <a name="azure-for-multi-factor-authentication"></a>Multi-Factor Authentication do Azure
 O Multi-Factor Authentication do Microsoft Azure é um serviço de autenticação que requer que os utilizadores verifiquem as tentativas de início de sessão com uma aplicação móvel, uma chamada telefónica ou uma mensagem de texto. Está disponível para utilizar com o Microsoft Azure Active Directory e como um serviço para as aplicações empresariais na nuvem e no local.
 
 O Azure MFA fornece um mecanismo de autenticação adicional que pode reforçar os processos de autenticação existentes, tal como o processo realizado pelo MIM para obter assistência de início de sessão personalizada.
 
 Ao utilizar o Azure MFA, os utilizadores autenticam-se no sistema para verificar a sua identidade, enquanto tentam recuperar o acesso às respetivas contas e recursos. Pode efetuar a autenticação por SMS ou através de uma chamada telefónica.   Quanto mais forte for a autenticação, maior será a segurança de que a pessoa que tenta obter acesso é, de facto, o utilizador verdadeiro ao qual pertence a identidade. Uma vez autenticado, o utilizador pode escolher uma nova palavra-passe para substituir a antiga.
 
-## <a name="prerequisites-to-set-up-selfservice-account-unlock-and-password-reset-using-mfa"></a>Pré-requisitos para configurar o desbloqueio personalizado da conta e a reposição de palavra-passe através do MFA
+## <a name="prerequisites-to-set-up-self-service-account-unlock-and-password-reset-using-mfa"></a>Pré-requisitos para configurar o desbloqueio personalizado da conta e a reposição de palavra-passe através do MFA
 Esta secção assume que transferiu e concluiu a implementação do Microsoft Identity Manager 2016, incluindo os seguintes componentes e serviços:
 
 -   Foi configurado um Windows Server 2008 R2 ou posterior como um servidor do Active Directory, incluindo os Serviços de Domínio do AD e o Controlador de Domínio com um domínio designado (um domínio “empresarial”)
@@ -56,12 +56,12 @@ Esta secção assume que transferiu e concluiu a implementação do Microsoft Id
 
 -   As Extensões e os Suplementos do MIM 2016, incluindo o cliente integrado do Início de Sessão do Windows SSPR, estão implementados no servidor ou num computador cliente separado.
 
-## <a name="prepare-mim-to-work-with-multifactor-authentication"></a>Preparar o MIM para funcionar com a autenticação multifator
+## <a name="prepare-mim-to-work-with-multi-factor-authentication"></a>Preparar o MIM para funcionar com a autenticação multifator
 Configure a Sincronização do MIM para Suportar a Reposição de Palavra-passe e a Funcionalidade de Desbloqueio de Conta. Para obter mais informações, consulte [Instalar Suplementos e Extensões do FIM](https://technet.microsoft.com/library/ff512688%28v=ws.10%29.aspx), [Instalar SSPR do FIM](https://technet.microsoft.com/library/hh322891%28v=ws.10%29.aspx), [Portas de Autenticação da SSPR](https://technet.microsoft.com/library/jj134288%28v=ws.10%29.aspx) e o [Guia do Laboratório de Teste da SSPR](https://technet.microsoft.com/library/hh826057%28v=ws.10%29.aspx)
 
 Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azure Active Directory. Como parte deste processo, irá gerar um ficheiro que inclui o material de autenticação que o MFA necessita para contactar o Azure MFA.  Para continuar, precisará de uma subscrição do Azure.
 
-### <a name="register-your-multifactor-authentication-provider-in-azure"></a>Registar o fornecedor de autenticação multifator no Azure
+### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Registar o fornecedor de autenticação multifator no Azure
 
 1.  Aceda ao [Portal clássico do Azure](http://manage.windowsazure.com) e inicie sessão como administrador de subscrição do Azure.
 
@@ -119,7 +119,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 11. Guarde o ficheiro MfaSettings.xml com o mesmo nome na mesma localização.
 
-#### <a name="configure-the-phone-gate-or-the-onetime-password-sms-gate"></a>Configurar a Porta de telefone ou a Porta de SMS para Palavra-passe Monouso
+#### <a name="configure-the-phone-gate-or-the-one-time-password-sms-gate"></a>Configurar a Porta de telefone ou a Porta de SMS para Palavra-passe Monouso
 
 1.  Inicie o Internet Explorer e navegue para o Portal do MIM, efetue a autenticação como o administrador do MIM e clique em **Fluxos de Trabalho** na barra de navegação esquerda.
 
@@ -179,7 +179,7 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 
 6.  Em seguida, o utilizador tem de introduzir uma nova palavra-passe duas vezes e a palavra-passe é reposta.
 
-#### <a name="access-from-the-selfservice-portal"></a>Aceder a partir do Portal Self-Service
+#### <a name="access-from-the-self-service-portal"></a>Aceder a partir do Portal Self-Service
 
 1.  Os utilizadores podem abrir um browser, navegar até ao **Portal de Reposição de Palavra-passe**, introduzir o respetivo nome de utilizador e clicar em **Seguinte**.
 
@@ -206,6 +206,6 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

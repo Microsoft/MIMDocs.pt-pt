@@ -96,6 +96,6 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

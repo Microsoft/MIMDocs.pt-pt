@@ -19,6 +19,7 @@
 ### [Passo 5 – estabelecer fidedignidade entre PRIV e a rede empresarial](step-5-establish-trust-between-priv-corp-forests.md)
 ### [Passo 6 – criar contas com privilégios](step-6-transition-group-to-pam.md)
 ### [Passo 7 – Elevar o acesso de um utilizador](step-7-elevate-user-access.md)
+### [Implementar o PAM do MIM com o Windows Server 2016](deploy-pam-with-windows-server-2016.md)
 ### [Configurar a MFA do Azure](use-azure-mfa-for-activation.md)
 ## [Configurar a PAM através de scripts](sp1-pam-configure-using-scripts.md)
 ### [Passo 1: Configurar o domínio Priv](sp1-step1-configuring-priv-domain.md)
@@ -33,6 +34,6 @@
 # [Referência para Programadores](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

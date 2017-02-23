@@ -3,8 +3,8 @@ layout: LandingPage
 title: "Documentação do Microsoft Identity Manager | Documentos da Microsoft"
 description: Saiba como utilizar o Microsoft Identity Manager.
 translationtype: Human Translation
-ms.sourcegitcommit: d6b2c0db8fa071d3cec9ea680667b9e9b7f75267
-ms.openlocfilehash: 921e34c6625d798909e6ded0ea611c731141a052
+ms.sourcegitcommit: 6e171f09720503eedf43fe292d0f251a29671112
+ms.openlocfilehash: 3596e474912d1b56b01a2659886de0baa4cb5f1e
 
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Documentação do Microsoft Identity Manager
@@ -49,7 +49,7 @@ O Microsoft Identity Manager 2016 vincula as soluções de gestão de identidade
         </a>
     </li>
     <li>
-        <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy"> 
+        <a href="/microsoft-identity-manager/deploy-use/microsoft-identity-manager-deploy">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -69,6 +69,9 @@ O Microsoft Identity Manager 2016 vincula as soluções de gestão de identidade
 </ul>
 
 ---
+<br>
+>[!Warning]
+O suporte base do Forefront Identity Manager (FIM) termina a 10/10/2017. [Atualize](/deploy-use/microsoft-identity-manager-2016-upgrade-from-fim-2010-r2.md) para o Microsoft Identity Manager 2016. Mais informações: </br>  – As informações de ciclo de vida do FIM são fornecidas [aqui](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Forefront%20Identity%20Manager%202010%20R2%20Service%20Pack%201,Microsoft%20Identity%20Manager%202016,Microsoft%20Forefront%20Identity%20Manager%202010) </br> – Para obter informações sobre os lançamentos públicos de produtos de identidade, consulte a mensagem com o título [Microsoft Identity Software: Public Release Build Versions (Software de Identidades da Microsoft: Versões das Compilações de Lançamento Público)](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
 
 <h2>Referência</h2>
 <ul class="panelContent cardsFTitle">
@@ -127,6 +130,6 @@ O Microsoft Identity Manager 2016 vincula as soluções de gestão de identidade
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

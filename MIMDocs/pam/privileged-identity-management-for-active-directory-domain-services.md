@@ -1,11 +1,11 @@
 ---
-title: "O que é o PAM para o ADDS? | Documentos da Microsoft"
+title: Privileged Access Management para os Active Directory Domain Services | Documentos da Microsoft
 description: Saiba mais sobre Privileged Access Management e como pode ajudar a gerir e proteger o ambiente do Active Directory.
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -15,8 +15,9 @@ ms.suite: ems
 experimental: true
 experiment_id: kgremban_images
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 4b3779f33a8bbd2ad62c88343ef3611b17fc81a2
+ms.sourcegitcommit: f0947f186b5206d06a67140706ada33a5bc0e016
+ms.openlocfilehash: cea5a2fc162870c1125b35b75376881eb15cd2e9
+ms.lasthandoff: 01/11/2017
 
 ---
 
@@ -95,9 +96,4 @@ Partindo do princípio de que o pedido é aprovado, o fluxo de trabalho da açã
 > Em contrapartida, uma ligação expirada é avaliada em tempo real pelo Gestor de contas de segurança (SAM). Embora a adição de um membro do grupo precise de ser replicada pelo DC que recebe o pedido de acesso, a remoção de um membro do grupo é avaliada instantaneamente em qualquer DC.
 
 Este fluxo de trabalho destina-se especificamente a estas contas administrativas. Os administradores (ou até mesmo os scripts) que precisem apenas de acesso ocasional a grupos com privilégios, podem pedir precisamente esse acesso. O MIM regista o pedido e as alterações no Active Directory, e pode visualizá-los no Visualizador de Eventos ou enviar os dados para soluções de monitorização empresariais, como o System Center 2012 - Serviços de Recolha de Auditorias (ACS) do Operations Manager, ou outras ferramentas de terceiros.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

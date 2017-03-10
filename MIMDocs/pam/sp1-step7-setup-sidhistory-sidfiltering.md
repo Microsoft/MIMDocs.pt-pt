@@ -1,11 +1,11 @@
 ---
 title: "Passo 7: Configurar o histórico/filtragem do SID"
-description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
+description: "Este é o Passo 7 da configuração do Privileged Identity Manager através de scripts. Este passo inclui a configuração do histórico do SID/da filtragem do SID."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: a98d83a22c61ef534fcc02725e4cd500be10cc8a
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: e608593f40759e3bc995daa56c4575510a71e987
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -42,9 +43,4 @@ Para o histórico do SID: </br></br>
 >[!div class="step-by-step"]
 [« Passo 6](sp1-step6-setup-pam-trust.md)
 [Passo 8 »](sp1-step8-pam-deployment-verification.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

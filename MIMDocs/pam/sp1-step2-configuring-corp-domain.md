@@ -1,11 +1,11 @@
 ---
-title: "Passo 2: Configurar o domínio CORP"
-description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
+title: "Passo 2: Configurar o domínio CORP"
+description: "Este artigo descreve o segundo passo necessário para configurar o domínio CORP, que envolve a execução de um script depois de o sids.txt ser copiado para o CORPDC"
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: b7acc475c505b29559c510fd3fa350fed1c3157b
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 8480350f85b3543a32d4db3dbc6a388afcb16352
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -36,9 +37,4 @@ Depois de o SIDs.txt ser copiado para o CORPDC, **não será necessário para as
 >[!div class="step-by-step"]
 [« Passo 1](sp1-step1-configuring-priv-domain.md)
 [Passo 3 »](sp1-step3-installing-configuring-sql.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

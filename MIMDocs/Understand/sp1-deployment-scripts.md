@@ -1,11 +1,11 @@
 ---
 title: "Scripts de Implementação da PAM do MIM2016 SP1"
-description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
+description: "Esta página faz parte da série de artigos sobre a configuração do Privileged Identity Manager através de scripts. Inclui uma lista dos pressupostos sobre o ambiente."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 09/26/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 2bf445f2103c2793d613e001f15e06bdc8b9ad54
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 10d06ae573e378797467ab1eb91e977d59b821d1
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -34,9 +35,4 @@ Pressupostos Importantes:
 >Se ocorrer algum problema durante a execução dos scripts, poderá ter de ver os registos. Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e envie por e-mail para mim2016@microsoft.com, juntamente com os detalhes da operação e do erro.
 
 Pronto para começar com os scripts de implementação da PAM? Comece em [Configurar a PAM através de scripts](/microsoft-identity-manager/pam/sp1-pam-configure-using-scripts).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

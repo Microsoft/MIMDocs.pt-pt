@@ -1,11 +1,11 @@
 ---
-title: Configurar o SQL Server | Documentos da Microsoft
+title: Configurar o SQL Server para o Microsoft Identity Manager 2016 | Documentos da Microsoft
 description: "Instale o SQL Server 2014 em preparação para a instalação do MIM 2016."
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 4ecb80282591ae5e4e52124637ab0e2edf0809b3
+ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
+ms.openlocfilehash: 3a40bf3bd5251ef101b25cc29251f33062e44cdc
 
 
 ---
@@ -49,6 +49,6 @@ ms.openlocfilehash: 4ecb80282591ae5e4e52124637ab0e2edf0809b3
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

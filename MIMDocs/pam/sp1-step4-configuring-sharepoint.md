@@ -1,11 +1,11 @@
 ---
 title: 'Passo 4: Configurar o SharePoint'
-description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
+description: "Este é o passo 4 da configuração do PAM através de scripts. Neste passo, vai configurar o SharePoint para o utilizar como parte da implementação do PAM."
 keywords: 
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 10/25/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 365989693f844f117f76ee2b69db85df82f06f35
-ms.openlocfilehash: 76696f7dce3d79a845c2a8ba9ae8d284012a0df7
+ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
+ms.openlocfilehash: 12eb9a00584f72b9c628e870562a743fb603d4a3
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -55,9 +56,4 @@ Para obter os detalhes, veja a secção **Configurar SharePoint** no [Passo 3 �
 >[!div class="step-by-step"]
 [« Passo 3](sp1-step3-installing-configuring-sql.md)
 [Passo 5»](sp1-step5-configuring-pam.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

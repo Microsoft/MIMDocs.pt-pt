@@ -1,5 +1,5 @@
 ---
-title: Implementar e configurar o PAM | Documentos da Microsoft
+title: Configurar o MIM 2016 para Privileged Access Management | Documentos da Microsoft
 description: "Plano para a instalação e MIM e configuração da mesma para Privileged Access Management."
 keywords: 
 author: kgremban
@@ -13,8 +13,8 @@ ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: a081b49ca8d0de7ce7d5f7385e5a652b09b722c3
+ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
+ms.openlocfilehash: 32815c4ddc51fb9c9187c9fc9a1710239faf7935
 
 
 ---
@@ -43,6 +43,6 @@ Estes passos são apresentados para que possa começar do zero e criar um ambien
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

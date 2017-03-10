@@ -1,11 +1,11 @@
 ---
-title: "Renovação self-service de smart cards | Documentos da Microsoft"
+title: Renovar um smart card personalizado do Microsoft Identity Manager sem o acesso de Administrador | Documentos da Microsoft
 description: Saiba como inscrever smart cards para utilizadores sem acesso de administrador aos respetivos computadores para que possam utilizar o Gestor de Certificados.
 keywords: 
 author: kgremban
 ms.author: kgremban
 manager: femila
-ms.date: 07/21/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,16 +13,16 @@ ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 76d72211e1dbddb2647729c796ac19eb82a3b2c6
+ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
+ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
 
 
 ---
 
-# <a name="enroll-smart-cards-for-nonadministrators"></a>Inscrição de smart cards para não administradores
+# <a name="enroll-smart-cards-for-non-administrators"></a>Inscrição de smart cards para não administradores
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
 
-## <a name="enabling-smart-card-renewal-for-nonadmins-in-mim-2016-certificate-manager"></a>Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
+## <a name="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager"></a>Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
 
 1.  **Descompactar o ficheiro appx**
 
@@ -96,6 +96,6 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

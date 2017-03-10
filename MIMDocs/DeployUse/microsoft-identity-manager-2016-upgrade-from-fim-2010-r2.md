@@ -1,11 +1,11 @@
 ---
-title: "Atualizar do FIM 2010 R2 | Documentos da Microsoft"
+title: Atualizar do FIM 2010 R2 para o Microsoft Identity Manager 2016 | Documentos da Microsoft
 description: "Saiba como atualizar os componentes do FIM 2010 R2 e, em seguida, instale os componentes novos no MIM 2016."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: fimguy
+ms.author: billmath
 manager: femila
-ms.date: 07/21/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,8 +13,8 @@ ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: ef272ffe665aa5753fa2bf02d26f2ce73efa025b
+ms.sourcegitcommit: 2d3092d7d41090e4e03b971fb62ca896cc8db282
+ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
 
 
 ---
@@ -200,8 +200,10 @@ Este guia pressupõe que já configurou o seguinte:
 
 Nota: se, atualmente, os Suplementos e as Extensões do FIM estiverem implementados nos computadores do utilizador para SSPR, não configure as novas portas do telefone MFA para a reposição da palavra-passe antes da atualização de todos os Suplementos e as Extensões do FIM para o MIM 2016.  Uma vez que os Suplementos e as Extensões do FIM 2010 e do FIM 2010 R2 não reconhecem as novas portas, tal resultará num erro e o utilizador não poderá concluir a reposição da palavra-passe.
 
+Para obter orientações de atualização do Microsoft Identity Manager 2016 SP1, veja o seguinte [Pacote de atualização do Microsoft Identity Manager 2016 Service Pack 1](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)
 
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Feb17_HO2-->
 
 

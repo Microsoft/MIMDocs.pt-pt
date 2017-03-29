@@ -35,13 +35,13 @@ A tabela seguinte descreve as plataformas suportadas e a versão de cada compone
 | | Sistema ligado adicional (opcional) | Serviços de Domínio do Active Directory<br/>Active Directory<br/>Serviços LDS<br/>SQL Server 2000 ou posterior<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> Outros produtos de terceiros |
 | **Serviço MIM** (exceto o cenário de PAM) | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Base de dados do Serviço MIM | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-| | Exchange para a aprovação do Serviço MIM e e-mails de gestão de grupos (opcional) | Exchange Server 2007 SP3 (com a consola de gestão do Exchange instalada)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | Exchange para a aprovação do Serviço MIM e e-mails de gestão de grupos (opcional) | Exchange Server 2007 SP3 (com a consola de gestão do Exchange instalada)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 *<br/> Exchange Online* |
 | **Portal e Serviço MIM** (apenas para cenário de PAM)| Windows Server | Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Active Directory para a floresta de PAM do ambiente bastion | Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| | Active Directory para florestas existentes | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
+| | Active Directory para florestas existentes | Windows Server 2008 <br/> Windows Server 2008 R2 *<br/> Windows Server 2012* <br/> Windows Server 2012 R2 *<br/> Windows Server 2016* |
 | | Base de dados do Serviço MIM | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
-| | Servidor de correio para a aprovação do Serviço MIM e e-mails de gestão de grupos (opcional) | Exchange Server 2007 SP3 (com a consola de gestão do Exchange instalada)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * |
+| | Servidor de correio para a aprovação do Serviço MIM e e-mails de gestão de grupos (opcional) | Exchange Server 2007 SP3 (com a consola de gestão do Exchange instalada)<br/>Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 *<br/> Exchange Online* |
 | | Browser | Todos os browsers principais |
 | **Relatórios do Serviço MIM** | Windows Server | Windows Server 2012 <br/> Windows Server 2016 * |
 | | Armazém de dados | System Center 2012 Service Manager SP1 |

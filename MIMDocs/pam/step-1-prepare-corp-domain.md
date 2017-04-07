@@ -15,11 +15,12 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
 ms.openlocfilehash: 127d368c15cce125ba7f69302cfa329b600d9498
+ms.lasthandoff: 11/10/2016
 
 
 ---
 
-# <a name="step-1-prepare-the-host-and-the-corp-domain"></a>Passo 1 – preparar o anfitrião e o domínio CORP
+# <a name="step-1---prepare-the-host-and-the-corp-domain"></a>Passo 1 – preparar o anfitrião e o domínio CORP
 
 >[!div class="step-by-step"]
 [Passo 2 »](step-2-prepare-priv-domain-controller.md)
@@ -37,7 +38,7 @@ Esta secção descreve como configurar um controlador de domínio para um domín
 
 Instale o Windows Server 2012 R2 ou a Pré-visualização Técnica 4 do Windows Server 2016 ou posterior, numa máquina virtual, para criar um computador designado *CORPDC*.
 
-1. Escolha ** Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
+1. Escolha **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
 
 2. Reveja e aceite os termos do licenciamento.
 
@@ -212,9 +213,4 @@ No próximo passo, irá preparar o controlador de domínio do PRIV.
 
 >[!div class="step-by-step"]
 [Passo 2 »](step-2-prepare-priv-domain-controller.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

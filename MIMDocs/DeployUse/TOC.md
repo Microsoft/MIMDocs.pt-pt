@@ -12,15 +12,10 @@
 ### [Instalar o MIM: Sincronizar bases de dados](install-mim-sync-ad-service.md)
 ## [Atualização do Forefront Identity Manager 2010 R2](microsoft-identity-manager-2016-upgrade-from-fim-2010-R2.md)
 ## [Serviço de Notificação de Alteração de Palavra-passe](deploying-mim-password-change-notification-service-on-domain-controller.md)
-## [Criação de Relatórios Híbridos do Identity Manager](working-with-identity-manager-hybrid-reporting.md)
+## [Relatórios Híbridos do Identity Manager](working-with-identity-manager-hybrid-reporting.md)
 ## [Reposição Personalizada de Palavra-passe](working-with-self-service-password-reset.md)
 ## [Gestor de Certificados do MIM](working-with-mim-certificate-manager.md)
 ### [Inscrever smart cards](certificate-manager-for-non-administrators.md)
 ### [Criar certificados de software](certificate-manager-for-software-certificates.md)
 # [Utilize o Privileged Access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services)
 # [Referência para Programadores](/microsoft-identity-manager/reference/microsoft-identity-manager-2016-developer-reference)
-
-
-<!--HONumber=Jul16_HO3-->
-
-

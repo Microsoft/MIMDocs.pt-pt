@@ -11,9 +11,9 @@ ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
 translationtype: Human Translation
-ms.sourcegitcommit: 90a0f144b7674bbfaf13138dfd926dbfc3c74f28
-ms.openlocfilehash: ddd707210d5cd6b618709a477d40e7771d73cfa1
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
+ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
+ms.lasthandoff: 04/04/2017
 
 
 
@@ -27,7 +27,7 @@ Após a instalação, verá uma nova linha em Microsoft.ResourceManagement.Servi
 *    Linha 8: ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
 *    Linha 266: ``</system.diagnostics> ``
 
-![Secções realçadas a mostrar as novas entradas do registo dinâmico](/media/mim-service-dynamic-logging/screen01.png)
+![Secções realçadas a mostrar as novas entradas do registo dinâmico](media/mim-service-dynamic-logging/screen01.png)
 
 Pode consultar os níveis do registo dinâmico [aqui](https://msdn.microsoft.com/library/ms733025(v=vs.110).aspx#Anchor_3)
 
@@ -36,11 +36,11 @@ Pode consultar os níveis do registo dinâmico [aqui](https://msdn.microsoft.com
 
 Configuração do registo dinâmico na linha 266: Microsoft.ResourceManagement.Service.exe.config
 
-![Secções realçadas a mostrar linhas com as várias áreas de registo disponíveis](/media/mim-service-dynamic-logging/screen02.png)
+![Secções realçadas a mostrar linhas com as várias áreas de registo disponíveis](media/mim-service-dynamic-logging/screen02.png)
 
 Por predefinição, a localização do registo será **C:\Program Files\Microsoft Forefront Identity Manager\2010\Service**. Para o registo dinâmico ser gerado, a conta do Serviço FIM precisará de permissão de escrita nesta localização.
 
-![Localização da pasta dos registos](/media/mim-service-dynamic-logging/screen03.png)
+![Localização da pasta dos registos](media/mim-service-dynamic-logging/screen03.png)
 
  >[!NOTE]
  Se ocorrerem erros inesperados (erros de sintaxe no ficheiro de configuração Microsoft.ResourceManagement.Service.exe.config ou outros problemas), será escrita uma mensagem de erro correspondente no ficheiro Microsoft.ResourceManagement.Service.exe_Emergency.log no caminho %TMP%, %TEMP% ou %USERPROFILE% (o primeiro que existir).  
@@ -50,5 +50,5 @@ Por predefinição, a localização do registo será **C:\Program Files\Microsof
 
 Para ver o rastreio, pode utilizar a [ferramenta Visualizador de Rastreio de Serviços](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)
 
- ![Captura de ecrã do Visualizador de Rastreio de Serviços](/media/mim-service-dynamic-logging/screen04.png)
+ ![Captura de ecrã do Visualizador de Rastreio de Serviços](media/mim-service-dynamic-logging/screen04.png)
 

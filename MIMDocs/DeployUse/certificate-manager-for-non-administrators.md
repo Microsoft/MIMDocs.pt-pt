@@ -2,10 +2,10 @@
 title: Renovar um smart card personalizado do Microsoft Identity Manager sem o acesso de Administrador | Documentos da Microsoft
 description: Saiba como inscrever smart cards para utilizadores sem acesso de administrador aos respetivos computadores para que possam utilizar o Gestor de Certificados.
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
+ms.lasthandoff: 02/07/2017
 
 
 ---
@@ -93,9 +94,4 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 7.  **Instalar a aplicação CM na conta não administrativa**
 
 8.  **Iniciar a aplicação CM e inscrever-se num smart card virtual**
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

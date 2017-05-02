@@ -2,10 +2,10 @@
 title: Privileged Access Management para os Active Directory Domain Services | Documentos da Microsoft
 description: Saiba mais sobre Privileged Access Management e como pode ajudar a gerir e proteger o ambiente do Active Directory.
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/10/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services

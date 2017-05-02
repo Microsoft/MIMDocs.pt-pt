@@ -2,10 +2,10 @@
 title: "O que é o PAM para o ADDS? | Documentos da Microsoft"
 description: "O Privileged Access Management (PAM) ajuda as organizações a restringir o acesso privilegiado num ambiente do Active Directory existente."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/10/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -16,6 +16,7 @@ experiment_id: kgremban_images
 translationtype: Human Translation
 ms.sourcegitcommit: f0947f186b5206d06a67140706ada33a5bc0e016
 ms.openlocfilehash: 9a047644d07e3ee3c2d1abfde7753849b5ddc63b
+ms.lasthandoff: 01/11/2017
 
 ---
 
@@ -93,9 +94,4 @@ Partindo do princípio de que o pedido é aprovado, o fluxo de trabalho da açã
 > Em contrapartida, uma ligação expirada é avaliada em tempo real pelo Gestor de contas de segurança (SAM). Embora a adição de um membro do grupo precise de ser replicada pelo DC que recebe o pedido de acesso, a remoção de um membro do grupo é avaliada instantaneamente em qualquer DC.
 
 Este fluxo de trabalho destina-se especificamente a estas contas administrativas. Os administradores (ou até mesmo os scripts) que precisem apenas de acesso ocasional a grupos com privilégios, podem pedir precisamente esse acesso. O MIM regista o pedido e as alterações no Active Directory, e pode visualizá-los no Visualizador de Eventos ou enviar os dados para soluções de monitorização empresariais, como o System Center 2012 - Serviços de Recolha de Auditorias (ACS) do Operations Manager, ou outras ferramentas de terceiros.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

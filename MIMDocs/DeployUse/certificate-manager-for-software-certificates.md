@@ -2,10 +2,10 @@
 title: "Pedir certificados no Gestor de Certificados através de modelos | Documentos da Microsoft"
 description: Saiba como utilizar o Gestor de Certificados para criar e renovar certificados de software com modelos de perfil.
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 01/23/2017
+ms.date: 03/23/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
 ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -38,7 +39,7 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
     1.  No separador **Geral**, no campo nome a apresentar, escreva **Modelo de Certificado Arquivado**.
 
-    2.  b.  No separador **Processamento de Pedidos**
+    2.  b.    No separador **Processamento de Pedidos**
 
         1.  Defina o **Objetivo** para a Assinatura e encriptação.
 
@@ -95,9 +96,4 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 10. Se pretender voltar a emitir certificados arquivados, marque as caixas à esquerda de **Voltar a emitir certificados arquivados** e clique em **OK**.
 
 11. Se estiver a utilizar o CM do Smart Card Virtual, terá de desativar os itens de recolha de dados, pois não funciona com a recolha de dados ativada. Desative a recolha de dados para todas as políticas ao clicar na política no painel esquerdo e ao desmarcar a caixa junto a **Item de dados de exemplo** e, em seguida, clique em **Eliminar itens de recolha de dados**. Em seguida, clique em **OK**.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

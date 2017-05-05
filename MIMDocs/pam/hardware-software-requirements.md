@@ -2,10 +2,10 @@
 title: Requisitos de software do PAM | Documentos da Microsoft
 description: "Localize os requisitos de hardware e software para uma implementação de Privileged Access Management com êxito"
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 2f696738d21ad4b221d7adce5f83753c6f126f86
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 2985215821db843d2f90d8a34250a8ca6a84b592
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -72,9 +73,4 @@ Para PRIVDC:
 Para PAMSRV:
 - [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)  
 - [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) ou [do SQL Server 2014](https://msdn.microsoft.com/en-us/library/ms143506(v=sql.120).aspx)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

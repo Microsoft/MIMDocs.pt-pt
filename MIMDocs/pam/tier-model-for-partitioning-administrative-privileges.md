@@ -2,10 +2,10 @@
 title: Modelo de camada do ambiente do PAM | Documentos da Microsoft
 description: Saiba mais sobre o modelo de camada que segrega o sistema com base na vulnerabilidade a riscos.
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 659a9d8ff53372300c0e52432116c7c295d59a4b
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 4c3b43e50403890572e77773191a821cf247269c
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -59,9 +60,4 @@ As restrições de início de sessão podem ser impostas com:
 - Autenticação seletiva, se a conta estiver numa floresta administrativa dedicada
 
 O artigo seguinte, [Planear um ambiente bastion](planning-bastion-environment.md), descreve como adicionar uma floresta administrativa dedicada para o Microsoft Identity Manager para estabelecer as contas administrativas.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

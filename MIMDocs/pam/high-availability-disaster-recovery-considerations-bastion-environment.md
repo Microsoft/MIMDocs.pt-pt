@@ -2,10 +2,10 @@
 title: "Recuperação após desastre do PAM | Documentos da Microsoft"
 description: "Saiba como configurar Privileged Access Management para uma elevada disponibilidade e para a recuperação após desastre."
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,8 +13,9 @@ ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: a61d0bf5aaa263aff28a253e54e721f168ce337c
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: 2fab9af837ed11b1f2f7f32c9ced6d79c8cc9d00
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -221,9 +222,4 @@ Os componentes de Gestão de Acesso Privilegiado devem ser instalados em cada co
 Após a recuperação a partir de uma falha, certifique-se de que o Serviço MIM está em execução em, pelo menos, um servidor.  Certifique-se de que o serviço de monitorização PAM de MIM também está em execução nesse servidor, com o `net start "PAM Monitoring service"`.
 
 Se o nível funcional do ambiente de floresta de bastion for o Windows Server 2012 R2, certifique-se de que o serviço do componente PAM de MIM também está em execução nesse servidor, com o comando `net start "PAM Component service"`.
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

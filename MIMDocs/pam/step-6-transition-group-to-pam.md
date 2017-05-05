@@ -2,10 +2,10 @@
 title: "Implementar o PAM passo 6 – Mover grupo | Documentos da Microsoft"
 description: Migrar um grupo para a floresta PRIV, para que possam ser geridos com Privilege Access Management.
 keywords: 
-author: kgremban
-ms.author: kgremban
+author: billmath
+ms.author: billmath
 manager: femila
-ms.date: 07/15/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
@@ -13,13 +13,14 @@ ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f545bfb2da0f65c335e37fb9de9c9522bf57f25
-ms.openlocfilehash: 9e70bdd3c586a16a9a55c91bd0e099a500950a64
+ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.openlocfilehash: aeffca2c4e5467ec039c2077a88f36a652493e90
+ms.lasthandoff: 05/02/2017
 
 
 ---
 
-# <a name="step-6-transition-a-group-to-privileged-access-management"></a>Passo 6 - Transição de um grupo o Privileged Access Management
+# <a name="step-6--transition-a-group-to-privileged-access-management"></a>Passo 6 - Transição de um grupo o Privileged Access Management
 
 >[!div class="step-by-step"]
 [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)
@@ -87,9 +88,4 @@ Se pretender demonstrar que direitos de acesso de múltiplas florestas são efic
 >[!div class="step-by-step"]
 [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)
 [Passo 7 »](step-7-elevate-user-access.md)
-
-
-
-<!--HONumber=Nov16_HO2-->
-
 

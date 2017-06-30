@@ -76,7 +76,7 @@
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/Microsoft/MIMDocs-pr",
+      "url": "https://github.com/MicrosoftDocs/MIMDocs-pr",
       "branch": "live",
       "branch_mapping": {
         "live": "live",

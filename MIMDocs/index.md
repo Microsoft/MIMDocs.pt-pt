@@ -6,7 +6,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: c49fbae1892bfa0207a1615d11e600fe21d638c8
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/07/2017
 
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Documentação do Microsoft Identity Manager

@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-ms.translationtype: MT
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
 ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
 ms.contentlocale: pt-pt
@@ -25,9 +25,9 @@ Na versão 4.4.1436.0 adicionámos uma nova funcionalidade de registo. Esta func
 
 Após a instalação, verá uma nova linha em Microsoft.ResourceManagement.Service.exe.config denominada
 
-*   Linha 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
-*   Linha 8: ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
-*   Linha 266: ``</system.diagnostics> ``
+*    Linha 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
+*    Linha 8: ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
+*    Linha 266: ``</system.diagnostics> ``
 
 ![Secções realçadas a mostrar as novas entradas do registo dinâmico](media/mim-service-dynamic-logging/screen01.png)
 

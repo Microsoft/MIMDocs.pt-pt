@@ -1,5 +1,5 @@
 ---
-title: "Passo 8: Verificação da implementação do PAM"
+title: "Passo 8: Verificação de implementação da PAM"
 description: "A implementação do PAM com scripts inclui scripts de verificação que podem executar um cenário do PAM para validar se a implementação do PAM está a funcionar conforme esperado."
 keywords: 
 author: barclayn
@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: 2f4306dc50ecb869a3c917dfaf320ad80dddedd1
-ms.lasthandoff: 01/10/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="step-8-pam-deployment-verification"></a>Passo 8: Verificação de implementação da PAM
+# Passo 8: Verificação de implementação da PAM
+<a id="step-8-pam-deployment-verification" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Passo 7](sp1-step7-setup-sidhistory-sidfiltering.md)

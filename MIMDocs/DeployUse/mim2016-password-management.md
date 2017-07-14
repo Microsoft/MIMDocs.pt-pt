@@ -11,17 +11,18 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: 1ef7b9816d265d17ef68fc54e010e655535dcdc8
 ms.openlocfilehash: 0a5a3f28af58dd59ab805f2836ffeb88f3508ae0
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
 
-# <a name="microsoft-identity-manager-2016-password-management"></a>Gestão de Palavras-passe do Microsoft Identity Manager 2016
+# Gestão de Palavras-passe do Microsoft Identity Manager 2016
+<a id="microsoft-identity-manager-2016-password-management" class="xliff"></a>
 
 Gerir as palavras-passe de múltiplas contas de utilizador é uma das complexidades que fazem parte da gestão de um ambiente empresarial com múltiplas origens de dados. O Microsoft Identity Manager 2016 (MIM) oferece duas soluções de gestão de palavras-passe:
 
@@ -43,7 +44,8 @@ A sincronização de palavras-passe e a gestão de alteração de palavra-passe 
 
 -   Realizar operações de gestão de palavras-passe em tempo real, independentemente das operações do MIM.
 
-## <a name="password-extensions"></a>Extensões de palavra-passe
+## Extensões de palavra-passe
+<a id="password-extensions" class="xliff"></a>
 
 Os agentes de gestão para servidores de diretório suportam operações de definição e alteração de palavra-passe por predefinição. No caso dos agentes de gestão de conectividade extensível, de base de dados e baseada em ficheiros, os quais não suportam operações de definição e alteração de palavra-passe por predefinição, pode criar uma DLL (dynamic-link library) de extensão de palavra-passe em .NET.
 A DLL de extensão de palavra-passe em .NET é chamada sempre que uma chamada de definição ou alteração de palavra-passe é invocada para qualquer um destes agentes de gestão. As definições da extensão de palavra-passe estão configuradas para estes agentes de gestão no Synchronization Service Manager. Para obter mais informações sobre como configurar extensões de palavra-passe, veja a Referência para Programadores do FIM.
@@ -60,7 +62,8 @@ A DLL de extensão de palavra-passe em .NET é chamada sempre que uma chamada de
 |                                                                           | Microsoft SQL Server                                                                               |
 |                                                                           | Base de Dados Oracle                                                                                    |
 
-## <a name="password-synchronization"></a>Sincronização de palavras-passe
+## Sincronização de palavras-passe
+<a id="password-synchronization" class="xliff"></a>
 
 
 A sincronização de palavras-passe funciona com o serviço de notificação de alteração de palavra-passe (PCNS) num domínio do Active Directory e permite que as alterações de palavra-passe que têm origem no Active Directory sejam propagadas automaticamente para outras origens de dados ligadas. Para este efeito, o MIM é executado como um servidor RPC (Chamada de Procedimento Remoto) que escuta as notificações de alteração de palavra-passe a partir de um controlador de domínio do Active Directory. Quando o pedido de alteração de palavra-passe é recebido e autenticado, é processado pelo MIM e propagado para os agentes de gestão adequados.
@@ -86,7 +89,8 @@ Os componentes envolvidos no processo de sincronização de palavras-passe são:
 -   **DLL de extensão de palavra-passe** – a DLL de extensão de palavra-passe confere-lhe a capacidade de implementar operações de definição ou alteração de palavra-passe através de uma extensão de regras para qualquer agente de gestão de conectividade extensível, de base de dados ou baseada em ficheiros.
     Para o efeito, é criado um atributo encriptado apenas de exportação com o nome "export_password" que, na realidade, não existe no diretório ligado, mas a que pode aceder e o qual pode definir nas extensões de regras de aprovisionamento ou que pode utilizar durante a exportação do fluxo de atributos. Para obter mais informações sobre como configurar extensões de palavra-passe, veja a [Referência para Programadores do FIM](https://msdn.microsoft.com/library/windows/desktop/ee652263(v=vs.100).aspx).
 
-## <a name="preparing-for-password-synchronization"></a>Preparar para a sincronização de palavras-passe
+## Preparar para a sincronização de palavras-passe
+<a id="preparing-for-password-synchronization" class="xliff"></a>
 
 Antes de configurar a sincronização de palavras-passe para o seu ambiente do MIM e do Active Directory, verifique o seguinte:
 
@@ -110,7 +114,8 @@ Para configurar a sincronização de palavras-passe:
 
 Para obter mais informações sobre como configurar a sincronização de palavras-passe, veja Utilizar a Sincronização de Palavras-passe.
 
-## <a name="password-synchronization-process"></a>Processo de sincronização de palavras-passe
+## Processo de sincronização de palavras-passe
+<a id="password-synchronization-process" class="xliff"></a>
 
 No seguinte diagrama, pode ver o processo de sincronização de um pedido de alteração de palavra-passe de um controlador de domínio do Active Directory para outras origens de dados ligadas:
 
@@ -126,7 +131,8 @@ No seguinte diagrama, pode ver o processo de sincronização de um pedido de alt
 
 6.  Ao utilizar as informações da tabela de associação, o MIM determina os agentes de gestão que recebem a alteração de palavra-passe e envia essa alteração para os agentes de gestão.
 
-## <a name="password-synchronization-security"></a>Segurança da sincronização de palavras-passe
+## Segurança da sincronização de palavras-passe
+<a id="password-synchronization-security" class="xliff"></a>
 
 As seguintes questões de segurança da sincronização de palavras-passe foram resolvidas:
 
@@ -140,7 +146,8 @@ As seguintes questões de segurança da sincronização de palavras-passe foram 
 
 -   Filas de palavra-passe seguras – as palavras-passe armazenadas em filas de palavra-passe do PCNS ficam encriptadas até ao momento em que são entregues.
 
-## <a name="password-synchronization-error-recovery-scenarios"></a>Cenários de recuperação de erros de sincronização de palavras-passe
+## Cenários de recuperação de erros de sincronização de palavras-passe
+<a id="password-synchronization-error-recovery-scenarios" class="xliff"></a>
 
 Idealmente, sempre que um utilizador alterar uma palavra-passe, a alteração será sincronizada sem erros. Os seguintes cenários descrevem como o MIM recupera de erros de sincronização comuns:
 
@@ -162,7 +169,8 @@ Algumas falhas são graves o suficiente para que deixe de ser possível concluir
 | 6927  | Erro       | A operação de definição de sincronização de palavra-passe falhou porque a palavra-passe não cumpre a política de palavras-passe do sistema de destino.                                      |
 | 6928  | Erro       | A operação de definição de sincronização de palavra-passe falhou porque a extensão de palavra-passe do agente de gestão de destino não está configurada para suportar operações de definição de palavra-passe. |
 
-## <a name="user-based-password-change-management"></a>Gestão da alteração de palavra-passe baseada no utilizador
+## Gestão da alteração de palavra-passe baseada no utilizador
+<a id="user-based-password-change-management" class="xliff"></a>
 
 O MIM fornece duas aplicações Web que utilizam a Windows Management Instrumentation (WMI) para repor palavras-passe. Tal como acontece com a sincronização de palavras-passe, pode ativar a gestão de palavras-passe quando configura o agente de gestão no Designer do Agente de Gestão. Para obter mais informações sobre a gestão de palavras-passe e a WMI, veja a Referência para Programadores MIM.
 

@@ -12,21 +12,24 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 2985215821db843d2f90d8a34250a8ca6a84b592
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
+# Requisitos de hardware e software
+<a id="hardware-and-software-requirements" class="xliff"></a>
 
 A Privileged Access Management não tem requisitos de hardware para além das plataformas de software subjacentes. Basta certificar-se de que tem suficiente memória ou espaço em disco e conectividade de rede.
 
 Este artigo fornece os requisitos mínimos para uma implementação básica. Não se destina a demonstrar elevada disponibilidade, desempenho ou escalabilidade, e não representa uma topologia de implementação recomendada para grandes empresas ou ambientes de produção.
 
-## <a name="installing-from-software-packages"></a>Instalar a partir de pacotes de software
+## Instalar a partir de pacotes de software
+<a id="installing-from-software-packages" class="xliff"></a>
 
 O software seguinte pode ser transferido a partir do Centro de Avaliação TechNet ou MSDN:  
 - Microsoft Identity Manager 2016
@@ -36,28 +39,33 @@ O software seguinte pode ser transferido a partir do Centro de Avaliação TechN
 O software seguinte pode ser transferido a partir do GitHub:  
 - PAMSamplePortal: contém a aplicação de web de amostra para a REST API
 
-## <a name="required-software"></a>Software necessário
+## Software necessário
+<a id="required-software" class="xliff"></a>
 
 - Windows Server 2012 R2  
 - Windows 8.1 Enterprise ou Windows 10 Enterprise  
 - SQL Server 2012 Service Pack 1 ou SQL Server 2014  
 
-## <a name="evaluation-software"></a>Software de avaliação
+## Software de avaliação
+<a id="evaluation-software" class="xliff"></a>
 
 Caso não tenha licenças para o Windows, para o SQL Server ou para o Windows Server, pode transferir as versões de avaliação.
 
-### <a name="technet-evaluation-center"></a>Centro de avaliação TechNet
+### Centro de avaliação TechNet
+<a id="technet-evaluation-center" class="xliff"></a>
 
 - [Windows Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2)  
 - [Windows 8.1 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-8-1-enterprise)  
 - [Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)  
 
-### <a name="microsoft-download-center"></a>Centro de Transferências da Microsoft
+### Centro de Transferências da Microsoft
+<a id="microsoft-download-center" class="xliff"></a>
 
 - [SQL Server](https://www.microsoft.com/download/details.aspx?id=29066)  
 - [SharePoint Foundation 2013 SP1 e pré-requisitos](https://www.microsoft.com/download/details.aspx?id=42039)
 
-## <a name="hardware-requirements"></a>Requisitos de hardware
+## Requisitos de hardware
+<a id="hardware-requirements" class="xliff"></a>
 
 Para cada componente da PAM, consulte os requisitos de sistema dos produtos de software.
 

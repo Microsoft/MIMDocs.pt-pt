@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: aeffca2c4e5467ec039c2077a88f36a652493e90
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="step-6--transition-a-group-to-privileged-access-management"></a>Passo 6 - Transição de um grupo o Privileged Access Management
+# Passo 6 - Transição de um grupo o Privileged Access Management
+<a id="step-6--transition-a-group-to-privileged-access-management" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)

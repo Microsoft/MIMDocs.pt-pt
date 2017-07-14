@@ -10,22 +10,24 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
 ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 
 ---
-# <a name="mim-sp1-4414360--service-dynamic-logging"></a>Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
+# Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
+<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
 Na versão 4.4.1436.0 adicionámos uma nova funcionalidade de registo. Esta funcionalidade permite aos engenheiros de suporte e aos administradores ativar o registo sem ser necessário reiniciar o serviço de gestão.
 
 Após a instalação, verá uma nova linha em Microsoft.ResourceManagement.Service.exe.config denominada
 
-*    Linha 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
-*    Linha 8: ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
-*    Linha 266: ``</system.diagnostics> ``
+*   Linha 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
+*   Linha 8: ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
+*   Linha 266: ``</system.diagnostics> ``
 
 ![Secções realçadas a mostrar as novas entradas do registo dinâmico](media/mim-service-dynamic-logging/screen01.png)
 

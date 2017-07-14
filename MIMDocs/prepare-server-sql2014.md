@@ -12,15 +12,17 @@ ms.technology: security
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 3a40bf3bd5251ef101b25cc29251f33062e44cdc
-ms.lasthandoff: 01/24/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
+ms.openlocfilehash: 105d2320ed5a0d610e8e6c5f459366680e3f8a77
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="set-up-an-identity-management-server-sql-server-2014"></a>Configurar um servidor de gestão de identidades: SQL Server 2014
+# Configurar um servidor de gestão de identidades: SQL Server 2014
+<a id="set-up-an-identity-management-server-sql-server-2014" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Windows Server 2012 R2](prepare-server-ws2012r2.md)
@@ -32,7 +34,8 @@ ms.lasthandoff: 01/24/2017
 > - Nome de domínio – **contoso**
 > - Palavra-passe – **Pass@word1**
 
-## <a name="install-sql-server-2014-standard-edition"></a>Instalar o **SQL Server 2014 Standard Edition**
+## Instalar o **SQL Server 2014 Standard Edition**
+<a id="install-sql-server-2014-standard-edition" class="xliff"></a>
 
 1. Inicie o **PowerShell** como um administrador do domínio.
 

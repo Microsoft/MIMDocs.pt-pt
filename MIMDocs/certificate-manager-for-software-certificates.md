@@ -12,18 +12,21 @@ ms.technology: security
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: 23cfb1134d1cbf2cf838354cb7d915084803cd41
-ms.lasthandoff: 01/24/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
+ms.openlocfilehash: 274039a6866c5c0fda807e4326220ecf785ca3bb
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="create-software-certificates-with-certificate-manager"></a>Criar certificados de software com o Gestor de Certificados
+# Criar certificados de software com o Gestor de Certificados
+<a id="create-software-certificates-with-certificate-manager" class="xliff"></a>
 Para se inscrever e renovar certificados de software, não tem de ser um administrador e não precisa de um smart card virtual. É importante salientar que, a determinada altura, será pedido que permita uma operação de certificado, mas isto é normal.
 
-## <a name="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager"></a>Criar um Modelo de Perfil de certificado de software no Gestor de Certificados do MIM 2016
+## Criar um Modelo de Perfil de certificado de software no Gestor de Certificados do MIM 2016
+<a id="create-a-software-certificate-profile-template-in-mim-2016-certificate-manager" class="xliff"></a>
 
 1.  Crie um modelo para o certificado que irá pedir para o smart card virtual. Abra a mmc.
 
@@ -39,7 +42,7 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
     1.  No separador **Geral**, no campo nome a apresentar, escreva **Modelo de Certificado Arquivado**.
 
-    2.  b.    No separador **Processamento de Pedidos**
+    2.  b.  No separador **Processamento de Pedidos**
 
         1.  Defina o **Objetivo** para a Assinatura e encriptação.
 
@@ -73,7 +76,8 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
     10. Na lista, selecione o novo modelo que acabou de criar (**Modelo de Certificado Arquivado**) e, em seguida, clique em **OK**.
 
-## <a name="create-the-profile-template"></a>Criar o Modelo de Perfil
+## Criar o Modelo de Perfil
+<a id="create-the-profile-template" class="xliff"></a>
 
 1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
 

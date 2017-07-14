@@ -10,11 +10,11 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: 1ef7b9816d265d17ef68fc54e010e655535dcdc8
 ms.openlocfilehash: 5ab70bac8cbd874153fa56cf7b181144c394ec04
 ms.contentlocale: pt-pt
-ms.lasthandoff: 05/11/2017
+ms.lasthandoff: 07/10/2017
 
 
 
@@ -23,7 +23,8 @@ ms.lasthandoff: 05/11/2017
 
 
 
-# <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
+# Como Aprovisiono Utilizadores para o AD DS?
+<a id="how-do-i-provision-users-to-ad-ds" class="xliff"></a>
 
 Aplica-se a: Microsoft Identity Manager 2016 SP1 (MIM)
 
@@ -31,17 +32,20 @@ Um requisito básico de um sistema de gestão de identidades é a capacidade de 
 
 Este guia contém orientações acerca dos principais blocos modulares envolvidos no processo de aprovisionamento de utilizadores a partir do Microsoft® Identity Manager (MIM) 2016 para o Active Directory® Domain Services (AD DS), descreve como pode verificar se o seu cenário está a funcionar conforme esperado, oferece sugestões para a gestão de utilizadores do Active Directory com o MIM 2016 e indica fontes de informação adicionais.
 
-## <a name="before-you-begin"></a>Antes de Começar
+## Antes de Começar
+<a id="before-you-begin" class="xliff"></a>
 
 
 Nesta secção, irá encontrar informações sobre o âmbito deste documento. Em geral, os guias de instruções são direcionados para os leitores que já têm experiência com o processo de sincronização de objetos com o MIM, conforme descrito nos [Guias de Introdução](http://go.microsoft.com/FWLink/p/?LinkId=190486) relacionados.
 
-### <a name="audience"></a>Audiência
+### Audiência
+<a id="audience" class="xliff"></a>
 
 
 Este guia destina-se a profissionais de tecnologias de informação (TI) que já possuem conhecimentos básicos sobre a forma como o processo de sincronização do MIM funciona e que têm interesse em obter experiência prática e informações de tipo conceptual sobre cenários específicos.
 
-### <a name="prerequisite-knowledge"></a>Conhecimento dos pré-requisitos
+### Conhecimento dos pré-requisitos
+<a id="prerequisite-knowledge" class="xliff"></a>
 
 
 Este documento parte do princípio que tem acesso a uma instância em execução do MIM e que tem experiência com a configuração de cenários de sincronização simples, conforme descrito nos seguintes documentos:
@@ -52,32 +56,37 @@ Este documento parte do princípio que tem acesso a uma instância em execução
 
 Os conteúdos neste documento funcionam como uma extensão destes documentos de introdução.
 
-### <a name="scope"></a>Âmbito
+### Âmbito
+<a id="scope" class="xliff"></a>
 
 
 O cenário descrito neste documento foi simplificado com o intuito de abordar os requisitos de um ambiente básico de laboratório. O objetivo é que fique a compreender as tecnologias e os conceitos abordados.
 
 Este documento ajuda-o a desenvolver uma solução que envolve a gestão de grupos no AD DS através do MIM.
 
-### <a name="time-requirements"></a>Requisitos de tempo
+### Requisitos de tempo
+<a id="time-requirements" class="xliff"></a>
 
 
 Os procedimentos descritos neste documento levam entre 90 a 120 minutos a concluir.
 
 Estas estimativas de tempo pressupõem que o ambiente de teste já foi configurado e não incluem o tempo necessário para o configurar.
 
-### <a name="getting-support"></a>Obter suporte
+### Obter suporte
+<a id="getting-support" class="xliff"></a>
 
 
 Se tiver alguma pergunta em relação aos conteúdos deste documento ou feedback geral que gostaria de abordar, pode publicar uma mensagem no [fórum do Forefront Identity Manager 2010](http://go.microsoft.com/FWLink/p/?LinkId=189654).
 
-## <a name="scenario-description"></a>Descrição do Cenário
+## Descrição do Cenário
+<a id="scenario-description" class="xliff"></a>
 
 
 A Fabrikam, uma empresa fictícia, pretende utilizar o MIM para gerir as contas de utilizador existentes no AD DS da empresa através do MIM. Como parte deste processo, a Fabrikam tem de aprovisionar utilizadores para o AD DS. Para começar o teste inicial, a Fabrikam instalou um ambiente de laboratório básico composto pelo MIM e pelo AD DS.
 Neste ambiente de laboratório, a Fabrikam está a testar um cenário que consiste num utilizador criado manualmente no Portal do MIM. O objetivo deste cenário é aprovisionar o utilizador como um utilizador ativo e com uma palavra-passe predefinida para o AD DS.
 
-## <a name="scenario-design"></a>Estrutura do Cenário
+## Estrutura do Cenário
+<a id="scenario-design" class="xliff"></a>
 
 
 Para utilizar este guia, precisa de três componentes de arquitetura:
@@ -97,7 +106,8 @@ Pode executar todos os componentes num computador.
 >[!NOTE]
 Para obter mais informações sobre como configurar o MIM, veja o [Guia de Instalação do FIM](http://go.microsoft.com/FWLink/p/?LinkId=165845).
 
-## <a name="scenario-components-list"></a>Lista de Componentes do Cenário
+## Lista de Componentes do Cenário
+<a id="scenario-components-list" class="xliff"></a>
 
 
 A seguinte tabela indica os componentes que fazem parte do cenário contido neste guia.
@@ -115,7 +125,8 @@ A seguinte tabela indica os componentes que fazem parte do cenário contido nest
 
 
 
-## <a name="scenario-steps"></a>Passos do Cenário
+## Passos do Cenário
+<a id="scenario-steps" class="xliff"></a>
 
 
 O cenário descrito neste guia consiste nos blocos modulares apresentados na seguinte imagem.
@@ -123,19 +134,22 @@ O cenário descrito neste guia consiste nos blocos modulares apresentados na seg
 ![Passos do cenário](media/how-provision-users-adds/image013.png)
 
 
-## <a name="configuring-the-external-systems"></a>Configurar os Sistemas Externos
+## Configurar os Sistemas Externos
+<a id="configuring-the-external-systems" class="xliff"></a>
 
 
 Nesta secção, encontrará instruções para os recursos que precisa de criar e que se encontram fora do seu ambiente do MIM.
 
-### <a name="step-1-create-the-ou"></a>Passo 1: criar a UO
+### Passo 1: criar a UO
+<a id="step-1-create-the-ou" class="xliff"></a>
 
 
 Tem de criar a UO como um contentor para o utilizador de exemplo aprovisionado. Para obter mais informações sobre como criar UOs, veja [Criar uma Nova Unidade Organizacional](http://go.microsoft.com/FWLink/p/?LinkId=189655).
 
 Crie uma UO com o nome MIMObjects no AD DS.
 
-### <a name="step-2-create-the-active-directory-user-accounts"></a>Passo 2: crie as contas de utilizador do Active Directory
+### Passo 2: crie as contas de utilizador do Active Directory
+<a id="step-2-create-the-active-directory-user-accounts" class="xliff"></a>
 
 Para o cenário descrito neste guia, irá precisar de duas contas de utilizador do Active Directory:
 
@@ -146,12 +160,14 @@ Para o cenário descrito neste guia, irá precisar de duas contas de utilizador 
 Em ambos os casos, basta criar contas de utilizador normais. Poderá encontrar informações adicionais sobre os requisitos específicos de ambas as contas mais adiante neste documento. Para obter mais informações sobre como criar utilizadores, veja [Criar uma Nova Conta de Utilizador](http://go.microsoft.com/FWLink/p/?LinkId=189656).
 
 
-## <a name="configuring-the-fim-synchronization-service"></a>Configurar o Serviço de Sincronização do FIM
+## Configurar o Serviço de Sincronização do FIM
+<a id="configuring-the-fim-synchronization-service" class="xliff"></a>
 
 
 Para os passos de configuração descritos nesta secção, terá de iniciar o Synchronization Service Manager do FIM.
 
-### <a name="creating-the-management-agents"></a>Criar os agentes de gestão
+### Criar os agentes de gestão
+<a id="creating-the-management-agents" class="xliff"></a>
 
 Para o cenário descrito neste guia, terá de criar dois agentes de gestão:
 
@@ -159,7 +175,8 @@ Para o cenário descrito neste guia, terá de criar dois agentes de gestão:
 
 -   **FIMMA da Fabrikam** – o agente de gestão do serviço FIM.
 
-### <a name="step-3-create-the-fabrikam-adma-management-agent"></a>Passo 3: criar o agente de gestão do ADMA da Fabrikam
+### Passo 3: criar o agente de gestão do ADMA da Fabrikam
+<a id="step-3-create-the-fabrikam-adma-management-agent" class="xliff"></a>
 
 Ao configurar um agente de gestão do AD DS, tem de especificar uma conta que seja utilizada pelo agente de gestão na troca de dados com o AD DS. Deve utilizar uma conta de utilizador normal. No entanto, para importar os dados do AD DS, a conta tem de ter o direito para consultar as alterações feitas pelo controlo DirSync. Se pretende que o seu agente de gestão exporte dados para o AD DS, tem de conceder direitos suficientes à conta na UO de destino. Para obter mais informações sobre este tópico, veja [Configuring the ADMA Account (Configurar a Conta ADMA)](http://go.microsoft.com/FWLink/p/?LinkId=189657).
 
@@ -190,7 +207,8 @@ Para obter mais informações, veja os seguintes tópicos no menu Ajuda:
 >[!Note]
 Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
 
-### <a name="step-4-create-the-fabrikam-fimma-management-agent"></a>Passo 4: criar o agente de gestão do FIMMA da Fabrikam
+### Passo 4: criar o agente de gestão do FIMMA da Fabrikam
+<a id="step-4-create-the-fabrikam-fimma-management-agent" class="xliff"></a>
 
 Ao configurar um agente de gestão do Serviço FIM, tem de especificar uma conta que seja utilizada pelo agente de gestão na troca de dados com o Serviço FIM.
 
@@ -221,7 +239,8 @@ Para obter mais informações, consulte os seguintes tópicos do menu de ajuda:
 >[!NOTE]
  Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
 
-### <a name="step-5-create-the-run-profiles"></a>Passo 5: criar os perfis de execução
+### Passo 5: criar os perfis de execução
+<a id="step-5-create-the-run-profiles" class="xliff"></a>
 
 A seguinte tabela indica os perfis de execução que tem de criar para o cenário descrito neste guia.
 
@@ -241,7 +260,8 @@ Para obter mais informações, veja o tópico Criar um Perfil de Execução do A
  Verifique se o aprovisionamento se encontra ativado no seu ambiente. Pode fazê-lo ao executar o script. Veja Using Windows PowerShell to Enable Provisioning (Utilizar o Windows PowerShell para Ativar o Aprovisionamento) (http://go.microsoft.com/FWLink/p/?LinkId=189660).
 
 
-## <a name="configuring-the-fim-service"></a>Configurar o Serviço FIM
+## Configurar o Serviço FIM
+<a id="configuring-the-fim-service" class="xliff"></a>
 
 
 Para o cenário descrito neste guia, tem de configurar uma política de aprovisionamento conforme apresentado na seguinte imagem.
@@ -252,7 +272,8 @@ O objetivo desta política de aprovisionamento é incluir grupos no âmbito da R
 
 Para configurar o serviço FIM, aceda a http://localhost/identitymanagement no Windows Internet Explorer®. Na página do Portal do MIM Portal, para criar a política de aprovisionamento, aceda às páginas relacionadas da secção Administração. Para verificar a sua configuração, deve executar o script [Using Windows PowerShell to document your provisioning policy configuration (Utilizar o Windows PowerShell para documentar a configuração da sua política de aprovisionamento)](http://go.microsoft.com/FWLink/p/?LinkId=189661).
 
-### <a name="step-6-create-the-synchronization-rule"></a>Passo 6: criar a regra de sincronização
+### Passo 6: criar a regra de sincronização
+<a id="step-6-create-the-synchronization-rule" class="xliff"></a>
 
 As seguintes tabelas mostram a configuração da regra de sincronização de aprovisionamento da Fabrikam. Crie a regra de sincronização de acordo com os dados apresentados nas seguintes tabelas.
 
@@ -303,7 +324,8 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
  >[!NOTE]
  Importante Certifique-se de que selecionou a opção Apenas Fluxo Inicial para o fluxo do atributo que contém o DN como destino.                                                                          
 
-### <a name="step-7-create-the-workflow"></a>Passo 7: criar o fluxo de trabalho
+### Passo 7: criar o fluxo de trabalho
+<a id="step-7-create-the-workflow" class="xliff"></a>
 
 O Fluxo de Trabalho de Aprovisionamento do AD tem como objetivo adicionar a regra de sincronização de aprovisionamento da Fabrikam a um recurso. As seguintes tabelas mostram a configuração.  Crie um fluxo de trabalho de acordo com os dados apresentados nas tabelas abaixo.
 
@@ -322,7 +344,8 @@ O Fluxo de Trabalho de Aprovisionamento do AD tem como objetivo adicionar a regr
 
 
 
-### <a name="step-8-create-the-mpr"></a>Passo 8: criar o MPR
+### Passo 8: criar o MPR
+<a id="step-8-create-the-mpr" class="xliff"></a>
 
 O tipo de MPR necessário é Transição de Conjunto e este é acionado quando um recurso se torna membro do conjunto Todos os Contratantes. As seguintes tabelas mostram a configuração.  Crie um MPR de acordo com os dados nas tabelas abaixo.
 
@@ -347,7 +370,8 @@ O tipo de MPR necessário é Transição de Conjunto e este é acionado quando u
 
 
 
-## <a name="initializing-your-environment"></a>Iniciar o seu Ambiente
+## Iniciar o seu Ambiente
+<a id="initializing-your-environment" class="xliff"></a>
 
 
 Os objetivos da fase de inicialização são os seguintes:
@@ -356,7 +380,8 @@ Os objetivos da fase de inicialização são os seguintes:
 
 -   Incluir a sua estrutura do Active Directory no espaço conector do Active Directory.
 
-### <a name="step-9-run-the-run-profiles"></a>Passo 9: executar os perfis de execução
+### Passo 9: executar os perfis de execução
+<a id="step-9-run-the-run-profiles" class="xliff"></a>
 
 A seguinte tabela indica os perfis de execução que fazem parte da fase de inicialização.  Execute os perfis de execução de acordo com a tabela abaixo.
 
@@ -375,7 +400,8 @@ A seguinte tabela indica os perfis de execução que fazem parte da fase de inic
 >[!NOTE]
 Deve verificar se a sua regra de sincronização de saída foi projetada no metaverso com êxito.
 
-## <a name="testing-the-configuration"></a>Testar a Configuração
+## Testar a Configuração
+<a id="testing-the-configuration" class="xliff"></a>
 
 
 Esta secção tem como objetivo testar a sua configuração atual. Para testar a configuração, terá de:
@@ -388,7 +414,8 @@ Esta secção tem como objetivo testar a sua configuração atual. Para testar a
 
 4.  Verificar se o utilizador existe no AD DS.
 
-### <a name="step-10-create-a-sample-user-in-mim"></a>Passo 10: criar um utilizador de exemplo no MIM
+### Passo 10: criar um utilizador de exemplo no MIM
+<a id="step-10-create-a-sample-user-in-mim" class="xliff"></a>
 
 
 A seguinte tabela indica as propriedades do utilizador de exemplo. Crie um utilizador de exemplo de acordo com os dados na tabela abaixo.
@@ -404,7 +431,8 @@ A seguinte tabela indica as propriedades do utilizador de exemplo. Crie um utili
 
 
 
-### <a name="verify-the-provisioning-requisites-of-the-sample-user"></a>Verificar os requisitos de aprovisionamento do utilizador de exemplo
+### Verificar os requisitos de aprovisionamento do utilizador de exemplo
+<a id="verify-the-provisioning-requisites-of-the-sample-user" class="xliff"></a>
 
 
 Para aprovisionar o utilizador de exemplo no AD DS, é necessário cumprir dois pré-requisitos:
@@ -413,18 +441,20 @@ Para aprovisionar o utilizador de exemplo no AD DS, é necessário cumprir dois 
 
 2.  O utilizador definido tem de estar no âmbito da regra de sincronização de saída.
 
-### <a name="step-11-verify-the-user-is-a-member-of-all-contractors"></a>Passo 11: verificar se o utilizador é membro do conjunto Todos os Contratantes
+### Passo 11: verificar se o utilizador é membro do conjunto Todos os Contratantes
+<a id="step-11-verify-the-user-is-a-member-of-all-contractors" class="xliff"></a>
 
 Se verificar se o utilizador é membro do conjunto Todos os Contratantes, abra o conjunto e, em seguida, clique em Ver Membros.
 
 ![Verifique se o utilizador é membro do conjunto Todos os Contratantes](media/how-provision-users-adds/image022.jpg)
 
 
-### <a name="step-12-verify-the-user-is-in-the-scope-of-the-outbound-synchronization-rule"></a>Passo 12: verifique se o utilizador está no âmbito da regra de sincronização de saída
+### Passo 12: verifique se o utilizador está no âmbito da regra de sincronização de saída
+<a id="step-12-verify-the-user-is-in-the-scope-of-the-outbound-synchronization-rule" class="xliff"></a>
 
-Para verificar se o utilizador está no âmbito da regra de sincronização, abra a página de propriedades do utilizador e verifique o atributo Lista de Regras Esperadas no separador Aprovisionamento. O atributo Lista de Regras Esperadas deverá mostrar a Regra de
+Para verificar se o utilizador está no âmbito da regra de sincronização, abra a página de propriedades do utilizador e verifique o atributo Lista de Regras Esperadas no separador Aprovisionamento. O atributo esperado lista de regras deve listar o usuário do AD
 
-Sincronização de Saída de Utilizadores do AD. A seguinte captura de ecrã mostra um exemplo do atributo Lista de Regras Esperadas.
+Regra de sincronização de saída. A seguinte captura de ecrã mostra um exemplo do atributo Lista de Regras Esperadas.
 
 ![Estado da regra de sincronização](media/how-provision-users-adds/image023.jpg)
 
@@ -432,7 +462,8 @@ Nesta fase do processo, o Estado da Regra de Sincronização será Pendente. Ist
 
 
 
-### <a name="step-13-synchronize-the-sample-group"></a>Passo 13: sincronizar o grupo de exemplo
+### Passo 13: sincronizar o grupo de exemplo
+<a id="step-13-synchronize-the-sample-group" class="xliff"></a>
 
 
 Antes de iniciar o primeiro ciclo de sincronização de um objeto de teste, deve controlar o estado esperado do objeto após executar todos os perfis de execução necessários num plano de teste. O seu plano de teste também deve incluir os valores do atributo esperados junto do estado geral do seu objeto (criado, atualizado ou eliminado).
@@ -468,9 +499,9 @@ Para efetuar estas tarefas, deve executar os seguintes perfis de execução.
 
 Após a importação da base de dados do Serviço FIM, a Eduarda Almeida e o objeto ExpectedRuleEntry que liga a Eduarda à
 
-Regra de Sincronização de Saída de Utilizadores do AD foram transitados para o espaço conector do FIMMA da Fabrikam. Ao rever
+Regra de Sincronização de Saída de Utilizadores do AD foram transitados para o espaço conector do FIMMA da Fabrikam. Quando você examinar
 
-as propriedades da Eduarda no espaço conector junto aos valores do atributo que configurou no Portal do FIM, encontrará também uma referência válida para o objeto Entrada de Regra Esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
+Propriedades de Britta no espaço do conector, ao lado de valores de atributo que você configurou no Portal do FIM, você também encontrar uma referência válida para o objeto de entrada de regra esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
 
 ![Propriedades dos objetos de espaço conector](media/how-provision-users-adds/image025.jpg)
 
@@ -504,29 +535,33 @@ Execute os perfis de execução de acordo com as instruções indicadas nesta se
 >[!IMPORTANT]
 Cada perfil de execução tem de ser executado sem erros.
 
-### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>Passo 14: verificar o utilizador aprovisionado no AD DS
+### Passo 14: verificar o utilizador aprovisionado no AD DS
+<a id="step-14-verify-the-provisioned-user-in-ad-ds" class="xliff"></a>
 
 Para verificar se o seu utilizador de exemplo foi aprovisionado no AD DS, tem de abrir a UO FIMObjects. Deverá encontrar a utilizadora Eduarda Almeida na UO FIMObjects.
 
 ![Verifique se o seu utilizador de exemplo se encontra na UO FIMObjects.](media/how-provision-users-adds/image033.jpg)
 
-<a name="summary"></a>Resumo
+Resumo
+<a id="summary" class="xliff"></a>
 =======
 
 O objetivo deste documento é apresentar-lhe os principais blocos modulares para sincronizar utilizadores no MIM com o AD DS. No seu teste inicial, deve começar por especificar o número mínimo de atributos necessários para concluir uma tarefa e adicionar mais atributos ao seu cenário quando os passos gerais funcionarem conforme o esperado. Reduzir a complexidade dos atributos ao mínimo possível simplifica o processo de resolução de problemas.
 
-Quando testar a sua configuração, é muito provável que tenha de eliminar e voltar a criar novos objetos de teste. Para os objetos com o atributo
+Quando testar a sua configuração, é muito provável que tenha de eliminar e voltar a criar novos objetos de teste. Objetos com um
 
-ExpectedRulesList preenchido, é possível que surjam objetos ERE isolados.
+preenchido ExpectedRulesList atributo, isso pode resultar em órfãos e objetos.
 Para obter uma descrição sobre como pode remover estes objetos do seu ambiente de teste, veja [A Method to Remove Orphaned ExpectedRuleEntry Objects from Your Environment (Um Método para Remover Objetos ExpectedRuleEntry Isolados do seu Ambiente)](http://go.microsoft.com/FWLink/p/?LinkId=189667).
 
 Num cenário de sincronização típico que inclua o AD DS como destino da sincronização, o MIM não é obrigatório para todos os atributos de um objeto. Por exemplo, quando gerir objetos de utilizador no AD DS através do FIM, no mínimo é necessário que o domínio e os atributos objectSID sejam gerados pelo agente de gestão do AD DS.
 O nome, o domínio e os atributos objectSID da conta são necessários se quiser permitir que um utilizador possa iniciar sessão no Portal do FIM. Para preencher estes atributos do AD DS, é necessária uma regra de sincronização de entrada adicional para o espaço conector do AD DS. Quando gerir objetos com múltiplas origens de valores de atributos, certifique-se de que configura a precedência do fluxo de atributos corretamente. Se a precedência do fluxo de atributos não for configurada corretamente, o motor de sincronização impedirá o preenchimento dos valores de atributos. Encontrará mais informações sobre a precedência do fluxo de atributos no artigo [About Attribute Flow Precedence (Acerca da Precedência do Fluxo de Atributos)](http://go.microsoft.com/FWLink/p/?LinkId=189675).
 
-<a name="see-also"></a>Consulte Também
+Consulte Também
+<a id="see-also" class="xliff"></a>
 =========
 
-<a name="other-resources"></a>Outros Recursos
+Outros Recursos
+<a id="other-resources" class="xliff"></a>
 ---------------
 
 [Using FIM to Enable or Disable Accounts in Active Directory (Utilizar o FIM para Ativar ou Desativar Contas no Active Directory)](http://go.microsoft.com/FWLink/p/?LinkId=189670)

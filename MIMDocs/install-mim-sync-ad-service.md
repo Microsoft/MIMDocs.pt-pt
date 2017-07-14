@@ -12,15 +12,17 @@ ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: f84fbbdc8de5cfffc8570c52f8298cc69273c3ee
-ms.lasthandoff: 01/24/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
+ms.openlocfilehash: 4ad41fc9679be702ab17fb5bef5d3efab5ff5adc
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM
+# Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM
+<a id="install-mim-2016-synchronize-active-directory-and-mim-service" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Portal e Serviço do MIM](install-mim-service-portal.md)
@@ -33,7 +35,8 @@ ms.lasthandoff: 01/24/2017
 
 Por predefinição, o Serviço de Sincronização do MIM (Sincronizar) não tem conetores configurados.  O primeiro passo típico consiste em utilizar a Sincronização do MIM para povoar a base de dados do Serviço MIM com contas do Active Directory existentes. Para tal, deverá utilizar a aplicação Serviço de Sincronização do MIM.
 
-## <a name="create-the-mim-management-agent"></a>Criar o agente de gestão do MIM
+## Criar o agente de gestão do MIM
+<a id="create-the-mim-management-agent" class="xliff"></a>
 O agente de gestão (MA) do MIM é um conetor da Sincronização do MIM para o Serviço MIM. Para criar este conetor, utilize o assistente Criar Agente de Gestão.
 
 Quando configura um agente de gestão do MIM, tem de especificar uma conta de utilizador. Este documento utiliza **MIMMA** como o nome desta conta.
@@ -41,7 +44,8 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 > [!NOTE]
 > A conta que utiliza para o agente de gestão do MIM tem de ser a mesma conta que especificou durante a instalação do Serviço MIM.
 
-###<a name="to-create-the-mim-ma"></a>Para criar o MA do MIM
+###Para criar o MA do MIM
+<a id="to-create-the-mim-ma" class="xliff"></a>
 
 1.  Abra o Synchronization Service Manager.
 
@@ -163,7 +167,8 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
 11.  Para criar o agente de gestão, na página **Configurar Extensões**, clique em **Concluir**.
 
-## <a name="create-the-ad-management-agent"></a>Criar o agente de gestão do AD
+## Criar o agente de gestão do AD
+<a id="create-the-ad-management-agent" class="xliff"></a>
 O agente de gestão do Active Directory é um conetor para os Serviços de Domínio do AD. Para criar este conetor, utilize o assistente Criar Agente de Gestão.
 
 1. Para abrir o assistente Criar Agente de Gestão, no menu **Ações**, clique em **Criar**.
@@ -225,11 +230,13 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 12. Na página **Configurar Extensões**, clique em **Concluir**.
 
 
-## <a name="create-run-profiles"></a>Criar Perfis de Execução
+## Criar Perfis de Execução
+<a id="create-run-profiles" class="xliff"></a>
 
 Crie perfis de execução para os Conetores do MIMMA e do ADMA.
 
-### <a name="create-run-profiles-for-the-adma-connector"></a>Criar perfis de execução para o conetor do ADMA
+### Criar perfis de execução para o conetor do ADMA
+<a id="create-run-profiles-for-the-adma-connector" class="xliff"></a>
 
 Esta tabela mostra os cinco perfis de execução que criará para o conetor do ADMA:
 
@@ -261,7 +268,8 @@ Para criar perfis de execução para o conetor do ADMA:
 
 5. Para fechar a caixa de diálogo Configurar Perfis de Execução, clique em **OK**.
 
-### <a name="create-run-profiles-for-the-mimma-connector"></a>Criar perfis de execução para o conetor do MIMMA
+### Criar perfis de execução para o conetor do MIMMA
+<a id="create-run-profiles-for-the-mimma-connector" class="xliff"></a>
 
 Esta tabela mostra os cinco perfis de execução correspondentes para o conetor do MIMMA:
 
@@ -293,7 +301,8 @@ Para criar perfis de execução para o conetor do MIMMA:
 
 5. Para fechar a caixa de diálogo Configurar Perfis de Execução, clique em **OK**.
 
-## <a name="configure-the-mim-service"></a>Configurar o Serviço MIM
+## Configurar o Serviço MIM
+<a id="configure-the-mim-service" class="xliff"></a>
 
 Através do Portal do MIM, irá criar a regra de sincronização de entrada de utilizadores do AD para o Serviço MIM.
 
@@ -347,10 +356,12 @@ Para criar a regra de sincronização de entrada de utilizadores do AD:
 
 8. No separador **Resumo**, clique em **Submeter**.
 
-## <a name="initialize-the-testing-environment"></a>Inicializar o ambiente de teste
+## Inicializar o ambiente de teste
+<a id="initialize-the-testing-environment" class="xliff"></a>
 Existem quatro passos que precisa de realizar antes de testar a configuração do MIM com dados do AD:
 
-### <a name="enable-provisioning"></a>Ativar Aprovisionamento
+### Ativar Aprovisionamento
+<a id="enable-provisioning" class="xliff"></a>
 
 1. Abra o Synchronization Service Manager.
 
@@ -360,7 +371,8 @@ Existem quatro passos que precisa de realizar antes de testar a configuração d
 
 4. Para fechar a caixa de diálogo Opções, clique em **OK**.
 
-### <a name="initialize-the-mimma"></a>Inicializar o MIMMA
+### Inicializar o MIMMA
+<a id="initialize-the-mimma" class="xliff"></a>
 
 Execute um ciclo de sincronização completo neste conetor. O ciclo completo inclui os seguintes perfis de execução:
 
@@ -385,13 +397,15 @@ Siga estes passos para executar cada um dos quatro perfis de execução.
 
     - Para iniciar o perfil de execução, clique em **OK**.
 
-#### <a name="configure-attribute-flow-precedence"></a>Configurar a precedência do fluxo de atributos
+#### Configurar a precedência do fluxo de atributos
+<a id="configure-attribute-flow-precedence" class="xliff"></a>
 
 Durante a inicialização do conetor do MIM, as regras de sincronização configuradas foram importadas para o metaverso.
 
 Ajuste a precedência do fluxo de atributos para os atributos contribuídos por este conetor para se certificar de que os atributos já no AD possam circular para o metaverso e, posteriormente, para a base de dados do Serviço MIM.
 
-### <a name="initialize-the-adma"></a>Inicializar o ADMA
+### Inicializar o ADMA
+<a id="initialize-the-adma" class="xliff"></a>
 
 Para inicializar o conetor do Active Directory, terá de executar uma importação completa e uma sincronização completa no mesmo. A importação completa transfere os objetos existentes do AD para o espaço conetor. A sincronização completa atualiza as regras de sincronização para corresponderem às do conetor do MIM.
 
@@ -409,7 +423,8 @@ Para inicializar o conetor do Active Directory, terá de executar uma importaç�
 
     - Para iniciar o perfil de execução, clique em **OK**.
 
-### <a name="populate-the-mim-service-database"></a>Povoar a base de dados do Serviço MIM
+### Povoar a base de dados do Serviço MIM
+<a id="populate-the-mim-service-database" class="xliff"></a>
 
 Para povoar a base de dados do Serviço MIM com os objetos, tem de executar um ciclo de sincronização no conetor do MIMMA. O ciclo de consiste em:
 

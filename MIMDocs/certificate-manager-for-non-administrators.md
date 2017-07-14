@@ -12,18 +12,21 @@ ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 54d03fbd03f6c44298139324ea2dc7d945f008bc
-ms.openlocfilehash: 89e095cff66984140cdcef3617dd0ccc3d3714d8
-ms.lasthandoff: 02/07/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
+ms.openlocfilehash: f8de75a0027371b7ff88b90d3097adc63c02d933
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="enroll-smart-cards-for-non-administrators"></a>Inscrição de smart cards para não administradores
+# Inscrição de smart cards para não administradores
+<a id="enroll-smart-cards-for-non-administrators" class="xliff"></a>
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
 
-## <a name="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager"></a>Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
+## Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
+<a id="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager" class="xliff"></a>
 
 1.  **Descompactar o ficheiro appx**
 

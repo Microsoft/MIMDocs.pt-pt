@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: bd73f43a096d58e1f7250e28b59e33f4411e88a3
-ms.lasthandoff: 01/10/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="configure-pam-using-scripts"></a>Configurar a PAM através de scripts
+# Configurar a PAM através de scripts
+<a id="configure-pam-using-scripts" class="xliff"></a>
 
 Se optar por instalar o SQL e o SharePoint em servidores separados, estes deveverão ser configurados com as seguintes instruções. Se o SQL, o SharePoint e os componentes de PAM estiverem instalados no mesmo computador, os passos abaixo têm de ser executados nesse computador.
 
@@ -40,11 +42,13 @@ Passos:
 5. Copie o mesmo PAMDeploymentConfig.xml para a pasta %SYSTEMDRIVE%\PAM em todos os computadores, CORPDC, PRIVDC, Servidor PAM, SQL Server e servidores do SharePoint.
 
 
-## <a name="deployment-worksheet"></a>Folha de cálculo de implementação
+## Folha de cálculo de implementação
+<a id="deployment-worksheet" class="xliff"></a>
 
 Antes de continuar a atualização do PAMDeploymentConfig.xml, coloque a cópia atualizada em todos os computadores.
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 
 |Machine   | Quem executar como   |Comandos   |
 |---|---|---|
@@ -56,7 +60,8 @@ Antes de continuar a atualização do PAMDeploymentConfig.xml, coloque a cópia 
 | PAMServer  | Administrador Local (Administrador MIM após a associação a um domínio)  | .\PAMDeployment.ps1 Selecione a opção 5 do menu (Configuração da PAM do MIM)   |
 |  PAMServer |MIMAdmin   | .\PAMDeployment.ps1 Selecione a opção 6 do menu (Configuração da Confiança de PAM) .\PAMDeployment.ps1 Selecione a opção 6 do menu (Configuração da Confiança de PAM) |
 
-### <a name="validation"></a>Validação
+### Validação
+<a id="validation" class="xliff"></a>
 
 |  Machine | Quem executar como   | Comandos   |
 |---|---|---|

@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: 12eb9a00584f72b9c628e870562a743fb603d4a3
-ms.lasthandoff: 01/10/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="step-4-configuring-sharepoint"></a>Passo 4: Configurar o SharePoint
+# Passo 4: Configurar o SharePoint
+<a id="step-4-configuring-sharepoint" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Passo 3](sp1-step3-installing-configuring-sql.md)

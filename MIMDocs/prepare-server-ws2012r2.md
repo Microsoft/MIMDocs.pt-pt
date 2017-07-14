@@ -12,15 +12,17 @@ ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3623bffb099a83d0eba47ba25e9777c3d590e529
-ms.openlocfilehash: 1cb0d6cd310372ecaeff47c9cc4461ebc43b3390
-ms.lasthandoff: 01/24/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
+ms.openlocfilehash: a0241964edb21ca4bf938ae84693b9947f6e2efb
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="set-up-an-identity-management-server-windows-server-2012-r2"></a>Configurar um servidor de gestão de identidades: Windows Server 2012 R2
+# Configurar um servidor de gestão de identidades: Windows Server 2012 R2
+<a id="set-up-an-identity-management-server-windows-server-2012-r2" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Preparar um domínio](preparing-domain.md)
@@ -32,7 +34,8 @@ ms.lasthandoff: 01/24/2017
 > - Nome de domínio – **contoso**
 > - Palavra-passe – **Pass@word1**
 
-## <a name="join-windows-server-2012-r2-to-your-domain"></a>Associar o Windows Server 2012 R2 ao seu domínio
+## Associar o Windows Server 2012 R2 ao seu domínio
+<a id="join-windows-server-2012-r2-to-your-domain" class="xliff"></a>
 
 Comece com um computador com o Windows Server 2012 R2, com um mínimo de 8 GB de RAM. Quando instalar, especifique a edição “Windows Server 2012 R2 Standard (Servidor com uma GUI) x64”.
 
@@ -52,7 +55,7 @@ Comece com um computador com o Windows Server 2012 R2, com um mínimo de 8 GB 
 
     Após menos de um minuto, a atualização estará concluída com a mensagem “A atualização da Política de Computador foi concluída com êxito”.
 
-6. Adicione as funções **Servidor Web (IIS)** e **Servidor de Aplicações**, as funcionalidades do **.NET Framework** 3.5, 4.0 e 4.5 e o **Módulo Active Directory para Windows PowerShell**.
+6. Adicione as funções **Servidor Web (IIS)** e **Servidor de Aplicações**, as funcionalidades do **.NET Framework** 3.5, 4.0 e 4.5 e o **Módulo Active Directory para Windows PowerShell** .
 
     ![Imagem das funcionalidades do PowerShell](media/MIM-DeployWS2.png)
 
@@ -63,7 +66,8 @@ Comece com um computador com o Windows Server 2012 R2, com um mínimo de 8 GB 
     Install-WindowsFeature Web-WebServer, Net-Framework-Features,rsat-ad-powershell,Web-Mgmt-Tools,Application-Server,Windows-Identity-Foundation,Server-Media-Foundation,Xps-Viewer –includeallsubfeature -restart -source d:\sources\SxS
     ```
 
-## <a name="configure-the-server-security-policy"></a>Configurar a política de segurança do servidor
+## Configurar a política de segurança do servidor
+<a id="configure-the-server-security-policy" class="xliff"></a>
 
 Configure a política de segurança do servidor para permitir que as contas recentemente criadas sejam executadas como serviços.
 
@@ -94,7 +98,8 @@ Configure a política de segurança do servidor para permitir que as contas rece
 12. Feche a janela Política de Segurança Local.
 
 
-## <a name="change-the-iis-windows-authentication-mode"></a>Alterar o modo de Autenticação do Windows do IIS
+## Alterar o modo de Autenticação do Windows do IIS
+<a id="change-the-iis-windows-authentication-mode" class="xliff"></a>
 
 1.  Abra uma janela do PowerShell.
 

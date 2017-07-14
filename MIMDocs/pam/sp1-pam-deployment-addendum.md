@@ -12,16 +12,19 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: f69fe68dc63323c0945a4902e34ea8153f938c02
-ms.lasthandoff: 01/10/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
-# <a name="pam-deployment-scripts-addendum"></a>Adenda de scripts de implementação da PAM:
+# Adenda de scripts de implementação da PAM:
+<a id="pam-deployment-scripts-addendum" class="xliff"></a>
 
-## <a name="addendum-1-setting-up-the-priv-domain"></a>Adenda 1: Configurar o domínio PRIV
+## Adenda 1: Configurar o domínio PRIV
+<a id="addendum-1-setting-up-the-priv-domain" class="xliff"></a>
 
 Após descomprimir o ficheiro comprimido para a pasta $env:SYSTEMDRIVE\PAM, edite o PAMDeploymentConfig.xml para fornecer detalhes da floresta PRIV. Atualize o DNSName, o NetbiosName, o nome de DC, o Caminho da Base de Dados/do Registo e o Caminho do Sysvol. Atualize também o Domínio e o ForestMode. Se estiver a testar o Windows Server Technical Preview 5, defina o DomainMode e o ForestMode como WinThreshold.
 
@@ -39,7 +42,8 @@ O DC reiniciará automaticamente após a conclusão. A palavra-passe de administ
   * A palavra-passe contém, pelo menos, um caráter em MAIÚSCULAS
   * A palavra-passe contém, pelo menos, um digito ou caráter especial
 
-## <a name="addendum-2-setting-up-the-corp-domain"></a>Adenda 2: Configurar o domínio CORP
+## Adenda 2: Configurar o domínio CORP
+<a id="addendum-2-setting-up-the-corp-domain" class="xliff"></a>
 
 Se estiver a começar com a PAM e pretender configurar um ambiente de teste, o script também permitirá a configuração de um Domínio CORP. Após descomprimir o ficheiro comprimido para a pasta $env:SYSTEMDRIVE\PAM, edite o PAMDeploymentConfig.xml ao adicionar os detalhes da floresta CORP. Atualize o DNSName, o NetbiosName, o DC, o nome, o Caminho da Base de Dados/do Registo e o Caminho do Sysvol. O nível funcional deve ser, pelo menos, o Windows Server 2012 R2.
 
@@ -51,7 +55,8 @@ Se estiver a começar com a PAM e pretender configurar um ambiente de teste, o s
 
 O controlador de domínio será reiniciado automaticamente após a conclusão
 
-## <a name="addendum-3-setting-up-a-corp-client-to-do-the-validation"></a>Adenda 3: Configurar um cliente CORP para fazer a validação
+## Adenda 3: Configurar um cliente CORP para fazer a validação
+<a id="addendum-3-setting-up-a-corp-client-to-do-the-validation" class="xliff"></a>
 
 A ClientBinaryLocation no ficheiro de configuração tem de apontar para a localização onde se encontra o setup.exe.
 Inicie sessão como um administrador local e execute os seguintes comandos numa janela do PowerShell elevada:
@@ -69,7 +74,8 @@ Se a máquina não estiver associada a um domínio, solicitará as credenciais d
 
 Prossiga com o Passo 8 indicado acima.
 
-## <a name="addendum-4-if-something-goes-wrong"></a>Adenda 4: Se ocorrer um erro
+## Adenda 4: Se ocorrer um erro
+<a id="addendum-4-if-something-goes-wrong" class="xliff"></a>
 
 Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e envie por e-mail para [mim2016@microsoft.com](mailto:mim2016@microsoft.com), juntamente com os detalhes da operação e do erro.
 

@@ -12,15 +12,17 @@ ms.technology: security
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
+ms.translationtype: MT
+ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: b26fe7bc56ab8229054afb1409c3652e81464a3d
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="connect-to-your-directories"></a>Ligar aos diretórios
+# Ligar aos diretórios
+<a id="connect-to-your-directories" class="xliff"></a>
 
 Os conectores ligam origens de dados específicas ao Microsoft Identity Manager (MIM). Um conector move dados de uma origem de dados ligada para o MIM. Quando os dados no MIM são modificados, o conector também pode exportar os dados para a origem de dados ligada para que se mantenha sincronizada com o MIM. Geralmente, há, pelo menos, um conector para cada diretório ligado.
 
@@ -28,7 +30,8 @@ No Forefront Identity Manager, os conectores eram conhecidos como agentes de ges
 
 Este artigo abrange os conectores que estão incluídos no MIM, mas o conetor para o Extensible Connectivity 2.0 possibilita a ligação a um número ainda maior de origens de dados. Alguns parceiros criaram assim os seus próprios conectores e uma lista completa está disponível na wiki [FIM 2010: agentes de gestão de parceiros](http://social.technet.microsoft.com/wiki/contents/articles/1589.fim-2010-management-agents-from-partners.aspx).
 
-## <a name="supported-connectors-in-mim-2016"></a>Conectores suportados no MIM 2016
+## Conectores suportados no MIM 2016
+<a id="supported-connectors-in-mim-2016" class="xliff"></a>
 
 | Nome | Versões suportadas da origem de dados ligada |
 | ---- | ----------------------------------------------- |
@@ -55,7 +58,8 @@ Este artigo abrange os conectores que estão incluídos no MIM, mas o conetor pa
 | Ficheiro de texto de largura fixa | Ficheiros de texto de largura fixa |
 | LDAP Data Interchange Format (LDIF) | LDAP Data Interchange Format (LDIF) |
 
-## <a name="related-topics"></a>Tópicos relacionados
+## Tópicos relacionados
+<a id="related-topics" class="xliff"></a>
 
 [Agentes de gestão no FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx)
 

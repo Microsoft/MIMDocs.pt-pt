@@ -12,15 +12,17 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: e608593f40759e3bc995daa56c4575510a71e987
-ms.lasthandoff: 01/10/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="step-7-set-up-sid-historysid-filtering"></a>Passo 7: Configurar o histórico/filtragem do SID
+# Passo 7: Configurar o histórico/filtragem do SID
+<a id="step-7-set-up-sid-historysid-filtering" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [« Passo 6](sp1-step6-setup-pam-trust.md)

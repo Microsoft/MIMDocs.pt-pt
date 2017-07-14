@@ -12,25 +12,29 @@ ms.technology: active-directory-domain-services
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 4c3b43e50403890572e77773191a821cf247269c
-ms.lasthandoff: 05/02/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
 
-# <a name="tier-model-for-partitioning-administrative-privileges"></a>Modelo de camada para criação de partições de privilégios administrativos
+# Modelo de camada para criação de partições de privilégios administrativos
+<a id="tier-model-for-partitioning-administrative-privileges" class="xliff"></a>
 
 No ambiente de ameaças atual, a questão não é se um atacante irá obter acesso aos seus sistemas, mas quando. Isto significa que a segurança interna é tão importante como uma defesa de perímetro forte. Este artigo descreve um modelo de segurança destinado a proteger contra a elevação de privilégios segregando as atividades de privilégios elevados das zonas de alto risco. Este modelo fornece uma boa experiência de utilizador ao cumprir as melhores práticas e os princípios de segurança.
 
-## <a name="elevation-of-privilege-in-active-directory-forests"></a>Elevação de Privilégios em florestas do Active Directory
+## Elevação de Privilégios em florestas do Active Directory
+<a id="elevation-of-privilege-in-active-directory-forests" class="xliff"></a>
 
 Os utilizadores, serviços ou contas de aplicações às quais são concedidos privilégios administrativos permanentes a florestas do Windows Server Active Directory (AD) introduzem uma quantidade significativa de risco para a missão e o negócio da sua organização. Estas contas são muitas vezes alvos para os pelos atacantes porque, se ficarem comprometidas, o atacante terá o privilégio de se ligar a outros servidores ou aplicações no domínio.
 
 O modelo de camada cria divisões entre os administradores com base nos recursos que gerem. Os administradores com controlo sobre as estações de trabalho do utilizador estão separados dos que controlam as aplicações ou gerem as identidades de empresa. Saiba mais sobre este modelo no [Material de referência para proteger o acesso privilegiado](http://aka.ms/tiermodel).
 
-## <a name="restricting-credential-exposure-with-logon-restrictions"></a>Restringir a exposição de credenciais com restrições de início de sessão
+## Restringir a exposição de credenciais com restrições de início de sessão
+<a id="restricting-credential-exposure-with-logon-restrictions" class="xliff"></a>
 
 A redução do risco de roubo de credenciais para contas administrativas normalmente requer a reformulação das práticas administrativas para limitar a exposição aos atacantes. Como primeiro passo, as organizações são aconselhadas a:
 

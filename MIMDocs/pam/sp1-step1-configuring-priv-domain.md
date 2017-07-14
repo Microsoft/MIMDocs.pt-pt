@@ -1,5 +1,5 @@
 ---
-title: "Passo 1: Configurar o domínio PRIV"
+title: "Passo 1: Configurar o domínio Priv"
 description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido pelo Privileged Identity Manager através de scripts"
 keywords: 
 author: barclayn
@@ -12,14 +12,16 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-translationtype: Human Translation
+ms.translationtype: MT
 ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: 24e91ed2f51206b03bec505fc0d28d25128d2c94
-ms.lasthandoff: 01/10/2017
+ms.contentlocale: pt-pt
+ms.lasthandoff: 07/10/2017
 
 
 ---
-# <a name="step-1-configuring-the-priv-domain"></a>Passo 1: Configurar o domínio Priv
+# Passo 1: Configurar o domínio Priv
+<a id="step-1-configuring-the-priv-domain" class="xliff"></a>
 
 >[!div class="step-by-step"]
 [Passo 2 »](sp1-step2-configuring-corp-domain.md)

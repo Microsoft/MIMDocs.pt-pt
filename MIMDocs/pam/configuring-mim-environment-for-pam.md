@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: ce1ce0c67dfd39433ff01dabd542e862c557c787
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Configuração do ambiente de MIM para Privileged Access Management
 <a id="configure-the-mim-environment-for-privileged-access-management" class="xliff"></a>
 Existem sete passos para concluir ao configurar o ambiente para o acesso entre florestas, instalar e configurar o Active Directory e o Microsoft Identity Manager, e demonstrar um pedido de acesso just-in-time.
@@ -43,4 +40,3 @@ Estes passos são apresentados para que possa começar do zero e criar um ambien
 
 >[!div class="step-by-step"]
 [Iniciar »](step-1-prepare-corp-domain.md)
-

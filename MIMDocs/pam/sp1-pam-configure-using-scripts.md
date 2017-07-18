@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: f08b0197341351bd5f33552f26b96132b1356239
 ms.openlocfilehash: bd73f43a096d58e1f7250e28b59e33f4411e88a3
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Configurar a PAM através de scripts
 <a id="configure-pam-using-scripts" class="xliff"></a>
 
@@ -74,4 +71,3 @@ Antes de continuar a atualização do PAMDeploymentConfig.xml, coloque a cópia 
 
 >[!div class="step-by-step"]
 [Iniciar »](sp1-step1-configuring-priv-domain.md)
-

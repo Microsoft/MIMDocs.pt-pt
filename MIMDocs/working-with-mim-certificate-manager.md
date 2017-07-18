@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: 8a4582695d41ea605f2de4e336c3a780b2b2559f
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Trabalhar com o Gestor de Certificados do MIM
 <a id="working-with-the-mim-certificate-manager" class="xliff"></a>
 Quando tiver o MIM 2016 e o Gestor de Certificados configurados e a funcionar, pode implementar a aplicação da loja Windows do Gestor de Certificados do MIM para que os utilizadores possam gerir facilmente os smart cards físicos, smart cards virtuais e certificados de software. Os passos para implementar a aplicação MIM CM são os seguintes:
@@ -260,4 +257,3 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 ## Implementar a aplicação
 <a id="deploy-the-app" class="xliff"></a>
 Ao configurar a aplicação CM, no Centro de Transferências, transfira o ficheiro MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip e extraia todos os respetivos conteúdos. O ficheiro .appx é o instalador. Pode implementá-la da forma que normalmente implementa aplicações da loja Windows, através do [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx) ou do [Intune](https://technet.microsoft.com/library/dn613839.aspx) para o sideload da aplicação para que os utilizadores tenham de aceder através do Portal da Empresa ou obtenham a aplicação diretamente nos respetivos computadores.
-

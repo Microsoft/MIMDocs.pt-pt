@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: 678626e7c32659570de88d8178c16821cceaf7ee
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Relatórios híbridos de Auditoria da gestão de identidades no Azure Active Directory – Pré-visualização Pública (Atualização)
 <a id="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh" class="xliff"></a>
 Com os relatórios de Atividade de Auditoria do Azure Active Directory (AD) pode ver um único relatório para monitorizar a atividade de gestão de identidades que ocorre no local ou na cloud. Esta funcionalidade permite gerir todos os dados de identidade e acesso num único local, poupando tempo e reduzindo os custos globais.

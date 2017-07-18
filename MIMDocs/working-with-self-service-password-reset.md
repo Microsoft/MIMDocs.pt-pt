@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: bbcfee70c71bc2f1a637327721d015434600c5e0
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Trabalhar com a Reposição Personalizada de Palavra-passe
 <a id="working-with-self-service-password-reset" class="xliff"></a>
 O Microsoft Identity Manager 2016 fornece funcionalidades adicionais para a opção Reposição Personalizada de Palavra-passe. Esta opção foi melhorada com várias funcionalidades importantes:
@@ -216,4 +213,3 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 6.  Se o utilizador escolher repor a palavra-passe, terá de escrever uma nova palavra-passe duas vezes e clicar em **Seguinte** para alterar a palavra-passe.
 
     ![Imagem de Reposição de Palavra-passe do Assistente de Início de Sessão do MIM](media/MIM-SSPR-PR1.JPG)
-

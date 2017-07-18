@@ -10,17 +10,12 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-ms.translationtype: MT
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: fbdebd59249667a0e60d3a248f183bcb6a75085a
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
-
-
 # Implementar o PAM do MIM com o Windows Server 2016
 <a id="deploy-mim-pam-with-windows-server-2016" class="xliff"></a>
 
@@ -154,4 +149,3 @@ Faça a instalação tal como descrito no [Guia de introdução](privileged-iden
 - [Privileged Access Management para Serviços de Domínio do Active Directory](privileged-identity-management-for-active-directory-domain-services.md)
 - [Configuração do ambiente de MIM para Privileged Access Management](configuring-mim-environment-for-pam.md)
 - [Configurar a PAM através de scripts](sp1-pam-configure-using-scripts.md)
-

@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: f8de75a0027371b7ff88b90d3097adc63c02d933
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Inscrição de smart cards para não administradores
 <a id="enroll-smart-cards-for-non-administrators" class="xliff"></a>
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
@@ -97,4 +94,3 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 7.  **Instalar a aplicação CM na conta não administrativa**
 
 8.  **Iniciar a aplicação CM e inscrever-se num smart card virtual**
-

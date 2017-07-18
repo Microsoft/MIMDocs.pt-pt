@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: fa200bb18871387420743af64ca196565397e5d5
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Implementar o MIM 2016
 <a id="deploy-mim-2016" class="xliff"></a>
 Os artigos nesta secção fornecem instruções passo a passo para a implementação do Microsoft Identity Manager (MIM) 2016 para cenários personalizados do utilizador final num servidor novo no qual o FIM e o MIM não tenham sido anteriormente implementados.
@@ -51,4 +48,3 @@ Depois de configurar o domínio e o servidor, está pronto para instalar os comp
 - [Serviço de Sincronização do MIM](install-mim-sync.md)
 - [Serviço e Portal do MIM](install-mim-service-portal.md)
 - [Sincronizar o Active Directory e as bases de dados do Serviço MIM](install-mim-sync-ad-service.md)
-

@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: edc15b41d4248887f4a93217f68d8125f6500585
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Passo 2 - Preparar o primeiro controlador de domínio PRIV
 <a id="step-2---prepare-the-first-priv-domain-controller" class="xliff"></a>
 
@@ -320,4 +317,3 @@ No próximo passo, irá preparar um servidor de PAM.
 >[!div class="step-by-step"]
 [« Passo 1](step-1-prepare-corp-domain.md)
 [Passo 3 »](step-3-prepare-pam-server.md)
-

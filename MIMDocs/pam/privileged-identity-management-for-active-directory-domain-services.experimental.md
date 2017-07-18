@@ -12,14 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: c227d848506a41fdd3569954961b021ca4e92d40
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Privileged Access Management para Serviços de Domínio do Active Directory
 <a id="privileged-access-management-for-active-directory-domain-services" class="xliff"></a>
 O Privileged Access Management (PAM) ajuda as organizações a restringir o acesso privilegiado num ambiente do Active Directory existente.
@@ -100,4 +98,3 @@ Partindo do princípio de que o pedido é aprovado, o fluxo de trabalho da açã
 > Em contrapartida, uma ligação expirada é avaliada em tempo real pelo Gestor de contas de segurança (SAM). Embora a adição de um membro do grupo precise de ser replicada pelo DC que recebe o pedido de acesso, a remoção de um membro do grupo é avaliada instantaneamente em qualquer DC.
 
 Este fluxo de trabalho destina-se especificamente a estas contas administrativas. Os administradores (ou até mesmo os scripts) que precisem apenas de acesso ocasional a grupos com privilégios, podem pedir precisamente esse acesso. O MIM regista o pedido e as alterações no Active Directory, e pode visualizá-los no Visualizador de Eventos ou enviar os dados para soluções de monitorização empresariais, como o System Center 2012 - Serviços de Recolha de Auditorias (ACS) do Operations Manager, ou outras ferramentas de terceiros.
-

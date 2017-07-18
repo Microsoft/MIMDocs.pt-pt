@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 807ee44c23f367c33b820251012008324bb2c005
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Definir funções para o Privileged Access Management
 <a id="define-roles-for-privileged-access-management" class="xliff"></a>
 
@@ -214,4 +211,3 @@ As funções para a gestão de utilizadores e computadores não administrativos 
 - Suporte técnico
 - Administradores de grupos de segurança
 - Suporte de deskside de estações de trabalho
-

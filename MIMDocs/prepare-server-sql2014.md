@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: 105d2320ed5a0d610e8e6c5f459366680e3f8a77
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Configurar um servidor de gestão de identidades: SQL Server 2014
 <a id="set-up-an-identity-management-server-sql-server-2014" class="xliff"></a>
 
@@ -50,4 +47,3 @@ ms.lasthandoff: 07/10/2017
 >[!div class="step-by-step"]  
 [« Windows Server 2012 R2](prepare-server-ws2012r2.md)
 [SharePoint »](prepare-server-sharepoint.md)
-

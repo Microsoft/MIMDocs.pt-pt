@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 53fe79f251c3b18426f16b4007cda49e67d7b028
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Compreender os componentes de PAM
 <a id="understand-the-components-of-pam" class="xliff"></a>
 
@@ -43,4 +40,3 @@ Depois de instalado e configurado, cada grupo criado pelo procedimento de migra�
 Consequentemente, quando um utilizador pede a elevação utilizando os cmdlets do PowerShell e o pedido é aprovado, o Serviço MIM irá adicionar a conta na floresta PRIV a um grupo na floresta PRIV. Quando o utilizador inicia sessão com a respetiva conta privilegiada, o token Kerberos irá conter um Identificador de Segurança (SID) idêntico ao SID do grupo na floresta CORP. Uma vez que a floresta CORP está configurada para confiar na floresta PRIV, a conta elevada a ser utilizada para aceder a um recurso na floresta CORP, num recurso que verifica as associações a grupos Kerberos, é membro dos grupos de segurança desse recurso. Isto é fornecido através da autenticação Kerberos entre florestas.
 
 Além disso, estas associações têm tempo limitado para que, após um intervalo de tempo pré-configurado, a conta administrativa do utilizador já não faça parte do grupo na floresta PRIV. Como resultado, essa conta já não poderá ser utilizada para aceder a recursos adicionais.
-

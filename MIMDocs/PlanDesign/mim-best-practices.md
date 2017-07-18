@@ -11,16 +11,12 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.translationtype: MT
-ms.sourcegitcommit: 3bb89e2c86724e6f6d32e4043fa37da74e2b7b24
 ms.openlocfilehash: a0d00c7e5d99e43d3fb0b3011a3851f7194bfdf2
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
-
 # Melhores Práticas do Microsoft Identity Manager 2016
 <a id="microsoft-identity-manager-2016-best-practices" class="xliff"></a>
 
@@ -733,4 +729,3 @@ Evite utilizar atividades que modificam os recursos do MIM, tal como a Atividade
 <a id="understanding-fim-service-partitions" class="xliff"></a>
 
 O objetivo do FIM é processar pedidos que podem ser iniciados por vários clientes do FIM, tal como o serviço de sincronização do FIM e os componentes de gestão personalizada, de acordo com as políticas empresariais configuradas. Por predefinição, cada instância do serviço FIM pertence a um grupo lógico que consiste numa ou mais instâncias do serviço FIM, que também é conhecida como uma partição do serviço FIM. Se apenas tiver uma instância do serviço FIM implementada para processar todos os pedidos, é possível que ocorram latências de processamento. Algumas operações podem exceder os valores de tempo limite predefinidos que são adequados para operações de gestão personalizada. As partições do serviço FIM podem ajudá-lo a resolver este problema. Para obter informações adicionais, veja Understanding FIM Service Partitions (Compreender as Partições do Serviço FIM).
-

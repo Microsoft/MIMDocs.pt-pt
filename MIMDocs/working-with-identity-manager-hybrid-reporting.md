@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: df842309034ad68151dd8cc4151507e7ece6626d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Trabalhar com a Criação de Relatórios Híbridos do Identity Manager – Pré-visualização Pública (Atualização)
 <a id="working-with-identity-manager-hybrid-reporting---public-preview-refresh" class="xliff"></a>
 
@@ -123,4 +120,3 @@ Os eventos gerados pelo Microsoft Identity Manager são registados no Registo de
 |--------------|------|-----------------|
 |Informações|4121|Dados do evento do MIM que incluem todos os dados de pedidos.|
 |Informações|4137|Extensão 4121 do evento do MIM, no caso de existirem demasiados dados para um único evento. O cabeçalho neste evento tem o seguinte formato: `"Request: <GUID> , message <xxx> out of <xxx>`|
-

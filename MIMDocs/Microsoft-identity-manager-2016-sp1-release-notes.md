@@ -12,13 +12,11 @@ ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: 69d44af5eaef3665f3a55ea91f48d3658cd5e65c
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
 # Novidades do Microsoft Identity Manager 2016 Service Pack 1
 <a id="whats-new-for-microsoft-identity-manager-2016-service-pack-1" class="xliff"></a> #
@@ -92,4 +90,3 @@ Tem de criar uma cópia de segurança das bases de dados de Sincronização do M
   3. Selecione o componente do MIM a atualizar
   4. Siga os avisos para continuar com a instalação
     * Instalação do Portal e do Serviço MIM: ao escolher o Exchange Online como a conta de correio, introduza o endereço de e-mail e as credenciais da conta do Exchange Online no ecrã seguinte.
-

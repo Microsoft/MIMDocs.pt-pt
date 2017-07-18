@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: 974015bbba3a36e1107da33655eedf94e2938582
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Instalar o MIM 2016: Portal e Serviço MIM
 <a id="install-mim-2016-mim-service-and-portal" class="xliff"></a>
 
@@ -156,4 +153,3 @@ Depois de concluída a instalação, verifique se o Portal do MIM está ativo.
 >[!div class="step-by-step"]  
 [«Serviço de Sincronização do MIM](install-mim-sync.md)
 [Sincronizar bases de dados»](install-mim-sync-ad-service.md)
-

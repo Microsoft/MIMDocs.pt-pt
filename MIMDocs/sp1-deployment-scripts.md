@@ -5,24 +5,20 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: MBaldwin
-ms.date: 01/10/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: 
 ms.suite: ems
+ms.openlocfilehash: ae8f6a87f57c95e073b40d3cda944c71f1bf7247
+ms.sourcegitcommit: 0cb8269f07a5f419d2d1cd760d9cc78b8a1c8aa9
 ms.translationtype: MT
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
-ms.openlocfilehash: 12c60e12dc5662ff0313e21bb9180b3709969af6
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/14/2017
 ---
-
-# Scripts de implementação da PAM do MIM2016 SP1
-<a id="mim2016-sp1-pam-deployment-scripts" class="xliff"></a>
+# <a name="mim2016-sp1-pam-deployment-scripts"></a>Scripts de implementação da PAM do MIM2016 SP1
 
 Neste service pack, introduzimos um conjunto de scripts de implementação para facilitar a implementação da PAM. Estes scripts estão disponíveis no centro de transferências. Antes de tentar utilizar os scripts, é importante verificar se os pressupostos abaixo se aplicam ao seu ambiente.
 
@@ -34,7 +30,6 @@ Pressupostos Importantes:
 5. Para a opção de validação, assume-se que existe um computador cliente dedicado para executar este passo.
 
 >[!NOTE]
->Se ocorrer algum problema durante a execução dos scripts, poderá ter de ver os registos. Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e envie por e-mail para mim2016@microsoft.com, juntamente com os detalhes da operação e do erro.
+>Se ocorrer algum problema durante a execução dos scripts, poderá ter de ver os registos. Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e inclua estes conteúdos, juntamente com os detalhes da operação e do erro, no incidente do suporte.
 
 Pronto para começar com os scripts de implementação da PAM? Comece em [Configurar a PAM através de scripts](./pam/sp1-pam-configure-using-scripts.md).
-

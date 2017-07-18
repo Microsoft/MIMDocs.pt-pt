@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 89d9b38177b91f64e746fea583684abcecc9d7ff
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Passo 7 – Elevar o acesso de um utilizador
 <a id="step-7--elevate-a-users-access" class="xliff"></a>
 
@@ -108,4 +105,3 @@ Depois de concluir os passos nestas instruções, terá demonstrado um cenário 
 
 >[!div class="step-by-step"]
 [« Passo 6 ](step-6-transition-group-to-pam.md)
-

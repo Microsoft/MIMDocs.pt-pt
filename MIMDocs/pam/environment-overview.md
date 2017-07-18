@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 3e6c5a70c6b9ed140a56135676bbd14a84504317
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Descrição geral do ambiente
 <a id="environment-overview" class="xliff"></a>
 
@@ -34,4 +31,3 @@ As unidades onde as imagens de disco da máquina virtual serão armazenadas nece
 
 > [!NOTE]
 > A pré-visualização técnica (CTP) do cliente do MIM atual não é compatível com os conteúdos da base de dados ou do diretório do CTP anterior. Se tiverem avaliado anteriormente o MIM para o PAM ou outros cenários, efetue uma cópia de segurança e arquive as máquinas virtuais utilizadas para esse teste, e inicie a implementação com novas imagens de máquina virtual que não o tenham sido utilizadas anteriormente para cenários MIM.
-

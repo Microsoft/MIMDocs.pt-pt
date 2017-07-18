@@ -10,14 +10,11 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1ff73d0bdfcbcb4ab79d0d81feca9abdc33f9213
 ms.openlocfilehash: 1e2fb9a9ae508ab601ebad1dec7acc21dc44d13e
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
 # Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
 <a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
@@ -25,9 +22,9 @@ Na versão 4.4.1436.0 adicionámos uma nova funcionalidade de registo. Esta func
 
 Após a instalação, verá uma nova linha em Microsoft.ResourceManagement.Service.exe.config denominada
 
-*    Linha 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
-*    Linha 8: ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
-*    Linha 266: ``</system.diagnostics> ``
+*   Linha 6: ``<section name="dynamicLogging" type="Microsoft.ResourceManagement.Utilities.DynamicLoggingSection, Microsoft.ResourceManagement.Service" />``
+*   Linha 8: ``<dynamicLogging mode="true" loggingLevel="Verbose" />``
+*   Linha 266: ``</system.diagnostics> ``
 
 ![Secções realçadas a mostrar as novas entradas do registo dinâmico](media/mim-service-dynamic-logging/screen01.png)
 
@@ -53,4 +50,3 @@ Por predefinição, a localização do registo será **C:\Program Files\Microsof
 Para ver o rastreio, pode utilizar a [ferramenta Visualizador de Rastreio de Serviços](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)
 
  ![Captura de ecrã do Visualizador de Rastreio de Serviços](media/mim-service-dynamic-logging/screen04.png)
-

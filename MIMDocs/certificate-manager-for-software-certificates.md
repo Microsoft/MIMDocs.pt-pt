@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: 274039a6866c5c0fda807e4326220ecf785ca3bb
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Criar certificados de software com o Gestor de Certificados
 <a id="create-software-certificates-with-certificate-manager" class="xliff"></a>
 Para se inscrever e renovar certificados de software, não tem de ser um administrador e não precisa de um smart card virtual. É importante salientar que, a determinada altura, será pedido que permita uma operação de certificado, mas isto é normal.
@@ -100,4 +97,3 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 10. Se pretender voltar a emitir certificados arquivados, marque as caixas à esquerda de **Voltar a emitir certificados arquivados** e clique em **OK**.
 
 11. Se estiver a utilizar o CM do Smart Card Virtual, terá de desativar os itens de recolha de dados, pois não funciona com a recolha de dados ativada. Desative a recolha de dados para todas as políticas ao clicar na política no painel esquerdo e ao desmarcar a caixa junto a **Item de dados de exemplo** e, em seguida, clique em **Eliminar itens de recolha de dados**. Em seguida, clique em **OK**.
-

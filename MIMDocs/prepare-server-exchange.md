@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: ac787f2ff76b19aab815d55018d1b6f0de1f4adb
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Configurar um servidor de gestão de identidades: Exchange
 <a id="set-up-an-identity-management-server-exchange" class="xliff"></a>
 
@@ -45,4 +42,3 @@ Se pretender configurar o MIM para enviar e receber e-mails ou aprovisionar caix
 >[!div class="step-by-step"]  
 [« SharePoint](prepare-server-sharepoint.md)
 [Serviço de Sincronização do MIM »](install-mim-sync.md)
-

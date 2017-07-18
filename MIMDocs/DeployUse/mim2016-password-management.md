@@ -11,16 +11,12 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.translationtype: MT
-ms.sourcegitcommit: 1ef7b9816d265d17ef68fc54e010e655535dcdc8
 ms.openlocfilehash: 0a5a3f28af58dd59ab805f2836ffeb88f3508ae0
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
-
 # Gestão de Palavras-passe do Microsoft Identity Manager 2016
 <a id="microsoft-identity-manager-2016-password-management" class="xliff"></a>
 
@@ -179,4 +175,3 @@ O MIM cria dois grupos de segurança durante a instalação que suportam especif
 -   FIMSyncBrowse—Os membros deste grupo têm permissão para recolher informações sobre as contas de um utilizador ao realizar operações de pesquisa com consultas de WMI.
 
 -   FIMSyncPasswordSet—Os membros deste grupo têm permissão para realizar operações de pesquisa de contas, definição de palavras-passe e alteração de palavras-passe através das interfaces de gestão de palavras-passe com a WMI.
-

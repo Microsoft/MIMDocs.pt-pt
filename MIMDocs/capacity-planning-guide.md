@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 3797f5789bb4e48836eb21776dafd5a2e0e11613
 ms.openlocfilehash: 1eadf7cff67d65c35f784adad94b5032d2792824
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Guia de planeamento de capacidade
 <a id="capacity-planning-guide" class="xliff"></a>
 
@@ -101,4 +98,3 @@ A configuração de políticas do MIM também inclui as decisões sobre o aprovi
 <a id="see-also" class="xliff"></a>
 - [Considerações sobre a topologia da implementação do MIM](topology-considerations.md)
 - O [Guia de Planeamento da Capacidade do Forefront Identity Manager (FIM) 2010](http://go.microsoft.com/fwlink/?LinkId=200180) transferível fornece mais detalhes sobre uma compilação de teste e os resultados de testes de desempenho.
-

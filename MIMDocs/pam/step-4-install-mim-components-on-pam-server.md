@@ -13,15 +13,12 @@ ms.assetid: ef605496-7ed7-40f4-9475-5e4db4857b4f
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 3a1ec9db6da0a77f963dde76a3efe8d92f89078d
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Passo 4 – Instalar os componentes do MIM num servidor e estação de trabalho de PAM
 <a id="step-4--install-mim-components-on-pam-server-and-workstation" class="xliff"></a>
 
@@ -198,4 +195,3 @@ No próximo passo, irá estabelecer confiança entre florestas PRIV e CORP.
 >[!div class="step-by-step"]
 [« Passo 3](step-3-prepare-pam-server.md)
 [Passo 5 »](step-5-establish-trust-between-priv-corp-forests.md)
-

@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: b459906f0c8d2c631e9b63813e208c9098ea5a4e
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Planear um ambiente bastion
 <a id="planning-a-bastion-environment" class="xliff"></a>
 
@@ -273,4 +270,3 @@ Reveja as permissões no objeto *AdminSDHolder* no contentor do sistema nesse do
 <a id="select-users-and-groups-for-inclusion" class="xliff"></a>
 
 O passo seguinte consiste em definir as funções de PAM, associando os utilizadores e grupos às quais devem ter acesso. Normalmente, será um subconjunto de utilizadores e grupos para a camada identificado como estando a ser gerida ambiente bastion. Pode encontrar mais informações em [Definir funções para o Privileged Access Management](defining-roles-for-pam.md).
-

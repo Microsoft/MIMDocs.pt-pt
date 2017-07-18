@@ -12,15 +12,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 1239ca2c0c6d376420723da01d7aa42821f5980f
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Passo 5 - Estabelecer confiança entre florestas PRIV e CORP
 <a id="step-5--establish-trust-between-priv-and-corp-forests" class="xliff"></a>
 
@@ -116,4 +113,3 @@ No próximo passo, irá mover um grupo para o PAM.
 >[!div class="step-by-step"]
 [«Passo 4](step-4-install-mim-components-on-pam-server.md)
 [Passo 6»](step-6-transition-group-to-pam.md)
-

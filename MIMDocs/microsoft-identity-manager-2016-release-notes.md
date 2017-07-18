@@ -13,16 +13,12 @@ ms.technology: active-directory-domain-services
 ms.assetid: 297e25a5-668b-45a4-b2de-7767ebc59100
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: bfc73723bdd3a49529522f78ac056939bb8025a3
 ms.openlocfilehash: 3d48673234567a89376deeacb535869f9bc46224
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Notas de Versão do MIM 2016
 <a id="release-notes-for-mim-2016" class="xliff"></a>
 De momento, não existem notas de versão.
-

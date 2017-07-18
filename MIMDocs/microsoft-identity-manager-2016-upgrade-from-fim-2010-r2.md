@@ -12,15 +12,12 @@ ms.technology: security
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-ms.translationtype: MT
-ms.sourcegitcommit: 7f16c3a054f0a2c59f118ba33bf64fca10034690
 ms.openlocfilehash: 20e733f17d6ed590844c526888b649eb6bf5f322
-ms.contentlocale: pt-pt
-ms.lasthandoff: 07/10/2017
-
-
+ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 07/13/2017
 ---
-
 # Atualização do Forefront Identity Manager 2010 R2
 <a id="upgrade-from-forefront-identity-manager-2010-r2" class="xliff"></a>
 
@@ -210,4 +207,3 @@ Este guia pressupõe que já configurou o seguinte:
 Nota: se, atualmente, os Suplementos e as Extensões do FIM estiverem implementados nos computadores do utilizador para SSPR, não configure as novas portas do telefone MFA para a reposição da palavra-passe antes da atualização de todos os Suplementos e as Extensões do FIM para o MIM 2016.  Uma vez que os Suplementos e as Extensões do FIM 2010 e do FIM 2010 R2 não reconhecem as novas portas, tal resultará num erro e o utilizador não poderá concluir a reposição da palavra-passe.
 
 Para obter orientações de atualização do Microsoft Identity Manager 2016 SP1, veja o seguinte [Pacote de atualização do Microsoft Identity Manager 2016 Service Pack 1](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)
-

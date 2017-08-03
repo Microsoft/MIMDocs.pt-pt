@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Instalar o MIM 2016: Serviço de Sincronização do MIM
-<a id="install-mim-2016-mim-synchronization-service" class="xliff"></a>
+# <a name="install-mim-2016-mim-synchronization-service"></a>Instalar o MIM 2016: Serviço de Sincronização do MIM
 
 >[!div class="step-by-step"]
 [« Exchange Server](prepare-server-exchange.md)
@@ -37,8 +36,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.
 
-## Instalar o Serviço de Sincronização do MIM 2016
-<a id="install-mim-2016-synchronization-service" class="xliff"></a>
+## <a name="install-mim-2016-synchronization-service"></a>Instalar o Serviço de Sincronização do MIM 2016
 
 1. Na pasta de instalação descompactada do MIM, navegue até à pasta **Serviço de Sincronização**.
 

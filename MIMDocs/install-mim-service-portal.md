@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Instalar o MIM 2016: Portal e Serviço MIM
-<a id="install-mim-2016-mim-service-and-portal" class="xliff"></a>
+# <a name="install-mim-2016-mim-service-and-portal"></a>Instalar o MIM 2016: Portal e Serviço MIM
 
 >[!div class="step-by-step"]
 [«Serviço de Sincronização do MIM](install-mim-sync.md)
@@ -35,8 +34,7 @@ ms.lasthandoff: 07/13/2017
 Se não tiver configurado o pacote de instalação do MIM no último passo, retroceda e instale os componentes do Microsoft Identity Manager 2016 antes de continuar.
 
 
-## Configurar a instalação do Portal e do Serviço MIM
-<a id="configure-mim-service-and-portal-for-installation" class="xliff"></a>
+## <a name="configure-mim-service-and-portal-for-installation"></a>Configurar a instalação do Portal e do Serviço MIM
 
 1. Execute o **Instalador do Portal e do Serviço MIM** a partir da subpasta **Serviço e Portal** descompactada.
 
@@ -78,8 +76,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 16. Selecione a caixa de verificação para abrir as portas 5725 e 5726 na firewall e a caixa de verificação para conceder acesso ao Portal do MIM a todos os utilizadores autenticados.
 
-## Configurar o Portal de Registo de Palavras-passe do MIM
-<a id="configure-mim-password-registration-portal" class="xliff"></a>
+## <a name="configure-mim-password-registration-portal"></a>Configurar o Portal de Registo de Palavras-passe do MIM
 
 1.  Defina o nome da conta de serviço do Registo SSPR para *contoso\MIMSSPR* e a respetiva palavra-passe para *Pass@word1*.
 
@@ -91,8 +88,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 4. No seguinte ecrã de configuração do Portal de Registo de Palavras-passe do MIM, especifique *http://CorpIDM.contoso.local* como o Endereço do Servidor do Serviço MIM para o Portal de Registo de Palavras-passe.
 
-## Configurar o Portal de Reposição de Palavras-passe do MIM
-<a id="configure-mim-password-reset-portal" class="xliff"></a>
+## <a name="configure-mim-password-reset-portal"></a>Configurar o Portal de Reposição de Palavras-passe do MIM
 
 1.  Defina o nome da conta de serviço do Registo SSPR para *Contoso\MIMSSPRService* e a respetiva palavra-passe para *Pass@word1*.
 
@@ -104,8 +100,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 4. No seguinte ecrã de configuração do Portal de Registo de Palavras-passe do MIM, especifique *CorpIDname http://CorpIDname.domain.local* como o Endereço do Servidor do Serviço MIM para o Portal de Reposição de Palavras-passe.
 
-## Instalar o Portal e o Serviço MIM
-<a id="install-mim-service-and-portal" class="xliff"></a>
+## <a name="install-mim-service-and-portal"></a>Instalar o Portal e o Serviço MIM
 
 Quando todas as definições de pré-instalação estiverem prontas, clique em **Instalar** para começar a instalar os componentes do **Serviço e Portal** selecionados.
 

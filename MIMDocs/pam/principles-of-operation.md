@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Compreender os componentes de PAM
-<a id="understand-the-components-of-pam" class="xliff"></a>
+# <a name="understand-the-components-of-pam"></a>Compreender os componentes de PAM
 
 A Gestão de Acesso Privilegiado mantém o acesso administrativo separado das contas de utilizador quotidianas. Esta solução depende de florestas paralelas:
 

@@ -19,6 +19,5 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Notas de Versão do MIM 2016
-<a id="release-notes-for-mim-2016" class="xliff"></a>
+# <a name="release-notes-for-mim-2016"></a>Notas de Versão do MIM 2016
 De momento, não existem notas de versão.

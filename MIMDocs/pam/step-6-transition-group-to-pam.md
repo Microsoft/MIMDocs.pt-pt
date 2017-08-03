@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Passo 6 - Transição de um grupo o Privileged Access Management
-<a id="step-6--transition-a-group-to-privileged-access-management" class="xliff"></a>
+# <a name="step-6--transition-a-group-to-privileged-access-management"></a>Passo 6 - Transição de um grupo o Privileged Access Management
 
 >[!div class="step-by-step"]
 [« Passo 5 ](step-5-establish-trust-between-priv-corp-forests.md)

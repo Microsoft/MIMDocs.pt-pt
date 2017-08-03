@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Configurar um domínio
-<a id="set-up-a-domain" class="xliff"></a>
+# <a name="set-up-a-domain"></a>Configurar um domínio
 
 >[!div class="step-by-step"]
 [Windows Server 2012 R2 »](prepare-server-ws2012r2.md)
@@ -28,8 +27,7 @@ O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directo
 
 Este artigo explica os passos para preparar o seu domínio de modo a trabalhar em conjunto com o MIM.
 
-## Configurar contas de utilizador e grupos
-<a id="create-user-accounts-and-groups" class="xliff"></a>
+## <a name="create-user-accounts-and-groups"></a>Configurar contas de utilizador e grupos
 
 Todos os componentes de implementação do MIM têm as suas próprias identidades no domínio. Isto inclui os componentes MIM como Serviço e Sincronização, bem como SharePoint e SQL.
 

@@ -16,8 +16,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
-<a id="mim-sp1-4414360--service-dynamic-logging" class="xliff"></a>
+# <a name="mim-sp1-4414360--service-dynamic-logging"></a>Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
 Na versão 4.4.1436.0 adicionámos uma nova funcionalidade de registo. Esta funcionalidade permite aos engenheiros de suporte e aos administradores ativar o registo sem ser necessário reiniciar o serviço de gestão.
 
 Após a instalação, verá uma nova linha em Microsoft.ResourceManagement.Service.exe.config denominada

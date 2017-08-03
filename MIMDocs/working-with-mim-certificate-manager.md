@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Trabalhar com o Gestor de Certificados do MIM
-<a id="working-with-the-mim-certificate-manager" class="xliff"></a>
+# <a name="working-with-the-mim-certificate-manager"></a>Trabalhar com o Gestor de Certificados do MIM
 Quando tiver o MIM 2016 e o Gestor de Certificados configurados e a funcionar, pode implementar a aplicação da loja Windows do Gestor de Certificados do MIM para que os utilizadores possam gerir facilmente os smart cards físicos, smart cards virtuais e certificados de software. Os passos para implementar a aplicação MIM CM são os seguintes:
 
 1.  Crie um modelo de certificado.
@@ -30,8 +29,7 @@ Quando tiver o MIM 2016 e o Gestor de Certificados configurados e a funcionar, 
 
 4.  Implemente a aplicação através do SCCM ou do Intune.
 
-## Criar um modelo de certificado
-<a id="create-a-certificate-template" class="xliff"></a>
+## <a name="create-a-certificate-template"></a>Criar um modelo de certificado
 Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-se de que o modelo de certificado tem uma versão igual ou superior à 3.
 
 1.  Inicie sessão no servidor com o AD CS executado (o servidor de certificados).
@@ -70,8 +68,7 @@ Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-
 
 16. Na lista, selecione o novo modelo que criou e clique em **OK**.
 
-## Criar um modelo de perfil
-<a id="create-a-profile-template" class="xliff"></a>
+## <a name="create-a-profile-template"></a>Criar um modelo de perfil
 Quando cria um modelo de perfil, certifique-se de que o configura para criar/destruir o vSC e remover a recolha de dados. A aplicação CM não consegue processar os dados recolhidos, pelo que é importante desativá-los da seguinte forma.
 
 1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
@@ -96,8 +93,7 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 11. Tem de desativar os itens de recolha de dados para todas as políticas ao clicar na política no painel esquerdo e ao selecionar a caixa junto a **Item de dados de exemplo** e, em seguida, clique em **Eliminar itens de recolha de dados**. Em seguida, clique em **OK**.
 
-## Preparar a aplicação CM para a implementação
-<a id="prepare-the-cm-app-for-deployment" class="xliff"></a>
+## <a name="prepare-the-cm-app-for-deployment"></a>Preparar a aplicação CM para a implementação
 
 1.  Na linha de comandos, execute o seguinte comando para descompactar a aplicação e extrair os conteúdos para uma nova subpasta denominada appx e crie uma cópia para não modificar o ficheiro original.
 
@@ -254,6 +250,5 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
     -   Para obter ajuda com o script **ConfigureMIimCMClientAndRelyingParty.ps1**, execute `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
 
-## Implementar a aplicação
-<a id="deploy-the-app" class="xliff"></a>
+## <a name="deploy-the-app"></a>Implementar a aplicação
 Ao configurar a aplicação CM, no Centro de Transferências, transfira o ficheiro MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip e extraia todos os respetivos conteúdos. O ficheiro .appx é o instalador. Pode implementá-la da forma que normalmente implementa aplicações da loja Windows, através do [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx) ou do [Intune](https://technet.microsoft.com/library/dn613839.aspx) para o sideload da aplicação para que os utilizadores tenham de aceder através do Portal da Empresa ou obtenham a aplicação diretamente nos respetivos computadores.

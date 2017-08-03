@@ -5,24 +5,22 @@ keywords:
 author: billmath
 ms.author: billmath
 manager: femila
-ms.date: 03/23/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d7f054d8d82dcc0ac71a94f6e44407b0c41a75af
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: e0179d21752f31e55b132268e9429009e68ba89d
+ms.sourcegitcommit: 5ba5d916c0ca1e5aa501592af0cef714bfdc8afe
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/02/2017
 ---
-# Implementar o Serviço de Notificação de Alteração de Palavra-passe do MIM num controlador de domínio
-<a id="deploy-the-mim-password-change-notification-service-on-a-domain-controller" class="xliff"></a>
+# <a name="deploy-the-mim-password-change-notification-service-on-a-domain-controller"></a>Implementar o Serviço de Notificação de Alteração de Palavra-passe do MIM num controlador de domínio
 
-## Instalar o Serviço de Notificação de Alteração de Palavra-passe
-<a id="install-the-password-change-notification-service" class="xliff"></a>
+## <a name="install-the-password-change-notification-service"></a>Instalar o Serviço de Notificação de Alteração de Palavra-passe
 O Serviço de Notificação de Alteração de Palavra-passe (PCNS) é um serviço instalado nos controladores de domínio que permite a sincronização de palavras-passe pelo MIM para outros sistemas, tais como o servidor de diretório de outro fornecedor. Para a sincronização de palavras-passe, instale o PCNS em cada servidor de controlador de domínio.
 
 1.  Inicie sessão como administrador de domínio num Servidor em execução no Windows Server com a função dos Serviços de Domínio do Active Directory.
@@ -57,6 +55,5 @@ O Serviço de Notificação de Alteração de Palavra-passe (PCNS) é um serviç
 
 14. Reinicie o computador para que as alterações de configuração efetuadas ao Serviço de Notificação de Alteração de Palavra-passe do MIM sejam aplicadas. Pode fazê-lo ao clicar em **Sim** na janela de pop-up apresentada ou pode reiniciar mais tarde.
 
-## Configurar o Serviço de Notificação de Alteração de Palavra-passe
-<a id="configuring-the-password-change-notification-service" class="xliff"></a>
+## <a name="configuring-the-password-change-notification-service"></a>Configurar o Serviço de Notificação de Alteração de Palavra-passe
 Quando estiver novamente ligado ao servidor DC como um administrador de domínio, aceda a *C:\Programas\Serviço de Notificação de Alteração de Palavra-passe.* Execute o ficheiro *pcnscfg.exe*.

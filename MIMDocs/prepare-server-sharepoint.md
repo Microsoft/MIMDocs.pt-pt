@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Configurar um servidor de gestão de identidades: SharePoint
-<a id="set-up-an-identity-management-server-sharepoint" class="xliff"></a>
+# <a name="set-up-an-identity-management-server-sharepoint"></a>Configurar um servidor de gestão de identidades: SharePoint
 
 >[!div class="step-by-step"]
 [« SQL Server 2014](prepare-server-sql2014.md)
@@ -32,8 +31,7 @@ ms.lasthandoff: 07/13/2017
 > - Palavra-passe – **Pass@word1**
 
 
-## Instalar o **SharePoint Foundation 2013 com SP1**
-<a id="install-sharepoint-foundation-2013-with-sp1" class="xliff"></a>
+## <a name="install-sharepoint-foundation-2013-with-sp1"></a>Instalar o **SharePoint Foundation 2013 com SP1**
 
 > [!NOTE]
 > O instalador requer uma ligação à Internet para transferir os respetivos pré-requisitos. Se o computador estiver numa rede virtual que não fornece conetividade à Internet, adicione uma interface de rede adicional ao computador que forneça uma ligação à Internet. Isto pode ser desativado depois de concluída a instalação.
@@ -60,8 +58,7 @@ Siga estes passos para instalar o SharePoint Foundation 2013 SP1. Depois de conc
 
 4.  Depois de concluída a instalação, execute o assistente.
 
-## Executar o assistente para configurar o SharePoint
-<a id="run-the-wizard-to-configure-sharepoint" class="xliff"></a>
+## <a name="run-the-wizard-to-configure-sharepoint"></a>Executar o assistente para configurar o SharePoint
 
 Siga os passos delineados no **Assistente de Configuração de Produtos SharePoint** para configurar o SharePoint para funcionar com o MIM.
 
@@ -81,8 +78,7 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
 8. Na janela **Criar uma Coleção de Sites**, clique em **Ignorar**.  Em seguida, clique em **Concluir**.
 
-## Preparar o SharePoint para alojar o Portal do MIM
-<a id="prepare-sharepoint-to-host-the-mim-portal" class="xliff"></a>
+## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>Preparar o SharePoint para alojar o Portal do MIM
 
 > [!NOTE]
 > Inicialmente, o SSL não será configurado. Certifique-se de que configura o SSL ou equivalente antes de ativar o acesso a este portal.

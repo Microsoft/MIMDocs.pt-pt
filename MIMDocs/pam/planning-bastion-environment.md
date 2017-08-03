@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Planear um ambiente bastion
-<a id="planning-a-bastion-environment" class="xliff"></a>
+# <a name="planning-a-bastion-environment"></a>Planear um ambiente bastion
 
 Adicionar um ambiente bastion com uma floresta administrativa dedicada a um Active Directory permite às organizações gerir facilmente contas administrativas, estações de trabalho e grupos num ambiente que tem controlos de segurança mais fortes que o respetivo ambiente de produção existente.
 
@@ -27,29 +26,25 @@ Esta arquitetura ativa vários controlos que não são possíveis ou facilmente 
 
 Podem ser utilizadas técnicas adicionais para além da floresta administrativa dedicada. Estas incluem restringir os locais onde são expostas credenciais administrativas, limitar os privilégios de função de utilizadores nessa floresta e garantir que tarefas administrativas não são realizadas em anfitriões utilizados para atividades de utilizador padrão (por exemplo, e-mail e navegação na Web).
 
-## Considerações sobre melhores práticas
-<a id="best-practice-considerations" class="xliff"></a>
+## <a name="best-practice-considerations"></a>Considerações sobre melhores práticas
 
 Uma floresta administrativa dedicada é uma floresta do Active Directory padrão única utilizada para a gestão do Active Directory. Uma vantagem de utilizar domínios e florestas administrativas é o facto de poderem ter mais medidas de segurança do que as florestas de produção devido aos seus casos de utilização limitados. Além disso, visto que esta floresta está separada e não confia nas florestas existentes da organização, um compromisso de segurança noutra floresta não se alargaria a esta floresta dedicada.
 
 Um design de floresta administrativa tem as seguintes considerações:
 
-### Âmbito limitado
-<a id="limited-scope" class="xliff"></a>
+### <a name="limited-scope"></a>Âmbito limitado
 
 O valor de uma floresta administrativa é o elevado nível de garantia de segurança e a superfície de ataque reduzida. A floresta pode alojar aplicações e funções de gestão adicionais, mas cada aumento de âmbito aumentará a superfície de ataque da floresta e dos seus recursos. O objetivo é limitar as funções da floresta para manter a superfície de ataque mínima.
 
 De acordo com o [modelo de camada](tier-model-for-partitioning-administrative-privileges.md) da criação de partições de privilégios administrativos, as contas numa floresta administrativa dedicada devem estar numa camada única, normalmente a camada 0 ou a camada 1. Se uma floresta estiver na camada 1, considere restringi-la a um âmbito específico de aplicação (por exemplo, aplicações financeiras) ou a uma comunidade de utilizadores (por exemplo, fornecedores externos de TI).
 
-### Confiança restrita
-<a id="restricted-trust" class="xliff"></a>
+### <a name="restricted-trust"></a>Confiança restrita
 
 A floresta *CORP* de produção deve confiar na floresta *PRIV* administrativa, mas não o inverso. Pode ser uma confiança de domínio ou uma confiança de floresta. O domínio de floresta de administração não precisa de confiar nas florestas e nos domínios geridos para gerir o Active Directory, embora as aplicações adicionais possam precisar de uma relação de confiança bilateral, de validação de segurança e de testes.
 
 A autenticação seletiva deve ser utilizada para garantir que as contas na floresta de administração utilizam apenas os anfitriões de produção adequados. Para manter os controladores de domínio e delegar direitos no Active Directory, normalmente é preciso conceder o direito "Autorizado a iniciar sessão" aos controladores de domínio para as contas de administrador de camada 0 designadas na floresta de administração. Consulte [Configuring Selective Authentication Settings (Configurar Definições de Autenticação Seletiva)](http://technet.microsoft.com/library/cc816580.aspx) para obter mais informações.
 
-## Manter a separação lógica
-<a id="maintain-logical-separation" class="xliff"></a>
+## <a name="maintain-logical-separation"></a>Manter a separação lógica
 
 Para garantir que o ambiente bastion não é afetado por incidentes de segurança existentes ou futuros no Active Directory organizacional, as diretrizes seguintes devem ser utilizadas ao preparar sistemas para o ambiente bastion:
 
@@ -65,8 +60,7 @@ Para garantir que o ambiente bastion não é afetado por incidentes de seguranç
 
 - Os utilizadores que gerem os servidores do ambiente bastion têm de iniciar sessão a partir de estações de trabalho que não estejam acessíveis a administradores no ambiente existente, para que não exista uma fuga das credenciais do ambiente bastion.
 
-## Garantir a disponibilidade dos serviços de administração
-<a id="ensure-availability-of-administration-services" class="xliff"></a>
+## <a name="ensure-availability-of-administration-services"></a>Garantir a disponibilidade dos serviços de administração
 
 Uma vez que a administração de aplicações será transitada para o ambiente bastion, tenha em conta como fornecer disponibilidade suficiente para cumprir os requisitos dessas aplicações. As técnicas incluem:
 
@@ -78,8 +72,7 @@ Uma vez que a administração de aplicações será transitada para o ambiente b
 
 - Manter uma cópia de segurança do AD e do SQL Server para cada alteração de utilizadores ou de definições de função na floresta administrativa dedicada.
 
-## Configurar as permissões adequadas do Active Directory
-<a id="configure-appropriate-active-directory-permissions" class="xliff"></a>
+## <a name="configure-appropriate-active-directory-permissions"></a>Configurar as permissões adequadas do Active Directory
 
 A floresta administrativa deve ser configurada para menor privilégio com base nos requisitos de administração do Active Directory.
 
@@ -97,8 +90,7 @@ Ao criar o ambiente bastion, antes de instalar o Microsoft Identity Manager, ide
 
 - **Contas de serviço** necessárias ao Microsoft Identity Manager, ao SQL Server e a outro software.
 
-## Proteção dos anfitriões
-<a id="harden-the-hosts" class="xliff"></a>
+## <a name="harden-the-hosts"></a>Proteção dos anfitriões
 
 Todos os anfitriões, incluindo os controladores de domínio, os servidores e as estações de trabalho associados à floresta administrativa, devem ter os sistemas operativos e os service packs mais recentes instalados e sempre atualizados.
 
@@ -106,8 +98,7 @@ Todos os anfitriões, incluindo os controladores de domínio, os servidores e as
 
 - Os anfitriões da floresta administrativa devem ser atualizados automaticamente com atualizações de segurança. Embora isto possa criar o risco de interromper as operações de manutenção do controlador de domínio, fornece uma mitigação significativa de riscos de segurança de vulnerabilidades não corrigidas.
 
-### Identificar anfitriões administrativos
-<a id="identify-administrative-hosts" class="xliff"></a>
+### <a name="identify-administrative-hosts"></a>Identificar anfitriões administrativos
 
 O risco de um sistema ou estação de trabalho deve ser medido pela atividade de maior risco realizada no mesmo, tal como navegação na Internet, envio e receção de e-mail, ou pela utilização de outras aplicações que processam conteúdo desconhecido ou não fidedigno.
 
@@ -121,8 +112,7 @@ Os anfitriões administrativos incluem os seguintes computadores:
 
 - Servidores que alojam aplicações que precisam de ser administradas e cujo acesso não é feito através de RDP com comunicação remota de Modo de Administrador Restrito ou Windows PowerShell.
 
-### Implementar estações de trabalho administrativas dedicadas
-<a id="deploy-dedicated-administrative-workstations" class="xliff"></a>
+### <a name="deploy-dedicated-administrative-workstations"></a>Implementar estações de trabalho administrativas dedicadas
 
 Embora inconveniente, podem ser precisas estações de trabalho protegidas separadas, dedicadas a utilizadores com credenciais administrativas de impacto elevado. É importante fornecer um anfitrião com um nível de segurança igual ou superior ao nível dos privilégios conferidos às credenciais. Considere incorporar as seguintes medidas proteção adicional:
 
@@ -152,15 +142,13 @@ Embora inconveniente, podem ser precisas estações de trabalho protegidas separ
 
 Algumas destas medidas poderão parecer extremas, mas revelações públicas nos últimos anos demonstraram as capacidades significativas que os adversários qualificados possuem para comprometer alvos.
 
-## Preparar os domínios existentes para serem geridos pelo ambiente bastion
-<a id="prepare-existing-domains-to-be-managed-by-the-bastion-environment" class="xliff"></a>
+## <a name="prepare-existing-domains-to-be-managed-by-the-bastion-environment"></a>Preparar os domínios existentes para serem geridos pelo ambiente bastion
 
 O MIM utiliza os cmdlets do PowerShell para estabelecer confiança entre os domínios de AD existentes e a floresta administrativa dedicada no ambiente bastion. Após a implementação do ambiente bastion, e antes dos utilizadores ou grupos serem convertidos para o JIT, em seguida, os cmdlets `New-PAMTrust` e `New-PAMDomainConfiguration` irão atualizar as relações de confiança dos domínios e criar artefactos necessários para o AD e o MIM.
 
 Quando a topologia do Active Directory existente for alterada, os cmdlets `Test-PAMTrust`, `Test-PAMDomainConfiguration`, `Remove-PAMTrust` e `Remove-PAMDomainConfiguration` podem ser utilizados para atualizar as relações de confiança.
 
-## Estabelecer confiança para cada floresta
-<a id="establish-trust-for-each-forest" class="xliff"></a>
+## <a name="establish-trust-for-each-forest"></a>Estabelecer confiança para cada floresta
 
 O cmdlet `New-PAMTrust` tem de ser executado uma vez para cada floresta existente. É invocado no computador do Serviço MIM no domínio administrativo. Os parâmetros para este comando são o nome de domínio do domínio principal da floresta existente e as credenciais de um administrador desse domínio.
 
@@ -170,13 +158,11 @@ New-PAMTrust -SourceForest "contoso.local" -Credentials (get-credential)
 
 Depois de estabelecer a confiança, configure cada um dos domínios para permitir a gestão a partir do ambiente bastion, conforme descrito na secção seguinte.
 
-## Permitir a gestão de cada domínio
-<a id="enable-management-of-each-domain" class="xliff"></a>
+## <a name="enable-management-of-each-domain"></a>Permitir a gestão de cada domínio
 
 Existem sete requisitos para permitir a gestão de um domínio existente.
 
-### 1. Um grupo de segurança no domínio local
-<a id="1-a-security-group-on-the-local-domain" class="xliff"></a>
+### <a name="1-a-security-group-on-the-local-domain"></a>1. Um grupo de segurança no domínio local
 
 Tem de existir um grupo no domínio existente, cujo nome corresponde ao nome do domínio NetBIOS seguido de três cifrões, por exemplo, *CONTOSO$$$*. O âmbito do grupo tem de ser *local de domínio* e o tipo de grupo tem de ser *Segurança*. Isto é necessário para que os grupos sejam criados na floresta administrativa dedicada com o mesmo identificador de segurança que os grupos neste domínio. Crie este grupo com o seguinte comando do PowerShell, executado por um administrador do domínio existente e execute numa estação de trabalho associada ao domínio existente:
 
@@ -184,8 +170,7 @@ Tem de existir um grupo no domínio existente, cujo nome corresponde ao nome do 
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
-### 2. Auditoria dos êxitos e falhas
-<a id="2-success-and-failure-auditing" class="xliff"></a>
+### <a name="2-success-and-failure-auditing"></a>2. Auditoria dos êxitos e falhas
 
 As definições da política de grupo no controlador de domínio relativas a auditoria têm de incluir a auditoria dos êxitos e falhas para Auditar a gestão de contas e Auditar acesso ao serviço de diretórios. Isto pode ser feito com a Consola de Gestão de Políticas de Grupo, executada por um administrador do domínio existente e executada numa estação de trabalho associada ao domínio existente:
 
@@ -215,8 +200,7 @@ As definições da política de grupo no controlador de domínio relativas a aud
 
 A mensagem “A atualização da Política de Computador foi concluída com êxito.” deve aparecer após alguns minutos.
 
-### 3. Permitir ligações à Autoridade de Segurança Local
-<a id="3-allow-connections-to-the-local-security-authority" class="xliff"></a>
+### <a name="3-allow-connections-to-the-local-security-authority"></a>3. Permitir ligações à Autoridade de Segurança Local
 
 Os controladores de domínio têm de permitir ligações RPC através de TCP/IP para a Autoridade de Segurança Local (LSA) a partir do ambiente bastion. Em versões anteriores do Windows Server, o suporte de TCP/IP na LSA tem de estar ativado no registo:
 
@@ -224,8 +208,7 @@ Os controladores de domínio têm de permitir ligações RPC através de TCP/IP 
 New-ItemProperty -Path HKLM:SYSTEM\\CurrentControlSet\\Control\\Lsa -Name TcpipClientSupport -PropertyType DWORD -Value 1
 ```
 
-### 4. Criar a configuração do domínio de PAM
-<a id="4-create-the-pam-domain-configuration" class="xliff"></a>
+### <a name="4-create-the-pam-domain-configuration"></a>4. Criar a configuração do domínio de PAM
 
 O cmdlet `New-PAMDomainConfiguration` tem de ser executado no computador do Serviço MIM no domínio administrativo. Os parâmetros para este comando são o nome de domínio do domínio existente e as credenciais de um administrador desse domínio.
 
@@ -233,8 +216,7 @@ O cmdlet `New-PAMDomainConfiguration` tem de ser executado no computador do Serv
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 
-### 5. Conceder permissões de leitura a contas
-<a id="5-give-read-permissions-to-accounts" class="xliff"></a>
+### <a name="5-give-read-permissions-to-accounts"></a>5. Conceder permissões de leitura a contas
 
 As contas na floresta bastion utilizadas para estabelecer funções (os administradores que utilizam os cmdlets `New-PAMUser` e `New-PAMGroup`), bem como a conta utilizada pelo serviço de monitor MIM, precisam de permissões de leitura nesse domínio.
 
@@ -256,17 +238,14 @@ Os passos seguintes permitem o acesso de leitura do utilizador *PRIV\Administrat
 
 18. Feche Computadores e Utilizadores do Active Directory.
 
-### 6. Uma conta «break glass»
-<a id="6-a-break-glass-account" class="xliff"></a>
+### <a name="6-a-break-glass-account"></a>6. Uma conta «break glass»
 
 Se o objetivo do projeto Privileged Access Management for reduzir o número de contas com privilégios de Administrador de Domínio permanentemente atribuídos ao domínio, tem de existir uma conta *break glass* no domínio, no caso de existir um problema posterior com a relação de confiança. As contas para acesso de emergência à floresta de produção devem existir em cada domínio e só devem poder iniciar sessão nos controladores de domínio. Para organizações com vários sites, podem ser precisas contas adicionais para redundância.
 
-### 7. Atualizar as permissões no ambiente bastion
-<a id="7-update-permissions-in-the-bastion-environment" class="xliff"></a>
+### <a name="7-update-permissions-in-the-bastion-environment"></a>7. Atualizar as permissões no ambiente bastion
 
 Reveja as permissões no objeto *AdminSDHolder* no contentor do sistema nesse domínio. O objeto *AdminSDHolder* tem uma lista de controlo de acesso (ACL) exclusiva, que serve para controlar as permissões de principais de segurança que são membros de grupos privilegiados do Active Directory incorporados. Repare se foram feitas alterações às permissões predefinidas, que possam afetar os utilizadores com privilégios administrativos no domínio, uma vez que essas permissões não se aplicarão a utilizadores cuja conta esteja no ambiente bastion.
 
-## Selecionar utilizadores e grupos para inclusão
-<a id="select-users-and-groups-for-inclusion" class="xliff"></a>
+## <a name="select-users-and-groups-for-inclusion"></a>Selecionar utilizadores e grupos para inclusão
 
 O passo seguinte consiste em definir as funções de PAM, associando os utilizadores e grupos às quais devem ter acesso. Normalmente, será um subconjunto de utilizadores e grupos para a camada identificado como estando a ser gerida ambiente bastion. Pode encontrar mais informações em [Definir funções para o Privileged Access Management](defining-roles-for-pam.md).

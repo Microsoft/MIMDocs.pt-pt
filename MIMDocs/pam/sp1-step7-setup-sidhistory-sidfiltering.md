@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Passo 7: Configurar o histórico/filtragem do SID
-<a id="step-7-set-up-sid-historysid-filtering" class="xliff"></a>
+# <a name="step-7-set-up-sid-historysid-filtering"></a>Passo 7: Configurar o histórico/filtragem do SID
 
 >[!div class="step-by-step"]
 [« Passo 6](sp1-step6-setup-pam-trust.md)

@@ -18,12 +18,10 @@ ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
-# Inscrição de smart cards para não administradores
-<a id="enroll-smart-cards-for-non-administrators" class="xliff"></a>
+# <a name="enroll-smart-cards-for-non-administrators"></a>Inscrição de smart cards para não administradores
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
 
-## Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
-<a id="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager" class="xliff"></a>
+## <a name="enabling-smart-card-renewal-for-non-admins-in-mim-2016-certificate-manager"></a>Ativar a renovação do smart card para não administradores no Gestor de Certificados do MIM 2016
 
 1.  **Descompactar o ficheiro appx**
 

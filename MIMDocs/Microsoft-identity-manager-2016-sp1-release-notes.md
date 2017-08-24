@@ -5,18 +5,18 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 01/10/2017
+ms.date: 08/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 69d44af5eaef3665f3a55ea91f48d3658cd5e65c
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 98d21076801bbe60b7a2d2d5b7e1c41d4bce1b4a
+ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="whats-new-for-microsoft-identity-manager-2016-service-pack-1"></a>Novidades do Microsoft Identity Manager 2016 Service Pack 1 #
 

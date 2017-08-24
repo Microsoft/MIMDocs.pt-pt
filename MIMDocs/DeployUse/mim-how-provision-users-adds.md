@@ -5,16 +5,16 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 05/11/2017
+ms.date: 08/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 60b28497f6abba14bd186cf2e2f2ce69b08693bc
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 21a2fb4459f46fe0dea89ff016aa77358f940c24
+ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
 
@@ -461,9 +461,9 @@ Para efetuar estas tarefas, deve executar os seguintes perfis de execução.
 
 Após a importação da base de dados do Serviço FIM, a Eduarda Almeida e o objeto ExpectedRuleEntry que liga a Eduarda à
 
-Regra de Sincronização de Saída de Utilizadores do AD foram transitados para o espaço conector do FIMMA da Fabrikam. Ao rever
+Regra de Sincronização de Saída de Utilizadores do AD foram transitados para o espaço conector do FIMMA da Fabrikam. Quando rever
 
-as propriedades da Eduarda no espaço conector junto aos valores do atributo que configurou no Portal do FIM, encontrará também uma referência válida para o objeto Entrada de Regra Esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
+Propriedades de Britta no espaço de conector, junto os valores de atributo que configurou no Portal do FIM, encontrará também uma referência válida para o objeto de entrada de regra esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
 
 ![Propriedades dos objetos de espaço conector](media/how-provision-users-adds/image025.jpg)
 
@@ -508,9 +508,9 @@ Para verificar se o seu utilizador de exemplo foi aprovisionado no AD DS, tem de
 
 O objetivo deste documento é apresentar-lhe os principais blocos modulares para sincronizar utilizadores no MIM com o AD DS. No seu teste inicial, deve começar por especificar o número mínimo de atributos necessários para concluir uma tarefa e adicionar mais atributos ao seu cenário quando os passos gerais funcionarem conforme o esperado. Reduzir a complexidade dos atributos ao mínimo possível simplifica o processo de resolução de problemas.
 
-Quando testar a sua configuração, é muito provável que tenha de eliminar e voltar a criar novos objetos de teste. Para os objetos com o atributo
+Quando testar a sua configuração, é muito provável que tenha de eliminar e voltar a criar novos objetos de teste. Para objetos com um
 
-ExpectedRulesList preenchido, é possível que surjam objetos ERE isolados.
+preenchido ExpectedRulesList atributo, isto pode resultar em órfã ERE objetos.
 Para obter uma descrição sobre como pode remover estes objetos do seu ambiente de teste, veja [A Method to Remove Orphaned ExpectedRuleEntry Objects from Your Environment (Um Método para Remover Objetos ExpectedRuleEntry Isolados do seu Ambiente)](http://go.microsoft.com/FWLink/p/?LinkId=189667).
 
 Num cenário de sincronização típico que inclua o AD DS como destino da sincronização, o MIM não é obrigatório para todos os atributos de um objeto. Por exemplo, quando gerir objetos de utilizador no AD DS através do FIM, no mínimo é necessário que o domínio e os atributos objectSID sejam gerados pelo agente de gestão do AD DS.

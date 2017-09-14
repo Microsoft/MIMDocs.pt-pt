@@ -5,7 +5,7 @@ keywords:
 author: fimguy
 ms.author: fimguy
 manager: femila
-ms.date: 07/13/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
@@ -13,11 +13,11 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: mwahl
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: f2b2bb2c9144e8624bf2a7780093f3d4e553747f
-ms.sourcegitcommit: 0cb8269f07a5f419d2d1cd760d9cc78b8a1c8aa9
+ms.openlocfilehash: 36de40afac0c612bb8233f2cdbc53d97c96d8db1
+ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="supported-platforms-for-mim-2016"></a>Plataformas suportadas para o MIM 2016
 
@@ -28,7 +28,7 @@ A tabela seguinte descreve as plataformas suportadas e a versão de cada compone
 |-------------------|--------------|-------------|
 | **Sincronização do MIM** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2<br/>Windows Server 2016 * |
 | | Base de dados da Sincronização do MIM | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
-| | Active Directory para o aprovisionamento de utilizadores, PCNS e Sincronização da GAL (opcional)|Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| | Active Directory para aprovisionamento de utilizadores, PCNS e sincronização da GAL (opcional)|Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Exchange para o aprovisionamento de caixas de correio e Sincronização da GAL (opcional)|Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1<br/>Exchange Server 2016* |
 | | Ambiente de desenvolvimento (opcional) | Visual Studio 2012<br/>Visual Studio 2013 <br/> Visual Studio 2015 <br/> Visual Studio 2017* |
 | | Sistema ligado adicional (opcional) | Serviços de Domínio do Active Directory<br/>Active Directory<br/>Serviços LDS<br/>SQL Server 2008 ou posterior<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> Outros produtos de terceiros |
@@ -51,7 +51,8 @@ A tabela seguinte descreve as plataformas suportadas e a versão de cada compone
 | | Autoridade de certificação | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Base de dados do MIM CM | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 | **Gestão de Certificados do MIM** (Aplicação) | Windows | Windows 8<br/>Windows 8,1<br/>Windows 10 |
-| **Gestão de Certificados do MIM** (Cliente e Cliente em Massa) | Windows | Windows 7 |
+| **Gestão de certificados de MIM** (em massa do cliente) | Windows | Windows 7 |
+| **Gestão de certificados de MIM** (ActiveX de cliente baseada em smart cards) | Windows | Windows 7 </br> Windows 8 </br> Windows 8,1 </br> Windows 10 |
 | **MIM BHOLD Suite** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Base de dados do BHOLD | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 <br/> SQL Server 2014 * <br/> SQL Server 2016 * |
 | | Servidor de correio (opcional) | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * |

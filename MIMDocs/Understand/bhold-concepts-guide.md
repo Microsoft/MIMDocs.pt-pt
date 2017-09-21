@@ -5,15 +5,15 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 09/06/2017
+ms.date: 09/14/2017
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 0db8c2ebaee204c929dc7345ac6858fff6b0993b
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: 45054799cdc8bbe6d39fa2beb28e69d13cace031
+ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Guia do Microsoft BHOLD Suite conceitos
 
@@ -341,3 +341,7 @@ Uma funcionalidade importante e poderosa do Forefront Identity Manager 2010 e do
 É importante ter em atenção que as extensões BHOLD ao Portal de MIM suportam a gestão de fluxo de trabalho e função de self-service e de relatórios. Outras funções de administração do BHOLD, bem como o atestado, é fornecido pelos portais web dos módulos BHOLD, que estão alojados separadamente a partir do Portal de MIM.
 
 ## <a name="next-steps"></a>Próximos passos
+
+- [Guia de instalação do BHOLD](../deploy-use/bhold-installation-guide.md)
+- [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
+- [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

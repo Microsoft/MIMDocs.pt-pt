@@ -2,23 +2,24 @@
 title: "Recuperação após desastre do PAM | Documentos da Microsoft"
 description: "Saiba como configurar Privileged Access Management para uma elevada disponibilidade e para a recuperação após desastre."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2fab9af837ed11b1f2f7f32c9ced6d79c8cc9d00
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: e6e603a4d827639c30880f6997f949d0d1732421
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>Considerações para elevada disponibilidade e recuperação após desastre do ambiente bastion
+
 Este artigo descreve considerações de elevada disponibilidade e recuperação após desastre ao implementar os Serviços de Domínio do Active Directory (AD DS) e o Microsoft Identity Manager 2016 (MIM) para Gestão de Acesso Privilegiado (PAM).
 
 As empresas concentram-se na elevada disponibilidade e na recuperação após desastre para cargas de trabalho no Windows Server, SQL Server e do Active Directory. No entanto, a disponibilidade fiável do ambiente bastion para Gestão de Acesso Privilegiado também é importante. O ambiente bastion é uma parte crítica da sua organização de infraestrutura de TI, uma vez que os utilizadores interagem com os respetivos componentes para assumirem funções administrativas. Para obter mais informações sobre a disponibilidade elevada em geral, pode descarregar o documento técnico [Descrição Geral da Disponibilidade Elevada da Microsoft](http://download.microsoft.com/download/3/B/5/3B51A025-7522-4686-AA16-8AE2E536034D/Microsoft%20High%20Availability%20Strategy%20White%20Paper.doc).
@@ -57,26 +58,31 @@ Assim que a confiança tiver sido estabelecida, podem ser criados grupos de somb
 A migração de grupos e de utilizadores exige que os controladores de domínio de floresta existentes estejam online, assim como os componentes de MIM e AD do ambiente bastion.   Se os controladores de domínio de floresta existentes estiverem inacessíveis, não podem ser adicionados outros utilizadores e grupos ao ambiente bastion, mas os utilizadores e os grupos existentes não são afetados. Se uma falha de qualquer um dos componentes ocorrer durante a migração, o administrador pode tentar novamente após a falha estar resolvida.
 
 ### <a name="mim-administration"></a>Administração do MIM
+
 Assim que os utilizadores e os grupos migrarem, um administrador pode configurar ainda mais no MIM as atribuições de função, ligando os utilizadores como candidatos para ativação em funções.  Pode também configurar as políticas de MIM para aprovação e o MFA do Azure.  
 
 A administração de MIM requer que os componentes de MIM e AD do ambiente bastion estejam online.
 
 ### <a name="privileged-role-activation"></a>Ativação de função com privilégios
+
 Quando um utilizador pretende ativar uma função com privilégios, este deve autenticar para o domínio de ambiente bastion e submeter um pedido para o MIM.  O MIM inclui APIs SOAP e REST, bem como interfaces de utilizador no PowerShell e numa página Web.
 
 A ativação de função privilegiada requer que os componentes de MIM e AD do ambiente bastion estejam online.  Além disso, se o MIM estiver configurado para utilizar o [MFA do Azure para ativação](use-azure-mfa-for-activation.md) da função selecionada, é necessário acesso à Internet para contactar o serviço de MFA do Azure.
 
 ### <a name="resource-management"></a>Gestão de Recursos
+
 Assim que um utilizador for ativado com êxito para a função, o controlador de domínio pode gerar um pedido de suporte do Kerberos para o mesmo, que pode ser utilizado por controladores de domínios nos domínios existentes e reconhecerá as novas associações de grupo temporário do utilizador.
 
 A gestão de recursos requer que um controlador de domínio para o domínio de recurso esteja online, assim como um controlador de domínio no ambiente bastion.  Assim que um utilizador estiver ativado, emitir os pedidos de suporte do Kerberos não necessita do MIM ou do SQL para estar online no ambiente bastion.  (Tenha em atenção que, com o Windows Server 2012 R2 como o nível funcional para o ambiente bastion, o MIM tem de estar online, para terminar a associação ao grupo temporário.)
 
 ### <a name="monitoring-of-users-and-groups-in-the-existing-forest"></a>Monitorização dos utilizadores e grupos na floresta existente
+
 O MIM também inclui um serviço de monitorização do PAM que verifica regularmente os utilizadores e os grupos nos domínios existentes, e atualiza a base de dados do MIM e do AD em conformidade.  Este serviço não tem de estar online para a ativação de função ou durante a gestão de recursos.
 
 A monitorização exige que os controladores de domínio de floresta existentes estejam online, assim como os componentes de MIM e AD do ambiente bastion.  
 
 ## <a name="deployment-options"></a>Opções de implementação
+
 A [Descrição geral do ambiente](environment-overview.md) ilustra uma topologia básica adequada para aprender a tecnologia que não se destina a ser de elevada disponibilidade. Esta secção descreve como expandir mediante essa topologia para fornecer elevada disponibilidade, para organizações com um único local ou com vários.
 
 ### <a name="networking"></a>Rede
@@ -84,6 +90,7 @@ A [Descrição geral do ambiente](environment-overview.md) ilustra uma topologia
 O tráfego de rede entre os computadores no ambiente bastion deve ser isolado das redes existentes, ao utilizar uma rede física ou virtual diferente.  Consoante os riscos para o ambiente bastion, também poderá ser necessário ter interconnects físicas independentes entre os computadores.  Algumas tecnologias de cluster de ativação pós-falha têm requisitos adicionais em interfaces de rede.
 
 Os computadores que alojam Serviços de Domínio do Active Directory e os que alojam os Serviços de MIM no ambiente bastion necessitam de conetividade bidirecional nos recursos da floresta existente para que:
+
 - os utilizadores sejam autenticados pelos controladores de domínio de floresta PRIV
 - os utilizadores peçam ativação
 - os utilizadores tenham os pedidos de suporte do Kerberos consumíveis pelos recursos numa floresta existente
@@ -91,6 +98,7 @@ Os computadores que alojam Serviços de Domínio do Active Directory e os que al
 - o MIM envie servidores de e-mail localizados numa floresta existente.
 
 ### <a name="minimal-high-availability-topologies"></a>Topologias de elevada disponibilidade mínimas
+
 Uma organização pode selecionar as funções do respetivo ambiente bastion que necessitam de elevada disponibilidade, com as seguintes restrições:
 
 - A elevada disponibilidade para qualquer função fornecida pelo ambiente bastion requer, pelo menos, dois controladores de domínio.  
@@ -109,9 +117,11 @@ O diagrama seguinte ilustra uma arquitetura possível:
 Os servidores adicionais podem ser configurados para cada uma destas funções, para fornecer um desempenho superior em condições de carga ou para a redundância geográfica conforme descrito abaixo.
 
 ### <a name="deployments-supporting-multiple-sites"></a>Implementações de suporte de vários sites
-Escolher a topologia de implementação correta para recursos que estão implementados através de vários locais depende de três fatores:  
-- Objetivos e riscos para elevada disponibilidade e recuperação após desastre  
-- A capacidade de hardware para alojar o ambiente bastion  
+
+Escolher a topologia de implementação correta para recursos que estão implementados através de vários locais depende de três fatores:
+
+- Objetivos e riscos para elevada disponibilidade e recuperação após desastre
+- A capacidade de hardware para alojar o ambiente bastion
 - O modelo de trabalho administrativo para cada site.
 
 Uma das abordagens mais simples seria alojar o ambiente bastion num determinado site.  Em condições normais, os utilizadores ligar-se-iam à implementação de MIM na ativação de pedido e ambiente bastion desse site e as ativações teriam efeito em recursos de cada site.  Se a ligação de rede for interrompida ou o site que aloja o ambiente bastion não estiver disponível, as credenciais offline não podem ser acedidas noutro site, para efetuar a administração temporária até a rede estar novamente ligada.  Esta abordagem poderá ser adequada para situações em que é antecipada administração local de um site específico, como uma sucursal, para ser rara e limitada para restabelecer a ligação desse site com a rede restante de uma organização.
@@ -135,6 +145,7 @@ Por fim, as implementações mais complexas são possíveis, uma vez que os vár
 ![Bastion complexo para topologia de vários sites - diagrama](media/bastion6.png)
 
 ### <a name="hosted-bastion-environment"></a>Ambiente bastion alojado
+
 Algumas organizações também consideraram estabelecer o ambiente bastion separado a partir de qualquer um dos respetivos sites existentes. O software de ambiente bastion pode ser alojado numa plataforma de virtualização das redes da sua organização ou num fornecedor de alojamento externo.  Ao avaliar esta abordagem, tenha em atenção que:
 
 - Para se proteger contra ataques com origem nos domínios existentes, a administração do ambiente bastion tem de ser isolada das contas administrativas do domínio existente.
@@ -143,9 +154,11 @@ Algumas organizações também consideraram estabelecer o ambiente bastion separ
 - Uma implementação de elevada disponibilidade do SQL Server para o serviço MIM requer configuração do armazenamento especializada, descrita na secção [Armazenamento da base de dados do SQL Server](#sql-server-database-storage) abaixo.  Nem todos os fornecedores de alojamento podem oferecer atualmente alojamento do Windows Server com configurações de disco adequadas para clusters de ativação pós-falha do SQL Server.
 
 ## <a name="deployment-preparation-and-recovery-procedures"></a>Procedimentos de recuperação e preparação de implementação
+
 Preparar para uma elevada disponibilidade ou implementação pronta para recuperação após desastre do ambiente bastion requer considerações sobre como instalar o Windows Server Active Directory, o SQL Server, a respetiva base de dados no armazenamento partilhado, o serviço MIM e os respetivos componentes de PAM.
 
 ### <a name="windows-server"></a>Windows Server
+
 O Windows Server contém uma funcionalidade incorporada para elevada disponibilidade, permitindo que vários computadores trabalhem em conjunto como um cluster de ativação pós-falha. Os servidores em cluster são ligados por cabos físicos e software. Se um ou mais nós de cluster falharem, outros nós começam a fornecer serviço (um processo conhecido como ativação pós-falha).   Pode encontrar mais detalhes em [Descrição geral do Clustering de Ativação Pós-falha](https://technet.microsoft.com/library/hh831579.aspx).
 
 Certifique-se de que o sistema operativo e as aplicações no ambiente bastion recebem atualizações para problemas de segurança. Algumas destas atualizações podem exigir um reinício do servidor, por isso, coordene os tempos em que as atualizações são aplicadas entre os servidores para evitar falhas expandidas. Uma abordagem possível é utilizar a [Atualização com Suporte para Cluster](https://technet.microsoft.com/library/hh831694.aspx) nos servidores do cluster de ativação pós-falha do Windows Server.
@@ -153,9 +166,11 @@ Certifique-se de que o sistema operativo e as aplicações no ambiente bastion r
 Os servidores no ambiente bastion serão associados a um domínio e dependente dos serviços de domínio. Certifique-se de que não foram inadvertidamente configurados com uma dependência num controlador de domínio específico para serviços como o DNS.
 
 ### <a name="bastion-environment-active-directory"></a>Ambiente bastion do Active Directory
+
 Os Serviços de Domínio do Active Directory do Windows Server incluem suporte nativo para a elevada disponibilidade e recuperação após desastre.
 
 #### <a name="preparation"></a>Preparação
+
 Uma implementação de produção normal da gestão de acesso privilegiado inclui, pelo menos, dois controladores de domínio no ambiente bastion. As instruções para configurar o primeiro controlador de domínio no ambiente bastion estão incluídas no passo 2 dos artigos de implementação, [Preparar o controlador de domínio PRIV](step-2-prepare-priv-domain-controller.md).
 
 É possível encontrar o procedimento para adicionar um controlador de domínio adicional em [Instalar uma Réplica do Controlador de Domínio do Windows Server 2012 num Domínio Existente (Nível 200)](https://technet.microsoft.com/library/jj574134.aspx).  
@@ -164,6 +179,7 @@ Uma implementação de produção normal da gestão de acesso privilegiado inclu
 > Se o controlador de domínio está a ser alojado numa plataforma de virtualização, como o Hyper-V, reveja as advertências na [Configuração e Implementação do Controlador de Domínio Virtualizado](https://technet.microsoft.com/library/jj574223.aspx).
 
 #### <a name="recovery"></a>Recuperação
+
 Após uma falha, certifique-se de que se encontra disponível, pelo menos, um controlador de domínio no ambiente bastion antes de reiniciar outros servidores.
 
 Dentro de um domínio, o Active Directory, distribui as funções de Operação Mestre Única Flexível (FSMO) nos controladores de domínio, conforme descrito em [Como Funcionam as Operações Mestres](https://technet.microsoft.com/library/cc780487.aspx).  Se um controlador de domínio falhou, poderá ser necessário descarregar uma ou mais [Funções de Controlador de Domínio](https://technet.microsoft.com/library/cc786438.aspx) em que esse controlador de domínio foi atribuído.
@@ -173,18 +189,22 @@ Após determinar que um controlador de domínio não será devolvido à produç�
 Também é recomendável verificar as definições de DNS de computadores associados a um ambiente bastion, bem como os controladores de domínio em domínios CORP que têm uma relação de confiança com esse controlador de domínio, para garantir que nenhum disco rígido está codificado com uma dependência no endereço IP desse computador de controlador de domínio.
 
 ### <a name="sql-server-database-storage"></a>Armazenamento da base de dados do SQL Server
+
 Uma implementação de elevada disponibilidade necessita de clusters de ativação pós-falha do SQL Server e da resposta de instâncias do cluster de ativação pós-falha do SQL Server no armazenamento partilhado entre todos os nós da base de dados e do armazenamento de registos. O armazenamento partilhado pode estar sob a forma de discos de cluster de Clustering de Ativação Pós-falha do Windows Server, de discos numa Rede de Área de Armazenamento (SAN) ou partilhas de ficheiros num servidor do SMB.  Tenha em atenção que estas têm de estar dedicadas ao ambiente bastion; o armazenamento de partilha com outras cargas de trabalho fora do ambiente de bastion não é recomendado, uma vez que pode comprometer a integridade do ambiente bastion.
 
 ### <a name="sql-server"></a>SQL Server
+
 O Serviço MIM necessita de uma implementação do SQL Server no ambiente bastion.   Para Elevada Disponibilidade, o SQL pode ser implementado com uma instância de cluster de ativação pós-falha (FCI). Ao contrário das instâncias autónomas, em FCIs a elevada disponibilidade do SQL Server está protegida pela presença de nós redundantes do FCI. Em caso de falha ou atualização planeada, o proprietário do grupo de recursos é movido para outro nó do Cluster de Ativação Pós-falha do Windows Server.
 
 Se apenas necessitar de suporte para a recuperação após desastre, e não de elevada disponibilidade, então o envio de registos, a replicação de transações, a replicação de instantâneos ou o espelhamento da base de dados pode ser utilizado, em vez de clustering de ativação pós-falha.   
 
 #### <a name="preparation"></a>Preparação
+
 Quando instala o SQL Server no ambiente bastion, tem de ser independente de qualquer servidor do SQL Server que já esteja presente nas florestas CORP.  Além disso, é recomendado que o SQL Server seja implementado num servidor dedicado, diferente do controlador de domínio.
 Estão documentadas mais informações no guia do SQL Server para [Instâncias do Cluster de Ativação Pós-falha do AlwaysOn](https://msdn.microsoft.com/library/ms189134.aspx).
 
 #### <a name="recovery"></a>Recuperação
+
 Se o SQL Server foi configurado para recuperação após-desastre com envio de registo, tem de atualizar o SQL Server durante a recuperação após desastre.  Além disso, tem de reiniciar cada instância de serviço MIM.
 
 Se o SQL Server falhou ou a conetividade entre o SQL Server e o serviço MIM foi perdida, após o restauro do SQL Server, é recomendado reiniciar cada serviço MIM.  Esta ação irá garantir que o Serviço MIM restabeleça a ligação ao SQL Server.
@@ -206,17 +226,21 @@ Numa implementação MIM com vários servidores, cada Serviço MIM tem um nome d
 Quando um Serviço MIM recebe um pedido, o nome da partição de serviço é armazenado como um atributo desse pedido.   Posteriormente, apenas outras instalações do Serviço MIM que têm o mesmo nome de partição de serviço estão autorizadas a interagir com esse pedido.  Como resultado, se o cenário de PAM incluir aprovações manuais ou outro processamento de pedidos de longa duração, certifique-se de que cada Serviço MIM tem o mesmo atributo `servicePartitionName` nesse ficheiro de configuração.
 
 #### <a name="recovery"></a>Recuperação
+
 Após uma falha, certifique-se de que, pelo menos, um controlador de domínio do Active Directory e do SQL Server estão disponíveis no ambiente do bastion antes de reiniciar o Serviço MIM.  
 
 Uma instância de fluxo de trabalho só pode ser concluída por um servidor do Serviço MIM que tenha o mesmo nome de partição de serviço e o nome do serviço como o servidor do Serviço MIM que o iniciou.  Se um determinado computador falha ao alojar um Serviço MIM que estava processar pedidos e esse computador não será devolvido ao serviço, será necessário instalar o Serviço MIM num novo computador. No novo Serviço MIM após a instalação, edite o ficheiro *resourcemanagementservice.exe.config* e defina os atributos `serviceName` e `servicePartitionName` da nova implementação de MIM para que sejam os mesmos que o nome do anfitrião e o nome de partição de serviço do computador que falhou.
 
 ### <a name="mim-pam-components"></a>Componentes PAM do MIM
+
 O instalador do Serviço MIM e do Portal incorpora também componentes de PAM adicionais, incluindo módulos do PowerShell e dois serviços.
 
 #### <a name="preparation"></a>Preparação
+
 Os componentes de Gestão de Acesso Privilegiado devem ser instalados em cada computador no ambiente bastion onde o serviço MIM está a ser instalado.  Estes não podem ser adicionados posteriormente.
 
 #### <a name="recovery"></a>Recuperação
+
 Após a recuperação a partir de uma falha, certifique-se de que o Serviço MIM está em execução em, pelo menos, um servidor.  Certifique-se de que o serviço de monitorização PAM de MIM também está em execução nesse servidor, com o `net start "PAM Monitoring service"`.
 
 Se o nível funcional do ambiente de floresta de bastion for o Windows Server 2012 R2, certifique-se de que o serviço do componente PAM de MIM também está em execução nesse servidor, com o comando `net start "PAM Component service"`.

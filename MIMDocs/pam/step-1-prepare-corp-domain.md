@@ -2,27 +2,26 @@
 title: "Implementar o PAM Passo 1 – Domínio CORP| Documentos da Microsoft"
 description: "Preparar o domínio CORP com identidades novas ou existentes para ser gerido por Privileged Identity Manager"
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1164e7efb70d911497b08248b68f8d929bc6d3fb
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: d14d2f40972686305abea2426e20f4c13e3e267b
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>Passo 1 – preparar o anfitrião e o domínio CORP
 
 >[!div class="step-by-step"]
 [Passo 2 »](step-2-prepare-priv-domain-controller.md)
-
 
 Neste passo, irá preparar para alojar o ambiente bastion. Se for necessário, também pode criar um controlador de domínio e uma estação de trabalho do membro num novo domínio e floresta (uma floresta *CORP*) com identidades para serem geridas pelo ambiente bastion. Esta floresta CORP simula uma floresta existente que tem recursos para serem geridos. Este documento inclui um recurso de exemplo para ser protegido, uma partilha de ficheiros.
 
@@ -36,7 +35,7 @@ Esta secção descreve como configurar um controlador de domínio para um domín
 
 Instale o Windows Server 2012 R2 ou a Pré-visualização Técnica 4 do Windows Server 2016 ou posterior, numa máquina virtual, para criar um computador designado *CORPDC*.
 
-1. Escolha  **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
+1. Escolha ** Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
 
 2. Reveja e aceite os termos do licenciamento.
 
@@ -57,7 +56,7 @@ Nesta secção, irá adicionar os Serviços de Domínio do Active Directory (AD 
 
 2. Escreva os seguintes comandos.
 
-  ```
+  ```PowoerShell
   import-module ServerManager
 
   Add-WindowsFeature AD-Domain-Services,DNS,FS-FileServer –restart –IncludeAllSubFeature -IncludeManagementTools
@@ -81,7 +80,7 @@ Para cada domínio, inicie sessão no controlador de domínio como um administra
 
 2. Escreva os comandos seguintes, mas substitua "CONTOSO" pelo nome NetBIOS do seu domínio.
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   New-ADGroup –name 'CONTOSO$$$' –GroupCategory Security –GroupScope DomainLocal –SamAccountName 'CONTOSO$$$'
@@ -102,7 +101,7 @@ Vamos criar um grupo de segurança denominado *CorpAdmins* e um utilizador com o
 
 2. Escreva os seguintes comandos. Substitua a palavra-passe "Pass@word1" por uma cadeia de palavra-passe diferente.
 
-  ```
+  ```PowerShell
   import-module activedirectory
 
   New-ADGroup –name CorpAdmins –GroupCategory Security –GroupScope Global –SamAccountName CorpAdmins
@@ -140,7 +139,7 @@ Para cada domínio, inicie sessão no controlador de domínio como um administra
 
 8. Aplique as definições de auditoria ao iniciar uma janela do PowerShell e escreva:
 
-  ```
+  ```cmd
   gpupdate /force /target:computer
   ```
 
@@ -154,7 +153,7 @@ Nesta secção irá configurar as definições de registo que são necessárias 
 
 2. Escreva os seguintes comandos para configurar o domínio de origem e permitir o acesso de chamada de procedimento remoto (RPC) à base de dados do gestor de contas de segurança (SAM).
 
-  ```
+  ```PowerShell
   New-ItemProperty –Path HKLM:SYSTEM\CurrentControlSet\Control\Lsa –Name TcpipClientSupport –PropertyType DWORD –Value 1
 
   Restart-Computer
@@ -193,7 +192,7 @@ Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.
 
 4. Escreva os seguintes comandos.
 
-  ```
+  ```PowerShell
   mkdir c:\corpfs
 
   New-SMBShare –Name corpfs –Path c:\corpfs –ChangeAccess CorpAdmins

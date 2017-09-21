@@ -2,21 +2,21 @@
 title: "Implementar o PAM passo 7 – acesso de utilizador| Documentos da Microsoft"
 description: "Como passo final, conceda acesso temporário de utilizador com privilégios para demonstrar que a implementação Privileged Access Management foi concluída com êxito."
 keywords: 
-author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/15/2017
+author: barclayn
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 09/13/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 89d9b38177b91f64e746fea583684abcecc9d7ff
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: f8ad03bc072dbf6df36a9ef737479dce60b70b8b
+ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="step-7--elevate-a-users-access"></a>Passo 7 – Elevar o acesso de um utilizador
 
@@ -27,6 +27,7 @@ ms.lasthandoff: 07/13/2017
 Este passo demonstra que um utilizador pode pedir acesso a uma função através de MIM.
 
 ## <a name="verify-that-jen-cannot-access-the-privileged-resource"></a>Certifique-se que a Jen não pode aceder ao recurso com privilégios
+
 Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na floresta CORP.
 
 1. Terminar sessão no CORPWKSTN para remover quaisquer ligações abertas em cache.
@@ -36,9 +37,10 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 5. Deixe a janela de linha de comandos aberta.
 
 ## <a name="request-privileged-access-from-mim"></a>Pedir acesso privilegiado do MIM.
+
 1. No CORPWKSTN, ainda como CONTOSO\Jen, escreva o seguinte comando.
 
-    ```
+    ```cmd
     runas /user:Priv.Jen@priv.contoso.local powershell
     ```
 
@@ -48,7 +50,7 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
     > [!NOTE]
     > Depois de executar estes comandos, os seguintes passos são sensíveis ao tempo.
 
-    ```
+    ```PowerShell
     Import-module MIMPAM
     $r = Get-PAMRoleForRequest | ? { $_.DisplayName –eq "CorpAdmins" }
     New-PAMRequest –role $r
@@ -58,7 +60,7 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 4. Quando concluído, feche a janela do PowerShell.
 5. Na janela de linha de comandos DOS, escreva o seguinte comando
 
-    ```
+    ```cmd
     runas /user:Priv.Jen@priv.contoso.local powershell
     ```
 
@@ -67,7 +69,7 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 ## <a name="validate-the-elevated-access"></a>Valide o acesso elevado.
 Na janela de linha de comandos recém aberta, escreva os seguintes comandos.
 
-```
+```cmd
 whoami /groups
 dir \\corpwkstn\corpfs
 ```
@@ -75,12 +77,13 @@ dir \\corpwkstn\corpfs
 Se o comando dir falhar com a mensagem de erro **Acesso negado**, verifique novamente a relação de fidedignidade.
 
 ## <a name="activate-the-privileged-role"></a>Ativar a função com privilégios
+
 Ative pedindo acesso privilegiado através do portal de amostra de PAM.
 
 1. No CORPWKSTN, certifique-se de que tem sessão iniciada como CORP\Jen.
 2. Escreva o seguinte comando na janela de linha de comandos DOS.
 
-    ```
+    ```cmd
     runas /user:Priv.Jen@priv.contoso.local "c:\program files\Internet Explorer\iexplore.exe"
     ```
 
@@ -95,6 +98,7 @@ Ative pedindo acesso privilegiado através do portal de amostra de PAM.
 > Neste ambiente, também pode aprender como desenvolver aplicações que utilizam a API REST do PAM, descrita em [Referência à API REST do Privileged Access Management](/microsoft-identity-manager/reference/privileged-access-management-rest-api-reference).
 
 ## <a name="summary"></a>Resumo
+
 Depois de concluir os passos nestas instruções, terá demonstrado um cenário de Privileged Access Management, no qual os privilégios de utilizador são elevados durante um período limitado de tempo, permitindo que o utilizador aceda a recursos protegidos com uma conta com privilégios separada. Assim que a sessão de elevação expira, a conta com privilégios já não consegue aceder ao recurso protegido. A decisão sobre que grupos de segurança representam funções com privilégios é coordenada pelo administrador de PAM. Depois dos direitos de acesso serem migrados para o sistema de Privileged Access Management, o acesso que era anteriormente possível com a conta de utilizador original é, agora, possível apenas ao iniciar sessão com uma conta com privilégios especiais, e disponibilizado após pedido. Como resultado, as associações de grupo para os grupos com privilégios elevados são eficazes durante um período limitado de tempo.
 
 >[!div class="step-by-step"]

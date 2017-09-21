@@ -5,16 +5,16 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 08/16/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 61987d5b259830be0cf0bc12832a853e24e9c282
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: 2473ef1c3d6fc5350d60d81bd508296a33343f01
+ms.sourcegitcommit: 58d6c628d3bb770669348b987cf8f52ec0576132
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>Implementação do Gestor de certificados do Microsoft Identity Manager 2016 (MIM CM)
 
@@ -54,8 +54,7 @@ Para obter mais detalhes sobre as plataformas suportadas para o MIM 2016 observe
 
 ## <a name="pre-deployment-steps"></a>Passos de pré-implementação
 
-O Assistente de configuração de MIM CM requer informações devem ser fornecidas ao longo do processo para que este seja concluído com êxito. Os passos de pré-implementação serão (incompleta considerar o aqui)
-
+O Assistente de configuração de MIM CM requer informações devem ser fornecidas ao longo do processo para que este seja concluído com êxito. 
 ![](media/mim-cm-deploy/image003.png)
 
 ### <a name="extending-the-schema"></a>Expandir o esquema
@@ -222,7 +221,7 @@ Todas as três das contas acima irão ter direitos na sua organização elevados
 
 No **nome do requerente** separador, limpe o **incluir o nome de correio eletrónico no nome do requerente** e **nome de correio eletrónico** caixas de verificação.
 
-No **extensões** separador o **extensões incluídas neste modelo** lista, certifique-se de que **políticas de aplicações** está selecionada e, em seguida, clique em **editar** .
+No **extensões** separador o **extensões incluídas neste modelo** lista, certifique-se de que **políticas de aplicações** está selecionada e, em seguida, clique em **editar **.
 
 No **Editar extensão de políticas de aplicação** caixa de diálogo, selecione o **sistema de encriptação de ficheiros** e **proteger o E-Mail** políticas de aplicações. Clique em **remover**e, em seguida, clique em **OK**.
 
@@ -254,7 +253,7 @@ No **propriedades de novo modelo** caixa de diálogo a **geral** separador o **n
 
 No **processamento de pedidos** separador, ative **permitir que a chave privada seja exportada**e, em seguida, clique em **CSPs ou separador criptografia.**
 
-No **seleção de CSP** caixa de diálogo, desativar **Microsoft Base Cryptographic Provider v 1.0**, desativar **Microsoft avançada Cryptographic Provider v 1.0**, ativar  **Microsoft avançada RSA e fornecedor de criptografia AES**e, em seguida, clique em **OK**.
+No **seleção de CSP** caixa de diálogo, desativar **Microsoft Base Cryptographic Provider v 1.0**, desativar **Microsoft avançada Cryptographic Provider v 1.0**, ativar ** Microsoft avançada RSA e fornecedor de criptografia AES**e, em seguida, clique em **OK**.
 
 No **segurança** separador efetue o seguinte:
 
@@ -496,7 +495,7 @@ Neste passo, vamos irão instalar e configurar os módulos de AC do FIM CM na au
 
 1. Configurar o FIM CM para inspecionar apenas permissões de utilizador para operações de gestão
 
-2. No **c:\\os ficheiros de programa\\Microsoft Forefront Identity Manager\\2010\\Certificate Management\\web** janela, crie uma cópia do  **Web. config** a cópia de nomenclatura **web.1.config**.
+2. No **c:\\os ficheiros de programa\\Microsoft Forefront Identity Manager\\2010\\Certificate Management\\web** janela, crie uma cópia do ** Web. config** a cópia de nomenclatura **web.1.config**.
 
 3. No **Web** janela, clique com botão direito **Web. config**e, em seguida, clique em **abra**.
 
@@ -509,7 +508,7 @@ Neste passo, vamos irão instalar e configurar os módulos de AC do FIM CM na au
 
 6. Fechar o **localizar e substituir** caixa de diálogo.
 
-7. Deve estar na linha  **\<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser, UseGroups" /\>**. Altere a linha ler  **\<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser" /\>**.
+7. Deve estar na linha ** \<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser, UseGroups" /\>**. Altere a linha ler ** \<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser" /\>**.
 
 8. Feche o ficheiro, guardar todas as alterações.
 
@@ -757,7 +756,7 @@ Neste passo, vamos irão instalar e configurar os módulos de AC do FIM CM na au
      2. No **OID propriedades** caixa de diálogo a **segurança** separador, clique em **avançadas**.
      3. No **definições de segurança avançadas para OID** caixa de diálogo, clique em **adicionar**.
      4. No **selecionar utilizador, computador, conta de serviço ou grupo** caixa de diálogo a **introduza o nome de objeto a selecionar** caixa, escreva **gestores de mimcm**e, em seguida, clique em **OK**.
-     5. No **permissões de entrada de OID** diálogo caixa, certifique-se de que as permissões se aplicam a **este objeto e todos os objetos subordinados**, clique em **controlo total**e, em seguida, clique em  **OK**.
+     5. No **permissões de entrada de OID** diálogo caixa, certifique-se de que as permissões se aplicam a **este objeto e todos os objetos subordinados**, clique em **controlo total**e, em seguida, clique em ** OK**.
      6. No **definições de segurança avançadas para OID** caixa de diálogo, clique em **OK**.
      7. No **OID propriedades** caixa de diálogo, clique em **OK**.
      8. Fechar **serviços e locais do Active Directory**.

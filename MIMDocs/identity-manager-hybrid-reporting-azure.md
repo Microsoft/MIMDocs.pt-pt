@@ -4,19 +4,19 @@ description: "Os relatórios híbridos de Atividade de Auditoria no Azure Active
 keywords: 
 author: fimguy
 ms.author: fimguy
-manager: femila
-ms.date: 04/28/2017
+manager: bhu
+ms.date: 09/28/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
-ms.reviewer: mwahl
+ms.reviewer: fimguy
 ms.suite: ems
-ms.openlocfilehash: 678626e7c32659570de88d8178c16821cceaf7ee
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: 151fbd26011ca76901d181131a88ded8a718a27a
+ms.sourcegitcommit: 0f99de31fe6b52ec692b3886073909f549a451d6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="hybrid-identity-management-audit-reports-in-azure-active-directory---public-previewrefresh"></a>Relatórios híbridos de Auditoria da gestão de identidades no Azure Active Directory – Pré-visualização Pública (Atualização)
 Com os relatórios de Atividade de Auditoria do Azure Active Directory (AD) pode ver um único relatório para monitorizar a atividade de gestão de identidades que ocorre no local ou na cloud. Esta funcionalidade permite gerir todos os dados de identidade e acesso num único local, poupando tempo e reduzindo os custos globais.
@@ -41,6 +41,9 @@ O processo de criação de relatórios híbridos segue estes passos:
 4. Os dados de atividade são armazenados no Azure durante um mês.
 5. O portal do Azure obtém os dados dos relatórios de auditoria e apresenta-os como a auditoria no Painel Relatórios de Auditoria do Azure.
 
-## <a name="see-also"></a>Consulte também
+## <a name="next-steps"></a>Passos Seguintes
 - Obter mais detalhes sobre como [Trabalhar com a Criação de Relatórios Híbridos do Identity Manager](working-with-identity-manager-hybrid-reporting.md)
 - Obter mais detalhes sobre os [Relatórios de atividade de auditoria no portal do Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs)
+- Obter mais detalhes [políticas de retenção de relatórios](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-retention)
+- Obter mais detalhes [integração de registo do Microsoft Azure (SIEM)](https://docs.microsoft.com/en-us/azure/security/security-azure-log-integration-overview)
+- Obter mais detalhes [Azure Active Directory API do relatório](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-getting-started)

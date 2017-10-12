@@ -10,11 +10,11 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 21a2fb4459f46fe0dea89ff016aa77358f940c24
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: 0e039c0b05cc9088a6934c07ead09fb5250f8a81
+ms.sourcegitcommit: 81ad3ede52c3a4308b806c0c8a3fd42b5f5965b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
 
@@ -289,12 +289,12 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 | falso                                                                                                      | sAMAccountName                                                              | accountName                                               |
 | falso                                                                                                      | displayName                                                                 | displayName                                               |
 | falso                                                                                                      | givenName                                                                   | firstName                                                 |
-| falso                                                                                                      | sn                                                                          | lastName                                                  |
+| falso                                                                                                      | sn                                                                          | apelido                                                  |
 
 
 
  >[!NOTE]
- Importante Certifique-se de que selecionou a opção Apenas Fluxo Inicial para o fluxo do atributo que contém o DN como destino.                                                                          
+Certifique-se de que selecionou apenas fluxo inicial para o fluxo de atributos que tenha o DN como destino.                                                                          
 
 ### <a name="step-7-create-the-workflow"></a>Passo 7: criar o fluxo de trabalho
 

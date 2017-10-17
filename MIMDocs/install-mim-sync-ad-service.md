@@ -14,7 +14,7 @@ ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 4ad41fc9679be702ab17fb5bef5d3efab5ff5adc
 ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/13/2017
 ---
@@ -63,7 +63,7 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     -   Nome de utilizador: mimma
 
-    -   Palavra-passe: Pass@word
+    -   Palavra-passe: Pass@word 
 
     -   Domínio: contoso
 

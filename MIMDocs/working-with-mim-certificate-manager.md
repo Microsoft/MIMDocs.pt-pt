@@ -3,50 +3,54 @@ title: "Implementar a aplicação Gestor de Certificados do MIM para Windows | D
 description: "Saiba como implementar a aplicação Gestor de Certificados para permitir aos utilizadores gerirem os respetivos direitos de acesso."
 keywords: 
 author: billmath
-ms.author: billmath
-manager: femila
-ms.date: 03/23/2017
+ms.author: barclayn
+manager: mbaldwin
+ms.date: 10/16/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 8a4582695d41ea605f2de4e336c3a780b2b2559f
-ms.sourcegitcommit: 02fb1274ae0dc11288f8bd9cd4799af144b8feae
+ms.openlocfilehash: e472d7cdc07aa19464aa1f18447d8c5dc7d0f0ba
+ms.sourcegitcommit: 1e0626a366a41d610e6a117cdf684241eb65ec63
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 10/17/2017
 ---
-# <a name="working-with-the-mim-certificate-manager"></a>Trabalhar com o Gestor de Certificados do MIM
-Quando tiver o MIM 2016 e o Gestor de Certificados configurados e a funcionar, pode implementar a aplicação da loja Windows do Gestor de Certificados do MIM para que os utilizadores possam gerir facilmente os smart cards físicos, smart cards virtuais e certificados de software. Os passos para implementar a aplicação MIM CM são os seguintes:
+# <a name="mim-certificate-manager-windows-store-application-deployment"></a>Implementação de aplicação da loja Windows de Gestor de certificados de MIM
 
-1.  Crie um modelo de certificado.
+Depois de ter o MIM 2016 e o Gestor de certificados em execução, pode implementar a aplicação da loja Windows do Gestor de certificados de MIM. A aplicação da loja windows permite aos utilizadores gerirem os respetivos smart cards físicos, smart cards virtuais e certificados de software. Os passos para implementar a aplicação MIM CM são os seguintes:
 
-2.  Crie um modelo de perfil.
+1. Crie um modelo de certificado.
 
-3.  Prepare a aplicação.
+2. Crie um modelo de perfil.
 
-4.  Implemente a aplicação através do SCCM ou do Intune.
+3. Prepare a aplicação.
+
+4. Implemente a aplicação através do SCCM ou do Intune.
 
 ## <a name="create-a-certificate-template"></a>Criar um modelo de certificado
+
 Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-se de que o modelo de certificado tem uma versão igual ou superior à 3.
 
-1.  Inicie sessão no servidor com o AD CS executado (o servidor de certificados).
+1. Inicie sessão no servidor que executa o AD CS (o servidor de certificado).
 
-2.  Abra a MMC.
+2. Abra a MMC.
 
-3.  Clique em **Ficheiro &gt; Adicionar/Remover Snap-in**.;
+3. Clique em **ficheiro &gt; Adicionar/Remover Snap-in**.
 
-4.  Na lista Snap-ins disponíveis, clique em **Modelos de Certificado** e, em seguida, em **Adicionar**.
+4. Na lista Snap-ins disponíveis, clique em **Modelos de Certificado** e, em seguida, em **Adicionar**.
 
-5.  Agora, os **Modelos de Certificado** encontram-se na **Raiz da Consola** na MMC. Faça duplo clique na mesma para ver todos os modelos de certificado disponíveis.
+5. Agora, os **Modelos de Certificado** encontram-se na **Raiz da Consola** na MMC. Faça duplo clique na mesma para ver todos os modelos de certificado disponíveis.
 
-6.  Clique com o botão direito do rato no modelo **Início de Sessão de Smart Card** e clique em **Duplicar Modelo**.
+6. Clique com o botão direito do rato no modelo **Início de Sessão de Smart Card** e clique em **Duplicar Modelo**.
 
-7.  No separador Compatibilidade, na Autoridade de Certificação, selecione Windows Server 2008 e, em Destinatário do Certificado, selecione Windows 8.1/Windows Server 2012 R2.
-    Este passo é crucial, porque garante que tem um modelo de certificado com a versão 3 (ou superior) e apenas a versão 3 funciona com a aplicação do gestor de certificados. Uma vez que a versão é definida na primeira vez que criar e guardar o modelo de certificado, se não tiver criado o modelo de certificado desta forma, não existe qualquer forma de o modificar para a versão correta e deve criar uma nova antes de continuar.
+7. No separador compatibilidade, na autoridade de certificação, selecione Windows Server 2008. Em destinatário do certificado, selecione Windows 8.1 / Windows Server 2012 R2. A versão de modelo de versão é definida na primeira vez que cria e guardar o modelo de certificado. Se não tiver criado o modelo de certificado desta forma não é possível modificar para a versão correta.
 
+    >[!NOTE]
+    Este passo é crucial, porque garante que tem um modelo de certificado de 3 (ou superior) da versão. Apenas modelos da versão 3 funcionam com a aplicação do Gestor de certificados.
+    
 8.  No separador **Geral**, no campo **Nome a Apresentar**, escreva o nome que pretende ver apresentado na IU da aplicação, tal como **Início de Sessão de Smart Card Virtual**.
 
 9. No separador **Processamento de Pedidos**, defina o **Objetivo** para **Assinatura e encriptação** e em **Efetue o seguinte...**, selecione **Perguntar ao utilizador durante a inscrição**.
@@ -69,11 +73,12 @@ Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-
 16. Na lista, selecione o novo modelo que criou e clique em **OK**.
 
 ## <a name="create-a-profile-template"></a>Criar um modelo de perfil
+
 Quando cria um modelo de perfil, certifique-se de que o configura para criar/destruir o vSC e remover a recolha de dados. A aplicação CM não consegue processar os dados recolhidos, pelo que é importante desativá-los da seguinte forma.
 
 1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
 
-2.  Aceda a Administração &gt; Gerir Modelos de perfil, certifique-se de que seleciona a caixa junto a Modelo de Perfil de Início de Sessão do Smart Card de Exemplo MIM CM e, em seguida, clique em Copiar um modelo de perfil selecionado.
+2.  Aceda a administração &gt; gerir modelos de perfil. Certifique-se de que marca a caixa junto a **registo de Smart Card de MIM CM exemplo no modelo de perfil** e, em seguida, clique em copiar um modelo de perfil selecionado.
 
 3.  Escreva o nome do modelo de perfil e clique em **OK**.
 
@@ -91,32 +96,33 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 10. No painel esquerdo, clique em **Política de Renovação &gt; Alterar definições gerais**. Selecione **Reutilizar cartão ao renovar** e clique em **OK**.
 
-11. Tem de desativar os itens de recolha de dados para todas as políticas ao clicar na política no painel esquerdo e ao selecionar a caixa junto a **Item de dados de exemplo** e, em seguida, clique em **Eliminar itens de recolha de dados**. Em seguida, clique em **OK**.
+11. Tem de desativar os itens de recolha de dados para todas as políticas ao clicar na política no painel esquerdo. Em seguida, terá da caixa de verificação junto a **item de dados de exemplo** clique **eliminar itens de recolha de dados** e, em seguida, clique em **OK**.
 
 ## <a name="prepare-the-cm-app-for-deployment"></a>Preparar a aplicação CM para a implementação
 
-1.  Na linha de comandos, execute o seguinte comando para descompactar a aplicação e extrair os conteúdos para uma nova subpasta denominada appx e crie uma cópia para não modificar o ficheiro original.
+1. Na linha de comandos, execute o seguinte comando para descompactar a aplicação. O comando será extrair os conteúdos para uma nova subpasta denominada appx e crie uma cópia para não modificar o ficheiro original.
 
-    ```
+    ```cmd
     makeappx unpack /l /p <app package name>.appx /d ./appx
     ren <app package name>.appx <app package name>.appx.original
     cd appx
     ```
 
-2.  Na pasta appx, altere o nome do ficheiro denominado ExemploDeDadosPersonalizados.xml para Dados.personalizados
+2. Na pasta appx, altere o nome do ficheiro denominado ExemploDeDadosPersonalizados.xml para Dados.personalizados
 
-3.  Abra o ficheiro Dados.personalizados e modifique os parâmetros conforme necessário.
+3. Abra o ficheiro Dados.personalizados e modifique os parâmetros conforme necessário.
 
     |||
     |-|-|
     |URL de MIMCM|O FQDN do portal que utilizou para configurar a CM. Por exemplo, https://mimcmServerAddress/certificatemanagement|
-    |URL de ADFS|Se planear utilizar o AD FS, introduza o URL de AD FS. Por exemplo, https://adfsServerSame/adfs|
+    |URL de ADFS|Se planear utilizar o AD FS, introduza o URL de AD FS. Por exemplo, https://adfsServerSame/adfs </br> Se não não utilizado o AD FS, configure esta definição com uma cadeia vazia.  Por exemplo,```<ADFS URL=""/>``` |
     |PrivacyUrl|Pode incluir um URL numa página Web a explicar o que fazer com os detalhes de utilizador recolhidos para a inscrição de certificado.|
     |SupportMail|Pode incluir um endereço de e-mail para problemas de suporte.|
     |LobComplianceEnable|Pode definir esta opção para verdadeiro ou falso. A predefinição é verdadeiro.|
     |MinimumPinLength|A predefinição é 6.|
     |NonAdmin|Pode definir esta opção para verdadeiro ou falso. A predefinição é falso. Só deve modificar esta opção se pretender que os utilizadores que não são administradores nos respetivos computadores possam inscrever e renovar certificados.|
-
+>[!IMPORTANT]
+Tem de ser especificado um valor para o URL de ADFS. Se for especificado nenhum valor, a aplicação moderna será erro terminar na primeira utilização.
 4.  Guarde o ficheiro e saia do editor.
 
 5.  A assinatura do pacote cria um ficheiro de assinatura, pelo que terá de eliminar o ficheiro de assinatura original denominado AppxSignature.p7x.
@@ -131,13 +137,13 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 10. Na linha de comandos, execute o seguinte comando para voltar a compactar e assinar o ficheiro .appx.
 
-    ```
+    ```cmd
     cd ..
     makeappx pack /l /d .\appx /p <app package name>.appx
     ```
     em que o nome do pacote de aplicação é o mesmo nome que utilizou quando criou a cópia.
 
-    ```
+    ```cmd
     signtool sign /f <path\>mysign.pfx /p <pfx password> /fd "sha256" <app package name>.ap
     px
     ```
@@ -145,13 +151,13 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 11. Para funcionar com a Autenticação AD FS:
 
-    -   Abra a aplicação Smart Card Virtual. Isto torna mais fácil localizar os valores necessários para o passo seguinte.
+    -  Abra a aplicação Smart Card Virtual. Isto torna mais fácil localizar os valores necessários para o passo seguinte.
 
-    -   Para adicionar a aplicação como um cliente ao servidor AD FS e configurar a CM no servidor, no servidor AD FS, abra o Windows PowerShell e execute o comando `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`
+    -  Para adicionar a aplicação como um cliente ao servidor AD FS e configurar a CM no servidor, no servidor AD FS, abra o Windows PowerShell e execute o comando `ConfigureMimCMClientAndRelyingParty.ps1 –redirectUri <redirectUriString> -serverFQDN <MimCmServerFQDN>`
 
         Segue-se o script ConfigureMimCMClientAndRelyingParty.ps1.
 
-        ```
+       ```PowerShell
         # HELP
 
         <#
@@ -242,13 +248,22 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
         Write-Host "RP Trust for MIM CM Service has been created"
         ```
 
-    -   Atualize os valores de redirectUri e serverFQDN.
+    - Atualize os valores de redirectUri e serverFQDN.
 
-    -   Para localizar o redirectUri, na aplicação Smart Card Virtual, abra o painel de definições da aplicação, clique em **Definições** e o URI de redirecionamento deverá estar listado abaixo da barra de endereço do servidor AD FS. O URI só será apresentado se um endereço do servidor ADFS estiver configurado.
+    - Para localizar o redirectUri, na aplicação Smart Card Virtual, abra o painel de definições da aplicação, clique em **Definições** e o URI de redirecionamento deverá estar listado abaixo da barra de endereço do servidor AD FS. O URI só será apresentado se um endereço do servidor ADFS estiver configurado.
 
-    -   O serverFQDN é apenas o nome completo do computador do servidor MIMCM apenas.
+    - O serverFQDN é apenas o nome completo do computador do servidor MIMCM apenas.
 
-    -   Para obter ajuda com o script **ConfigureMIimCMClientAndRelyingParty.ps1**, execute `get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1`
+    - Para obter ajuda com a **ConfigureMIimCMClientAndRelyingParty.ps1** script, execute: </br> 
+    ```Powershell
+     get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1
+    ```
 
 ## <a name="deploy-the-app"></a>Implementar a aplicação
+
 Ao configurar a aplicação CM, no Centro de Transferências, transfira o ficheiro MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip e extraia todos os respetivos conteúdos. O ficheiro .appx é o instalador. Pode implementá-la da forma que normalmente implementa aplicações da loja Windows, através do [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx) ou do [Intune](https://technet.microsoft.com/library/dn613839.aspx) para o sideload da aplicação para que os utilizadores tenham de aceder através do Portal da Empresa ou obtenham a aplicação diretamente nos respetivos computadores.
+
+## <a name="next-steps"></a>Próximos passos
+
+- [Configurar modelos de perfil](https://technet.microsoft.com/library/cc708656)
+- [Gerir Aplicações para Smart Cards](https://technet.microsoft.com/library/cc708681)

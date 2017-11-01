@@ -5,18 +5,18 @@ keywords:
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
-ms.date: 08/18/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 21bb12a70850a5f835ca6715d9683558ac6fad1d
-ms.sourcegitcommit: f2778c5fa5f0cd04e8a74fc15fa340cd118dded5
+ms.openlocfilehash: cd8191e3fdf571f4140bcdd51c54aa25bd663215
+ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="microsoft-identity-manager-2016"></a>Microsoft Identity Manager 2016
 
@@ -28,9 +28,9 @@ Para além das funcionalidades de gestão de identidade existentes incluída no 
 - Nova funcionalidade na gestão de certificados
   - [Referência à API REST da Gestão de Certificados](./reference/certificate-management-rest-api-reference.md)
   - Suporte para topologias de múltiplas florestas.
-  - Uma aplicação do Windows para smart card virtual
+  - [Uma aplicação do Windows para smart card virtual](working-with-mim-certificate-manager.md)
   - Eventos atualizados e capacidades de resolução de problemas. 
-- Os cenários autónomos incluem agora o Desbloqueio de Conta e acesso ao MFA do Azure (autenticação multifator) para a Reposição da Palavra-passe.
+- [Os cenários personalizados](working-with-self-service-password-reset.md) incluem agora o desbloqueio de conta e o MFA do Azure a porta (a autenticação multifator) para a reposição da palavra-passe.
 
 ## <a name="hybrid-experience"></a>Experiência híbrida
 

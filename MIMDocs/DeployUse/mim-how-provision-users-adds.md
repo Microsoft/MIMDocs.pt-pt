@@ -10,11 +10,11 @@ ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 0e039c0b05cc9088a6934c07ead09fb5250f8a81
-ms.sourcegitcommit: 81ad3ede52c3a4308b806c0c8a3fd42b5f5965b0
+ms.openlocfilehash: 171aa1a2e19ea9f78f9fadbc7368404702095d71
+ms.sourcegitcommit: e8a68039dab03d24778c6b9b583ca717db931772
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/10/2017
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
 
@@ -289,12 +289,12 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 | falso                                                                                                      | sAMAccountName                                                              | accountName                                               |
 | falso                                                                                                      | displayName                                                                 | displayName                                               |
 | falso                                                                                                      | givenName                                                                   | firstName                                                 |
-| falso                                                                                                      | sn                                                                          | apelido                                                  |
+| falso                                                                                                      | sn                                                                          | lastName                                                  |
 
 
 
  >[!NOTE]
-Certifique-se de que selecionou apenas fluxo inicial para o fluxo de atributos que tenha o DN como destino.                                                                          
+ Importante Certifique-se de que selecionou a opção Apenas Fluxo Inicial para o fluxo do atributo que contém o DN como destino.                                                                          
 
 ### <a name="step-7-create-the-workflow"></a>Passo 7: criar o fluxo de trabalho
 
@@ -459,11 +459,7 @@ Para efetuar estas tarefas, deve executar os seguintes perfis de execução.
 | FIMMA da Fabrikam   | 1. Exportar <br/> 2. Importação Delta       |
 
 
-Após a importação da base de dados do Serviço FIM, a Eduarda Almeida e o objeto ExpectedRuleEntry que liga a Eduarda à
-
-Regra de Sincronização de Saída de Utilizadores do AD foram transitados para o espaço conector do FIMMA da Fabrikam. Quando rever
-
-Propriedades de Britta no espaço de conector, junto os valores de atributo que configurou no Portal do FIM, encontrará também uma referência válida para o objeto de entrada de regra esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
+Após a importação da base de dados do serviço FIM, Britta Simon e o objeto de ExpectedRuleEntry que ligações Britta para a regra de sincronização de saída de utilizador do AD são testadas no espaço de conector Fabrikam FIMMA. Quando revir propriedades de Britta no espaço de conector, junto os valores de atributo que configurou no Portal do FIM, também localizar uma referência válida para o objeto de entrada de regra esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
 
 ![Propriedades dos objetos de espaço conector](media/how-provision-users-adds/image025.jpg)
 

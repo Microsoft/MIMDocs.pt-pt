@@ -11,10 +11,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
 ms.openlocfilehash: 96363fb3b0067ff5c8f8c2f32e9a855464038653
-ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="bhold-model-generator-installation"></a>Instalação de gerador de modelo do BHOLD
 
@@ -39,7 +39,7 @@ Base de dados do Microsoft Access motor 2010 Redistributable
 
  
 
-*De \< * <http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems>*\>*
+*De \<*  <http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems>*\>*
 
  
 
@@ -60,15 +60,15 @@ Base de dados do Microsoft Access motor 2010 Redistributable
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilizar a segurança integrada**                 | Especifica que a autenticação Windows é utilizada para aceder à base de dados.                                                                                                                                                                                                                                                                                                                                                        | Selecione a caixa de verificação se a autenticação Windows é utilizada para ligar ao SQL Server. Desmarque a caixa de verificação se for utilizada a autenticação do SQL Server. A base de dados deve ter sido criado antes de executar BHOLD Core configuração se autenticação do SQL Server é utilizada. **Nota:** se for utilizada a autenticação do Windows, deve ter sessão iniciada com uma conta que tenha a função de servidor sysadmin no servidor de base de dados. **Importante:** utilizar autenticação do SQL Server apenas em ambientes de teste. A Microsoft recomenda vivamente através da autenticação do Windows em implementações de produção. |
 | **Base de dados de utilizador** e **palavra-passe de base de dados** | Especifica o nome de utilizador e palavra-passe de um utilizador com a função de servidor sysadmin no servidor de base de dados. Estes valores são fornecidos apenas quando é utilizada a autenticação do SQL Server.                                                                                                                                                                                                                                                  | Escrever o nome de utilizador do SQL Server: escrever o SQL Server utilizador palavra-passe aqui: </br></br> **Importante:** não se esqueça de manter esta palavra-passe numa localização segura, oculta.                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Servidor de base de dados** e **nome de base de dados**   | Especifica o nome NetBIOS do servidor de base de dados e o nome da cópia de segurança base de dados que a configuração de gerador do BHOLD modelo irá criar. Se não estiver a utilizar a instância de servidor de base de dados predefinida, especifique a instância de servidor de base de dados no formato * \<servidor\>*\\*\<instância\> *.  A Microsoft recomenda que atribua um nome da base de dados de cópia de segurança utilizando o nome da base de dados principal do BHOLD seguido \_cópia de segurança, por exemplo B1_BACKUP. | Escrita de nome de servidor (ou servidor e instância) aqui: </br> Escreva o nome de base de dados aqui:
+| **Servidor de base de dados** e **nome de base de dados**   | Especifica o nome NetBIOS do servidor de base de dados e o nome da cópia de segurança base de dados que a configuração de gerador do BHOLD modelo irá criar. Se não estiver a utilizar a instância de servidor de base de dados predefinida, especifique a instância de servidor de base de dados no formato  *\<servidor\>*\\*\<instância\>* .  A Microsoft recomenda que atribua um nome da base de dados de cópia de segurança utilizando o nome da base de dados principal do BHOLD seguido \_cópia de segurança, por exemplo B1_BACKUP. | Escrita de nome de servidor (ou servidor e instância) aqui: </br> Escreva o nome de base de dados aqui:
 
 ## <a name="bhold-model-generator-setup"></a>Configuração do gerador de modelos do BHOLD
 
 Para instalar o módulo de gerador de modelos do BHOLD, inicie sessão como membro do grupo Admins do domínio, transfira o ficheiro seguinte e executá-la como administrador no servidor que tenciona instalar o módulo de núcleo do BHOLD em:
 
-- BholdModelGenerator * \<versão\>*\_Release.msi
+- BholdModelGenerator  *\<versão\>*\_Release.msi
 
-Substitua * \<versão\> * com o número de versão da versão do gerador de modelos do BHOLD que está a instalar.
+Substitua  *\<versão\>*  com o número de versão da versão do gerador de modelos do BHOLD que está a instalar.
 
 Para executar o ficheiro de programa como administrador, clique com o botão direito do ficheiro e, em seguida, clique em **executar como administrador**.
 

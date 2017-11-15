@@ -11,10 +11,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
 ms.openlocfilehash: 171aa1a2e19ea9f78f9fadbc7368404702095d71
-ms.sourcegitcommit: e8a68039dab03d24778c6b9b583ca717db931772
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
 

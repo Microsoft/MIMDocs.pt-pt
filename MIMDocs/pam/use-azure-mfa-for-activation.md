@@ -3,22 +3,26 @@ title: Utilizar o Azure MFA para ativar o PAM | Documentos da Microsoft
 description: "Configure o MFA do Azure como uma segunda camada de segurança quando os utilizadores ativarem funções de Privileged Access Management."
 keywords: 
 author: barclayn
-ms.author: barclayn
+ms.author: fimguy
 manager: mbaldwin
-ms.date: 08/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: dd77c0135bee40a90f3ea9fd5c1b2771cbc21793
-ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
+ms.openlocfilehash: 4accb4c1db90f11c18917012b9a3ab4966ea6496
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="using-azure-mfa-for-activation"></a>Utilizar o MFA do Azure para ativação
+>[!IMPORTANT]
+Devido ao anúncio de descontinuação do Azure multi-factor Authentication Software Development Kit. O Azure MFA SDK será suportado para clientes existentes até à data de extinção de 01 de Outubro de 2018. Novos clientes e os clientes atuais não será possível transferir o SDK já através do portal clássico do Azure. Para transferir, terá de aceder ao suporte de cliente do Azure para receber o pacote de credenciais do serviço MFA gerado. <br> A equipa de desenvolvimento Microsoft está a funcionar no planeamento de alterações para o MFA através da integração com o SDK do servidor MFA. Isto será incluído na correção futuras 2018 antecipado.
+
+
 
 Quando configurar uma função de PAM, pode escolher como autorizar os utilizadores que pedem para ativar a função. As opções que a atividade de autorização de PAM implementa são:
 

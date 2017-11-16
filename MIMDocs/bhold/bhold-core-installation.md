@@ -11,10 +11,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
 ms.openlocfilehash: 33fbe63528d5d7c543ae286f934654538782b4d5
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="bhold-core-installation"></a>Instalação do núcleo do BHOLD
 
@@ -109,7 +109,7 @@ Antes de começar a instalar o módulo do BHOLD Core, tem de estar preparado par
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilizar a segurança integrada**                    | Especifica que a autenticação Windows é utilizada para aceder à base de dados.                                                                                                                                                                                                     | Selecione a caixa de verificação se a autenticação Windows é utilizada para ligar ao SQL Server. Desmarque a caixa de verificação se for utilizada a autenticação do SQL Server. A base de dados deve ter sido criado antes de executar BHOLD Core configuração se autenticação do SQL Server é utilizada. **Nota:** se for utilizada a autenticação do Windows, deve ter sessão iniciada com uma conta que tenha a função de servidor sysadmin no servidor de base de dados. |
 | **Base de dados de utilizador** e **palavra-passe de base de dados** | Especifica o nome de utilizador e palavra-passe de um utilizador com a função de servidor sysadmin no servidor de base de dados. Estes valores são fornecidos apenas quando é utilizada a autenticação do SQL Server.                                                                                               | Escrever o nome de utilizador do SQL Server: escrever o SQL Server utilizador palavra-passe aqui: **Nota:** não se esqueça de manter esta palavra-passe numa localização segura, oculta.                                                                                                                                                                                                                                                  |
-| **Servidor de base de dados** e **nome de base de dados**   | Especifica o nome NetBIOS do servidor de base de dados e o nome da base de dados (predefinição: b1) que o programa de configuração do BHOLD Core vai criar. Se não estiver a utilizar a instância de servidor de base de dados predefinida, especifique a instância de servidor de base de dados no formato * \<servidor\>*\\*\<instância\> *. | Escrita de nome de servidor (ou servidor e instância) aqui: escrever o nome de base de dados aqui:                                                                                                                                                                                                                                                                                                                   |
+| **Servidor de base de dados** e **nome de base de dados**   | Especifica o nome NetBIOS do servidor de base de dados e o nome da base de dados (predefinição: b1) que o programa de configuração do BHOLD Core vai criar. Se não estiver a utilizar a instância de servidor de base de dados predefinida, especifique a instância de servidor de base de dados no formato  *\<servidor\>*\\*\<instância\>* . | Escrita de nome de servidor (ou servidor e instância) aqui: escrever o nome de base de dados aqui:                                                                                                                                                                                                                                                                                                                   |
 | **Certifique-restrições para o utilizador de base de dados**    | Obsoleto.                                                                                                                                                                                                                                                                 | Não altere o valor predefinido                                                                                                                                                                                                                                                                                                                                                                       |
 |                                                |                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                       |
 |                                                |                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -118,9 +118,9 @@ Antes de começar a instalar o módulo do BHOLD Core, tem de estar preparado par
 
 Para instalar o módulo do BHOLD núcleos, inicie sessão como membro do grupo Admins do domínio, transfira o ficheiro seguinte e executá-la como administrador no servidor que tenciona instalar o módulo de núcleo do BHOLD em: 
 
-- BholdCore * \<versão\>*\_Release.msi
+- BholdCore  *\<versão\>*\_Release.msi
 
-Substitua * \<versão\> * com o número de versão da versão do BHOLD núcleo que está a instalar.
+Substitua  *\<versão\>*  com o número de versão da versão do BHOLD núcleo que está a instalar.
 
 Para executar o ficheiro de programa como administrador, clique com o botão direito do ficheiro e, em seguida, clique em **executar como administrador**.
 
@@ -142,7 +142,7 @@ Para efetuar este procedimento, tem de ser um membro do grupo Administradores no
 
 3.  No Assistente de novas regras de entrada, clique em **porta**e, em seguida, clique em **seguinte**.
 
-4.  Certifique-se de que **TCP** estiver selecionada, no **portas locais específicas**, escreva o número de porta predefinido BHOLD Core (5151) ou o número de porta que especificou quando instalou BHOLD núcleos e, em seguida, clique em ** Seguinte**.
+4.  Certifique-se de que **TCP** estiver selecionada, no **portas locais específicas**, escreva o número de porta predefinido BHOLD Core (5151) ou o número de porta que especificou quando instalou BHOLD núcleos e, em seguida, clique em  **Seguinte**.
 
 5.  Certifique-se de que **permitir a ligação** está selecionada e, em seguida, clique em **seguinte**.
 
@@ -175,13 +175,13 @@ A associação **Admins do domínio**, ou equivalente, é o mínimo requerido pa
 
 #### <a name="to-establish-the-spn-of-the-bhold-website"></a>Para estabelecer o SPN do Web site BHOLD
 
-1.  No controlador de domínio de serviços de domínio do Active Directory, clique em **iniciar**, clique em **todos os programas**, clique em **acessórios**, faça duplo clique **linha de comandos **e, em seguida, clique em **executar como administrador**.
+1.  No controlador de domínio de serviços de domínio do Active Directory, clique em **iniciar**, clique em **todos os programas**, clique em **acessórios**, faça duplo clique **linha de comandos** e, em seguida, clique em **executar como administrador**.
 
-2.  Na linha de comandos, escreva o seguinte comando e, em seguida, prima ENTER: setspn – S HTTP / * \<networkalias\> \<domínio\> * \\ * \<accountname\> * onde:
+2.  Na linha de comandos, escreva o seguinte comando e, em seguida, prima ENTER: setspn – S HTTP /  *\<networkalias\> \<domínio\>*  \\  *\<accountname\>*  onde:
 
-    -   *\<networkalias\> * é o endereço que os clientes utilizam para contactar o site do BHOLD
+    -   *\<networkalias\>*  é o endereço que os clientes utilizam para contactar o site do BHOLD
 
-    -   *\<domínio\>*\\*\<accountname\> * é o nome de utilizador e domínio da conta de serviço de núcleo do BHOLD que criou quando instalou BHOLD Core.
+    -   *\<domínio\>*\\*\<accountname\>*  é o nome de utilizador e domínio da conta de serviço de núcleo do BHOLD que criou quando instalou BHOLD Core.
 
 3.  Repita o passo anterior para todos os outros nomes que os clientes utilizam para contactar o site do BHOLD, por exemplo, CNAME aliases, nomes que incluem um nome de domínio completamente qualificado ou nomes que incluem um nome de domínio (abreviado) de NetBIOS.
 
@@ -205,7 +205,7 @@ Tem de ter sessão iniciada como membro do grupo Admins do domínio para efetuar
 
 1.  Clique em **iniciar**, clique em **todos os programas**e, em seguida, clique em **Internet Explorer**.
 
-2.  Na caixa de endereço, escreva, em que * \<servidor\> * é o nome do servidor de Web site do BHOLD e * \<porta\> * o número de porta está vinculado ao Web site.
+2.  Na caixa de endereço, escreva, em que  *\<servidor\>*  é o nome do servidor de Web site do BHOLD e  *\<porta\>*  o número de porta está vinculado ao Web site.
 
 3.  Clique em **home page**, clique em **valores**e, em seguida, clique em **modificar**.
 

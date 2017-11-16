@@ -12,12 +12,15 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: c6786ea653f178b25ea3da4fbd3b01d21b79c622
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 90c773c30b0ab23ad29ca1a215745bf59b188764
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/14/2017
 ---
+>[!IMPORTANT]
+Devido ao anúncio de descontinuação do Azure multi-factor Authentication Software Development Kit. O Azure MFA SDK será suportado para clientes existentes até à data de extinção de 01 de Outubro de 2018. Novos clientes e os clientes atuais será não é possível transferir o SDK já através do portal clássico do Azure. Para transferir, terá de aceder ao suporte de cliente do Azure para receber o pacote de credenciais do serviço MFA gerado. <br> A equipa de desenvolvimento Microsoft está a funcionar no planeamento de alterações para o MFA através da integração com o SDK do servidor MFA. Isto será incluído na correção futuras 2018 antecipado.
+
 # <a name="working-with-self-service-password-reset"></a>Trabalhar com a Reposição Personalizada de Palavra-passe
 O Microsoft Identity Manager 2016 fornece funcionalidades adicionais para a opção Reposição Personalizada de Palavra-passe. Esta opção foi melhorada com várias funcionalidades importantes:
 
@@ -68,7 +71,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 3.  Clique em **Serviços Aplicacionais &gt; Active Directory &gt; Fornecedor de Autenticação Multifator &gt; Criação Rápida**.
 
-![Imagem do MFA de criação rápida do Portal do Azure](media/MIM-SSPR-Azureportal.png)
+![Os portais do Azure rápidos criar imagem do MFA](media/MIM-SSPR-Azureportal.png)
 
 4.  No campo **Nome**, introduza **SSPRMFA** e clique em **Criar**.
 
@@ -82,7 +85,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 7.  Na nova janela, no painel esquerdo abaixo de **Configurar**, clique em **Definições**.
 
-8.  Em **Alerta de Fraude**, desmarque **Bloquear utilizador quando é reportada fraude**. Isto é feito para evitar bloquear todo o serviço.
+8.  Em **alerta de fraude**, desmarque * * bloquear utilizador quando é reportada fraude. Isto é feito para evitar bloquear todo o serviço.
 
 9. Na janela **Multi-Factor Authentication do Azure** apresentada, clique em **SDK**, abaixo de **Transferências**, no menu à esquerda.
 
@@ -136,7 +139,7 @@ Os utilizadores na sua organização podem agora registar-se para a reposição 
 
 #### <a name="register-users-for-password-reset"></a>Registar utilizadores para a reposição de palavra-passe
 
-1.  O utilizador deverá iniciar um browser para navegar até ao Portal de Registo de Reposição de Palavra-passe do MIM.  (Geralmente, este portal será configurado com a autenticação do Windows.)  No portal, os utilizadores deverão fornecer o nome de utilizador e a palavra-passe novamente para confirmar a identidade.
+1.  Um utilizador irá iniciar um browser e navegue para o Portal de registo de reposição de MIM palavra-passe.  (Geralmente, este portal será configurado com a autenticação do Windows.)  No portal, os utilizadores deverão fornecer o nome de utilizador e a palavra-passe novamente para confirmar a identidade.
 
     Têm de aceder ao Portal de Registo de Palavra-passe e efetuar a autenticação através do respetivo nome de utilizador e palavra-passe.
 
@@ -165,7 +168,7 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 
 2.  O utilizador será direcionado para a autenticação. Se o MFA tiver sido configurado, o utilizador irá receber uma chamada telefónica.
 
-3.  Em segundo plano, o Azure MFA efetua uma chamada telefónica para o número que o utilizador forneceu quando se inscreveu no serviço.
+3.  Em segundo plano, o que acontece é essa MFA do Azure locais uma chamada telefónica para o número o utilizador forneceu quando se inscreveu para o serviço.
 
 4.  Quando um utilizador atender o telemóvel, ser-lhe-á pedido que prima a tecla cardinal # no telemóvel. Em seguida, o utilizador clica em **Seguinte** no portal.
 
@@ -182,7 +185,7 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 
 1.  Os utilizadores podem abrir um browser, navegar até ao **Portal de Reposição de Palavra-passe**, introduzir o respetivo nome de utilizador e clicar em **Seguinte**.
 
-    Se o MFA tiver sido configurado, o utilizador irá receber uma chamada telefónica. Em segundo plano, o Azure MFA efetua uma chamada telefónica para o número que o utilizador forneceu quando se inscreveu no serviço.
+    Se o MFA tiver sido configurado, o utilizador irá receber uma chamada telefónica. Em segundo plano, o que acontece é essa MFA do Azure locais uma chamada telefónica para o número o utilizador forneceu quando se inscreveu para o serviço.
 
     Quando um utilizador atender o telemóvel, ser-lhe-á pedido que prima a tecla cardinal # no telemóvel. Em seguida, o utilizador clica em **Seguinte** no portal.
 

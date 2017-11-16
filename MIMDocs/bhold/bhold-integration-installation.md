@@ -11,10 +11,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
 ms.openlocfilehash: ef68de19bd0eabd6d9203469ecc991d496f05846
-ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="bhold-fimmim-integration-installation"></a>Instalação do BHOLD FIM/MIM integração
 
@@ -75,7 +75,7 @@ Para instalar o módulo de integração do BHOLD FIM, inicie sessão como membro
 
 - BholdFIMIntegration*\<versão\>*\_Release.msi
 
-Substitua * \<versão\> * com o número de versão da versão do BHOLD FIM integração que está a instalar.
+Substitua  *\<versão\>*  com o número de versão da versão do BHOLD FIM integração que está a instalar.
 
 Para executar o ficheiro de programa como administrador, clique com o botão direito do ficheiro e, em seguida, clique em **executar como administrador**.
 
@@ -125,17 +125,17 @@ A tabela seguinte lista os ficheiros e as versões originais e as alterações d
 
 Em que:
 
--   *\<BHOLD_Server\> * Especifica o nome do servidor do BHOLD como encontrada na versão original do ficheiro
+-   *\<BHOLD_Server\>*  Especifica o nome do servidor do BHOLD como encontrada na versão original do ficheiro
 
--   *\<MIM_Server\> * Especifica o nome do servidor do FIM como encontrada na versão original do ficheiro
+-   *\<MIM_Server\>*  Especifica o nome do servidor do FIM como encontrada na versão original do ficheiro
 
--   *\<BHOLD_Server_FQDN\> * Especifica o nome de domínio completamente qualificado (FQDN) do servidor do BHOLD
+-   *\<BHOLD_Server_FQDN\>*  Especifica o nome de domínio completamente qualificado (FQDN) do servidor do BHOLD
 
--   *\<MIM_Port\> * Especifica o número de porta do servidor do FIM como encontrada na versão original do ficheiro
+-   *\<MIM_Port\>*  Especifica o número de porta do servidor do FIM como encontrada na versão original do ficheiro
 
--   *\<MIM_Server_FQDN\> * Especifica o FQDN do servidor do FIM
+-   *\<MIM_Server_FQDN\>*  Especifica o FQDN do servidor do FIM
 
--   *\<MIM_SSL_Port\> * Especifica uma porta diferente para utilização com SSL no servidor do FIM
+-   *\<MIM_SSL_Port\>*  Especifica uma porta diferente para utilização com SSL no servidor do FIM
 
 ### <a name="enable-approval-workflows-in-bhold-core"></a>Ativar fluxos de trabalho de aprovação no núcleo do BHOLD
 
@@ -189,7 +189,7 @@ Se um aprovador para um pedido de função personalizada não for especificado p
 
 18. No **raiz/unidade organizacional** página, clique em **modificar**.
 
-19. No **modificar os atributos/raiz da unidade organizacional** na página **aprovador**, escreva o nome de utilizador e domínio do utilizador que irá aprovar pedidos de atribuição de função, no formato * \<domínio\>*\\*\<utilizador\>*, onde * \<domínio\> * é o Nome de domínio NetBIOS (abreviado) e * \<utilizador\> * é o nome de início de sessão do utilizador.
+19. No **modificar os atributos/raiz da unidade organizacional** na página **aprovador**, escreva o nome de utilizador e domínio do utilizador que irá aprovar pedidos de atribuição de função, no formato  *\<domínio\>*\\*\<utilizador\>*, onde  *\<domínio\>*  é o Nome de domínio NetBIOS (abreviado) e  *\<utilizador\>*  é o nome de início de sessão do utilizador.
 20. Clique em **OK**.
 
 >[!IMPORTANT]
@@ -207,7 +207,7 @@ Para fornecer uma melhor segurança de fluxo de trabalho, para além dos aprovad
 
 - notificação*\<n\>*
 
-onde * \< n \> * indica um sufixo numérico opcional para fornecer vários atributos do mesmo tipo.
+onde  *\< n \>*  indica um sufixo numérico opcional para fornecer vários atributos do mesmo tipo.
 
 ### <a name="verify-approval-workflows-configured-in-the-fim-service"></a>Certifique-se de fluxos de trabalho de aprovação configurados no serviço do FIM
 

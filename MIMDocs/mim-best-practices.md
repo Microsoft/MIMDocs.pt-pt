@@ -11,11 +11,11 @@ ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 694ec1e0d6577c4335fd75ab0984aed9a0e4f220
-ms.sourcegitcommit: 8edd380f54c3e9e83cfabe8adfa31587612e5773
+ms.openlocfilehash: fe361c3f6dd85a478d655a910f0f3ec9802128b0
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Melhores Práticas do Microsoft Identity Manager 2016
 
@@ -189,8 +189,7 @@ MANUAL
 ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 ```
 
-É importante que compreenda os requisitos de disco do seu modelo de recuperação do SQL Server. Dependendo da sua agenda de cópias de segurança, pode ponderar a utilização do modo de recuperação Simples durante o carregamento do sistema inicial para limitar a utilização do espaço em disco, mas tem de compreender as implicações numa perspetiva de perda de dados.
-Ao utilizar o modo de recuperação Completo, tem de gerir a utilização do disco através de cópias de segurança que incluem cópias de segurança frequentes do registo de transações para impedir a utilização elevada de espaço em disco.
+É importante que compreenda os requisitos de disco do seu modelo de recuperação do SQL Server. Dependendo da sua agenda de cópias de segurança, pode ponderar a utilização do modo de recuperação Simples durante o carregamento do sistema inicial para limitar a utilização do espaço em disco, mas tem de compreender as implicações numa perspetiva de perda de dados. Ao utilizar o modo de recuperação Completo, tem de gerir a utilização do disco através de cópias de segurança que incluem cópias de segurança frequentes do registo de transações para impedir a utilização elevada de espaço em disco.
 
 >[!IMPORTANT]
 Não implementar estes procedimentos pode resultar na utilização elevada do espaço em disco, fazendo com que fique sem espaço em disco. Pode encontrar detalhes adicionais sobre este tópico em [Recovery Model Overview (Descrição Geral do Modelo de Recuperação)](http://go.microsoft.com/fwlink/?LinkID=185370). [O FIM Backup and Restore Guide (Guia de Criação de Cópias de Segurança e de Restauro do FIM)](http://go.microsoft.com/fwlink/?LinkID=165864) contém informações adicionais.
@@ -200,7 +199,6 @@ Não implementar estes procedimentos pode resultar na utilização elevada do es
 Durante o processo de carregamento inicial, só deve aplicar a configuração mínima necessária para a sua configuração do FIM para as suas regras de política de gestão (MPRs) e definições de conjunto. Após a conclusão do carregamento de dados, crie os passos adicionais necessários para a sua implementação. Utilize a definição Executar na Atualização da Política nos fluxos de trabalho da ação para aplicar essas políticas de forma retroativa aos dados carregados.
 
 ### <a name="step-3-configure-and-populate-the-fim-service-with-external-identity-data"></a>Passo 3: configurar e preencher o Serviço FIM com dados de identidade externa
-
 
 Neste passo, deve seguir os procedimentos descritos em How Do I Synchronize Users from Active Directory (Como Posso Sincronizar Utilizadores do Active Directory)
 
@@ -224,13 +222,11 @@ Para cada agente de gestão de origem que faz parte do seu ciclo de inicializaç
 
 ### <a name="step-4-apply-your-full-mim-configuration"></a>Passo 4: aplicar a configuração completa do MIM
 
-
 Assim que concluir o seu carregamento de dados inicial, deve aplicar a configuração completa do MIM à sua implementação.
 
 Dependendo dos cenários, isto poderá incluir a criação de conjuntos adicionais, MPRs e fluxos de trabalho. Para todas as políticas que precisa de aplicar de forma retroativa a todos os objetos existentes no sistema, utilize a definição Executar Na Atualização da Política nos fluxos de trabalho da ação para aplicar essas políticas de forma retroativa aos dados carregados.
 
 ### <a name="step-5-reconfigure-sql-to-previous-settings"></a>Passo 5: reconfigurar o SQL para as definições anteriores
-
 
 Lembre-se de alterar a definição do SQL para as definições normais. Isto inclui:
 
@@ -267,8 +263,7 @@ ActivityInformationConfiguration exigem o número de versão para referir precis
 
 ### <a name="avoid-cyclic-references"></a>Evitar referências cíclicas
 
-Em geral, as referências cíclicas não são recomendadas numa configuração do MIM.
-No entanto, por vezes os ciclos ocorrem quando o Conjunto A se refere ao Conjunto B e o Conjunto B também se refere ao Conjunto A. Para evitar problemas com referências cíclicas, deve alterar a definição do Conjunto A ou do Conjunto B para não se referirem um outro. Em seguida, reinicie o processo de migração. Se tiver referências cíclicas e o cmdlet Compare-FIMConfig resultar num erro, é necessário interromper o ciclo manualmente. Como o cmdlet Compare-FIMConfig apresenta uma lista de alterações por ordem de precedência, é necessário que não exista um ciclo entre as referências de objetos de configuração.
+Em geral, as referências cíclicas não são recomendadas numa configuração do MIM. No entanto, por vezes os ciclos ocorrem quando o Conjunto A se refere ao Conjunto B e o Conjunto B também se refere ao Conjunto A. Para evitar problemas com referências cíclicas, deve alterar a definição do Conjunto A ou do Conjunto B para não se referirem um outro. Em seguida, reinicie o processo de migração. Se tiver referências cíclicas e o cmdlet Compare-FIMConfig resultar num erro, é necessário interromper o ciclo manualmente. Como o cmdlet Compare-FIMConfig apresenta uma lista de alterações por ordem de precedência, é necessário que não exista um ciclo entre as referências de objetos de configuração.
 
 ## <a name="security"></a>Segurança
 
@@ -394,17 +389,16 @@ Por predefinição, o MIM 2016 remove objetos de sistema expirados, que inclui p
 
 O MIM fornece dois tipos de MPRs, Pedido e Transição de Conjunto:
 
--   MPR de Pedido (RMPR)
+-  MPR de Pedido (RMPR)
 
- - Utilizado para definir a política de controlo de acesso (autenticação, autorização e ação) para as operações Criar, Ler, Atualizar ou Eliminar (CRUD) relativamente aos recursos.
- - Aplicado quando uma operação CRUD é emitida relativamente a um recurso de destino no FIM.
-   - Confinado pelos critérios de correspondência definidos na regra, isto é, a que pedidos CRUD se aplica a regra.
+  - Utilizado para definir a política de controlo de acesso (autenticação, autorização e ação) para as operações Criar, Ler, Atualizar ou Eliminar (CRUD) relativamente aos recursos.
+  - Aplicado quando uma operação CRUD é emitida relativamente a um recurso de destino no FIM.
+  - Confinado pelos critérios de correspondência definidos na regra, isto é, a que pedidos CRUD se aplica a regra.
 
-
--   MPR de Transição de Conjunto (TMPR)
- - Utilize para definir políticas independentemente da forma como o objeto entrou no estado atual representado pelo Conjunto de Transição. Utilize o TMPR para políticas de direitos de modelos.
- - Aplicado quando um recurso entra ou sai de um conjunto associado.
- - Confinado aos membros do conjunto.
+- MPR de Transição de Conjunto (TMPR)
+  - Utilize para definir políticas independentemente da forma como o objeto entrou no estado atual representado pelo Conjunto de Transição. Utilize o TMPR para políticas de direitos de modelos.
+  - Aplicado quando um recurso entra ou sai de um conjunto associado.
+  - Confinado aos membros do conjunto.
 
 >[NOTA] Para obter detalhes adicionais, veja [Designing Business Policy Rules (Criar Regras de Políticas Empresariais)](http://go.microsoft.com/fwlink/?LinkID=183691).
 
@@ -413,18 +407,14 @@ O MIM fornece dois tipos de MPRs, Pedido e Transição de Conjunto:
 Utilize o princípio do menor privilégio ao aplicar a sua configuração. Os MPRs controlam a política de acesso à implementação do FIM. Permita apenas as funcionalidades utilizadas pela maioria dos seus utilizadores. Por exemplo, nem todos os utilizadores utilizam o FIM para a gestão de grupos, pelo que os MPRs de gestão de grupos associados devem ser desativados. Por predefinição, o FIM é fornecido com a maioria das permissões de não administrador desativadas.
 
 #### <a name="duplicate-built-in-mprs-instead-of-directly-modifying"></a>Duplicar MPRs incorporados em vez de modificar diretamente
-
 Quando precisar de modificar os MPRs incorporados, deve criar um novo MPR com a configuração necessária e desativar o MPR incorporado. Esta ação garante que as alterações futuras aos MPRs incorporados que são introduzidas através do processo de atualização não afetam negativamente a configuração do seu sistema.
 
 #### <a name="end-user-permissions-should-use-explicit-attribute-lists-scoped-to-users-business-needs"></a>As permissões de utilizador final devem utilizar listas de atributos explícitos confinadas às necessidades empresariais dos utilizadores
-
-Utilizar listas de atributos explícitos ajuda a impedir a concessão acidental de permissões a utilizadores não privilegiados quando os atributos são adicionados a objetos.
-Os administradores devem ter de conceder acesso explicitamente a novos atributos em vez de tentar remover o acesso.
+Utilizar listas de atributos explícitos ajuda a impedir a concessão acidental de permissões a utilizadores não privilegiados quando os atributos são adicionados a objetos. Os administradores devem ter de conceder acesso explicitamente a novos atributos em vez de tentar remover o acesso.
 
 O acesso aos dados deve ser confinado às necessidades empresariais dos utilizadores. Por exemplo, os membros do grupo não devem ter acesso ao atributo de filtro do grupo do qual são membros. O filtro pode revelar inadvertidamente dados organizacionais a que o utilizador não teria acesso normalmente.
 
 #### <a name="mprs-should-reflect-effective-permissions-in-the-system"></a>Os MPRs devem refletir permissões eficazes no sistema
-
 Evite conceder permissões a atributos que o utilizador nunca pode utilizar. Por exemplo, não deve conceder permissão para modificar atributos de recursos principais tal como objectType. Apesar do MPR, qualquer tentativa de modificar o tipo de recurso após a criação é negada pelo sistema.
 
 #### <a name="read-permissions-should-be-separate-from-modify-and-create-permissions-when-using-explicit-attributes-in-mprs"></a>As permissões Ler devem ser separadas das permissões Modificar e Criar quando utilizar atributos explícitos em MPRs
@@ -443,12 +433,9 @@ Para os atributos com os mesmos requisitos de acesso que não se espera que seja
 
 No FIM, as permissões são definidas como uma asserção positiva. Como o FIM não suporta permissões Negar, fornecer acesso sem restrições a um recurso torna mais complicado fornecer exclusões nas permissões. Como melhor prática, conceda apenas as permissões necessárias.
 
->[!NOTE]
-Segue-se abaixo a secção de elegibilidades. Como posso intercalar para evitar criar cabeçalhos de nível 5
 #### <a name="use-tmprs-to-define-custom-entitlements"></a>Utilizar TMPRs para definir direitos personalizados
 
-Utilize MPRs de Transição de Conjunto (TMPRs) em vez de RMPRs para definir direitos personalizados.
-Os TMPRs fornecem um modelo baseado no estado para atribuir ou remover direitos com base na associação nos Conjuntos de Transições definidos, ou funções, e as atividades de fluxo de trabalho complementares. Os TMPRs devem ser sempre definidos em pares, um para recursos em transição para dentro e um para recursos em transição para fora. Além disso, cada MPR de transição deve conter fluxos de trabalho separados para atividades de aprovisionamento e desaprovisionamento.
+Utilize MPRs de Transição de Conjunto (TMPRs) em vez de RMPRs para definir direitos personalizados. Os TMPRs fornecem um modelo baseado no estado para atribuir ou remover direitos com base na associação nos Conjuntos de Transições definidos, ou funções, e as atividades de fluxo de trabalho complementares. Os TMPRs devem ser sempre definidos em pares, um para recursos em transição para dentro e um para recursos em transição para fora. Além disso, cada MPR de transição deve conter fluxos de trabalho separados para atividades de aprovisionamento e desaprovisionamento.
 
 >[!NOTE]
 Qualquer fluxo de trabalho de desaprovisionamento deve garantir que o atributo Executar na Atualização da Política está definido para verdadeiro.
@@ -461,8 +448,7 @@ Ao criar um par de TMPR, ative o MPR de Entrada de Transição de Conjunto em ú
 
 Os fluxos de trabalho de aprovisionamento devem determinar se o recurso de destino já foi aprovisionado de acordo com os direitos. Em caso afirmativo, não deve fazer nada.
 
-Os fluxos de trabalho de desaprovisionamento devem determinar se o recurso de destino já foi aprovisionado. Em caso afirmativo, deve desaprovisionar o recurso de destino.
-Caso contrário, não deve fazer nada.
+Os fluxos de trabalho de desaprovisionamento devem determinar se o recurso de destino já foi aprovisionado. Em caso afirmativo, deve desaprovisionar o recurso de destino. Caso contrário, não deve fazer nada.
 
 #### <a name="select-run-on-policy-update-for-tmprs"></a>Selecionar Executar na Atualização da Política para TMPRs
 
@@ -494,19 +480,17 @@ Para remover um direito mas manter os membros atuais (por exemplo, deixar de uti
 
 ### <a name="sets"></a>Conjuntos
 
-Ao aplicar as melhores práticas para conjuntos, tem de considerar o impacto das otimizações na capacidade de gestão e facilidade de administração futura.
-Devem ser efetuados os testes adequados à escala de produção esperada para identificar o equilíbrio certo entre o desempenho e a capacidade de gestão antes de aplicar estas recomendações.
+Ao aplicar as melhores práticas para conjuntos, tem de considerar o impacto das otimizações na capacidade de gestão e facilidade de administração futura. Devem ser efetuados os testes adequados à escala de produção esperada para identificar o equilíbrio certo entre o desempenho e a capacidade de gestão antes de aplicar estas recomendações.
 
 >[!NOTE]
-As seguintes diretrizes aplicam-se a conjuntos dinâmicos e grupos dinâmicos.
+> As seguintes diretrizes aplicam-se a conjuntos dinâmicos e grupos dinâmicos.
 
 
 #### <a name="minimize-the-use-of-dynamic-nesting"></a>Minimizar a utilização de aninhamento dinâmico
 
 Isto refere-se ao filtro de um conjunto a referenciar o atributo ComputedMember de outro conjunto. Um motivo comum para aninhar conjuntos é evitar duplicar uma condição de associação em vários conjuntos. Ainda que esta abordagem possa resultar numa melhor capacidade de gestão dos conjuntos, existe um compromisso de desempenho. Pode otimizar o desempenho ao duplicar as condições de associações de um conjunto aninhado em vez de aninhar o próprio conjunto.
 
-Poderá encontrar casos em que não pode evitar aninhar conjuntos para satisfazer um requisito funcional. Estas são as situações principais em que deve aninhar conjuntos. Por exemplo, para definir o conjunto de todos os grupos sem proprietários Empregados a Tempo Inteiro, o aninhamento de conjuntos tem de ser utilizado conforme se segue: `/Group[not(Owner =
-/Set[ObjectID = ‘X’]/ComputedMember]`, em que "X" é o ObjectID do conjunto de Todos os Empregados a Tempo Inteiro.
+Poderá encontrar casos em que não pode evitar aninhar conjuntos para satisfazer um requisito funcional. Estas são as situações principais em que deve aninhar conjuntos. Por exemplo, para definir o conjunto de todos os grupos sem proprietários Empregados a Tempo Inteiro, o aninhamento de conjuntos tem de ser utilizado conforme se segue: `/Group[not(Owner = /Set[ObjectID = ‘X’]/ComputedMember]`, em que "X" é o ObjectID do conjunto de Todos os Empregados a Tempo Inteiro.
 
 #### <a name="minimize-the-use-of-negative-conditions"></a>Minimizar a utilização de condições negativas
 
@@ -540,8 +524,7 @@ Communication Foundation (WCF). Esta opção não está ativada por predefiniç�
 
 #### <a name="do-not-map-an-authorization-workflow-to-the-password-reset-process"></a>Não mapeie um fluxo de trabalho de autorização para o processo de reposição de palavra-passe
 
-Não deve anexar um fluxo de trabalho de autorização para uma operação de reposição de palavra-passe.
-A reposição de palavra-passe requer que os fluxos de trabalho de autorização e as respostas síncronas que contêm atividades como a atividade de aprovação sejam assíncronos.
+Não deve anexar um fluxo de trabalho de autorização para uma operação de reposição de palavra-passe. A reposição de palavra-passe requer que os fluxos de trabalho de autorização e as respostas síncronas que contêm atividades como a atividade de aprovação sejam assíncronos.
 
 #### <a name="do-not-map-multiple-action-activities-to-password-reset"></a>Não mapeie múltiplas atividades de ação para a reposição de palavra-passe
 

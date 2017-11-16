@@ -9,11 +9,11 @@ ms.date: 09/14/2017
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
-ms.openlocfilehash: 45054799cdc8bbe6d39fa2beb28e69d13cace031
-ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
+ms.openlocfilehash: 0d814dd27fe53ee7cfc46eac24ec577b05f78e52
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Guia do Microsoft BHOLD Suite conceitos
 
@@ -342,6 +342,6 @@ Uma funcionalidade importante e poderosa do Forefront Identity Manager 2010 e do
 
 ## <a name="next-steps"></a>Próximos passos
 
-- [Guia de instalação do BHOLD](../deploy-use/bhold-installation-guide.md)
+- [Guia de instalação do BHOLD](bhold-installation-guide.md)
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
 - [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

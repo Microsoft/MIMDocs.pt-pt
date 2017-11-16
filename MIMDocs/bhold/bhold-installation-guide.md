@@ -11,10 +11,10 @@ ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 
 ms.openlocfilehash: c36a9d02e90101b98ade913224e573ed21dc3d5c
-ms.sourcegitcommit: ed8dd5563e77ef4a3345b2a52a1426859c95576a
+ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Guia de instalação do Microsoft BHOLD Suite SP1 (6.0)
 
@@ -52,7 +52,7 @@ Esta secção abrange os seguintes tópicos:
 
 - Arquitetura de servidor único
 - Arquitetura de Dual-servidor
-- Arquitetura de duas camadas
+- arquitetura de duas camadas
 - Recomendações do SQL Server
 
 ### <a name="single-server-architecture"></a>Arquitetura de servidor único
@@ -73,7 +73,7 @@ Instalação do núcleo do BHOLD e FIM em servidores separados fornece maior des
 >[!IMPORTANT]
 A funcionalidade de relatórios do módulo de integração do BHOLD FIM requer as bases de dados do BHOLD e de FIM para ser instalada na mesma instância do SQL Server e a conta de serviço do BHOLD tem de ter direitos de acesso para a base de dados do serviço FIM.
 
-### <a name="two-tier-architecture"></a>Arquitetura de duas camadas
+### <a name="two-tier-architecture"></a>arquitetura de duas camadas
 
 Na maioria dos ambientes, especialmente dos que desempenho é importante, deve executar o SP1 de BHOLD Suite, o FIM e o SQL Server em servidores separados (arquitetura de duas camadas). Com uma arquitetura de duas camadas, memória e recursos da CPU estão dedicados para cada camada. A ilustração seguinte mostra uma forma de configurar uma arquitetura de duas camadas. O serviço de sincronização do FIM em execução no servidor do FIM sincroniza as alterações entre as bases de dados do FIM e BHOLD. Tenha em atenção que se for necessária personalização do utilizador final, o módulo de integração do BHOLD FIM tem de estar instalado no mesmo servidor que o serviço FIM e o Portal.
 

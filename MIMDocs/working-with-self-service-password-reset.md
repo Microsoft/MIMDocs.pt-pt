@@ -12,14 +12,14 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 90c773c30b0ab23ad29ca1a215745bf59b188764
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.openlocfilehash: 0463a91275f3e181a66eb460c167bb9a2008f444
+ms.sourcegitcommit: 27a23142393bbb0f66a3d533d89a5a8366a29e41
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/20/2017
 ---
 >[!IMPORTANT]
-Devido ao anúncio de descontinuação do Azure multi-factor Authentication Software Development Kit. O Azure MFA SDK será suportado para clientes existentes até à data de extinção de 01 de Outubro de 2018. Novos clientes e os clientes atuais será não é possível transferir o SDK já através do portal clássico do Azure. Para transferir, terá de aceder ao suporte de cliente do Azure para receber o pacote de credenciais do serviço MFA gerado. <br> A equipa de desenvolvimento Microsoft está a funcionar no planeamento de alterações para o MFA através da integração com o SDK do servidor MFA. Isto será incluído na correção futuras 2018 antecipado.
+Devido ao anúncio de descontinuação do Azure multi-factor Authentication Software Development Kit. O Azure MFA SDK será suportado para clientes existentes até à data de extinção de 14 de Novembro de 2018. Novos clientes e os clientes atuais será não é possível transferir o SDK já através do portal clássico do Azure. Para transferir, terá de aceder ao suporte de cliente do Azure para receber o pacote de credenciais do serviço MFA gerado. <br> A equipa de desenvolvimento Microsoft está a funcionar no planeamento de alterações para o MFA através da integração com o SDK do servidor MFA. Isto será incluído na correção futuras 2018 antecipado.
 
 # <a name="working-with-self-service-password-reset"></a>Trabalhar com a Reposição Personalizada de Palavra-passe
 O Microsoft Identity Manager 2016 fornece funcionalidades adicionais para a opção Reposição Personalizada de Palavra-passe. Esta opção foi melhorada com várias funcionalidades importantes:

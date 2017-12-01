@@ -86,6 +86,13 @@
 # [Referência](./reference/microsoft-identity-manager-2016-developer-reference.md)
 ## Referência para Programadores
 ### [Referências para programadores do MIM 2016](./reference/microsoft-identity-manager-2016-developer-reference.md)
+### Conector para serviços Web
+#### [Descrição geral do Conector genérico para serviços Web](./reference/microsoft-identity-manager-2016-ma-ws.md)
+#### [Passos de instalação para a ferramenta de configuração Web](./reference/microsoft-identity-manager-2016-ma-ws-install.md)
+#### [Guia do Fluxo de Trabalho do Web Service Connector para SOAP](./reference/microsoft-identity-manager-2016-ma-ws-soap.md)
+#### [Guia do Fluxo de Trabalho do Web Service Connector para REST de Exemplo](./reference/microsoft-identity-manager-2016-ma-ws-restgeneric.md)
+#### [Serviço de Aplicações de REST de Exemplo do Web Service Connector](./reference/microsoft-identity-manager-2016-ma-ws-restsample.md)
+#### [Opções de configuração do Web Service Connector](./reference/microsoft-identity-manager-2016-ma-ws-maconfig.md)
 ### BHOLD
 #### [Referência para programadores do BHOLD](./reference/mim2016-bhold-developer-reference.md) 
 ### [Referência à API REST da Gestão de Certificados](./reference/certificate-management-rest-api-reference.md)

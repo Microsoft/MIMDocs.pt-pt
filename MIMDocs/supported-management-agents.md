@@ -5,18 +5,18 @@ keywords:
 author: fimguy
 ms.author: fimguy
 manager: bhu
-ms.date: 09/26/2017
+ms.date: 1/24/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: 
 ms.suite: ems
-ms.openlocfilehash: 99e98f3f9cb5e68fde0e3018856bf613c082325d
-ms.sourcegitcommit: ba4cd133f7b49752c5470c9fc46e7e302cc99b49
+ms.openlocfilehash: 1e100a686f009d1a2290d7965fe36eea819148be
+ms.sourcegitcommit: fab9f21eea15d2024f11a59fc9e43db15bd215c7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-to-your-directories"></a>Ligar aos diretórios
 
@@ -28,13 +28,13 @@ Este artigo abrange os conectores que estão incluídos & suportados em MIM, mas
 
 ## <a name="supported-connectors-in-mim-2016-sp1"></a>Conectores suportados em MIM 2016 SP1
 
-| Nome | Versões suportadas da origem de dados ligada |
+| Nome | Versões suportadas da origem de dados ligada & ligações técnicas |
 | ---- | ----------------------------------------------- |
 | Serviços de Domínio do Active Directory | Active Directory de 2012, 2016 |
 | Serviços LDS do Active Directory (ADLDS) | Serviços LDS do Active Directory (ADLDS) |
 | Lista de Endereços Global (GAL) do Active Directory | Do Active Directory lista de endereços Global (GAL) – Exchange 2013, 2016 |
 | Extensible Connectivity 2.0 | Qualquer origem de dados baseada em chamadas ou baseada em ficheiros |
-| Serviço FIM | Agente de gestão do FIM Service (serviço Sycronization) tem de ser, a mesma versão do "Forefront Identity Manager instalado o serviço" |
+| Serviço FIM | Agente de gestão do FIM Service (serviço de sincronização) tem de ser, a mesma versão do "Forefront Identity Manager instalado o serviço" |
 | Base de Dados Universal IBM DB2 | IBM DB2 versão 9.5 ou 9.7; IBM DB2 OLEDB v 9.5 FP5 ou v 9.7 FP1 |
 | Servidor de Diretório IBM | Servidor de Diretório IBM Tivoli 6. x |
 | Novell eDirectory | Novell eDirectory versão 8.7.3, 8.8.5 e 8.8.6 |
@@ -43,10 +43,11 @@ Este artigo abrange os conectores que estão incluídos & suportados em MIM, mas
 | Servidor de Diretório Oracle (anteriormente Sun e Netscape) | Servidor de Diretório Sun 6.x, 7.x e Oracle 11 |
 | [Conector Windows PowerShell para FIM 2010 R2](https://msdn.microsoft.com/en-us/library/dn640417.aspx) | Windows PowerShell 2.0 ou superior |
 | [Conector Microsoft Azure Active Directory para FIM 2010 R2](https://msdn.microsoft.com/en-us/library/dn511001.aspx) | Microsoft Azure Active Directory |
-| [Conector LDAP Genérico para FIM 2010 R2](https://msdn.microsoft.com/en-us/library/dn510997.aspx) | Servidor LDAP v3 (compatível com RFC 4510) |
+| [Conector LDAP Genérico para FIM 2010 R2](https://msdn.microsoft.com/en-us/library/dn510997.aspx) | [Servidor LDAP v3 (com RFC 4510)](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericldap) |
+| [Conector do SQL Server genérico para FIM 2010 R2 / MIM](https://msdn.microsoft.com/en-us/library/dn510997.aspx) | [O conector é suportado com todos os controladores ODBC de 64 bits](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql) |
 | [Conector para Lotus Domino](https://msdn.microsoft.com/en-us/library/hh859750.aspx) | Lotus Notes v 8.5. x de versão |
 | [Conector de serviços do SharePoint UPA](https://msdn.microsoft.com/en-us/library/dn511003.aspx) | Servidor SharePoint 2013 ou 2016 com a aplicação de serviço de Perfil de Utilizador (UPA) |
-| [Conector para Serviços Web](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | SAP ECC 5.0 ou 6.0; Oracle PeopleSoft 9.1; Oracle eBusiness 12.1 |
+| [Conector para Serviços Web](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | [SAP ECC 5.0 ou 6.0; Oracle PeopleSoft 9.1; Oracle eBusiness 12.1](https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws) |
 | [Ficheiro de texto de par atributo-valor](https://technet.microsoft.com/en-us/library/cc708644(v=ws.10).aspx) | Ficheiros de texto de par atributo-valor |
 | [Ficheiro de texto delimitado](https://technet.microsoft.com/en-us/library/cc720612(v=ws.10).aspx) | Ficheiros de texto delimitado |
 | [Serviços de diretório marcar o idioma (DSML)](https://technet.microsoft.com/en-us/library/cc720660(v=ws.10).aspx) | Directory Services Markup Language (DSML) 2.0 |

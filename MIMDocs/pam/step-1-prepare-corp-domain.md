@@ -35,7 +35,7 @@ Esta secção descreve como configurar um controlador de domínio para um domín
 
 Instale o Windows Server 2012 R2 ou a Pré-visualização Técnica 4 do Windows Server 2016 ou posterior, numa máquina virtual, para criar um computador designado *CORPDC*.
 
-1. Escolha ** Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
+1. Escolha **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
 
 2. Reveja e aceite os termos do licenciamento.
 

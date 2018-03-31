@@ -1,12 +1,13 @@
 ---
 layout: LandingPage
-title: "Documentação do Microsoft Identity Manager | Documentos da Microsoft"
+ms.topic: landing-page
+title: Documentação do Microsoft Identity Manager | Documentos da Microsoft
 description: Saiba como utilizar o Microsoft Identity Manager.
-ms.openlocfilehash: 14bfdf808072f236a17431cf4e0634bf287c3a65
-ms.sourcegitcommit: f95369a51ec5edae076505b3b0059f878cdf6e96
+ms.openlocfilehash: f57d2f9b4f61eeef09b8abb29ef3023cba798a5d
+ms.sourcegitcommit: 3c422a03c33774d3f94faee72e063d80730a9d1a
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="microsoft-identity-manager-documentation"></a>Documentação do Microsoft Identity Manager
 

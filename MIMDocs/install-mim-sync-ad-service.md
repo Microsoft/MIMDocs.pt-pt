@@ -1,7 +1,7 @@
 ---
-title: "Utilizar a Sincronização do Microsoft Identity Manager com o AD | Documentos da Microsoft"
-description: "Utilize agentes de gestão e o Serviço de Sincronização do MIM para sincronizar as bases de dados do Active Directory e do MIM."
-keywords: 
+title: Utilizar a Sincronização do Microsoft Identity Manager com o AD | Documentos da Microsoft
+description: Utilize agentes de gestão e o Serviço de Sincronização do MIM para sincronizar as bases de dados do Active Directory e do MIM.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 31cc9a61bbcb309dae4ee4d09654432d08bf1e28
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: 736d933f2c62d440abafdab27f82b3b1ba0f9a06
+ms.sourcegitcommit: 48f89d555c0ac7caa97d149ee42e0b9ef6ccc5f5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM
 
@@ -43,7 +43,7 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
 1.  Abra o Synchronization Service Manager.
 
-2.  Para abrir o assistente Criar Agente de Gestão, aceda à página **Ações de Gestão** e, em seguida, no menu **Ações**, clique em **Criar**.
+2.  Para abrir o Assistente Criar agente de gestão, altere para o **agentes de gestão** página, em seguida, no **ações** menu, clique em **criar**.
 
 3.  Na página **Criar Agente de Gestão**, forneça as seguintes definições e, em seguida, clique em **Seguinte**.
 
@@ -57,7 +57,7 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     -   Base de dados: FIMService
 
-    -   Endereço base do Serviço MIM: http://localhost:5725
+    -   Endereço base do serviço MIM: http://localhost:5725
 
     -   Modo de autenticação: autenticação integrada do Windows
 
@@ -112,13 +112,13 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     | **Atributo de Origem de Dados** | **Direção do Fluxo** | **Atributo Metaverso** |
     |-|-|-|
-    | NomedaConta | Exportar | nomedaConta |
-    | Nome a Apresentar | Exportar | nomeaApresentar |
-    | Domain | Exportar | domínio |
+    | NomedaConta | Exportar | accountName |
+    | DisplayName | Exportar | displayName |
+    | Domínio | Exportar | domínio |
     | E-mail | Exportar | correio |
     | EmployeeID | Exportar | IDdefuncionário |
     | TipoDeFuncionário | Exportar | tipodeFuncionário |
-    | NomePróprio | Exportar | nomePróprio |
+    | FirstName | Exportar | nomePróprio |
     | Apelido | Exportar | apelido |
     | SIDobjeto | Exportar | sidObjeto |
 
@@ -138,9 +138,9 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     | **Atributo de Origem de Dados** | **Direção do Fluxo** | **Atributo Metaverso** |
     |-|-|-|
-    | NomedaConta | Exportar | nomedaConta |
-    | Nome a Apresentar | Exportar | nomeaApresentar |
-    | Domain | Exportar | domínio |
+    | NomedaConta | Exportar | accountName |
+    | DisplayName | Exportar | displayName |
+    | Domínio | Exportar | domínio |
     | E-mail | Exportar | correio |
     | MailNickName | Exportar | mailNickName |
     | Membro | Exportar | membro |
@@ -151,7 +151,7 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
     | MembershipLocked | Exportar | membershipLocked |
     | NomedaConta | Importar | nomedaConta |
     | DisplayedOwner | Importar | displayedOwner |
-    | Nome a Apresentar | Importar | nomeaApresentar |
+    | DisplayName | Importar | displayName |
     | MailNickName | Importar | mailNickName |
     | Membro | Importar | membro |
     | Âmbito | Importar | âmbito |
@@ -197,10 +197,10 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 7. Na página **Selecionar Atributos**, selecione **Mostrar TUDO**, selecione os atributos seguintes e, em seguida, clique em **Seguinte**:
 
     -   empresa
-    -   nomeaApresentar
+    -   displayName
     -   IDdefuncionário
     -   tipodeFuncionário
-    -   nomeDado
+    -   givenName
     -   tipodeGrupo
     -   geridoPor
     -   gestor
@@ -324,10 +324,10 @@ Para criar a regra de sincronização de entrada de utilizadores do AD:
 
     | Regra de Fluxo | Origem | Destino |
     |-|-|-|
-    |Regra 1|NomeContaSam|nomedaConta|
-    |Regra 2|nomeaApresentar|nomeaApresentar|
+    |Regra 1|NomeContaSam|accountName|
+    |Regra 2|displayName|displayName|
     |Regra 3|TipoDeFuncionário|tipodeFuncionário|
-    |Regra 4|nomeDado|nomePróprio|
+    |Regra 4|nomeDado|firstName|
     |Regra 5|sn|apelido|
     |Regra 6|Gestor|gestor|
     |Regra 7|SIDobjeto|SIDobjeto|

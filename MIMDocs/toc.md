@@ -14,8 +14,8 @@
 ## [Funcionalidades preteridas](microsoft-identity-manager-2016-deprecated-features.md)
 ## [Primeira implementação](microsoft-identity-manager-deploy.md)
 ### [Configuração do domínio](preparing-domain.md)
-### [Configuração do servidor: Windows Server](prepare-server-ws2012r2.md)
-### [Configuração do servidor: SQL](prepare-server-sql2014.md)
+### [Configuração do servidor: Windows Server](prepare-server-ws2016.md)
+### [Configuração do servidor: SQL](prepare-server-sql2016.md)
 ### [Configuração do servidor: SharePoint](prepare-server-sharepoint.md)
 ### [Configuração do servidor: Exchange](prepare-server-exchange.md)
 ### [Instalar o MIM: Sincronização](install-mim-sync.md)
@@ -144,4 +144,12 @@
 ## Histórico de versões
 ### [Histórico de versões do MIM](./reference/version-history.md)
 ### [Histórico de versões do BHOLD](./reference/version-bhold-history.md)
+### [Histórico de Lançamento das Versões de Conectores](./reference/microsoft-identity-manager-2016-connector-version-history.md)
+## Conectores
+### [Gráfico](microsoft-identity-manager-2016-connector-graph.md)
+### [Lotus Notes](./reference/microsoft-identity-manager-2016-connector-domino.md)
+### [LDAP Genérico](./reference/microsoft-identity-manager-2016-connector-genericldap.md)
+### [SQL Genérico](./reference/microsoft-identity-manager-2016-connector-genericsql.md)
+### [Serviços Web](./reference/microsoft-identity-manager-2016-ma-ws.md)
+### [PowerShell](./reference/microsoft-identity-manager-2016-connector-powershell.md)
 ### [Histórico de Lançamento das Versões de Conectores](./reference/microsoft-identity-manager-2016-connector-version-history.md)

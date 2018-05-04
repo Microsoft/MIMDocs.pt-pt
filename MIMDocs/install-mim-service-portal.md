@@ -5,18 +5,18 @@ keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldiwn
-ms.date: 10/12/2017
+ms.date: 04/30/2018
 ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 204aa33cb21ed3998d9085fc56f0c7bea7afec58
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: fcc137527d8326c82bf3b201039926699bd4e342
+ms.sourcegitcommit: a98a4c1aee12016d480c400f4ff2c6aadb6518ee
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>Instalar o MIM 2016: Portal e Serviço MIM
 
@@ -48,23 +48,23 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 6. Na página **Configurar a ligação à base de dados do MIM**, escolha **Criar uma nova base de dados**.
 
-    ![Imagem da configuração da ligação à base de dados do MIM](media/MIM-Install10.png)
+    ![Imagem da configuração da ligação à base de dados do MIM](media/install-mim-service-portal/MIM_Install10.png)
 
-7. No **configurar ligação ao servidor de e-mail**, introduza o nome do servidor Exchange como **servidor de correio** ou pode utilizar a caixa de correio do Office 365. Se não tiver um servidor de e-mail configurado, utilize **localhost** como o nome do servidor de e-mail e desmarque as duas caixas de verificação superiores. Clique em **Seguinte**.
+7. No **configurar ligação ao servidor de e-mail**, introduza o nome do servidor Exchange como **servidor de correio** ou pode utilizar **caixa de correio do Office 365**. Se não tiver um servidor de e-mail configurado, utilize **localhost** como o nome do servidor de e-mail e desmarque as duas caixas de verificação superiores. Clique em **Seguinte**.
 
-    ![Imagem da configuração da ligação ao servidor de correio](media/MIM-Install11.png)
+    ![Imagem da configuração da ligação ao servidor de correio](media/install-mim-service-portal/MIM_Install11.png)
 
 8. Especifique que pretende gerar um novo certificado autoassinado ou selecione o certificado relevante.
 
 9. Especifique o nome da Conta de Serviço a utilizar, por exemplo, *ServiçoMIM*, e a palavra-passe da Conta de Serviço, por exemplo, *Pass@word1*, o domínio da Conta de Serviço, por exemplo, *contoso*, e a Conta de E-mail do Serviço, por exemplo, *contoso*.
 
-    ![Imagem da configuração da conta de serviço MIM](media/MIM-Install12.png)
+    ![Imagem da configuração da conta de serviço MIM](media/install-mim-service-portal/MIM_Install12.png)
 
 10. Tenha em atenção que poderá aparecer um aviso a indicar que a Conta de Serviço não está protegida na configuração atual.
 
 11. Aceite as predefinições para a localização do servidor de sincronização e especifique a conta de agente de gestão de MIM como *contoso\MIMMA*.
 
-    ![Imagem da configuração do Portal e do Serviço MIM](media/MIM-Install13.png)
+    ![Imagem da configuração do Portal e do Serviço MIM](media/install-mim-service-portal/MIM_Install13.png)
 
 12. Especifique *CORPIDM* (o nome deste computador) como o endereço do servidor do Serviço MIM para o Portal do MIM.
 
@@ -82,7 +82,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 2.  Especifique *passwordregistration.contoso.com* como o nome de anfitrião para o registo de palavra-passe de MIM e defina a porta para **80**. Ative a opção **Abrir porta na firewall**.
 
-    ![Imagem da introdução das informações de configuração utilizadas pelo IIS](media/MIM-Install14.png)
+    ![Imagem da introdução das informações de configuração utilizadas pelo IIS](media/install-mim-service-portal/MIM_Install14.png)
 
 3.  Será apresentado um aviso. Leia-o e clique em **Seguinte**.
 
@@ -94,7 +94,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 2.  Especifique *passwordreset.contoso.com* como o nome de anfitrião para o Portal de reposição de palavra-passe de MIM e defina a porta para **80**. Ative a opção **Abrir porta na firewall**.
 
-    ![Imagem da introdução das informações de configuração utilizadas pelo IIS](media/MIM-Install15.png)
+    ![Imagem da introdução das informações de configuração utilizadas pelo IIS](media/install-mim-service-portal/MIM_Install15.png)
 
 3.  Será apresentado um aviso. Leia-o e clique em **Seguinte**.
 

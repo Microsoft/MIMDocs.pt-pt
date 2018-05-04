@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: eceb1ed31b0212970d5cf0eae0bc8d96aa087ff5
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: 6922c3c2f66b6dbb0b0751420be9dd778206a3cf
+ms.sourcegitcommit: 8316fa41f06f137dba0739a8700910116b5575d8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>Configurar um servidor de gestão de identidades: SharePoint
 
@@ -68,14 +68,15 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 1. No separador **Ligar a um farm de servidores**, mude para criar um novo farm de servidores.
 
 2. Especifique este servidor como o servidor de base de dados como **corpsql** para a base de dados de configuração e *Contoso\SharePoint* como a conta de acesso à base de dados para o SharePoint utilizar.
-    a. O Assistente de configuração Recomendamos que selecione [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) tipo de **front-end**
 3. Crie uma palavra-passe para a frase de acesso de segurança do farm.
 
-4. Quando o assistente de configuração concluir a tarefa de configuração 10 de 10, clique em Concluir e um browser será aberto.
+4. O Assistente de configuração Recomendamos que selecione [MinRole](https://docs.microsoft.com/en-us/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) tipo de **front-end**
 
-5. No pop-up do Internet Explorer, efetue a autenticação como *Contoso\miminstall* (ou a conta de administrador equivalentes) para continuar.
+5. Quando o Assistente de configuração concluir a tarefa de configuração 10 de 10, clique em Concluir e um browser será aberto...
 
-6. No Assistente de web (na aplicação web) clique em **Cancelar/Skip**.
+6. Se lhe for pedido o pop-up do Internet Explorer, efetue a autenticação como *Contoso\miminstall* (ou a conta de administrador equivalentes) para continuar.
+
+7. No Assistente de web (na aplicação web) clique em **Cancelar/Skip**.
 
 
 ## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>Preparar o SharePoint para alojar o Portal do MIM
@@ -94,14 +95,13 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
     > [!NOTE]
     > Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder. Quando concluir, a saída indicará o URL do novo portal. Manter o **Shell de gestão do SharePoint 2016** janela aberta para consultar mais tarde.
 
-2. Inicie o Shell de Gestão do SharePoint 2013 e execute o seguinte script do PowerShell para criar uma **Coleção de Sites do SharePoint** associada a essa aplicação Web.
+2. Inicie o Shell de gestão do SharePoint 2016 e execute o seguinte script do PowerShell para criar um **coleção de sites do SharePoint** associados a essa aplicação web.
 
   ```
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
     $w = Get-SPWebApplication http://mim.contoso.com/
     New-SPSite -Url $w.Url -Template $t -OwnerAlias contoso\miminstall -CompatibilityLevel 15 -Name "MIM Portal"
     $s = SpSite($w.Url)
-    $s.AllowSelfServiceUpgrade = $false
     $s.CompatibilityLevel
   ```
 
@@ -119,7 +119,7 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
 4. No servidor de gestão de identidades, abra um novo separador do browser, navegue para http://mim.contoso.com/ e inicie sessão como *contoso\miminstall*.  Será apresentado um site do SharePoint vazio denominado *Portal do MIM*.
 
-    ![Portal de MIM em http://mim.contoso.com/ imagem](media/MIM-DeploySP1.png)
+    ![Portal de MIM em http://mim.contoso.com/ imagem](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
 
 5. Copie o URL, em seguida, no Internet Explorer, abra as **Opções da Internet**, mude para o **separador Segurança**, selecione **Intranet local** e clique em **Sites**.
 

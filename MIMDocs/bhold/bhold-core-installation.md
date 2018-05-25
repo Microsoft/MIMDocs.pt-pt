@@ -1,7 +1,7 @@
 ---
-title: "Core BHOLD instalação | Microsoft Docs"
-description: "Documento de núcleos de instalação do BHOLD suite"
-keywords: 
+title: Core BHOLD instalação | Microsoft Docs
+description: Documento de núcleos de instalação do BHOLD suite
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,12 @@ ms.date: 09/07/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 33fbe63528d5d7c543ae286f934654538782b4d5
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 25825c1472dec44ed0e09519d4bc17809c1b95b1
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="bhold-core-installation"></a>Instalação do núcleo do BHOLD
 
@@ -30,7 +30,7 @@ O módulo de núcleo do BHOLD compõe a base de BHOLD Suite de Microsoft. Tem de
 
 |          |        |          |
 |----------|--------|----------|
-|**Componente** |**Mínimo** | **Recomendado** |
+|**Componente** |**mínimo** | **recomendado** |
 |Processador | processador de 64 bits | Processador de 64 bits especializado |
 | Memória |3 GB | 6 GB ou mais |
 |Armazenamento| 30 GB disponível |Depende do tamanho de implementação |
@@ -98,8 +98,8 @@ Antes de começar a instalar o módulo do BHOLD Core, tem de estar preparado par
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilize um fornecedor de segurança no computador/domínio** | Quando selecionada, especifica que a segurança dos serviços de domínio do Active Directory controlará o acesso para BHOLD núcleo.                                                                                                                                                                                                  | Selecione a caixa de verificação. **Importante:** a instalação falhará se esta caixa de verificação não estiver selecionada.                                                                 |
 | **Domínio**                                  | Especifica o domínio que contém o servidor BHOLD, a conta de serviço e o grupo de aplicações. **Importante:** especifique o nome de domínio com o nome de NetBIOS (abreviado), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como CONTOSO. | Escreva o nome de domínio aqui:                                                                                                                                        |
-| **Grupo de aplicações**                       | Especifica o nome do grupo de segurança que criou anteriormente no [utilizador e grupo necessários](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx#rug).                                                                                                                                  | Escreva o nome do grupo aqui:                                                                                                                                         |
-| **Utilizador de serviço**                            | Especifica o nome de início de sessão da conta de utilizador de serviço que criou anteriormente no [utilizador e grupo necessários](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx#rug).                                                                                                                      | Escreva o nome da conta de utilizador aqui:                                                                                                                                  |
+| **Grupo de aplicações**                       | Especifica o nome do grupo de segurança que criou anteriormente no [utilizador e grupo necessários](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx#rug).                                                                                                                                  | Escreva o nome do grupo aqui:                                                                                                                                         |
+| **Utilizador de serviço**                            | Especifica o nome de início de sessão da conta de utilizador de serviço que criou anteriormente no [utilizador e grupo necessários](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx#rug).                                                                                                                      | Escreva o nome da conta de utilizador aqui:                                                                                                                                  |
 | **Palavra-passe**                                | Especifica a palavra-passe da conta de utilizador do serviço de núcleo do BHOLD.                                                                                                                                                                                                                                              | Escrever a palavra-passe aqui: **importante:** não se esqueça de manter esta palavra-passe numa localização segura, oculta.                                                                |
 | **IP/porta do Web site**                         | Especifica o número de porta e o endereço IP do Web site a ser criado no servidor da intranet. Altere o valor predefinido (\*) apenas se não utilizar o mesmo endereço IP que o Web site predefinido. Alterar o número de porta para uma porta disponível apenas se a predefinição da porta (5151) já está em utilização.             | Se for utilizado um endereço IP não predefinida ao Web site predefinido, gravá-lo aqui: se o número de porta predefinido já está em utilização, escreva o número de porta de Web site BHOLD aqui: |
 
@@ -120,7 +120,7 @@ Para instalar o módulo do BHOLD núcleos, inicie sessão como membro do grupo A
 
 - BholdCore  *\<versão\>*\_Release.msi
 
-Substitua  *\<versão\>*  com o número de versão da versão do BHOLD núcleo que está a instalar.
+Substitua *\<versão\>* com o número de versão da versão do BHOLD núcleo que está a instalar.
 
 Para executar o ficheiro de programa como administrador, clique com o botão direito do ficheiro e, em seguida, clique em **executar como administrador**.
 
@@ -177,7 +177,7 @@ A associação **Admins do domínio**, ou equivalente, é o mínimo requerido pa
 
 1.  No controlador de domínio de serviços de domínio do Active Directory, clique em **iniciar**, clique em **todos os programas**, clique em **acessórios**, faça duplo clique **linha de comandos** e, em seguida, clique em **executar como administrador**.
 
-2.  Na linha de comandos, escreva o seguinte comando e, em seguida, prima ENTER: setspn – S HTTP /  *\<networkalias\> \<domínio\>*  \\  *\<accountname\>*  onde:
+2.  Na linha de comandos, escreva o seguinte comando e, em seguida, prima ENTER: setspn – S HTTP / *\<networkalias\> \<domínio\>* \\ *\<accountname\>* onde:
 
     -   *\<networkalias\>*  é o endereço que os clientes utilizam para contactar o site do BHOLD
 
@@ -205,7 +205,7 @@ Tem de ter sessão iniciada como membro do grupo Admins do domínio para efetuar
 
 1.  Clique em **iniciar**, clique em **todos os programas**e, em seguida, clique em **Internet Explorer**.
 
-2.  Na caixa de endereço, escreva, em que  *\<servidor\>*  é o nome do servidor de Web site do BHOLD e  *\<porta\>*  o número de porta está vinculado ao Web site.
+2.  Na caixa de endereço, escreva, em que *\<servidor\>* é o nome do servidor de Web site do BHOLD e *\<porta\>* o número de porta está vinculado ao Web site.
 
 3.  Clique em **home page**, clique em **valores**e, em seguida, clique em **modificar**.
 
@@ -213,9 +213,9 @@ Tem de ter sessão iniciada como membro do grupo Admins do domínio para efetuar
 
 ## <a name="next-steps"></a>Próximos passos
 
-Depois de ter instalado BHOLD núcleos e validar que a instalação foi concluída com êxito, pode instalar módulos adicionais. Neste momento, a base de dados do BHOLD serão essencialmente vazio, que contém apenas uma conta de utilizador, a conta de raiz e uma unidade organizacional (orgunit), o orgunit de raiz. Para adicionar mais utilizadores para a base de dados do BHOLD, ou pode instalar o módulo de conector de gestão de acesso ou o módulo de gerador de modelos do BHOLD, consoante as suas necessidades. Pode utilizar o módulo de conector de gestão de acesso para importar dados de utilizador do serviço de sincronização do FIM ou pode utilizar o gerador de modelo do BHOLD para importar dados de utilizador de um conjunto de ficheiros structured. Para obter mais informações sobre como utilizar o módulo de conector de gestão de acesso, consulte [Guia do laboratório de teste: conector de gestão de acesso do BHOLD](https://technet.microsoft.com/en-us/library/jj853085(v=ws.10).aspx).
+Depois de ter instalado BHOLD núcleos e validar que a instalação foi concluída com êxito, pode instalar módulos adicionais. Neste momento, a base de dados do BHOLD serão essencialmente vazio, que contém apenas uma conta de utilizador, a conta de raiz e uma unidade organizacional (orgunit), o orgunit de raiz. Para adicionar mais utilizadores para a base de dados do BHOLD, ou pode instalar o módulo de conector de gestão de acesso ou o módulo de gerador de modelos do BHOLD, consoante as suas necessidades. Pode utilizar o módulo de conector de gestão de acesso para importar dados de utilizador do serviço de sincronização do FIM ou pode utilizar o gerador de modelo do BHOLD para importar dados de utilizador de um conjunto de ficheiros structured. Para obter mais informações sobre como utilizar o módulo de conector de gestão de acesso, consulte [Guia do laboratório de teste: conector de gestão de acesso do BHOLD](https://technet.microsoft.com/library/jj853085(v=ws.10).aspx).
 
 Para obter mais informações sobre como utilizar o módulo do BHOLD gerador de modelos, consulte:
 
-- [Guia do Microsoft BHOLD Suite conceitos](https://technet.microsoft.com/en-us/library/jj134102(v=ws.10).aspx)
-- [Microsoft BHOLD Suite TechnicalReference](https://technet.microsoft.com/en-us/library/jj134935(v=ws.10).aspx).
+- [Guia do Microsoft BHOLD Suite conceitos](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx)
+- [Microsoft BHOLD Suite TechnicalReference](https://technet.microsoft.com/library/jj134935(v=ws.10).aspx).

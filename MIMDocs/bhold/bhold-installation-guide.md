@@ -1,7 +1,7 @@
 ---
-title: "Instalação do BHOLD SP1 | Microsoft Docs"
-description: "Documentação de instalação do BHOLD SP1"
-keywords: 
+title: Instalação do BHOLD SP1 | Microsoft Docs
+description: Documentação de instalação do BHOLD SP1
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,12 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: c36a9d02e90101b98ade913224e573ed21dc3d5c
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: e0514530c9bceef18cc8eea7ec8b7060110811c2
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Guia de instalação do Microsoft BHOLD Suite SP1 (6.0)
 
@@ -109,7 +109,7 @@ Depois de editar e guardar o ficheiro, execute o comando iisreset para repor o s
 
 ## <a name="upgrading-bhold-suite"></a>Atualizar BHOLD Suite
 
-Não é possível atualizar uma instalação existente do BHOLD Suite. Em vez disso, tem de desinstalar uma instalação existente do BHOLD Suite antes de poder atualizar módulos do BHOLD. Se tiver um modelo de função do BHOLD existente, pode atualizar a base de dados do BHOLD e utilizá-lo quando instala o módulo de BHOLD Core atualizado. Para obter mais informações, consulte [substituir BHOLD Suite com SP1 de BHOLD Suite](https://technet.microsoft.com/en-us/library/jj874043(v=ws.10).aspx).
+Não é possível atualizar uma instalação existente do BHOLD Suite. Em vez disso, tem de desinstalar uma instalação existente do BHOLD Suite antes de poder atualizar módulos do BHOLD. Se tiver um modelo de função do BHOLD existente, pode atualizar a base de dados do BHOLD e utilizá-lo quando instala o módulo de BHOLD Core atualizado. Para obter mais informações, consulte [substituir BHOLD Suite com SP1 de BHOLD Suite](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx).
 
 
 ## <a name="next-steps"></a>Próximos passos

@@ -604,7 +604,7 @@ Neste passo, vamos irão instalar e configurar os módulos de AC do FIM CM na au
 
 7. Clique com botão direito **contoso-CORPCA-CA***,* aponte para **todas as tarefas**e, em seguida, clique em **parar o serviço**. Aguarde até que deixa de serviços de certificados do Active Directory.
 
-8. Clique com botão direito **contoso-CORPCA-CA**** aponte para **todas as tarefas**e, em seguida, clique em **iniciar serviço**.
+8. Clique com botão direito **contoso-CORPCA-CA***,* aponte para **todas as tarefas** e, em seguida, clique em **iniciar serviço**.
 
 9. Minimizar o **autoridade de certificação** consola.
 
@@ -682,7 +682,7 @@ Neste passo, vamos irão instalar e configurar os módulos de AC do FIM CM na au
 
 8. Aguarde até que deixa de serviços de certificados do Active Directory.
 
-9. Clique com botão direito **contoso-CORPCA-CA**** aponte para **todas as tarefas**e, em seguida, clique em **iniciar serviço**.
+9. Clique com botão direito **contoso-CORPCA-CA***,* aponte para **todas as tarefas** e, em seguida, clique em **iniciar serviço**.
 
 10. Fechar o **autoridade de certificação** consola.
 

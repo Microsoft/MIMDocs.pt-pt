@@ -1,7 +1,7 @@
 ---
-title: "Relatórios de instalação do BHOLD | Microsoft Docs"
-description: "Módulo de relatórios do BHOLD permite-lhe gerar relatórios sobre as funções e as políticas de autorização"
-keywords: 
+title: Relatórios de instalação do BHOLD | Microsoft Docs
+description: Módulo de relatórios do BHOLD permite-lhe gerar relatórios sobre as funções e as políticas de autorização
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,12 @@ ms.date: 09/07/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: aa6a263daadc4abdcad0eaaba554b6bc739fbd5f
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 2b8e6935eda6c679b00b5b5b17752a675a257de9
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="bhold-reporting-installation"></a>Relatórios de instalação do BHOLD
 
@@ -22,7 +22,7 @@ O módulo de relatórios do BHOLD dá-lhe a capacidade para gerar relatórios so
 
 ## <a name="bhold-reporting-installation-requirements"></a>Requisitos de instalação de relatórios do BHOLD
 
-Antes de instalar o módulo de relatórios do BHOLD, tem de instalar o módulo de núcleo do BHOLD no servidor no qual planeia instalar o módulo de relatórios do BHOLD. Para obter informações sobre como instalar o módulo do BHOLD Core, consulte [BHOLD Core instalação](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx).
+Antes de instalar o módulo de relatórios do BHOLD, tem de instalar o módulo de núcleo do BHOLD no servidor no qual planeia instalar o módulo de relatórios do BHOLD. Para obter informações sobre como instalar o módulo do BHOLD Core, consulte [BHOLD Core instalação](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx).
 
 >[!IMPORTANT]
 Se estiver a instalar o BHOLD Reporting e BHOLD atestado, tem de instalar relatórios BHOLD antes de instalar o atestado de BHOLD.
@@ -34,7 +34,7 @@ Antes de começar a instalar o módulo de relatórios do BHOLD, tem de estar pre
 | **Item**                                    | **Descrição**                                                                                                                                                                                                           | **Valor**                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilize um fornecedor de segurança no computador/domínio** | Quando selecionada, especifica que a segurança dos serviços de domínio do Active Directory controlará o acesso para BHOLD núcleo.                                                                                                                | Selecione a caixa de verificação. </br>**Importante:** a instalação falhará se esta caixa de verificação não estiver selecionada.                                                                                                                                                                                                                   |
-| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que criou ao instalar BHOLD Core. Para obter mais informações, consulte [BHOLD Core instalação](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome de NetBIOS (abreviado), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
+| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que criou ao instalar BHOLD Core. Para obter mais informações, consulte [BHOLD Core instalação](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome de NetBIOS (abreviado), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
 | **User**                                    | Especifica o nome de início de sessão da conta de utilizador do serviço de núcleo do BHOLD.                                                                                                                                                          | Escreva o nome da conta de utilizador aqui:                                                                                                                                                                                                                                                                                    |
 | **Palavra-passe**                                | Especifica a palavra-passe da conta de utilizador de serviço.                                                                                                                                                                       | Escreva a palavra-passe aqui: </br>**Importante:** não se esqueça de manter esta palavra-passe numa localização segura, oculta.                                                                                                                                                                                                                  |
 
@@ -44,7 +44,7 @@ Para instalar o módulo de relatórios do BHOLD, inicie sessão como membro do g
 
 - BholdReporting*\<versão\>*\_Release.msi
 
-Substitua  *\<versão\>*  com o número de versão da versão do BHOLD Reporting Services que está a instalar.
+Substitua *\<versão\>* com o número de versão da versão do BHOLD Reporting Services que está a instalar.
 
 Para executar o ficheiro de programa como administrador, clique com o botão direito do ficheiro e, em seguida, clique em **executar como administrador**.
 

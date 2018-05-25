@@ -1,7 +1,7 @@
 ---
-title: "Implementar o PAM passo 2 – DC PRIV | Documentos da Microsoft"
-description: "Prepare o controlador de domínio PRIV, que irá fornecer o ambiente de bastião onde está o Privileged Access Management está isolada."
-keywords: 
+title: Implementar o PAM passo 2 – DC PRIV | Documentos da Microsoft
+description: Prepare o controlador de domínio PRIV, que irá fornecer o ambiente de bastião onde está o Privileged Access Management está isolada.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: active-directory-domain-services
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: de3392648f187ce6007bba332c0f191d32980c94
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 9cb36a52525c538d0ac323a3342a9dd6b7f6e42e
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>Passo 2 - Preparar o primeiro controlador de domínio PRIV
 
@@ -299,7 +299,7 @@ Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.
 
 4. Com o Painel de Controlo, o domínio associa o computador PRIVWKSTN ao domínio priv.contoso.local. Será preciso fornecer as credenciais do administrador do domínio PRIV. Quando estiver concluído, reinicie o computador PRIVWKSTN.
 
-Se quiser mais detalhes, veja [proteger estações de trabalho com acesso privilegiado](https://technet.microsoft.com/en-us/library/mt634654.aspx).
+Se quiser mais detalhes, veja [proteger estações de trabalho com acesso privilegiado](https://technet.microsoft.com/library/mt634654.aspx).
 
 No próximo passo, irá preparar um servidor de PAM.
 

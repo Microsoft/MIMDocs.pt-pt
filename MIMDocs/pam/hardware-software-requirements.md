@@ -1,7 +1,7 @@
 ---
 title: Requisitos de software do PAM | Documentos da Microsoft
-description: "Localize os requisitos de hardware e software para uma implementação de Privileged Access Management com êxito"
-keywords: 
+description: Localize os requisitos de hardware e software para uma implementação de Privileged Access Management com êxito
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2ff6fd997dc5bc7e4a4949520e978ae2d8283d4b
-ms.sourcegitcommit: f29f02fa8437fa55e86afd7b0b99a36d2306b96b
+ms.openlocfilehash: b95e23c8beb4990c5649c9358ba85687f148de30
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
 
@@ -76,4 +76,4 @@ Para PRIVDC:
 Para PAMSRV:
 
 - [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
-- [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) ou [do SQL Server 2014](https://msdn.microsoft.com/en-us/library/ms143506(v=sql.120).aspx)
+- [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) ou [do SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)

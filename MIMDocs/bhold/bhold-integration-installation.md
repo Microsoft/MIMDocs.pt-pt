@@ -1,7 +1,7 @@
 ---
-title: "Instalação de integração do BHOLD FIM/MIM | Microsoft Docs"
-description: "Módulo de integração do BHOLD adicionar gestão de funções de self-service para o MIM e de FIM"
-keywords: 
+title: Instalação de integração do BHOLD FIM/MIM | Microsoft Docs
+description: Módulo de integração do BHOLD adicionar gestão de funções de self-service para o MIM e de FIM
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,12 @@ ms.date: 09/12/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: ef68de19bd0eabd6d9203469ecc991d496f05846
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 86ab45d1deaac2a7d697bc9860764e598252a0ef
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="bhold-fimmim-integration-installation"></a>Instalação do BHOLD FIM/MIM integração
 
@@ -30,7 +30,7 @@ Seguem-se os componentes de software que tem de estar presentes no computador an
 - Serviços de informação Internet e ASP.NET
 - Ferramentas do Microsoft Silverlight
 
-Além disso, os módulos do núcleo do BHOLD e conector de gestão de acesso já tem de ser implementados num servidor no ambiente e FIM tem de ser configurado com um ou mais agentes de gestão do BHOLD. Para obter informações sobre como instalar e configurar o módulo do BHOLD Core, consulte [BHOLD Core instalação](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx). Para obter informações sobre como instalar e utilizar o módulo de conector de gestão de acesso, consulte [instalação do conector de gestão de acesso](https://technet.microsoft.com/en-us/library/jj874042(v=ws.10).aspx) e [Guia do laboratório de teste: conector de gestão de acesso do BHOLD](https://technet.microsoft.com/en-us/library/jj853085(v=ws.10).aspx).
+Além disso, os módulos do núcleo do BHOLD e conector de gestão de acesso já tem de ser implementados num servidor no ambiente e FIM tem de ser configurado com um ou mais agentes de gestão do BHOLD. Para obter informações sobre como instalar e configurar o módulo do BHOLD Core, consulte [BHOLD Core instalação](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). Para obter informações sobre como instalar e utilizar o módulo de conector de gestão de acesso, consulte [instalação do conector de gestão de acesso](https://technet.microsoft.com/library/jj874042(v=ws.10).aspx) e [Guia do laboratório de teste: conector de gestão de acesso do BHOLD](https://technet.microsoft.com/library/jj853085(v=ws.10).aspx).
 
 >[!IMPORTANT]
 O nome da base de dados do serviço FIM tem de ser fimservice reinício. Configuração de integração do BHOLD FIM falhará FIM não tenha sido instalado com o nome predefinido de base de dados para o serviço do FIM.
@@ -46,7 +46,7 @@ Além disso, tem de estar preparado para fornecer as informações que o Assiste
 | **Item**                            | **Descrição**                                                                                                                                                                                                               | **Valor**                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilize um fornecedor de segurança no domínio** | Quando selecionada, especifica que a segurança dos serviços de domínio do Active Directory controlará o acesso para BHOLD núcleo.                                                                                                                    | Selecione a caixa de verificação. **Importante:** a instalação falhará se esta caixa de verificação não estiver selecionada.                                                                                                                                                                                                                   |
-| **Domínio**                          | Especifica o domínio que contém o **conta de serviço** que criou ao instalar BHOLD Core. Para obter mais informações, consulte [BHOLD Core instalação](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome de NetBIOS (abreviado), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
+| **Domínio**                          | Especifica o domínio que contém o **conta de serviço** que criou ao instalar BHOLD Core. Para obter mais informações, consulte [BHOLD Core instalação](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome de NetBIOS (abreviado), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
 | **Nome de Utilizador**                        | Especifica o nome de início de sessão da conta de utilizador do serviço de núcleo do BHOLD.                                                                                                                                                              | Escreva o nome da conta de utilizador aqui:                                                                                                                                                                                                                                                                                    |
 | **Palavra-passe**                        | Especifica a palavra-passe da conta de utilizador de serviço.                                                                                                                                                                           | Escrever a palavra-passe aqui: **importante:** não se esqueça de manter esta palavra-passe numa localização segura, oculta.                                                                                                                                                                                                                  |
 
@@ -75,7 +75,7 @@ Para instalar o módulo de integração do BHOLD FIM, inicie sessão como membro
 
 - BholdFIMIntegration*\<versão\>*\_Release.msi
 
-Substitua  *\<versão\>*  com o número de versão da versão do BHOLD FIM integração que está a instalar.
+Substitua *\<versão\>* com o número de versão da versão do BHOLD FIM integração que está a instalar.
 
 Para executar o ficheiro de programa como administrador, clique com o botão direito do ficheiro e, em seguida, clique em **executar como administrador**.
 
@@ -115,7 +115,7 @@ Se o Portal do FIM está configurado para utilizar a segurança SSL, tem de modi
 
 A tabela seguinte lista os ficheiros e as versões originais e as alterações das cadeias para ser editado.
 
-| **Ficheiro**                  | **Cadeia original**                                                                                                                   | **Cadeia foi alterada**                                                                                                                                |
+| **ficheiro**                  | **Cadeia original**                                                                                                                   | **Cadeia foi alterada**                                                                                                                                |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Analytics.aspx            |   http://<BHOLD_Server>/bhold/Analytics/index_fim.HTML | https://<BHOLD_Server_FQDN>/bhold/Analytics/index_fim.HTML       |
 | AttestationCampaigns.aspx |    http://<BHOLD_Server>/bhold/attestation/Campaigns.aspx?hideMenu=1 | https://<BHOLD_Server_FQDN>/bhold/attestation/Campaigns.aspx?hideMenu=1 | 
@@ -157,7 +157,7 @@ Se um aprovador para um pedido de função personalizada não for especificado p
 
 2.  Clique em **iniciar**e, em seguida, clique em **Internet Explorer**.
 
-3.  Na barra de endereço do Internet Explorer, escreva <bhold/http://localhost:5151/core>e, em seguida, prima a tecla Enter.
+3.  Na barra de endereço do Internet Explorer, escreva <http://localhost:5151/bhold/core>e, em seguida, prima a tecla Enter.
 
 4.  Do núcleo do BHOLD página inicial, em **atributo def**, clique em **tipos de atributo**.
 
@@ -189,7 +189,7 @@ Se um aprovador para um pedido de função personalizada não for especificado p
 
 18. No **raiz/unidade organizacional** página, clique em **modificar**.
 
-19. No **modificar os atributos/raiz da unidade organizacional** na página **aprovador**, escreva o nome de utilizador e domínio do utilizador que irá aprovar pedidos de atribuição de função, no formato  *\<domínio\>*\\*\<utilizador\>*, onde  *\<domínio\>*  é o Nome de domínio NetBIOS (abreviado) e  *\<utilizador\>*  é o nome de início de sessão do utilizador.
+19. No **modificar os atributos/raiz da unidade organizacional** na página **aprovador**, escreva o nome de utilizador e domínio do utilizador que irá aprovar pedidos de atribuição de função, no formato  *\<domínio\>*\\*\<utilizador\>*, onde *\<domínio\>* é o Nome de domínio NetBIOS (abreviado) e *\<utilizador\>* é o nome de início de sessão do utilizador.
 20. Clique em **OK**.
 
 >[!IMPORTANT]
@@ -207,7 +207,7 @@ Para fornecer uma melhor segurança de fluxo de trabalho, para além dos aprovad
 
 - notificação*\<n\>*
 
-onde  *\< n \>*  indica um sufixo numérico opcional para fornecer vários atributos do mesmo tipo.
+onde *\<n\>* indica um sufixo numérico opcional para fornecer vários atributos do mesmo tipo.
 
 ### <a name="verify-approval-workflows-configured-in-the-fim-service"></a>Certifique-se de fluxos de trabalho de aprovação configurados no serviço do FIM
 

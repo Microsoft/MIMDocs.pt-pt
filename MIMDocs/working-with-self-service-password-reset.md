@@ -12,11 +12,11 @@ ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 18c3e4ea623b4b092bbd9236c5fa1b2a63af0486
-ms.sourcegitcommit: 637988684768c994398b5725eb142e16e4b03bb3
+ms.openlocfilehash: e2c252771bd114a3c70b900c8c089e09eff8cd23
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 >[!IMPORTANT]
 Devido ao anúncio de descontinuação do Azure multi-factor Authentication Software Development Kit. O Azure MFA SDK será suportado para clientes existentes até à data de extinção de 14 de Novembro de 2018. Novos clientes e os clientes atuais será não é possível transferir o SDK já através do portal clássico do Azure. Para transferir, terá de aceder ao suporte de cliente do Azure para receber o pacote de credenciais do serviço MFA gerado. <br> A equipa de desenvolvimento Microsoft está a funcionar no planeamento de alterações para o MFA através da integração com o SDK do servidor MFA. Isto será incluído na correção futuras 2018 antecipado.
@@ -65,7 +65,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Registar o fornecedor de autenticação multifator no Azure
 
-1.  Criar um [fornecedor de MFA](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider).
+1.  Criar um [fornecedor de MFA](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider).
 
 2. Abrir um incidente de suporte e solicitar o direto SDK para ASP.net 2.0 c#. O SDK apenas será fornecido aos utilizadores atuais de MIM com a MFA porque o SDK direct foi preterido. Novos clientes devem adotar a próxima versão de MIM que integrar com o servidor MFA.
 

@@ -1,7 +1,7 @@
 ---
-title: "Instalação de gerador de modelo do BHOLD | Microsoft Docs"
-description: "Modelo do BHOLD permite-lhe aos dados da estrutura de várias origens"
-keywords: 
+title: Instalação de gerador de modelo do BHOLD | Microsoft Docs
+description: Modelo do BHOLD permite-lhe aos dados da estrutura de várias origens
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,12 @@ ms.date: 09/07/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 96363fb3b0067ff5c8f8c2f32e9a855464038653
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: 3d45d18042ccda83873aa929101222c15f36246a
+ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="bhold-model-generator-installation"></a>Instalação de gerador de modelo do BHOLD
 
@@ -24,7 +24,7 @@ Ao utilizar o módulo de gerador de modelos do BHOLD, pode estrutura dados a par
 
 Antes de instalar o módulo de gerador de modelos do BHOLD, tem de instalar o seguinte:
 
-1. Módulo de núcleo do BHOLD no servidor no qual planeia instalar o módulo de gerador de modelos do BHOLD. Para obter informações sobre como instalar o módulo do BHOLD Core, consulte [BHOLD Core instalação](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx).
+1. Módulo de núcleo do BHOLD no servidor no qual planeia instalar o módulo de gerador de modelos do BHOLD. Para obter informações sobre como instalar o módulo do BHOLD Core, consulte [BHOLD Core instalação](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx).
 
 2. O Microsoft OLE DB Provider para Microsoft Jet tem de estar instalado. Para obter mais informações consulte [neste artigo](http://support.microsoft.com/kb/271908).
 
@@ -39,18 +39,18 @@ Base de dados do Microsoft Access motor 2010 Redistributable
 
  
 
-*De \<*  <http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems>*\>*
+*Do \<*<http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems>*\>*
 
  
 
-<https://www.microsoft.com/en-us/download/Confirmation.aspx?ID=13255>
+<https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255>
 
 **Definições da conta**
 
 | **Item**                                    | **Descrição**                                                                                                                                                                                                           | **Valor**                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilize um fornecedor de segurança no computador/domínio** | Quando selecionada, especifica que a segurança dos serviços de domínio do Active Directory controlará o acesso para BHOLD núcleo.                                                                                                                | Selecione a caixa de verificação. **Importante:** a instalação falhará se esta caixa de verificação não estiver selecionada.                                                                                                                                                                                                                   |
-| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que criou ao instalar BHOLD Core. Para obter mais informações, consulte [BHOLD Core instalação](https://technet.microsoft.com/en-us/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome de NetBIOS (abreviado), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
+| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que criou ao instalar BHOLD Core. Para obter mais informações, consulte [BHOLD Core instalação](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome de NetBIOS (abreviado), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
 | **User**                                    | Especifica o nome de início de sessão da conta de utilizador do serviço de núcleo do BHOLD.                                                                                                                                                          | Escreva o nome da conta de utilizador aqui:                                                                                                                                                                                                                                                                                    |
 | **Palavra-passe**                                | Especifica a palavra-passe da conta de utilizador de serviço.                                                                                                                                                                       | Escrever a palavra-passe aqui: **importante:** não se esqueça de manter esta palavra-passe numa localização segura, oculta.                                                                                                                                                                                                                  |
 
@@ -68,13 +68,13 @@ Para instalar o módulo de gerador de modelos do BHOLD, inicie sessão como memb
 
 - BholdModelGenerator  *\<versão\>*\_Release.msi
 
-Substitua  *\<versão\>*  com o número de versão da versão do gerador de modelos do BHOLD que está a instalar.
+Substitua *\<versão\>* com o número de versão da versão do gerador de modelos do BHOLD que está a instalar.
 
 Para executar o ficheiro de programa como administrador, clique com o botão direito do ficheiro e, em seguida, clique em **executar como administrador**.
 
 ## <a name="next-steps"></a>Próximos passos
 
-- Para obter informações sobre como criar ficheiros de entrada [referência técnica do Microsoft BHOLD Suite](https://technet.microsoft.com/en-us/library/jj134935(v=ws.10).aspx)
+- Para obter informações sobre como criar ficheiros de entrada [referência técnica do Microsoft BHOLD Suite](https://technet.microsoft.com/library/jj134935(v=ws.10).aspx)
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
 - [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

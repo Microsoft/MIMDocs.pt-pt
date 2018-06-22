@@ -1,7 +1,7 @@
 ---
 title: Compreender os componentes do PAM | Documentos da Microsoft
-description: "A Gestão de Acesso Privilegiado partilha alguns componentes com o MIM e tem de alguns próprios. Saiba como estes funcionam em conjunto."
-keywords: 
+description: A Gestão de Acesso Privilegiado partilha alguns componentes com o MIM e tem de alguns próprios. Saiba como estes funcionam em conjunto.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052370"
 ---
 # <a name="understand-the-components-of-pam"></a>Compreender os componentes de PAM
 

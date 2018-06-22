@@ -1,7 +1,7 @@
 ---
-title: "Definir funções com privilégios para o PAM | Documentos da Microsoft"
-description: "Decidir que funções com privilégios devem ser geridas e definir a política de gestão para cada uma."
-keywords: 
+title: Definir funções com privilégios para o PAM | Documentos da Microsoft
+description: Decidir que funções com privilégios devem ser geridas e definir a política de gestão para cada uma.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 210195369d2ecd610569d57d0f519d683ea6a13b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 09/01/2017
+ms.locfileid: "21943762"
 ---
 # <a name="define-roles-for-privileged-access-management"></a>Definir funções para o Privileged Access Management
 

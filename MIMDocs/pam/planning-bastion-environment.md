@@ -1,7 +1,7 @@
 ---
 title: Planear um ambiente bastion | Documentos da Microsoft
-description: 
-keywords: 
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 09/14/2017
+ms.locfileid: "22052421"
 ---
 # <a name="planning-a-bastion-environment"></a>Planear um ambiente bastion
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 66db63fe2813130764e52381f4f9c8e549d77d39
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34449702"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Processamento de dados do Microsoft Identity Manager 
 

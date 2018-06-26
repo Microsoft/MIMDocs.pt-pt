@@ -12,10 +12,10 @@ ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
 ms.openlocfilehash: 6bcf9ab26ba38f3c6eefbdb315d4975320a597b9
-ms.sourcegitcommit: 66db63fe2813130764e52381f4f9c8e549d77d39
+ms.sourcegitcommit: d82c05aa814015fc6bdab37133eafec3366bea3b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34449702"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Processamento de dados do Microsoft Identity Manager 

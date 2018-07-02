@@ -17,11 +17,12 @@ ms.openlocfilehash: 1054d611ae0b230005a0f79be69f5c6c2bba7af2
 ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34479303"
 ---
 # <a name="supported-platforms-for-mim-2016"></a>Plataformas suportadas para o MIM 2016
 
-A tabela seguinte descreve as plataformas suportadas e a versão de cada componente do Microsoft Identity Manager 2016. As versões marcados com um * só são suportados em MIM 2016 service pack 1 com a correção mais recente.
+A tabela seguinte descreve as plataformas suportadas e a versão de cada componente do Microsoft Identity Manager 2016. As versões marcadas com um * só são suportadas em MIM 2016 service pack 1 com a correção mais recente.
 
 
 | **Componente do MIM** | **Plataforma** | **Versão** |
@@ -35,12 +36,12 @@ A tabela seguinte descreve as plataformas suportadas e a versão de cada compone
 | | Sistema ligado adicional (opcional) | Serviços de Domínio do Active Directory<br/>Active Directory<br/>Serviços LDS<br/>SQL Server 2008 ou posterior<br/>SharePoint Server 2013<br/> SharePoint Server 2016 * <br/> Outros produtos de terceiros |
 | **Serviço e Portal do MIM** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | |Cenário de PAM: Windows Server | Windows Server 2012 R2 <br/> Windows Server 2016 * |
-| |Cenário de PAM: Active Directory para a floresta de PAM do ambiente bastion | Windows Server 2012 R2 <br/> Windows Server 2016 * |
+| |Cenário de PAM: Active Directory para o ambiente de bastion floresta de PAM | Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | |Cenário de PAM: Active Directory para florestas do PAM cenário existentes (CORP) | Windows Server 2008 <br/> Windows Server 2008 R2 * <br/> Windows Server 2012 * <br/> Windows Server 2012 R2 * <br/> Windows Server 2016 * |
 | | Base de dados do Serviço MIM | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 |
 | | SharePoint | SharePoint Foundation 2010<br/>SharePoint Foundation 2013 SP1 <br/> SharePoint 2016 * |
-| | Servidor de correio para a aprovação do Serviço MIM e e-mails de gestão de grupos (opcional) | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * (apenas de notificação antes de compilação [4.4.1749.0](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history#version-4417490) |
-| | Browser | Todos os browsers principais suportado * (limitado de dispositivos móveis)|
+| | Servidor de correio para a aprovação do Serviço MIM e e-mails de gestão de grupos (opcional) | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * <br/> Exchange Online * (só de notificação antes da compilação [4.4.1749.0](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history#version-4417490) |
+| | Browser | Todos os browsers principais suportadas * (limitado de dispositivos móveis)|
 | **Relatórios do Serviço MIM** | Windows Server |  Windows Server 2008 R2 SP1<br/>Windows Server 2012 <br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Armazém de dados | System Center 2012 Service Manager <br/> System Center 2012 R2 Service Manager </br> System Center 2016 Service Manager * (com 4.4.1459)<br/> [Compatibilidade de Versões do SQL Server para o System Center 2016](https://docs.microsoft.com/system-center/scsm/upgrade-to-sm-2016)
  |
@@ -54,8 +55,8 @@ A tabela seguinte descreve as plataformas suportadas e a versão de cada compone
 | | Base de dados do MIM CM | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2<br/>SQL Server 2014 SP1 <br/> SQL Server 2016 * |
 | **Gestão de Certificados do MIM** (Aplicação) | Windows | Windows 8<br/>Windows 8.1<br/>Windows 10 |
 | **Gestão de certificados de MIM** (em massa do cliente) | Windows | Windows 7 |
-| **Gestão de certificados de MIM** (ActiveX de cliente baseada em smart cards) | Windows | Windows 7 </br> Windows 8 </br> Windows 8.1 </br> Windows 10 |
+| **Gestão de certificados de MIM** (ActiveX do cliente com base em cartão inteligente) | Windows | Windows 7 </br> Windows 8 </br> Windows 8.1 </br> Windows 10 |
 | **MIM BHOLD Suite** | Windows Server | Windows Server 2008 R2 SP1<br/>Windows Server 2012 R2 <br/> Windows Server 2016 * |
 | | Base de dados do BHOLD | SQL Server 2008 R2 SP3<br/>SQL Server 2012 SP2 <br/> SQL Server 2014 * <br/> SQL Server 2016 * |
 | | Servidor de correio (opcional) | Exchange Server 2010 SP3<br/>Exchange Server 2013 SP1 <br/> Exchange Server 2016 * |
-| | browser | Internet Explorer suportado browsers com o Silverlight |
+| | browser | Internet Explorer suportado navegadores com o Silverlight |

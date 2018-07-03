@@ -1,7 +1,7 @@
 ---
-title: "Implementar o PAM passo 3 – Servidor de PAM | Documentos da Microsoft"
-description: "Prepare um servidor PAM que irá alojar o SQL e SharePoint para a implementação Privileged Access Management."
-keywords: 
+title: Implementar o PAM passo 3 – Servidor de PAM | Documentos da Microsoft
+description: Prepare um servidor PAM que irá alojar o SQL e SharePoint para a implementação Privileged Access Management.
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -13,17 +13,18 @@ ms.assetid: 68ec2145-6faa-485e-b79f-2b0c4ce9eff7
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fd52a191a0592441131249451011c4e2f026ea48
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: 3eb79847baed69ef53a27e09443ff9bf4647b347
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289919"
 ---
 # <a name="step-3--prepare-a-pam-server"></a>Passo 3 – Preparar um servidor de PAM
 
->[!div class="step-by-step"]
-[« Passo 2](step-2-prepare-priv-domain-controller.md)
-[Passo 4 »](step-4-install-mim-components-on-pam-server.md)
+> [!div class="step-by-step"]
+> [« Passo 2](step-2-prepare-priv-domain-controller.md)
+> [Passo 4 »](step-4-install-mim-components-on-pam-server.md)
 
 ## <a name="install-windows-server-2012-r2"></a>Instalar o Windows Server 2012 R2
 
@@ -33,7 +34,7 @@ Numa terceira máquina virtual, instale o Windows Server 2012 R2, especificament
 
     ![Escolha Windows Server Standard com GUI - captura de ecrã](media/PAM_GS_Select_WS2012.png)
 
-2. Reveja e aceite os termos de licenciamento.
+2. Reveja e aceite os termos do licenciamento.
 
 3.  Uma vez que o disco estará vazio, selecione **Personalizar: instalar apenas o Windows** e utilizar o **espaço em disco não inicializado**.
 
@@ -93,13 +94,13 @@ Existem duas formas de alterar a configuração do IIS para permitir que as apli
 
 Se pretender utilizar o PowerShell:
 
-1.  Clique com o botão direito do rato no PowerShell e selecione **Executar como administrador**.
-2.  Pare o IIS e desbloqueie as definições de anfitrião das aplicações utilizando estes comandos
-    ```CMD
-    iisreset /STOP
-    C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
-    iisreset /START
-    ```
+1. Clique com o botão direito do rato no PowerShell e selecione **Executar como administrador**.
+2. Pare o IIS e desbloqueie as definições de anfitrião das aplicações utilizando estes comandos
+   ```CMD
+   iisreset /STOP
+   C:\Windows\System32\inetsrv\appcmd.exe unlock config /section:windowsAuthentication -commit:apphost
+   iisreset /START
+   ```
 
 Se pretender utilizar um editor de texto, como o Bloco de Notas::
 
@@ -204,7 +205,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 ## <a name="set-the-website-as-the-local-intranet"></a>Definir o site como a intranet local
 
 1. Inicie o Internet Explorer e abra um novo separador do browser
-2. Navegue para http://pamsrv.priv.contoso.local:82/ e inicie sessão como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
+2. Navegue para http://pamsrv.priv.contoso.local:82/ e inicie sessão como priv\mimadmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
 3. No Internet Explorer, abra as **Opções da Internet**, mude para o separador **Segurança**, selecione **Intranet local** e adicione o URL `http://pamsrv.priv.contoso.local:82/`.
 
 Se o início de sessão falhar, os SPNs Kerberos criados anteriormente no [Passo 2](step-2-prepare-priv-domain-controller.md) podem ter de ser atualizados.
@@ -215,6 +216,6 @@ Utilizando os **Serviços** (localizado em Ferramentas Administrativas), inicie 
 
 No Passo 4, começará a instalar os componentes do MIM no servidor de PAM.
 
->[!div class="step-by-step"]
-[« Passo 2](step-2-prepare-priv-domain-controller.md)
-[Passo 4 »](step-4-install-mim-components-on-pam-server.md)
+> [!div class="step-by-step"]
+> [« Passo 2](step-2-prepare-priv-domain-controller.md)
+> [Passo 4 »](step-4-install-mim-components-on-pam-server.md)

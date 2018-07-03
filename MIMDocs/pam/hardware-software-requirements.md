@@ -12,18 +12,19 @@ ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b95e23c8beb4990c5649c9358ba85687f148de30
-ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
+ms.openlocfilehash: c53d8cc815f792d1a1246a7434350f1cfb087844
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36288967"
 ---
 # <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
 
 A Privileged Access Management não tem requisitos de hardware para além das plataformas de software subjacentes. Basta certificar-se de que tem suficiente memória ou espaço em disco e conectividade de rede.
 
->[!IMPORTANT]
-Este artigo fornece os requisitos mínimos para uma implementação básica. Não se destina a demonstrar elevada disponibilidade, desempenho ou escalabilidade. Não representa uma topologia de implementação recomendada para grandes empresas ou ambientes de produção.
+> [!IMPORTANT]
+> Este artigo fornece os requisitos mínimos para uma implementação básica. Não se destina a demonstrar elevada disponibilidade, desempenho ou escalabilidade. Não representa uma topologia de implementação recomendada para grandes empresas ou ambientes de produção.
 
 ## <a name="installing-from-software-packages"></a>Instalar a partir de pacotes de software
 

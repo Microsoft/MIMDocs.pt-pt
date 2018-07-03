@@ -2,40 +2,40 @@
 title: Microsoft Identity Manager 2016 | Documentos da Microsoft
 description: O MIM inclui as funcionalidades de gestão de acesso do FIM 2010 e ajuda-o a gerir utilizadores, credenciais, políticas e acesso dentro da sua organização.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
-ms.date: 10/17/2017
+author: billmath
+ms.author: billmath
+manager: mtillman
+ms.date: 05/02/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cd8191e3fdf571f4140bcdd51c54aa25bd663215
-ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
+ms.openlocfilehash: bd483ecb0abc3e4bb4444c87715971a3fba9820b
+ms.sourcegitcommit: 5405ed10fea6f50b711eca1153446c04d4faff7a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23451162"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36927192"
 ---
 # <a name="microsoft-identity-manager-2016"></a>Microsoft Identity Manager 2016
 
 O Microsoft Identity Manager (MIM) 2016 baseia-se nas capacidades de gestão de identidades e acessos do [FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx). Tal como o respetivo antecessor, o MIM ajuda-o a gerir os utilizadores, as credenciais, as políticas e o acesso na sua organização.  Além disso, o MIM 2016 adiciona uma experiência híbrida, capacidades de gestão de acesso privilegiado e suporte para novas plataformas.
 
-Para além das funcionalidades de gestão de identidade existentes incluída no [FIM](https://technet.microsoft.com/library/jj133868). O MIM 2016 fornece novas funcionalidades e melhoramentos, tais como:
+Além da funcionalidade de gestão de identidade existente incluída no [FIM](https://technet.microsoft.com/library/jj133868). O MIM 2016 fornece aprimoramentos e novos recursos, tais como:
 
 - Privileged Identity Management
-- Nova funcionalidade na gestão de certificados
+- Novas funcionalidades na gestão de certificados
   - [Referência à API REST da Gestão de Certificados](./reference/certificate-management-rest-api-reference.md)
   - Suporte para topologias de múltiplas florestas.
   - [Uma aplicação do Windows para smart card virtual](working-with-mim-certificate-manager.md)
   - Eventos atualizados e capacidades de resolução de problemas. 
-- [Os cenários personalizados](working-with-self-service-password-reset.md) incluem agora o desbloqueio de conta e o MFA do Azure a porta (a autenticação multifator) para a reposição da palavra-passe.
+- [Cenários de Self-serviços](working-with-self-service-password-reset.md) incluem agora o desbloqueio de conta e o MFA do Azure a porta (autenticação multifator) de reposição de palavra-passe.
 
 ## <a name="hybrid-experience"></a>Experiência híbrida
 
-Microsoft Identity Manager 2016 funciona em conjunto com [do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) para lhe dar controlo sobre o seu ambiente completo. Os relatórios híbridos no Azure AD apresentam os seus dados da cloud e do local no mesmo sítio. Além disso, o [portal reposição personalizada de palavra-passe](working-with-self-service-password-reset.md) suporta Azure autenticação multifator (MFA).
+Microsoft Identity Manager 2016 funciona em conjunto com [do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) para lhe dar controlo sobre o seu ambiente completo. Os relatórios híbridos no Azure AD apresentam os seus dados da cloud e do local no mesmo sítio. Além disso, o [portal de reposição personalizada de palavra-passe](working-with-self-service-password-reset.md) suporta o multi-factor authentication (MFA).
 
 ## <a name="privileged-identity-management"></a>Privileged Identity Management
 
@@ -46,5 +46,5 @@ O MIM suporta uma solução de Privileged Identity Management no local para geri
 ## <a name="related-topics"></a>Tópicos relacionados
 
 - Microsoft Identity Manager está ainda intimamente relacionado com o respetivo predecessor, o Forefront Identity Manager. Se ainda utilizar FIM ou desejar referir-se a documentação adicional, observe o [Mapa de Documentação do FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx).
-- [Considerações sobre a topologia de implementação de MIM](topology-considerations.md) este artigo apresenta várias topologias de implementação que pode considerar implementar.
+- [Considerações sobre a topologia da implementação de MIM](topology-considerations.md) este artigo apresenta várias topologias de implementação que pode considerar implementar.
 - [Guia de planeamento de capacidade](capacity-planning-guide.md) pode utilizar este guia, juntamente com ambientes de teste, para compreender o âmbito adequado para a sua implementação.

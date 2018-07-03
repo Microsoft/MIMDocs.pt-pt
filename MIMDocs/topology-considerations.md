@@ -1,7 +1,7 @@
 ---
-title: "Guia da topologia de implementação | Documentos da Microsoft"
-description: "Compreenda os componentes do MIM 2016 e obtenha sugestões sobre como implementá-los no seu ambiente."
-keywords: 
+title: Guia da topologia de implementação | Documentos da Microsoft
+description: Compreenda os componentes do MIM 2016 e obtenha sugestões sobre como implementá-los no seu ambiente.
+keywords: ''
 author: billmath
 ms.author: barclayn
 manager: mbaldwin
@@ -12,18 +12,19 @@ ms.technology: security
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e257a2e64225a4bc545d8a9384167819412e939b
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.openlocfilehash: f67068709cf9910fa04110fce75623fd2f94ca4a
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289817"
 ---
 # <a name="topology-considerations"></a>Considerações sobre a topologia
 Pode implementar componentes do Microsoft Identity Manager (MIM) no mesmo servidor ou em vários servidores com várias configurações. A topologia que selecionar para a implementação afetará o desempenho que pode alcançar no MIM. Este artigo apresenta várias topologias de implementação que pode considerar implementar.
 
 
->[!NOTE]
-Estas opções aplicam-se apenas às implementações que utilizem a Sincronização do MIM, o Serviço do MIM e o Portal do MIM para a gestão de identidades.  As implementações que utilizem o MIM CM, o MIM BHOLD Suite, ou que tratem da gestão de acesso privilegiado têm opções de implementação diferentes.
+> [!NOTE]
+> Estas opções aplicam-se apenas às implementações que utilizem a Sincronização do MIM, o Serviço do MIM e o Portal do MIM para a gestão de identidades.  As implementações que utilizem o MIM CM, o MIM BHOLD Suite, ou que tratem da gestão de acesso privilegiado têm opções de implementação diferentes.
 
 
 ## <a name="mim-components"></a>Componentes do MIM

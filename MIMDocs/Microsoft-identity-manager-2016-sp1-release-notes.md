@@ -12,11 +12,12 @@ ms.technology: security
 ms.assetid: ccdd8a9f-02da-440a-81a8-354800dcd2a8
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 98d21076801bbe60b7a2d2d5b7e1c41d4bce1b4a
-ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
+ms.openlocfilehash: 9b12f8bebf44847d76e94fe083266b1b32b608a9
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290293"
 ---
 # <a name="whats-new-for-microsoft-identity-manager-2016-service-pack-1"></a>Novidades do Microsoft Identity Manager 2016 Service Pack 1 #
 
@@ -42,8 +43,8 @@ Também queremos saber a sua opinião! Se tiver comentários ou preocupações q
 
 - **Suporte da floresta (bastion) “PRIV” da PAM para o nível funcional do Windows Server 2016:** o Serviço PAM do MIM pode ser configurado num ambiente com controladores de domínio em execução no nível funcional da floresta dos Serviços de Domínio do Active Directory do Windows Server 2016. Quando configurado, a permissão Kerberos do utilizador terá um prazo limitado ao tempo restante da respetiva ativação da função.
 
-    >[!Note]
-    Se optar por manter o nível funcional da floresta do Windows Server 2012 R2 no domínio CORP, recomenda-se instalar [KB 2919442](https://support.microsoft.com/en-us/kb/2919442) e [ 2919355](https://support.microsoft.com/en-us/kb/2919355) no controlador de domínio CORP.
+  > [!Note]
+  >   Se optar por manter o nível funcional da floresta do Windows Server 2012 R2 no domínio CORP, recomenda-se instalar [KB 2919442](https://support.microsoft.com/en-us/kb/2919442) e [ 2919355](https://support.microsoft.com/en-us/kb/2919355) no controlador de domínio CORP.
 
 - **Elevação da conta com privilégios para grupos exclusivos da floresta (bastion) “PRIV”:** agora, os administradores podem informar o Serviço MIM relativamente a grupos e utilizadores exclusivos da floresta “PRIV”. Este procedimento permite a estes grupos e utilizadores serem incluídos nas funções de PAM.  Em seguida, podem ser ativados para uma função e associados a grupos na floresta “PRIV”.
 
@@ -51,8 +52,8 @@ Também queremos saber a sua opinião! Se tiver comentários ou preocupações q
 
 - **Cmdlets da PAM para a configuração Silo de Políticas de Autenticação:** o service pack 1 introduz Cmdlets novos para reforçar a segurança da floresta bastion. Estes Cmdlets criam automaticamente um Silo de Políticas de Autenticação, vinculado a um Modelo de Políticas de Autenticação.
 
-    >[!Note]
-    Estes Cmdlets são executados automaticamente como parte dos scripts de implementações.
+  > [!Note]
+  >   Estes Cmdlets são executados automaticamente como parte dos scripts de implementações.
 
 
 ## <a name="platform-support"></a>Suporte da Plataforma
@@ -77,8 +78,8 @@ Antes de começar
 Tem de atualizar o motor de Sincronização do MIM antes de atualizar o portal e o serviço MIM.
 Tem de criar uma cópia de segurança das bases de dados de Sincronização do MIM e MIMService.
 
-  1. Desinstale o componente do Microsoft Identity Manager que está a atualizar
-  2. Depois de concluída a desinstalação, abra a página inicial localizada no suporte de dados de instalação “FIMSplash.htm”
-  3. Selecione o componente do MIM a atualizar
-  4. Siga os avisos para continuar com a instalação
-    * Instalação do Portal e do Serviço MIM: ao escolher o Exchange Online como a conta de correio, introduza o endereço de e-mail e as credenciais da conta do Exchange Online no ecrã seguinte.
+1. Desinstale o componente do Microsoft Identity Manager que está a atualizar
+2. Depois de concluída a desinstalação, abra a página inicial localizada no suporte de dados de instalação “FIMSplash.htm”
+3. Selecione o componente do MIM a atualizar
+4. Siga os avisos para continuar com a instalação
+   * Instalação do Portal e do Serviço MIM: ao escolher o Exchange Online como a conta de correio, introduza o endereço de e-mail e as credenciais da conta do Exchange Online no ecrã seguinte.

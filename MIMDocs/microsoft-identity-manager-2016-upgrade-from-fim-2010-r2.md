@@ -1,7 +1,7 @@
 ---
 title: Atualizar do FIM 2010 R2 para o Microsoft Identity Manager 2016 | Documentos da Microsoft
-description: "Saiba como atualizar os componentes do FIM 2010 R2 e, em seguida, instale os componentes novos no MIM 2016."
-keywords: 
+description: Saiba como atualizar os componentes do FIM 2010 R2 e, em seguida, instale os componentes novos no MIM 2016.
+keywords: ''
 author: fimguy
 ms.author: barclayn
 manager: mbaldwin
@@ -13,10 +13,11 @@ ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 46cc77654543045d1dbf1f1a750e76c4a35b727e
-ms.sourcegitcommit: f077508b5569e2a96084267879c5b6551e1e0905
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289895"
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>Atualização do Forefront Identity Manager 2010 R2
 

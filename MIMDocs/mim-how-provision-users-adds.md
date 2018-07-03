@@ -1,7 +1,7 @@
 ---
 title: Microsoft Identity Manager 2016 | Documentos da Microsoft
-description: "Reveja o processo de criação de utilizadores no AD DS com o Microsoft Identity Manager 2016"
-keywords: 
+description: Reveja o processo de criação de utilizadores no AD DS com o Microsoft Identity Manager 2016
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -9,12 +9,13 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 171aa1a2e19ea9f78f9fadbc7368404702095d71
-ms.sourcegitcommit: 0d8b19c5d4bfd39d9c202a3d2f990144402ca79c
+ms.assetid: ''
+ms.openlocfilehash: a12a8436d70b3ae866df0f615e10a3d76f791168
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290106"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
 
@@ -87,8 +88,8 @@ A seguinte ilustração descreve o ambiente necessário.
 
 Pode executar todos os componentes num computador.
 
->[!NOTE]
-Para obter mais informações sobre como configurar o MIM, veja o [Guia de Instalação do FIM](http://go.microsoft.com/FWLink/p/?LinkId=165845).
+> [!NOTE]
+> Para obter mais informações sobre como configurar o MIM, veja o [Guia de Instalação do FIM](http://go.microsoft.com/FWLink/p/?LinkId=165845).
 
 ## <a name="scenario-components-list"></a>Lista de Componentes do Cenário
 
@@ -160,8 +161,8 @@ Para criar um utilizador no AD DS, terá de transitar o DN do objeto. Para além
 
 No AD DS, ainda é comum os utilizadores utilizarem o atributo sAMAccountName para iniciar sessão no serviço de diretório. Se não especificar um valor para este atributo, o serviço de diretório irá gerar um valor aleatório para o mesmo. No entanto, estes valores aleatórios não são fáceis de utilizar e é por este motivo que as exportações para o AD DS costumam incluir uma versão deste atributo que seja fácil de utilizar. Para permitir que um utilizador inicie sessão no AD DS, terá também de incluir uma palavra-passe criada através do atributo unicodePwd na lógica de exportação.
 
->[!Note]                                
-Certifique-se de que o valor que especificar com o atributo unicodePwd está em conformidade com as políticas de palavra-passe do AD DS de destino.
+> [!Note]
+> Certifique-se de que o valor que especificar com o atributo unicodePwd está em conformidade com as políticas de palavra-passe do AD DS de destino.
 
 Ao definir uma palavra-passe para contas AD DS, também terá de criar uma conta ativada. Poderá fazê-lo ao definir o atributo userAccountControl. Para obter mais informações sobre o atributo userAccountControl, veja [Using FIM to Enable or Disable Accounts in Active Directory (Utilizar o FIM para Ativar ou Desativar Contas no Active Directory)](http://go.microsoft.com/FWLink/p/?LinkId=189658).
 
@@ -180,8 +181,8 @@ Para obter mais informações, veja os seguintes tópicos no menu Ajuda:
 - Utilizar o Agente de Gestão do Active Directory
 - Configurar Partições de Diretório
 
->[!Note]
-Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
+> [!Note]
+> Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
 
 ### <a name="step-4-create-the-fabrikam-fimma-management-agent"></a>Passo 4: criar o agente de gestão do FIMMA da Fabrikam
 
@@ -194,7 +195,7 @@ A seguinte tabela indica as definições específicas do cenário mais important
 | Página de estruturador do agente de gestão | Configuração |
 |------------|------------------------------------|
 | Criar agente de gestão | 1. **Agente de gestão para:** Agente de Gestão do Serviço FIM <br/> 2. **Nome** FIMMA da Fabrikam |
-| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183; **Base de dados:** FIMService <br/> &#183; **Endereço base do Serviço FIM:** http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
+| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183; **Base de dados:** FIMService <br/> &#183;**Endereço base do serviço de FIM:** http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
 | Selecionar Tipos de objeto                                     | Para além dos Tipos de objeto selecionados, selecione **Pessoa.**   |
 | Configurar mapeamentos de Tipos de objetos                          | Para além dos mapeamentos de tipos de objetos existentes, adicione um mapeamento da pessoa **Tipo de Objeto Origem de Dados** à pessoa **Tipo de Objeto Metaverso**. |
 | Configurar fluxo de atributos                                | Para além dos mapeamentos de fluxos de atributos existentes, adicione os seguintes mapeamentos de fluxos de atributos: <br/><br/> ![Fluxo de atributos](media/how-provision-users-adds/image018.jpg) |
@@ -211,8 +212,8 @@ Para obter mais informações, consulte os seguintes tópicos do menu de ajuda:
 
 -   Configurar Partições de Diretório
 
->[!NOTE]
- Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
+> [!NOTE]
+>  Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
 
 ### <a name="step-5-create-the-run-profiles"></a>Passo 5: criar os perfis de execução
 
@@ -226,12 +227,12 @@ A seguinte tabela indica os perfis de execução que tem de criar para o cenári
 Crie perfis de execução para cada agente de gestão conforme a tabela anterior.
 
 
->[!Note]
-Para obter mais informações, veja o tópico Criar um Perfil de Execução do Agente de Gestão na Ajuda do MIM.                                                                                                                  
-
-
->[!Important]
- Verifique se o aprovisionamento se encontra ativado no seu ambiente. Pode fazê-lo ao executar o script. Veja Using Windows PowerShell to Enable Provisioning (Utilizar o Windows PowerShell para Ativar o Aprovisionamento) (http://go.microsoft.com/FWLink/p/?LinkId=189660).
+> [!Note]
+> Para obter mais informações, veja o tópico Criar um Perfil de Execução do Agente de Gestão na Ajuda do MIM.                                                                                                                  
+> 
+> 
+> [!Important]
+>  Verifique se o aprovisionamento se encontra ativado no seu ambiente. Pode fazê-lo ao executar o script, utilizando o Windows PowerShell para ativar o aprovisionamento (http://go.microsoft.com/FWLink/p/?LinkId=189660).
 
 
 ## <a name="configuring-the-fim-service"></a>Configurar o Serviço FIM
@@ -243,7 +244,7 @@ Para o cenário descrito neste guia, tem de configurar uma política de aprovisi
 
 O objetivo desta política de aprovisionamento é incluir grupos no âmbito da Regra de Sincronização de Saída do AD. Ao incluir o seu recurso no âmbito da regra de sincronização, está a permitir que o motor de sincronização aprovisione o recurso no AD DS de acordo com a sua configuração.
 
-Para configurar o serviço FIM, aceda a http://localhost/identitymanagement no Windows Internet Explorer®. Na página do Portal do MIM Portal, para criar a política de aprovisionamento, aceda às páginas relacionadas da secção Administração. Para verificar a sua configuração, deve executar o script [Using Windows PowerShell to document your provisioning policy configuration (Utilizar o Windows PowerShell para documentar a configuração da sua política de aprovisionamento)](http://go.microsoft.com/FWLink/p/?LinkId=189661).
+Para configurar o serviço FIM, navegue na Windows Internet Explorer® para http://localhost/identitymanagement. Na página do Portal do MIM Portal, para criar a política de aprovisionamento, aceda às páginas relacionadas da secção Administração. Para verificar a sua configuração, deve executar o script [Using Windows PowerShell to document your provisioning policy configuration (Utilizar o Windows PowerShell para documentar a configuração da sua política de aprovisionamento)](http://go.microsoft.com/FWLink/p/?LinkId=189661).
 
 ### <a name="step-6-create-the-synchronization-rule"></a>Passo 6: criar a regra de sincronização
 
@@ -293,8 +294,8 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 
 
 
- >[!NOTE]
- Importante Certifique-se de que selecionou a opção Apenas Fluxo Inicial para o fluxo do atributo que contém o DN como destino.                                                                          
+> [!NOTE]
+>  Importante Certifique-se de que selecionou a opção Apenas Fluxo Inicial para o fluxo do atributo que contém o DN como destino.                                                                          
 
 ### <a name="step-7-create-the-workflow"></a>Passo 7: criar o fluxo de trabalho
 
@@ -365,8 +366,8 @@ A seguinte tabela indica os perfis de execução que fazem parte da fase de inic
 
 
 
->[!NOTE]
-Deve verificar se a sua regra de sincronização de saída foi projetada no metaverso com êxito.
+> [!NOTE]
+> Deve verificar se a sua regra de sincronização de saída foi projetada no metaverso com êxito.
 
 ## <a name="testing-the-configuration"></a>Testar a Configuração
 
@@ -459,7 +460,7 @@ Para efetuar estas tarefas, deve executar os seguintes perfis de execução.
 | FIMMA da Fabrikam   | 1. Exportar <br/> 2. Importação Delta       |
 
 
-Após a importação da base de dados do serviço FIM, Britta Simon e o objeto de ExpectedRuleEntry que ligações Britta para a regra de sincronização de saída de utilizador do AD são testadas no espaço de conector Fabrikam FIMMA. Quando revir propriedades de Britta no espaço de conector, junto os valores de atributo que configurou no Portal do FIM, também localizar uma referência válida para o objeto de entrada de regra esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
+Após a importação da base de dados do serviço FIM, a Eduarda Almeida e o objeto ExpectedRuleEntry que liga a Eduarda para a regra de sincronização de saída de utilizador do AD foram transitados para o espaço conector do fimma da Fabrikam. Ao rever as propriedades da Eduarda no espaço conector junto aos valores do atributo que configurou no Portal do FIM, também encontrará uma referência válida para o objeto de entrada de regra esperada. A seguinte captura de ecrã mostra um exemplo deste cenário.
 
 ![Propriedades dos objetos de espaço conector](media/how-provision-users-adds/image025.jpg)
 
@@ -490,8 +491,8 @@ No FIM, todas as execuções de exportação requerem uma importação delta par
 
 Execute os perfis de execução de acordo com as instruções indicadas nesta secção.
 
->[!IMPORTANT]
-Cada perfil de execução tem de ser executado sem erros.
+> [!IMPORTANT]
+> Cada perfil de execução tem de ser executado sem erros.
 
 ### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>Passo 14: verificar o utilizador aprovisionado no AD DS
 
@@ -506,7 +507,7 @@ O objetivo deste documento é apresentar-lhe os principais blocos modulares para
 
 Quando testar a sua configuração, é muito provável que tenha de eliminar e voltar a criar novos objetos de teste. Para objetos com um
 
-preenchido ExpectedRulesList atributo, isto pode resultar em órfã ERE objetos.
+ExpectedRulesList preenchido atributo, isso pode resultar em órfãos que surjam objetos ERE.
 Para obter uma descrição sobre como pode remover estes objetos do seu ambiente de teste, veja [A Method to Remove Orphaned ExpectedRuleEntry Objects from Your Environment (Um Método para Remover Objetos ExpectedRuleEntry Isolados do seu Ambiente)](http://go.microsoft.com/FWLink/p/?LinkId=189667).
 
 Num cenário de sincronização típico que inclua o AD DS como destino da sincronização, o MIM não é obrigatório para todos os atributos de um objeto. Por exemplo, quando gerir objetos de utilizador no AD DS através do FIM, no mínimo é necessário que o domínio e os atributos objectSID sejam gerados pelo agente de gestão do AD DS.

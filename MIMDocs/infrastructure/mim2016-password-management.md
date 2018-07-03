@@ -1,7 +1,7 @@
 ---
-title: "Gestão de Palavras-passe do Microsoft Identity Manager 2016 | Microsoft Docs"
-description: 
-keywords: 
+title: Gestão de Palavras-passe do Microsoft Identity Manager 2016 | Microsoft Docs
+description: ''
+keywords: ''
 author: barclayn
 ms.author: barclayn
 manager: mbaldwin
@@ -10,12 +10,13 @@ ms.topic: reference
 ms.prod: identity-manager-2016
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.assetid: 
-ms.openlocfilehash: 156551f4083c71ee7059e817213751393db5833e
-ms.sourcegitcommit: 5ba5d916c0ca1e5aa501592af0cef714bfdc8afe
+ms.assetid: ''
+ms.openlocfilehash: 86b8b9bdf5c6441d0708cd874742fa48b65177fa
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289368"
 ---
 # <a name="microsoft-identity-manager-2016-password-management"></a>Gestão de Palavras-passe do Microsoft Identity Manager 2016
 
@@ -61,8 +62,8 @@ A DLL de extensão de palavra-passe em .NET é chamada sempre que uma chamada de
 
 A sincronização de palavras-passe funciona com o serviço de notificação de alteração de palavra-passe (PCNS) num domínio do Active Directory e permite que as alterações de palavra-passe que têm origem no Active Directory sejam propagadas automaticamente para outras origens de dados ligadas. Para este efeito, o MIM é executado como um servidor RPC (Chamada de Procedimento Remoto) que escuta as notificações de alteração de palavra-passe a partir de um controlador de domínio do Active Directory. Quando o pedido de alteração de palavra-passe é recebido e autenticado, é processado pelo MIM e propagado para os agentes de gestão adequados.
 
->[!IMPORTANT]
-A sincronização de palavras-passe bidirecional não é suportada pelo MIM. Configurar a sincronização de palavras-passe bidirecional pode criar um ciclo, o que irá consumir recursos do servidor e ter um efeito potencialmente negativo tanto no Active Directory como no MIM.
+> [!IMPORTANT]
+> A sincronização de palavras-passe bidirecional não é suportada pelo MIM. Configurar a sincronização de palavras-passe bidirecional pode criar um ciclo, o que irá consumir recursos do servidor e ter um efeito potencialmente negativo tanto no Active Directory como no MIM.
 
 O PCNS é executado em cada controlador de domínio do Active Directory. Os sistemas que recebem as notificações de palavra-passe são conhecidos como destinos. O servidor MIM tem de ser configurado como destino PCNS no Active Directory antes de serem enviadas notificações de palavra-passe. A configuração do PCNS tem de definir um grupo de inclusão e, opcionalmente, um grupo de exclusão. Estes grupos servem para restringir o fluxo de palavras-passe confidenciais do domínio. Por exemplo, para enviar palavras-passe para todos os utilizadores, mas sem enviar palavras-passe administrativas, pode optar por utilizar Utilizadores de Domínio como grupo de inclusão e Administradores de Domínio como grupo de exclusão. Para obter mais informações sobre como configurar o serviço de notificação de alteração de palavra-passe, veja [Utilizar a Sincronização de Palavras-passe](https://technet.microsoft.com/library/jj590288(v=ws.10).aspx)
 
@@ -152,11 +153,11 @@ Algumas falhas são graves o suficiente para que deixe de ser possível concluir
 | Evento | Gravidade    | Descrição                                                                                                                                                            |
 |-------|-------------|-----------|
 | 6919  | Informações | Uma operação de definição de sincronização de palavra-passe não foi realizada porque o carimbo de data/hora estava desatualizado.                                                                      |
-| 6921  | Erro       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está ativada no agente de gestão de destino.                                |
-| 6922  | Erro       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está configurada no agente de gestão de destino.                             |
+| 6921  | Error       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está ativada no agente de gestão de destino.                                |
+| 6922  | Error       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está configurada no agente de gestão de destino.                             |
 | 6923  | Aviso     | A operação de definição de sincronização de palavra-passe não foi processada porque o objeto do espaço conector de destino não foi encontrado no diretório ligado.                  |
-| 6927  | Erro       | A operação de definição de sincronização de palavra-passe falhou porque a palavra-passe não cumpre a política de palavras-passe do sistema de destino.                                      |
-| 6928  | Erro       | A operação de definição de sincronização de palavra-passe falhou porque a extensão de palavra-passe do agente de gestão de destino não está configurada para suportar operações de definição de palavra-passe. |
+| 6927  | Error       | A operação de definição de sincronização de palavra-passe falhou porque a palavra-passe não cumpre a política de palavras-passe do sistema de destino.                                      |
+| 6928  | Error       | A operação de definição de sincronização de palavra-passe falhou porque a extensão de palavra-passe do agente de gestão de destino não está configurada para suportar operações de definição de palavra-passe. |
 
 ## <a name="user-based-password-change-management"></a>Gestão da alteração de palavra-passe baseada no utilizador
 

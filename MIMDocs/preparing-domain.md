@@ -12,16 +12,17 @@ ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ff8d8a6f66212b006e2c17186dc299a5bcf3f68b
-ms.sourcegitcommit: 32d9a963a4487a8649210745c97a3254645e8744
+ms.openlocfilehash: ddab5b1ab57d3d332d5cd36ecc5a29abd83222ec
+ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36289035"
 ---
 # <a name="set-up-a-domain"></a>Configurar um domínio
 
->[!div class="step-by-step"]
-[Windows Server 2016»](prepare-server-ws2016.md)
+> [!div class="step-by-step"]
+> [Windows Server 2016»](prepare-server-ws2016.md)
 
 O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directory (AD). Já deve ter o AD instalado, e certifique-se de que tem um controlador de domínio no seu ambiente para um domínio que possa administrar.
 
@@ -35,10 +36,10 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
 > - Nome do controlador de domínio - **corpdc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor do serviço MIM - **corpservice**
+> - Nome do servidor de serviço de MIM - **corpservice**
 > - Nome do servidor de sincronização de MIM - **corpsync**
 > - Nome do SQL Server - **corpsql**
-> - Palavra-passe – **Pass@word1**
+> - Palavra-passe – <strong>Pass@word1</strong>
 
 1. Inicie sessão no controlador de domínio como o administrador do domínio (*por exemplo, Contoso\Administrador*).
 
@@ -99,11 +100,11 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     setspn -S FIMService/mim.contoso.com Contoso\MIMService
     setspn -S FIMService/corpservice.contoso.com Contoso\MIMService
     ```
-5.  Durante a configuração, tem de adicionar os seguintes registos DNS 'A' para a resolução do nome adequado
+5.  Durante a configuração, precisamos adicionar os seguintes registos DNS "A" para a resolução de nome adequada
 
-- mim.contoso.com ponto para o endereço de ip físico corpservice
-- passwordreset.contoso.com ponto para o endereço de ip físico corpservice
-- passwordregistration.contoso.com ponto para o endereço de ip físico corpservice
+- mim.contoso.com ponto para o endereço de ip físico do corpservice
+- passwordreset.contoso.com ponto para o endereço de ip físico do corpservice
+- passwordregistration.contoso.com ponto para o endereço de ip físico do corpservice
 
->[!div class="step-by-step"]
-[Windows Server 2016»](prepare-server-ws2016.md)
+> [!div class="step-by-step"]
+> [Windows Server 2016»](prepare-server-ws2016.md)

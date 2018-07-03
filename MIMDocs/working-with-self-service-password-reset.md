@@ -3,32 +3,33 @@ title: Trabalhar com o portal de Reposição Personalizada de Palavra-passe | Do
 description: Veja as novidades da Reposição Personalizada de Palavra-passe no MIM 2016, incluindo como o SSPR funciona com a autenticação multifator.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
-ms.date: 10/12/2017
+ms.author: billmath
+manager: mtillman
+ms.reviewer: davidste
+ms.date: 06/26/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.reviewer: mwahl
-ms.suite: ems
-ms.openlocfilehash: e2c252771bd114a3c70b900c8c089e09eff8cd23
-ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
+ms.openlocfilehash: b1b30b744a5f735512f31d98184a561ce3f9b047
+ms.sourcegitcommit: 03617b441135a55b664e0d81cce4d17541bee93b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36963380"
 ---
->[!IMPORTANT]
-Devido ao anúncio de descontinuação do Azure multi-factor Authentication Software Development Kit. O Azure MFA SDK será suportado para clientes existentes até à data de extinção de 14 de Novembro de 2018. Novos clientes e os clientes atuais será não é possível transferir o SDK já através do portal clássico do Azure. Para transferir, terá de aceder ao suporte de cliente do Azure para receber o pacote de credenciais do serviço MFA gerado. <br> A equipa de desenvolvimento Microsoft está a funcionar no planeamento de alterações para o MFA através da integração com o SDK do servidor MFA. Isto será incluído na correção futuras 2018 antecipado.
-
 # <a name="working-with-self-service-password-reset"></a>Trabalhar com a Reposição Personalizada de Palavra-passe
+
+> [!IMPORTANT]
+> Devido ao anúncio de preterição do multi-factor Authentication Software Development Kit do Azure. O SDK de MFA do Azure será suportado para os clientes existentes até a data de retirada de 14 de Novembro de 2018. Novos clientes e os clientes atuais serão não é possível transferir o SDK mais através do portal clássico do Azure. Para transferir terá de contactar o suporte de cliente do Azure para receber o seu pacote de credenciais do serviço de MFA gerado. <br> A equipe de desenvolvimento da Microsoft está trabalhando em alterações para a MFA através da integração com o SDK do servidor MFA.  Isso será incluído numa futura correção, consulte [histórico de versões](/reference/version-history.md) para anúncios.
+
 O Microsoft Identity Manager 2016 fornece funcionalidades adicionais para a opção Reposição Personalizada de Palavra-passe. Esta opção foi melhorada com várias funcionalidades importantes:
 
--   O portal de Reposição Personalizada de Palavra-passe e o ecrã Início de Sessão do Windows permitem agora que os utilizadores desbloqueiem as respetivas contas sem alterarem as palavras-passe ou contactarem os administradores de suporte. Os utilizadores podem ficar com as contas bloqueadas por variados motivos legítimos como, por exemplo, se introduzirem uma palavra-passe antiga, utilizarem computadores bilingues e tiverem o teclado definido para o idioma errado ou tentarem iniciar sessão numa estação de trabalho partilhada já aberta na conta de outra pessoa.
+-   O portal de reposição de palavra-passe Self-Service e o ecrã de início de sessão do Windows agora permitem que os utilizadores desbloqueiem as respetivas contas sem alterar as palavras-passe ou sem os administradores de suporte. Os utilizadores podem obter com as contas bloqueados por variados motivos legítimos, como se eles introduzam uma palavra-passe antiga, utilizarem computadores bilingues e ter o teclado definido para o idioma errado ou a tentativa de início de sessão para uma estação de trabalho partilhada já aberta para alguém de outra conta.
 
--   Foi adicionada a nova porta de autenticação Porta de Telefone. Isto permite a autenticação do utilizador através de uma chamada telefónica.
+-   Foi adicionada a nova porta de autenticação Porta de Telefone. Esta porta permite a autenticação de utilizador através de uma chamada telefónica.
 
--   Foi adicionado o suporte para o serviço Multi-Factor Authentication (MFA) do Microsoft Azure. Isto pode ser utilizado para a Porta da Palavra-passe Monouso por SMS ou para a nova Porta de Telefone.
+-   Foi adicionado suporte para o serviço do Microsoft Azure multi-factor Authentication (MFA). Este serviço pode ser utilizado para qualquer uma das existentes SMS porta de uma-palavra-passe ou a nova porta de telefone.
 
 ## <a name="azure-for-multi-factor-authentication"></a>Multi-Factor Authentication do Azure
 O Multi-Factor Authentication do Microsoft Azure é um serviço de autenticação que requer que os utilizadores verifiquem as tentativas de início de sessão com uma aplicação móvel, uma chamada telefónica ou uma mensagem de texto. Está disponível para utilizar com o Microsoft Azure Active Directory e como um serviço para as aplicações empresariais na nuvem e no local.
@@ -56,22 +57,22 @@ Esta secção assume que transferiu e concluiu a implementação do Microsoft Id
 
     -   Configuração das Regras de Sincronização no Portal do MIM para permitir a sincronização dos dados do utilizador e facilitar as atividades baseadas na sincronização no Serviço MIM.
 
--   As Extensões e os Suplementos do MIM 2016, incluindo o cliente integrado do Início de Sessão do Windows SSPR, estão implementados no servidor ou num computador cliente separado.
+-   MIM 2016 e os suplementos &amp; extensões, incluindo o Windows SSPR cliente integrado do início de sessão é implementado no servidor ou num computador cliente separado.
 
 ## <a name="prepare-mim-to-work-with-multi-factor-authentication"></a>Preparar o MIM para funcionar com a autenticação multifator
 Configure a Sincronização do MIM para Suportar a Reposição de Palavra-passe e a Funcionalidade de Desbloqueio de Conta. Para obter mais informações, consulte [Instalar Suplementos e Extensões do FIM](https://technet.microsoft.com/library/ff512688%28v=ws.10%29.aspx), [Instalar SSPR do FIM](https://technet.microsoft.com/library/hh322891%28v=ws.10%29.aspx), [Portas de Autenticação da SSPR](https://technet.microsoft.com/library/jj134288%28v=ws.10%29.aspx) e o [Guia do Laboratório de Teste da SSPR](https://technet.microsoft.com/library/hh826057%28v=ws.10%29.aspx)
 
-Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azure Active Directory. Como parte deste processo, irá gerar um ficheiro que inclui o material de autenticação que o MFA necessita para contactar o Azure MFA.  Para continuar, precisará de uma subscrição do Azure.
+Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azure Active Directory. Irá gerar um ficheiro que inclui o material de autenticação que o MFA necessita para ser capaz de contactar o MFA do Azure.  Para continuar, precisará de uma subscrição do Azure.
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Registar o fornecedor de autenticação multifator no Azure
 
-1.  Criar um [fornecedor de MFA](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider).
+1.  Criar uma [fornecedor de MFA](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider).
 
-2. Abrir um incidente de suporte e solicitar o direto SDK para ASP.net 2.0 c#. O SDK apenas será fornecido aos utilizadores atuais de MIM com a MFA porque o SDK direct foi preterido. Novos clientes devem adotar a próxima versão de MIM que integrar com o servidor MFA.
+2. Abra um pedido de suporte e pedir o SDK direto para o ASP.net 2.0 c#. O SDK apenas será fornecido para que os utilizadores atuais de MIM com a MFA porque o SDK direct foi preterido. Novos clientes devem adotar a próxima versão de MIM que se integrará ao servidor MFA.
 
 3.  Clique em **Serviços Aplicacionais &gt; Active Directory &gt; Fornecedor de Autenticação Multifator &gt; Criação Rápida**.
 
-![Os portais do Azure rápidos criar imagem do MFA](media/MIM-SSPR-Azureportal.png)
+![Portais do Azure rápidos criar a imagem do MFA](media/MIM-SSPR-Azureportal.png)
 
 4.  No campo **Nome**, introduza **SSPRMFA** e clique em **Criar**.
 
@@ -85,7 +86,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 7.  Na nova janela, no painel esquerdo abaixo de **Configurar**, clique em **Definições**.
 
-8.  Em **alerta de fraude**, desmarque * * bloquear utilizador quando é reportada fraude. Isto é feito para evitar bloquear todo o serviço.
+8.  Sob **alerta de fraude**, desmarque a opção * * Bloquear utilizador quando é reportada fraude. Ao desmarcar a caixa está evitar bloquear todo o serviço.
 
 9. Na janela **Multi-Factor Authentication do Azure** apresentada, clique em **SDK**, abaixo de **Transferências**, no menu à esquerda.
 
@@ -117,13 +118,13 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 9. No elemento `<username>`, introduza qualquer nome de utilizador.
 
-10. No elemento `<DefaultCountryCode>`, introduza o seu código de país predefinido. No caso de estarem registados números de telefone para os utilizadores sem um código de país, este é o código de país que irão obter. No caso de um utilizador ter um código de país internacional, tem de ser incluído no número de telefone registado.
+10. No elemento `<DefaultCountryCode>`, introduza o seu código de país predefinido. Em casos em que os números de telefone são registrados para utilizadores sem um código de país, os utilizadores receberão este código. Em casos em que um utilizador tem um código de país internacional, ele deve ser incluído no número de telefone registado.
 
 11. Guarde o ficheiro MfaSettings.xml com o mesmo nome na mesma localização.
 
 #### <a name="configure-the-phone-gate-or-the-one-time-password-sms-gate"></a>Configurar a Porta de telefone ou a Porta de SMS para Palavra-passe Monouso
 
-1.  Inicie o Internet Explorer e navegue para o Portal do MIM, efetue a autenticação como o administrador do MIM e clique em **Fluxos de Trabalho** na barra de navegação esquerda.
+1.  Inicie o Internet Explorer e navegue para o Portal de MIM, efetue a autenticação como o administrador de MIM, em seguida, clique em **fluxos de trabalho** na barra de navegação esquerdo.
 
     ![Imagem de navegação do Portal do MIM](media/MIM-SSPR-workflow.jpg)
 
@@ -156,7 +157,7 @@ Existem duas formas através das quais um utilizador pode utilizar a funcionalid
 
 Ao instalar os Suplementos e as Extensões do MIM num computador associado a um domínio ligado através da rede organizacional ao Serviço MIM, os utilizadores podem recuperar uma palavra-passe esquecida na experiência de início de sessão do ambiente de trabalho.  Os seguintes passos guiá-lo-ão através do processo.
 
-#### <a name="windows-desktop-login-integrated-password-reset"></a>Reposição de palavra-passe integrada do início de sessão do ambiente de trabalho do Windows
+#### <a name="windows-desktop-login-integrated-password-reset"></a>Redefinição de senha de integrada de início de sessão de ambiente de trabalho do Windows
 
 1.  Se o utilizador introduzir uma palavra-passe errada várias vezes, no ecrã de início de sessão, terá a opção de clicar em **Não consegue iniciar sessão?** .
 
@@ -168,7 +169,7 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 
 2.  O utilizador será direcionado para a autenticação. Se o MFA tiver sido configurado, o utilizador irá receber uma chamada telefónica.
 
-3.  Em segundo plano, o que acontece é essa MFA do Azure locais uma chamada telefónica para o número o utilizador forneceu quando se inscreveu para o serviço.
+3.  Em segundo plano, o que acontece é que MFA do Azure, em seguida, os lugares uma chamada telefónica para o número o usuário forneceu quando se inscreveram para o serviço.
 
 4.  Quando um utilizador atender o telemóvel, ser-lhe-á pedido que prima a tecla cardinal # no telemóvel. Em seguida, o utilizador clica em **Seguinte** no portal.
 
@@ -185,7 +186,7 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 
 1.  Os utilizadores podem abrir um browser, navegar até ao **Portal de Reposição de Palavra-passe**, introduzir o respetivo nome de utilizador e clicar em **Seguinte**.
 
-    Se o MFA tiver sido configurado, o utilizador irá receber uma chamada telefónica. Em segundo plano, o que acontece é essa MFA do Azure locais uma chamada telefónica para o número o utilizador forneceu quando se inscreveu para o serviço.
+    Se o MFA tiver sido configurado, o utilizador irá receber uma chamada telefónica. Em segundo plano, o que acontece é que MFA do Azure, em seguida, os lugares uma chamada telefónica para o número o usuário forneceu quando se inscreveram para o serviço.
 
     Quando um utilizador atender o telemóvel, ser-lhe-á pedido que prima a tecla cardinal # no telemóvel. Em seguida, o utilizador clica em **Seguinte** no portal.
 

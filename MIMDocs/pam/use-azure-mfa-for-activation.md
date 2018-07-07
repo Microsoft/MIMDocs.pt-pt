@@ -2,27 +2,25 @@
 title: Utilizar o Azure MFA para ativar o PAM | Documentos da Microsoft
 description: Configure o MFA do Azure como uma segunda camada de segurança quando os utilizadores ativarem funções de Privileged Access Management.
 keywords: ''
-author: barclayn
-ms.author: fimguy
-manager: mbaldwin
-ms.date: 11/14/2017
+author: billmath
+ms.author: billmath
+ms.reviewer: fimguy
+manager: mtillman
+ms.date: 07/06/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.reviewer: mwahl
-ms.suite: ems
-ms.openlocfilehash: 30e683a0bd13d911f73eca19c847a2c9cd10f36d
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: ad47de279dd18239ff55d89c1b717ccafe16374f
+ms.sourcegitcommit: 0b6cb02d1d6e0d821b00c17090622ba354252188
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289834"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37895508"
 ---
 # <a name="using-azure-mfa-for-activation"></a>Utilizar o MFA do Azure para ativação
 > [!IMPORTANT]
-> Devido ao anúncio de preterição do multi-factor Authentication Software Development Kit do Azure. O SDK de MFA do Azure será suportado para os clientes existentes até a data de retirada de 14 de Novembro de 2018. Novos clientes e os clientes atuais não será capazes de transferir o SDK mais através do portal clássico do Azure. Para transferir terá de contactar o suporte de cliente do Azure para receber o seu pacote de credenciais do serviço de MFA gerado. <br> A equipe de desenvolvimento da Microsoft está trabalhando em planejamento alterações para a MFA através da integração com o SDK do servidor MFA. Isso será incluído na correção futura no início de 2018.
-
+> Devido ao anúncio de preterição do multi-factor Authentication Software Development Kit do Azure. O SDK de MFA do Azure será suportado para os clientes existentes até a data de retirada de 14 de Novembro de 2018. Novos clientes e os clientes atuais não será capazes de transferir o SDK mais através do portal clássico do Azure. Para transferir terá de contactar o suporte de cliente do Azure para receber o seu pacote de credenciais do serviço de MFA gerado. <br> A equipe de desenvolvimento da Microsoft está trabalhando em alterações para a MFA através da integração com o SDK do servidor MFA.  Isso será incluído numa futura correção, consulte [histórico de versões](/reference/version-history.md) para anúncios. 
 
 
 Quando configurar uma função de PAM, pode escolher como autorizar os utilizadores que pedem para ativar a função. As opções que a atividade de autorização de PAM implementa são:

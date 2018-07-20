@@ -8,12 +8,12 @@ ms.date: 06/27/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: 090e82cac6c734beb9767e2d2e6230320e44c26f
-ms.sourcegitcommit: c6cb2556bb9f2256b959a3c95db7ca5bbfc2b437
+ms.openlocfilehash: ca1dacdd32a025bc08c00bde6088d85d6444be99
+ms.sourcegitcommit: 8b2623f6247621098d386cbe84e10b5b5373abfb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065147"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39149918"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>Conversão de serviços específicos de MIM a gMSA
 
@@ -48,7 +48,7 @@ Leitura necessários para concluir a configuração e compreender
 
 -   <https://technet.microsoft.com/en-us/library/jj128430(v=ws.11).aspx>
 
-Passo fist no seu controlador de domínio do windows
+Primeira etapa no seu controlador de domínio do windows
 
 1.  Crie a chave de raiz de Services(KDS) de distribuição de chave (apenas uma vez por domínio), se necessário. Chave de raiz é utilizada pelo serviço KDS em controladores de domínio (juntamente com outras informações) para gerar palavras-passe.
 
@@ -61,7 +61,7 @@ Passo fist no seu controlador de domínio do windows
 ## <a name="synchronization-service"></a>Serviço de Sincronização
 -----------------------
 
-1.  Passo fist cria uma chamada de grupo "MIMSync_Servers" e adicione todos os servidores de sincronização para este grupo.
+1.  Crie um grupo chamado "MIMSync_Servers" e adicione todos os servidores de sincronização para este grupo.
 
 ![](media/a4dc3f6c0cb1f715ba690744f54dce5c.png)
 

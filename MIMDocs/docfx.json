@@ -41,7 +41,10 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/enterprise-mobility/toc.json"
+      "breadcrumb_path": "/enterprise-mobility/toc.json",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/mimdocs.pt-pt",
+      "feedback_product_url": "https://feedback.azure.com/forums/169401-azure-active-directory/category/171231-microsoft-identity-manager"
     }
   },
   "render": {

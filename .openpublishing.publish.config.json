@@ -38,15 +38,6 @@
       }
     },
     {
-      "docset_name": "MIMDeployUse",
-      "build_output_subfolder": "MIMDocs/DeployUse",
-      "locale": "pt-pt",
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      }
-    },
-    {
       "docset_name": "MIMTroubleshoot",
       "build_output_subfolder": "MIMDocs/Troubleshoot",
       "locale": "pt-pt",

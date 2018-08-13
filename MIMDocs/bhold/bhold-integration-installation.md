@@ -118,29 +118,29 @@ A tabela seguinte lista os ficheiros e as versões originais e as alterações d
 
 | **Ficheiro**                  | **Cadeia de caracteres original**                                                                                                                   | **Cadeia de caracteres alterada**                                                                                                                                |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Analytics.aspx            |   http://<BHOLD_Server>/bhold/Analytics/index_fim.HTML | https://<BHOLD_Server_FQDN>/bhold/Analytics/index_fim.HTML       |
-| AttestationCampaigns.aspx |    http://<BHOLD_Server>/bhold/attestation/Campaigns.aspx?hideMenu=1 | https://<BHOLD_Server_FQDN>/bhold/attestation/Campaigns.aspx?hideMenu=1 | 
-| AttestationMain.aspx      |  http://<BHOLD_Server>/bhold/attestation/dashboard.aspx?hideMenu=1        | https://<BHOLD_Server_FQDN>/bhold/attestation/dashboard.aspx?hideMenu=1 |
-| Sobre o modificar atributos/raiz da unidade organizacional na página aprovador, escreva o nome de utilizador e domínio do utilizador que irá aprovar pedidos de atribuição de função, no formato  domínioutilizador, em que  domínio  é o Nome de domínio NetBIOS do (curto) e  usuário  é o nome de início de sessão do utilizador.            | O nome de domínio e o utilizador tem de corresponder ao alias padrão de um utilizador na base de dados do BHOLD Core. |  Como alternativa à especificação de um aprovador para unidades organizacionais, pode especificar um aprovador para funções de proposta na base de dados do BHOLD Core. |
-| Para fazer isso, criar o atributo approver1, adicionar escritas-lo a um atributo associados ao tipo de objeto de função e, em seguida, modifique cada função proposta para especificar o aprovador.          | Para proteger melhor o fluxo de trabalho, além de aprovadores, deve designar modos de aprovação adicional e os usuários criando e preenchendo os seguintes atributos de OrgUnits e as funções: | escalator\<*n |
+| Analytics.aspx            |   http://<BHOLD_Server>/bhold/Analytics/index_fim.html | https://<BHOLD_Server_FQDN>/bhold/Analytics/index_fim.html       |
+| AttestationCampaigns.aspx |    http://<BHOLD_Server>/bhold/Attestation/Campaigns.aspx?hideMenu=1 | https://<BHOLD_Server_FQDN>/bhold/Attestation/Campaigns.aspx?hideMenu=1 | 
+| AttestationMain.aspx      |  http://<BHOLD_Server>/bhold/Attestation/Dashboard.aspx?hideMenu=1        | https://<BHOLD_Server_FQDN>/bhold/Attestation/Dashboard.aspx?hideMenu=1 |
+| Reporting.aspx            | http://<BHOLD_Server>/bhold/Reporting/index_fim.html |  https://<BHOLD_Server_FQDN>/bhold/Reporting/index_fim.html |
+| Selfservice.aspx          | RoleExchangePoint=http://\<*FIM_Server*\>: \<*FIM_Port*\>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport | RoleExchangePoint=https://\<*FIM_Server_FQDN*\>: \<*FIM_SSL_Port\>*\>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport |
 
-proprietárion
+Em que:
 
--   *\<securityOfficer*\<n
+-   *\<BHOLD_Server\>*  Especifica o nome do servidor do BHOLD como encontrada na versão original do ficheiro
 
--   *\<notificação*\<n
+-   *\<MIM_Server\>*  Especifica o nome do servidor do FIM como encontrada na versão original do ficheiro
 
--   *\<em que *\<n\>* indica um sufixo numérico opcional para fornecer vários atributos do mesmo tipo.
+-   *\<BHOLD_Server_FQDN\>*  Especifica o nome de domínio completamente qualificado (FQDN) do servidor do BHOLD
 
--   *\<Certifique-se de fluxos de trabalho de aprovação configurados no serviço do FIM
+-   *\<MIM_Port\>*  Especifica o número de porta do servidor do FIM como encontrada na versão original do ficheiro
 
--   *\<Instalação do BHOLD FIM integração cria conjuntos de definições de fluxo de trabalho e regras de política de gestão (MPRs) para o serviço FIM.
+-   *\<MIM_Server_FQDN\>*  Especifica o FQDN do servidor do FIM
 
--   *\<Se tinha personalizado a implementação do FIM para alterar os conjuntos de administradores ou os conjuntos de utilizadores que podem fazer pedidos, deve certificar-se de que os MPRs referenciam os conjuntos de utilizador correto.
+-   *\<MIM_SSL_Port\>*  Especifica uma porta diferente para utilização com SSL no servidor do FIM
 
-### <a name="enable-approval-workflows-in-bhold-core"></a>Antes dos utilizadores do Portal do FIM podem utilizar as funcionalidades de self-service de mensagens em fila fornecidas pelo BHOLD, as contas de utilizador têm de ser sincronizadas para a base de dados do BHOLD do serviço de sincronização do FIM.
+### <a name="enable-approval-workflows-in-bhold-core"></a>Ativar os fluxos de trabalho de aprovação no BHOLD Core
 
-Em particular, tem de existir um registo de utilizador da base de dados do BHOLD Core e do banco de dados do serviço FIM para cada utilizador que pode fazer um pedido de self-service ou está especificado como um aprovador ou escalator para solicitações de autoatendimento. Para obter informações sobre como instalar o Portal do FIM e outros recursos do FIM, consulte planejamento e arquitetura na biblioteca técnica do Microsoft Forefront. Guia de instalação do BHOLD No caso do BHOLD, os parâmetros de fluxo de trabalho que especificam que utilizadores têm de aprovar um pedido de função são originados no BHOLD, em vez de a ser armazenados nas definições de fluxo de trabalho da base de dados do serviço FIM. Esses parâmetros são fornecidos para o serviço FIM pelo BHOLD quando a primeira solicitação é feita, e um fluxo de trabalho da ação comunica os resultados de volta para BHOLD Core.
+Ao FIM e BHOLD estão integrados para Self-Service, os fluxos de trabalho para aprovações são executados no serviço do FIM. Isso é semelhante ao modelo de fluxo de trabalho de pedidos que têm origem no Portal do FIM, por exemplo, quando um utilizador submete um pedido para aderir uma lista de distribuição. Existem diferenças importantes entre fluxos de trabalho do BHOLD função e outros fluxos de trabalho alojados no serviço do FIM, no entanto. No caso do BHOLD, os parâmetros de fluxo de trabalho que especificam que utilizadores têm de aprovar um pedido de função são originados no BHOLD, em vez de a ser armazenados nas definições de fluxo de trabalho da base de dados do serviço FIM. Esses parâmetros são fornecidos para o serviço FIM pelo BHOLD quando a primeira solicitação é feita, e um fluxo de trabalho da ação comunica os resultados de volta para BHOLD Core.
 
 BHOLD seleciona um aprovador para um pedido de self-service de uma das três formas:
 
@@ -202,11 +202,11 @@ Para proteger melhor o fluxo de trabalho, além de aprovadores, deve designar mo
 
 - escalator<em>\<n\></em>
 
-- proprietário<em>\<n\></em>
+- owner<em>\<n\></em>
 
 - securityOfficer<em>\<n\></em>
 
-- notificação<em>\<n\></em>
+- notification<em>\<n\></em>
 
 em que *\<n\>* indica um sufixo numérico opcional para fornecer vários atributos do mesmo tipo.
 
@@ -217,7 +217,7 @@ Instalação do BHOLD FIM integração cria conjuntos de definições de fluxo d
 > [!NOTE]
 > Antes dos utilizadores do Portal do FIM podem utilizar as funcionalidades de self-service de mensagens em fila fornecidas pelo BHOLD, as contas de utilizador têm de ser sincronizadas para a base de dados do BHOLD do serviço de sincronização do FIM. Em particular, tem de existir um registo de utilizador da base de dados do BHOLD Core e do banco de dados do serviço FIM para cada utilizador que pode fazer um pedido de self-service ou está especificado como um aprovador ou escalator para solicitações de autoatendimento.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para obter informações sobre como instalar o Portal do FIM e outros recursos do FIM, consulte [planejamento e arquitetura](https://technet.microsoft.com/library/ee808044.aspx) na biblioteca técnica do Microsoft Forefront.
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)

@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
-ms.openlocfilehash: 834343243dfeefa8d1874414fa369751288fd64d
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: bb0287b894786d13398819b04bdb089f0f36b33e
+ms.sourcegitcommit: acb2c61831cb634278acc439d6d9496ff51a6a54
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36288875"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43694644"
 ---
 # <a name="supported-languages"></a>Idiomas suportados
 
@@ -26,7 +26,7 @@ Este artigo descreve os idiomas suportados e o mapeamento de atualizações de v
 O pacote de idiomas do Portal e do serviço de MIM de Microsoft suportam os seguintes idiomas 33 idiomas.  
 
 > [!NOTE]
-> Na [4.4.1642.0](https://support.microsoft.com/en-us/help/4021562/hotfix-rollup-package-build-4-4-1642-0-is-available-for-microsoft) uma chave de registo foi adicionada o chamado "OverrideDefaultUILocale" para suplementos de MIM e o pacote de idiomas de extensões irá tentar mapear todos os idiomas semelhante para aquele que é suportado. Por exemplo, se o idioma de apresentação do Windows for ES-CL (Espanhol Chile), ou qualquer ES-* *, ele tentará mapeá-la para ES-ES (espanhol de Espanha).
+> Na [4.4.1642.0](https://support.microsoft.com/en-us/help/4021562/hotfix-rollup-package-build-4-4-1642-0-is-available-for-microsoft) uma chave de registo foi adicionada o chamado "OverrideDefaultUILocale" para suplementos de MIM e o pacote de idiomas de extensões irá tentar mapear todos os idiomas semelhante para aquele que é suportado. Por exemplo, se o idioma de apresentação do Windows for ES-CL (Espanhol Chile), ou qualquer ES -\*, ele tentará mapeá-la para ES-ES (espanhol de Espanha).
 
 > [!IMPORTANT]
 > O texto no suplemento do SSPR e o portal será localizado, mas as perguntas serão não sem trabalho adicional. Terá de criar AuthN fluxos de trabalho (e que acompanha este artigo e conjuntos de MPRs abordadas) para as perguntas de destino em cada linguagem para a localização de destino.
@@ -110,7 +110,7 @@ A aplicação moderna do certificado de gestão de Microsoft suporta os seguinte
 |Sueco|SV-SE|SV|
 |Turco|tr-TR|TR|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Primeira implementação](microsoft-identity-manager-deploy.md)
 - [Histórico de versões](/reference/version-history.md)

@@ -2,20 +2,20 @@
 title: Utilizar o SDK de servidor multi-factor Authentication do Azure para ativar o PAM ou cenários de SSPR | Documentos da Microsoft
 description: Configure a SDK de servidor multi-factor Authentication do Azure como uma segunda camada de segurança, quando os utilizadores ativarem funções de Privileged Access Management e a reposição personalizada de palavra-passe.
 keywords: ''
-author: billmath
+author: fimguy
 ms.author: billmath
 manager: mtillman
-ms.date: 08/31/2018
+ms.date: 09/02/2018
 ms.topic: article
 ms.service: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: a2a3becab4fbef1126a96ade46b85ef10c0c6291
-ms.sourcegitcommit: acb2c61831cb634278acc439d6d9496ff51a6a54
+ms.openlocfilehash: 7191e445688cc9e3c5c02b9c6852c869a28a937a
+ms.sourcegitcommit: ad0690bd57e3d056397108bf1c8417965d69a32c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43694920"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43772683"
 ---
 # <a name="use-azure-multi-factor-authentication-server-to-activate-pam-or-sspr"></a>Utilizar o servidor do Azure multi-factor Authentication para ativar o PAM ou SSPR
 O documento seguinte descreve como configurar o servidor MFA do Azure como uma segunda camada de segurança quando os utilizadores ativarem funções de gestão de privilégios de acesso ou a reposição de palavra-passe Self-Service.
@@ -57,7 +57,8 @@ Depois de transferir o servidor [instalar](https://docs.microsoft.com/en-us/azur
 4. Uma vez assistentes, clique em através de configuração, selecione "MFASDK de MIM" e conjunto de aplicações
 
 > [!NOTE] 
-> Assistente exigirá um grupo de administrador a ser criada. Podem encontrar mais informações sobre a documentação do servidor do Azure MFA do Azure multi-factor Authentication.
+> Assistente exigirá um grupo de administrador a ser criada. Podem encontrar mais informações sobre o Azure >> documentação do servidor do MFA do Azure multi-factor Authentication.
+
 5. Em seguida, precisamos importar de serviço MIM conta abrir consola de autenticação Multifator, selecione "Utilizadores" um. Clique em "Importar do Active Directory" b. Navegue para a conta de serviço também conhecido como "contoso\mimservice" c. Clique em "Importar" e "Fechar" ![trabalhar com mfaserver para mim_importmimserviceaccount. PNG](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_importmimserviceaccount.PNG) 
 6. Editar a conta de serviço MIM para ativar na consola do multi-factor Authentication ![trabalhar com mfaserver para mim_enableserviceaccount. PNG](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_enableserviceaccount.PNG)
 7. Atualize a autenticação do IIS no site da "MFASDK de MIM". Em primeiro lugar será desativada a "Autenticação anónima", em seguida, ativar a autenticação do Windows" ![trabalhar com mfaserver para mim_iisconfig. PNG](media/working-with-mfaserver-for-mim/working-with-mfaserver-for-mim_iisconfig.PNG)
@@ -65,7 +66,7 @@ Depois de transferir o servidor [instalar](https://docs.microsoft.com/en-us/azur
 
 ## <a name="configuring-the-mim-service-for-azure-multi-factor-authentication-server"></a>Configurar o serviço MIM para o servidor multi-factor Authentication 
 
-### <a name="step-1-patch-server-to-452000"></a>Passo 1: O servidor de Patch para 4.5.200.0
+### <a name="step-1-patch-server-to-452020"></a>Passo 1: O servidor de Patch para 4.5.202.0
  
 ### <a name="step-2-backup-and-open-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>Passo 2: Cópia de segurança e abra o mfasettings. XML localizado no "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service"
 

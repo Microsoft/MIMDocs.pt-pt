@@ -7,15 +7,15 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 09/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 08a0aaa60891727482e80c8998cc075eacf042cf
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: aac41b173538fe9127e14a4b9a7eb540c000fe3b
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290174"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334030"
 ---
 # <a name="bhold-fimmim-integration-installation"></a>Instalação do BHOLD Integration FIM/MIM
 
@@ -118,11 +118,11 @@ A tabela seguinte lista os ficheiros e as versões originais e as alterações d
 
 | **Ficheiro**                  | **Cadeia de caracteres original**                                                                                                                   | **Cadeia de caracteres alterada**                                                                                                                                |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Analytics.aspx            |   http://<BHOLD_Server>/bhold/Analytics/index_fim.html | https://<BHOLD_Server_FQDN>/bhold/Analytics/index_fim.html       |
-| AttestationCampaigns.aspx |    http://<BHOLD_Server>/bhold/Attestation/Campaigns.aspx?hideMenu=1 | https://<BHOLD_Server_FQDN>/bhold/Attestation/Campaigns.aspx?hideMenu=1 | 
-| AttestationMain.aspx      |  http://<BHOLD_Server>/bhold/Attestation/Dashboard.aspx?hideMenu=1        | https://<BHOLD_Server_FQDN>/bhold/Attestation/Dashboard.aspx?hideMenu=1 |
-| Reporting.aspx            | http://<BHOLD_Server>/bhold/Reporting/index_fim.html |  https://<BHOLD_Server_FQDN>/bhold/Reporting/index_fim.html |
-| Selfservice.aspx          | RoleExchangePoint=http://\<*FIM_Server*\>: \<*FIM_Port*\>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport | RoleExchangePoint=https://\<*FIM_Server_FQDN*\>: \<*FIM_SSL_Port\>*\>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport |
+| Analytics.aspx            |   http://<BHOLD_Server>/bhold/Analytics/index_fim.HTML | https://<BHOLD_Server_FQDN>/bhold/Analytics/index_fim.HTML       |
+| AttestationCampaigns.aspx |    http://<BHOLD_Server>/bhold/attestation/Campaigns.aspx?hideMenu=1 | https://<BHOLD_Server_FQDN>/bhold/attestation/Campaigns.aspx?hideMenu=1 | 
+| AttestationMain.aspx      |  http://<BHOLD_Server>/bhold/attestation/dashboard.aspx?hideMenu=1        | https://<BHOLD_Server_FQDN>/bhold/attestation/dashboard.aspx?hideMenu=1 |
+| Aspx            | http://<BHOLD_Server>/bhold/Reporting/index_fim.HTML |  https://<BHOLD_Server_FQDN>/bhold/Reporting/index_fim.HTML |
+| Selfservice.aspx          | RoleExchangePoint = http: / /\<*FIM_Server*\>: \< *FIM_Port*\>/BHOLD/RoleExchangePoint/BHOLDRoleExchangePoint.svc, TransportMode = transporte | RoleExchangePoint = https: / /\<*FIM_Server_FQDN*\>: \< *FIM_SSL_Port\>*\>/BHOLD/RoleExchangePoint / BHOLDRoleExchangePoint.svc,TransportMode=Transport |
 
 Em que:
 
@@ -202,11 +202,11 @@ Para proteger melhor o fluxo de trabalho, além de aprovadores, deve designar mo
 
 - escalator<em>\<n\></em>
 
-- owner<em>\<n\></em>
+- proprietário<em>\<n\></em>
 
 - securityOfficer<em>\<n\></em>
 
-- notification<em>\<n\></em>
+- notificação<em>\<n\></em>
 
 em que *\<n\>* indica um sufixo numérico opcional para fornecer vários atributos do mesmo tipo.
 

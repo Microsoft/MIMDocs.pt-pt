@@ -7,15 +7,15 @@ ms.author: billmath
 manager: mtillman
 ms.date: 08/30/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: a7314aaf559836fb77b32ae191527917c4854417
-ms.sourcegitcommit: acb2c61831cb634278acc439d6d9496ff51a6a54
+ms.openlocfilehash: 5f866df4652839f084770515ef69eccf28df4170
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43694627"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334266"
 ---
 # <a name="self-service-password-reset-deployment-options"></a>Opções de implementação de reposição de palavra-passe de Self-Service
 

@@ -7,16 +7,16 @@ ms.author: davidste
 manager: mbaldiwn
 ms.date: 05/22/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: e7134e060647153b5d525e9785139eb8c38f8569
-ms.sourcegitcommit: 6b2c77788a69f751fc7f5c18e678aa1fabf23ebb
+ms.openlocfilehash: 4cb17b6e30a59c8acb3871e694ed4df72538deab
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38952510"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334045"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Manipulação de dados do Microsoft Identity Manager 
 

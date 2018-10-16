@@ -7,15 +7,15 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 09/07/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 24e43d8ad886fcd7bfa7a9e694754b956f1659cd
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 5a31ab2ba6f8ff0a8388d4976e4c44adaf044d87
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290276"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49332277"
 ---
 # <a name="bhold-analytics-installation"></a>Instalação do BHOLD Analytics
 
@@ -46,7 +46,7 @@ Substitua *\<versão\>* com o número de versão da versão do BHOLD Analytics q
 
 Para executar o ficheiro de programa como administrador, o ficheiro com o botão direito e, em seguida, clique em **executar como administrador**.
 
-# <a name="next-steps"></a>Próximos passos
+# <a name="next-steps"></a>Passos Seguintes
 
 - [Instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx)
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)

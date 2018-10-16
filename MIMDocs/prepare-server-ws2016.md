@@ -7,17 +7,17 @@ ms.author: davidste
 manager: mbaldwin
 ms.date: 04/26/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: bfc79d27f015ee3d57c33c26ecae0f5b8ff38370
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 2f6daf62e568a0a4ac6ca899d28589537369b2bb
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289494"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334232"
 ---
 # <a name="set-up-an-identity-management-servers-windows-server-2016"></a>Configurar um servidores de gestão de identidades: Windows Server 2016
 

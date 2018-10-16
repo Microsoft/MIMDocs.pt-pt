@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 04/26/2018
 ms.topic: get-started-article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 6fe251a3976167909aa55a687884585b1937ebf3
-ms.sourcegitcommit: 28834821cbddd6384613d8ba45424c35f4c39ce6
+ms.openlocfilehash: c4d20adb62cc6bc56f931abdb065a019399a1639
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45538562"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49332855"
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2016"></a>Configurar um servidor de gestão de identidades: SQL Server 2016
 

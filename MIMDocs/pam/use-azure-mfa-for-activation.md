@@ -8,15 +8,15 @@ ms.reviewer: fimguy
 manager: mtillman
 ms.date: 07/06/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: ad47de279dd18239ff55d89c1b717ccafe16374f
-ms.sourcegitcommit: 0b6cb02d1d6e0d821b00c17090622ba354252188
+ms.openlocfilehash: 10c8d4246122daa507d79a3f2e26e945c6ab5709
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37895508"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333728"
 ---
 # <a name="using-azure-mfa-for-activation"></a>Utilizar o MFA do Azure para ativação
 > [!IMPORTANT]

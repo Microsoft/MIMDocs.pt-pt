@@ -7,17 +7,17 @@ ms.author: fimguy
 manager: bhu
 ms.date: 1/24/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 7b685ffb6f2a52bd2782395e4c1f26501ffe3101
-ms.sourcegitcommit: c773edc8262b38df50d82dae0f026bb49500d0a4
+ms.openlocfilehash: 5b56ad34c0549f21568585fb1a25d9a3f3fc6d00
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34479354"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334385"
 ---
 # <a name="connect-to-your-directories"></a>Ligar aos diretórios
 

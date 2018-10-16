@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 08/31/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e83c326d32645ce80541d5c415cd9c0e9d1dae54
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 4e3a3fb2b23deced2202994463645521beef81e8
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36288797"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49332923"
 ---
 # <a name="environment-overview"></a>Descrição geral do ambiente
 
@@ -32,7 +32,7 @@ As unidades onde serão armazenadas as imagens de disco da VM tem de, pelo menos
 > [!IMPORTANT]
 > Armazenamento tem de estar dedicado para o ambiente bastion. Armazenamento de partilha com outras cargas de trabalho fora do ambiente bastion não é recomendado, que pode comprometer a integridade do ambiente bastion.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Gestão de acesso privilegiado para serviços de domínio do Active Directory](privileged-identity-management-for-active-directory-domain-services.md) uma visão geral de PAM e como ela funciona.
 - [Compreender os componentes de PAM](principles-of-operation.md) é uma visão geral dos vários componentes do PAM.

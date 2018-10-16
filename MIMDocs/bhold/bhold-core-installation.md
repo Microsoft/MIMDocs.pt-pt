@@ -7,15 +7,15 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 09/07/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 752605be1392e514f5b132a654134185b38e2cef
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 4499c2846655ff75462794d684cae44f03134f1c
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290140"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333535"
 ---
 # <a name="bhold-core-installation"></a>Instalação do BHOLD Core
 
@@ -212,7 +212,7 @@ Tem de ter sessão iniciada como membro do grupo Admins do domínio para efetuar
 
 4.  Localize o nome do atributo que pretende alterar, escreva o novo valor na caixa junto ao nome do atributo e, em seguida, clique em **OK**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Depois de ter instalado o BHOLD Core e validar que a instalação foi concluída com êxito, pode instalar módulos adicionais. Neste momento, a base de dados do BHOLD estará essencialmente vazio, que contém apenas uma conta de utilizador, a conta de raiz e uma unidade organizacional (orgunit), o orgunit de raiz. Para adicionar mais utilizadores para a base de dados do BHOLD, pode instalar o módulo de conector de gestão de acesso ou o módulo do BHOLD Model Generator, consoante as suas necessidades. Pode utilizar o módulo de conector de gestão de acesso para importar dados de utilizador do serviço de sincronização do FIM ou pode utilizar o gerador de modelo do BHOLD para importar dados de utilizador de um conjunto de ficheiros estruturados. Para obter mais informações sobre como utilizar o módulo de conector de gestão de acesso, consulte [guia de laboratório de teste: conector do BHOLD Access Management](https://technet.microsoft.com/library/jj853085(v=ws.10).aspx).
 

@@ -7,24 +7,24 @@ ms.author: barclayn
 manager: MBaldwin
 ms.date: 10/17/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 77a222c0a36f4e244a5114eddfc0edadb168d1cd
-ms.sourcegitcommit: 06add1a636720f74bc0c0f25b4100b19f1bd31da
+ms.openlocfilehash: d9ed4414a3c4087b3ca7ec3709893ba1f8814d0a
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23451179"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333195"
 ---
 # <a name="mim2016-sp1-pam-deployment-scripts"></a>Scripts de implementação da PAM do MIM2016 SP1
 
-Neste service pack, introduzimos um conjunto de scripts de implementação para facilitar a implementação da PAM. Estes scripts estão disponíveis no centro de transferências. Antes de tentar a utilizar os scripts é importante que, certificar-se de que cumpre os requisitos abaixo:
+Neste service pack, introduzimos um conjunto de scripts de implementação para facilitar a implementação da PAM. Estes scripts estão disponíveis no centro de transferências. Antes de tentar usar os scripts é importante que certifique-se de que cumpre os requisitos abaixo:
 
 1. O sistema operativo em todos os servidores é, pelo menos, Windows Server 2012 R2.
-2. DNS deve ser configurado para permitir a resolução de nome entre os controladores de domínio e os servidores de componente.
+2. DNS deve ser configurado para habilitar a resolução de nome entre os controladores de domínio e servidores de componentes.
 3. Os binários de instalação têm de estar disponíveis localmente nos servidores designados para a instalação do SQL, SharePoint e MIM.
 4. O ambiente tem três máquinas dedicadas (físicas ou virtuais) que executam, de forma independente, o CORPDC, o PRIVDC e o PAMSERVER.
 5. Para a opção de validação tem de ter uma estação de trabalho dedicada.

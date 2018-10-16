@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 10/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: aebf5af709f4f775ce13be49d8f9075a94e864a2
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: ce86d2eed526972873015e62ef134358de56fdbd
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290327"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333127"
 ---
 # <a name="create-software-certificates-with-certificate-manager"></a>Criar certificados de software com o Gestor de Certificados
 Para se inscrever e renovar certificados de software, não tem de ser um administrador e não precisa de um smart card virtual. É importante salientar que, a determinada altura, será pedido que permita uma operação de certificado, mas isto é normal.

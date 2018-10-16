@@ -7,16 +7,16 @@ ms.author: davidste
 manager: mbaldwin
 ms.date: 2/20/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.suite: ems
-ms.openlocfilehash: 3c9e8c0fa0a0de3cf9710003d4d7f4ed9c0b03bd
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: ddccc9acaafe06017178e343d7cd675e3c3f8dec
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289650"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333314"
 ---
 # <a name="work-with-hybrid-reporting-in-identity-manager"></a>Trabalhar com relatórios no Identity Manager híbridos
 

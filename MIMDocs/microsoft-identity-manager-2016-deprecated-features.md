@@ -7,16 +7,15 @@ ms.author: davidste
 manager: mbaldwin
 ms.date: 2/28/2018
 ms.topic: reference
-ms.prod: identity-manager-2016
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: a4239f1d69d8a43d70dd38af16e9ef8be62bd33c
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: a7acf38f877b34582acf83c636a866b35ecf733a
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36288916"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334283"
 ---
 # <a name="deprecated-features"></a>Funcionalidades preteridas
 
@@ -70,7 +69,7 @@ A Microsoft não recomenda a clientes começam novas implementações dos compon
 | Extensão de regras      | ExchangeUtils: Create55\* métodos                     | Os métodos para criar objetos para servidores Exchange 5.5 serão removidos.        |
 | Interface            | Mms_Metaverse                                        | Todos os membros de classe ClmUtils serão removidos numa versão seguinte.   |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 Saiba mais sobre:
 
 - Microsoft Identity Manager está ainda intimamente relacionado com o respetivo predecessor, o Forefront Identity Manager. Se ainda utilizar FIM ou desejar referir-se a documentação adicional, observe o [Mapa de Documentação do FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx).

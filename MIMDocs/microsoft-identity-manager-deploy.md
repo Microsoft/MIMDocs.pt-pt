@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 10/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 3460436682054acf5e9e1b186c3fa39faaa40a43
-ms.sourcegitcommit: 8316fa41f06f137dba0739a8700910116b5575d8
+ms.openlocfilehash: d8cf13fc6a8b9b644d241679aa6095008fab21bc
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33079011"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334334"
 ---
 # <a name="deploy-microsoft-identity-manager-2016-sp1"></a>Implementar o Microsoft Identity Manager 2016 SP1
 Os artigos nesta secção fornecem instruções passo a passo para a implementação do Microsoft Identity Manager (MIM) 2016 para cenários personalizados do utilizador final num servidor novo no qual o FIM e o MIM não tenham sido anteriormente implementados.
@@ -27,20 +27,20 @@ Os artigos nesta secção fornecem instruções passo a passo para a implementa�
 
 O cenário de gestão de acesso privilegiado é implementado de forma diferente de outros cenários MIM, porque requer um ambiente dedicado de bastião de floresta.  Se quiser saber mais sobre implementar o MIM para Privileged Identity Management, consulte [Configuração do ambiente de MIM para Privileged Access Management](./pam/configuring-mim-environment-for-pam.md).
 
-O processo de implementação de MIM é muito semelhante ao processo para o respetivo predecessor, FIM 2010 R2. Se pretende referir-se à documentação FIM, Consultar o [Guia de Implementação do Forefront Identity Manager 2010 R2](https://technet.microsoft.com/library/jj134310).
+O processo de implementação MIM é muito semelhante ao processo para o respetivo predecessor, FIM 2010 R2. Se pretende referir-se à documentação FIM, Consultar o [Guia de Implementação do Forefront Identity Manager 2010 R2](https://technet.microsoft.com/library/jj134310).
 
 ## <a name="first-prepare-a-domain"></a>Primeiro: preparar um domínio
 O MIM funciona com o Active Directory (AD), como tal, siga estes passos para configurar o controlador de domínio do AD.
 - [Configuração do domínio](preparing-domain.md)
 
-## <a name="next-prepare-an-identity-management-servers"></a>Seguinte: Uma identidade de preparar os servidores de gestão
+## <a name="next-prepare-an-identity-management-servers"></a>Seguinte: Uma identidade de preparar servidores de gestão
 Assim que o seu domínio estiver no local e configurado, prepare o servidor de gestão de identidades empresariais. Isto inclui configurar:
 - [Windows Server 2016](prepare-server-ws2016.md)
 - [SQL Server 2016](prepare-server-sql2016.md)
 - [SharePoint 2016](prepare-server-sharepoint.md)
 - [Exchange Server](prepare-server-exchange.md) (opcional)
 
-## <a name="finally-install-microsoft-identity-manager-2016-sp1-components"></a>Por último: Componentes de SP1 instalar o Microsoft Identity Manager 2016
+## <a name="finally-install-microsoft-identity-manager-2016-sp1-components"></a>Por último: Instalar o Microsoft Identity Manager 2016 componentes do SP1
 Depois de configurar o domínio e o servidor, está pronto para instalar os componentes MIM e configurá-los para sincronizar com o AD.
 - [Serviço de Sincronização do MIM](install-mim-sync.md)
 - [Serviço e Portal do MIM](install-mim-service-portal.md)

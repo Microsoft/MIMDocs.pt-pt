@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 10/12/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 32cdf03ffa0d0d282a6277af766f97e93e3a3f3a
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 5a54cd60f8ccee51d3bdb9cdb4770ff659afe854
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289018"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333807"
 ---
 # <a name="capacity-planning-guide"></a>Guia de planeamento de capacidade
 
@@ -94,7 +94,7 @@ A configuração de políticas do MIM também inclui as decisões sobre o aprovi
 
 - Pensa utilizar o aprovisionamento sem código? Se o fizer, isso afetará o número de entradas de regras esperadas, bem como os fluxos de trabalho e os pedidos associados no sistema.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Considerações sobre a topologia da implementação do MIM](topology-considerations.md)
 - O que pode ser baixado [guia de planejamento de capacidade do Forefront Identity Manager (FIM) 2010](http://go.microsoft.com/fwlink/?LinkId=200180) apresenta mais detalhes sobre uma compilação de teste e resultados de teste de desempenho.

@@ -7,15 +7,15 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 09/11/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 11cde4e3b2779f9c32d9849a47713acf5f120b3c
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: e73596ea1b07814a46d638ac705edf5fdada76a2
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289701"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334351"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Guia de instalação do Microsoft BHOLD Suite SP1 (6.0)
 
@@ -78,7 +78,7 @@ Instalação do BHOLD Core e de FIM em servidores separados fornece maior desemp
 
 Na maioria dos ambientes, especialmente aqueles em que o desempenho é importante, deve executar o SP1 do BHOLD Suite, a FIM e o SQL Server em servidores separados (arquitetura de duas camadas). Com uma arquitetura de duas camadas, memória e recursos da CPU são dedicados para cada camada. A ilustração seguinte mostra uma forma possível de configurar uma arquitetura de duas camadas. O serviço de sincronização do FIM em execução no servidor do FIM sincroniza alterações entre as bases de dados do FIM e BHOLD. Tenha em atenção que, se for necessário o Self-Service do utilizador final, o módulo de integração do BHOLD FIM deve ser instalado no mesmo servidor que o serviço FIM e o Portal.
 
-![arquitetura de duas camadas](media/bhold-installation-guide/two-tier.png)
+![Arquitetura de duas camadas](media/bhold-installation-guide/two-tier.png)
 
 ### <a name="sql-server-recommendations"></a>Recomendações do SQL Server
 
@@ -113,7 +113,7 @@ Depois de editar e guardar o ficheiro, execute o comando iisreset para repor o s
 Não é possível atualizar uma instalação existente do BHOLD Suite. Em vez disso, tem de desinstalar uma instalação do BHOLD Suite existente antes de poder atualizar módulos do BHOLD. Se tiver um modelo de função do BHOLD existente, pode atualizar a base de dados do BHOLD e utilizá-lo ao instalar o módulo do BHOLD Core atualizado. Para obter mais informações, consulte [substituindo o BHOLD Suite com o SP1 do BHOLD Suite](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx).
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
 - [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

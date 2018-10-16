@@ -6,14 +6,14 @@ ms.author: billmath
 manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
-ms.openlocfilehash: cc33293c0a836f9e5118fc372abc5d96c1a5373d
-ms.sourcegitcommit: c6cb2556bb9f2256b959a3c95db7ca5bbfc2b437
+ms.openlocfilehash: d989f9dc3a3b1dbde8290c2b4588a9beb8142949
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065179"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49333263"
 ---
 # <a name="update-of-mim-specific-service-account-for-notifications-to-gmsa"></a>Atualização da conta de serviço específico de MIM para notificações a gMSA
 ===========================================

@@ -7,16 +7,15 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 01/05/2018
 ms.topic: reference
-ms.prod: identity-manager-2016
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 9ef96b88942fd33107d9021ddddb90d0d80dbed1
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 1765dfe20abd43808249480ab3701d5722c51c24
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36290123"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334181"
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Melhores Práticas do Microsoft Identity Manager 2016
 
@@ -634,7 +633,7 @@ O objetivo de MIM é processar os pedidos que podem ser iniciados por vários cl
 
 Para obter mais informações, consulte [partições do serviço de FIM de compreender](https://social.technet.microsoft.com/wiki/contents/articles/2363.understanding-fim-service-partitions.aspx).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 - [Guia de restauro e de cópia de segurança do FIM](http://go.microsoft.com/fwlink/?LinkID=165864)
 - [Como posso sincronizar utilizadores do Active Directory para o FIM](http://go.microsoft.com/fwlink/?LinkID=188277) 
 - [Visão geral do modelo de recuperação](http://go.microsoft.com/fwlink/?LinkID=185370).

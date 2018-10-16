@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 08/30/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b6598857d5704accbee461366838bb8efb9b2fc0
-ms.sourcegitcommit: c049dceaf02ab8b6008fe440daae4d07b752ca2e
+ms.openlocfilehash: 0d4ae72b897af3c6e737b412b7f8971b249ffa23
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2017
-ms.locfileid: "21942736"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334249"
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>Modelo de camada para criação de partições de privilégios administrativos
 
@@ -25,7 +25,7 @@ Este artigo descreve um modelo de segurança destinado a proteger contra a eleva
 
 ## <a name="elevation-of-privilege-in-active-directory-forests"></a>Elevação de Privilégios em florestas do Active Directory
 
-Os utilizadores, serviços ou contas de aplicações às quais são concedidos privilégios administrativos permanentes a florestas do Windows Server Active Directory (AD) introduzem uma quantidade significativa de risco para a missão e o negócio da sua organização. Estas contas são muitas vezes alvos pelos atacantes porque se ficarem comprometidas, o atacante tenha direitos para ligar a outros servidores ou aplicações no domínio.
+Os utilizadores, serviços ou contas de aplicações às quais são concedidos privilégios administrativos permanentes a florestas do Windows Server Active Directory (AD) introduzem uma quantidade significativa de risco para a missão e o negócio da sua organização. Estas contas são frequentemente visadas pelos atacantes porque se ficarem comprometidas, o atacante tem direitos para ligar a outros servidores ou aplicações no domínio.
 
 O modelo de camada cria divisões entre os administradores com base nos recursos que gerem. Os administradores com controlo sobre as estações de trabalho do utilizador estão separados dos que controlam as aplicações ou gerem as identidades de empresa. Saiba mais sobre este modelo no [Material de referência para proteger o acesso privilegiado](http://aka.ms/tiermodel).
 
@@ -58,7 +58,7 @@ As restrições de início de sessão podem ser impostas com:
 - Políticas de autenticação e silos, se utilizar o Windows Server 2012 ou posterior
 - Autenticação seletiva, se a conta estiver numa floresta administrativa dedicada
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - O artigo seguinte, [Planear um ambiente bastion](planning-bastion-environment.md), descreve como adicionar uma floresta administrativa dedicada para o Microsoft Identity Manager para estabelecer as contas administrativas.
-- [Estações de trabalho de acesso de Priviledged](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) fornecem um sistema operativo dedicado para tarefas confidenciais que se encontra protegido contra ataques de Internet e vetores de ameaças.
+- [Estações de trabalho de acesso de Priviledged](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) fornecem um sistema operativo dedicado para tarefas confidenciais sejam protegidos contra ataques de Internet e vetores de ameaças.

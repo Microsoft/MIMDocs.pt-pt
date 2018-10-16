@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 09/13/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 16ad83ab9a0fbe2b93428cf318b5ef138e2f3783
-ms.sourcegitcommit: 2be26acadf35194293cef4310950e121653d2714
+ms.openlocfilehash: b4f31a3b998e25992a6549e8db43f3f1f62a14f6
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2017
-ms.locfileid: "22052421"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49334147"
 ---
 # <a name="planning-a-bastion-environment"></a>Planear um ambiente bastion
 

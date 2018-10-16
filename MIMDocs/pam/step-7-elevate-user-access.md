@@ -6,15 +6,15 @@ ms.author: barclayn
 manager: mbaldwin
 ms.date: 01/17/2018
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
-ms.openlocfilehash: 9515d17767a75b349b0d3150fb90c136c478baa2
-ms.sourcegitcommit: 35f2989dc007336422c58a6a94e304fa84d1bcb6
+ms.openlocfilehash: 150e850e9184fef189b00e6aee3fab50939f47b9
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36289851"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49332821"
 ---
 # <a name="step-7--elevate-a-users-access"></a>Passo 7 – Elevar o acesso de um utilizador
 

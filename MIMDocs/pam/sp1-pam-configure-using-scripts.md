@@ -7,17 +7,17 @@ ms.author: barclayn
 manager: MBaldwin
 ms.date: 07/20/2017
 ms.topic: article
-ms.service: microsoft-identity-manager
+ms.prod: microsoft-identity-manager
 ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: f5ae81fe8c0c695b26f2a28626512e056df4db8b
-ms.sourcegitcommit: 46c68e2e0ebbf3cebae9fc04f1d2ba73bc987d5b
+ms.openlocfilehash: 3d10d8642694873512e9cc85cc90a75ce45c3361
+ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47414980"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49332970"
 ---
 # <a name="configure-pam-using-scripts"></a>Configurar a PAM através de scripts
 

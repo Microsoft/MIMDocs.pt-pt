@@ -2,20 +2,19 @@
 title: BHOLD reporting instalação | Documentos da Microsoft
 description: Módulo de relatórios do BHOLD permite-lhe gerar relatórios sobre as funções e políticas de autorização
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/07/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 7c95529bf1cd227bee8f1dde11c94a810b44fc8c
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 1f69f9f08cba24898509c771e4477b81c5ed272f
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332260"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358014"
 ---
 # <a name="bhold-reporting-installation"></a>Relatórios de instalação do BHOLD
 

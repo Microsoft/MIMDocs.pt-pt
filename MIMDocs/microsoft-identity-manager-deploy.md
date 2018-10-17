@@ -3,21 +3,20 @@ title: Passos necessários para implementar o Microsoft Identity Manager 2016 | 
 description: Obtenha a lista completa dos passos envolvidos na implementação do Microsoft Identity Manager 2016, desde a preparação do ambiente à configuração dos portais.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d8cf13fc6a8b9b644d241679aa6095008fab21bc
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: fdf3745979be2d911c9cc1c245149328311e7ad8
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334334"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358147"
 ---
 # <a name="deploy-microsoft-identity-manager-2016-sp1"></a>Implementar o Microsoft Identity Manager 2016 SP1
 Os artigos nesta secção fornecem instruções passo a passo para a implementação do Microsoft Identity Manager (MIM) 2016 para cenários personalizados do utilizador final num servidor novo no qual o FIM e o MIM não tenham sido anteriormente implementados.

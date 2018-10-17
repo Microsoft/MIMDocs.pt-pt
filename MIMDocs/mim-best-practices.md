@@ -2,20 +2,19 @@
 title: Melhores Práticas do Microsoft Identity Manager 2016 | Documentos da Microsoft
 description: ''
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 01/05/2018
 ms.topic: reference
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 1765dfe20abd43808249480ab3701d5722c51c24
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 8987bc53af37b32b95b00c3df67d9581d4e47120
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334181"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358861"
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Melhores Práticas do Microsoft Identity Manager 2016
 

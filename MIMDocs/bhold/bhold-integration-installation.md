@@ -2,20 +2,19 @@
 title: Instalação do BHOLD FIM/MIM integração | Documentos da Microsoft
 description: Módulo de integração do BHOLD adicionar gerenciamento de funções de autoatendimento para MIM e de FIM
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: aac41b173538fe9127e14a4b9a7eb540c000fe3b
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 317c9ae4c940a509b6ac328cd5bb7cd7baa4dde9
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334030"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358810"
 ---
 # <a name="bhold-fimmim-integration-installation"></a>Instalação do BHOLD Integration FIM/MIM
 

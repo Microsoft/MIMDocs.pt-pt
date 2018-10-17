@@ -2,22 +2,21 @@
 title: Instalar o Serviço de Sincronização do Microsoft Identity Manager | Documentos da Microsoft
 description: Comece a trabalhar com os componentes do MIM 2016 ao instalar e configurar o Serviço de Sincronização.
 keywords: ''
-author: fimguy
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 05/01/2018
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0c6f980aea883ef4e76b9a21e4492c4c21532b9f
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 1bc313a66776778fe3617969645076a6d2d10418
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332872"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357841"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>Instalar o MIM 2016: Serviço de Sincronização do MIM
 

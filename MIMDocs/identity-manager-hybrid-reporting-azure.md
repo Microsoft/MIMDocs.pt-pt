@@ -2,21 +2,20 @@
 title: O que é criação de relatórios híbridos no Azure AD? | Microsoft Docs
 description: Relatórios de atividade de auditoria híbridos no Azure Active Directory permite-lhe ver eventos auditados na cloud e no local.
 keywords: ''
-author: davidste
-ms.author: davidste
-manager: bhu
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: 7320f014-8b60-4866-92de-cfbd3e6edc48
 ms.suite: ems
-ms.openlocfilehash: 459e1c0c04f28b1ecc1c74f5f672c6318684cc90
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: dd87f00fb3faded60671a47a0ba1dab7e4c2a531
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332838"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358181"
 ---
 # <a name="hybrid-identity-management-audit-reporting-in-azure-active-directory"></a>Relatórios no Azure Active Directory de auditoria de gestão de identidade híbrida
 Com o Azure Active Directory (Azure AD) auditoria relatórios de atividade, pode monitorizar a atividade de gestão de identidades no local ou na cloud. Ao gerir todos os dados de identidades e acesso num único relatório, pode poupar tempo e reduzir os custos globais.

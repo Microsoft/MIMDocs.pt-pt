@@ -2,20 +2,19 @@
 title: Implementar o Gestor de certificados do Microsoft Identity Manager | Documentos da Microsoft
 description: Instalar Gestor de certificados do Microsoft Identity Manager 2016
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/19/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: c10c36a4dde8643e067ca91c6911bb0aed6d53dd
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 01c5c8357c8cb0424bd38b61836919f5c2c3e96a
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334436"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358878"
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>Implementar o Gestor de certificados do Microsoft Identity Manager 2016 (MIM CM)
 

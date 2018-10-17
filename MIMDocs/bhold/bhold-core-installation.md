@@ -2,20 +2,19 @@
 title: Núcleo do BHOLD instalação | Documentos da Microsoft
 description: Documento de núcleo de instalação do BHOLD suite
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/07/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 4499c2846655ff75462794d684cae44f03134f1c
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 48ff4a06233ba95288432c4cfe48e37b4d1449ab
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333535"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358742"
 ---
 # <a name="bhold-core-installation"></a>Instalação do BHOLD Core
 

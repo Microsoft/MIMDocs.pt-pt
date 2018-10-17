@@ -3,21 +3,20 @@ title: Utilizar a Sincronização do Microsoft Identity Manager com o AD | Docum
 description: Utilize agentes de gestão e o Serviço de Sincronização do MIM para sincronizar as bases de dados do Active Directory e do MIM.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 398b57d88d9aab3a981631fc3630631fecb034da
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 75935513ccb4ec3ebc089f9c5aad1d1624789a13
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333824"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358827"
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM
 

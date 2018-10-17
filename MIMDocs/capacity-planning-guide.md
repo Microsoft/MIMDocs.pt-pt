@@ -3,21 +3,20 @@ title: Guia de planeamento da capacidade | Documentos da Microsoft
 description: Utilize este guia para compreender as variáveis que devem ser consideradas antes de implementar o 2016 MIM, incluindo os níveis de carga e as decisões de políticas.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 5a54cd60f8ccee51d3bdb9cdb4770ff659afe854
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 7df93a0a24aee886ec4d07ee2894d93a91606fa0
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333807"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358393"
 ---
 # <a name="capacity-planning-guide"></a>Guia de planeamento de capacidade
 

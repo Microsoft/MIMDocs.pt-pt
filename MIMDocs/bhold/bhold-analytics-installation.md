@@ -2,20 +2,19 @@
 title: Instalação do BHOLD Analytics | Documentos da Microsoft
 description: Módulo do BHOLD Analytics fornece baseada em regras de teste de acesso a dados
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/07/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: 5a31ab2ba6f8ff0a8388d4976e4c44adaf044d87
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: ec7069156aa033b33a139ae83e26abcdea7b482a
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332277"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358334"
 ---
 # <a name="bhold-analytics-installation"></a>Instalação do BHOLD Analytics
 

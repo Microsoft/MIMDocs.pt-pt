@@ -2,20 +2,19 @@
 title: Instalação do BHOLD model generator | Documentos da Microsoft
 description: BHOLD modelo permite aos dados da estrutura de várias origens
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/07/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: ''
-ms.openlocfilehash: ddb49219b5f68ff060f9b15a9ab64cb85a035d98
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 3d2510d6ea604dd88e56436812ed8bc975bc5c2b
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333484"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358527"
 ---
 # <a name="bhold-model-generator-installation"></a>Instalação do BHOLD Model Generator
 

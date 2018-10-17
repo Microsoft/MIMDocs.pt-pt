@@ -3,21 +3,20 @@ title: Implementar o serviço de notificação de alteração de palavra-passe |
 description: Obtenha os passos para instalar e configurar o Serviço de Notificação de Alteração de Palavra-passe do MIM no controlador de domínio.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 5f9380b3bd9d77cc9e46b0af9b63141c940cc808
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 4acc2f5cf9ec9c5f752d7d794570e7bc24cd36e8
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334215"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357886"
 ---
 # <a name="deploy-the-mim-password-change-notification-service-on-a-domain-controller"></a>Implementar o Serviço de Notificação de Alteração de Palavra-passe do MIM num controlador de domínio
 

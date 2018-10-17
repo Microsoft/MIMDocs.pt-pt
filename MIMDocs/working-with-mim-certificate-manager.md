@@ -3,21 +3,20 @@ title: Implementar a aplicação Gestor de Certificados do MIM para Windows | Do
 description: Saiba como implementar a aplicação Gestor de Certificados para permitir aos utilizadores gerirem os respetivos direitos de acesso.
 keywords: ''
 author: billmath
-ms.author: barclayn
-manager: mbaldwin
+ms.author: billmath
+manager: mtillman
 ms.date: 10/16/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 304c030bc08be222a147373acbda8ba45e8f8cb5
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 8ff9edce6da865418e300095ff0827853a35d4eb
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333948"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358351"
 ---
 # <a name="mim-certificate-manager-windows-store-application-deployment"></a>Gestor de certificados de MIM Windows armazenar a implementação de aplicação
 

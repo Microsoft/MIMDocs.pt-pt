@@ -8,14 +8,13 @@ manager: mtillman
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: security
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: f8f55d8987189ec26df280a6dab0727e4e63fdff
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 139c58510117ad422529a4ff0facd23040023713
+ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334164"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358776"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>Colaboração de empresa-empresa (B2B) do Azure AD com o Microsoft Identity Manager(MIM) 2016 SP1 com o Proxy de aplicações do Azure
 ============================================================================================================================

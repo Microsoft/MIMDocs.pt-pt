@@ -2,22 +2,21 @@
 title: 'Passo 7: Configurar o histórico/filtragem do SID'
 description: Este é o Passo 7 da configuração do Privileged Identity Manager através de scripts. Este passo inclui a configuração do histórico do SID/da filtragem do SID.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: f10febeb02452517d49a897729f8d2ee12f85328
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: f85dd4eff32d5207948ec332bf2e9850b14a86fe
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332969"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379333"
 ---
 # <a name="step-7-set-up-sid-historysid-filtering"></a>Passo 7: Configurar o histórico/filtragem do SID
 

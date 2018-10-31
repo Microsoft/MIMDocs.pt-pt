@@ -2,22 +2,21 @@
 title: Implementar o PAM passo 5 – Ligação à Floresta | Documentos da Microsoft
 description: Estabelecer confiança entre as florestas PRIV e as florestas CORP para que os utilizadores com privilégios no PRIV passa, ainda assim, aceder aos recursos no CORP.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 11/29/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: a18ddac2c324cbefa0c87e24cec654175c9021dc
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 04195febdb721291e9dcf72f5bbda04923075596
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333384"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379772"
 ---
 # <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>Passo 5 - Estabelecer confiança entre florestas PRIV e CORP
 

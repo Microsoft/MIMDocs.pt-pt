@@ -2,22 +2,21 @@
 title: Adenda
 description: Esta é a Adenda aos documentos que incluem a implementação com scripts do PAM. Inclui a configuração dos domínios PRIV e CORP, bem como a configuração de um cliente para fazer a validação e as informações sobre como pedir assistência.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: fb478c7f5df50cc4f4a8f9fb9fff1b3a0b431a14
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 814386272bba0c3fa2cb73bc93dc842ac46e86fb
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333926"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379469"
 ---
 # <a name="pam-deployment-scripts-addendum"></a>Adenda de scripts de implementação da PAM:
 

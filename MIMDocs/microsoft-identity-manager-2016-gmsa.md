@@ -7,12 +7,12 @@ manager: mtillman
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: d3c0b6677c42d4f14d4f6255a2a661d3ef23661d
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 63f2509d35355a8fe3a59b173756257298079a92
+ms.sourcegitcommit: 6374aa4f7d58b7218626d36d0fc2dc4b38cb8332
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358300"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50237235"
 ---
 # <a name="conversion-of-mim-specific-services-to-gmsa"></a>Conversão de serviços específicos de MIM a gMSA
 
@@ -82,9 +82,9 @@ Primeira etapa no seu controlador de domínio do windows
 
     -   No servidor que o serviço de sincronização é instalado em localizar a ferramenta de gestão de chaves do serviço de sincronização
 
-    -   Por predefinição, o * * exportar chave conjunto * * já está selecionada
+    -   Por predefinição, o **exportar o conjunto de chaves** já está selecionada
 
-    -   Clique em **seguinte**
+    -   Clique em **seguinte**
 
     -   Agora será solicitado que introduza as informações de conta de sincronização existente
 
@@ -96,13 +96,13 @@ Primeira etapa no seu controlador de domínio do windows
 
         -   Domínio - domínio de que a conta de serviço de sincronização é distância de
 
-    -   Clique em **seguinte**
+    -   Clique em **seguinte**
 
     -   Se tiver introduzido algo incorretamente, receberá o erro seguinte
 
     -   Agora que introduziu com êxito as informações da conta, será apresentada com uma opção para alterar o destino (localização do ficheiro de exportação) a cópia de segurança da chave de encriptação
 
-        -   Por predefinição, é a localização do ficheiro de exportação **c:\\Windows\\system32**\\miiskeys 1.bin.
+        -   Por predefinição, é a localização do ficheiro de exportação **c:\\Windows\\system32**\\miiskeys 1.bin.
 
 4. Instale a compilação de serviço de sincronização do Microsoft Identity Manager SP1 4.4.1302.0. pode ser encontrado no Centro de transferências de licença de Volume ou o Centro de transferências MSDN. Depois de concluída a instalação, certifique-se, guardar o conjunto de chaves miiskeys.bin.
 
@@ -152,7 +152,7 @@ Primeira etapa no seu controlador de domínio do windows
 
 ![](media/0201f0281325c80eb70f91cbf0ac4d5b.jpg)
 
-3.  **TENHA EM ATENÇÃO**.  Questão conhecida que os serviços que utilizam a conta gerida hang depois de reiniciar o servidor devido ao serviço de distribuição de chaves Microsoft não está iniciado depois de reiniciar o Windows. Não foi possível iniciar o serviço e o Windows não foi possível reiniciar demasiado. O problema é reproduzível, pelo menos, no Windows Server 2012 R2. Solução para este problema está a executar o comando 
+3.  **TENHA EM ATENÇÃO**.  Questão conhecida que os serviços que utilizam a conta gerida hang depois de reiniciar o servidor devido ao serviço de distribuição de chaves Microsoft não está iniciado depois de reiniciar o Windows. Não foi possível iniciar o serviço e o Windows não foi possível reiniciar demasiado. O problema é reproduzível, pelo menos, no Windows Server 2012 R2. Solução para este problema está a executar o comando 
 
 -   **sc triggerinfo kdssvc início/networkon**
 

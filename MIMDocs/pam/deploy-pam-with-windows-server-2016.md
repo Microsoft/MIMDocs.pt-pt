@@ -2,25 +2,24 @@
 title: Implementar o Privileged Access Management do MIM com o Windows Server 2016 | Documentos da Microsoft
 description: Saiba mais sobre como implementar o Privileged Access Management com o Windows Server 2016
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: ''
-ms.openlocfilehash: fca3ed1b37a1cc3bf9833c2de4d606845867d5d8
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 347eda5872792872a9bb30357c45835303f92e01
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379755"
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>Implementar o PAM do MIM com o Windows Server 2016
 
 
-Este cenário permite que o MIM 2016 SP1 tire partido das funcionalidades do Windows Server 2016, como o controlador de domínio para a floresta "PRIV".  Quando este cenário está configurado, a permissão Kerberos do utilizador terá um prazo limitado ao tempo restante das respetivas ativações da função. 
+Este cenário permite que o MIM 2016 SP1 tire partido das funcionalidades do Windows Server 2016, como o controlador de domínio para a floresta "PRIV".  Quando este cenário está configurado, a permissão Kerberos do utilizador terá um prazo limitado ao tempo restante das respetivas ativações da função. 
 
 > [!Note]
 > Não é possível utilizar pré-visualizações técnicas do Windows Server 2016 anteriores à Pré-visualização Técnica 5 com esta versão do MIM.

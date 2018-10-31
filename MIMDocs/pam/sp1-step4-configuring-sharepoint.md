@@ -2,22 +2,21 @@
 title: 'Passo 4: Configurar o SharePoint'
 description: Este é o passo 4 da configuração do PAM através de scripts. Neste passo, vai configurar o SharePoint para o utilizar como parte da implementação do PAM.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: MBaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: af91fc1283e8576b38dcfef3deda2d2da6eed24e
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 422c4c973d76f5b91fb2463e237ead1984153484
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49333212"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379435"
 ---
 # <a name="step-4-configuring-sharepoint"></a>Passo 4: Configurar o SharePoint
 

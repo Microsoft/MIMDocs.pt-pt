@@ -2,22 +2,21 @@
 title: Implementar o PAM passo 6 – Mover grupo | Documentos da Microsoft
 description: Migrar um grupo para a floresta PRIV, para que possam ser geridos com Privilege Access Management.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f449ca475d8b1fe72203bf4cd3b5dd3c65329d13
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 0473ea9e01a44aeb4acbebe01e6e6f989c8581d0
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332940"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379316"
 ---
 # <a name="step-6--transition-a-group-to-privileged-access-management"></a>Passo 6 - Transição de um grupo o Privileged Access Management
 

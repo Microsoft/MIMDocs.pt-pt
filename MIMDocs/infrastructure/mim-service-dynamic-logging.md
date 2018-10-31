@@ -1,23 +1,20 @@
 ---
 title: Registo Dinâmico do Serviço MIM | Documentos da Microsoft
 description: Ative o registo dinâmico do serviço MIM sem ser necessário reiniciar o serviço de gestão
-keywords: ''
-author: fimguy
-ms.author: davidste
-manager: mbaldwin
-ms.date: 06/25/2018
+author: billmath
+ms.author: billmath
+manager: mtillman
+ms.date: 10/29/2018
 ms.topic: article
-ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
-ms.assetid: ''
-ms.openlocfilehash: ff82b2fce31abe417509347ce7b477dd1b4056f2
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: e5d8bcc640ad77b71a515b13bcb3bcf6985654f5
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49332342"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50380090"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
+
 Na versão 4.4.1436.0 adicionámos uma nova funcionalidade de registo. Esta funcionalidade permite aos engenheiros de suporte e aos administradores ativar o registo sem ser necessário reiniciar o serviço de gestão.
 
 Após a instalação, verá uma nova linha em Microsoft.ResourceManagement.Service.exe.config denominada
@@ -55,9 +52,11 @@ Para ver o rastreio, pode usar o [ferramenta Visualizador de rastreio do serviç
 
 Na compilação 4.5.x.x ter revimos a funcionalidade de registo para especificar o nível de registo predefinido é **"Aviso"**. O serviço escreve mensagens em dois arquivos ("00" e "01" índices são adicionados antes da extensão). Os ficheiros estão localizados no diretório de "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service". Quando o ficheiro excede o tamanho máximo é iniciado o serviço de escrita no outro ficheiro. Se existir outro ficheiro, esta será substituída. Tamanho máximo predefinido do arquivo é de 1 GB. Para alterar o tamanho máximo predefinido, é necessário adicionar **"maxOutputFileSizeKB"** parâmetro com o valor de tamanho de ficheiro máximo em KB para o serviço de escuta (veja o exemplo abaixo) e reinicie o serviço MIM. Quando o serviço é iniciado, ele anexa registos no ficheiro mais recente (se for excedido o limite de espaço substituir o ficheiro mais antigo). 
 
-> [!NOTE] Como o tamanho de ficheiro de verificação de serviço antes da mensagem é gravada, o tamanho do ficheiro pode ser superior ao tamanho máximo para o tamanho de uma mensagem. Por predefinição, o tamanho dos logs de pode ser aproximadamente 6 GB (três > Serviços de escuta com dois ficheiros para o tamanho de um GB).
+> [!NOTE] 
+> Como o tamanho de ficheiro de verificação de serviço antes da mensagem é gravada, o tamanho do ficheiro pode ser superior ao tamanho máximo para o tamanho de uma mensagem. Por predefinição, o tamanho dos logs de pode ser aproximadamente 6 GB (três > Serviços de escuta com dois ficheiros para o tamanho de um GB).
 
-> [!NOTE] A conta de serviço deve ter permissões para escrever > "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service" > diretório. No caso da conta de serviço não tem esses direitos, o > não serão criados ficheiros.
+> [!NOTE] 
+> A conta de serviço deve ter permissões para escrever > "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service" > diretório. No caso da conta de serviço não tem esses direitos, o > não serão criados ficheiros.
 
 Exemplo como definir o tamanho de ficheiro máximo como 200 MB (200 * 1024 KB) para ficheiros de svclog e 100 MB * (100 * 1024 KB) para ficheiros txt
 

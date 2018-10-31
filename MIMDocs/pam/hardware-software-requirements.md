@@ -2,22 +2,21 @@
 title: Requisitos de software do PAM | Documentos da Microsoft
 description: Localize os requisitos de hardware e software para uma implementação de Privileged Access Management com êxito
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/06/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 751bad4dc8632fbffca8724056c8faff7a01caac
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 4838e9e8a495866902a78e713bb3b226eaf9def1
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334198"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379816"
 ---
 # <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
 

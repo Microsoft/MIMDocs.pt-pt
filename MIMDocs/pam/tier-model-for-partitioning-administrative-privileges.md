@@ -2,22 +2,21 @@
 title: Modelo de camada do ambiente do PAM | Documentos da Microsoft
 description: Saiba mais sobre o modelo de camada que segrega o sistema com base na vulnerabilidade a riscos.
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 08/30/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0d4ae72b897af3c6e737b412b7f8971b249ffa23
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: 8e7b7217714f0ef74c1d959eb51dac07018d6e77
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334249"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50379728"
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>Modelo de camada para criação de partições de privilégios administrativos
 

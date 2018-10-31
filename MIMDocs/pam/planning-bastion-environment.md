@@ -2,22 +2,21 @@
 title: Planear um ambiente bastion | Documentos da Microsoft
 description: ''
 keywords: ''
-author: barclayn
-ms.author: barclayn
-manager: mbaldwin
+author: billmath
+ms.author: billmath
+manager: mtillman
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.technology: active-directory-domain-services
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b4f31a3b998e25992a6549e8db43f3f1f62a14f6
-ms.sourcegitcommit: ace4d997c599215e46566386a1a3d335e991d821
+ms.openlocfilehash: f8fd71d2244760d3a6561c6f55bf676e6f42561a
+ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49334147"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50380073"
 ---
 # <a name="planning-a-bastion-environment"></a>Planear um ambiente bastion
 

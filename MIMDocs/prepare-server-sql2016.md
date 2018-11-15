@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cc6b2680f2e5cd8d2063af01b2031ce3a4a7be0f
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 141aabff13bf38c83f35efb2aad5de8c8d732eca
+ms.sourcegitcommit: 869239972877b2905758aba4bb6b028dd09f9390
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358266"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51635201"
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2016"></a>Configurar um servidor de gestão de identidades: SQL Server 2016
 
@@ -46,7 +46,7 @@ ms.locfileid: "49358266"
 
 More info SQL deployment accounts and services can be found [here](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions?view=sql-server-2017)
 > [!NOTE]
-> SSMS is no longer included in SQL 2016 downlaod details can be found [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)    ```
+> SSMS is no longer included in SQL 2016. Download details can be found [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)    ```
 > 
 > [!div class="step-by-step"]  
 > [« Windows Server 2016](prepare-server-ws2016.md)

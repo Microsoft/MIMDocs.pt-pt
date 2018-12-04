@@ -5,21 +5,23 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 05/22/2018
+ms.date: 12/02/2018
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: 4102ffc450b993faaa62da66bb25f242b7e39280
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: f75eb69360852c9f629b60d4900638c8b51e068a
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358725"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825795"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Manipulação de dados do Microsoft Identity Manager 
 
-Neste artigo fornecem orientações sobre como a organização pode através da pesquisa, delete, decisões de operações de atualização e relatório que sua empresa precisará de praticar ou implementar em várias origens de dados ligada. Antes de decidir sobre sua abordagem de eliminar ou atualizar uma compreensão o design atual e a configuração do sistema identity manager (MIM) é fundamental. Seguem-se que alguns cenários clientes precisam considerar e responda às seguintes perguntas: 
+Neste artigo fornecem orientações sobre como as organizações podem tomar decisões que podem ser aplicadas em várias origens de dados ligada.  Isso pode ser conseguido através da pesquisa, delete, atualização e operações de relatório.  Antes de decidir sobre sua abordagem de exclusão ou atualização, uma compreensão da estrutura atual e a configuração do seu sistema do Gestor de identidade (MIM) é fundamental. 
+
+Seguem-se que alguns cenários clientes precisam considerar e responda às seguintes perguntas: 
 
 - Os dados que precisa para identity management ajudar no processo de negócio?
 - Onde será dados atuais para ser armazenado em MIM?

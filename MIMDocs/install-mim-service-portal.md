@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 535c80fa2ff1b6250ae9a3f340cb514e58f390a9
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: fc70a0edb610fcb862d85902dd5e611e65f6e689
+ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358623"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52825812"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>Instalar o MIM 2016: Portal e Serviço MIM
 
@@ -68,11 +68,11 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 12. Especifique *CORPIDM* (o nome deste computador) como o endereço do servidor do Serviço MIM para o Portal do MIM.
 
-13. Especifique *http://mim.contoso.com* como o SharePoint URL de coleção de sites.
+13. Especificar `*http://mim.contoso.com*` como o SharePoint URL de coleção de sites.
 
-14. Especifique *http://passwordregistration.contoso.com* como o URL de registo de palavras-passe de porta 80, recomendamos a atualizar mais tarde com o certificado SSL em 443.
+14. Especificar `*http://passwordregistration.contoso.com*` como o URL de registo de palavras-passe de porta 80, recomendamos a atualizar mais tarde com o certificado SSL em 443.
 
-15. Especifique *http://passwordreset.contoso.com* como o URL de reposição de palavra-passe de porta 80, recomendamos a atualizar mais tarde com o certificado SSL em 443.
+15. Especificar `*http://passwordreset.contoso.com*` como o URL de reposição de palavra-passe de porta 80, recomendamos a atualizar mais tarde com o certificado SSL em 443.
 
 16. Selecione a caixa de verificação para abrir as portas 5725 e 5726 na firewall e a caixa de verificação para conceder acesso ao Portal do MIM a todos os utilizadores autenticados.
 
@@ -90,7 +90,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 ## <a name="configure-mim-password-reset-portal"></a>Configurar o Portal de Reposição de Palavras-passe do MIM
 
-1. Defina o nome de conta de serviço de registo SSPR para *Contoso\MIMSSPR* e a respetiva palavra-passe para <em>Pass@word1</em>.
+1. Defina o nome de conta de serviço de registo SSPR para *Contoso\MIMSSPR* e a respetiva palavra-passe para <em> Pass@word1 </em>.
 
 2. Especifique *passwordreset.contoso.com* como o nome de anfitrião para o Portal de reposição de palavra-passe de MIM e defina a porta para **80**. Ative a opção **Abrir porta na firewall**.
 
@@ -106,7 +106,7 @@ Quando todas as definições de pré-instalação estiverem prontas, clique em *
 
 Depois de concluída a instalação, verifique se o Portal do MIM está ativo.
 
-1. Inicie o Internet Explorer e ligue-se ao Portal de MIM no *http://mim.contoso.com/identitymanagement*. Tenha em atenção que pode existir um curto atraso na primeira visita a esta página.
+1. Inicie o Internet Explorer e ligue-se ao Portal de MIM no * http://mim.contoso.com/identitymanagement *. Tenha em atenção que pode existir um curto atraso na primeira visita a esta página.
 
     - Se necessário, efetue a autenticação como *contoso\miminstall* para o Internet Explorer.
 

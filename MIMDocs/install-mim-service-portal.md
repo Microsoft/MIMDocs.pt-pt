@@ -90,7 +90,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 ## <a name="configure-mim-password-reset-portal"></a>Configurar o Portal de Reposição de Palavras-passe do MIM
 
-1. Defina o nome de conta de serviço de registo SSPR para *Contoso\MIMSSPR* e a respetiva palavra-passe para <em> Pass@word1 </em>.
+1. Defina o nome de conta de serviço de registo SSPR para *Contoso\MIMSSPR* e a respetiva palavra-passe para <em>Pass@word1</em>.
 
 2. Especifique *passwordreset.contoso.com* como o nome de anfitrião para o Portal de reposição de palavra-passe de MIM e defina a porta para **80**. Ative a opção **Abrir porta na firewall**.
 
@@ -106,7 +106,7 @@ Quando todas as definições de pré-instalação estiverem prontas, clique em *
 
 Depois de concluída a instalação, verifique se o Portal do MIM está ativo.
 
-1. Inicie o Internet Explorer e ligue-se ao Portal de MIM no * http://mim.contoso.com/identitymanagement *. Tenha em atenção que pode existir um curto atraso na primeira visita a esta página.
+1. Inicie o Internet Explorer e ligue-se ao Portal de MIM no *http://mim.contoso.com/identitymanagement*. Tenha em atenção que pode existir um curto atraso na primeira visita a esta página.
 
     - Se necessário, efetue a autenticação como *contoso\miminstall* para o Internet Explorer.
 

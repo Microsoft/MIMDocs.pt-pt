@@ -1,5 +1,5 @@
 ---
-title: Microsoft Identity Manager 2016 | Documentos da Microsoft
+title: Aprovisionamento de utilizadores do Microsoft Identity Manager 2016 para o AD | Documentos da Microsoft
 description: Reveja o processo de criação de utilizadores no AD DS com o Microsoft Identity Manager 2016
 keywords: ''
 author: billmath
@@ -9,12 +9,12 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 88473df88271937b07450df409353c0b3ca08684
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 5e259df617c5a95fcd54f49c9cbb70f9cd0c36a4
+ms.sourcegitcommit: 486f860f0951413aed335138eb6ad4ce6c50ed4d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358793"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56852668"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
 
@@ -102,7 +102,7 @@ A seguinte tabela indica os componentes que fazem parte do cenário contido nest
 | ![Agentes de gestão e perfis de execução](media/how-provision-users-adds/image007.jpg)  | Agentes de gestão e perfis de execução | &#183; **ADMA da Fabrikam** – agente de gestão que troca dados com o AD DS. <br/> &#183; FIMMA da Fabrikam – agente de gestão que troca dados com o MIM.                                                                                 |
 | ![Regras de sincronização](media/how-provision-users-adds/image008.jpg)  | Regras de sincronização              | Regra de Sincronização de Saída de Grupo da Fabrikam – regra de sincronização de saída que aprovisiona utilizadores para o AD DS.                                     |
 | ![Conjuntos](media/how-provision-users-adds/image009.jpg)   | Conjuntos                               | Todos os Contratantes – conjunto com associação de grupo dinâmica de todos os objetos com o valor de atributo EmployeeType do Contratante.                                |
-| ![Fluxos de Trabalho](media/how-provision-users-adds/image010.jpg)  | Fluxos de Trabalho                          | Fluxo de Trabalho de Aprovisionamento do AD – fluxo de trabalho para incluir o utilizador do MIM no âmbito da Regra de Sincronização de Saída do AD.                                |
+| ![Fluxos de trabalho](media/how-provision-users-adds/image010.jpg)  | Fluxos de Trabalho                          | Fluxo de Trabalho de Aprovisionamento do AD – fluxo de trabalho para incluir o utilizador do MIM no âmbito da Regra de Sincronização de Saída do AD.                                |
 | ![Regras de política de gestão](media/how-provision-users-adds/image011.jpg)   | Regras de política de gestão            | Regra de Política de Gestão de Aprovisionamento do AD – a regra de política de gestão (MPR) que é acionada quando um recurso se torna membro do conjunto Todos os Contratantes. |
 | ![Utilizadores do MIM](media/how-provision-users-adds/image012.jpg) | Utilizadores do MIM                          | Eduarda Almeida – utilizadora do MIM a aprovisionar ao AD DS.                                                                                             |
 
@@ -121,14 +121,14 @@ O cenário descrito neste guia consiste nos blocos modulares apresentados na seg
 
 Nesta secção, encontrará instruções para os recursos que precisa de criar e que se encontram fora do seu ambiente do MIM.
 
-### <a name="step-1-create-the-ou"></a>Passo 1: criar a UO
+### <a name="step-1-create-the-ou"></a>Passo 1: Criar a UO
 
 
 Tem de criar a UO como um contentor para o utilizador de exemplo aprovisionado. Para obter mais informações sobre como criar UOs, veja [Criar uma Nova Unidade Organizacional](http://go.microsoft.com/FWLink/p/?LinkId=189655).
 
 Crie uma UO com o nome MIMObjects no AD DS.
 
-### <a name="step-2-create-the-active-directory-user-accounts"></a>Passo 2: crie as contas de utilizador do Active Directory
+### <a name="step-2-create-the-active-directory-user-accounts"></a>Passo 2: Crie as contas de utilizador do Active Directory
 
 Para o cenário descrito neste guia, irá precisar de duas contas de utilizador do Active Directory:
 
@@ -152,7 +152,7 @@ Para o cenário descrito neste guia, terá de criar dois agentes de gestão:
 
 -   **FIMMA da Fabrikam** – o agente de gestão do serviço FIM.
 
-### <a name="step-3-create-the-fabrikam-adma-management-agent"></a>Passo 3: criar o agente de gestão do ADMA da Fabrikam
+### <a name="step-3-create-the-fabrikam-adma-management-agent"></a>Passo 3: Criar o agente de gestão do ADMA da Fabrikam
 
 Ao configurar um agente de gestão do AD DS, tem de especificar uma conta que seja utilizada pelo agente de gestão na troca de dados com o AD DS. Deve utilizar uma conta de utilizador normal. No entanto, para importar os dados do AD DS, a conta tem de ter o direito para consultar as alterações feitas pelo controlo DirSync. Se pretende que o seu agente de gestão exporte dados para o AD DS, tem de conceder direitos suficientes à conta na UO de destino. Para obter mais informações sobre este tópico, veja [Configuring the ADMA Account (Configurar a Conta ADMA)](http://go.microsoft.com/FWLink/p/?LinkId=189657).
 
@@ -170,7 +170,7 @@ A seguinte tabela indica as definições específicas do cenário mais important
 | Página de estruturador do agente de gestão                          | Configuração                                                  |
 |---------------------------------------------------------|----------------------------------------------------------------|
 | Criar agente de gestão                                 | 1. **Agente de gestão para:** AD DS  <br/> 2.  **Nome:** ADMA da Fabrikam |
-| Ligar à floresta do Active Directory                      | 1. **Selecione as partições de diretório:** "DC=Fabrikam,DC=com"   <br/>   2. Clique em **Contentores** para abrir a caixa de diálogo **Selecionar Contentores** e certifique-se de que a UO **MIMObjects** é a única que está selecionada.        |
+| Ligar à floresta do Active Directory                      | 1. **Selecione partições de diretório:** "DC = Fabrikam, DC = com"   <br/>   2. Clique em **Contentores** para abrir a caixa de diálogo **Selecionar Contentores** e certifique-se de que a UO **MIMObjects** é a única que está selecionada.        |
 | Selecionar Tipos de objeto                                     | Para além dos Tipos de objeto já selecionados, selecione **utilizador.** |
 | Selecionar atributos                                       | 1. Clique em **Mostrar Tudo.** <br/>   2. Selecione os seguintes atributos: <br/> &nbsp;&nbsp;&nbsp;&#176; **displayName** <br/> &nbsp;&nbsp;&nbsp;&#176; **givenName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **sn** <br/> &nbsp;&nbsp;&nbsp;&#176;  **SamAccountName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **unicodePwd** <br/> &nbsp;&nbsp;&nbsp;&#176;  **userAccountControl**     
 
@@ -183,7 +183,7 @@ Para obter mais informações, veja os seguintes tópicos no menu Ajuda:
 > [!Note]
 > Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
 
-### <a name="step-4-create-the-fabrikam-fimma-management-agent"></a>Passo 4: criar o agente de gestão do FIMMA da Fabrikam
+### <a name="step-4-create-the-fabrikam-fimma-management-agent"></a>Passo 4: Criar o agente de gestão do fimma da Fabrikam
 
 Ao configurar um agente de gestão do Serviço FIM, tem de especificar uma conta que seja utilizada pelo agente de gestão na troca de dados com o Serviço FIM.
 
@@ -193,8 +193,8 @@ A seguinte tabela indica as definições específicas do cenário mais important
 
 | Página de estruturador do agente de gestão | Configuração |
 |------------|------------------------------------|
-| Criar agente de gestão | 1. **Agente de gestão para:** Agente de Gestão do Serviço FIM <br/> 2. **Nome** FIMMA da Fabrikam |
-| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183; **Base de dados:** FIMService <br/> &#183;**Endereço base do serviço de FIM:** http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
+| Criar agente de gestão | 1. **Agente de gestão para:** Agente de gestão do serviço FIM <br/> 2. **Nome** FIMMA da Fabrikam |
+| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183;**Base de dados:** FIMService <br/> &#183;**Endereço base do serviço de FIM:** http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
 | Selecionar Tipos de objeto                                     | Para além dos Tipos de objeto selecionados, selecione **Pessoa.**   |
 | Configurar mapeamentos de Tipos de objetos                          | Para além dos mapeamentos de tipos de objetos existentes, adicione um mapeamento da pessoa **Tipo de Objeto Origem de Dados** à pessoa **Tipo de Objeto Metaverso**. |
 | Configurar fluxo de atributos                                | Para além dos mapeamentos de fluxos de atributos existentes, adicione os seguintes mapeamentos de fluxos de atributos: <br/><br/> ![Fluxo de atributos](media/how-provision-users-adds/image018.jpg) |
@@ -214,7 +214,7 @@ Para obter mais informações, consulte os seguintes tópicos do menu de ajuda:
 > [!NOTE]
 >  Certifique-se de que configurou uma regra de importação de fluxos de atributos para o atributo ExpectedRulesList.
 
-### <a name="step-5-create-the-run-profiles"></a>Passo 5: criar os perfis de execução
+### <a name="step-5-create-the-run-profiles"></a>Passo 5: Criar os perfis de execução
 
 A seguinte tabela indica os perfis de execução que tem de criar para o cenário descrito neste guia.
 
@@ -245,13 +245,13 @@ O objetivo desta política de aprovisionamento é incluir grupos no âmbito da R
 
 Para configurar o serviço FIM, navegue na Windows Internet Explorer® para http://localhost/identitymanagement. Na página do Portal do MIM Portal, para criar a política de aprovisionamento, aceda às páginas relacionadas da secção Administração. Para verificar a sua configuração, deve executar o script [Using Windows PowerShell to document your provisioning policy configuration (Utilizar o Windows PowerShell para documentar a configuração da sua política de aprovisionamento)](http://go.microsoft.com/FWLink/p/?LinkId=189661).
 
-### <a name="step-6-create-the-synchronization-rule"></a>Passo 6: criar a regra de sincronização
+### <a name="step-6-create-the-synchronization-rule"></a>Passo 6: Criar a regra de sincronização
 
 As seguintes tabelas mostram a configuração da regra de sincronização de aprovisionamento da Fabrikam. Crie a regra de sincronização de acordo com os dados apresentados nas seguintes tabelas.
 
 | Configuração de regra de sincronização                                                                         |                                                                             |                                                           
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------|
-| Nome                                                                                                       | Regra de Sincronização de Saída de Utilizadores do Active Directory                         |                                                          
+| Name                                                                                                       | Regra de Sincronização de Saída de Utilizadores do Active Directory                         |                                                          
 | Descrição                                                                                               |                                                                             |                                                           
 | Precedência                                                                                                | 2                                                                           |                                                           
 | Direção do Fluxo de Dados   | Saída             |       
@@ -280,23 +280,23 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 |-------------------|---------------------- |---------------|
 | Permitir valores nulos                 | Destino                                                                 | Origem                                                    |
 | falso                       | dn                                                                          | \+("CN=",displayName,",OU=MIMObjects,DC=fabrikam,DC=com") |
-| falso                       | userAccountControl                                                          | **Constante:** 512                                         |
-| falso                                                                     | unicodePwd                    | Constante: P\@\$\$W0rd                                    |
+| false                       | controloContaUtilizador                                                          | **Constante:** 512                                         |
+| false                                                                     | pwdUnicode                    | Constante: P\@\$\$W0rd                                    |
 
 | Fluxos do atributo de saída persistentes  |                                                                     |                                                           |
 |--------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------|
 | Permitir valores nulos                                                                                                | Destino                                                                 | Origem                                                    |
-| falso                                                                                                      | sAMAccountName                                                              | accountName                                               |
-| falso                                                                                                      | displayName                                                                 | displayName                                               |
-| falso                                                                                                      | givenName                                                                   | firstName                                                 |
-| falso                                                                                                      | sn                                                                          | lastName                                                  |
+| false                                                                                                      | sAMAccountName                                                              | accountName                                               |
+| false                                                                                                      | displayName                                                                 | displayName                                               |
+| false                                                                                                      | givenName                                                                   | firstName                                                 |
+| false                                                                                                      | sn                                                                          | lastName                                                  |
 
 
 
 > [!NOTE]
 >  Importante Certifique-se de que selecionou a opção Apenas Fluxo Inicial para o fluxo do atributo que contém o DN como destino.                                                                          
 
-### <a name="step-7-create-the-workflow"></a>Passo 7: criar o fluxo de trabalho
+### <a name="step-7-create-the-workflow"></a>Passo 7: Criar o fluxo de trabalho
 
 O Fluxo de Trabalho de Aprovisionamento do AD tem como objetivo adicionar a regra de sincronização de aprovisionamento da Fabrikam a um recurso. As seguintes tabelas mostram a configuração.  Crie um fluxo de trabalho de acordo com os dados apresentados nas tabelas abaixo.
 
@@ -309,21 +309,21 @@ O Fluxo de Trabalho de Aprovisionamento do AD tem como objetivo adicionar a regr
 
 | Regra de sincronização                 |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
-| Nome                                 | Regra de Sincronização de Saída de Utilizadores do Active Directory             |
+| Name                                 | Regra de Sincronização de Saída de Utilizadores do Active Directory             |
 | Ação                               | Adicionar                                                             |
 
 
 
 
-### <a name="step-8-create-the-mpr"></a>Passo 8: criar o MPR
+### <a name="step-8-create-the-mpr"></a>Passo 8: Criar o MPR
 
 O tipo de MPR necessário é Transição de Conjunto e este é acionado quando um recurso se torna membro do conjunto Todos os Contratantes. As seguintes tabelas mostram a configuração.  Crie um MPR de acordo com os dados nas tabelas abaixo.
 
 | Configuração de MPR                    |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| Nome                                 | Regra de Política de Gestão do Aprovisionamento de Utilizadores do AD                 |
+| Name                                 | Regra de Política de Gestão do Aprovisionamento de Utilizadores do AD                 |
 | Descrição                          |                                                             |
-| Tipo                                 | Transição de Conjunto                                              |
+| Type                                 | Transição de Conjunto                                              |
 | Concede Permissões                   | Falso                                                       |
 | Desativado                             | Falso                                                       |
 
@@ -334,7 +334,7 @@ O tipo de MPR necessário é Transição de Conjunto e este é acionado quando u
 
 | Fluxos de trabalho de políticas                     |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| Tipo                                 | Ação                                                      |
+| Type                                 | Ação                                                      |
 | Nome a Apresentar                         | Fluxo de Trabalho de Aprovisionamento de Utilizadores do Active Directory                 |
 
 
@@ -349,7 +349,7 @@ Os objetivos da fase de inicialização são os seguintes:
 
 -   Incluir a sua estrutura do Active Directory no espaço conector do Active Directory.
 
-### <a name="step-9-run-the-run-profiles"></a>Passo 9: executar os perfis de execução
+### <a name="step-9-run-the-run-profiles"></a>Passo 9: Execute os perfis de execução
 
 A seguinte tabela indica os perfis de execução que fazem parte da fase de inicialização.  Execute os perfis de execução de acordo com a tabela abaixo.
 
@@ -381,7 +381,7 @@ Esta secção tem como objetivo testar a sua configuração atual. Para testar a
 
 4.  Verificar se o utilizador existe no AD DS.
 
-### <a name="step-10-create-a-sample-user-in-mim"></a>Passo 10: criar um utilizador de exemplo no MIM
+### <a name="step-10-create-a-sample-user-in-mim"></a>Passo 10: Criar um utilizador de exemplo em MIM
 
 
 A seguinte tabela indica as propriedades do utilizador de exemplo. Crie um utilizador de exemplo de acordo com os dados na tabela abaixo.
@@ -406,14 +406,14 @@ Para aprovisionar o utilizador de exemplo no AD DS, é necessário cumprir dois 
 
 2.  O utilizador definido tem de estar no âmbito da regra de sincronização de saída.
 
-### <a name="step-11-verify-the-user-is-a-member-of-all-contractors"></a>Passo 11: verificar se o utilizador é membro do conjunto Todos os Contratantes
+### <a name="step-11-verify-the-user-is-a-member-of-all-contractors"></a>Passo 11: Certifique-se de que o utilizador é membro de todos os contratantes
 
 Se verificar se o utilizador é membro do conjunto Todos os Contratantes, abra o conjunto e, em seguida, clique em Ver Membros.
 
 ![Verifique se o utilizador é membro do conjunto Todos os Contratantes](media/how-provision-users-adds/image022.jpg)
 
 
-### <a name="step-12-verify-the-user-is-in-the-scope-of-the-outbound-synchronization-rule"></a>Passo 12: verifique se o utilizador está no âmbito da regra de sincronização de saída
+### <a name="step-12-verify-the-user-is-in-the-scope-of-the-outbound-synchronization-rule"></a>Passo 12: Certifique-se de que o utilizador está no âmbito da regra de sincronização de saída
 
 Para verificar se o utilizador está no âmbito da regra de sincronização, abra a página de propriedades do utilizador e verifique o atributo Lista de Regras Esperadas no separador Aprovisionamento. O atributo Lista de Regras Esperadas deverá indicar o utilizador do AD
 
@@ -425,7 +425,7 @@ Nesta fase do processo, o Estado da Regra de Sincronização será Pendente. Ist
 
 
 
-### <a name="step-13-synchronize-the-sample-group"></a>Passo 13: sincronizar o grupo de exemplo
+### <a name="step-13-synchronize-the-sample-group"></a>Passo 13: Sincronizar o grupo de exemplo
 
 
 Antes de iniciar o primeiro ciclo de sincronização de um objeto de teste, deve controlar o estado esperado do objeto após executar todos os perfis de execução necessários num plano de teste. O seu plano de teste também deve incluir os valores do atributo esperados junto do estado geral do seu objeto (criado, atualizado ou eliminado).
@@ -493,7 +493,7 @@ Execute os perfis de execução de acordo com as instruções indicadas nesta se
 > [!IMPORTANT]
 > Cada perfil de execução tem de ser executado sem erros.
 
-### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>Passo 14: verificar o utilizador aprovisionado no AD DS
+### <a name="step-14-verify-the-provisioned-user-in-ad-ds"></a>Passo 14: Verifique se o utilizador aprovisionado no AD DS
 
 Para verificar se o seu utilizador de exemplo foi aprovisionado no AD DS, tem de abrir a UO FIMObjects. Deverá encontrar a utilizadora Eduarda Almeida na UO FIMObjects.
 
@@ -524,7 +524,7 @@ O nome, o domínio e os atributos objectSID da conta são necessários se quiser
 
 [How Can I Manage My FIM MA Account (Como posso Gerir a Minha Conta FIMMA)](http://go.microsoft.com/FWLink/p/?LinkId=189672)
 
-[Detecting Nonauthoritative Accounts – Part 1: Envisioning (Detetar Contas Não Autoritativas – Parte 1: Antevisão)](http://go.microsoft.com/FWLink/p/?LinkId=189673)
+[Detetar contas não autoritativa – parte 1: Previsão](http://go.microsoft.com/FWLink/p/?LinkId=189673)
 
 [The Poor Man’s Version of a Connector Detection Mechanism (A Versão Simplificada de um Mecanismo de Deteção de Conectores)](http://go.microsoft.com/FWLink/p/?LinkId=189674)
 

@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1bc313a66776778fe3617969645076a6d2d10418
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: cec04cf430ba38ec40b61e4aad68fd8447d13c99
+ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357841"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56952184"
 ---
-# <a name="install-mim-2016-mim-synchronization-service"></a>Instalar o MIM 2016: Serviço de Sincronização do MIM
+# <a name="install-mim-2016-mim-synchronization-service"></a>Instale o MIM 2016: Serviço de Sincronização do MIM
 
 > [!div class="step-by-step"]
 > [« Exchange Server](prepare-server-exchange.md)
@@ -30,14 +30,14 @@ ms.locfileid: "49357841"
 > - Nome de domínio – **contoso**
 > - Nome do servidor de serviço de MIM - **corpservice**
 > - Nome do servidor de sincronização de MIM - **corpsync**
-> - Nome do SQL Server - **corpsql**
+> - SQL Server name - **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro o pacote de instalação.
 
 1. Inicie sessão como *contoso\miminstall* para o servidor estiver a utilizar para o servidor de sincronização de gestão de identidade **corpsync**.
 
-2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.
+2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.  Se não tiver esta DVD, consulte [downloads e licenciamento do Microsoft Identity Manager](microsoft-identity-manager-licensing.md).
 
 ## <a name="install-mim-2016-sp1-synchronization-service"></a>Instalar o serviço de sincronização de MIM 2016 SP1
 
@@ -57,15 +57,15 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 6. No ecrã de configuração da base de dados do Serviço de Sincronização, selecione:
 
-   1.  O SQL Server está localizado em: **remoto de uma máquina** chamado **corpsql.contoso.com**.
+   1.  O SQL Server está localizado em: **Um computador remoto** chamado **corpsql.contoso.com**.
 
-   2.  A instância do SQL Server é: **a instância predefinida**
+   2.  Instância do SQL Server é: **A instância predefinida**
 
    ![Imagem de ligação à base de dados](media/install-mim-sync/MIM_Install3.png)
 
 7. Configure a Conta do Serviço de Sincronização, de acordo com a conta que criou anteriormente:
 
-   1. Conta de serviço: *SincronizaçãoMIM*
+   1. Conta de serviço: *MIMSync*
 
    2. Palavra-passe: <em>Pass@word1</em>
 

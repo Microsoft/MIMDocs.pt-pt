@@ -12,12 +12,12 @@ ms.technology: security
 ms.assetid: ''
 ms.reviewer: billmath
 ms.suite: ems
-ms.openlocfilehash: 9e74b7ccf332c1572ce395fad18b8629673c756a
-ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
+ms.openlocfilehash: 7c5ab987801c63dca2457025442a35560dca3b86
+ms.sourcegitcommit: 225fca802d6b59bdc98d50020b297eb6393f70eb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954550"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "64518738"
 ---
 # <a name="microsoft-identity-manager-2016-licensing-and-downloads"></a>Licenciamento do Microsoft Identity Manager 2016 e downloads
 

@@ -1,79 +1,77 @@
 {
   "build_entry_point": "docs.ps1",
-  "docsets_to_publish": [
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+"docsets_to_publish": [
     {
       "docset_name": "MIMDocs",
+      "build_source_folder": "MIMDocs",
       "build_output_subfolder": "MIMDocs",
       "locale": "pt-pt",
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
     },
     {
       "docset_name": "MIMUnderstand",
-      "build_output_subfolder": "MIMDocs/Understand",
+      "build_source_folder": "MIMDocs/Understand",
+      "build_output_subfolder": "MIMDocs-Understand",
       "locale": "pt-pt",
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
     },
     {
       "docset_name": "MIMPlanDesign",
-      "build_output_subfolder": "MIMDocs/PlanDesign",
+      "build_source_folder": "MIMDocs/PlanDesign",
+      "build_output_subfolder": "MIMDocs-PlanDesign",
       "locale": "pt-pt",
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
     },
     {
       "docset_name": "MIMGetStarted",
-      "build_output_subfolder": "MIMDocs/GetStarted",
+      "build_source_folder": "MIMDocs/GetStarted",
+      "build_output_subfolder": "MIMDocs-GetStarted",
       "locale": "pt-pt",
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
     },
-    {
+        {
       "docset_name": "MIMTroubleshoot",
-      "build_output_subfolder": "MIMDocs/Troubleshoot",
+      "build_source_folder": "MIMDocs/Troubleshoot",
+      "build_output_subfolder": "MIMDocs-Troubleshoot",
       "locale": "pt-pt",
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
       }
     }
   ],
   "notification_subscribers": [
-    "OPBuild@microsoft.com",
-    "CnE_Content_Brno@moravia.com",
-    "CnE_UE_Bugfixing_ENG@moravia.com"
-  ],
-  "sync_notification_subscribers": [
-    "ceicnotifications@microsoft.com"
+    "OPBuild@microsoft.com"
   ],
   "branches_to_filter": [
     "master-oldev",
     "live-oldev",
     "live"
-  ],
+      ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/MIMDocs.pt-pt",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {
-    "live-sxs": "live"
-  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.pt-pt",
-      "branch": "master",
-      "branch_mapping": {}
+      "branch": "master"
     },
     {
       "path_to_root": "_repo.en-us",
@@ -85,9 +83,5 @@
       }
     }
   ],
-  "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
-  "targets": {},
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false
+  "need_generate_pdf_url_template": false
 }

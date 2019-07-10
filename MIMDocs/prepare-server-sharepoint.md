@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 466f5eb7d4aee27336948e15f96087d6ba898170
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 5beee58388c12abbe8e3245ff610d3528b03786a
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358640"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690758"
 ---
-# <a name="set-up-an-identity-management-server-sharepoint"></a>Configurar um servidor de gestão de identidades: SharePoint
+# <a name="set-up-an-identity-management-server-sharepoint"></a>Configure um servidor de gestão: SharePoint
 
 > [!div class="step-by-step"]
 > [«SQL Server 2016](prepare-server-sql2016.md)
@@ -30,7 +30,7 @@ ms.locfileid: "49358640"
 > - Nome de domínio – **contoso**
 > - Nome do servidor de serviço de MIM - **corpservice**
 > - Nome do servidor de sincronização de MIM - **corpsync**
-> - Nome do SQL Server - **corpsql**
+> - SQL Server name - **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 
@@ -70,7 +70,7 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 2. Especifique este servidor como o servidor de base de dados, como **corpsql** para a base de dados de configuração, e *Contoso\SharePoint* como a conta de acesso de base de dados para o SharePoint utilizar.
 3. Crie uma palavra-passe para a frase de acesso de segurança do farm.
 
-4. O Assistente de configuração é recomendável selecionar [MinRole](https://docs.microsoft.com/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server-2016) tipo de **front-end**
+4. O Assistente de configuração é recomendável selecionar [MinRole](/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server) tipo de **front-end**
 
 5. Quando o Assistente de configuração concluir a tarefa de configuração 10 de 10, clique em Concluir e um browser será aberto....
 

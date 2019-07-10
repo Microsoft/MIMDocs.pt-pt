@@ -5,27 +5,27 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 08/30/2018
+ms.date: 05/11/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 3a86569a8de77f4cf4d5aeafe0cd01dab40232b3
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 90452391170114270765e9a7fe08e98eea0747e4
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358471"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690703"
 ---
 # <a name="self-service-password-reset-deployment-options"></a>Opções de implementação de reposição de palavra-passe de Self-Service
 
-Para os novos clientes que estejam [licenciado para o Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing), recomendamos que utilize [reposição de palavra-passe self-service do Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-howitworks.md) para proporcionar a experiência de utilizador final.  O Azure AD self-service palavra-passe reposição fornece a experiência de baseada na web e integrado ao Windows para um utilizador para repor a sua própria palavra-passe e oferece suporte a várias as mesmas capacidades de MIM, incluindo correio eletrónico alternativo e gates as perguntas e respostas.  Durante a implementação do Azure AD self-service palavra-passe reposta, o Azure AD Connect suporta [escrever novamente as palavras-passe nova para o AD DS](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md)e o MIM [serviço de notificação de alteração de palavra-passe](deploying-mim-password-change-notification-service-on-domain-controller.md) podem ser usadas para encaminhar o palavras-passe para outros sistemas, como servidor de diretório do fornecedor de outro, também.  Implementar o MIM para [gestão de palavra-passe](infrastructure/mim2016-password-management.md) não requer o serviço MIM ou os portais de registo ou de reposição de palavra-passe self-service de MIM a serem implantados.  Em vez disso, pode seguir estes passos:
+Para os novos clientes que estejam [licenciado para o Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing), recomendamos que utilize [reposição de palavra-passe self-service do Azure AD](/azure/active-directory/authentication/concept-sspr-howitworks) para proporcionar a experiência de utilizador final.  O Azure AD self-service palavra-passe reposição fornece a experiência de baseada na web e integrado ao Windows para um utilizador para repor a sua própria palavra-passe e oferece suporte a várias as mesmas capacidades de MIM, incluindo correio eletrónico alternativo e gates as perguntas e respostas.  Durante a implementação do Azure AD self-service palavra-passe reposta, o Azure AD Connect suporta [escrever novamente as palavras-passe nova para o AD DS](/azure/active-directory/authentication/concept-sspr-writeback)e o MIM [serviço de notificação de alteração de palavra-passe](deploying-mim-password-change-notification-service-on-domain-controller.md) podem ser usadas para encaminhar o palavras-passe para outros sistemas, como servidor de diretório do fornecedor de outro, também.  Implementar o MIM para [gestão de palavra-passe](infrastructure/mim2016-password-management.md) não requer o serviço MIM ou os portais de registo ou de reposição de palavra-passe self-service de MIM a serem implantados.  Em vez disso, pode seguir estes passos:
 
 - Primeiro, se tiver de enviar palavras-passe para os diretórios que não seja o Azure AD e AD DS, implementar a sincronização de MIM com conectores para serviços de domínio do Active Directory e qualquer sistema de destino adicionais, configure o MIM para [gestão de palavra-passe](infrastructure/mim2016-password-management.md) e implementar o [serviço de notificação de alteração de palavra-passe](deploying-mim-password-change-notification-service-on-domain-controller.md).
-- Em seguida, se tiver de enviar palavras-passe para os diretórios que não o Azure AD, configure o Azure AD Connect, para [escrever novamente as palavras-passe nova para o AD DS](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-writeback.md).
-- Opcionalmente, [faça o pré-registo utilizadores](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md).
-- Por fim, [implementar o Azure AD self-service reposição palavra-passe aos seus utilizadores finais](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment.md).
+- Em seguida, se tiver de enviar palavras-passe para os diretórios que não o Azure AD, configure o Azure AD Connect, para [escrever novamente as palavras-passe nova para o AD DS](/azure/active-directory/authentication/concept-sspr-writeback).
+- Opcionalmente, [faça o pré-registo utilizadores](/azure/active-directory/authentication/howto-sspr-authenticationdata).
+- Por fim, [implementar o Azure AD self-service reposição palavra-passe aos seus utilizadores finais](/azure/active-directory/authentication/howto-sspr-deployment).
 
-Para os clientes existentes que tinham anteriormente implementado o Forefront Identity Manager (FIM) para a palavra-passe self-service reponham e são licenciados para o Azure Active Directory Premium, recomendamos a planear a transição para a palavra-passe self-service do Azure AD repor.  Pode fazer a transição de que os utilizadores finais do Azure AD self-service reposição palavra-passe sem a necessidade de-os para voltar a registar, por [sincronizar ou definição através do PowerShell de número de endereço ou número de telemóvel do correio eletrónico alternativo de um utilizador](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-authenticationdata.md). Depois dos utilizadores estão registados para palavra-passe self-service do Azure AD repor, poderá ser descomissionado o portal de reposição de palavra-passe do FIM.
+Para os clientes existentes que tinham anteriormente implementado o Forefront Identity Manager (FIM) para a palavra-passe self-service reponham e são licenciados para o Azure Active Directory Premium, recomendamos a planear a transição para a palavra-passe self-service do Azure AD repor.  Pode fazer a transição de que os utilizadores finais do Azure AD self-service reposição palavra-passe sem a necessidade de-os para voltar a registar, por [sincronizar ou definição através do PowerShell de número de endereço ou número de telemóvel do correio eletrónico alternativo de um utilizador](/azure/active-directory/authentication/howto-sspr-authenticationdata). Depois dos utilizadores estão registados para palavra-passe self-service do Azure AD repor, poderá ser descomissionado o portal de reposição de palavra-passe do FIM.
 
 Para os clientes que ainda não implantaram o Azure AD self-service reposição palavra-passe para os seus utilizadores, o MIM também fornece portais de reposição de palavra-passe self-service.  Em comparação com o FIM, o MIM 2016 inclui as seguintes alterações:
 
@@ -79,7 +79,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Registar o fornecedor de autenticação multifator no Azure
 
-1.  Criar uma [fornecedor de MFA](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider.md).
+1.  Criar uma [fornecedor de MFA](/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider).
 
 2. Abra um pedido de suporte e pedir o SDK direto para o ASP.net 2.0 c#. O SDK apenas será fornecido para que os utilizadores atuais de MIM com a MFA porque o SDK direct foi preterido. Novos clientes devem adotar a próxima versão de MIM que se integrará ao servidor MFA.
 
@@ -99,7 +99,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
     ![Imagem do código pf_auth.cs](media/MIM-SSPR-pFile.png)
 
-6.  Em **C:\Programas\Microsoft Forefront Identity Manager\2010\Service**, abra o ficheiro: **MfaSettings**.xml.
+6.  Na **C:\Program Files\Microsoft Forefront Identity Manager\2010\Service**, abra o ficheiro: **MfaSettings**.xml.
 
 7.  Copie os valores dos parâmetros `LICENSE_KEY, GROUP_KEY, CERT_PASSWORD` no ficheiro pf_aut.cs para os respetivos elementos xml no ficheiro MfaSettings.xml.
 
@@ -124,6 +124,8 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 3.  Clique no separador **Atividades** e desloque ecrã para baixo até **Adicionar Atividade**.
 
 4.  Selecione **Porta de Telefone** ou **Porta de SMS para Palavra-passe Monouso**, clique em **Selecione** e, em seguida, em **OK**.
+
+Nota: Se utilizar o servidor MFA do Azure ou outro fornecedor que gera a palavra-passe Monouso propriamente dito, certifique-se do campo de comprimento configurado acima é o mesmo comprimento que gerados pelo fornecedor de MFA.  Esse comprimento tem de ter 6 para o servidor MFA do Azure.  O servidor MFA do Azure também gera seu próprio texto da mensagem, de modo a mensagem de texto SMS é ignorada.
 
 Os utilizadores na sua organização podem agora registar-se para a reposição de palavra-passe.  Durante este processo, deverão introduzir o respetivo número de telefone do trabalho ou do telemóvel para que o sistema possa contactá-los (ou enviar mensagens SMS).
 

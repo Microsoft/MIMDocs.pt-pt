@@ -9,12 +9,12 @@ ms.date: 09/19/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 7ab76d386d8633de8919167c6b8f26b5137323e5
-ms.sourcegitcommit: 9e420840815adb133ac014a8694de9af4d307815
+ms.openlocfilehash: 9a9e00f7dca118627a5140967a104d13273cbc26
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825846"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690807"
 ---
 # <a name="deploying-microsoft-identity-manager-certificate-manager-2016-mim-cm"></a>Implementar o Gestor de certificados do Microsoft Identity Manager 2016 (MIM CM)
 
@@ -38,7 +38,7 @@ O diagrama abaixo mostra um exemplo do tipo de ambiente que pode ser utilizado. 
     O laboratório consiste em servidores do windows 2016 Datacenter.
 
     >[!NOTE]
-    >Para obter mais detalhes sobre as plataformas suportadas para o MIM 2016 dar uma olhada no artigo intitulado [plataformas suportadas para o MIM 2016](/microsoft-identity-manager/microsoft-identity-manager-2016-supported-platforms.md)
+    >Para obter mais detalhes sobre as plataformas suportadas para o MIM 2016 dar uma olhada no artigo intitulado [plataformas suportadas para o MIM 2016](microsoft-identity-manager-2016-supported-platforms.md).
 
 1. Passos de pré-implementação
 
@@ -122,7 +122,7 @@ Grupos:
 
 | **Função**               | **Grupo**         |
 |------------------------|-------------------|
-| Membros da assistência técnica de CM    | suporte técnico do mimcm    |
+| Membros da assistência técnica de CM    | MIMCM-Helpdesk    |
 | Membros do Gestor de CM     | Gestores de MIMCM    |
 | Membros de subscritores do CM | Assinantes do MIMCM |
 
@@ -200,7 +200,7 @@ As contas de serviço que necessitam de certificados são:
 
 - MIMCMEnrollAgent: Esta conta tem um certificado de agente de inscrição
 
-- MIMCMKRAgent: Esta conta tem uma **agente de recuperação de chaves** certificado
+- MIMCMKRAgent: Esta conta tem um **agente de recuperação de chaves** certificado
 
 Existem modelos já presentes no AD, mas temos de criar nossas próprios versões para trabalhar com o MIM CM. À medida que precisamos fazer modificação entre os modelos de linha de base original.
 
@@ -455,13 +455,13 @@ Antes de iniciar sessão no CORPCM adicionar MIMINSTALL para **domínio administ
 
 9. Na **agentes-FIM CM** caixa de diálogo com guias de transmissões, em cada separador, escreva as informações seguintes:
 
-   - Nome de utilizador: **Update**
+   - Nome de utilizador: **Atualizar**
 
-   - Palavra-passe: **passar\@word1**
+   - Palavra-passe: **Passar\@word1**
 
-   - Confirmar palavra-passe: **passar\@word1**
+   - Confirme palavra-passe: **Passar\@word1**
 
-   - Usar um utilizador existente: **ativado**
+   - Utilize um utilizador existente: **Enabled**
 
      >[!NOTE]
      >Estas contas que criámos anteriormente. Certifique-se de que os procedimentos no passo 8 são repetidos para todos os separadores de conta de agente seis.
@@ -478,7 +478,7 @@ Antes de iniciar sessão no CORPCM adicionar MIMINSTALL para **domínio administ
 
     - Modelo de certificado a utilizar para o certificado do FIM CM Agent: **MIMCMSigning**.
 
-    - Modelo de certificado a ser utilizado para o certificado de agente de inscrição: **FIMCMEnrollmentAgent**.
+    - Modelo de certificado a utilizar para o certificado de agente de inscrição: **FIMCMEnrollmentAgent**.
 
 13. Sobre o **certificados de servidor de configuração** página, clique em **próxima**.
 
@@ -536,7 +536,7 @@ Neste passo, iremos instalar e configurar os módulos de AC do FIM CM na autorid
 
 6. Fechar o **localizar e substituir** caixa de diálogo.
 
-7. Deve estar na linha  **\<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser, UseGroups" /\>**. Altere a linha para ler  **\<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser" /\>**.
+7. Deve estar na linha  **\<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser, UseGroups" /\>** . Altere a linha para ler  **\<adicionar key="Clm.RequestSecurity.Flags" valor = "UseUser" /\>** .
 
 8. Feche o ficheiro, a guardar todas as alterações.
 
@@ -554,9 +554,9 @@ Neste passo, iremos instalar e configurar os módulos de AC do FIM CM na autorid
 
 15. Com o botão direito **inícios de sessão**e, em seguida, clique em **novo início de sessão**.
 
-16. No **gerais** página, além do **nome de início de sessão** , escreva **contoso\\CORPCA\$**. Selecione **autenticação do Windows**. É a base de dados predefinida **FIMCertificateManagement**.
+16. No **gerais** página, além do **nome de início de sessão** , escreva **contoso\\CORPCA\$** . Selecione **autenticação do Windows**. É a base de dados predefinida **FIMCertificateManagement**.
 
-17. No painel esquerdo, selecione **mapeamento de utilizadores**. No painel da direita, clique na caixa de verificação no **mapa** coluna ao lado **FIMCertificateManagement**. No **associação de função para a base de dados: FIMCertificateManagement** lista, ative os **clmApp** função.
+17. No painel esquerdo, selecione **mapeamento de utilizadores**. No painel da direita, clique na caixa de verificação no **mapa** coluna ao lado **FIMCertificateManagement**. Na **associação de função para a base de dados: FIMCertificateManagement** listar, ativar o **clmApp** função.
 
 18. Clique em **OK**.
 
@@ -668,7 +668,7 @@ Neste passo, iremos instalar e configurar os módulos de AC do FIM CM na autorid
     - Na **certificado** caixa de diálogo, clique em **OK**.
 
         >[!Note]
-        >Se o **OK** botão não estiver ativado, que incluiu acidentalmente um caractere oculto na cadeia de thumbprint quando copiou o thumbprint do certificado clmAgent. Repita os passos de todos os a partir **Tarefa 4: Copie o Thumbprint do certificado MIMCMAgent para área de transferência do Windows** neste exercício.
+        >Se o **OK** botão não estiver ativado, que incluiu acidentalmente um caractere oculto na cadeia de thumbprint quando copiou o thumbprint do certificado clmAgent. Repita os passos de todos os a partir de **Tarefa 4: Copie o Thumbprint do certificado MIMCMAgent para área de transferência do Windows** neste exercício.
 
 4. Na **propriedades de configuração** caixa de diálogo caixa, certifique-se de que o thumbprint aparece no **certificados de assinatura válidos** lista e, em seguida, clique em **OK**.
 
@@ -688,7 +688,7 @@ Neste passo, iremos instalar e configurar os módulos de AC do FIM CM na autorid
 
 **Último passo da implementação** é o que queremos tornar-se de que CONTOSO\\gestores de MIMCM podem implementar e criar modelos e configurar o sistema sem ser de esquema e Admins do domínio. O próximo script será ACL as permissões para os modelos de certificado utilizando o dsacls. Execute com a conta que tenha permissão total para alterar a segurança de leitura e escrita permissões a cada modelo de certificado existente na floresta.
 
-Primeiras etapas: **configurar permissões de grupo de destino e de ponto de ligação de serviço e delegar a gestão de modelos de perfil**
+Primeiras etapas: **Configurar permissões de grupo de destino e de ponto de ligação de serviço e delegar a gestão de modelos de perfil**
 
 1. Configure as permissões no ponto de ligação de serviço (SCP).
 
@@ -712,8 +712,8 @@ Primeiras etapas: **configurar permissões de grupo de destino e de ponto de lig
 
     | Grupo          | Permissões      |
     |----------------|------------------|
-    | Gestores de mimcm | Ler </br> Auditoria do FIM CM</br> FIM CM Enrollment Agent</br> Inscrever o pedido do FIM CM</br> Recuperar do FIM CM pedido</br> Renovar a pedido do FIM CM</br> Revogação do FIM CM pedido </br> Pedido do FIM CM desbloquear o Smart Card |
-    | suporte técnico do mimcm | Ler</br> FIM CM Enrollment Agent</br> Revogação do FIM CM pedido</br> Pedido do FIM CM desbloquear o Smart Card |
+    | Gestores de mimcm | Leitura </br> Auditoria do FIM CM</br> FIM CM Enrollment Agent</br> Inscrever o pedido do FIM CM</br> Recuperar do FIM CM pedido</br> Renovar a pedido do FIM CM</br> Revogação do FIM CM pedido </br> Pedido do FIM CM desbloquear o Smart Card |
+    | mimcm-HelpDesk | Leitura</br> FIM CM Enrollment Agent</br> Revogação do FIM CM pedido</br> Pedido do FIM CM desbloquear o Smart Card |
 
 11. Na **propriedades do CORPDC** caixa de diálogo, clique em **OK**.
 
@@ -835,7 +835,7 @@ Primeiras etapas: **configurar permissões de grupo de destino e de ponto de lig
 
 14. Deixe **Active Directory Users and Computers** abrir.
 
-Passos segundo: **permissões de gestão de modelo de certificado Delegating \<script\>**
+Segundo passos: **Delegar permissões de gestão de modelo de certificado \<script\>**
 
 - Delegar permissões no contentor de modelos de certificado.
 

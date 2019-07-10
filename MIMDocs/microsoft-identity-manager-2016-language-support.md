@@ -9,12 +9,12 @@ ms.date: 05/23/2018
 ms.topic: get-started-article
 ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
-ms.openlocfilehash: 61d5f4ec20f5e29d1846a6822bec9669b364760f
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 2d843dcd5285d02a67955e763769a16f1a535abb
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358708"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690734"
 ---
 # <a name="supported-languages"></a>Idiomas suportados
 
@@ -32,51 +32,51 @@ O pacote de idiomas do Portal e do serviço de MIM de Microsoft suportam os segu
 
 |       Idioma        | FIM(4.3.x.x)/MIM(4.4.XX) | MIM(4.5.x.x) |
 |-----------------------|--------------------------|--------------|
-|       Búlgaro       |          bg-BG           |      BG      |
-| Chinês (simplificado)  |          zh-CN           |   zh hans    |
+|       Búlgaro       |          bg-BG           |      bg      |
+| Chinês (Simplificado)  |          zh-CN           |   zh-hans    |
 |   Chinês (Taiwan)    |          zh-TW           |   zh-hant    |
-|       Croata        |          RH de RH           |      RH      |
-|         Checo         |          cs-CZ           |      CS      |
-|        Dinamarquês         |          da-DK           |      – pacote de iniciação      |
-|         Holandês         |          NL-NL           |      NL      |
-|       Estónio        |          et EE           |      et      |
-|        Francês         |          FR-FR           |      FR      |
-|        Finlandês        |          fi-FI           |      Fi      |
-|        Alemão         |          de-DE           |      Alemanha      |
-|         Grego         |          el GR           |      EL      |
-|         Híndi         |          IN           |      Olá!      |
-|       Húngaro       |          hu-HU           |      HU      |
-|        Italiano        |          it-IT           |      ele      |
+|       Croata        |          RH de RH           |      hr      |
+|         Checo         |          cs-CZ           |      cs      |
+|        Dinamarquês         |          da-DK           |      da      |
+|         Neerlandês         |          NL-NL           |      nl      |
+|       Estónio        |          et-EE           |      et      |
+|        Francês         |          FR-FR           |      fr      |
+|        Finlandês        |          fi-FI           |      fi      |
+|        Alemão         |          de-DE           |      de      |
+|         Grego         |          el GR           |      el      |
+|         Hindi         |          IN           |      hi      |
+|       Húngaro       |          hu-HU           |      hu      |
+|        Italiano        |          it-IT           |      it      |
 |       Japonês        |          ja-JP           |      ja      |
 |        Coreano         |          ko-KR           |      ko      |
 |      Lituano       |          lt-LT           |      lt      |
-|        Letão        |          lv-LV           |      LV      |
+|        Letão        |          lv-LV           |      lv      |
 |       Norueguês       |          nb-NO           |    nb-NO     |
-|        Polaco         |          pl-PL           |      PL      |
-| Português (Portugal) |          pt-PT           |      Hora do Pacífico      |
+|        Polaco         |          pl-PL           |      pl      |
+| Português (Portugal) |          pt-PT           |      pt      |
 |  Português (Brasil)  |          pt-BR           |    pt-BR     |
-|        Russo        |          ru-RU           |      RU      |
+|        Russo        |          ru-RU           |      ru      |
 |       Romeno        |          RO-RO           |      ro      |
 |        Espanhol        |          es-ES           |      es      |
 |        Eslovaco         |          sk SK           |      SK      |
-|        Sueco        |          SV-SE           |      SV      |
-|       Esloveno       |          IS SL           |      SL      |
+|        Sueco        |          SV-SE           |      sv      |
+|       Esloveno       |          IS SL           |      sl      |
 |   Sérvio – Sérvia    |  sr-latn-CS(Depricated)  |  SR-Latn-RS  |
 |         Tailandês          |          th-TH           |      TH      |
-|        Turco        |          tr-TR           |      TR      |
-|       Ucraniano       |          uk-UA           |      Reino Unido      |
+|        Turco        |          tr-TR           |      tr      |
+|       Ucraniano       |          uk-UA           |      uk      |
 
 ## <a name="certificate-management"></a>Gestão de Certificados 
 A gestão de certificados da Microsoft suporta os seguintes 9 idiomas. 
 
 |Idioma|FIM(4.3.x.x)/MIM(4.4.XX)|Novo MIM(4.5.x.x)
 |-----|-----|-----|-----|
-|Chinês (simplificado)|zh-CN|zh hans|
+|Chinês (Simplificado)|zh-CN|zh-hans|
 |Chinês (Taiwan)|zh-TW|zh-hant|
-|Holandês|NL-NL|NL|
-|Francês|FR-FR|FR|
-|Alemão|de-DE|Alemanha|
-|Italiano|it-IT|ele|
+|Neerlandês|NL-NL|nl|
+|Francês|FR-FR|fr|
+|Alemão|de-DE|de|
+|Italiano|it-IT|it|
 |Japonês|ja-JP|ja|
 |Português (Portugal)|pt-PT|pt-PT|
 |Espanhol|es-ES|es|
@@ -86,30 +86,30 @@ A aplicação moderna do certificado de gestão de Microsoft suporta os seguinte
 
 |Idioma | [1.0.225.104](https://www.microsoft.com/en-us/download/details.aspx?id=54954) | |
 |-----|-----|-----|-----|
-|Holandês|NL-NL|NL|
-|Chinês (simplificado)|zh-CN|zh hans|
+|Neerlandês|NL-NL|nl|
+|Chinês (Simplificado)|zh-CN|zh-hans|
 |Chinês (Taiwan)|zh-TW|zh-hant|
-|Checo|cs-CZ|CS|
-|Dinamarquês|da-DK|– pacote de iniciação|
-|Francês|FR-FR|FR|
-|Finlandês|fi-FI|Fi|
-|Alemão|de-DE|Alemanha|
-|Grego|el GR|EL|
-|Húngaro|hu-HU|HU|
-|Italiano|it-IT|ele|
+|Checo|cs-CZ|cs|
+|Dinamarquês|da-DK|da|
+|Francês|FR-FR|fr|
+|Finlandês|fi-FI|fi|
+|Alemão|de-DE|de|
+|Grego|el GR|el|
+|Húngaro|hu-HU|hu|
+|Italiano|it-IT|it|
 |Japonês|ja-JP|ja|
 |Coreano|ko-KR|ko|
 |Norueguês|nb-NO|nb-NO|
-|Polaco|pl-PL|PL|
-|Português (Portugal)|pt-PT|Hora do Pacífico|
+|Polaco|pl-PL|pl|
+|Português (Portugal)|pt-PT|pt|
 |Português (Brasil)|pt-BR|pt-BR|
-|Russo|ru-RU|RU|
+|Russo|ru-RU|ru|
 |Romeno|RO-RO|ro|
 |Espanhol|es-ES|es|
-|Sueco|SV-SE|SV|
-|Turco|tr-TR|TR|
+|Sueco|SV-SE|sv|
+|Turco|tr-TR|tr|
 
 ## <a name="next-steps"></a>Passos Seguintes
 
 - [Primeira implementação](microsoft-identity-manager-deploy.md)
-- [Histórico de versões](/reference/version-history.md)
+- [Histórico de versões](reference/version-history.md)

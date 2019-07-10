@@ -10,16 +10,16 @@ ms.date: 07/06/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: 9cb1e37f966db5c663694aaccd71f2b4c799dd4b
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.openlocfilehash: 72dd1d3cf34e28567fa672b747a04347b150797e
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379944"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690788"
 ---
 # <a name="using-azure-mfa-for-activation"></a>Utilizar o MFA do Azure para ativação
 > [!IMPORTANT]
-> Devido ao anúncio de preterição do multi-factor Authentication Software Development Kit do Azure. O SDK de MFA do Azure será suportado para os clientes existentes até a data de retirada de 14 de Novembro de 2018. Novos clientes e os clientes atuais não será capazes de transferir o SDK mais através do portal clássico do Azure. Para transferir terá de contactar o suporte de cliente do Azure para receber o seu pacote de credenciais do serviço de MFA gerado. <br> A equipe de desenvolvimento da Microsoft está trabalhando em alterações para a MFA através da integração com o SDK do servidor MFA.  Isso será incluído numa futura correção, consulte [histórico de versões](/reference/version-history.md) para anúncios. 
+> Devido ao anúncio de preterição do multi-factor Authentication Software Development Kit do Azure. O SDK de MFA do Azure será suportado para os clientes existentes até a data de retirada de 14 de Novembro de 2018. Novos clientes e os clientes atuais não será capazes de transferir o SDK mais através do portal clássico do Azure. Para transferir terá de contactar o suporte de cliente do Azure para receber o seu pacote de credenciais do serviço de MFA gerado. <br> A equipe de desenvolvimento da Microsoft está trabalhando em alterações para a MFA através da integração com o SDK do servidor MFA.  Isso será incluído numa futura correção, consulte [histórico de versões](../reference/version-history.md) para anúncios. 
 
 
 Quando configurar uma função de PAM, pode escolher como autorizar os utilizadores que pedem para ativar a função. As opções que a atividade de autorização de PAM implementa são:
@@ -66,7 +66,7 @@ Em seguida, irá gerar um ficheiro que inclui o material de autenticação do PA
 
 5.  Na janela **Multi-Factor Authentication do Azure**, clique em **SDK**, em **Transferências**.
 
-6.  Clique na ligação **Transferir** na coluna ZIP do ficheiro com o idioma **SDK para ASP.net 2.0 C\#**.
+6.  Clique na ligação **Transferir** na coluna ZIP do ficheiro com o idioma **SDK para ASP.net 2.0 C\#** .
 
 ![Transferir o SDK do Multi-Factor Authentication - captura de ecrã](media/PAM-Azure-MFA-Activation-Image-1.png)
 
@@ -93,11 +93,11 @@ Em seguida, irá gerar um ficheiro que inclui o material de autenticação do PA
 
 7. Copie os valores dos parâmetros LICENSE\_KEY, GROUP\_KEY e CERT\_PASSWORD no ficheiro pf\_auth.cs para os respetivos elementos xml no ficheiro MfaSettings.xml.
 
-8. No elemento XML **<CertFilePath>**, especifique o nome de caminho completo do ficheiro cert\_key.p12 extraído anteriormente.
+8. No elemento XML **<CertFilePath>** , especifique o nome de caminho completo do ficheiro cert\_key.p12 extraído anteriormente.
 
-9. No elemento **<username>**, introduza qualquer nome de utilizador.
+9. No elemento **<username>** , introduza qualquer nome de utilizador.
 
-10. No elementos **<DefaultCountryCode>**, introduza o código de país para marcar os seus utilizadores, como 1 para os Estados Unidos e Canadá. Este valor é utilizado no caso dos utilizadores estarem registados com números de telefone que não tenham um código de país. Se o número de telefone de um utilizador tiver um código de país internacional distinto do configurado para a organização, esse código de país tem de ser incluído no número de telefone que será registado.
+10. No elementos **<DefaultCountryCode>** , introduza o código de país para marcar os seus utilizadores, como 1 para os Estados Unidos e Canadá. Este valor é utilizado no caso dos utilizadores estarem registados com números de telefone que não tenham um código de país. Se o número de telefone de um utilizador tiver um código de país internacional distinto do configurado para a organização, esse código de país tem de ser incluído no número de telefone que será registado.
 
 11. Guarde e substitua o ficheiro **MfaSettings.xml** na pasta do Serviço MIM ```C:\Program Files\Microsoft Forefront Identity Manager\2010\\Service```.
 
@@ -126,11 +126,11 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 O MFA do Azure pode ser desativado para uma função especificando o parâmetro "-MFAEnabled 0" no comando `Set-PAMRole`.
 
-## <a name="troubleshooting"></a>Resolução de Problemas
+## <a name="troubleshooting"></a>Resolução de problemas
 
 Os eventos seguintes podem ser encontrados no registo de eventos da Gestão de Acesso Privilegiado:
 
-| ID  | Gravidade | Gerado por | Descrição |
+| ID  | Severity | Gerado por | Descrição |
 |-----|----------|--------------|-------------|
 | 101 | Erro       | Serviço MIM            | O utilizador não concluiu o MFA do Azure (por exemplo, não atendeu o telefone) |
 | 103 | Informações | Serviço MIM            | O utilizador concluiu o MFA do Azure durante a ativação                       |
@@ -150,7 +150,7 @@ Para saber mais informações sobre as chamadas de telefone falhadas (evento 101
 
 6.  Quando o relatório for gerado, pode visualizá-lo no portal ou, se o relatório do MFA for extenso, transfira-o para um ficheiro CSV. Os valores **SDK** na coluna **AUTH TYPE** indicam as linhas relevantes como pedidos de ativação de PAM: são eventos com origem no MIM ou outro software no local. O campo **USERNAME** é a GUID do objeto de utilizador na base de dados do serviço MIM. Se uma chamada não tiver êxito, o valor na coluna **AUTHD** será **Não** e o valor da coluna **CALL RESULT** irá conter os detalhes do motivo da falha.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos Passos
 
 - [O que é o Azure multi-factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
 - [Crie hoje a sua conta gratuita do Azure](https://azure.microsoft.com/free/)

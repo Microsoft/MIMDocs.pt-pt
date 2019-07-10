@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 023232b9ddb3cb0a299cbc14ab4c311b8c63fc47
-ms.sourcegitcommit: fa30a8eb9c3a7f1ed6f8ce0f67362ca32751e00d
+ms.openlocfilehash: 1f7d4150ce7012cd4726126ba50b1ab0f94f474c
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56667204"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690674"
 ---
 # <a name="connect-to-your-directories"></a>Ligar aos diretórios
 
@@ -43,8 +43,8 @@ Este artigo abrange os conectores que estão incluídos e suportados em MIM, mas
 | Servidor de Diretório Oracle (anteriormente Sun e Netscape) | Servidor de Diretório Sun 6.x, 7.x e Oracle 11 |
 | [Conector do Windows PowerShell](https://msdn.microsoft.com/library/dn640417.aspx) | Windows PowerShell 2.0 ou superior |
 | [Conector do Active Directory do Microsoft Azure](https://msdn.microsoft.com/library/dn511001.aspx) | Microsoft Azure Active Directory (não recomendado para novas implementações) |
-| [Conector LDAP genérico](https://msdn.microsoft.com/library/dn510997.aspx) | [Servidor LDAP v3 (compatível com RFC 4510)](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericldap) |
-| [Conector SQL Genérico](./reference/microsoft-identity-manager-2016-connector-genericsql.md) | [O conector é suportado com todos os controladores ODBC de 64 bits](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-genericsql.md) |
+| [Conector LDAP genérico](https://msdn.microsoft.com/library/dn510997.aspx) | [Servidor LDAP v3 (compatível com RFC 4510)](reference/microsoft-identity-manager-2016-connector-genericldap.md#overview-of-the-generic-ldap-connector) |
+| [Conector SQL Genérico](reference/microsoft-identity-manager-2016-connector-genericsql.md) | [O conector é suportado com todos os controladores ODBC de 64 bits](reference/microsoft-identity-manager-2016-connector-genericsql.md#overview-of-the-generic-sql-connector) |
 | [Conector para Lotus Domino](https://msdn.microsoft.com/library/hh859750.aspx) | Lotus Notes versão v8.5.x |
 | [Conector de serviços do SharePoint UPA](https://msdn.microsoft.com/library/dn511003.aspx) | Servidor SharePoint 2013 ou 2016 com a aplicação de serviço de Perfil de Utilizador (UPA) |
 | [Conector para Serviços Web](https://www.microsoft.com/en-us/download/details.aspx?id=51495) | [SAP ECC 5.0 ou 6.0; Oracle PeopleSoft 9.1; Oracle eBusiness 12.1 e outros SOAP e as APIs REST](https://docs.microsoft.com/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws) |

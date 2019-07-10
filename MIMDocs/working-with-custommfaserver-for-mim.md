@@ -9,12 +9,12 @@ manager: mtillman
 ms.date: 09/04/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 750947d04f540e2c8317861c5826c2145deba1fd
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 7fb111520f94541672fc56d0fd2ee95bfcd3a49e
+ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358407"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67690751"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>Utilizar um fornecedor de multi-factor Authentication personalizado por meio de uma API durante a ativação de função de PAM ou na SSPR
 
@@ -32,12 +32,12 @@ Este artigo descreve como utilizar o MIM com um provedor de autenticação perso
 Para utilizar uma API do fornecedor de multi-factor Authentication personalizada com o MIM, terá de:
 
 - Números de telefone para todos os utilizadores candidatos
-- Correção MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou superior - veja [histórico de versões](/reference/version-history.md) anúncios de
+- Correção MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou superior - veja [histórico de versões](reference/version-history.md) anúncios de
 - Serviço MIM configurado para SSPR ou PAM
 
 ## <a name="approach-using-custom-multi-factor-authentication-code"></a>Abordagem usando código personalizado multi-factor authentication
 
-### <a name="step-1-ensure-mim-service-is-at-version-452020-or-later"></a>Passo 1: Certifique-se o serviço MIM está na versão 4.5.202.0 ou posterior
+### <a name="step-1-ensure-mim-service-is-at-version-452020-or-later"></a>Passo 1: Certifique-se de que o serviço MIM está na versão 4.5.202.0 ou posterior
 
 Transfira e instale a correção MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou uma versão posterior.
 
@@ -137,7 +137,7 @@ namespace CustomPhoneGate
 ```
 ### <a name="step-3-backup-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>Passo 3: Cópia de segurança a mfasettings. XML localizado no "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service"
 
-### <a name="step-4-edit-the-mfasettingsxml-file"></a>Passo 4: Editar o ficheiro Mfasettings XML
+### <a name="step-4-edit-the-mfasettingsxml-file"></a>Passo 4: Edite o ficheiro mfasettings. XML.
 
 Atualizar ou desmarque as seguintes linhas:
 
@@ -146,7 +146,7 @@ Atualizar ou desmarque as seguintes linhas:
 - Atualize ou adicione as seguintes linhas para o seguinte para mfasettings. XML com o seu fornecedor de telefone personalizado <br>
 `<CustomPhoneProvider>C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\CustomPhoneGate.dll</CustomPhoneProvider>`
 
-### <a name="step-5-restart-mim-service"></a>Passo 5: Reiniciar o serviço MIM
+### <a name="step-5-restart-mim-service"></a>Passo 5: Reinicie o serviço MIM
 
 Depois do serviço foi reiniciado, utilize o SSPR e/ou de PAM para validar a funcionalidade com o fornecedor de identidade personalizada.
 
@@ -154,7 +154,7 @@ Depois do serviço foi reiniciado, utilize o SSPR e/ou de PAM para validar a fun
 > Para reverter definição substituir mfasettings. XML com o ficheiro de cópia de segurança no passo 3
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos Passos
 
 - [Introdução ao servidor de autenticação do multi-factor do Azure](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy)
 - [O que é o Azure multi-factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)

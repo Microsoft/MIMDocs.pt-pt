@@ -6,12 +6,13 @@ ms.author: billmath
 manager: mtillman
 ms.date: 10/29/2018
 ms.topic: article
-ms.openlocfilehash: e5d8bcc640ad77b71a515b13bcb3bcf6985654f5
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.prod: microsoft-identity-manager
+ms.openlocfilehash: 90ef2ab63be3914d1d48c7319821177e7e62f9e0
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380090"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701305"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
 
@@ -30,11 +31,11 @@ Pode consultar os níveis do registo dinâmico [aqui](https://msdn.microsoft.com
 - Critical (crítico) = o serviço de nível predefinido só irá escrever eventos críticos
 - Atualize a Linha 8 (dynamicLogging mode="true" loggingLevel="Critical") com o valor de registo preferencial
 
-Configuração do registo dinâmico localizado na linha 266: Microsoft
+Configuração de log dinâmico localizada na linha 266: Microsoft. ResourceManagement. Service. exe. config
 
 ![Secções realçadas a mostrar linhas com as várias áreas de registo disponíveis](media/mim-service-dynamic-logging/screen02.png)
 
-Por predefinição a localização do registo será a * * C:\Program Files\Microsoft Forefront Identity Manager\2010\Service, o serviço de FIM conta terá de permissão de escrita a esta localização para o registo dinâmico.
+Por padrão, o local de log estará em * * C:\Arquivos de Programas\microsoft Forefront Identity Manager\2010\Service, a conta de serviço do FIM precisará de permissão de gravação para esse local para gerar o log dinâmico.
 
 ![Localização da pasta dos registos](media/mim-service-dynamic-logging/screen03.png)
 
@@ -44,20 +45,20 @@ Por predefinição a localização do registo será a * * C:\Program Files\Micro
 > 2. "%TEMP%\Microsoft.ResourceManagement.Service.exe_Emergency.log"
 > 3. "% USERPROFILE %\Microsoft.ResourceManagement.Service.exe_Emergency.log"
 
-Para ver o rastreio, pode usar o [ferramenta Visualizador de rastreio do serviço](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)
+Para exibir o rastreamento, você pode usar a [ferramenta Visualizador de rastreamento de serviço](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)
 
  ![Captura de ecrã do Visualizador de Rastreio de Serviços](media/mim-service-dynamic-logging/screen04.png)
 
-# <a name="updates-build-45xx-or-greater"></a>Atualizações: Criar 4.5.x.x ou superior
+# <a name="updates-build-45xx-or-greater"></a>Actualiza Build 4.5. x. x ou superior
 
-Na compilação 4.5.x.x ter revimos a funcionalidade de registo para especificar o nível de registo predefinido é **"Aviso"**. O serviço escreve mensagens em dois arquivos ("00" e "01" índices são adicionados antes da extensão). Os ficheiros estão localizados no diretório de "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service". Quando o ficheiro excede o tamanho máximo é iniciado o serviço de escrita no outro ficheiro. Se existir outro ficheiro, esta será substituída. Tamanho máximo predefinido do arquivo é de 1 GB. Para alterar o tamanho máximo predefinido, é necessário adicionar **"maxOutputFileSizeKB"** parâmetro com o valor de tamanho de ficheiro máximo em KB para o serviço de escuta (veja o exemplo abaixo) e reinicie o serviço MIM. Quando o serviço é iniciado, ele anexa registos no ficheiro mais recente (se for excedido o limite de espaço substituir o ficheiro mais antigo). 
-
-> [!NOTE] 
-> Como o tamanho de ficheiro de verificação de serviço antes da mensagem é gravada, o tamanho do ficheiro pode ser superior ao tamanho máximo para o tamanho de uma mensagem. Por predefinição, o tamanho dos logs de pode ser aproximadamente 6 GB (três > Serviços de escuta com dois ficheiros para o tamanho de um GB).
+Na Build 4.5. x. x, revisamos o recurso de log para especificar o nível de log padrão é **"Warning"** . O serviço grava mensagens em dois arquivos (os índices "00" e "01" são adicionados antes da extensão). Os arquivos estão localizados no diretório "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service". Quando o arquivo excede o tamanho máximo, o serviço começa a gravar em outro arquivo. Se outro arquivo existir, ele será substituído. O tamanho máximo padrão do arquivo é 1 GB. Para alterar o tamanho máximo padrão, é necessário adicionar o parâmetro **"maxOutputFileSizeKB"** com o valor de tamanho de arquivo máximo em KB no ouvinte (Veja o exemplo abaixo) e reiniciar o serviço mim. Quando o serviço é iniciado, ele acrescenta logs em um arquivo mais recente (se o limite de espaço for excedido, ele substituirá o arquivo mais antigo). 
 
 > [!NOTE] 
-> A conta de serviço deve ter permissões para escrever > "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service" > diretório. No caso da conta de serviço não tem esses direitos, o > não serão criados ficheiros.
+> Como o tamanho do arquivo de verificação de serviço antes da mensagem ser gravada, o tamanho do arquivo pode ser maior que o tamanho máximo para o tamanho de uma mensagem. Por padrão, o tamanho dos logs pode ser de aproximadamente 6 GB (três > ouvintes com dois arquivos para um tamanho de GB).
 
-Exemplo como definir o tamanho de ficheiro máximo como 200 MB (200 * 1024 KB) para ficheiros de svclog e 100 MB * (100 * 1024 KB) para ficheiros txt
+> [!NOTE] 
+> A conta de serviço deve ter permissões para gravar no diretório > "C:\Arquivos de Programas\microsoft Forefront Identity Manager\2010\Service" >. Caso a conta de serviço não tenha tais direitos, os arquivos de > não serão criados.
+
+Exemplo de como definir o tamanho máximo do arquivo para 200 MB (200 * 1024 KB) para arquivos svclog Connector e 100 MB * (100 * 1024 KB) para arquivos txt
 
 `<add initializeData="Microsoft.ResourceManagement.Service_tracelog.svclog" type="Microsoft.IdentityManagement.CircularTraceListener.CircularXmlTraceListener, Microsoft.IdentityManagement.CircularTraceListener, PublicKeyToken=31bf3856ad364e35" name="ServiceModelTraceListener" traceOutputOptions="LogicalOperationStack, DateTime, Timestamp, ProcessId, ThreadId, Callstack" maxOutputFileSizeKB="204800">`

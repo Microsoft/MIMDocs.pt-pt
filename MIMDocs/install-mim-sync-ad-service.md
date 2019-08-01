@@ -6,19 +6,19 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 10/12/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 75935513ccb4ec3ebc089f9c5aad1d1624789a13
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 69698721b0fbabc78cf5bb4c1032ab8fc2613772
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358827"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701204"
 ---
-# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM
+# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instale o MIM 2016: Sincronizar Active Directory e serviço do MIM
 
 > [!div class="step-by-step"]
 > [« Portal e Serviço do MIM](install-mim-service-portal.md)
@@ -43,11 +43,11 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
 1.  Abra o Synchronization Service Manager.
 
-2.  Para abrir o Assistente Criar agente de gestão, altere para o **agentes de gestão** página, em seguida, no **ações** menu, clique em **criar**.
+2.  Para abrir o assistente para criar agente de gerenciamento, altere para a página **agentes de gerenciamento** e, no menu **ações** , clique em **criar**.
 
 3.  Na página **Criar Agente de Gestão**, forneça as seguintes definições e, em seguida, clique em **Seguinte**.
 
-    -   Agente de gestão para: agente de gestão do Serviço FIM
+    -   Agente de gerenciamento para: Agente de gerenciamento de serviços do FIM
 
     -   Nome: MIMMA
 
@@ -55,11 +55,11 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     -   Servidor: localhost
 
-    -   Base de dados: FIMService
+    -   Banco FIMService
 
-    -   Endereço base do serviço MIM: http://localhost:5725
+    -   Endereço básico do serviço do MIM: http://localhost:5725
 
-    -   Modo de autenticação: autenticação integrada do Windows
+    -   Modo de autenticação: Autenticação integrada do Windows
 
     -   Nome de utilizador: mimma
 
@@ -114,13 +114,13 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
     |-|-|-|
     | NomedaConta | Exportar | accountName |
     | DisplayName | Exportar | displayName |
-    | Domínio | Exportar | domínio |
-    | E-mail | Exportar | correio |
+    | Domain | Exportar | domínio |
+    | Email | Exportar | correio |
     | EmployeeID | Exportar | IDdefuncionário |
     | TipoDeFuncionário | Exportar | tipodeFuncionário |
     | FirstName | Exportar | nomePróprio |
     | Apelido | Exportar | apelido |
-    | SIDobjeto | Exportar | sidObjeto |
+    | SIDobjeto | Exportar | objectSid |
 
     -   Selecione **Grupo** como o tipo de objeto de Origem de dados e de Metaverso.
 
@@ -140,13 +140,13 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
     |-|-|-|
     | NomedaConta | Exportar | accountName |
     | DisplayName | Exportar | displayName |
-    | Domínio | Exportar | domínio |
-    | E-mail | Exportar | correio |
+    | Domain | Exportar | domínio |
+    | Email | Exportar | mail |
     | MailNickName | Exportar | mailNickName |
     | Membro | Exportar | membro |
     | SIDobjeto | Exportar | sidObjeto |
-    | Âmbito | Exportar | âmbito |
-    | Tipo | Exportar | tipo |
+    | Scope | Exportar | âmbito |
+    | Type | Exportar | type |
     | MembershipAddWorkflow | Exportar | membershipAddWorkflow |
     | MembershipLocked | Exportar | membershipLocked |
     | NomedaConta | Importar | nomedaConta |
@@ -154,8 +154,8 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
     | DisplayName | Importar | displayName |
     | MailNickName | Importar | mailNickName |
     | Membro | Importar | membro |
-    | Âmbito | Importar | âmbito |
-    | Tipo | Importar | tipo |
+    | Scope | Importar | scope |
+    | Type | Importar | tipo |
 
 10.  Na página **Configurar Desaprovisionamento**, clique em **Seguinte**
 
@@ -168,7 +168,7 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 
 2. Na página **Criar Agente de Gestão**, forneça as seguintes definições e, em seguida, clique em **Seguinte**:
 
-    - Agente de gestão para: Serviços de Domínio do Active Directory
+    - Agente de gerenciamento para: Serviços de Domínio do Active Directory
     - Nome: ADMA
 
 3. Na página **Ligar à Floresta do Active Directory**, forneça as seguintes definições e, em seguida, clique em **Seguinte**:
@@ -196,7 +196,7 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 
 7. Na página **Selecionar Atributos**, selecione **Mostrar TUDO**, selecione os atributos seguintes e, em seguida, clique em **Seguinte**:
 
-    -   empresa
+    -   Empresa
     -   displayName
     -   IDdefuncionário
     -   tipodeFuncionário
@@ -205,7 +205,7 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
     -   geridoPor
     -   gestor
     -   membro
-    -   sidObjeto
+    -   objectSid
     -   nomeContaSAM
     -   tipoContaSAM
     -   sn
@@ -225,13 +225,13 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 
 ## <a name="create-run-profiles"></a>Criar Perfis de Execução
 
-Crie perfis de execução para os Conetores do MIMMA e do ADMA.
+Crie perfis de execução para os conectores ADMA e MIMMA.
 
 ### <a name="create-run-profiles-for-the-adma-connector"></a>Criar perfis de execução para o conetor do ADMA
 
 Esta tabela mostra os cinco perfis de execução que criará para o conetor do ADMA:
 
-| Nome | Tipo |
+| Nome | Type |
 | ---- | ---- |
 | Perfil1 | Importação Completa (Apenas Fase) |
 | Perfil2 | Sincronização Completa |
@@ -263,7 +263,7 @@ Para criar perfis de execução para o conetor do ADMA:
 
 Esta tabela mostra os cinco perfis de execução correspondentes para o conetor do MIMMA:
 
-| Nome | Tipo |
+| Nome | Type |
 | -------- | -------- |
 | Perfil1 | Importação Completa (Apenas Fase) |
 | Perfil2 | Sincronização Completa |
@@ -305,13 +305,13 @@ Para criar a regra de sincronização de entrada de utilizadores do AD:
 
 4. No separador **Geral**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
 
-    -   Nome a Apresentar: Regra de Sincronização de Entrada de Utilizadores do AD
-    -   Direção do Fluxo de Dados: Entrada
+    -   Nome para exibição: Regra de sincronização de entrada do usuário do AD
+    -   Direção do fluxo de dados: Entrada
 
 5. No separador **Âmbito**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
 
     -   Tipo de Recurso Metaverso: pessoa
-    -   Sistema Externo: ADMA
+    -   Sistema externo: ADMA
     -   Tipo de Recurso de Sistema Externo: utilizador
 
 6. No separador **Relação**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
@@ -322,14 +322,14 @@ Para criar a regra de sincronização de entrada de utilizadores do AD:
 
 7. Na página **Fluxo de Atributos de Entrada**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
 
-    | Regra de Fluxo | Origem | Destino |
+    | Regra de Fluxo | Source | Destino |
     |-|-|-|
-    |Regra 1|NomeContaSam|accountName|
+    |Regra 1|samAccountName|accountName|
     |Regra 2|displayName|displayName|
     |Regra 3|TipoDeFuncionário|tipodeFuncionário|
     |Regra 4|nomeDado|firstName|
-    |Regra 5|sn|apelido|
-    |Regra 6|Gestor|gestor|
+    |Regra 5|sn|lastName|
+    |Regra 6|Manager|gestor|
     |Regra 7|SIDobjeto|SIDobjeto|
     |Regra 8|"Contoso"|domínio|
 

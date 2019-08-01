@@ -6,17 +6,17 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 10/26/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cbba7abe810fea0943e087206f7b0b6e3baa7cbb
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: 35845cc9bb4358f3f837b8a007de15da972c980d
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357889"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701316"
 ---
 # <a name="set-up-a-domain"></a>Configurar um domínio
 
@@ -33,11 +33,11 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
-> - Nome do controlador de domínio - **corpdc**
+> - Nome do controlador de domínio- **corpdc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor de serviço de MIM - **corpservice**
-> - Nome do servidor de sincronização de MIM - **corpsync**
-> - Nome do SQL Server - **corpsql**
+> - Nome do servidor do serviço do MIM- **corpservice**
+> - Nome do servidor de sincronização do MIM- **corpsync**
+> - Nome do SQL Server- **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 1. Inicie sessão no controlador de domínio como o administrador do domínio (*por exemplo, Contoso\Administrador*).
@@ -99,11 +99,11 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     setspn -S FIMService/mim.contoso.com Contoso\MIMService
     setspn -S FIMService/corpservice.contoso.com Contoso\MIMService
     ```
-5.  Durante a configuração, precisamos adicionar os seguintes registos DNS "A" para a resolução de nome adequada
+5.  Durante a instalação, precisamos adicionar os seguintes registros de DNS ' A ' para a resolução de nomes apropriada
 
-- mim.contoso.com ponto para o endereço de ip físico do corpservice
-- passwordreset.contoso.com ponto para o endereço de ip físico do corpservice
-- passwordregistration.contoso.com ponto para o endereço de ip físico do corpservice
+- mim.contoso.com apontar para o endereço IP físico do corpservice
+- passwordreset.contoso.com apontar para o endereço IP físico do corpservice
+- passwordregistration.contoso.com apontar para o endereço IP físico do corpservice
 
 > [!div class="step-by-step"]
 > [Windows Server 2016»](prepare-server-ws2016.md)

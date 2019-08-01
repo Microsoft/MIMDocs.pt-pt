@@ -1,49 +1,49 @@
 ---
-title: Configurar o Windows Server 2016 para o MIM 2016 SP1 | Documentos da Microsoft
-description: Obter os passos e os requisitos mínimos para preparar o Windows Server 2016 para trabalhar com o MIM 2016 SP1.
+title: Configurar o Windows Server 2016 para MIM 2016 SP1 | Microsoft Docs
+description: Obtenha as etapas e os requisitos mínimos para preparar o Windows Server 2016 para funcionar com o MIM 2016 SP1.
 keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 04/26/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: a0fa1e837fd73872043748ee73f19a29d1d1412f
-ms.sourcegitcommit: 3b514aba69af203f176b40cdb7c2a51c477c944a
+ms.openlocfilehash: 7348507593426ba112feef9d68686ee493a6391d
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718330"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701398"
 ---
-# <a name="set-up-an-identity-management-server-windows-server-2016"></a>Configurar um servidor de gestão de identidades: Windows Server 2016
+# <a name="set-up-an-identity-management-server-windows-server-2016"></a>Configurar um servidor de gerenciamento de identidade: Windows Server 2016
 
 > [!div class="step-by-step"]
-> [«Preparar um domínio](preparing-domain.md)
+> [«Preparando um domínio](preparing-domain.md)
 > [SQL Server 2016»](prepare-server-sql2016.md)
 > 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
-> - Nome do controlador de domínio - **corpdc**
+> - Nome do controlador de domínio- **corpdc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor de serviço de MIM - **corpservice**
-> - Nome do servidor de sincronização de MIM - **corpsync**
-> - Nome do SQL Server - **corpsql**
+> - Nome do servidor do serviço do MIM- **corpservice**
+> - Nome do servidor de sincronização do MIM- **corpsync**
+> - Nome do SQL Server- **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
-## <a name="join-windows-server-2016-to-your-domain"></a>Associar o Windows Server 2016 ao seu domínio
+## <a name="join-windows-server-2016-to-your-domain"></a>Ingresse o Windows Server 2016 em seu domínio
 
-Comece com um computador Windows Server 2016, com um mínimo de 8 a 12GB de RAM. Quando instalar, especifique a edição de "Windows Server 2016 Standard/Datacenter (servidor com uma GUI) x64".
+Comece com um computador com Windows Server 2016, com um mínimo de 8 GB de RAM. Ao instalar, especifique a edição "Windows Server 2016 Standard/datacenter (servidor com uma GUI) x64".
 
 1. Inicie sessão no novo computador como o seu administrador.
 
-2. Através do Painel de Controlo, atribua ao computador um endereço IP estático na rede. Configure essa interface de rede para enviar consultas DNS para o endereço IP do controlador de domínio no passo anterior e defina o nome do computador **CORPSERVICE**.  Esta operação requer um reinício do servidor.
+2. Através do Painel de Controlo, atribua ao computador um endereço IP estático na rede. Configure essa interface de rede para enviar consultas DNS para o endereço IP do controlador de domínio na etapa anterior e defina o nome do computador como **CORPSERVICE**.  Esta operação exigirá uma reinicialização do servidor.
 
-3. Abra o painel de controlo e associe o computador ao domínio que configurou no passo anterior, *contoso.com*.  Esta operação inclui fornecer o nome de utilizador e as credenciais de um administrador de domínio, tal como *contoso\administrador*.  Depois de aparecer a mensagem de boas-vindas, feche a caixa de diálogo e reinicie este servidor novamente.
+3. Abra o painel de controle e ingresse o computador no domínio que você configurou na última etapa, *contoso.com*.  Essa operação inclui fornecer o nome de usuário e as credenciais de um administrador de domínio, como *Contoso\Administrator*.  Depois de aparecer a mensagem de boas-vindas, feche a caixa de diálogo e reinicie este servidor novamente.
 
-4. Inicie sessão computador *CORPSERVICE* como uma conta de domínio com o administrador do computador local, tal como *Contoso\MIMINSTALL*.
+4. Entre no computador *CORPSERVICE* como uma conta de domínio com administrador do computador local, como *Contoso\MIMINSTALL*.
 
 
 5. Inicie uma janela do PowerShell como administrador e escreva o seguinte comando para atualizar o computador com as definições da política de grupos.
@@ -69,29 +69,29 @@ Comece com um computador Windows Server 2016, com um mínimo de 8 a 12GB de RAM.
 
 Configure a política de segurança do servidor para permitir que as contas recentemente criadas sejam executadas como serviços.
 > [!NOTE] 
-> Dependendo da sua configuração, server(all-in-one) único ou servidores distribuídos, que só precisa de adicionar, com base na função da máquina membro, como o servidor de sincronização. 
+> Dependendo de sua configuração, servidor único (tudo em um) ou servidores distribuídos, você só precisa adicionar, com base na função do computador membro, como o servidor de sincronização. 
 
 1. Iniciar o programa Política de Segurança Local
 
 2. Navegue até **Políticas Locais > Atribuição de Direitos de Utilizadores**.
 
-3. No painel de detalhes, faça duplo clique em **iniciar sessão como um serviço**e selecione **propriedades**.
+3. No painel de detalhes, clique com o botão direito do mouse em **fazer logon como um serviço**e selecione **Propriedades**.
 
     ![Imagem da Política de Segurança Local](media/MIM-DeployWS3.png)
 
-4. Clique em **adicionar utilizador ou grupo**, e na caixa de texto a seguir de tipo com base na função `contoso\MIMSync; contoso\MIMMA; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\MIMSSPR`, clique em **verificar nomes**e clique em **OK**.
+4. Clique em **Adicionar usuário ou grupo**e, na caixa de texto, digite o seguinte `contoso\MIMSync; contoso\MIMMA; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\MIMSSPR`com base na função, clique em **verificar nomes**e clique em **OK**.
 
 5. Clique em **OK** para fechar a janela de **Propriedades Iniciar sessão como um serviço**.
 
-6.  No painel de detalhes, faça duplo clique em **negar o acesso a este computador a partir da rede**e selecione **propriedades**. >
+6.  No painel de detalhes, clique com o botão direito do mouse em **negar acesso a este computador da rede**e selecione **Propriedades**. >
 
-[!NOTE] Separação dos servidores de função irá interromper a algumas funcionalidades, como o SSPR.
+[!NOTE] Separar os servidores de função interromperá algumas funcionalidades, como SSPR.
 
 7. Clique em **Adicionar Utilizador ou Grupo**, no tipo de caixa de texto, escreva `contoso\MIMSync; contoso\MIMService` e clique em **OK**.
 
 8. Clique em **OK** para fechar a janela de **Propriedades Negar acesso a este computador a partir da rede**.
 
-9. No painel de detalhes, faça duplo clique em **Recusar início de sessão localmente**e selecione **propriedades**.
+9. No painel de detalhes, clique com o botão direito do mouse em **Negar logon localmente**e selecione **Propriedades**.
 
 10. Clique em **Adicionar Utilizador ou Grupo**, no tipo de caixa de texto, escreva `contoso\MIMSync; contoso\MIMService` e clique em **OK**.
 
@@ -113,5 +113,5 @@ Configure a política de segurança do servidor para permitir que as contas rece
     ```
 
 > [!div class="step-by-step"]  
-> [«Preparar um domínio](preparing-domain.md)
+> [«Preparando um domínio](preparing-domain.md)
 > [SQL Server 2016»](prepare-server-sql2016.md)

@@ -6,42 +6,42 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 04/26/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 5beee58388c12abbe8e3245ff610d3528b03786a
-ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
+ms.openlocfilehash: 46080360dd0ad6c3554e2d9b3418ac518b75a5cd
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67690758"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701385"
 ---
-# <a name="set-up-an-identity-management-server-sharepoint"></a>Configure um servidor de gestão: SharePoint
+# <a name="set-up-an-identity-management-server-sharepoint"></a>Configurar um servidor de gerenciamento de identidade: SharePoint
 
 > [!div class="step-by-step"]
 > [«SQL Server 2016](prepare-server-sql2016.md)
-> [o Exchange Server»](prepare-server-exchange.md)
+> [Exchange Server»](prepare-server-exchange.md)
 > 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
-> - Nome do controlador de domínio - **corpdc**
+> - Nome do controlador de domínio- **corpdc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor de serviço de MIM - **corpservice**
-> - Nome do servidor de sincronização de MIM - **corpsync**
-> - SQL Server name - **corpsql**
+> - Nome do servidor do serviço do MIM- **corpservice**
+> - Nome do servidor de sincronização do MIM- **corpsync**
+> - Nome do SQL Server- **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 
-## <a name="install-sharepoint-2016"></a>Instalar **SharePoint 2016**
+## <a name="install-sharepoint-2016"></a>Instalar o **SharePoint 2016**
 
 > [!NOTE]
 > O instalador requer uma ligação à Internet para transferir os respetivos pré-requisitos. Se o computador estiver numa rede virtual que não fornece conetividade à Internet, adicione uma interface de rede adicional ao computador que forneça uma ligação à Internet. Isto pode ser desativado depois de concluída a instalação.
 
-Siga estes passos para instalar o SharePoint 2016. Depois de concluir a instalação, o servidor será reiniciado.
+Siga estas etapas para instalar o SharePoint 2016. Depois de concluir a instalação, o servidor será reiniciado.
 
-1.  Inicie **PowerShell** como uma conta de domínio com o administrador local na **corpservice** e **sysadmin** no servidor de base de dados SQL que iremos utilizar o **contoso \ miminstall**.
+1.  Inicie o **PowerShell** como uma conta de domínio com administrador local no **corpservice** e **sysadmin** no servidor de banco de dados SQL que usaremos **contoso\miminstall**.
 
     -   Mude para o diretório onde o SharePoint foi descompactado.
 
@@ -51,7 +51,7 @@ Siga estes passos para instalar o SharePoint 2016. Depois de concluir a instala�
         .\prerequisiteinstaller.exe
         ```
 
-2.  Após **SharePoint** pré-requisitos estão instalados, instale **SharePoint 2016** digitando o seguinte comando:
+2.  Depois que os pré-requisitos **do SharePoint** forem instalados, instale o **SharePoint 2016** digitando o seguinte comando:
 
     ```
     .\setup.exe
@@ -67,16 +67,16 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
 1. No separador **Ligar a um farm de servidores**, mude para criar um novo farm de servidores.
 
-2. Especifique este servidor como o servidor de base de dados, como **corpsql** para a base de dados de configuração, e *Contoso\SharePoint* como a conta de acesso de base de dados para o SharePoint utilizar.
+2. Especifique esse servidor como o servidor de banco de dados como **corpsql** para o banco de dados de configuração e *Contoso\SharePoint* como a conta de acesso ao banco de dados para o SharePoint usar.
 3. Crie uma palavra-passe para a frase de acesso de segurança do farm.
 
-4. O Assistente de configuração é recomendável selecionar [MinRole](/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server) tipo de **front-end**
+4. No assistente de configuração, é recomendável selecionar o tipo de [MinRole](/sharepoint/install/overview-of-minrole-server-roles-in-sharepoint-server) de **front-end**
 
-5. Quando o Assistente de configuração concluir a tarefa de configuração 10 de 10, clique em Concluir e um browser será aberto....
+5. Quando o assistente de configuração concluir a tarefa de configuração 10 de 10, clique em concluir e um navegador da Web será aberto.
 
-6. Se lhe for pedido o pop-up do Internet Explorer, efetuar a autenticação como *Contoso\miminstall* (ou a conta de administrador equivalentes) para continuar.
+6. Se o pop-up do Internet Explorer for solicitado, autentique como *Contoso\miminstall* (ou a conta de administrador equivalente) para continuar.
 
-7. No Assistente de web (dentro da aplicação web), clique em **Cancelar/Skip**.
+7. No assistente da Web (dentro do aplicativo Web), clique em **Cancelar/ignorar**.
 
 
 ## <a name="prepare-sharepoint-to-host-the-mim-portal"></a>Preparar o SharePoint para alojar o Portal do MIM
@@ -84,7 +84,7 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 > [!NOTE]
 > Inicialmente, o SSL não será configurado. Certifique-se de que configura o SSL ou equivalente antes de ativar o acesso a este portal.
 
-1. Inicie **Shell de gestão do SharePoint 2016** e execute o seguinte script do PowerShell para criar um **aplicação Web do SharePoint 2016**.
+1. Inicie o **Shell de gerenciamento do SharePoint 2016** e execute o seguinte script do PowerShell para criar um **aplicativo Web do SharePoint 2016**.
 
     ```
     New-SPManagedAccount ##Will prompt for new account enter contoso\mimpool 
@@ -93,9 +93,9 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
     ```
 
     > [!NOTE]
-    > Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder. Quando concluir, a saída indicará o URL do novo portal. Manter o **Shell de gestão do SharePoint 2016** janela aberta para referência mais tarde.
+    > Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder. Quando concluir, a saída indicará o URL do novo portal. Mantenha a janela do **Shell de gerenciamento do SharePoint 2016** aberta para referência posterior.
 
-2. Inicie a Shell de gestão do SharePoint 2016 e execute o seguinte script do PowerShell para criar uma **conjunto de sites do SharePoint** associados a essa aplicação web.
+2. Inicie o Shell de gerenciamento do SharePoint 2016 e execute o seguinte script do PowerShell para criar um **conjunto de sites do SharePoint** associado a esse aplicativo Web.
 
    ```
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
@@ -106,9 +106,9 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
    ```
 
    > [!NOTE]
-   > Certifique-se de que o resultado do *CompatibilityLevel* variável for "15". Se o resultado é que não seja "15", em seguida, o conjunto de sites não foi criado a versão de experiência correto; eliminar o conjunto de sites e recriá-lo.
+   > Verifique se o resultado da variável *CompatibilityLevel* é "15". Se o resultado for diferente de "15", o conjunto de sites não foi criado para a versão correta da experiência; Exclua o conjunto de sites e recrie-o.
 
-3. Desativar **Viewstate do lado do servidor de SharePoint** e a tarefa do SharePoint "Estado de funcionamento tarefa de análise (hora a hora, temporizador do Microsoft SharePoint Foundation, todos os servidores)" ao executar o PowerShell seguinte comandos no  **Shell de gestão do SharePoint 2016**:
+3. Desabilite o **ViewState do lado do servidor do SharePoint** e a tarefa do SharePoint "trabalho de análise de integridade (por hora, temporizador do Microsoft SharePoint Foundation, todos os servidores)" executando os seguintes comandos do PowerShell no Shell de gerenciamento do **SharePoint 2016**:
 
    ```
    $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
@@ -117,9 +117,9 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
    Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
    ```
 
-4. No seu servidor de gestão de identidade, abra um novo separador do browser, navegue para http://mim.contoso.com/ e inicie sessão como *contoso\miminstall*.  Será apresentado um site do SharePoint vazio denominado *Portal do MIM*.
+4. No servidor de gerenciamento de identidade, abra uma nova guia do navegador da Web http://mim.contoso.com/ , navegue até e faça logon como *contoso\miminstall*.  Será apresentado um site do SharePoint vazio denominado *Portal do MIM*.
 
-    ![Portal de MIM em http://mim.contoso.com/ imagem](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
+    ![Portal do mim http://mim.contoso.com/ na imagem](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
 
 5. Copie o URL, em seguida, no Internet Explorer, abra as **Opções da Internet**, mude para o **separador Segurança**, selecione **Intranet local** e clique em **Sites**.
 
@@ -131,4 +131,4 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 
 > [!div class="step-by-step"]  
 > [«SQL Server 2016](prepare-server-sql2016.md)
-> [o Exchange Server»](prepare-server-exchange.md)
+> [Exchange Server»](prepare-server-exchange.md)

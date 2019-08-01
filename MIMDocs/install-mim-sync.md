@@ -6,17 +6,17 @@ author: billmath
 ms.author: billmath
 manager: mtillman
 ms.date: 05/01/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: cec04cf430ba38ec40b61e4aad68fd8447d13c99
-ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
+ms.openlocfilehash: fba7eb3caea1f00c37f00f3fd2bf67dfe3f12871
+ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56952184"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701261"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>Instale o MIM 2016: Serviço de Sincronização do MIM
 
@@ -26,20 +26,20 @@ ms.locfileid: "56952184"
 > 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
-> - Nome do controlador de domínio - **corpdc**
+> - Nome do controlador de domínio- **corpdc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor de serviço de MIM - **corpservice**
-> - Nome do servidor de sincronização de MIM - **corpsync**
-> - SQL Server name - **corpsql**
+> - Nome do servidor do serviço do MIM- **corpservice**
+> - Nome do servidor de sincronização do MIM- **corpsync**
+> - Nome do SQL Server- **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro o pacote de instalação.
 
-1. Inicie sessão como *contoso\miminstall* para o servidor estiver a utilizar para o servidor de sincronização de gestão de identidade **corpsync**.
+1. Entre como *contoso\miminstall* no servidor que você está usando para o servidor de sincronização de gerenciamento de identidade **corpsync**.
 
-2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.  Se não tiver esta DVD, consulte [downloads e licenciamento do Microsoft Identity Manager](microsoft-identity-manager-licensing.md).
+2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.  Se você não tiver esse DVD, consulte [Microsoft Identity Manager licenciamento e downloads](microsoft-identity-manager-licensing.md).
 
-## <a name="install-mim-2016-sp1-synchronization-service"></a>Instalar o serviço de sincronização de MIM 2016 SP1
+## <a name="install-mim-2016-sp1-synchronization-service"></a>Instalar o serviço de sincronização do MIM 2016 SP1
 
 1. Na pasta de instalação descompactada do MIM, navegue até à pasta **Serviço de Sincronização**.
 
@@ -59,7 +59,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
    1.  O SQL Server está localizado em: **Um computador remoto** chamado **corpsql.contoso.com**.
 
-   2.  Instância do SQL Server é: **A instância predefinida**
+   2.  A instância de SQL Server é: **A instância padrão**
 
    ![Imagem de ligação à base de dados](media/install-mim-sync/MIM_Install3.png)
 

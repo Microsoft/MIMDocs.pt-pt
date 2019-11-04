@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 69698721b0fbabc78cf5bb4c1032ab8fc2613772
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 1627bae6aecdfc3d57261485de04a78feb264013
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701204"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329329"
 ---
-# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instale o MIM 2016: Sincronizar Active Directory e serviço do MIM
+# <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM
 
 > [!div class="step-by-step"]
 > [« Portal e Serviço do MIM](install-mim-service-portal.md)
@@ -37,7 +37,7 @@ O agente de gestão (MA) do MIM é um conetor da Sincronização do MIM para o S
 Quando configura um agente de gestão do MIM, tem de especificar uma conta de utilizador. Este documento utiliza **MIMMA** como o nome desta conta.
 
 > [!NOTE]
-> A conta que utiliza para o agente de gestão do MIM tem de ser a mesma conta que especificou durante a instalação do Serviço MIM.
+> A conta que utiliza para o agente de gestão do MIM tem de ser a mesma conta que especificou durante a instalação do Serviço MIM. Se você planeja habilitar o recurso ' usar conta de MIMSync ', o serviço de sincronização do MIM deve ser instalado usando a conta de serviço gerenciado de grupo.
 
 ### <a name="to-create-the-mim-ma"></a>Para criar o MA do MIM
 
@@ -47,19 +47,18 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
 3.  Na página **Criar Agente de Gestão**, forneça as seguintes definições e, em seguida, clique em **Seguinte**.
 
-    -   Agente de gerenciamento para: Agente de gerenciamento de serviços do FIM
+    -   Agente de gestão para: agente de gestão do Serviço FIM
 
     -   Nome: MIMMA
 
 4.  Na página **Ligar à Base de Dados**, forneça as seguintes definições e, em seguida, clique em **Seguinte**
-
     -   Servidor: localhost
 
-    -   Banco FIMService
+    -   Base de dados: FIMService
 
     -   Endereço básico do serviço do MIM: http://localhost:5725
 
-    -   Modo de autenticação: Autenticação integrada do Windows
+    -   Modo de autenticação: autenticação integrada do Windows
 
     -   Nome de utilizador: mimma
 
@@ -112,15 +111,15 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     | **Atributo de Origem de Dados** | **Direção do Fluxo** | **Atributo Metaverso** |
     |-|-|-|
-    | NomedaConta | Exportar | accountName |
-    | DisplayName | Exportar | displayName |
-    | Domain | Exportar | domínio |
-    | Email | Exportar | correio |
+    | NomedaConta | Exportar | nomedaConta |
+    | Nome a Apresentar | Exportar | nomeaApresentar |
+    | Domínio | Exportar | domínio |
+    | E-mail | Exportar | correio |
     | EmployeeID | Exportar | IDdefuncionário |
     | TipoDeFuncionário | Exportar | tipodeFuncionário |
-    | FirstName | Exportar | nomePróprio |
+    | NomePróprio | Exportar | nomePróprio |
     | Apelido | Exportar | apelido |
-    | SIDobjeto | Exportar | objectSid |
+    | SIDobjeto | Exportar | sidObjeto |
 
     -   Selecione **Grupo** como o tipo de objeto de Origem de dados e de Metaverso.
 
@@ -138,24 +137,24 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     | **Atributo de Origem de Dados** | **Direção do Fluxo** | **Atributo Metaverso** |
     |-|-|-|
-    | NomedaConta | Exportar | accountName |
-    | DisplayName | Exportar | displayName |
-    | Domain | Exportar | domínio |
-    | Email | Exportar | mail |
+    | NomedaConta | Exportar | nomedaConta |
+    | Nome a Apresentar | Exportar | nomeaApresentar |
+    | Domínio | Exportar | domínio |
+    | E-mail | Exportar | correio |
     | MailNickName | Exportar | mailNickName |
     | Membro | Exportar | membro |
     | SIDobjeto | Exportar | sidObjeto |
-    | Scope | Exportar | âmbito |
-    | Type | Exportar | type |
+    | Âmbito | Exportar | âmbito |
+    | Tipo | Exportar | tipo |
     | MembershipAddWorkflow | Exportar | membershipAddWorkflow |
     | MembershipLocked | Exportar | membershipLocked |
     | NomedaConta | Importar | nomedaConta |
     | DisplayedOwner | Importar | displayedOwner |
-    | DisplayName | Importar | displayName |
+    | Nome a Apresentar | Importar | nomeaApresentar |
     | MailNickName | Importar | mailNickName |
     | Membro | Importar | membro |
-    | Scope | Importar | scope |
-    | Type | Importar | tipo |
+    | Âmbito | Importar | âmbito |
+    | Tipo | Importar | tipo |
 
 10.  Na página **Configurar Desaprovisionamento**, clique em **Seguinte**
 
@@ -168,7 +167,7 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 
 2. Na página **Criar Agente de Gestão**, forneça as seguintes definições e, em seguida, clique em **Seguinte**:
 
-    - Agente de gerenciamento para: Serviços de Domínio do Active Directory
+    - Agente de gestão para: Serviços de Domínio do Active Directory
     - Nome: ADMA
 
 3. Na página **Ligar à Floresta do Active Directory**, forneça as seguintes definições e, em seguida, clique em **Seguinte**:
@@ -196,16 +195,16 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 
 7. Na página **Selecionar Atributos**, selecione **Mostrar TUDO**, selecione os atributos seguintes e, em seguida, clique em **Seguinte**:
 
-    -   Empresa
-    -   displayName
+    -   empresa
+    -   nomeaApresentar
     -   IDdefuncionário
     -   tipodeFuncionário
-    -   givenName
+    -   nomeDado
     -   tipodeGrupo
     -   geridoPor
     -   gestor
     -   membro
-    -   objectSid
+    -   sidObjeto
     -   nomeContaSAM
     -   tipoContaSAM
     -   sn
@@ -231,7 +230,7 @@ Crie perfis de execução para os conectores ADMA e MIMMA.
 
 Esta tabela mostra os cinco perfis de execução que criará para o conetor do ADMA:
 
-| Nome | Type |
+| Nome | Tipo |
 | ---- | ---- |
 | Perfil1 | Importação Completa (Apenas Fase) |
 | Perfil2 | Sincronização Completa |
@@ -263,7 +262,7 @@ Para criar perfis de execução para o conetor do ADMA:
 
 Esta tabela mostra os cinco perfis de execução correspondentes para o conetor do MIMMA:
 
-| Nome | Type |
+| Nome | Tipo |
 | -------- | -------- |
 | Perfil1 | Importação Completa (Apenas Fase) |
 | Perfil2 | Sincronização Completa |
@@ -305,13 +304,13 @@ Para criar a regra de sincronização de entrada de utilizadores do AD:
 
 4. No separador **Geral**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
 
-    -   Nome para exibição: Regra de sincronização de entrada do usuário do AD
-    -   Direção do fluxo de dados: Entrada
+    -   Nome a Apresentar: Regra de Sincronização de Entrada de Utilizadores do AD
+    -   Direção do Fluxo de Dados: Entrada
 
 5. No separador **Âmbito**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
 
     -   Tipo de Recurso Metaverso: pessoa
-    -   Sistema externo: ADMA
+    -   Sistema Externo: ADMA
     -   Tipo de Recurso de Sistema Externo: utilizador
 
 6. No separador **Relação**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
@@ -322,14 +321,14 @@ Para criar a regra de sincronização de entrada de utilizadores do AD:
 
 7. Na página **Fluxo de Atributos de Entrada**, forneça as seguintes informações e, em seguida, clique em **Seguinte**:
 
-    | Regra de Fluxo | Source | Destino |
+    | Regra de Fluxo | Origem | Destino |
     |-|-|-|
-    |Regra 1|samAccountName|accountName|
-    |Regra 2|displayName|displayName|
+    |Regra 1|NomeContaSam|nomedaConta|
+    |Regra 2|nomeaApresentar|nomeaApresentar|
     |Regra 3|TipoDeFuncionário|tipodeFuncionário|
-    |Regra 4|nomeDado|firstName|
-    |Regra 5|sn|lastName|
-    |Regra 6|Manager|gestor|
+    |Regra 4|nomeDado|nomePróprio|
+    |Regra 5|sn|apelido|
+    |Regra 6|Gestor|gestor|
     |Regra 7|SIDobjeto|SIDobjeto|
     |Regra 8|"Contoso"|domínio|
 

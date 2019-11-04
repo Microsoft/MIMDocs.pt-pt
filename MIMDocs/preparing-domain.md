@@ -11,17 +11,17 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 35845cc9bb4358f3f837b8a007de15da972c980d
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 4d1e555de6c926c65b76d01c341becb383b8930b
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701316"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329347"
 ---
 # <a name="set-up-a-domain"></a>Configurar um domínio
 
 > [!div class="step-by-step"]
-> [Windows Server 2016»](prepare-server-ws2016.md)
+> [Windows Server»](prepare-server-ws2016.md)
 
 O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directory (AD). Já deve ter o AD instalado, e certifique-se de que tem um controlador de domínio no seu ambiente para um domínio que possa administrar.
 
@@ -47,7 +47,7 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     ```PowerShell
     import-module activedirectory
     $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
-    New-ADUser –SamAccountName MIMINSTALL –name MIMMA
+    New-ADUser –SamAccountName MIMINSTALL –name MIMINSTALL
     Set-ADAccountPassword –identity MIMINSTALL –NewPassword $sp
     Set-ADUser –identity MIMINSTALL –Enabled 1 –PasswordNeverExpires 1
     New-ADUser –SamAccountName MIMMA –name MIMMA
@@ -71,7 +71,7 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     New-ADUser –SamAccountName BackupAdmin –name BackupAdmin
     Set-ADAccountPassword –identity BackupAdmin –NewPassword $sp
     Set-ADUser –identity BackupAdmin –Enabled 1 -PasswordNeverExpires 1
-    New-ADUser –SamAccountName MIMpool –name BackupAdmin
+    New-ADUser –SamAccountName MIMpool –name MIMpool
     Set-ADAccountPassword –identity MIMPool –NewPassword $sp
     Set-ADUser –identity MIMPool –Enabled 1 -PasswordNeverExpires 1
     ```
@@ -83,7 +83,7 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     New-ADGroup –name MIMSyncOperators –GroupCategory Security –GroupScope Global –SamAccountName MIMSyncOperators
     New-ADGroup –name MIMSyncJoiners –GroupCategory Security –GroupScope Global –SamAccountName MIMSyncJoiners
     New-ADGroup –name MIMSyncBrowse –GroupCategory Security –GroupScope Global –SamAccountName MIMSyncBrowse
-    New-ADGroup –name MIMSyncPasswordReset –GroupCategory Security –GroupScope Global –SamAccountName MIMSyncPasswordReset
+    New-ADGroup –name MIMSyncPasswordSet –GroupCategory Security –GroupScope Global –SamAccountName MIMSyncPasswordSet
     Add-ADGroupMember -identity MIMSyncAdmins -Members Administrator
     Add-ADGroupmember -identity MIMSyncAdmins -Members MIMService
     Add-ADGroupmember -identity MIMSyncAdmins -Members MIMInstall
@@ -106,4 +106,4 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 - passwordregistration.contoso.com apontar para o endereço IP físico do corpservice
 
 > [!div class="step-by-step"]
-> [Windows Server 2016»](prepare-server-ws2016.md)
+> [Windows Server»](prepare-server-ws2016.md)

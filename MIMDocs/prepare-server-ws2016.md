@@ -1,29 +1,34 @@
 ---
-title: Configurar o Windows Server 2016 para MIM 2016 SP1 | Microsoft Docs
-description: Obtenha as etapas e os requisitos mínimos para preparar o Windows Server 2016 para funcionar com o MIM 2016 SP1.
+title: Configurar o Windows Server 2016 ou 2019 para MIM 2016 SP2 | Microsoft Docs
+description: Obtenha as etapas e os requisitos mínimos para preparar o Windows Server 2016 ou 2019 para trabalhar com o MIM 2016 SP2.
 keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 04/26/2018
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 7348507593426ba112feef9d68686ee493a6391d
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 66011b135d575ce09d916be7c528accb230b343b
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701398"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329427"
 ---
-# <a name="set-up-an-identity-management-server-windows-server-2016"></a>Configurar um servidor de gerenciamento de identidade: Windows Server 2016
+# <a name="set-up-an-identity-management-server-windows-server-2016-or-2019"></a>Configurar um servidor de gerenciamento de identidade: Windows Server 2016 ou 2019
 
 > [!div class="step-by-step"]
-> [«Preparando um domínio](preparing-domain.md)
-> [SQL Server 2016»](prepare-server-sql2016.md)
+> [«Preparando um
+> de domínio](preparing-domain.md) [SQL Server»](prepare-server-sql2016.md)
 > 
+
+> [!NOTE]
+O procedimento de instalação do Windows Server 2019 não difere do procedimento de instalação do Windows Server 2016.
+
+
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
 > - Nome do controlador de domínio- **corpdc**
@@ -79,7 +84,7 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
     ![Imagem da Política de Segurança Local](media/MIM-DeployWS3.png)
 
-4. Clique em **Adicionar usuário ou grupo**e, na caixa de texto, digite o seguinte `contoso\MIMSync; contoso\MIMMA; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\MIMSSPR`com base na função, clique em **verificar nomes**e clique em **OK**.
+4. Clique em **Adicionar usuário ou grupo**e, na caixa de texto, digite o seguinte com base na `contoso\MIMSync; contoso\MIMMA; contoso\MIMService; contoso\SharePoint; contoso\SqlServer; contoso\MIMSSPR`de função, clique em **verificar nomes**e clique em **OK**.
 
 5. Clique em **OK** para fechar a janela de **Propriedades Iniciar sessão como um serviço**.
 
@@ -99,6 +104,19 @@ Configure a política de segurança do servidor para permitir que as contas rece
 
 12. Feche a janela Política de Segurança Local.
 
+## <a name="software-prerequisites"></a>Pré-requisitos de software
+
+Antes de instalar os componentes do MIM 2016 SP2, certifique-se de instalar todos os pré-requisitos de software:
+
+13. Instale [os C++ pacotes redistribuíveis do Visual 2013](https://www.microsoft.com/download/details.aspx?id=40784).
+
+14. Instale o .NET Framework 4,6.
+
+15. No servidor que hospedará o serviço de sincronização do MIM, o serviço de sincronização do MIM exigirá [SQL Server Native Client](https://www.microsoft.com/download/details.aspx?id=50402).
+
+16. No servidor que hospedará o serviço do MIM, o serviço do MIM exigirá .NET Framework 3,5.
+
+17. Opcionalmente, se estiver usando o modo TLS 1,2 ou FIPS, consulte o [MIM 2016 SP2 em ambientes de modo de "tls 1,2 somente" ou FIPS](preparing-tls.md).
 
 ## <a name="change-the-iis-windows-authentication-mode-if-needed"></a>Alterar o modo de autenticação do Windows do IIS, se necessário
 
@@ -113,5 +131,5 @@ Configure a política de segurança do servidor para permitir que as contas rece
     ```
 
 > [!div class="step-by-step"]  
-> [«Preparando um domínio](preparing-domain.md)
-> [SQL Server 2016»](prepare-server-sql2016.md)
+> [«Preparando um
+> de domínio](preparing-domain.md) [SQL Server»](prepare-server-sql2016.md)

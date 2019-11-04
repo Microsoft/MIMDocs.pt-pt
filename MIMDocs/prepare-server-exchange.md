@@ -11,14 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: bad4cb03062a77494bbf429a929d62ca6e140c30
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 2994711949122aac7a545d3849db6c66f8cb09ed
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701343"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329311"
 ---
-# <a name="set-up-an-identity-management-server-exchange"></a>Configurar um servidor de gerenciamento de identidade: Exchange
+# <a name="set-up-an-identity-management-server-exchange"></a>Configurar um servidor de gestão de identidades: Exchange
 
 > [!div class="step-by-step"]
 > [« SharePoint](prepare-server-sharepoint.md)
@@ -27,15 +27,7 @@ ms.locfileid: "68701343"
 ## <a name="deploy-microsoft-exchange-server"></a>Implementar o Microsoft Exchange Server
 Se pretender configurar o MIM para enviar e receber e-mails ou aprovisionar caixas de correio, é necessário ter o Exchange presente no ambiente. Se não tiver o Exchange já implementado, é possível instalar uma versão de avaliação para fins de avaliação:
 
-1. Transferir e instalar o Microsoft Office 2010 Filter Packs – Versão 2.0 + Microsoft Office 2010 Filter Packs – versão 2.0 SP1
-
-    - [MS Office10 FP2.0](http://www.microsoft.com/download/details.aspx?id=17062)
-
-    - [MS Office10 FP2.0 SP1](http://www.microsoft.com/download/details.aspx?id=26604)
-
-2. Transferir e instalar o [Microsoft Unified Communications Managed API 4.0, Tempo de Execução Principal de 64 bits](http://www.microsoft.com/download/details.aspx?id=34992)
-
-3. Transferir e instalar a [Versão de avaliação de 180 dias do MS Exchange Server 2013](http://www.microsoft.com/evalcenter/evaluate-exchange-server-2013)
+* Transferir e instalar a [Versão de avaliação de 180 dias do MS Exchange Server 2013](http://www.microsoft.com/evalcenter/evaluate-exchange-server-2013)
 
 > [!div class="step-by-step"]  
 > [« SharePoint](prepare-server-sharepoint.md)

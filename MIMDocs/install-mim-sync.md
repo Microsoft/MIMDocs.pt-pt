@@ -5,25 +5,25 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: mtillman
-ms.date: 05/01/2018
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
-ms.reviewer: mwahl
+ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: fba7eb3caea1f00c37f00f3fd2bf67dfe3f12871
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.openlocfilehash: 0a8fd7fb4d36beffde86b020522ccd52287b5806
+ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701261"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73329275"
 ---
-# <a name="install-mim-2016-mim-synchronization-service"></a>Instale o MIM 2016: Serviço de Sincronização do MIM
+# <a name="install-mim-2016-mim-synchronization-service"></a>Instalar o MIM 2016: Serviço de Sincronização do MIM
 
 > [!div class="step-by-step"]
 > [« Exchange Server](prepare-server-exchange.md)
 > [Serviço e Portal do MIM »](install-mim-service-portal.md)
-> 
+ 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
 > - Nome do controlador de domínio- **corpdc**
@@ -57,19 +57,24 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 6. No ecrã de configuração da base de dados do Serviço de Sincronização, selecione:
 
-   1.  O SQL Server está localizado em: **Um computador remoto** chamado **corpsql.contoso.com**.
+   1.  O SQL Server está localizado em: **um computador remoto** chamado **corpsql.contoso.com**.
 
-   2.  A instância de SQL Server é: **A instância padrão**
+   2.  A instância do SQL Server é: **A instância predefinida**
 
    ![Imagem de ligação à base de dados](media/install-mim-sync/MIM_Install3.png)
 
+    3. *MIM 2016 SP2 e posterior*: configurar o nome do banco de dados do serviço de sincronização do mim
+
 7. Configure a Conta do Serviço de Sincronização, de acordo com a conta que criou anteriormente:
 
-   1. Conta de serviço: *MIMSync*
+   1. Conta de serviço: *SincronizaçãoMIM*
 
    2. Palavra-passe: <em>Pass@word1</em>
 
    3. Domínio da Conta de Serviço ou nome do computador local: *contoso*
+
+    >[!NOTE]
+MIM 2016 SP2 e posterior: para contas de serviço gerenciado de grupo, verifique se o caractere **$** está no final do nome da conta de serviço, por exemplo, MIMSync $, e deixe o campo de senha vazio.
 
    ![Imagem da conta de serviço](media/install-mim-sync/MIM_Install4.png)
 
@@ -97,7 +102,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
     3. É apresentado um aviso relativo à criação de uma cópia de segurança da chave de encriptação – clique em **OK** e, em seguida, selecione uma pasta para armazenar a cópia de segurança da chave de encriptação.
 
-        ![Imagem do aviso da chave de encriptação da cópia de segurança da Sincronização do MIM](media/MIM-Install7.png)
+    ![Imagem do aviso da chave de encriptação da cópia de segurança da Sincronização do MIM](media/MIM-Install7.png)
 
     4. Quando o instalador concluir a instalação com êxito, clique em **Concluir**.
 

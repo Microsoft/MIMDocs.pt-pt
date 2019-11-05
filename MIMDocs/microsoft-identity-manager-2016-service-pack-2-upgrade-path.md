@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: 35c4dc2aa3c933a729d3503527eca03c68bf02b5
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.openlocfilehash: bdf34be4841b1a911fdb61673e5a3855e66e7320
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73383962"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568064"
 ---
 # <a name="mim-2016-sp2-upgrade--from-forefront-identity--or-microsoft-identity-manager"></a>Atualização do MIM 2016 SP2 do Forefront Identity ou Microsoft Identity Manager
 
@@ -30,7 +30,7 @@ Há várias opções de atualização disponíveis. Se você já estiver executa
 ## <a name="upgrade-from-fim-2010-r2-sp1-or-later-fim-builds"></a>Atualização do FIM 2010 R2 SP1 ou compilações do FIM posterior
 
 > [!NOTE]
-A versão mínima com suporte do Forefront Identity Manager que pode ser atualizada diretamente para o MIM 2016 SP2 é o FIM 2010 R2 SP1 (Build 4.1.3419.0). Não há suporte para a atualização direta para o MIM 2016 SP2 de versões anteriores do FIM. Se você estiver executando compilações do FIM anteriores a 4.1.3419.0, precisará atualizar para o FIM 2010 R2 SP1 antes de atualizar para o MIM 2016 SP2.
+> A versão mínima com suporte do Forefront Identity Manager que pode ser atualizada diretamente para o MIM 2016 SP2 é o FIM 2010 R2 SP1 (Build 4.1.3419.0). Não há suporte para a atualização direta para o MIM 2016 SP2 de versões anteriores do FIM. Se você estiver executando compilações do FIM anteriores a 4.1.3419.0, precisará atualizar para o FIM 2010 R2 SP1 antes de atualizar para o MIM 2016 SP2.
 
 1. **Opção 1: instalação completa usando bancos de dados existentes**
     1. Faça uma cópia de backup dos bancos de dados FIMSynchronizationService e FIMService.
@@ -69,6 +69,6 @@ A versão mínima com suporte do Forefront Identity Manager que pode ser atualiz
     1. Atualize os complementos e clientes de redefinição de senha do MIM 2016, forneça o novo nome do servidor do serviço do MIM se o nome do servidor do serviço do MIM for alterado.
 
 > [!NOTE]
-As atualizações de pacotes de idiomas após o MIM 2016 SP2 serão distribuídas como hotfixes (arquivos. msp), eliminando a necessidade de desinstalar/reinstalar pacotes de idiomas.
+> As atualizações de pacotes de idiomas após o MIM 2016 SP2 serão distribuídas como hotfixes (arquivos. msp), eliminando a necessidade de desinstalar/reinstalar pacotes de idiomas.
 
 Informações mais detalhadas sobre os procedimentos de backup de atualização e de bancos de dados podem ser encontradas no artigo [atualizar para fim 2010 R2](https://docs.microsoft.com/previous-versions/mim/jj134291%28v%3dws.10%29) , aplicável a qualquer processo de atualização do fim ou do mim.

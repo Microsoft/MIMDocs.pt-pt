@@ -11,22 +11,21 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 297df3b3-192e-4ed9-82ed-c95eb5297c84
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 757e5c49b12e47f1b5610fd96d4be319696be113
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.openlocfilehash: 4be699f123bf7d48b709ee8b8e91e2222cd492e2
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73329405"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568016"
 ---
 # <a name="set-up-an-identity-management-server-sql-server-2016-or-2017"></a>Configurar um servidor de gerenciamento de identidade: SQL Server 2016 ou 2017
 
 > [!div class="step-by-step"]
 > [«Windows Server](prepare-server-ws2016.md)
 > [SharePoint»](prepare-server-sharepoint.md)
-> 
-
-> [!NOTE]
-O procedimento de instalação do SQL Server 2017 não difere do procedimento de instalação do SQL Server 2016.
+ 
+> [!NOTE] 
+> O procedimento de instalação do SQL Server 2017 não difere do procedimento de instalação do SQL Server 2016.
 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
@@ -38,7 +37,7 @@ O procedimento de instalação do SQL Server 2017 não difere do procedimento de
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 > [!IMPORTANT]
-O MIM 2016 SP2 dá suporte a ouvintes de AoAG (grupo de disponibilidade AlwaysOn do SQL) com a opção *RegisterAllProvidersIP* definida como 0, o que significa que não há suporte atualmente para o failover de sub-rede cruzada SQL Server AoAG.
+> O MIM 2016 SP2 dá suporte a ouvintes de AoAG (grupo de disponibilidade AlwaysOn do SQL) com a opção *RegisterAllProvidersIP* definida como 0, o que significa que não há suporte atualmente para o failover de sub-rede cruzada SQL Server AoAG.
 
 ## <a name="install-sql-server-2016-standardenterprise-edition"></a>Instalar o **SQL Server 2016 Standard/Enterprise Edition**
 
@@ -56,7 +55,7 @@ Mais informações as contas e os serviços de implantação do SQL podem ser en
 
 > [!NOTE]
 > O SSMS não está mais incluído no SQL 2016. Os detalhes de download podem ser encontrados [aqui](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017)
-> 
+
 > [!div class="step-by-step"]  
 > [«Windows Server](prepare-server-ws2016.md)
 > [SharePoint»](prepare-server-sharepoint.md)

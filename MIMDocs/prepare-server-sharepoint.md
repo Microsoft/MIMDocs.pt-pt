@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 46320c8c2d1ae7c530c4670159e393ee1be7165c
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.openlocfilehash: 62ef8796717dbcaea18d21bc3d28248efdeef92e
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73329457"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568113"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>Configurar um servidor de gestão de identidades: SharePoint
 
@@ -26,7 +26,7 @@ ms.locfileid: "73329457"
 > 
 
 > [!NOTE]
-O procedimento de instalação do SharePoint Server 2019 não difere do procedimento de instalação do SharePoint Server 2016 **, exceto** uma etapa extra que deve ser executada para desbloquear os arquivos ASHX usados pelo portal do mim.
+> O procedimento de instalação do SharePoint Server 2019 não difere do procedimento de instalação do SharePoint Server 2016 **, exceto** uma etapa extra que deve ser executada para desbloquear os arquivos ASHX usados pelo portal do mim.
 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
@@ -50,13 +50,13 @@ Siga estas etapas para instalar o SharePoint 2016. Depois de concluir a instala�
     -   Mude para o diretório onde o SharePoint foi descompactado.
 
     -   Escreva o seguinte comando.
-    ```CMD
+    ```
     .\prerequisiteinstaller.exe
     ```
 
 2.  Depois que os pré-requisitos **do SharePoint** forem instalados, instale o **SharePoint 2016** digitando o seguinte comando:
 
-    ```CMD
+    ```
     .\setup.exe
     ```
 
@@ -99,26 +99,26 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
     > Será apresentada uma mensagem de aviso a indicar que está a ser utilizado o método de autenticação Clássico do Windows e o comando final poderá demorar alguns minutos a responder. Quando concluir, a saída indicará o URL do novo portal. Mantenha a janela do **Shell de gerenciamento do SharePoint 2016** aberta para referência posterior.
 
 2. Inicie o Shell de gerenciamento do SharePoint 2016 e execute o seguinte script do PowerShell para criar um **conjunto de sites do SharePoint** associado a esse aplicativo Web.
-   ```PowerShell
+    ```PowerShell
     $t = Get-SPWebTemplate -compatibilityLevel 15 -Identity "STS#1"
     $w = Get-SPWebApplication http://mim.contoso.com/
     New-SPSite -Url $w.Url -Template $t -OwnerAlias contoso\miminstall -CompatibilityLevel 15 -Name "MIM Portal"
     $s = SpSite($w.Url)
     $s.CompatibilityLevel
-   ```
-   > [!NOTE]
-   > Verifique se o resultado da variável *CompatibilityLevel* é "15". Se o resultado for diferente de "15", o conjunto de sites não foi criado para a versão correta da experiência; Exclua o conjunto de sites e recrie-o.
+    ```
+    > [!NOTE]
+    > Verifique se o resultado da variável *CompatibilityLevel* é "15". Se o resultado for diferente de "15", o conjunto de sites não foi criado para a versão correta da experiência; Exclua o conjunto de sites e recrie-o.
 
     > [!IMPORTANT]
-O SharePoint Server 2019 usa uma propriedade de aplicativo Web diferente para manter uma lista de extensões de arquivo bloqueadas. Portanto, para desbloquear. Arquivos ASHX usados pelo portal do MIM três comandos extras devem ser executados manualmente no Shell de gerenciamento do SharePoint.
-<br/>
+    > O SharePoint Server 2019 usa uma propriedade de aplicativo Web diferente para manter uma lista de extensões de arquivo bloqueadas. Portanto, para desbloquear. Arquivos ASHX usados pelo portal do MIM três comandos extras devem ser executados manualmente no Shell de gerenciamento do SharePoint.
+    <br/>
     **Execute os próximos três comandos somente para o SharePoint 2019:**
 
-   ```PowerShell
+    ```PowerShell
     $w.BlockedASPNetExtensions.Remove("ashx")
     $w.Update()
     $w.BlockedASPNetExtensions
-   ```
+    ```
    > [!NOTE]
    > Verifique se a lista *BlockedASPNetExtensions* não contém mais a extensão ashx, caso contrário, várias páginas do portal do mim não serão renderizadas corretamente.
 

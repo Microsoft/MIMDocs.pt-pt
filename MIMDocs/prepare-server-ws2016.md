@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 51507d0a-2aeb-4cfd-a642-7c71e666d6cd
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 66011b135d575ce09d916be7c528accb230b343b
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.openlocfilehash: c6d5d5081f0e932b9c60d8f2025b54e47dc352d5
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73329427"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568041"
 ---
 # <a name="set-up-an-identity-management-server-windows-server-2016-or-2019"></a>Configurar um servidor de gerenciamento de identidade: Windows Server 2016 ou 2019
 
@@ -26,7 +26,7 @@ ms.locfileid: "73329427"
 > 
 
 > [!NOTE]
-O procedimento de instalação do Windows Server 2019 não difere do procedimento de instalação do Windows Server 2016.
+> O procedimento de instalação do Windows Server 2019 não difere do procedimento de instalação do Windows Server 2016.
 
 
 > [!NOTE]
@@ -89,8 +89,6 @@ Configure a política de segurança do servidor para permitir que as contas rece
 5. Clique em **OK** para fechar a janela de **Propriedades Iniciar sessão como um serviço**.
 
 6.  No painel de detalhes, clique com o botão direito do mouse em **negar acesso a este computador da rede**e selecione **Propriedades**. >
-
-[!NOTE] Separar os servidores de função interromperá algumas funcionalidades, como SSPR.
 
 7. Clique em **Adicionar Utilizador ou Grupo**, no tipo de caixa de texto, escreva `contoso\MIMSync; contoso\MIMService` e clique em **OK**.
 

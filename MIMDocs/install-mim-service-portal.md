@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: d579de0957efb6027f7061e67aa4d1f1ddff2395
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.openlocfilehash: 1f7aa8e257ef4fd1d97ee602a4e0f3f878d8c1b6
+ms.sourcegitcommit: 323c2748dcc6b6991b1421dd8e3721588247bc17
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73329366"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568077"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>Instalar o MIM 2016: Portal e Serviço MIM
 
@@ -58,8 +58,7 @@ Se não tiver configurado o pacote de instalação do MIM no último passo, retr
 
 9. Especifique o nome da Conta de Serviço a utilizar, por exemplo, *ServiçoMIM*, e a palavra-passe da Conta de Serviço, por exemplo, <em>Pass@word1</em>, o domínio da Conta de Serviço, por exemplo, *contoso*, e a Conta de E-mail do Serviço, por exemplo, *contoso*.
     >[!NOTE]
-MIM 2016 SP2 e posterior: se você estiver usando contas de serviço gerenciado de grupo, será necessário garantir que o caractere **$** esteja no final do nome da conta de serviço, por exemplo, MIMService $, e deixe o campo de senha da conta de serviço vazio.
-
+    >MIM 2016 SP2 e posterior: se você estiver usando contas de serviço gerenciado de grupo, será necessário garantir que o caractere **$** esteja no final do nome da conta de serviço, por exemplo, MIMService $, e deixe o campo de senha da conta de serviço vazio.
 
     ![Imagem da configuração da conta de serviço MIM](media/install-mim-service-portal/MIM_Install12.png)
 
@@ -67,7 +66,7 @@ MIM 2016 SP2 e posterior: se você estiver usando contas de serviço gerenciado 
 
 11. Aceite os padrões para o local do servidor de sincronização e especifique a conta do agente de gerenciamento do MIM como *contoso\MIMMA*.
     >[!NOTE]
-MIM 2016 SP2 e posterior: se você planeja usar a conta de serviço gerenciado do grupo de serviço de sincronização do MIM na sincronização do MIM e habilitar o recurso ' usar conta de sincronização do MIM ', insira o nome do serviço de sincronização do MIM gMSA como a conta do MIM MA, por exemplo, *contoso\MIMSync $* .
+    >MIM 2016 SP2 e posterior: se você planeja usar a conta de serviço gerenciado do grupo de serviço de sincronização do MIM na sincronização do MIM e habilitar o recurso ' usar conta de sincronização do MIM ', insira o nome do serviço de sincronização do MIM gMSA como a conta do MIM MA, por exemplo, *contoso\MIMSync $* .
 
     ![Imagem da configuração do Portal e do Serviço MIM](media/install-mim-service-portal/MIM_Install13.png)
 

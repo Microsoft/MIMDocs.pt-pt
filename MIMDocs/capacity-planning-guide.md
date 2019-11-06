@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 7df93a0a24aee886ec4d07ee2894d93a91606fa0
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.openlocfilehash: b14066543c036eb4ec8a350843743b87902a13a1
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358393"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636971"
 ---
 # <a name="capacity-planning-guide"></a>Guia de planeamento de capacidade
 
@@ -26,24 +26,24 @@ Antes de iniciar o MIM, utilize este guia, juntamente com ambientes de teste, pa
 
 Se ainda não estiver familiarizado com o MIM 2016 e os respetivos componentes, obtenha mais detalhes acerca do [Microsoft Identity Manager 2016](microsoft-identity-manager-2016.md) antes de continuar.
 
-## <a name="overview"></a>Descrição geral
+## <a name="overview"></a>Overview
 
-Existem vários fatores que podem afetar a capacidade geral e o desempenho da sua implementação do Microsoft Identity Manager:
+Há vários fatores que podem afetar a capacidade e o desempenho geral de sua implantação de Microsoft Identity Manager:
 
-- As formas nas quais implementa fisicamente os componentes de MIM (topologia).
+- As maneiras pelas quais você implanta fisicamente os componentes do MIM (Topologia).
 - O hardware no qual esses componentes são executados.
-- O número e a complexidade dos objetos de configuração de políticas de MIM são fatores significativos a considerar quando planear a capacidade.
-- A escala esperada da implantação e a carga esperada são normalmente mais óbvios fatores que afetam o desempenho e a capacidade.
+- O número e a complexidade dos objetos de configuração de política do MIM são fatores significativos a serem considerados ao planejar a capacidade.
+- A escala esperada da implantação e a carga esperada são geralmente fatores mais óbvios que afetam o desempenho e a capacidade.
 
-Os principais fatores que afetam a capacidade e desempenho de uma implementação de MIM 2016 são abordados na tabela a seguir:
+Os principais fatores que afetam a capacidade e o desempenho de uma implantação do MIM 2016 são abordados na tabela a seguir:
 
 | Fator da Estrutura | Considerações |
 | ------------- | -------------- |
 | Topologia | A distribuição dos serviços MIM entre os computadores na rede. |
-| Hardware | O hardware físico (físico ou virtual) para cada componente de MIM incluindo da CPU, memória, adaptador de rede e configuração de disco rígido. |
+| Hardware | O hardware físico (físico ou virtual) para cada componente do MIM, incluindo CPU, memória, adaptador de rede e configuração de disco rígido. |
 | Objetos de configuração de políticas do MIM | O número e o tipo dos objetos de configuração de políticas do MIM, incluindo conjuntos, Regras de Política de Gestão (MPRs) e fluxos de trabalho. |
-| Escala | Os utilizadores, grupos, grupos calculados e tipos de objeto personalizado para serem geridos por MIM 2016. Além disso, considere a complexidade dos grupos dinâmicos e não se esqueça de ter em consideração o aninhamento de grupos. |
-| Carga | Frequência de utilização. Reposições de palavra-passe de operações, como o novo grupo ou a criação do utilizador, ou portal visitas por minuto ou hora. Tenha em atenção que a carga pode variar no decorrer de uma hora, um dia, uma semana ou um ano. Consoante o componente, pode optar por conceber para o pico de carga ou a carga média. |
+| Escala | Os usuários, grupos, grupos calculados e tipos de objetos personalizados a serem gerenciados pelo MIM 2016. Além disso, considere a complexidade dos grupos dinâmicos e não se esqueça de ter em consideração o aninhamento de grupos. |
+| Carga | Frequência de utilização. Operações como novo grupo ou criação de usuário, redefinições de senha ou visitas ao portal por minuto ou hora. Tenha em atenção que a carga pode variar no decorrer de uma hora, um dia, uma semana ou um ano. Consoante o componente, pode optar por conceber para o pico de carga ou a carga média. |
 
 ## <a name="hosting-microsoft-identity-manager-components"></a>Alojamento de componentes do Microsoft Identity Manager
 
@@ -67,7 +67,7 @@ O número de utilizadores e grupos no seu ambiente é uma consideração típica
 
 ## <a name="expected-load-levels"></a>Níveis de carga esperados
 
-De igual modo, deve considerar o tipo de carga a colocar nos componentes do MIM. Terá de calcular a carga observando as aplicações atuais no seu ambiente. Veja a seguir algumas questões relevantes a ter em consideração:
+De igual modo, deve considerar o tipo de carga a colocar nos componentes do MIM. Você precisará estimar a carga examinando os aplicativos atuais em seu ambiente. Veja a seguir algumas questões relevantes a ter em consideração:
 
 - Com que frequência espera receber pedidos para aderir ou sair de um grupo?
 
@@ -75,17 +75,17 @@ De igual modo, deve considerar o tipo de carga a colocar nos componentes do MIM.
 
 - Quantas operações não controladas pelo utilizador espera que ocorram, tais como a sincronização das alterações de sistemas externos? Certifique-se de que tem em conta a carga gerada pela sincronização das informações de identidade com os sistemas externos.
 
-- Que tipo de cenários planeia implementar? Cenários diferentes contribuem para padrões diferentes de carga. Por exemplo, os computadores cliente que tenham o cliente de MIM 2016 instalado periodicamente validar se o registo é necessário no início de sessão.
+- Que tipo de cenários planeia implementar? Diferentes cenários contribuem para diferentes padrões de carga. Por exemplo, os computadores cliente que têm o cliente MIM 2016 instalado periodicamente validam se o registro é necessário na entrada.
 
-- Espera grandes variações nos níveis de carga, desde a carga normal ao pico de carga? Por exemplo, tende existir muitos reposições de palavra-passe depois de períodos de férias. Certifique-se de que os horários de sincronização e de manutenção do sistema são fora dos picos de utilização previsíveis. Quando pensar no planeamento da capacidade, certifique-se de que tem em conta os períodos de pico de carga.
+- Espera grandes variações nos níveis de carga, desde a carga normal ao pico de carga? Por exemplo, tendem a ser muitas redefinições de senha após os períodos de feriado. Certifique-se de que os horários de sincronização e de manutenção do sistema são fora dos picos de utilização previsíveis. Quando pensar no planeamento da capacidade, certifique-se de que tem em conta os períodos de pico de carga.
 
 ## <a name="policy-configuration-objects"></a>Objetos de configuração de políticas
 
-Objetos de configuração de políticas de MIM incluem as MPRs, conjuntos, fluxos de trabalho e regras de sincronização para uma implementação. As implementações do MIM são exclusivas para cada cliente, porque a configuração de políticas é alterada para se ajustar às necessidades de cada implementação. Considerações sobre a chave de desempenho incluem os seguintes objetos de configuração de políticas de MIM:
+Os objetos de configuração de política do MIM incluem MPRs, conjuntos, fluxos de trabalho e regras de sincronização para uma implantação. As implementações do MIM são exclusivas para cada cliente, porque a configuração de políticas é alterada para se ajustar às necessidades de cada implementação. As principais considerações de desempenho incluem os seguintes objetos de configuração de política do MIM:
 
-- **Conjuntos** – Todas as operações no sistema têm de ser avaliadas tendo em conta as atualizações e as associações ao conjunto existentes que causam alterações na associação ao conjunto. Por exemplo, uma alteração para o número do edifício do escritório de uma pessoa, não pode ter um impacto enorme. No entanto, existem outras alterações que podem ter um impacto em cascata, tais como a alteração de um gestor, que pode afetar vários objetos em vários níveis.
+- **Conjuntos** – Todas as operações no sistema têm de ser avaliadas tendo em conta as atualizações e as associações ao conjunto existentes que causam alterações na associação ao conjunto. Por exemplo, uma alteração no número de edifício do escritório de um indivíduo pode não ter um grande impacto. No entanto, existem outras alterações que podem ter um impacto em cascata, tais como a alteração de um gestor, que pode afetar vários objetos em vários níveis.
 
-- **Regras de Política de Gestão** – As MPRs gerem as regras de controlo de acesso e acionam os fluxos de trabalho. Criação de MPRs, pode criar a necessidade de aumentar o número de conjuntos, de modo que pode capturar vários Estados de transição de objeto. Estes conjuntos adicionais podem acionar fluxos de trabalho adicionais, com cada fluxo de trabalho a ser mapeado para pedidos exclusivos no sistema. Deste modo, isto torna-se outro item a incluir quando planear a capacidade.
+- **Regras de Política de Gestão** – As MPRs gerem as regras de controlo de acesso e acionam os fluxos de trabalho. A criação de MPRs pode criar a necessidade de aumentar o número de conjuntos para que você possa capturar vários Estados de transição de objetos. Estes conjuntos adicionais podem acionar fluxos de trabalho adicionais, com cada fluxo de trabalho a ser mapeado para pedidos exclusivos no sistema. Deste modo, isto torna-se outro item a incluir quando planear a capacidade.
 
 A configuração de políticas do MIM também inclui as decisões sobre o aprovisionamento no seu ambiente. Certifique-se de que tem em consideração o seguinte:
 
@@ -93,7 +93,7 @@ A configuração de políticas do MIM também inclui as decisões sobre o aprovi
 
 - Pensa utilizar o aprovisionamento sem código? Se o fizer, isso afetará o número de entradas de regras esperadas, bem como os fluxos de trabalho e os pedidos associados no sistema.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Considerações sobre a topologia da implementação do MIM](topology-considerations.md)
-- O que pode ser baixado [guia de planejamento de capacidade do Forefront Identity Manager (FIM) 2010](http://go.microsoft.com/fwlink/?LinkId=200180) apresenta mais detalhes sobre uma compilação de teste e resultados de teste de desempenho.
+- O guia de [planejamento de capacidade do fim (Forefront Identity Manager) 2010](https://www.microsoft.com/en-us/download/details.aspx?id=7437) que pode ser baixado apresenta mais detalhes sobre uma compilação de teste e resultados de testes de desempenho.

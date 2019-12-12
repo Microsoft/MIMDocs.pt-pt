@@ -12,10 +12,10 @@ ms.assetid: fa0af422-b5e9-4599-9d9b-cb6c18ea07f9
 ms.reviewer: markwahl-msft
 ms.suite: ems
 ms.openlocfilehash: 8216dc144dd7cee2ccb30d89198f6d2bb3a726c1
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73329448"
 ---
 # <a name="deploy-microsoft-identity-manager-2016-sp2"></a>Implantar o Microsoft Identity Manager 2016 SP2
@@ -41,7 +41,7 @@ Para obter mais informações sobre plataformas com suporte, consulte [plataform
  Isto inclui configurar:
 - [Windows Server](prepare-server-ws2016.md)
 - [SQL Server](prepare-server-sql2016.md)
-- [Servidor do SharePoint](prepare-server-sharepoint.md)
+- [SharePoint Server](prepare-server-sharepoint.md)
 - [Exchange Server](prepare-server-exchange.md) (opcional)
 
 ## <a name="finally-install-microsoft-identity-manager-2016-sp2-components"></a>Por fim: instalar Microsoft Identity Manager componentes do 2016 SP2

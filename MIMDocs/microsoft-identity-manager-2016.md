@@ -9,10 +9,10 @@ ms.date: 10/18/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: 1af53aee05d10fa7c7f77cef3c6dba1051be24b1
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73329391"
 ---
 # <a name="microsoft-identity-manager-2016-news-and-updates"></a>Notícias e atualizações do Microsoft Identity Manager 2016

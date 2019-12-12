@@ -13,10 +13,10 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: mim
 ms.openlocfilehash: f69566c9d6abc6b7c54cc875a958b66a112c3111
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73329357"
 ---
 # <a name="supported-platforms-for-mim-2016"></a>Plataformas suportadas para o MIM 2016

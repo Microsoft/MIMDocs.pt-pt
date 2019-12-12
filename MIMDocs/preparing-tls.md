@@ -12,10 +12,10 @@ ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: b574a9c8536a460cdddf57131a821775672c082a
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73383955"
 ---
 # <a name="planning-mim-2016-sp2-in-tls-12-or-fips-mode-environments"></a>Planejando o MIM 2016 SP2 em ambientes de modo TLS 1,2 ou FIPS

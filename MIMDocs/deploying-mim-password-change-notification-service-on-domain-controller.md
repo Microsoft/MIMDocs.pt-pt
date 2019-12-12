@@ -12,11 +12,11 @@ ms.assetid: 97edae12-6f86-4f9f-8620-a95a096e482a
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 4acc2f5cf9ec9c5f752d7d794570e7bc24cd36e8
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357886"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516604"
 ---
 # <a name="deploy-the-mim-password-change-notification-service-on-a-domain-controller"></a>Implementar o Serviço de Notificação de Alteração de Palavra-passe do MIM num controlador de domínio
 

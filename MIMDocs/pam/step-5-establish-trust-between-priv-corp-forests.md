@@ -12,17 +12,17 @@ ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 04195febdb721291e9dcf72f5bbda04923075596
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379772"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518268"
 ---
 # <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>Passo 5 - Estabelecer confiança entre florestas PRIV e CORP
 
 > [!div class="step-by-step"]
-> [« Passo 4](step-4-install-mim-components-on-pam-server.md)
-> [Passo 6 »](step-6-transition-group-to-pam.md)
+> [«Passo 4](step-4-install-mim-components-on-pam-server.md)
+> [Passo 6»](step-6-transition-group-to-pam.md)
 
 Para cada domínio CORP, como contoso.local, os controladores de domínio PRIV e CONTOSO têm de estar vinculados por uma confiança. Isto permite aos utilizadores no domínio PRIV aceder aos recursos no domínio CORP.
 
@@ -72,10 +72,10 @@ Para cada floresta existente, ative o acesso de leitura para o AD pelos administ
 
 1. Inicie sessão no controlador de domínio da floresta CORP existente, (CORPDC), como um administrador de domínio para o domínio de nível superior dessa floresta (Contoso\Administrator).  
 2. Inicie **Utilizadores e Computadores do Active Directory**.  
-3. Clique com o botão direito do rato no domínio **contoso.local** e selecione **Delegar Controlo**.  
+3. Clique com o botão direito do rato no domínio **contoso.local** e selecione **Delegar controlo**.  
 4. No separador Utilizadores e Grupos Selecionados, clique em **Adicionar**.  
-5. Na janela Selecionar Utilizadores, Computadores ou Grupos, clique em **Localizações** e altere a localização para *priv.contoso.local*.  No nome do objeto, escreva *Admins do Domínio* e clique em **Verificar Nomes**. Quando aparecer um pop-up, introduza o nome de utilizador *priv\administrator* e a respetiva palavra-passe.  
-6. A seguir a Admins do Domínio, adicione "*; MIMMonitor*". Depois de os nomes de **Admins do Domínio** e **MIMMonitor** estarem sublinhados, clique em **OK** e, em seguida, clique em **Seguinte**.  
+5. Na janela Selecionar Utilizadores, Computadores ou Grupos, clique em **Localizações** e altere a localização para *priv.contoso.local*.  No nome do objeto, escreva *Admins do domínio* e clique em **Verificar nomes**. Quando aparecer um pop-up, introduza o nome de utilizador *priv\administrator* e a respetiva palavra-passe.  
+6. A seguir a Admins do Domínio, adicione " *; MIMMonitor*". Depois de os nomes de **Admins do Domínio** e **MIMMonitor** estarem sublinhados, clique em **OK** e, em seguida, clique em **Seguinte**.  
 7. Na lista de tarefas comuns, selecione **Ler todas as informações do utilizador** e, em seguida, clique em **Seguinte** e em **Concluir**.  
 8. Feche Computadores e Utilizadores do Active Directory.
 
@@ -105,5 +105,5 @@ Para cada floresta existente, ative o acesso de leitura para o AD pelos administ
 No próximo passo, irá mover um grupo para o PAM.
 
 > [!div class="step-by-step"]
-> [« Passo 4](step-4-install-mim-components-on-pam-server.md)
-> [Passo 6 »](step-6-transition-group-to-pam.md)
+> [«Passo 4](step-4-install-mim-components-on-pam-server.md)
+> [Passo 6»](step-6-transition-group-to-pam.md)

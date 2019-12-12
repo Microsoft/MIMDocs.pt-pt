@@ -12,11 +12,11 @@ ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: b0a101a06acfdd5b95deb576a7fddfda124a3853
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379701"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518333"
 ---
 # <a name="understand-the-components-of-pam"></a>Compreender os componentes de PAM
 

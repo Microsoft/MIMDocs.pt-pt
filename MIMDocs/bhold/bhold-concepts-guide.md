@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.assetid: ''
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: 3749b74fd867601ee05f8e45d273ad2de9144b5b
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68701428"
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Guia de conceitos do Microsoft BHOLD Suite
@@ -48,7 +48,7 @@ Um benefício adicional do RBAC é a capacidade de definir e impor a separação
 Com o BHOLD Suite, você pode especificar e organizar funções em sua organização, mapear usuários para funções e mapear as permissões apropriadas para funções. Essa estrutura é chamada de modelo de função e contém e conecta cinco tipos de objetos: 
 
 - Unidades organizacionais
-- Utilizadores
+- Users
 - Funções
 - Permissões
 - Aplicações
@@ -74,7 +74,7 @@ Neste exemplo, cada associado de vendas pertenceria a duas unidades organizacion
 
 OrgUnits pode ser criado no BHOLD Suite usando o portal da Web do BHOLD core ou usando o gerador de modelos BHOLD.
 
-#### <a name="users"></a>Utilizadores
+#### <a name="users"></a>Users
 
 Conforme observado acima, cada usuário deve pertencer a pelo menos uma OrgUnit (unidade organizacional). Como as unidades organizacionais são o mecanismo principal para associar um usuário a funções, na maioria das organizações, um determinado usuário pertence a vários OrgUnits para facilitar a associação de funções a esse usuário. Em alguns casos, no entanto, pode ser necessário associar uma função a um usuário além de qualquer OrgUnits à qual o usuário pertença. Consequentemente, um usuário pode ser atribuído diretamente a uma função, bem como obter funções do OrgUnits ao qual o usuário pertence.
 
@@ -138,7 +138,7 @@ Depois que o gerador de modelo cria essas funções no modelo de função, você
 As seções anteriores descreveram os recursos básicos do RBAC (controle de acesso baseado em função) no BHOLD. Esta seção descreve os recursos adicionais no BHOLD que podem fornecer segurança e flexibilidade aprimoradas para a implementação de RBAC da sua organização. Esta seção fornece visões gerais dos seguintes recursos do BHOLD:
 
 - Cardinalidade
-- Separação de tarefas
+- Separação de deveres
 - Permissões adaptáveis de contexto
 - Autorização baseada em atributo
 - Tipos de atributo flexíveis
@@ -164,7 +164,7 @@ Você pode configurar um usuário para limitar o seguinte:
 - O número máximo de funções que podem ser vinculadas ao usuário
 - O número máximo de permissões que podem ser atribuídas ao usuário por meio de atribuições de função
 
-#### <a name="separation-of-duties"></a>Separação de tarefas
+#### <a name="separation-of-duties"></a>Separação de deveres
 
 A separação de tarefas (SoD) é um princípio de negócios que busca impedir que indivíduos obtenham a capacidade de executar ações que não devem estar disponíveis para uma única pessoa. Por exemplo, um funcionário não pode solicitar um pagamento e autorizar o pagamento. O princípio do SoD permite que as organizações implementem um sistema de verificações e saldos para minimizar sua exposição ao risco de erros ou condutas de funcionários.
 
@@ -214,7 +214,7 @@ O portal do BHOLD Analytics oferece a capacidade de construir conjuntos de regra
 
 Uma regra pode testar qualquer um dos seguintes conjuntos de elementos:
 
-- Utilizadores
+- Users
 - Unidades organizacionais
 - Funções
 - Permissões
@@ -225,7 +225,7 @@ O diagrama a seguir ilustra uma regra simples que consiste em duas regras de sub
 
 ![](media/bhold-concepts-guide/rules.png)
 
-Observe a diferença no efeito de falha de um filtro de subconjunto e de um filtro de regra falhar: A falha de um filtro de subconjunto remove um objeto de elemento do teste pelos filtros subsequentes, enquanto a falha de um filtro de regra faz com que o objeto seja relatado como não compatível. Somente os objetos que passam todos os filtros de subconjunto e todos os filtros de regra são relatados como em conformidade.
+Observe a diferença no efeito de falha de um filtro de subconjunto e de falha em um filtro de regra: a falha de um filtro de subconjunto remove um objeto do elemento do teste pelos filtros subsequentes, enquanto a falha de um filtro de regra faz com que o objeto seja relatado como não compatível. Somente os objetos que passam todos os filtros de subconjunto e todos os filtros de regra são relatados como em conformidade.
 
 Cada filtro consiste em um tipo, um operador (que é dependente de tipo), uma chave (um dos elementos) e um valor em relação ao qual a chave é testada pelo operador. Por exemplo, o seguinte filtro testaria se o número de usuários em um subconjunto de elementos excede 10:
 
@@ -233,7 +233,7 @@ Cada filtro consiste em um tipo, um operador (que é dependente de tipo), uma ch
 |   |   |   |   |   |
 |---|---|---|---|---|
 |**Tipo:**   | Número de   |
-| **Chaves**  | Utilizadores  |
+| **Chaves**  | Users  |
 | **Operador**  | >  |
 | **Valor:** | 10 |
 
@@ -242,7 +242,7 @@ Os filtros de regras podem ser de três tipos e usam operadores específicos par
 - Atributo
   - < e >
   - = e! =
-  - **Terá**
+  - **Contém**
   - **Não contém**
 - Número de
   - < e >
@@ -261,7 +261,7 @@ Por exemplo, se você quisesse testar a implementação de uma política de SoD 
 |   |  |
 |---|--|
 |Nome:| Teste de SoD de pagamento|
-|Elementos| Utilizadores|
+|Elementos| Users|
 |Filtro de subconjunto:| Tendo um pagamento de solicitação de permissão|
 |Filtro de regra: | Não é possível ter nenhuma permissão para aprovar o pagamento|
 
@@ -277,7 +277,7 @@ Por exemplo, se sua política de negócios exigir que os gerentes tenham a permi
 |  |  |
 |--|--|
 |Nome: | Modificar teste de SoD de pagamento|
-|Elementos | Utilizadores |
+|Elementos | Users |
 |Filtro de subconjunto: | Tendo qualquer Gerenciador de função|
 | Filtros de regra: |Deve ter qualquer permissão Modificar pagamento </br> Deve ter qualquer permissão aprovar pagamento|
 
@@ -288,7 +288,7 @@ Ao contrário de outros operadores, o **exclusivo tem any** e, **exclusivamente,
 |  |  |
 |--|--|
 |Nome: | Examinar teste de aprovação|
-|Elementos | Utilizadores|
+|Elementos | Users|
 | Filtro de subconjunto: | Tendo qualquer Gerenciador de função
 |Filtro de regra: | Ter exclusivamente qualquer permissão para aprovar revisões|
 
@@ -312,9 +312,9 @@ As categorias cobertas pelos relatórios internos incluem o seguinte:
 - Controlos
 - Controle de acesso interno
 - Registo
-- Modelo
-- Estatística
-- Fluxo de trabalho
+- Model
+- Estatísticas
+- Fluxo de Trabalho
 
 Você pode criar relatórios e adicioná-los a essas categorias, ou pode definir suas próprias categorias nas quais você pode inserir relatórios internos e personalizados.
 
@@ -341,7 +341,7 @@ Um recurso importante e poderoso do Forefront Identity Manager 2010 e do Forefro
 
 É importante observar que as extensões BHOLD para o portal do MIM dão suporte a funções de autoatendimento e gerenciamento de fluxo de trabalho e relatórios. Outras funções de administração do BHOLD, bem como atestado, são fornecidas pelos portais da Web dos módulos do BHOLD, que são hospedados separadamente do portal do MIM.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)

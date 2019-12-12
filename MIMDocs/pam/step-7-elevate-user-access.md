@@ -9,11 +9,11 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.openlocfilehash: d00eaa284f1d54a1cbe2e0f8b936bbc41c19caea
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379624"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64517861"
 ---
 # <a name="step-7--elevate-a-users-access"></a>Passo 7 – Elevar o acesso de um utilizador
 
@@ -36,10 +36,10 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 ## <a name="request-privileged-access-from-mim"></a>Pedir acesso privilegiado do MIM.
 
 > [!NOTE]
-> Recomenda-se que a estação de trabalho seja um workstation(PAW) com privilégios.  Para obter mais informações, consulte [PAW](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations).
+> É recomendável que a estação de trabalho seja uma estação de trabalho privilegiada (PAW).  Para obter mais informações, consulte [Paw](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations).
 
-1. No PRIVWKSTN, início de sessão como PRIV\priv.jen.
-2. Clique em **começar**, **execute**e introduza **PowerShell.exe**.
+1. No PRIVWKSTN, faça logon como PRIV\priv.jen.
+2. Clique em **Iniciar**, **executar**e insira **PowerShell. exe**.
 3. Escreva o seguinte comando.
 
     ```cmd
@@ -90,7 +90,7 @@ Ative pedindo acesso privilegiado através do portal de amostra de PAM.
     ```
 
 3. Quando lhe for pedido, escreva a palavra-passe para a conta PRIV.Jen. Será apresentada uma nova janela de browser.
-4. Navegue para http://pamsrv.priv.contoso.local:8090 e certifique-se de que uma página da web do portal de amostra está visível.
+4. Navegue até http://pamsrv.priv.contoso.local:8090 e verifique se uma página da Web do portal de exemplo está visível.
 5. No Internet Explorer, selecione **Ferramentas** > **Opções da Internet** e clique no separador **Segurança**.
 6. Clique em **Zona de intranet local** > **Sites** > **Avançadas** e, em seguida, adicione o site à zona.
 7. Feche a caixa de diálogo **Opções da Internet**.

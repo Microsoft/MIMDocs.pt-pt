@@ -11,12 +11,14 @@ ms.prod: microsoft-identity-manager
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
+experimental: true
+experiment_id: kgremban_images
 ms.openlocfilehash: 3855842f0339e2611c75761484de9c059eec6fa0
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380039"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518796"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Privileged Access Management para Serviços de Domínio do Active Directory
 
@@ -32,23 +34,23 @@ O Privileged Access Management concretiza dois objetivos:
 
 ## <a name="what-problems-does-pam-help-solve"></a>Que problemas o PAM ajuda a resolver?
 
-Uma preocupação real para as empresas da atualidade é o acesso a recursos num ambiente do Active Directory. Particularmente inquietantes são:
+Uma preocupação real para as empresas da atualidade é o acesso a recursos num ambiente do Active Directory. Particularmente preocupantes são:
 
 - Vulnerabilidades.
-- Escalonamento de privilégios não autorizados.
+- Escalas de privilégio não autorizadas.
 - [Pass-the-hash](https://technet.microsoft.com/dn785092.aspx).
-- Pass-the-ticket.
+- Passagem de tíquete.
 - spear phishing.
-- Comprometimentos de Kerberos.
+- Comprometeções Kerberos.
 - Outros ataques.
 
 Hoje em dia, é demasiado fácil para os atacantes obterem credenciais de contas de Administradores de domínio e demasiado difícil descobrir estes ataques depois de ocorrerem. O objetivo do PAM é reduzir as oportunidades de utilizadores mal intencionados obterem acesso, aumentando simultaneamente o seu controlo e o conhecimento do ambiente.
 
-O PAM dificulta a capacidade dos atacantes de penetrarem numa rede e obterem acesso a contas com privilégios. O PAM adiciona proteção aos grupos com privilégios que controlam o acesso numa série de computadores associados a um domínio e de aplicações nesses computadores. Ele também adiciona mais monitorização, mais visibilidade e mais controlos detalhados. Isso permite que as organizações para ver quem são seus administradores com privilégios e o que eles estão fazendo. O PAM dá às organizações uma visão mais ampla de como as contas administrativas são utilizadas no ambiente.
+O PAM dificulta a capacidade dos atacantes de penetrarem numa rede e obterem acesso a contas com privilégios. O PAM adiciona proteção aos grupos com privilégios que controlam o acesso numa série de computadores associados a um domínio e de aplicações nesses computadores. Ele também adiciona mais monitoramento, mais visibilidade e controles mais refinados. Isso permite que as organizações vejam quem são seus administradores privilegiados e o que eles estão fazendo. O PAM dá às organizações uma visão mais ampla de como as contas administrativas são utilizadas no ambiente.
 
-## <a name="setting-up-pam"></a>Configuração de PAM
+## <a name="setting-up-pam"></a>Configurando o PAM
 
-O PAM baseia-se no princípio de administração just-in-time, que está relacionada com a [administração just enough (JEA)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362). O JEA é um Kit de ferramentas do Windows PowerShell que define um conjunto de comandos para realizar atividades com privilégios. É um ponto final onde os administradores podem obter autorização para executar comandos. No JEA, um administrador decide que os utilizadores com um determinado privilégio podem executar uma determinada tarefa. Sempre que um utilizador elegível precisar de realizar essa tarefa, o administrador ativa essa permissão. As permissões expiram após um período de tempo especificado, para que um utilizador mal intencionado não possa roubar o acesso.
+O PAM baseia-se no princípio de administração just-in-time, que está relacionada com a [administração just enough (JEA)](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/DCIM-B362). JEA é um kit de ferramentas do Windows PowerShell que define um conjunto de comandos para executar atividades privilegiadas. É um ponto de extremidade em que os administradores podem obter autorização para executar comandos. No JEA, um administrador decide que os utilizadores com um determinado privilégio podem executar uma determinada tarefa. Sempre que um utilizador elegível precisar de realizar essa tarefa, o administrador ativa essa permissão. As permissões expiram após um período de tempo especificado, para que um utilizador mal intencionado não possa roubar o acesso.
 
 A configuração e a operação do PAM tem quatro passos.
 
@@ -106,7 +108,7 @@ Partindo do princípio de que o pedido é aprovado, o fluxo de trabalho da açã
 
 Este fluxo de trabalho destina-se especificamente a estas contas administrativas. Os administradores (ou até mesmo os scripts) que precisem apenas de acesso ocasional a grupos com privilégios, podem pedir precisamente esse acesso. O MIM regista o pedido e as alterações no Active Directory, e pode visualizá-los no Visualizador de Eventos ou enviar os dados para soluções de monitorização empresariais, como o System Center 2012 - Serviços de Recolha de Auditorias (ACS) do Operations Manager, ou outras ferramentas de terceiros.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
-- [Mitigar ataques Pass-the-Hash (PtH) e outros roubos de credenciais, versão 1 e 2](https://www.microsoft.com/download/details.aspx?id=36036)
-- [Cmdlets de gestão de acesso privilegiado](https://docs.microsoft.com/powershell/identitymanager/mimpam/vlatest/mimpam)
+- [Mitigar ataques de Pass-the-hash (PtH) e outros roubos de credenciais, versão 1 e 2](https://www.microsoft.com/download/details.aspx?id=36036)
+- [Privileged Access Management cmdlets](https://docs.microsoft.com/powershell/identitymanager/mimpam/vlatest/mimpam)

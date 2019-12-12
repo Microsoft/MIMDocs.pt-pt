@@ -12,11 +12,11 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 69f86c5366f7b662f3a11fa4ac8d44159421f909
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379402"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518156"
 ---
 # <a name="step-3-configuring-sql"></a>Passo 3: Configurar o SQL
 

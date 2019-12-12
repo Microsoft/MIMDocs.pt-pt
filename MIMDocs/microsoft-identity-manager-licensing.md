@@ -12,10 +12,10 @@ ms.assetid: ''
 ms.reviewer: billmath
 ms.suite: ems
 ms.openlocfilehash: e0bfd868345b8e7dcc6a02e745d3ccbf632a6c58
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73329292"
 ---
 # <a name="microsoft-identity-manager-2016-licensing-and-downloads"></a>Licenciamento e downloads do Microsoft Identity Manager 2016
@@ -24,13 +24,13 @@ Este artigo descreve as abordagens de licenciamento de Microsoft Identity Manage
 
 ## <a name="licensing-mim-for-your-organization"></a>Licenciamento do MIM para sua organização
 
-O Microsoft Identity Manager 2016 é licenciado por usuário.  Os detalhes sobre o licenciamento estão incluídos nos termos do produto e documentos relacionados, que podem ser baixados na página [termos de licenciamento](https://www.microsoft.com/licensing/product-licensing/products.aspx) .
+O Microsoft Identity Manager 2016 é licenciado numa base por utilizador.  Os detalhes sobre o licenciamento estão incluídos nos termos do produto e documentos relacionados, que podem ser baixados na página [termos de licenciamento](https://www.microsoft.com/licensing/product-licensing/products.aspx) .
 
 ### <a name="licensing-for-azure-ad-premium-customers"></a>Licenciamento para clientes Azure AD Premium
 
 Microsoft Identity Manager 2016 está incluído com Azure Active Directory Premium (P1 e P2), que faz parte do Enterprise Mobility + Security.
 
-O Azure AD Premium está disponível por meio de um [Microsoft Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx), o [programa Open Volume License](https://www.microsoft.com/licensing/licensing-programs/open-license.aspx)e o programa [provedores de soluções na nuvem](https://go.microsoft.com/fwlink/?LinkId=614968&clcid=0x409) . Os assinantes do Azure e do Office 365 também podem comprar Azure Active Directory Premium P1 e P2 online.  Leia mais em [preços de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+O Azure AD Premium está disponível por meio de um [Microsoft Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx), o [programa Open Volume License](https://www.microsoft.com/licensing/licensing-programs/open-license.aspx)e o programa [provedores de soluções na nuvem](https://go.microsoft.com/fwlink/?LinkId=614968&clcid=0x409) . Os subscritores do Azure e do Office 365 também podem comprar o Azure Active Directory Premium P1 e P2 online.  Leia mais em [preços de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ### <a name="mim-cals"></a>CALs do MIM
 
@@ -57,7 +57,7 @@ Se você estiver iniciando uma instalação nova, será necessário baixar os ar
 | Self-service | Suplementos e extensões | Não | `Add-ins and extensions` | Para ser instalado em computadores de usuários finais |
 | Self-service | Relatórios do SCSM | Não | `Data Warehouse Support Scripts` | |
 | Self-service | Agente de relatório híbrido | Não | N/A | Distribuído por meio do centro de download |
-| Self-service | Pacotes de idiomas | Não | `LANGUAGE Packs` | |
+| Self-service | Language packs | Não | `LANGUAGE Packs` | |
 | Gestão de Certificados | CM | Sim | `Certificate Management` | |
 | Gestão de Certificados | Cliente em massa CM | Não | `CM Bulk Client` | |
 | Gestão de Certificados | CM Client | Não | `CM Client`  | |
@@ -84,10 +84,10 @@ Para determinar quais arquivos de atualização são necessários, esta tabela l
 
 | Cenário | Componente | Nome da pasta ISO do DVD | Nome do arquivo do patch de atualização correspondente |
 |----------|-----------|-   |-------------------|----------|--------------|
-|Sincronização| Serviço de sincronização | `Synchronization Service` | `MIMSyncService_x64*.msp` |
+|Sincronização| Serviços de Sincronização | `Synchronization Service` | `MIMSyncService_x64*.msp` |
 | Self-service | Serviço do MIM, portal do MIM | `Service and Portal` | `MIMService_x64*msp` |
 | Self-service | Suplementos e extensões | `Add-ins and extensions` | `MIMAddinsExtensions*msp` |
-| Self-service | Pacotes de idiomas | `LANGUAGE Packs` | `LANGUAGE Packs.zip` |
+| Self-service | Language packs | `LANGUAGE Packs` | `LANGUAGE Packs.zip` |
 | Gerenciamento de acesso (BHOLD) | BHOLD | `BHOLD` | `AccessManagementConnector.msi`, `BHOLD*.msi` |
 | Gestão de Certificados | CM |  `Certificate Management` | `MIMCM*.msp` |
 | Gestão de Certificados | Cliente em massa CM |  `CM Bulk Client` |`MIMCMBulkClient*msp` |

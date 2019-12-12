@@ -12,11 +12,11 @@ ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 0d0d55d4007ab88df4c2f3b5a30ca0fdedea9fe2
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379978"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518673"
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>Considerações para elevada disponibilidade e recuperação após desastre do ambiente bastion
 
@@ -36,12 +36,12 @@ O âmbito destas considerações provoca um impacto sobre o custo total da imple
 
 | **Função de floresta bastion** | **Prioridade relativa durante a recuperação** | **Mitigação se a função estiver indisponível** |
 | --------------------------- | --------------------- | -------------- |
-| Estabelecimento de confiança         | Baixa | Aguarde até que o ambiente bastion seja restaurado |
-| Mitigação de utilizadores e de grupos   | Baixa | Aguarde até que o ambiente bastion seja restaurado |
-| Administração do MIM          | Baixa | Aguarde até que o ambiente bastion seja restaurado |
+| Estabelecimento de confiança         | Baixo | Aguarde até que o ambiente bastion seja restaurado |
+| Mitigação de utilizadores e de grupos   | Baixo | Aguarde até que o ambiente bastion seja restaurado |
+| Administração do MIM          | Baixo | Aguarde até que o ambiente bastion seja restaurado |
 | Ativação de função com privilégios  | Média | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
 | Gestão de recursos         | Alto | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
-| Monitorização dos utilizadores e grupos na floresta existente | Baixa | Aguarde até que o ambiente bastion seja restaurado |
+| Monitorização dos utilizadores e grupos na floresta existente | Baixo | Aguarde até que o ambiente bastion seja restaurado |
 
 Agora vamos ver cada uma destas funções de floresta bastion por sua vez.
 

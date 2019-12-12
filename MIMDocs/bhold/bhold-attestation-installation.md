@@ -1,6 +1,6 @@
 ---
-title: Instalação do BHOLD attestation | Documentos da Microsoft
-description: Módulo do BHOLD attestation permite-lhe designar os revisores e executam revisões
+title: Instalação do atestado do BHOLD | Microsoft Docs
+description: O módulo de atestado BHOLD permite designar revisores e realizar revisões
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -10,45 +10,45 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: e4c3a6248585d55fddbbca3153f33734d7c5c429
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358113"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64519175"
 ---
-# <a name="bhold-attestation-installation"></a>Instalação do BHOLD attestation
+# <a name="bhold-attestation-installation"></a>Instalação do atestado BHOLD
 
-O módulo do BHOLD Attestation permite-lhe designar os revisores e executam revisões periódicas das relações entre utilizadores e permissões por aplicação e contas.
+O módulo de atestado BHOLD permite designar revisores e executar revisões recorrentes das relações entre usuários e contas e permissões por aplicativo.
 
-## <a name="bhold-attestation-installation-requirements"></a>Requisitos de instalação do BHOLD Attestation
+## <a name="bhold-attestation-installation-requirements"></a>Requisitos de instalação do atestado BHOLD
 
-Antes de instalar o módulo do BHOLD Attestation, tem de instalar o módulo do BHOLD Core no servidor no qual planeia instalar o módulo de atestado do BHOLD. Para obter informações sobre como instalar o módulo do BHOLD Core, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). Uma vez que a mensagem de e-mail de envios de contactos de módulo do BHOLD Attestation mensagens aos utilizadores, seu ambiente tem de ter um servidor de e-mail de Simple Mail Transfer Protocol (SMTP), como o Microsoft Exchange Server.
+Antes de instalar o módulo de atestado do BHOLD, você deve instalar o módulo BHOLD Core no servidor no qual planeja instalar o módulo de atestado do BHOLD. Para obter informações sobre como instalar o módulo BHOLD Core, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). Como os contatos do módulo de atestado do BHOLD enviam mensagens de email aos usuários, seu ambiente deve ter um servidor de email SMTP, como o Microsoft Exchange Server.
 
 > [!IMPORTANT]
-> Se estiver a instalar o BHOLD Reporting e BHOLD Attestation, tem de instalar BHOLD Reporting antes da instalação do BHOLD Attestation.
+> Se você estiver instalando o BHOLD Reporting e o atestado BHOLD, deverá instalar o BHOLD Reporting antes de instalar o atestado de BHOLD.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Antes de começar a instalar o módulo do BHOLD Attestation, precisa estar preparado para fornecer as informações que o Assistente de configuração do BHOLD Attestation necessita para concluir a instalação. A seguinte planilha ajudará a gravar essa informação para que estará pronto para fornecer quando for necessário.
+Antes de começar a instalar o módulo de atestado do BHOLD, você precisa estar preparado para fornecer as informações que o assistente de configuração do atestado do BHOLD exige para concluir a instalação. A planilha a seguir o ajudará a registrar essas informações para que você fique pronto para fornecê-las quando necessário.
 
 | **Item**                                    | **Descrição**                                                                                                                                                                                                           | **Valor**                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Utilize um fornecedor de segurança num computador/domínio** | Quando selecionada, especifica que a segurança de serviços de domínio do Active Directory irá controlar o acesso a BHOLD Core.                                                                                                                | Selecione a caixa de verificação. **Importante:** a instalação falhará se esta caixa de verificação não estiver selecionada.                                                                                                                                                                                                                   |
-| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que criou durante a instalação do BHOLD Core. Para obter mais informações, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome NetBIOS do (curto), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio fabrikam.com, especifique o nome de domínio como a FABRIKAM. |
-| **User**                                    | Especifica o nome de início de sessão da conta de utilizador de serviço do BHOLD Core.                                                                                                                                                          | Escreva o nome da conta de utilizador aqui:                                                                                                                                                                                                                                                                                    |
-| **Palavra-passe**                                | Especifica a palavra-passe da conta de utilizador de serviço.                                                                                                                                                                       | Escrever a palavra-passe aqui: **importante:** Certifique-se de que tenha esta palavra-passe num local seguro oculto.                                                                                                                                                                                                                  |
+| **Usar o provedor de segurança em domínio/computador** | Quando selecionado, especifica que Active Directory Domain Services segurança controlará o acesso ao BHOLD Core.                                                                                                                | Selecione a caixa de verificação. **Importante:** A instalação falhará se essa caixa de seleção não estiver marcada.                                                                                                                                                                                                                   |
+| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que você criou ao instalar o BHOLD Core. Para obter mais informações, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome somente se ele estiver incorreto. **Importante:** Especifique o nome de domínio usando o nome NetBIOS (curto), não o FQDN (nome de domínio totalmente qualificado). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
+| **User**                                    | Especifica o nome de logon da conta de usuário do serviço do BHOLD Core.                                                                                                                                                          | Escreva o nome da conta de usuário aqui:                                                                                                                                                                                                                                                                                    |
+| **Palavra-passe**                                | Especifica a senha da conta de usuário do serviço.                                                                                                                                                                       | Escreva a senha aqui: **importante:** Lembre-se de manter essa senha em um local oculto e seguro.                                                                                                                                                                                                                  |
 
-## <a name="bhold-attestation-installation"></a>Instalação do BHOLD Attestation
+## <a name="bhold-attestation-installation"></a>Instalação do atestado BHOLD
 
-Para instalar o módulo do BHOLD Attestation, inicie sessão como membro do grupo Admins do domínio, transfira o ficheiro seguinte e executá-lo como administrador no servidor que pretende instalar o módulo do BHOLD Attestation em:
+Para instalar o módulo de atestado do BHOLD, faça logon como um membro do grupo Admins. do domínio, baixe o arquivo a seguir e execute-o como administrador no servidor no qual você pretende instalar o módulo de atestado do BHOLD:
 
-- BholdAttestation<em>\<versão\></em>\_Release.msi
+- BholdAttestation<em>\<versão\></em>\_Release. msi
 
-Substitua *\<versão\>* com o número de versão da versão do BHOLD Attestation que está a instalar.
+Substitua *\<versão\>* pelo número de versão da versão de atestado BHOLD que você está instalando.
 
-Para executar o ficheiro de programa como administrador, o ficheiro com o botão direito e, em seguida, clique em **executar como administrador**.
+Para executar o arquivo de programa como administrador, clique com o botão direito do mouse no arquivo e clique em **Executar como administrador**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)

@@ -12,11 +12,11 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 814386272bba0c3fa2cb73bc93dc842ac46e86fb
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379469"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518172"
 ---
 # <a name="pam-deployment-scripts-addendum"></a>Adenda de scripts de implementação da PAM:
 

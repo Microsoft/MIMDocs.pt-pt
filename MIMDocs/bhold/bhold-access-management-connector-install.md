@@ -1,6 +1,6 @@
 ---
-title: Instalação de conector de gestão de acesso do BHOLD | Documentos da Microsoft
-description: O módulo de conector do BHOLD suporta sincronização inicial e contínua de dados
+title: Instalação do conector de gerenciamento de acesso do BHOLD | Microsoft Docs
+description: O módulo conector do BHOLD dá suporte à sincronização inicial e contínua de dados
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -10,32 +10,32 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 60886a84c6105e94a2cd3d42f17b86b2d69c8c0a
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358606"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516050"
 ---
-# <a name="access-management-connector-installation"></a>Instalação de conector de gestão de acesso
+# <a name="access-management-connector-installation"></a>Instalação do conector de gerenciamento de acesso
 
-O módulo de conector de gestão de acesso do BHOLD Suite suporta sincronização inicial e contínua de dados em BHOLD. O conector de gestão de acesso funciona com o serviço de sincronização do Microsoft Identity Manager (MIM) para mover dados entre a base de dados do BHOLD Core, o metaverso do FIM 2010 e aplicativos de destino e armazenamentos de identidades. Depois de instalar o módulo de conector de gestão de acesso, poderá criar agentes de gestão de FIM que controlam o fluxo de dados entre BHOLD e MIM.
+O módulo do conector de gerenciamento de acesso do BHOLD Suite dá suporte à sincronização inicial e contínua de dados no BHOLD. O conector de gerenciamento de acesso funciona com o serviço de sincronização de Microsoft Identity Manager (MIM) para mover os dados entre o BHOLD Core Database, o metaverso do FIM 2010 e os aplicativos de destino e armazenamentos de identidade. Depois de instalar o módulo do conector de gerenciamento de acesso, você poderá criar agentes de gerenciamento do FIM que controlam o fluxo de dados entre o BHOLD e o MIM.
 
-## <a name="access-management-connector-software-requirements"></a>Requisitos de software do conector de gestão de acesso
+## <a name="access-management-connector-software-requirements"></a>Requisitos de software do conector de gerenciamento de acesso
 
-Antes de instalar o módulo de conector de gestão de acesso, tem de instalar o Microsoft .NET Framework 4. Para obter mais informações sobre o .NET Framework 4 e instruções de instalação, consulte a [home page do Microsoft .NET](http://www.microsoft.com/net).
-Tem de instalar o conector de gestão de acesso num computador com o FIM sincronização de serviço de MIM.
+Antes de instalar o módulo do conector de gerenciamento de acesso, você deve instalar o Microsoft .NET Framework 4. Para obter mais informações sobre .NET Framework 4 e instruções de instalação, consulte o [home page Microsoft .net](http://www.microsoft.com/net).
+Você deve instalar o conector de gerenciamento de acesso em um computador que executa o serviço de sincronização do FIM do MIM.
 
-## <a name="access-management-connector-setup"></a>Configuração do conector de gestão de acesso
+## <a name="access-management-connector-setup"></a>Instalação do conector de gerenciamento de acesso
 
-Para instalar o módulo de controlo de acesso de gestão, inicie sessão como membro do grupo Admins do domínio, transfira o ficheiro seguinte e executá-lo como administrador no servidor que pretende instalar o módulo de integração do BHOLD FIM em:
+Para instalar o módulo de controle de gerenciamento de acesso, faça logon como um membro do grupo Admins. do domínio, baixe o arquivo a seguir e execute-o como administrador no servidor no qual você pretende instalar o módulo integração de FIM com o BHOLD:
 
-- AccessManagementConnector.msi
+- AccessManagementConnector. msi
 
-Para executar o ficheiro de programa como administrador, o ficheiro com o botão direito e, em seguida, clique em **executar como administrador**.
+Para executar o arquivo de programa como administrador, clique com o botão direito do mouse no arquivo e clique em **Executar como administrador**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
-- [Instalação do BHOLD FIM integração](https://technet.microsoft.com/library/jj134093(v=ws.10).aspx) para ativar a gestão personalizada do utilizador final das funções, pode instalar o módulo de integração do BHOLD FIM
+- [Instalação da integração do fim com o BHOLD](https://technet.microsoft.com/library/jj134093(v=ws.10).aspx) Para habilitar o autoatendimento de funções do usuário final, você pode instalar o módulo integração do FIM com o BHOLD
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
 - [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

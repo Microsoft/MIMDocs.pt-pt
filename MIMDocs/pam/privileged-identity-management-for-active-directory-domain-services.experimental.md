@@ -1,5 +1,5 @@
 ---
-title: O que é o PAM para o ADDS? | Microsoft Docs
+title: O que é o PAM para o ADDS? | Documentos da Microsoft
 description: O Privileged Access Management (PAM) ajuda as organizações a restringir o acesso privilegiado num ambiente do Active Directory existente.
 keywords: ''
 author: billmath
@@ -11,12 +11,13 @@ ms.prod: microsoft-identity-manager
 ms.assetid: cf3796f7-bc68-4cf7-b887-c5b14e855297
 ms.reviewer: mwahl
 ms.suite: ems
+experiment_id: kgremban_images
 ms.openlocfilehash: 40ed05c1f77cace74b86dc3a5675855993d4bc56
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379893"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518362"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Privileged Access Management para Serviços de Domínio do Active Directory
 

@@ -12,11 +12,11 @@ ms.assetid: 7b689eff-3a10-4f51-97b2-cb1b4827b63c
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 0473ea9e01a44aeb4acbebe01e6e6f989c8581d0
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379316"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64517830"
 ---
 # <a name="step-6--transition-a-group-to-privileged-access-management"></a>Passo 6 - Transição de um grupo o Privileged Access Management
 
@@ -65,10 +65,10 @@ Os cmdlets devem ser executados uma vez para cada grupo e uma vez para cada memb
 
     Para referência, o comando **Novo PAMGroup** aceita os seguintes parâmetros:
 
-     -   O nome de domínio de floresta CORP no formulário de NetBIOS  
-     -   O nome do grupo para copiar a partir desse domínio  
-     -   O nome de NetBIOS de controlador de domínio de floresta CORP  
-     -   As credenciais de um utilizador de administrador de domínio na floresta CORP  
+     -   O nome de domínio da floresta CORP no formato NetBIOS  
+     -   O nome do grupo a ser copiado desse domínio  
+     -   O nome NetBIOS do controlador de domínio da floresta CORP  
+     -   As credenciais de um usuário administrador de domínio na floresta CORP  
 
 5. (Opcional) No CORPDC, remova a conta da Jen do grupo **CONTOSO CorpAdmins**, caso ainda esteja presente.  Isto só é necessário para efeitos de demonstração, para ilustrar a forma como as permissões podem ser associadas com contas criadas na floresta PRIV.
 

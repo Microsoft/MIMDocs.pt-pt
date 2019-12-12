@@ -13,11 +13,11 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: e306748e982eb2eb123246bc7f309465823eaf35
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379910"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518221"
 ---
 # <a name="step-3--prepare-a-pam-server"></a>Passo 3 – Preparar um servidor de PAM
 
@@ -186,7 +186,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 
     Certifique-se de que variável **CompatibilityLevel** está definida como *14*. Se devolver *15*, a coleção de sites não foi criada para a versão da experiência de 2010; elimine a coleção de sites e reformule-a.
 
-2.  Execute os seguintes comandos do PowerShell na **Shell de Gestão do SharePoint 2013**. Isto desativará o viewstate do lado do servidor do SharePoint e a tarefa do SharePoint **Tarefa de Análise do Estado de Funcionamento (Hora a Hora, Temporizador do Microsoft SharePoint Foundation, Todos os Servidores)**.
+2.  Execute os seguintes comandos do PowerShell na **Shell de Gestão do SharePoint 2013**. Isto desativará o viewstate do lado do servidor do SharePoint e a tarefa do SharePoint **Tarefa de Análise do Estado de Funcionamento (Hora a Hora, Temporizador do Microsoft SharePoint Foundation, Todos os Servidores)** .
 
     ```PowerShell
     $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
@@ -204,7 +204,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 ## <a name="set-the-website-as-the-local-intranet"></a>Definir o site como a intranet local
 
 1. Inicie o Internet Explorer e abra um novo separador do browser
-2. Navegue para http://pamsrv.priv.contoso.local:82/ e inicie sessão como priv\mimadmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
+2. Navegue até http://pamsrv.priv.contoso.local:82/ e entre como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
 3. No Internet Explorer, abra as **Opções da Internet**, mude para o separador **Segurança**, selecione **Intranet local** e adicione o URL `http://pamsrv.priv.contoso.local:82/`.
 
 Se o início de sessão falhar, os SPNs Kerberos criados anteriormente no [Passo 2](step-2-prepare-priv-domain-controller.md) podem ter de ser atualizados.

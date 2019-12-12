@@ -1,6 +1,6 @@
 ---
-title: Utilizar um fornecedor de multi-factor Authentication alternativo por meio de uma API para ativar o PAM ou cenário de SSPR | Documentos da Microsoft
-description: Configure a MFA a API personalizada como uma segunda camada de segurança, quando os utilizadores ativarem funções de Privileged Access Management e utilizam a reposição personalizada de palavra-passe.
+title: Usar um provedor de autenticação multifator alternativo por meio de uma API para ativar o PAM ou no cenário de SSPR | Microsoft Docs
+description: Configure a API MFA personalizada como uma segunda camada de segurança quando os usuários ativarem funções no Privileged Access Management e usarem a redefinição de senha de autoatendimento.
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -10,48 +10,48 @@ ms.date: 09/04/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: 7fb111520f94541672fc56d0fd2ee95bfcd3a49e
-ms.sourcegitcommit: f58926a9e681131596a25b66418af410a028ad2c
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "67690751"
 ---
-# <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>Utilizar um fornecedor de multi-factor Authentication personalizado por meio de uma API durante a ativação de função de PAM ou na SSPR
+# <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>Usar um provedor de autenticação multifator personalizado por meio de uma API durante a ativação da função do PAM ou em SSPR
 
-Os clientes do Azure AD Premium ou o MFA do Azure podem integrar o MFA do Azure em dois cenários de MIM - ativação de função de Privileged Access Management (PAM) e de reposição de palavra-passe Self-Service (SSPR).
+Os clientes do Azure AD Premium ou do Azure MFA podem integrar o Azure MFA em dois cenários do MIM – Privileged Access Management (PAM) ativação de função e redefinição de senha de autoatendimento (SSPR).
 
-Os clientes de MIM tem duas opções adicionais:
+Os clientes do MIM têm duas opções adicionais:
 
- - Utilizar um fornecedor de entrega de uma-palavra-passe personalizada, que é aplicável apenas no cenário de MIM SSPR e documentado no manual para [configurar a reposição personalizada de palavra-passe com a porta de SMS OTP](https://docs.microsoft.com/en-us/previous-versions/mim/hh824692(v=ws.10))
- - Utilize um fornecedor de telefonia a autenticação multifator personalizada. Isso se aplica a MIM SSPR e o PAM cenários, descritos neste artigo
+ - Use um provedor de entrega de senha única personalizado, que é aplicável somente no cenário do MIM SSPR e documentado em guia para [Configurar a redefinição de senha de autoatendimento com a entrada do SMS de OTP](https://docs.microsoft.com/en-us/previous-versions/mim/hh824692(v=ws.10))
+ - Use um provedor de telefonia de autenticação multifator personalizado. Isso é aplicável nos cenários do MIM SSPR e do PAM, descritos neste artigo
 
-Este artigo descreve como utilizar o MIM com um provedor de autenticação personalizado de multi-factor, por meio de uma API e uma integração SDK desenvolvido pelo cliente.  
+Este artigo descreve como usar o MIM com um provedor de autenticação multifator personalizado, por meio de uma API e um SDK de integração desenvolvido pelo cliente.  
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para utilizar uma API do fornecedor de multi-factor Authentication personalizada com o MIM, terá de:
+Para usar uma API personalizada do provedor de autenticação multifator com MIM, você precisa:
 
 - Números de telefone para todos os utilizadores candidatos
-- Correção MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou superior - veja [histórico de versões](reference/version-history.md) anúncios de
-- Serviço MIM configurado para SSPR ou PAM
+- Hotfix do MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou posterior-consulte o [histórico de versões](reference/version-history.md) para anúncios
+- Serviço do MIM configurado para SSPR ou PAM
 
-## <a name="approach-using-custom-multi-factor-authentication-code"></a>Abordagem usando código personalizado multi-factor authentication
+## <a name="approach-using-custom-multi-factor-authentication-code"></a>Abordagem usando o código de autenticação multifator personalizado
 
-### <a name="step-1-ensure-mim-service-is-at-version-452020-or-later"></a>Passo 1: Certifique-se de que o serviço MIM está na versão 4.5.202.0 ou posterior
+### <a name="step-1-ensure-mim-service-is-at-version-452020-or-later"></a>Etapa 1: Verifique se o serviço do MIM está na versão 4.5.202.0 ou posterior
 
-Transfira e instale a correção MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou uma versão posterior.
+Baixe e instale o hotfix do MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou uma versão posterior.
 
-### <a name="step-2-create-a-dll-which-implements-the-iphoneserviceprovider-interface"></a>Passo 2: Criar uma DLL que implementa a interface de IPhoneServiceProvider
+### <a name="step-2-create-a-dll-which-implements-the-iphoneserviceprovider-interface"></a>Etapa 2: criar uma DLL que implementa a interface IPhoneServiceProvider
 
-A DLL tem de incluir uma classe que implementa três métodos:
+A DLL deve incluir uma classe, que implementa três métodos:
 
-- `InitiateCall`: O serviço MIM irá invocar esse método. O serviço passa o ID de número e a pedido do telefone como parâmetros.  O método deve retornar um `PhoneCallStatus` valor de `Pending`, `Success` ou `Failed`.
-- `GetCallStatus`: Se uma chamada anterior para `initiateCall` devolvido `Pending`, o serviço MIM irá invocar esse método. Esse método também retorna `PhoneCallStatus` valor de `Pending`, `Success` ou `Failed`.
-- `GetFailureMessage`: Se uma invocação anterior do `InitiateCall` ou `GetCallStatus` devolvido `Failed`, o serviço MIM irá invocar esse método. Este método devolve uma mensagem de diagnóstico.
+- `InitiateCall`: o serviço do MIM invocará esse método. O serviço passa o número de telefone e a ID da solicitação como parâmetros.  O método deve retornar um valor `PhoneCallStatus` de `Pending`, `Success` ou `Failed`.
+- `GetCallStatus`: se uma chamada anterior para `initiateCall` retornou `Pending`, o serviço do MIM invocará esse método. Esse método também retorna `PhoneCallStatus` valor de `Pending`, `Success` ou `Failed`.
+- `GetFailureMessage`: se uma invocação anterior de `InitiateCall` ou `GetCallStatus` retornou `Failed`, o serviço do MIM invocará esse método. Esse método retorna uma mensagem de diagnóstico.
 
-As implementações dos seguintes métodos tem de ser thread-safe e, além da implementação do `GetCallStatus` e `GetFailureMessage` não deve supor que serão chamados pelo mesmo thread como uma chamada anterior para `InitiateCall`.
+As implementações desses métodos devem ser thread-safe e, além disso, a implementação do `GetCallStatus` e `GetFailureMessage` não devem presumir que eles serão chamados pelo mesmo thread como uma chamada anterior para `InitiateCall`.
 
-Store DLL no `C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\` diretório.
+Armazene a DLL no diretório `C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\`.
 
 Código de exemplo, que pode ser compilado usando o Visual Studio 2010 ou posterior.
 
@@ -135,27 +135,27 @@ namespace CustomPhoneGate
     }
 }
 ```
-### <a name="step-3-backup-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>Passo 3: Cópia de segurança a mfasettings. XML localizado no "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service"
+### <a name="step-3-backup-the-mfasettingsxml-located-in-the-cprogram-filesmicrosoft-forefront-identity-manager2010service"></a>Etapa 3: fazer backup do MfaSettings. xml localizado em "C:\Arquivos de Programas\microsoft Forefront Identity Manager\2010\Service"
 
-### <a name="step-4-edit-the-mfasettingsxml-file"></a>Passo 4: Edite o ficheiro mfasettings. XML.
+### <a name="step-4-edit-the-mfasettingsxml-file"></a>Etapa 4: editar o arquivo MfaSettings. xml
 
-Atualizar ou desmarque as seguintes linhas:
+Atualize ou desmarque as seguintes linhas:
 
 - Remover/limpar todas as linhas de entradas de configuração 
 
-- Atualize ou adicione as seguintes linhas para o seguinte para mfasettings. XML com o seu fornecedor de telefone personalizado <br>
+- Atualize ou adicione as linhas a seguir ao MfaSettings. XML com seu provedor de telefone personalizado <br>
 `<CustomPhoneProvider>C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\CustomPhoneGate.dll</CustomPhoneProvider>`
 
-### <a name="step-5-restart-mim-service"></a>Passo 5: Reinicie o serviço MIM
+### <a name="step-5-restart-mim-service"></a>Etapa 5: reiniciar o serviço do MIM
 
-Depois do serviço foi reiniciado, utilize o SSPR e/ou de PAM para validar a funcionalidade com o fornecedor de identidade personalizada.
+Depois que o serviço for reiniciado, use SSPR e/ou PAM para validar a funcionalidade com o provedor de identidade personalizado.
 
 > [!NOTE] 
-> Para reverter definição substituir mfasettings. XML com o ficheiro de cópia de segurança no passo 3
+> Para reverter a configuração, substitua MfaSettings. xml pelo arquivo de backup na etapa 3
 
 
 ## <a name="next-steps"></a>Próximos Passos
 
-- [Introdução ao servidor de autenticação do multi-factor do Azure](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy)
-- [O que é o Azure multi-factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
-- [Histórico de lançamento de versão de MIM](./reference/version-history.md)
+- [Introdução ao Servidor Multi-Factor Authentication do Azure](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy)
+- [O que é a autenticação multifator do Azure](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
+- [Histórico de lançamento de versão do MIM](./reference/version-history.md)

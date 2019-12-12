@@ -12,21 +12,21 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 139ff94ecc38de37ac8eb6536d1b4d2a42909536
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358048"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64517470"
 ---
 # <a name="mim2016-sp1-pam-deployment-scripts"></a>Scripts de implementação da PAM do MIM2016 SP1
 
-Neste service pack, introduzimos um conjunto de scripts de implementação para facilitar a implementação da PAM. Estes scripts estão disponíveis no centro de transferências. Antes de tentar usar os scripts é importante que certifique-se de que cumpre os requisitos abaixo:
+Neste service pack, introduzimos um conjunto de scripts de implementação para facilitar a implementação da PAM. Estes scripts estão disponíveis no centro de transferências. Antes de tentar usar os scripts, é importante verificar se você atende aos requisitos abaixo:
 
-1. O sistema operativo em todos os servidores é, pelo menos, Windows Server 2012 R2.
-2. DNS deve ser configurado para habilitar a resolução de nome entre os controladores de domínio e servidores de componentes.
+1. O sistema operacional em todos os servidores é, no mínimo, o Windows Server 2012 R2.
+2. O DNS deve ser configurado para habilitar a resolução de nomes entre seus controladores de domínio e servidores de componentes.
 3. Os binários de instalação têm de estar disponíveis localmente nos servidores designados para a instalação do SQL, SharePoint e MIM.
 4. O ambiente tem três máquinas dedicadas (físicas ou virtuais) que executam, de forma independente, o CORPDC, o PRIVDC e o PAMSERVER.
-5. Para a opção de validação tem de ter uma estação de trabalho dedicada.
+5. Para a opção de validação, você precisa ter uma estação de trabalho dedicada.
 
 >[!NOTE]
 >Se ocorrer algum problema durante a execução dos scripts, poderá ter de ver os registos. Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e inclua estes conteúdos, juntamente com os detalhes da operação e do erro, no incidente do suporte.

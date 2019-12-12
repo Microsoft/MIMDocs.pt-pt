@@ -12,11 +12,11 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 030ebf1f5d655cff712aac8acc393e7d3cc13696
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379486"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518126"
 ---
 # <a name="step-2-configuring-the-corp-domain"></a>Passo 2: Configurar o domínio CORP
 

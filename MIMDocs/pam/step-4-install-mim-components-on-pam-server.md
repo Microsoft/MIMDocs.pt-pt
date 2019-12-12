@@ -13,17 +13,17 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 2b5340ef3f98ba94904e595c3526d09bdac3f95f
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379927"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518426"
 ---
 # <a name="step-4--install-mim-components-on-pam-server-and-workstation"></a>Passo 4 – Instalar os componentes do MIM num servidor e estação de trabalho de PAM
 
 > [!div class="step-by-step"]
 > [« Passo 3](step-3-prepare-pam-server.md)
-> [Passo 5 »](step-5-establish-trust-between-priv-corp-forests.md)
+> [Passo 5»](step-5-establish-trust-between-priv-corp-forests.md)
 
 No PAMSRV, inicie sessão como PRIV\Administrator para instalar o Portal e o Serviço MIM, bem como a aplicação Web do portal de exemplo.
 
@@ -59,7 +59,7 @@ Siga as diretrizes do instalador e conclua a instalação.
 
 7. Defina *PAMSRV* como endereço do servidor do Serviço MIM.
 
-8. Definir *http://pamsrv.priv.contoso.local:82* como o SharePoint URL de coleção de sites.
+8. Defina *http://pamsrv.priv.contoso.local:82* como a URL do conjunto de sites do SharePoint.
 
 9. Deixe o URL do portal de registo em branco.
 
@@ -100,7 +100,7 @@ Depois de concluída a instalação, o servidor será reiniciado, em seguida cer
 
 1. Depois de PAMSRV ser reiniciado, inicie sessão como PRIV\Administrator.
 
-2. Inicie o Internet Explorer e ligue-se ao Portal de MIM no http://pamsrv.priv.contoso.local:82/identitymanagement. Pode existir um pequeno atraso quando esta página for localizada pela primeira vez.
+2. Inicie o Internet Explorer e conecte-se ao portal do MIM em http://pamsrv.priv.contoso.local:82/identitymanagement. Pode existir um pequeno atraso quando esta página for localizada pela primeira vez.
 
 3. Se necessário, inicie sessão como PRIV\Administrator no Internet Explorer.
 
@@ -143,7 +143,7 @@ Nesta secção, irá instalar e configurar a aplicação Web de exemplo para a A
    New-WebSite -Name "MIM Privileged Access Management Example Portal" -Port 8090   -PhysicalPath "C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\"
    ```
 
-4. Configure a aplicação Web de exemplo para conseguir redirecionar os utilizadores para a API REST de PAM do MIM. Utilizando um editor de texto, como o Bloco de Notas, edite o ficheiro **C:\Programas\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config**. Na secção **<system.webServer>**, adicione as seguintes linhas:
+4. Configure a aplicação Web de exemplo para conseguir redirecionar os utilizadores para a API REST de PAM do MIM. Usando um editor de texto como o bloco de notas, edite o arquivo **C:\Program Files\Microsoft Forefront Identity Manager\2010\Privileged Access Management REST API\web.config**. Na seção **< System. WebServer >** , adicione as seguintes linhas:
 
    ```XML
    <httpProtocol>
@@ -155,7 +155,7 @@ Nesta secção, irá instalar e configurar a aplicação Web de exemplo para a A
    </httpProtocol>
    ```
 
-5. Configure a aplicação Web de exemplo. Utilizando um editor de texto, como o Bloco de Notas, edite o ficheiro **C:\Programas\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\js\utils.js**. Defina o valor da **pamRespApiUrl** ao *http://pamsrv.priv.contoso.local:8086/api/pamresources/*.
+5. Configure a aplicação Web de exemplo. Utilizando um editor de texto, como o Bloco de Notas, edite o ficheiro **C:\Programas\Microsoft Forefront Identity Manager\2010\Privileged Access Management Portal\js\utils.js**. Defina o valor de **pamRespApiUrl** como *http://pamsrv.priv.contoso.local:8086/api/pamresources/* .
 
 6. Reinicie o IIS com o seguinte comando para estas alterações serem aplicadas.
 
@@ -163,7 +163,7 @@ Nesta secção, irá instalar e configurar a aplicação Web de exemplo para a A
    iisreset
    ```
 
-7. (Opcional) Verifique se o utilizador pode autenticar para a API REST. Abra um browser como administrador em PAMSRV.  Navegue para o URL do web site http://pamsrv.priv.contoso.local:8086/api/pamresources/pamroles/, autentique se for necessário e certifique-se de que ocorre uma transferência.
+7. (Opcional) Verifique se o utilizador pode autenticar para a API REST. Abra um browser como administrador em PAMSRV.  Navegue até a URL do site http://pamsrv.priv.contoso.local:8086/api/pamresources/pamroles/, autentique, se necessário, e verifique se ocorre um download.
 
 ## <a name="install-the-mim-pam-requestor-cmdlets"></a>Instalar os cmdlets do requerente de PAM do MIM
 
@@ -187,4 +187,4 @@ No próximo passo, irá estabelecer confiança entre florestas PRIV e CORP.
 
 > [!div class="step-by-step"]
 > [« Passo 3](step-3-prepare-pam-server.md)
-> [Passo 5 »](step-5-establish-trust-between-priv-corp-forests.md)
+> [Passo 5»](step-5-establish-trust-between-priv-corp-forests.md)

@@ -12,11 +12,11 @@ ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 36b5e97675d5900bf3b5348ad4857827c426e60e
-ms.sourcegitcommit: 4f0b2883922bcb8fbef6b4284c35c6ca62c11565
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56952167"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64519480"
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>Atualização do Forefront Identity Manager 2010 R2
 
@@ -41,7 +41,7 @@ Este guia pressupõe que já configurou o seguinte:
 
 2.  Em cada servidor onde os componentes do FIM 2010 R2 estejam instalados, por exemplo, *CORPIDM*, inicie sessão como Contoso\Administrador. Neste exemplo de implementação, os Direitos administrativos são necessários para atualizar o FIM 2010 R2 para o **MIM**.
 
-3.  Transfira ou descompacte o software MIM.  Se não tem este software, consulte [downloads e licenciamento do Microsoft Identity Manager](microsoft-identity-manager-licensing.md).
+3.  Transfira ou descompacte o software MIM.  Se você não tiver esse software, consulte [Microsoft Identity Manager licenciamento e downloads](microsoft-identity-manager-licensing.md).
 
 ## <a name="upgrade-the-synchronization-service"></a>Atualizar o Serviço de Sincronização
 
@@ -115,7 +115,7 @@ Este guia pressupõe que já configurou o seguinte:
 
 9. Introduza os detalhes do servidor de correio. Se o servidor de correio estiver localizado no servidor atual, introduza “localhost” como a localização do servidor de correio. Clique em **Seguinte** para continuar.
 
-    ![Imagem da configuração da ligação ao servidor de correio](media/MIM-UpgSP6.png)
+    ![Imagem da configuração da ligação ao servidor de e-mail](media/MIM-UpgSP6.png)
 
 10. Selecione um certificado para o Serviço a utilizar para validar os clientes. Deve utilizar o certificado existente do arquivo de certificados local que foi utilizado anteriormente pelo Serviço FIM.
 
@@ -197,6 +197,6 @@ Este guia pressupõe que já configurou o seguinte:
 
 4. Tenha em atenção que o **Serviço de Forefront Identity Manager** reiniciou.
 
-Nota: Se o FIM suplementos e extensões são atualmente implementadas nos computadores dos usuários para SSPR, não configure as portas do telefone MFA nova palavra-passe, repor até depois de todas as extensões e suplementos do FIM foram atualizadas para o MIM 2016.  Uma vez que os Suplementos e as Extensões do FIM 2010 e do FIM 2010 R2 não reconhecem as novas portas, tal resultará num erro e o utilizador não poderá concluir a reposição da palavra-passe.
+Nota: se, atualmente, os Suplementos e as Extensões do FIM estiverem implementados nos computadores do utilizador para SSPR, não configure as novas portas do telefone MFA para a reposição da palavra-passe antes da atualização de todos os Suplementos e as Extensões do FIM para o MIM 2016.  Uma vez que os Suplementos e as Extensões do FIM 2010 e do FIM 2010 R2 não reconhecem as novas portas, tal resultará num erro e o utilizador não poderá concluir a reposição da palavra-passe.
 
 Para obter orientações de atualização do Microsoft Identity Manager 2016 SP1, veja o seguinte [Pacote de atualização do Microsoft Identity Manager 2016 Service Pack 1](https://blogs.technet.microsoft.com/iamsupport/2016/11/08/microsoft-identity-manager-2016-service-pack-1-update-package/)

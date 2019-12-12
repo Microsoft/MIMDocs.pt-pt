@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 347eda5872792872a9bb30357c45835303f92e01
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379755"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518524"
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>Implementar o PAM do MIM com o Windows Server 2016
 
 
-Este cenário permite que o MIM 2016 SP1 tire partido das funcionalidades do Windows Server 2016, como o controlador de domínio para a floresta "PRIV".  Quando este cenário está configurado, a permissão Kerberos do utilizador terá um prazo limitado ao tempo restante das respetivas ativações da função. 
+Este cenário permite que o MIM 2016 SP1 tire partido das funcionalidades do Windows Server 2016, como o controlador de domínio para a floresta "PRIV".  Quando esse cenário é configurado, o tíquete Kerberos de um usuário será limitado ao tempo restante de suas ativações de função. 
 
 > [!Note]
 > Não é possível utilizar pré-visualizações técnicas do Windows Server 2016 anteriores à Pré-visualização Técnica 5 com esta versão do MIM.

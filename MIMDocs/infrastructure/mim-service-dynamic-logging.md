@@ -8,10 +8,10 @@ ms.date: 10/29/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: 90ef2ab63be3914d1d48c7319821177e7e62f9e0
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68701305"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
@@ -49,7 +49,7 @@ Para exibir o rastreamento, você pode usar a [ferramenta Visualizador de rastre
 
  ![Captura de ecrã do Visualizador de Rastreio de Serviços](media/mim-service-dynamic-logging/screen04.png)
 
-# <a name="updates-build-45xx-or-greater"></a>Actualiza Build 4.5. x. x ou superior
+# <a name="updates-build-45xx-or-greater"></a>Atualizações: Build 4.5. x. x ou superior
 
 Na Build 4.5. x. x, revisamos o recurso de log para especificar o nível de log padrão é **"Warning"** . O serviço grava mensagens em dois arquivos (os índices "00" e "01" são adicionados antes da extensão). Os arquivos estão localizados no diretório "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service". Quando o arquivo excede o tamanho máximo, o serviço começa a gravar em outro arquivo. Se outro arquivo existir, ele será substituído. O tamanho máximo padrão do arquivo é 1 GB. Para alterar o tamanho máximo padrão, é necessário adicionar o parâmetro **"maxOutputFileSizeKB"** com o valor de tamanho de arquivo máximo em KB no ouvinte (Veja o exemplo abaixo) e reiniciar o serviço mim. Quando o serviço é iniciado, ele acrescenta logs em um arquivo mais recente (se o limite de espaço for excedido, ele substituirá o arquivo mais antigo). 
 

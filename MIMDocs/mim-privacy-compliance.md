@@ -11,10 +11,10 @@ ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
 ms.openlocfilehash: 6f861c5b1984de70a91edcac89276402f289e355
-ms.sourcegitcommit: 65e11fd639464ed383219ef61632decb69859065
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68701488"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Manipulação de dados de Microsoft Identity Manager 
@@ -34,7 +34,7 @@ A seguir, alguns cenários que os clientes precisarão considerar e responder à
 Para ajudá-lo a entender um ambiente atual do MIM, você pode utilizar a seguinte ferramenta para documentar seu ambiente do MIM ou adiar para seus documentos de design de implementação.
 - [Documentador do MIM – permite exportar a configuração atual](https://github.com/Microsoft/MIMConfigDocumenter)
 
-## <a name="searching-for-and-identifying-personal-data"></a>Pesquisando e identificando dados pessoais
+## <a name="searching-for-and-identifying-personal-data"></a>Procurar e identificar dados pessoais
 A pesquisa de dados no MIM dependerá da configuração e da instalação. A maioria dos ambientes é interconectada, mas para fins de clareza, nós os dividimos por um componente de alto nível.
 
 ### <a name="synchronization-service"></a>Serviço de Sincronização
@@ -47,7 +47,7 @@ Se você não tiver certeza de que a fonte de autoridade pode controlar esse usu
     - Abrir o cliente do serviço de sincronização
         - Usar o designer de metaverso permite que você veja a precedência e as importações de fluxo de atributo.
 ![mim-Privacy-compliance_1. PNG](media/mim-privacy-compliance/mim-privacy-compliance_1.PNG)
-        - Usar a pesquisa de metaverso permite pesquisar em qualquer objeto e atributo no banco de dados ![mim-Privacy-compliance_2. png](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)
+        - Usar a pesquisa de metaverso permite pesquisar em qualquer objeto e atributo no banco de dados ![mim-Privacy-compliance_2. PNG](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)
  
 Depois de localizar o objeto, clicar no objeto abrirá a página de perfil do usuário. Os detalhes do objeto fornecem os detalhes abrangentes sobre o objeto, seus atributos, última modificação e fonte de autoridade e fonte de dados conectada relacionada, derivada do exemplo de configuração do agente de gerenciamento abaixo.
 
@@ -145,7 +145,7 @@ O serviço de sincronização tem várias maneiras de lidar com dados ou excluir
 
 ### <a name="service-and-portal--pam"></a>Serviço e portal/PAM
 
-É recomendável para o portal de & de serviço que você mantenha a configuração padrão de retenção de recursos do sistema de 30 dias. Isso informa ao serviço quando ele será excluído, não apenas solicita dados, mas também qualquer objeto que precise ser limpo do sistema. Quando o processo ocorre, todos os dados vinculados a esse objeto são excluídos isso inclui todos os dados de registro do SSPR. Isso é reproduzido na configuração de exclusão de objeto acima. Temos uma tabela que armazenamos o GUID dos objetos. Para reduzir o tamanho geral da tabela no Build 4.4.1459, adicionamos um processo chamado FIM_DeleteExpiredSystemObjectsJob os detalhes sobre esse processo podem ser encontrados [aqui](https://support.microsoft.com/en-us/help/4012498/hotfix-rollup-package-build-4-4-1459-0-is-available-for-microsoft-iden).
+É recomendável para o portal de & de serviço que você mantenha a configuração padrão de retenção de recursos do sistema de 30 dias. Isso informa ao serviço quando ele será excluído, não apenas solicita dados, mas também qualquer objeto que precise ser limpo do sistema. Quando o processo ocorre, todos os dados vinculados a esse objeto são excluídos isso inclui todos os dados de registro do SSPR. Isso é reproduzido na configuração de exclusão de objeto acima. Temos uma tabela que armazenamos o GUID dos objetos. Para reduzir o tamanho geral da tabela no Build 4.4.1459, adicionamos um processo chamado FIM_DeleteExpiredSystemObjectsJob detalhes sobre esse processo podem ser encontrados [aqui](https://support.microsoft.com/en-us/help/4012498/hotfix-rollup-package-build-4-4-1459-0-is-available-for-microsoft-iden).
 
 ![mim-privacidade-conformidade-SRRC. PNG](media/mim-privacy-compliance/mim-privacy-compliance-srrc.PNG)
 
@@ -155,7 +155,7 @@ O serviço de sincronização tem várias maneiras de lidar com dados ou excluir
 Bhold como a maioria dos sistemas conectados ao serviço de sincronização podem ser configurados para excluir uma vez que o objeto de origem, como HR, é removido. Isso é configurado no agente de gerenciamento. e controladas pelas regras de exclusão de objetos, conforme descrito nos recursos do serviço de sincronizações.
 
 Outra opção é remover o objeto de usuário da interface do usuário do BHOLD Core. Dependendo da configuração, isso pode funcionar bem, mas a lógica de provisionamento poderá recriar esse usuário se não for excluído na origem.
-![mim-privacidade-conformidade-bholdr. PNG](media/mim-privacy-compliance/mim-privacy-compliance-bholdr.PNG)
+![mim-Privacy-Compliance-bholdr.](media/mim-privacy-compliance/mim-privacy-compliance-bholdr.PNG) PNG
 
 
 ### <a name="certificate-management"></a>Gestão de Certificados
@@ -173,11 +173,11 @@ Para desabilitar a coleta de dados na versão anterior, execute o modo de altera
 
 ![mim-privacidade-conformidade-CEIP. PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip.PNG)
 
-ou edite o registro e defina o valor como 0: Componente HKLM\SOFTWARE\Microsoft\Forefront de identidade Manager\2010 do CEIP
+ou edite o registro e defina o valor para 0: (componente) CEIP HKLM\SOFTWARE\Microsoft\Forefront identidade Manager\2010
 
 ![mim-privacidade-conformidade-ceip2. PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip2.PNG)
 
 ## <a name="next-steps"></a>Próximos Passos 
 - [Diretrizes de privacidade relacionadas ao SQL](https://docs.microsoft.com/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
 - [Seção GDPR do portal de confiança do serviço](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
-- [Arquivo do FIM 2010: Rampa-implementação do Forefront Identity Manager 2010](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)
+- [Arquivo do FIM 2010: crescimento-implementação do Forefront Identity Manager 2010](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)

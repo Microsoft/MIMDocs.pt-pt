@@ -15,7 +15,7 @@ ms.openlocfilehash: b14066543c036eb4ec8a350843743b87902a13a1
 ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73636971"
 ---
 # <a name="capacity-planning-guide"></a>Guia de planeamento de capacidade
@@ -26,7 +26,7 @@ Antes de iniciar o MIM, utilize este guia, juntamente com ambientes de teste, pa
 
 Se ainda não estiver familiarizado com o MIM 2016 e os respetivos componentes, obtenha mais detalhes acerca do [Microsoft Identity Manager 2016](microsoft-identity-manager-2016.md) antes de continuar.
 
-## <a name="overview"></a>Descrição geral
+## <a name="overview"></a>Overview
 
 Há vários fatores que podem afetar a capacidade e o desempenho geral de sua implantação de Microsoft Identity Manager:
 
@@ -43,7 +43,7 @@ Os principais fatores que afetam a capacidade e o desempenho de uma implantaçã
 | Hardware | O hardware físico (físico ou virtual) para cada componente do MIM, incluindo CPU, memória, adaptador de rede e configuração de disco rígido. |
 | Objetos de configuração de políticas do MIM | O número e o tipo dos objetos de configuração de políticas do MIM, incluindo conjuntos, Regras de Política de Gestão (MPRs) e fluxos de trabalho. |
 | Escala | Os usuários, grupos, grupos calculados e tipos de objetos personalizados a serem gerenciados pelo MIM 2016. Além disso, considere a complexidade dos grupos dinâmicos e não se esqueça de ter em consideração o aninhamento de grupos. |
-| Carregamento | Frequência de utilização. Operações como novo grupo ou criação de usuário, redefinições de senha ou visitas ao portal por minuto ou hora. Tenha em atenção que a carga pode variar no decorrer de uma hora, um dia, uma semana ou um ano. Consoante o componente, pode optar por conceber para o pico de carga ou a carga média. |
+| Carga | Frequência de utilização. Operações como novo grupo ou criação de usuário, redefinições de senha ou visitas ao portal por minuto ou hora. Tenha em atenção que a carga pode variar no decorrer de uma hora, um dia, uma semana ou um ano. Consoante o componente, pode optar por conceber para o pico de carga ou a carga média. |
 
 ## <a name="hosting-microsoft-identity-manager-components"></a>Alojamento de componentes do Microsoft Identity Manager
 

@@ -1,6 +1,6 @@
 ---
-title: Instalação do BHOLD Analytics | Documentos da Microsoft
-description: Módulo do BHOLD Analytics fornece baseada em regras de teste de acesso a dados
+title: Instalação da análise do BHOLD | Microsoft Docs
+description: O módulo do BHOLD Analytics fornece testes baseados em regras de acesso a dados
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -10,42 +10,42 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: ec7069156aa033b33a139ae83e26abcdea7b482a
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358334"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516879"
 ---
 # <a name="bhold-analytics-installation"></a>Instalação do BHOLD Analytics
 
-O módulo do BHOLD Analytics fornece baseada em regras de teste de acesso a dados para garantir que sua organização com eficiência pode controlar o acesso aos seus dados e está em conformidade com requisitos de acesso interno e externo. A análise de impacto automatizada gerada pelo módulo do BHOLD Analytics dá-lhe uma descrição geral que mostra o número de utilizadores que seriam afetados pela imposição de uma regra de proposto, tanto aqueles que estivesse de acordo com a regra e aqueles que violaria a regra. O módulo do BHOLD Analytics também pode fornecer uma lista detalhada dos utilizadores que estivesse de acordo com a regra e aqueles que violaria a regra.
+O módulo análise do BHOLD fornece testes baseados em regras de acesso a dados para garantir que sua organização possa controlar efetivamente o acesso a seus dados e esteja em conformidade com os requisitos de acesso interno e externo. A análise de impacto automatizada gerada pelo módulo análise de BHOLD fornece uma visão geral que mostra o número de usuários que seriam afetados pela imposição de uma regra proposta, tanto aqueles que atenderam à regra quanto aqueles que violariam a regra. O módulo análise do BHOLD também pode fornecer uma lista detalhada dos usuários que obedecerão à regra e aqueles que violariam a regra.
 
 ## <a name="bhold-analytics-installation-requirements"></a>Requisitos de instalação do BHOLD Analytics
 
-Antes de instalar o módulo do BHOLD Analytics, tem de instalar o módulo do BHOLD Core no servidor no qual planeia instalar o módulo do BHOLD Analytics. Para obter informações sobre como instalar o módulo do BHOLD Core, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx).
+Antes de instalar o módulo análise do BHOLD, você deve instalar o módulo BHOLD Core no servidor no qual você planeja instalar o módulo análise do BHOLD. Para obter informações sobre como instalar o módulo BHOLD Core, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Antes de começar a instalar o módulo do BHOLD Analytics, precisa estar preparado para fornecer as informações que o Assistente de configuração do BHOLD Analytics necessita para concluir a instalação. A seguinte planilha ajudará a gravar essa informação para que estará pronto para fornecer quando for necessário.
+Antes de começar a instalar o módulo do BHOLD Analytics, você precisa estar preparado para fornecer as informações que o assistente de instalação do BHOLD Analytics exige para concluir a instalação. A planilha a seguir o ajudará a registrar essas informações para que você fique pronto para fornecê-las quando necessário.
 
 | **Item**                                    | **Descrição**                                                                                                                                                                                                           | **Valor**                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Utilize um fornecedor de segurança num computador/domínio** | Quando selecionada, especifica que a segurança de serviços de domínio do Active Directory irá controlar o acesso a BHOLD Core.                                                                                                                | Selecione a caixa de verificação. **Importante:** a instalação falhará se esta caixa de verificação não estiver selecionada.                                                                                                                                                                                                                   |
-| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que criou durante a instalação do BHOLD Core. Para obter mais informações, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome NetBIOS do (curto), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio fabrikam.com, especifique o nome de domínio como a FABRIKAM. |
-| **User**                                    | Especifica o nome de início de sessão da conta de utilizador de serviço do BHOLD Core.                                                                                                                                                          | Escreva o nome da conta de utilizador aqui:                                                                                                                                                                                                                                                                                    |
-| **Palavra-passe**                                | Especifica a palavra-passe da conta de utilizador de serviço.                                                                                                                                                                       | Escrever a palavra-passe aqui: **importante:** Certifique-se de que tenha esta palavra-passe num local seguro oculto.                                                                                                                                                                                                                  |
+| **Usar o provedor de segurança em domínio/computador** | Quando selecionado, especifica que Active Directory Domain Services segurança controlará o acesso ao BHOLD Core.                                                                                                                | Selecione a caixa de verificação. **Importante:** A instalação falhará se essa caixa de seleção não estiver marcada.                                                                                                                                                                                                                   |
+| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que você criou ao instalar o BHOLD Core. Para obter mais informações, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome somente se ele estiver incorreto. **Importante:** Especifique o nome de domínio usando o nome NetBIOS (curto), não o FQDN (nome de domínio totalmente qualificado). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
+| **User**                                    | Especifica o nome de logon da conta de usuário do serviço do BHOLD Core.                                                                                                                                                          | Escreva o nome da conta de usuário aqui:                                                                                                                                                                                                                                                                                    |
+| **Palavra-passe**                                | Especifica a senha da conta de usuário do serviço.                                                                                                                                                                       | Escreva a senha aqui: **importante:** Lembre-se de manter essa senha em um local oculto e seguro.                                                                                                                                                                                                                  |
 
 ## <a name="bhold-analytics-installation"></a>Instalação do BHOLD Analytics
 
-Para instalar o módulo do BHOLD Analytics, inicie sessão como membro do grupo Admins do domínio, transfira o ficheiro seguinte e executá-lo como administrador no servidor que pretende instalar o módulo do BHOLD Analytics num:
+Para instalar o módulo do BHOLD Analytics, faça logon como um membro do grupo Admins. do domínio, baixe o arquivo a seguir e execute-o como administrador no servidor no qual você pretende instalar o módulo análise do BHOLD:
 
-- BholdAnalytics<em>\<versão\></em>\_Release.msi
+- BholdAnalytics<em>\<versão\></em>\_Release. msi
 
-Substitua *\<versão\>* com o número de versão da versão do BHOLD Analytics que está a instalar.
+Substitua *\<versão\>* pelo número de versão da versão de análise do BHOLD que você está instalando.
 
-Para executar o ficheiro de programa como administrador, o ficheiro com o botão direito e, em seguida, clique em **executar como administrador**.
+Para executar o arquivo de programa como administrador, clique com o botão direito do mouse no arquivo e clique em **Executar como administrador**.
 
-# <a name="next-steps"></a>Passos Seguintes
+# <a name="next-steps"></a>Próximos passos
 
 - [Instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx)
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)

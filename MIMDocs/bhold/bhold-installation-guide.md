@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 05eb2afc0ddbf6104e27a5c24e121a55bd805292
-ms.sourcegitcommit: 4c4bc7aa42cd5984c838abdd302490355ddcb4ea
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68238908"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Guia de instalação do Microsoft BHOLD Suite SP1 (6,0)
@@ -99,7 +99,7 @@ O Windows pode ser configurado para recuperar certificados raiz da Microsoft por
 
 ![BHOLD de instalação do IIS](media/bhold-installation-guide/iis-install-bhold.png)
 
-Se você instalar o BHOLD Suite SP1 no Windows Server 2012 ou 2016, as páginas da Web do BHOLD não estarão disponíveis até que você modifique o arquivo applicationHost. ```C:\Windows\System32\inetsrv\config```config localizado em. Na seção, adicione ```preCondition="bitness64``` à entrada que começa ```<add name="SPNativeRequestModule"``` para que ela seja lida da seguinte maneira: ```<globalModules>```
+Se você instalar o BHOLD Suite SP1 no Windows Server 2012 ou 2016, as páginas da Web do BHOLD não estarão disponíveis até que você modifique o arquivo applicationHost. config localizado em ```C:\Windows\System32\inetsrv\config```. Na seção ```<globalModules>```, adicione ```preCondition="bitness64``` à entrada que começa ```<add name="SPNativeRequestModule"``` para que ele se leia da seguinte maneira:
 
 ```<add name="SPNativeRequestModule" image="C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\isapi\spnativerequestmodule.dll" preCondition="bitness64"/>```
 
@@ -108,10 +108,10 @@ Depois de editar e salvar o arquivo, execute o comando iisreset para redefinir o
 
 ## <a name="upgrading-bhold-suite"></a>Atualizando o BHOLD Suite
 
-Não é possível atualizar uma instalação existente do BHOLD Suite. Em vez disso, você deve desinstalar uma instalação existente do BHOLD Suite para poder atualizar os módulos BHOLD. Se você tiver um modelo de função BHOLD existente, poderá atualizar o banco de dados BHOLD e usá-lo quando instalar o módulo atualizado do BHOLD Core. Para obter mais informações, consulte substituindo o [BHOLD Suite pelo BHOLD Suite SP1](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx).
+Não é possível atualizar uma instalação existente do BHOLD Suite. Em vez disso, você deve desinstalar uma instalação existente do BHOLD Suite para poder atualizar os módulos BHOLD. Se você tiver um modelo de função BHOLD existente, poderá atualizar o banco de dados BHOLD e usá-lo quando instalar o módulo atualizado do BHOLD Core. Para obter mais informações, consulte [substituindo o BHOLD Suite pelo BHOLD Suite SP1](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx).
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
 - [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

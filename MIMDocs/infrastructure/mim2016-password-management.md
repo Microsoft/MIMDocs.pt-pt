@@ -10,11 +10,11 @@ ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 45b46ed10f7eda506fe1fc1af94c4be06a1a37b9
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380197"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516589"
 ---
 # <a name="microsoft-identity-manager-2016-password-management"></a>Gestão de Palavras-passe do Microsoft Identity Manager 2016
 
@@ -45,7 +45,7 @@ A DLL de extensão de palavra-passe em .NET é chamada sempre que uma chamada de
 
 | A gestão de palavras-passe é suportada por predefinição nos agentes de gestão para: | Se utilizar uma extensão de palavra-passe, a gestão de palavras-passe também é suportada nos agentes de gestão para: |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Active Directory                                                          | Ficheiros de texto de par atributo-valor                                                                    |
+| Serviços de Domínio do                                                          | Ficheiros de texto de par atributo-valor                                                                    |
 | Serviços LDS do Active Directory (ADLDS)                   | Ficheiros de texto delimitado                                                                               |
 | Servidor de Diretório IBM                                                      | Directory Services Markup Language (DSML)                                                          |
 | Lotus Notes                                                               | Extensible Connectivity                                                                            |
@@ -109,7 +109,7 @@ Para obter mais informações sobre como configurar a sincronização de palavra
 
 No seguinte diagrama, pode ver o processo de sincronização de um pedido de alteração de palavra-passe de um controlador de domínio do Active Directory para outras origens de dados ligadas:
 
-1.  O utilizador prime Ctrl+Alt+Delete para iniciar o pedido de alteração de palavra-passe. O pedido de alteração de palavra-passe, incluindo a nova palavra-passe, é enviado para o controlador de domínio mais próximo.
+1.  O usuário inicia a solicitação de alteração de senha pressionando Ctrl + Alt + Del. A solicitação de alteração de senha, incluindo a nova senha, é enviada para o controlador de domínio mais próximo.
 
 2.  O controlador de domínio regista o pedido de alteração de palavra-passe e notifica o filtro de notificação de alteração de palavra-passe (Pcnsflt.dll).
 
@@ -148,7 +148,7 @@ Idealmente, sempre que um utilizador alterar uma palavra-passe, a alteração se
 
 Algumas falhas são graves o suficiente para que deixe de ser possível concluir a operação com êxito por muitas vezes que a tente repetir. Nestes casos, é registado um evento de erro e o processo é parado. Os seguintes eventos não são repetidos:
 
-| Evento | Gravidade    | Descrição                                                                                                                                                            |
+| Evento | Gravidade    | Description                                                                                                                                                            |
 |-------|-------------|-----------|
 | 6919  | Informações | Uma operação de definição de sincronização de palavra-passe não foi realizada porque o carimbo de data/hora estava desatualizado.                                                                      |
 | 6921  | Error       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está ativada no agente de gestão de destino.                                |

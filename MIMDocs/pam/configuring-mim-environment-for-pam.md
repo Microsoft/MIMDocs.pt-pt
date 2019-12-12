@@ -12,11 +12,11 @@ ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: fd444f9c67f1daeaf33883a988f54a97e12e685c
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379520"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518578"
 ---
 # <a name="configure-the-mim-environment-for-privileged-access-management"></a>Configuração do ambiente de MIM para Privileged Access Management
 

@@ -1,6 +1,6 @@
 ---
-title: Instalação do BHOLD model generator | Documentos da Microsoft
-description: BHOLD modelo permite aos dados da estrutura de várias origens
+title: Instalação do gerador de modelos BHOLD | Microsoft Docs
+description: O modelo BHOLD permite estruturar dados de várias fontes
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -10,71 +10,71 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 3d2510d6ea604dd88e56436812ed8bc975bc5c2b
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358527"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516738"
 ---
-# <a name="bhold-model-generator-installation"></a>Instalação do BHOLD Model Generator
+# <a name="bhold-model-generator-installation"></a>Instalação do gerador de modelos BHOLD
 
-Ao utilizar o módulo do BHOLD Model Generator, é possível estruturar dados de origens autoritativos que contém informações organizacionais, juntamente com listas de controlo de acesso (ACLs) num modelo que pode ser utilizado na administração BHOLD e do utilizador.
+Usando o módulo gerador de modelos BHOLD, você pode estruturar dados de fontes autoritativas que contenham informações de usuário e organizacionais junto com ACLs (listas de controle de acesso) em um modelo que possa ser usado na administração de BHOLD.
 
-## <a name="bhold-model-generator-installation-requirements"></a>Requisitos de instalação do BHOLD Model Generator 
+## <a name="bhold-model-generator-installation-requirements"></a>Requisitos de instalação do gerador de modelos BHOLD 
 
-Antes de instalar o módulo do BHOLD Model Generator, tem de instalar o seguinte:
+Antes de instalar o módulo gerador de modelos do BHOLD, você deve instalar o seguinte:
 
-1. Módulo do BHOLD Core no servidor no qual planeia instalar o módulo do BHOLD Model Generator. Para obter informações sobre como instalar o módulo do BHOLD Core, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx).
+1. Módulo BHOLD Core no servidor no qual você planeja instalar o módulo gerador de modelos do BHOLD. Para obter informações sobre como instalar o módulo BHOLD Core, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx).
 
-2. O Microsoft OLE DB Provider para Microsoft Jet tem de ser instalado. Para obter mais informações, consulte [este artigo](http://support.microsoft.com/kb/271908).
+2. O Microsoft OLE DB Provider para Microsoft Jet deve estar instalado. Para obter mais informações, consulte [Este artigo](http://support.microsoft.com/kb/271908).
 
 > [!WARNING]
-> Não instale o gerador de modelos do BHOLD na sua rede de produção. Gerador de modelos do BHOLD destina-se para uso offline num ambiente de teste para criar um modelo normalizado de função que pode ser importado para o modelo de função de empresa. Executar o gerador de modelo do BHOLD na sua rede de produção pode resultar na perda de seu modelo de função existente.
+> Não instale o gerador de modelo BHOLD em sua rede de produção. O gerador de modelo BHOLD destina-se a ser usado offline em um ambiente de preparo para criar um modelo de função normalizado que você pode importar para o modelo de função corporativa. Executar o gerador de modelo BHOLD em sua rede de produção pode resultar em perda de seu modelo de função existente.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Antes de instalar o módulo do BHOLD Model Generator, precisa estar preparado para fornecer as informações que o Assistente de configuração do BHOLD Model Generator necessita para concluir a instalação. A seguinte planilha ajudará a gravar essa informação para que estará pronto para fornecer quando for necessário. Também precisará certificar-se
+Antes de instalar o módulo gerador de modelos do BHOLD, você precisa estar preparado para fornecer as informações que o assistente de configuração do gerador de modelos do BHOLD exige para concluir a instalação. A planilha a seguir o ajudará a registrar essas informações para que você fique pronto para fornecê-las quando necessário. Você também precisará garantir
 
-Motor de 2010 redistribuível de base de dados do Microsoft Access
+Microsoft Access Mecanismo de Banco de Dados 2010 redistribuível
 
- 
+ 
 
-*De \<*<http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems>*\>*
+*De \<* <http://daipvstf:8080/tfs/ActiveDirectory/IAM/_workitems> *\>*
 
- 
+ 
 
 <https://www.microsoft.com/en-us/download/confirmation.aspx?id=13255>
 
-**Definições da conta**
+**Configurações da conta**
 
 | **Item**                                    | **Descrição**                                                                                                                                                                                                           | **Valor**                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Utilize um fornecedor de segurança num computador/domínio** | Quando selecionada, especifica que a segurança de serviços de domínio do Active Directory irá controlar o acesso a BHOLD Core.                                                                                                                | Selecione a caixa de verificação. **Importante:** a instalação falhará se esta caixa de verificação não estiver selecionada.                                                                                                                                                                                                                   |
-| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que criou durante a instalação do BHOLD Core. Para obter mais informações, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome apenas se estiver incorreto. **Importante:** especifique o nome de domínio com o nome NetBIOS do (curto), não o nome de domínio completamente qualificado (FQDN). Por exemplo, se o FQDN do domínio fabrikam.com, especifique o nome de domínio como a FABRIKAM. |
-| **User**                                    | Especifica o nome de início de sessão da conta de utilizador de serviço do BHOLD Core.                                                                                                                                                          | Escreva o nome da conta de utilizador aqui:                                                                                                                                                                                                                                                                                    |
-| **Palavra-passe**                                | Especifica a palavra-passe da conta de utilizador de serviço.                                                                                                                                                                       | Escrever a palavra-passe aqui: **importante:** Certifique-se de que tenha esta palavra-passe num local seguro oculto.                                                                                                                                                                                                                  |
+| **Usar o provedor de segurança em domínio/computador** | Quando selecionado, especifica que Active Directory Domain Services segurança controlará o acesso ao BHOLD Core.                                                                                                                | Selecione a caixa de verificação. **Importante:** A instalação falhará se essa caixa de seleção não estiver marcada.                                                                                                                                                                                                                   |
+| **Domínio**                                  | Especifica o domínio que contém a conta de serviço que você criou ao instalar o BHOLD Core. Para obter mais informações, consulte [instalação do BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Altere o nome somente se ele estiver incorreto. **Importante:** Especifique o nome de domínio usando o nome NetBIOS (curto), não o FQDN (nome de domínio totalmente qualificado). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
+| **User**                                    | Especifica o nome de logon da conta de usuário do serviço do BHOLD Core.                                                                                                                                                          | Escreva o nome da conta de usuário aqui:                                                                                                                                                                                                                                                                                    |
+| **Palavra-passe**                                | Especifica a senha da conta de usuário do serviço.                                                                                                                                                                       | Escreva a senha aqui: **importante:** Lembre-se de manter essa senha em um local oculto e seguro.                                                                                                                                                                                                                  |
 
-**Definições de cópia de segurança da base de dados**
+**Configurações do banco de dados de backup**
 
-| Item                                        | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                  | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Item                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                  | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Utilizar a segurança integrada**                 | Especifica que a autenticação do Windows é usada para acessar o banco de dados.                                                                                                                                                                                                                                                                                                                                                        | Selecione a caixa de verificação se a autenticação do Windows é utilizada para ligar ao SQL Server. Desmarque a caixa de verificação se for utilizada a autenticação do SQL Server. A base de dados deve ter sido criada antes de executar o BHOLD Core configuração se autenticação do SQL Server é utilizada. **Nota:** se é utilizada a autenticação do Windows, deve fazer logon com uma conta que tenha a função de servidor sysadmin no servidor de base de dados. **Importante:** utilize autenticação do SQL Server apenas em ambientes de teste. A Microsoft recomenda utilizar a autenticação do Windows em implementações de produção. |
-| **Utilizador de base de dados** e **palavra-passe de base de dados** | Especifica o nome de utilizador e palavra-passe de um utilizador com a função de servidor sysadmin no servidor de base de dados. Estes valores são fornecidos apenas quando é utilizada a autenticação do SQL Server.                                                                                                                                                                                                                                                  | Escrever o nome de utilizador do SQL Server: escrever a senha de usuário do SQL Server: </br></br> **Importante:** Certifique-se de que tenha esta palavra-passe num local seguro oculto.                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Servidor de base de dados** e **nome de base de dados**   | Especifica o nome NetBIOS do servidor de base de dados e o nome da base de dados cópia de segurança que criará o programa de configuração do BHOLD Model Generator. Se não estiver a utilizar a instância de servidor de base de dados predefinida, especifique a instância de servidor de base de dados no formato  *\<server\>*\\*\<instância\>* .  A Microsoft recomenda que atribua um nome da base de dados de cópia de segurança usando o nome da base de dados do BHOLD Core seguido \_cópia de segurança, por exemplo B1_BACKUP. | Escrita do servidor (ou servidor e instância) nome aqui: </br> Escreva aqui o nome da base de dados:
+| **Usar segurança integrada**                 | Especifica que a autenticação do Windows é usada para acessar o banco de dados.                                                                                                                                                                                                                                                                                                                                                        | Marque a caixa de seleção se a autenticação do Windows for usada para se conectar ao SQL Server. Desmarque a caixa de seleção se SQL Server autenticação for usada. O banco de dados deve ter sido criado antes da execução da instalação do BHOLD Core se SQL Server autenticação for usada. **Observação:** Se a autenticação do Windows for usada, você deverá estar conectado com uma conta que tenha a função de servidor sysadmin no servidor de banco de dados. **Importante:** Use SQL Server autenticação somente em ambientes de teste. A Microsoft recomenda enfaticamente o uso da autenticação do Windows em implantações de produção. |
+| **Usuário do banco de dados** e **senha do banco de dados** | Especifica o nome de usuário e a senha de um usuário com a função de servidor sysadmin no servidor de banco de dados. Esses valores são fornecidos somente quando SQL Server autenticação é usada.                                                                                                                                                                                                                                                  | Escreva o nome de usuário do SQL Server aqui: escreva a senha do usuário do SQL Server aqui: </br></br> **Importante:** Certifique-se de manter essa senha em um local oculto e seguro.                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Servidor de banco de dados** e **nome do banco de dados**   | Especifica o nome NetBIOS do servidor de banco de dados e o nome do banco de dados de backup que será criado pela instalação do gerador de modelos BHOLD. Se você não estiver usando a instância padrão do servidor de banco de dados, especifique a instância do servidor de banco de dados no formulário *\<server\>* \\*instância\<\>* .  A Microsoft recomenda que você nomeie o banco de dados de backup usando o nome do banco de dados do BHOLD Core seguido por \_BACKUP, por exemplo B1_BACKUP. | Escreva o nome do servidor (ou servidor e instância) aqui: </br> Escreva o nome do banco de dados aqui:
 
-## <a name="bhold-model-generator-setup"></a>Instalação do BHOLD Model Generator
+## <a name="bhold-model-generator-setup"></a>Configuração do gerador de modelos BHOLD
 
-Para instalar o módulo do BHOLD Model Generator, inicie sessão como membro do grupo Admins do domínio, transfira o ficheiro seguinte e executá-lo como administrador no servidor que pretende instalar o módulo do BHOLD Core num:
+Para instalar o módulo gerador de modelos do BHOLD, faça logon como um membro do grupo Admins. do domínio, baixe o seguinte arquivo e execute-o como administrador no servidor em que você pretende instalar o módulo BHOLD Core:
 
-- BholdModelGenerator  *\<versão\>*\_Release.msi
+- BholdModelGenerator *\<versão\>* \_Release. msi
 
-Substitua *\<versão\>* com o número de versão da versão do BHOLD Model Generator que está a instalar.
+Substitua *\<versão\>* pelo número de versão da versão do gerador do modelo BHOLD que você está instalando.
 
-Para executar o ficheiro de programa como administrador, o ficheiro com o botão direito e, em seguida, clique em **executar como administrador**.
+Para executar o arquivo de programa como administrador, clique com o botão direito do mouse no arquivo e clique em **Executar como administrador**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
-- Para obter informações sobre como criar ficheiros de entrada [referência técnica do Microsoft BHOLD Suite](https://technet.microsoft.com/library/jj134935(v=ws.10).aspx)
+- Para obter informações sobre como criar arquivos de entrada, [referência técnica do Microsoft BHOLD Suite](https://technet.microsoft.com/library/jj134935(v=ws.10).aspx)
 - [Guia de instalação do BHOLD](bhold-installation-guide.md)
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
 - [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

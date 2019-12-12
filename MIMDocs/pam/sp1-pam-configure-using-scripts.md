@@ -12,11 +12,11 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 28e8f5c28cd38ad820c6a1f12385dffbd0641ddd
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379538"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518322"
 ---
 # <a name="configure-pam-using-scripts"></a>Configurar a PAM através de scripts
 
@@ -41,7 +41,7 @@ Passos:
 
 ## <a name="deployment-worksheet"></a>Folha de cálculo de implementação
 
-Antes de continuar a atualizar o Pamdeploymentconfig e coloque a cópia atualizada em todas as máquinas.
+Antes de continuar, atualize o PAMDeploymentConfig. xml e coloque a cópia atualizada em todos os computadores.
 
 ### <a name="setup"></a>Setup
 

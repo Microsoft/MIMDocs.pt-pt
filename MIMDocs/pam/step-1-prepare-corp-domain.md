@@ -12,11 +12,11 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: dda6a05337e9a9778135fc7d833a38369540b3e0
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379995"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518189"
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>Passo 1 – preparar o anfitrião e o domínio CORP
 
@@ -35,7 +35,7 @@ Esta secção descreve como configurar um controlador de domínio para um domín
 
 Instale o Windows Server 2012 R2 ou a Pré-visualização Técnica 4 do Windows Server 2016 ou posterior, numa máquina virtual, para criar um computador designado *CORPDC*.
 
-1. Escolha **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
+1. Escolha  **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)** .
 
 2. Reveja e aceite os termos do licenciamento.
 
@@ -66,13 +66,13 @@ Nesta secção, irá adicionar os Serviços de Domínio do Active Directory (AD 
 
    Esta ação irá solicitar uma Palavra-passe de Administrador de Modo Seguro a utilizar. Tenha em atenção que as definições de criptografia e a delegação de DNS serão apresentadas. Estas são normais.
 
-3. Depois de a criação da floresta estar concluída, termine sessão. O servidor irá reiniciar automaticamente.
+3. Após a conclusão da criação da floresta, saia. O servidor será reiniciado automaticamente.
 
 4. Depois de reiniciar o servidor, inicie sessão no CORPDC como um administrador do domínio. É, geralmente, o Administrador\\CONTOSO do utilizador, que terá a palavra-passe que foi criada quando instalou o Windows no CORPDC.
 
 ### <a name="create-a-group"></a>Criar um grupo
 
-Crie um grupo para fins de auditoria do Active Directory, se o grupo ainda não existir. O nome do grupo tem de ser o nome de domínio NetBIOS seguido de três cifrões, por exemplo *CONTOSO$$$*.
+Crie um grupo para fins de auditoria do Active Directory, se o grupo ainda não existir. O nome do grupo tem de ser o nome de domínio NetBIOS seguido de três cifrões, por exemplo *CONTOSO$$$* .
 
 Para cada domínio, inicie sessão no controlador de domínio como um administrador de domínio e execute os seguintes passos:
 
@@ -131,9 +131,9 @@ Para cada domínio, inicie sessão no controlador de domínio como um administra
 
 4. Na janela Editor de Gestão de Políticas de Grupo, na árvore da Política de Controladores de Domínio Predefinida, navegue para **Configuração do Computador** > **Políticas** > **Definições do Windows** > **Definições de Segurança** > **Políticas Locais** > **Política de Auditoria**.
 
-5. No painel de detalhes, clique com o botão direito do rato em **Gestão de contas de auditoria** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e em **OK**.
+5. No painel de detalhes, clique com o botão direito do rato em **Auditar a gestão de contas** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e em **OK**.
 
-6. No painel de detalhes, clique com o botão direito do rato em **Auditar acesso ao serviço de diretórios** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e **OK**.
+6. No painel de detalhes, clique com o botão direito do rato em **Auditar acesso ao serviço de diretórios** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e em **OK**.
 
 7. Feche a janela Editor de Gestão de Políticas de Grupo e a janela Gestão de Políticas de Grupo.
 

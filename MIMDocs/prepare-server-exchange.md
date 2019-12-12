@@ -12,10 +12,10 @@ ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 2994711949122aac7a545d3849db6c66f8cb09ed
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73329311"
 ---
 # <a name="set-up-an-identity-management-server-exchange"></a>Configurar um servidor de gestão de identidades: Exchange

@@ -12,10 +12,10 @@ ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 1627bae6aecdfc3d57261485de04a78feb264013
-ms.sourcegitcommit: b09a8c93983d9d92ca4871054650b994e9996ecf
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73329329"
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM

@@ -12,30 +12,30 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 422c4c973d76f5b91fb2463e237ead1984153484
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379435"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518100"
 ---
 # <a name="step-4-configuring-sharepoint"></a>Passo 4: Configurar o SharePoint
 
 > [!div class="step-by-step"]
 > [« Passo 3](sp1-step3-installing-configuring-sql.md)
-> [Passo 5 »](sp1-step5-configuring-pam.md)
+> [Passo 5»](sp1-step5-configuring-pam.md)
 
 O SharePoint tem de ser o SharePoint Foundation 2013 com o SP1.
 
 Para domínios associados a servidores, inicie sessão como MIMAdmin
 
-1. Execute o PowerShell como Administrador
+1. Execute o PowerShell como administrador
 2.  .\PAMDeployment.ps1
 3.  Selecione a Opção 4 do Menu (Configuração do SharePoint)
 
 
 Para servidores do grupo de trabalho
 
-1. Execute o PowerShell como Administrador
+1. Execute o PowerShell como administrador
 2.  cd $env:SYSTEMDRIVE\PAM
 3.  .\PAMDeployment.ps1
 4. Selecione a Opção 4 do Menu (Configuração do SharePoint)
@@ -53,4 +53,4 @@ Para obter os detalhes, veja a secção **Configurar SharePoint** no [Passo 3 �
 
 > [!div class="step-by-step"]
 > [« Passo 3](sp1-step3-installing-configuring-sql.md)
-> [Passo 5 »](sp1-step5-configuring-pam.md)
+> [Passo 5»](sp1-step5-configuring-pam.md)

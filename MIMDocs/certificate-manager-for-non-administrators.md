@@ -12,11 +12,11 @@ ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 4d66c566912f186bce175dde9f16346942afd72e
-ms.sourcegitcommit: 7de35aaca3a21192e4696fdfd57d4dac2a7b9f90
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358224"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64516657"
 ---
 # <a name="enroll-smart-cards-for-non-administrators"></a>Inscrição de smart cards para não administradores
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
@@ -49,7 +49,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     4.  Edite o ficheiro denominado AppxManifest.xml
 
-    5.  No elemento &lt;Identity&gt;, modifique o valor do atributo Publisher para o assunto do seu certificado de assinatura, por exemplo, “CN=ABCD”
+    5.  No elemento &lt;Identity&gt;, modifique o valor do atributo Publisher para o assunto do seu certificado de autenticação, por exemplo, "CN = ABCD"
 
         Neste campo, o assunto deve ser o mesmo que o assunto do certificado de assinatura que estiver a utilizar para assinar a aplicação.
 
@@ -75,7 +75,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     4.  Quando as definições gerais do modelo de perfil forem apresentadas, desloque-se para baixo e, em **Configuração do Smart Card**, clique em **Alterar Definições**.
 
-    5.  Em **Valor inicial da chave admin (hex)**, introduza a chave de administrador predefinida: “010203040506070801020304050607080102030405060708”
+    5.  Em **Valor inicial da chave admin (hex)** , introduza a chave de administrador predefinida: “010203040506070801020304050607080102030405060708”
 
     6.  Desloque-se para baixo e clique em **OK**.
 

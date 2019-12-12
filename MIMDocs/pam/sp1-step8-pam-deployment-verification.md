@@ -12,11 +12,11 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: d6b0327b39a76799b2943565dd0c3e00f55f745f
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50379961"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518122"
 ---
 # <a name="step-8-pam-deployment-verification"></a>Passo 8: Verificação de implementação da PAM
 
@@ -33,7 +33,7 @@ Para utilizar a Verificação de Implementação, modifique a secção PAMDeploy
 O nome do computador cliente tem de ser atualizado na etiqueta <PAMValidationClient/> do PAMDeploymentConfig.xml. Os restantes dados no nó <PAMValidation/> terão de ser editados apenas se estiverem em conflito com os utilizadores/grupos existentes, dado que esta validação tentará criá-los.
 Utilize os seguintes passos para realizar a validação:
 
-Passo 1:
+Passo 1:
 
 1. Inicie sessão no CORPDC como um Administrador de Domínio do CORP
 2. Execute o PowerShell como Administrador
@@ -64,7 +64,7 @@ Passo 3:
 
 Neste passo, ser-lhe-á pedida a credencial de CORPAdmin. Depois de fornecida, adicionará os utilizadores necessários aos grupos “Utilizadores do Ambiente de Trabalho Remoto” e “Utilizadores de Gestão Remota”.
 No Cliente CORP, utilize o seguinte comando para abrir o PowerShell como o utilizador do PRIV que está a validar. </br></br>
-**Runas /u:<PRIV domain>\PRIV.pamRequestor powershell.exe**  </br></br>
+**Runas/u:<PRIV domain>\PRIV.pamRequestor PowerShell. exe**  </br></br>
 Na janela do PowerShell, escreva:
 
 1. cd $env:SYSTEMDRIVE\PAM

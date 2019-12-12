@@ -12,11 +12,11 @@ ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 0364b0d14d08ab3af32010675e0ba80d39404342
-ms.sourcegitcommit: 44a2293ff17c50381a59053303311d7db8b25249
+ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50380056"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "64518088"
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>Passo 2 - Preparar o primeiro controlador de domínio PRIV
 
@@ -36,13 +36,13 @@ Noutra máquina virtual nova sem nenhum software instalado, instale o Windows Se
 
 1. Selecione executar uma instalação personalizada (não uma atualização) do Windows Server. Na instalação, especifique **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64**; _não selecione_ **Data Center ou Server Core**.
 
-2. Reveja e aceite os termos de licenciamento.
+2. Reveja e aceite os termos do licenciamento.
 
-3. Uma vez que o disco estará vazio, selecione **Personalizar: instalar o Windows apenas** e utilize o espaço em disco não inicializado.
+3. Uma vez que o disco estará vazio, selecione **Personalizar: instalar apenas o Windows** e utilizar o espaço em disco não inicializado.
 
 4. Depois de instalar a versão do sistema operativo, inicie sessão neste novo computador como o novo administrador. Utilize o Painel de Controlo para definir o nome do computador como *PRIVDC*, dê-lhe um endereço IP estático na rede virtual e configure o servidor DNS para ser o controlador de domínio instalado no passo anterior. Esta ação exige reiniciar o servidor.
 
-5. Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias. Pode ser preciso reiniciar o servidor.
+5. Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias. Pode ser necessário reiniciar o servidor.
 
 ### <a name="add-roles"></a>Adicionar funções
 
@@ -260,7 +260,7 @@ Execute os passos seguintes no PRIVDC como administrador do domínio.
     - **Eliminar todos os Objetos Subordinados**
     - **Ler Todas as Propriedades**
     - **Escrever Todas as Propriedades**
-    - **Migrar histórico SID** clique em **próxima** , em seguida, **concluir**.
+    - **Migrar histórico SID** Clique em **Avançar** e em **concluir**.
 
 11. Mais uma vez, clique com o botão direito do rato no domínio **priv.contoso.local** e selecione **Delegar Controlo**.  
 12. No separador Utilizadores e Grupos Selecionados, clique em **Adicionar**.  
@@ -289,9 +289,9 @@ Se ainda não tiver um computador de estação de trabalho que irá ser associad
 
 ### <a name="install-windows-81-or-windows-10-enterprise"></a>Instalar o Windows 8.1 ou o Windows 10 Enterprise
 
-Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.1 Enterprise ou o Windows 10 Enterprise para tornar um computador *“PRIVWKSTN”*.
+Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.1 Enterprise ou o Windows 10 Enterprise para tornar um computador *“PRIVWKSTN”* .
 
-1. Utilize as Definições rápidas durante a instalação.
+1. Utilize as definições Express durante a instalação.
 
 2. Tenha em atenção que a instalação poderá não conseguir estabelecer ligação à Internet. Clique em **Criar uma conta local**. Especifique um nome de utilizador diferente; não utilize "Administrador" ou "Joana".
 

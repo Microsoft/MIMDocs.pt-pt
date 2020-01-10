@@ -10,16 +10,18 @@ ms.date: 07/06/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: 72dd1d3cf34e28567fa672b747a04347b150797e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 6c3a2d87037a818a9a8784b0d4a7b86227fcaef4
+ms.sourcegitcommit: 28a20aaa1f08b428cc1ae0eae43ae47de4d9d22a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67690788"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75684062"
 ---
 # <a name="using-azure-mfa-for-activation"></a>Utilizar o MFA do Azure para ativação
 > [!IMPORTANT]
-> Devido ao anúncio de substituição do kit de desenvolvimento de software da autenticação multifator do Azure. O SDK do Azure MFA terá suporte para clientes existentes até a data de desativação de 14 de novembro de 2018. Novos clientes e clientes atuais não poderão baixar mais o SDK por meio do portal clássico do Azure. Para baixar, você precisará entrar em contato com o suporte ao cliente do Azure para receber o pacote de credenciais do serviço MFA gerado. <br> A equipe de desenvolvimento da Microsoft está trabalhando em alterações na MFA integrando-se ao SDK do servidor MFA.  Isso será incluído em um hotfix futuro, consulte o [histórico de versões](../reference/version-history.md) para obter comunicados. 
+> Devido ao anúncio de substituição do kit de desenvolvimento de software da autenticação multifator do Azure, o SDK do Azure MFA terá suporte para clientes existentes até a data de desativação de 14 de novembro de 2018. Novos clientes e clientes atuais não poderão baixar mais o SDK do Azure MFA por meio do portal clássico do Azure. Para obter informações sobre como usar o servidor MFA do Azure, consulte [usando o servidor do Azure MFA no Pam ou SSPR](../working-with-mfaserver-for-mim.md).
+
+
 
 
 Quando configurar uma função de PAM, pode escolher como autorizar os utilizadores que pedem para ativar a função. As opções que a atividade de autorização de PAM implementa são:
@@ -54,7 +56,11 @@ Nesta seção, você configura seu provedor de MFA do Azure no Microsoft Azure A
 
 ## <a name="downloading-the-azure-mfa-service-credentials"></a>Transferir as Credenciais do Serviço MFA do Azure
 
-Em seguida, irá gerar um ficheiro que inclui o material de autenticação do PAM para contactar o MFA do Azure.
+> [!IMPORTANT]
+> O SDK do Azure MFA não está mais disponível. Para obter informações sobre como usar o servidor MFA do Azure, consulte [usando o servidor Azure MFA no Pam ou SSPR](../working-with-mfaserver-for-mim.md) em vez disso.
+
+
+Anteriormente, você geraria um arquivo que inclui o material de autenticação para o PAM entrar em contato com o Azure MFA.
 
 1. Abra um browser e aceda ao [Portal clássico do Azure](https://manage.windowsazure.com) como administrador de subscrição do Azure.
 

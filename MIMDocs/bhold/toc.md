@@ -17,9 +17,9 @@
 ### [Configuração do servidor: SQL](../prepare-server-sql2016.md)
 ### [Configuração do servidor: SharePoint](../prepare-server-sharepoint.md)
 ### [Configuração do servidor: Exchange](../prepare-server-exchange.md)
-### [Instalar o MIM: Sincronização](../install-mim-sync.md)
+### [Instalar o MIM: sincronização](../install-mim-sync.md)
 ### [Instalar o MIM: Serviço e Portal](../install-mim-service-portal.md)
-### [Instalar o MIM: Sincronizar bases de dados](../install-mim-sync-ad-service.md)
+### [Instalar o MIM: sincronizar bases de dados](../install-mim-sync-ad-service.md)
 ## [Atualização do Forefront Identity Manager 2010 R2](../microsoft-identity-manager-2016-upgrade-from-fim-2010-R2.md)
 ## [Instalar o gestor de certificados do MIM](../mim-cm-deploy.md)
 ## [Tópicos de instalação do BHOLD](bhold-installation-guide.md)
@@ -82,7 +82,6 @@
 ### [Guia de Desempenho da Exportação](https://technet.microsoft.com/library/hh322883)
 ## Relatórios
 ### [Relatórios Personalizados e Extensibilidade](https://technet.microsoft.com/library/jj133861)
-## [Software do Microsoft Identity: versões de compilação públicas](https://blogs.technet.microsoft.com/iamsupport/idmbuildversions/)
 # [Referência](../reference/microsoft-identity-manager-2016-developer-reference.md)
 ## Referência para Programadores
 ### [Referências para programadores do MIM 2016](../reference/microsoft-identity-manager-2016-developer-reference.md)

@@ -9,12 +9,12 @@ ms.date: 2/28/2018
 ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: fcf9ec8387761b6f154a95d6100ef54a12d4caf8
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: dd023e2152693f56dd9a86dc66d9c1a8ef4ec64e
+ms.sourcegitcommit: 1ca298d61f6020623f1936f86346b47ec5105d44
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518948"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76256585"
 ---
 # <a name="deprecated-features"></a>Recursos preteridos
 
@@ -27,7 +27,7 @@ Este artigo descreve os recursos preteridos do Microsoft Identity Manager 2016 S
 
 ## <a name="bhold"></a>BHOLD 
 
-A Microsoft não recomenda que os clientes iniciem novas implantações dos componentes do Microsoft BHOLD Suite. As implantações existentes do BHOLD continuarão a ter suporte. O Azure AD agora fornece [revisões de acesso](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) que substituem alguns dos recursos de campanha de atestado BHOLD.
+A Microsoft não recomenda que os clientes iniciem novas implantações dos componentes do Microsoft BHOLD Suite. As implantações existentes do BHOLD continuarão a ter suporte. O Azure AD agora fornece [revisões de acesso](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) que substituem alguns dos recursos de campanha de atestado BHOLD.
 
 ## <a name="certificate-management"></a>Gestão de Certificados 
 
@@ -47,7 +47,7 @@ A Microsoft não recomenda que os clientes iniciem novas implantações dos comp
 | **Categoria**                | **Recurso preterido**              | **Substituição e comentário**           |
 |-----------------------------|-------------------------------------|----------------------------------------------|
 | Configuração programática | Interface de configuração do serviço Web | A capacidade de configurar o serviço de sincronização do FIM por meio do serviço FIM será removida em uma próxima versão.                                                          |
-| Agentes de gerenciamento           | MAs interno                        | O MAs a seguir foram removidos no MIM 2016: </br> 1. * * MA para gerenciamento de certificados do FIM </br>2. * * MA para Lotus Notes</br> 3. * * MA para SAP R/3 </br> As notas e o Lotus Notes e o SAP R/3 MAs foram substituídos por novas versões. Para obter mais informações, consulte [histórico de lançamento de versão mais recente do conector & baixar](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-connector-version-history)                                                                                                                                                                                                                                              |
+| Agentes de gerenciamento           | MAs interno                        | O MAs a seguir foram removidos no MIM 2016: </br> 1. * * MA para gerenciamento de certificados do FIM </br>2. * * MA para Lotus Notes</br> 3. * * MA para SAP R/3 </br> As notas e o Lotus Notes e o SAP R/3 MAs foram substituídos por novas versões. Para obter mais informações, consulte [histórico de lançamento de versão mais recente do conector & baixar](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-version-history)                                                                                                                                                                                                                                              |
 | Agentes de gerenciamento           | ECMA1                               | A estrutura de extensibilidade do ECMA1/XMA foi substituída pelo ECMA 2,0. É necessário atualizar os agentes de gerenciamento de ECMA1 existentes com conectores ECMA 2.0.                                                                                                                                          |
 | Agentes de gerenciamento           | Executando conectores fora do processo      | Esse recurso não será substituído. O serviço de sincronização sempre chamará o conector no mesmo processo. É responsabilidade do conector iniciar e gerenciar o outro processo. |
 | Agentes de gerenciamento           | Configurar nome de exibição da partição    | Esse recurso não será substituído. Essa opção foi usada apenas para fornecer um nome alternativo para uma partição nas interfaces WMI.                                                                                                                                                                       |

@@ -9,12 +9,12 @@ manager: mtillman
 ms.date: 09/04/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 7fb111520f94541672fc56d0fd2ee95bfcd3a49e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 9ce531fb3f6f9c831ecdb716f006f947611871e6
+ms.sourcegitcommit: 1ca298d61f6020623f1936f86346b47ec5105d44
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67690751"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76256602"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>Usar um provedor de autenticação multifator personalizado por meio de uma API durante a ativação da função do PAM ou em SSPR
 
@@ -22,7 +22,7 @@ Os clientes do Azure AD Premium ou do Azure MFA podem integrar o Azure MFA em do
 
 Os clientes do MIM têm duas opções adicionais:
 
- - Use um provedor de entrega de senha única personalizado, que é aplicável somente no cenário do MIM SSPR e documentado em guia para [Configurar a redefinição de senha de autoatendimento com a entrada do SMS de OTP](https://docs.microsoft.com/en-us/previous-versions/mim/hh824692(v=ws.10))
+ - Use um provedor de entrega de senha única personalizado, que é aplicável somente no cenário do MIM SSPR e documentado em guia para [Configurar a redefinição de senha de autoatendimento com a entrada do SMS de OTP](https://docs.microsoft.com/previous-versions/mim/hh824692(v=ws.10))
  - Use um provedor de telefonia de autenticação multifator personalizado. Isso é aplicável nos cenários do MIM SSPR e do PAM, descritos neste artigo
 
 Este artigo descreve como usar o MIM com um provedor de autenticação multifator personalizado, por meio de uma API e um SDK de integração desenvolvido pelo cliente.  
@@ -32,7 +32,7 @@ Este artigo descreve como usar o MIM com um provedor de autenticação multifato
 Para usar uma API personalizada do provedor de autenticação multifator com MIM, você precisa:
 
 - Números de telefone para todos os utilizadores candidatos
-- Hotfix do MIM [4.5.202.0](https://www.microsoft.com/download/details.aspx?id=57278) ou posterior-consulte o [histórico de versões](reference/version-history.md) para anúncios
+- Hotfix do MIM 4.5.202.0 ou posterior-consulte o [histórico de versões](reference/version-history.md) para anúncios
 - Serviço do MIM configurado para SSPR ou PAM
 
 ## <a name="approach-using-custom-multi-factor-authentication-code"></a>Abordagem usando o código de autenticação multifator personalizado
@@ -156,6 +156,6 @@ Depois que o serviço for reiniciado, use SSPR e/ou PAM para validar a funcional
 
 ## <a name="next-steps"></a>Próximos Passos
 
-- [Introdução ao Servidor Multi-Factor Authentication do Azure](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy)
+- [Introdução ao Servidor Multi-Factor Authentication do Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)
 - [O que é a autenticação multifator do Azure](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
 - [Histórico de lançamento de versão do MIM](./reference/version-history.md)

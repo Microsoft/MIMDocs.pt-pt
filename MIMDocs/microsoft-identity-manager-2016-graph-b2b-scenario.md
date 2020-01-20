@@ -9,12 +9,12 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 139c58510117ad422529a4ff0facd23040023713
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: ba70cd299f2ebec31555bb40b935a6b54779d198
+ms.sourcegitcommit: 1ca298d61f6020623f1936f86346b47ec5105d44
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64521133"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76256636"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>Colaboração entre empresas (B2B) do Azure AD com o Microsoft Identity Manager (MIM) 2016 SP1 com Aplicativo Azure proxy
 ============================================================================================================================
@@ -31,8 +31,6 @@ Algumas suposições feitas na configuração de B2B com o MIM e o Azure Proxy d
 -   Você já seguiu as instruções no artigo sobre como baixar e instalar o [conector do Graph](microsoft-identity-manager-2016-connector-graph.md).
 
 -   Você tem Azure AD Connect configurado para sincronizar usuários e grupos com o Azure AD.
-
--   Você tem Azure AD Connect configurado para sincronizar grupos do Office para controlar o aplicativo de [volta para o local AD DS](http://robsgroupsblog.com/blog/how-to-write-back-an-office-group-in-azure-active-directory-to-a-mail-enabled-security-group-in-an-on-premises-active-directory)
 
 -   Você já configurou conectores de proxy de aplicativo e grupos de conectores, se não puder visitar [aqui](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-enable#install-and-register-a-connector) para instalar e configurar
 
@@ -63,13 +61,13 @@ Por padrão, Azure AD Connect presumirá que usuários não administradores no A
 Portanto, os usuários trazidos para AD DS pelo MIM do Azure AD precisam ser armazenados de uma maneira que o Azure AD não tentará sincronizar os usuários de volta ao Azure AD.
 Uma maneira de fazer isso é criar uma nova unidade organizacional no AD DS e configurar Azure AD Connect para excluir essa unidade organizacional.  
 
-Mais informações podem ser encontradas em [Azure AD Connect sincronização: Configurar](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-configure-filtering)de filtragem. 
+Mais informações podem ser encontradas em [Azure ad Connect sincronização: configurar a filtragem](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-configure-filtering). 
  
 
 ## <a name="create-the-azure-ad-application"></a>Criar o aplicativo do Azure AD 
 
 
-Nota: Antes de criar no MIM, sincronize o agente de gerenciamento para o conector do Graph, verifique se você examinou o guia para implantar o [conector do Graph](microsoft-identity-manager-2016-connector-graph.md)e criou um aplicativo com uma ID do cliente e um segredo.
+Observação: antes de criar no MIM, sincronize o agente de gerenciamento para o conector do Graph, verifique se você examinou o guia para implantar o [conector do Graph](microsoft-identity-manager-2016-connector-graph.md)e criou um aplicativo com uma ID do cliente e um segredo.
 Certifique-se de que o aplicativo tenha sido autorizado para pelo menos uma destas permissões: `User.Read.All`, `User.ReadWrite.All`, `Directory.Read.All` ou `Directory.ReadWrite.All`. 
 
 ## <a name="create-the-new-management-agent"></a>Criar o novo agente de gerenciamento
@@ -183,7 +181,7 @@ Em seguida, preencha os seguintes detalhes
 
 Nome do atributo: **userPrincipalName**
 
-Tipo de atributo: **Cadeia de caracteres (indexável)**
+Tipo de atributo: **cadeia de caracteres (indexável)**
 
 Indexado = **verdadeiro**
 
@@ -199,7 +197,7 @@ As próximas etapas exigirão a adição da configuração mínima ao FIM do MA 
 
 Mais detalhes podem ser encontrados aqui para o <https://technet.microsoft.com/library/ff686263(v=ws.10).aspx> de configuração-como provisionar usuários para AD DS
 
-### <a name="synchronization-rule-import-guest-user-to-mv-to-synchronization-service-metaverse-from-azure-active-directorybr"></a>Regra de sincronização: Importar o usuário convidado para o MV para o metaverso do serviço de sincronização do Azure Active Directory<br>
+### <a name="synchronization-rule-import-guest-user-to-mv-to-synchronization-service-metaverse-from-azure-active-directorybr"></a>Regra de sincronização: importar o usuário convidado para o MV para o metaverso do serviço de sincronização do Azure Active Directory<br>
 
 Navegue até o portal do MIM, selecione regras de sincronização e clique em novo.  Crie uma regra de sincronização de entrada para o fluxo B2B por meio do conector do Graph.
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/ba39855f54268aa824cd8d484bae83cf.png)
@@ -226,7 +224,7 @@ Configure as seguintes regras de fluxo de atributo de entrada.  Certifique-se de
 |                       |                           | [mail⇒mail](javascript:void(0);)                                      |
 |                       |                           | [mobilePhone⇒mobilePhone](javascript:void(0);)                        |
 
-### <a name="synchronization-rule-create-guest-user-account-to-active-directory"></a>Regra de sincronização: Criar conta de usuário convidado para Active Directory 
+### <a name="synchronization-rule-create-guest-user-account-to-active-directory"></a>Regra de sincronização: criar conta de usuário convidado para Active Directory 
 
 Esta regra de sincronização cria o usuário no Active Directory.  Certifique-se de que o fluxo para `dn` deve posicionar o usuário na unidade organizacional que foi excluída do Azure AD Connect.  Além disso, atualize o fluxo para `unicodePwd` para atender à sua política de senha do AD-o usuário não precisará saber a senha.  Observe que o valor de `262656` para `userAccountControl` codifica os sinalizadores `SMARTCARD_REQUIRED` e `NORMAL_ACCOUNT`.
 
@@ -249,7 +247,7 @@ Regras de fluxo:
 | **Y**                 |                           | [RandomNum (0,999) + userPrincipalName⇒unicodePwd](javascript:void(0);)  |
 | **Y**                 |                           | [262656⇒userAccountControl](javascript:void(0);)                      |
 
-### <a name="optional-synchronization-rule-import-b2b-guest-user-objects-sid-to-allow-for-login-to-mim"></a>Regra de sincronização opcional: Importar SID de objetos de usuário convidado B2B para permitir o logon no MIM 
+### <a name="optional-synchronization-rule-import-b2b-guest-user-objects-sid-to-allow-for-login-to-mim"></a>Regra de sincronização opcional: importar SID de objetos de usuário convidado B2B para permitir o logon no MIM 
 
 Essa regra de sincronização de entrada leva o atributo SID do usuário de Active Directory de volta para o MIM, para que o usuário possa acessar o portal do MIM.  O portal do MIM requer que o usuário tenha os atributos `samAccountName`, `domain` e `objectSid` populados no banco de dados do serviço do MIM.
 
@@ -291,7 +289,7 @@ Em seguida, convidamos o usuário e, em seguida, executamos as regras de sincron
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/506f0a093c8b58cbb62cc4341b251564.png)
 
 
-## <a name="optional-application-proxy-for-b2b-guests-logging-into-mim-portal"></a>Opcional: Proxy de aplicativo para convidados B2B fazendo logon no portal do MIM
+## <a name="optional-application-proxy-for-b2b-guests-logging-into-mim-portal"></a>Opcional: proxy de aplicativo para convidados B2B fazendo logon no portal do MIM
 
 Agora que criamos as regras de sincronização no MIM. Na configuração de proxy de aplicativo, defina usar a entidade de segurança de nuvem para permitir o KCD no proxy de aplicativo.
 Além disso, o próximo adicionou o usuário manualmente para gerenciar usuários e grupos. As opções para não mostrar o usuário até que a criação tenha ocorrido no MIM para adicionar o convidado a um grupo do Office uma vez provisionado requer um pouco mais de configuração não abordada neste documento.
@@ -316,6 +314,6 @@ Depois de tudo configurado, tenha logon de usuário B2B e veja o aplicativo.
 
 [Referências de Funções para o FIM 2010](https://technet.microsoft.com/library/ff800820(v=ws.10).aspx)
 
-[Como fornecer acesso remoto seguro a aplicativos locais](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)
+[How to provide secure remote access to on-premises applications](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) (Como fornecer acesso remoto seguro a aplicações no local)
 
-[Baixar o conector de Microsoft Identity Manager para Microsoft Graph](http://go.microsoft.com/fwlink/?LinkId=717495)
+[Baixar o conector de Microsoft Identity Manager para Microsoft Graph](https://go.microsoft.com/fwlink/?LinkId=717495)

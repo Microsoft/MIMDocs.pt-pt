@@ -1,6 +1,6 @@
 ---
-title: Configurar um gMSAs para o Microsoft Identity Manager 2016 | Microsoft Docs
-description: Configurar contas de serviço gerenciado de grupo em um domínio para Microsoft Identity Manager 2016
+title: Criar um gMSAs para o Microsoft Identity Manager 2016  Microsoft Docs
+description: Configurar contas de serviço geridas pelo grupo num domínio para o Microsoft Identity Manager 2016
 keywords: ''
 author: EugeneSergeev
 ms.author: esergeev
@@ -11,49 +11,49 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: a74f4074d9a0cf8378fd4972b7f51f723bd2f1c6
-ms.sourcegitcommit: 80cdfd782cc6e2a4c4698decd54342f0e1460f5f
+ms.openlocfilehash: be5dc1e8615f56d3157a78891e80897e446eafab
+ms.sourcegitcommit: 32c7a46b2f8ed3f2f9ebc6f79a4ecb0019fe62e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756275"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77527927"
 ---
-# <a name="configure-a-domain-for-group-managed-service-accounts-gmsa-scenario"></a>Configurar um domínio para o cenário de grupo de contas de serviço gerenciado (gMSA)
+# <a name="configure-a-domain-for-group-managed-service-accounts-gmsa-scenario"></a>Configure um domínio para contas de serviço geridas pelo grupo (gMSA)
 
 > [!div class="step-by-step"]
-> [Windows Server»](prepare-server-ws2016.md)
+> [Servidor windows »](prepare-server-ws2016.md)
 
 > [!IMPORTANT]
-> Este artigo se aplica somente ao MIM 2016 SP2.
+> Este artigo aplica-se apenas ao MIM 2016 SP2.
 
-O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directory (AD). Já deve ter o AD instalado, e certifique-se de que tem um controlador de domínio no seu ambiente para um domínio que possa administrar.  Este artigo descreve como configurar contas de serviço gerenciado de grupo nesse domínio para uso pelo MIM.
+O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directory (AD). Já deve ter o AD instalado, e certifique-se de que tem um controlador de domínio no seu ambiente para um domínio que possa administrar.  Este artigo descreve como configurar contas de serviço geridas pelo grupo nesse domínio para utilização por MIM.
 
-## <a name="overview"></a>Overview
+## <a name="overview"></a>Descrição geral
 
-As contas de serviço gerenciado de grupo eliminam a necessidade de alterar periodicamente as senhas de conta de serviço. Com o lançamento do MIM 2016 SP2, os seguintes componentes do MIM podem ter contas gMSA configuradas para serem usadas durante o processo de instalação:
+As Contas de Serviço Geridas pelo Grupo eliminam a necessidade de alterar periodicamente as palavras-passe da conta de serviço. Com o lançamento do MIM 2016 SP2, os seguintes componentes MIM podem ter contas gMSA configuradas para serem utilizadas durante o processo de instalação:
 
--   Serviço de sincronização do MIM (FIMSynchronizationService)
--   Serviço do MIM (FIMService)
--   Pool de aplicativos do site de registro de senha do MIM
--   Pool de aplicativos do site da Web de redefinição de senha do MIM
--   Pool de aplicativos do site da API REST do PAM
--   Serviço de monitoramento do PAM (PamMonitoringService)
--   Serviço de componente do PAM (PrivilegeManagementComponentService)
+-   Serviço de Sincronização MIM (SERVIÇO DE Sincronização FIM)
+-   Serviço MIM (SERVIÇO FIM)
+-   Piscina de aplicação do site de registo de senha mim
+-   Mim Password Reset site application pool
+-   Pam REST API piscina de aplicação web site
+-   Serviço de Monitorização PAM (PamMonitoringService)
+-   Serviço de Componentes PAM (PrivilegeManagementComponentService)
 
-Os seguintes componentes do MIM não oferecem suporte à execução como contas do gMSA:
+Os seguintes componentes MIM não suportam o funcionamento como contas gMSA:
 
--   Portal do MIM. Isso ocorre porque o portal do MIM faz parte do ambiente do SharePoint. Em vez disso, você pode implantar o SharePoint no modo de farm e [Configurar a alteração automática de senha no SharePoint Server](https://docs.microsoft.com/sharepoint/administration/configure-automatic-password-change).
--   Todos os agentes de gerenciamento
--   Gerenciamento de certificados da Microsoft
+-   Portal MIM. Isto porque o PORTAL MIM faz parte do ambiente SharePoint. Em vez disso, pode implementar o SharePoint no modo de exploração e configurar a alteração automática da [palavra-passe no SharePoint Server](https://docs.microsoft.com/sharepoint/administration/configure-automatic-password-change).
+-   Todos os Agentes de Gestão
+-   Gestão de Certificados da Microsoft
 -   BHOLD
 
 
-Mais informações sobre gMSA podem ser encontradas nestes artigos:
--   [Visão geral de contas de serviço gerenciado de grupo](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
+Mais informações sobre o gMSA podem ser encontradas nestes artigos:
+-   [Visão geral das Contas de Serviço Geridas pelo Grupo](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
 
--   [New-ADServiceAccount](https://docs.microsoft.com/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps)
+-   [New-AdServiceAccount](https://docs.microsoft.com/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps)
 
--   [Criar a chave raiz KDS dos serviços de distribuição de chaves](https://technet.microsoft.com/library/jj128430(v=ws.11).aspx)
+-   [Criar a chave raiz dos serviços de distribuição kDS](https://technet.microsoft.com/library/jj128430(v=ws.11).aspx)
 
 ## <a name="create-user-accounts-and-groups"></a>Configurar contas de utilizador e grupos
 
@@ -62,16 +62,16 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
-> - Nome do controlador de domínio- **DC**
+> - Nome do controlador de domínio - **dc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor do serviço do MIM- **mimservice**
-> - Nome do servidor de sincronização do MIM- **mimsync**
-> - Nome do SQL Server- **SQL**
+> - Nome do Servidor de Serviço MIM - **mimservice**
+> - Nome do Servidor Mim Sync - **mimsync**
+> - Nome do Servidor SQL - **sql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 1. Inicie sessão no controlador de domínio como o administrador do domínio (*por exemplo, Contoso\Administrador*).
 
-2. Crie as seguintes contas de utilizador para os serviços MIM. Inicie o PowerShell e digite o seguinte script do PowerShell para criar novos usuários de domínio do AD (nem todas as contas são obrigatórias, embora o script seja fornecido apenas para fins informativos, é uma prática recomendada usar uma conta *MIMAdmin* dedicada para o mim e o processo de instalação do SharePoint).
+2. Crie as seguintes contas de utilizador para os serviços MIM. Iniciar o PowerShell e escrever o seguinte script PowerShell para criar novos utilizadores de domínio AD (nem todas as contas são obrigatórias, embora o script seja fornecido apenas para fins informísticos, é uma melhor prática usar uma conta *MIMAdmin* dedicada para o processo de instalação mime e sharePoint).
 
     ```PowerShell
     import-module activedirectory
@@ -109,79 +109,79 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 4.  Adicionar SPNs para ativar a autenticação Kerberos nas contas de serviço
 
     ```PowerShell
-    Set-ADServiceAccount -Identity svcMIMAppPool -ServicePrincipalNames @{Add="http/mim.contoso.com"}
+    setspn -S http/mim.contoso.com contoso\svcMIMAppPool
     ```
 
-5.  Certifique-se de registrar os seguintes registros de ' A ' DNS para a resolução de nomes apropriada (supondo que o serviço MIM, o portal do MIM, a redefinição de senha e os sites de registro de senha serão hospedados no mesmo computador)
+5.  Certifique-se de que regista os seguintes registos DNS 'A' para resolução de nomes adequados (assumindo que o Serviço MIM, o Portal MIM, o Reset de Passwords e os web sites de registo de passwords serão hospedados na mesma máquina)
 
-    - mim.contoso.com-apontar para o serviço do MIM e o endereço IP físico do servidor do portal
-    - passwordreset.contoso.com-apontar para o serviço do MIM e o endereço IP físico do servidor do portal
-    - passwordregistration.contoso.com-apontar para o serviço do MIM e o endereço IP físico do servidor do portal
+    - mim.contoso.com - apontar para o endereço IP físico do serviço MIM e do servidor portal
+    - passwordreset.contoso.com - apontar para o endereço IP físico do serviço MIM e do servidor portal
+    - passwordregistration.contoso.com - apontar para o endereço IP físico do serviço MIM e do servidor portal
 
-## <a name="create-key-distribution-service-root-key"></a>Criar chave raiz do serviço de distribuição de chaves
+## <a name="create-key-distribution-service-root-key"></a>Criar chave raiz de serviço de distribuição chave
 
-Verifique se você está conectado ao controlador de domínio como administrador para preparar o serviço de distribuição de chave de grupo.
+Certifique-se de que está inscrito no seu controlador de domínio como administrador para preparar o serviço de distribuição de chaves do grupo.
 
-Se já houver uma chave raiz para o domínio (use **Get-KdsRootKey** para verificar), continue na próxima seção.
+Se já existe uma chave-raiz para o domínio (use **Get-KdsRootKey** para verificar), então continue para a secção seguinte.
 
-6.  Crie a chave raiz do KDS (serviços de distribuição de chaves) (somente uma vez por domínio), se necessário. A chave raiz é usada pelo serviço KDS em controladores de domínio (juntamente com outras informações) para gerar senhas. Como administrador de domínio, digite o seguinte comando do PowerShell:
+6.  Crie a chave de raiz dos Serviços de Distribuição de Chaves (KDS) (apenas uma vez por domínio) se necessário. A Chave Raiz é utilizada pelo serviço KDS em controladores de domínio (juntamente com outras informações) para gerar palavras-passe. Como administrador de domínio, digite o seguinte comando PowerShell:
 
     ```PowerShell
     Add-KDSRootKey –EffectiveImmediately
     ```
-    *– O EffectiveImmediately* pode exigir um atraso de até \~10 horas, pois será necessário replicar para todos os controladores de domínio. Esse atraso foi de aproximadamente 1 hora para dois controladores de domínio.
+    *–EffectiveImmediately* pode exigir um atraso de até \~10 horas, uma vez que terá de se replicar a todos os controladores de domínio. Este atraso foi de aproximadamente 1 hora para dois controladores de domínio.
 
     ![](media/7fbdf01a847ea0e330feeaf062e30668.png)
 
     >[!NOTE]
-    >No laboratório ou no ambiente de teste, você pode evitar o atraso de replicação de 10 horas executando o seguinte comando em vez disso:
+    >No ambiente lab ou teste pode evitar 10 horas de atraso de replicação executando o seguinte comando em vez disso:
     ><br/>
-    >Add-KDSRootKey-efetivo (Get-Date). AddHours (-10))
+    >Add-KDsrootkey -effectivetime ((data-tacada). AddHours (-10))
 
-## <a name="create-mim-synchronization-service-account-group-and-service-principal"></a>Criar conta de serviço de sincronização do MIM, grupo e entidade de serviço
+## <a name="create-mim-synchronization-service-account-group-and-service-principal"></a>Criar conta de Serviço de Sincronização MIM, grupo e diretor de serviço
 -----------------------
 
-Verifique se todas as contas de computador de computadores em que o software MIM deve ser instalado já estão associadas ao domínio.  Em seguida, execute estas etapas no PowerShell como um administrador de domínio.
+Certifique-se de que todas as contas do computador para computadores onde o software MIM está a ser instalado já estão unidas ao domínio.  Em seguida, execute estes passos no PowerShell como administrador de domínio.
 
-7.  Crie um grupo *MIMSync_Servers* e adicione todos os servidores de sincronização do mim a esse grupo.
-    Digite o seguinte para criar um novo grupo do AD para servidores de sincronização do MIM. Em seguida, o Add servidor de sincronização do MIM Active Directory contas de computador, por exemplo, *contoso\MIMSync $* , nesse grupo.
+7.  Crie um *grupo MIMSync_Servers* e adicione todos os servidores de Sincronização MIM a este grupo.
+    Digite o seguinte para criar um novo grupo de AD para servidores de sincronização MIM. Em seguida, adicione as contas de computador Ative Directory do servidor de sincronização MIM, por exemplo, *contoso\MIMSync$,* neste grupo.
 
     ```PowerShell
     New-ADGroup –name MIMSync_Servers –GroupCategory Security –GroupScope Global –SamAccountName MIMSync_Servers
     Add-ADGroupmember -identity MIMSync_Servers -Members MIMSync$
     ```
 
-8.  Crie o serviço de sincronização do MIM gMSA. Digite o PowerShell a seguir.
+8.  Crie o Serviço de Sincronização mim gMSA. Digite o seguinte PowerShell.
 
     ```PowerShell
     New-ADServiceAccount -Name MIMSyncGMSAsvc -DNSHostName MIMSyncGMSAsvc.contoso.com -PrincipalsAllowedToRetrieveManagedPassword "MIMSync_Servers"
     ```
 
-    Verifique os detalhes do GSMA criado ao executar o comando *Get-ADServiceAccount* do PowerShell:
+    Verifique os detalhes do GSMA criado pela execução do comando *Get-ADServiceAccount* PowerShell:
 
     ![](media/c80b0a7ed11588b3fb93e6977b384be4.png)
 
-9.  Se você planeja executar o serviço de notificação de alteração de senha, você precisa registrar o nome da entidade de serviço executando este comando do PowerShell:
+9.  Se planeia executar o Serviço de Notificação de Alteração de Passwords, tem de registar o Nome Principal do Serviço executando este comando PowerShell:
 
     ```PowerShell
     Set-ADServiceAccount -Identity MIMSyncGMSAsvc -ServicePrincipalNames @{Add="PCNSCLNT/mimsync.contoso.com"}
     ```
 
-10. Reinicialize o servidor de sincronização do MIM para atualizar um token Kerberos associado ao servidor, pois a associação ao grupo "MIMSync_Server" foi alterada.
+10. Reinicie o seu servidor DE Sincronização MIM para atualizar um símbolo kerberos associado ao servidor à medida que a associação do grupo "MIMSync_Server" mudou.
 
-## <a name="create-mim-service-management-agent-service-account"></a>Criar conta de serviço do agente de gerenciamento de serviço do MIM
+## <a name="create-mim-service-management-agent-service-account"></a>Criar a conta de serviço do Agente de Gestão de Serviços MIM
 
-11. Normalmente, ao instalar o serviço do MIM, você criará uma nova conta para o agente de gerenciamento de serviço do MIM (conta do MIM MA).  Com o gMSA, há duas opções disponíveis:
+11. Normalmente, ao instalar o Serviço MIM, irá criar uma nova conta para o Agente de Gestão de Serviços MIM (conta MIM MA).  Com o gMSA, existem duas opções disponíveis:
 
-- Usar a conta de serviço gerenciado do grupo de serviço de sincronização do MIM e não criar uma conta separada
+- Utilize a conta de serviço gerida pelo grupo MIM Synchronization Service e não crie uma conta separada
 
-    Você pode ignorar a criação da conta de serviço do agente de gerenciamento do serviço do MIM. Nesse caso, use o gMSA nome do serviço de sincronização do MIM, por exemplo, *contoso\MIMSyncGMSAsvc $* , em vez da conta do mim ma ao instalar o serviço do mim. Posteriormente, na configuração do agente de gerenciamento de serviço do MIM, habilite a opção *' usar conta de MIMSync '* .
+    Pode ignorar a criação da conta de serviço do Agente de Gestão de Serviços MIM. Neste caso, utilize o nome gMSA do Serviço de Sincronização MIM, por exemplo, *contoso\MIMSyncGMSAsvc$,* em vez da conta MIM MA ao instalar o Serviço MIM. Mais tarde, na configuração do Agente de Gestão de Serviço mim a activaa a opção *"Use mimSync Account".*
 
-    Não habilite ' Negar logon da rede ' para o serviço de sincronização do MIM gMSA como a conta do MIM MA requer a permissão ' permitir logon na rede '.
+    Não ative 'Deny Logon from Network' para o Serviço de Sincronização MIM gMSA, uma vez que a conta MIM MA requer permissão de 'Permitir logon de rede'.
 
-- Usar uma conta de serviço regular para a conta de serviço do agente de gerenciamento de serviço do MIM
+- Utilize uma conta de serviço regular para a conta de serviço do Agente de Gestão de Serviços MIM
 
-    Inicie o PowerShell como administrador de domínio e digite o seguinte para criar um novo usuário de domínio do AD:
+    Inicie o PowerShell como administrador de domínio e escreva o seguinte para criar um novo utilizador de domínio AD:
 
     ```PowerShell
     $sp = ConvertTo-SecureString "Pass@word1" –asplaintext –force
@@ -191,57 +191,57 @@ Verifique se todas as contas de computador de computadores em que o software MIM
     Set-ADUser –identity svcMIMMA –Enabled 1 –PasswordNeverExpires 1
     ```
 
-    Não habilite ' Negar logon da rede ' para a conta do MIM MA, pois ela requer a permissão ' permitir logon na rede '.
+    Não ative 'Deny Logon from Network' para a conta MIM MA, uma vez que requer permissão de logon de rede "Permitir a rede".
 
-## <a name="create-mim-service-accounts-groups-and-service-principal"></a>Criar contas de serviço, grupos e entidade de serviço do MIM
+## <a name="create-mim-service-accounts-groups-and-service-principal"></a>Criar contas de serviço mim, grupos e diretor de serviço
 
-Continue usando o PowerShell como um administrador de domínio.
+Continue a usar o PowerShell como administrador de domínio.
    
-12. Crie um grupo *MIMService_Servers* e adicione todos os servidores de serviço do mim a esse grupo.  Digite o PowerShell a seguir para criar um novo grupo do AD para servidores de serviço do MIM e adicionar o servidor de serviço do MIM Active Directory conta de computador, por exemplo, *contoso\MIMPortal $* , a esse grupo.
+12. Crie um *grupo MIMService_Servers* e adicione todos os servidores do Serviço MIM a este grupo.  Digite o seguinte PowerShell para criar um novo grupo de AD para servidores de serviço MIM e adicionar conta de computador Ative Directory do servidor de serviço MIM, por exemplo, *contoso\MIMPortal$,* neste grupo.
 
     ```PowerShell
     New-ADGroup –name MIMService_Servers –GroupCategory Security –GroupScope Global –SamAccountName MIMService_Servers
     Add-ADGroupMember -identity MIMService_Servers -Members MIMPortal$
     ```
 
-1.  Crie o serviço do MIM gMSA.
+1.  Crie o Serviço MIM gMSA.
 
     ```PowerShell
     New-ADServiceAccount -Name MIMSrvGMSAsvc -DNSHostName MIMSrvGMSAsvc.contoso.com -PrincipalsAllowedToRetrieveManagedPassword "MIMService_Servers" -OtherAttributes @{'msDS-AllowedToDelegateTo'='FIMService/mimportal.contoso.com'} 
     ```
 
-1.  Registre o nome da entidade de serviço e habilite a delegação Kerberos executando este comando do PowerShell:
+1.  Registre o nome principal do serviço e permita a delegação kerberos executando este comando PowerShell:
 
     ```PowerShell
     Set-ADServiceAccount -Identity MIMSrvGMSAsvc -TrustedForDelegation $true -ServicePrincipalNames @{Add="FIMService/mimportal.contoso.com"}
     ```
 
-1.  Para cenários de SSPR, você precisa que a conta de serviço do MIM seja capaz de se comunicar com o serviço de sincronização do MIM, portanto, a conta de serviço do MIM deve ser membro do MIMSyncAdministrators ou do MIM:
+1.  Para os cenários sSPR, precisa de conta de serviço MIM ser capaz de comunicar com o Serviço de Sincronização MIM, pelo que a conta de serviço MIM deve ser um membro dos MIMSyncAdministrators ou dos grupos de reset e navegação de senha sincronia MIM:
 
     ```PowerShell
     Add-ADGroupmember -identity MIMSyncPasswordSet -Members MIMSrvGMSAsvc$ 
     Add-ADGroupmember -identity MIMSyncBrowse -Members MIMSrvGMSAsvc$ 
     ```
 
-16. Reinicialize o servidor do serviço do MIM para atualizar um token Kerberos associado ao servidor, pois a associação ao grupo "MIMService_Servers" foi alterada.
+16. Reinicie o seu servidor de serviço MIM para atualizar um token Kerberos associado ao servidor à medida que a associação do grupo "MIMService_Servers" mudou.
 
-## <a name="create-other-mim-accounts-and-groups-if-needed"></a>Crie outras contas e grupos do MIM, se necessário
+## <a name="create-other-mim-accounts-and-groups-if-needed"></a>Criar outras contas e grupos MIM, se necessário
 
-Se você estiver configurando o MIM SSPR, seguindo as mesmas diretrizes descritas acima para o serviço de sincronização do MIM e o serviço do MIM, você poderá criar outros gMSA para:
+Se estiver a configurar mim SSPR, seguindo as mesmas diretrizes acima descritas para o Serviço de Sincronização MIM e o Serviço MIM, pode criar outro gMSA para:
 
-- Pool de aplicativos do site da Web de redefinição de senha do MIM
-- Pool de aplicativos do site de registro de senha do MIM
+- Mim Password Reset site application pool
+- Piscina de aplicação do site de registo de senha mim
 
-Se você estiver configurando o PAM do MIM, seguindo as mesmas diretrizes descritas acima para o serviço de sincronização do MIM e o serviço do MIM, você pode criar outros gMSA para:
+Se estiver a configurar mim PAM, seguindo as mesmas diretrizes acima descritas para o Serviço de Sincronização MIM e serviço MIM, pode criar outro gMSA para:
 
-- Pool de aplicativos do site da API REST do PAM do MIM
-- Serviço de componente do PAM do MIM
-- Serviço de monitoramento do PAM do MIM
+- Mim PAM REST API piscina de aplicação web site
+- Serviço de Componente MIM PAM
+- Serviço de Monitorização MIM PAM
 
-## <a name="specifying-a-gmsa-when-installing-mim"></a>Especificando um gMSA ao instalar o MIM
+## <a name="specifying-a-gmsa-when-installing-mim"></a>Especificar um gMSA ao instalar mim
 
-Como regra geral, na maioria dos casos, ao usar um instalador do MIM, para especificar que você deseja usar um gMSA em vez de uma conta normal, acrescente um caractere de cifrão ao nome gMSA, por exemplo, **contoso\MIMSyncGMSAsvc $** , e deixe o campo de senha vazio. Uma exceção é a ferramenta *miisactivate. exe* que aceita o nome do gMSA sem o cifrão.
+Regra geral, na maioria dos casos ao utilizar um instalador MIM, para especificar que pretende utilizar um gMSA em vez de uma conta regular, anexar um personagem de sinal de dólar ao nome gMSA, por exemplo, **contoso\MIMSyncGMSAsvc$,** e deixar o campo de palavra-passe vazio. Uma exceção é a ferramenta *miisactivate.exe* que aceita o nome gMSA sem o sinal de dólar.
 <br/>
 
 > [!div class="step-by-step"]
-> [Windows Server»](prepare-server-ws2016.md)
+> [Servidor windows »](prepare-server-ws2016.md)

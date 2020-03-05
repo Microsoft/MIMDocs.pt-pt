@@ -1,217 +1,219 @@
 ---
-title: Conversão de serviços específicos do MIM para gMSA | Microsoft Docs
-description: Tópico que descreve as etapas básicas para configurar o gMSA.
-author: billmath
-ms.author: billmath
-manager: mtillman
+title: Conversão de Serviços Específicos mim para gMSA Microsoft Docs
+description: Tópico descrevendo os passos básicos para configurar gMSA.
+author: EugeneSergeev
+ms.author: esergeev
+manager: aashiman
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 96d375d82a71a21f0be444d628f387c4e1ffdd09
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 49216a2d2077dd1be83f17719e996a20abb61cf8
+ms.sourcegitcommit: d98a76d933d4d7ecb02c72c30d57abe3e7f5d015
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64520694"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289501"
 ---
-# <a name="conversion-of-mim-specific-services-to-gmsa"></a>Conversão de serviços específicos do MIM para gMSA
+# <a name="conversion-of-mim-specific-services-to-gmsa"></a>Conversão de Serviços Específicos mim para gMSA
 
-Este guia irá percorrer as etapas básicas para configurar o gMSA para os serviços com suporte. O processo para converter em gMSA é fácil depois de pré-configurar o ambiente.
+Este Guia passará pelos passos básicos para configurar o gMSA para serviços suportados. O processo de conversão para gMSA é fácil uma vez que pré-configura o seu ambiente.
 
-Hotfix necessário: \<link para o KB mais recente\>
+Hotfix Obrigatório: [4.5.26.0 ou mais tarde](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history)
 
 Suporte para:
 
--   Serviço de sincronização do MIM (FIMSynchronizationService)
--   Serviço do MIM (FIMService)
--   Registro de senha do MIM
--   Redefinição de senha do MIM
--   Serviço de monitoramento do PAM (PamMonitoringService)
--   Serviço de componente do PAM (PrivilegeManagementComponentService)
+-   Serviço de Sincronização MIM (SERVIÇO DE Sincronização FIM)
+-   Serviço MIM (SERVIÇO FIM)
+-   Registo de senha mim
+-   Reset de palavra-passe mim
+-   Serviço de Monitorização PAM (PamMonitoringService)
+-   Serviço de Componentes PAM (PrivilegeManagementComponentService)
 
-Sem suporte:
+Não suportado:
 
--   O portal do MIM não é suportado ele faz parte do ambiente do SharePoint e você precisaria implantar no modo de farm e [Configurar a alteração automática de senha no sharepointserver](https://docs.microsoft.com/sharepoint/administration/configure-automatic-password-change)
--   Todos os agentes de gerenciamento
--   Gerenciamento de certificados da Microsoft
+-   O Portal MIM não é suportado, faz parte do ambiente do sharepoint e teria de implementar em modo agrícola e configurar a mudança automática de [palavra-passe no SharePointServer](https://docs.microsoft.com/sharepoint/administration/configure-automatic-password-change)
+-   Todos os Agentes de Gestão
+-   Gestão de Certificados da Microsoft
 -   BHOLD
 
-<a name="general-information"></a>Informações Gerais 
+<a name="general-information"></a>Informação Geral 
 --------------------
 
-Leitura necessária para concluir a instalação e entender
+Leitura necessária para completar configuração e entender
 
--   [Visão geral de contas de serviço gerenciado de grupo](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
+-   [Visão geral das Contas de Serviço Geridas pelo Grupo](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
 
 -   <https://docs.microsoft.com/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps>
 
 -   <https://technet.microsoft.com/library/jj128430(v=ws.11).aspx>
 
-Primeira etapa no controlador de domínio do Windows
+Primeiro passo no controlador de domínio das janelas
 
-1.  Crie a chave raiz do KDS (serviços de distribuição de chaves) (somente uma vez por domínio), se necessário. A chave raiz é usada pelo serviço KDS em DCs (juntamente com outras informações) para gerar senhas.
+1.  Crie a chave de raiz dos Serviços de Distribuição Chave (KDS) (apenas uma vez por domínio) se necessário. A Chave Raiz é utilizada pelo serviço KDS em DCs (juntamente com outras informações) para gerar palavras-passe.
 
-    -   Add-KDSRootKey – EffectiveImmediately
+    -   Add-KDSRootKey – Eficaz Imediatamente
 
-    -   "– EffectiveImmediately" significa aguardar até \~10 horas/precisar replicar para todos os controladores de domínio. Isso foi de aproximadamente 1 hora para dois controladores de domínio.
+    -   "-EficazImediatamente" significa esperar até \~10 horas / necessidade de replicar a todos os DC. Isto foi aproximadamente 1 hora para dois controladores de domínio.
 
 ![](media/7fbdf01a847ea0e330feeaf062e30668.png)
 
 ## <a name="synchronization-service"></a>Serviço de Sincronização
 -----------------------
 
-1.  Crie um grupo chamado "MIMSync_Servers" e adicione todos os servidores de sincronização a esse grupo.
+1.  Crie um grupo chamado "MIMSync_Servers" e adicione todos os servidores de Sincronização a este grupo.
 
 ![](media/a4dc3f6c0cb1f715ba690744f54dce5c.png)
 
-2.  No Windows PowerShell, execute o comando abaixo como administrador de domínio com a conta de computador já ingressada no domínio
+2.  A partir do Windows PowerShell, em seguida, executar abaixo do comando como administrador de domínio com conta de computador já unida ao domínio
 
-    -   New-ADServiceAccount-Name MIMSyncGMSAsvc-DNSHostName MIMSyncGMSAsvc.contoso.com-PrincipalsAllowedToRetrieveManagedPassword "MIMSync_Servers"
+    -   New-ADServiceAccount -Name MIMSyncGMSAsvc -DNSHostName MIMSyncGMSAsvc.contoso.com -PrincipaisAllowedToRetrieveManagedPassword "MIMSync_Servers"
 
 ![](media/f6deb0664553e01bcc6b746314a11388.png)
 
--   Obter detalhes do GSMA para sincronização:
+-   Obtenha detalhes do GSMA para sincronização:
 
 ![](media/c80b0a7ed11588b3fb93e6977b384be4.png)
 
--   Se estiver executando o serviço PCNS, será necessário atualizar a delegação
+-   Se executar o Serviço PCNS, terá de atualizar a delegação
 
-    -   Set-ADServiceAccount-Identity MIMSyncGMSAsvc-servicePrincipalName \@{Add = "PCNSCLNT/mimsync. contoso. com"}
+    -   Set-ADServiceAccount -Identity MIMSyncGMSAsvc -ServicePrincipaNames \@{Add="PCNSCLNT/mimsync.contoso.com"}
 
-3. Em seguida, nos serviços de sincronização, certifique-se de fazer backup da chave de criptografia, pois ela será solicitada após a instalação do modo de alteração
+3. Em seguida, nos serviços de sincronização certifique-se de que reserva a chave de encriptação, uma vez que será solicitada após a instalação do modo de mudança
 
-    -   No servidor em que o serviço de sincronização está instalado, localize a ferramenta de gerenciamento de chaves do serviço de sincronização
+    -   No Servidor que o Serviço de Sincronização está instalado na localização da ferramenta de gestão da chave do serviço de sincronização
 
-    -   Por padrão, o **conjunto de chaves de exportação** já está selecionado
+    -   Por Padrão, o conjunto de **chaves de exportação** já está selecionado
 
-    -   Clique em **Avançar**
+    -   Clique em **Next**
 
-    -   Agora, você será solicitado a inserir as informações da conta de sincronização existente
+    -   Agora será solicitado a introduzir a informação da conta de sincronização existente
 
-    -   Inserir e verificar as informações da conta de sincronização do FIM
+    -   Insira e verifique a informação da Conta Sincronizada FIM
 
-        -   Nome da conta-nome da conta de serviço de sincronização usado durante a instalação inicial
+        -   Nome da conta - Nome da conta da conta do Serviço de Sincronização utilizada durante a instalação inicial
 
-        -   Senha-senha da conta de serviço de sincronização
+        -   Palavra-passe - Conta de Serviço de Sincronização
 
-        -   Domínio-domínio do qual a conta de serviço de sincronização está separada
+        -   Domínio - Domínio que a conta do Serviço de Sincronização está fora de
 
-    -   Clique em **Avançar**
+    -   Clique em **Next**
 
-    -   Se você inseriu algo incorretamente, receberá o seguinte erro
+    -   Se inseria algo incorretamente, receberá o seguinte erro
 
-    -   Agora que você inseriu com êxito as informações da conta, será exibida uma opção para alterar o destino (local do arquivo de exportação) da chave de criptografia de backup
+    -   Agora que inseriu com sucesso as informações da Conta, será-lhe apresentada a opção de alterar o destino (localização do ficheiro de exportação) da chave de encriptação de cópia de segurança
 
-        -   Por padrão, o local do arquivo de exportação é **C:\\Windows\\system32**\\miiskeys-1. bin.
+        -   Por Predefinição, a localização do ficheiro de exportação é **C:\\Windows\\system32**\\miiskeys-1.bin.
 
-4. Instale o serviço de sincronização do Microsoft Identity Manager SP1 Build 4.4.1302.0. Você pode encontrar no centro de download de licença de volume ou no site de download do MSDN. Depois de concluir a instalação, verifique se você salvou o conjunto de chaves miiskeys. bin.
+4. Instale o Serviço de Sincronização SP1 Do Gestor de Identidade da Microsoft, construa 4.4.1302.0. pode ser encontrado no Centro de Descarregamento de Licenças de Volume ou no Site de Descarregamento mSDN. Uma vez concluída a instalação, guarde o teclado miiskeys.bin.
 
 ![](media/ef5f16085ec1b2b1637fa3d577a95dbf.png)
 
 
-5. Instale o último [hotfix 4.5. x. x](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history) ou posterior.
+5. Instale o mais recente [hotfix 4.5.x.x](https://docs.microsoft.com/microsoft-identity-manager/reference/version-history) ou mais tarde.
 
-- Depois do patch, pare o serviço de sincronização do FIM.
-- Programas e recursos do painel de controle Microsoft Identity Manager
-- Alteração do serviço de sincronização-\> Next-\> configure-\> avançar
+- Uma vez remendado o serviço de sincronização Stop FIM.
+- Programas de painéis de controlo e funcionalidades do Gestor de Identidade da Microsoft
+- Serviço de sincronização Alterar -\> Seguinte -\> Configuração -\> Seguinte
 
 ![](media/dc98c011bec13a33b229a0e792b78404.png)
 
 -  Limpar o nome da conta
--  Digite nome da conta de serviço **MIMSyncGMSA** com o símbolo de \$ como no
-- captura. Deixe a senha vazia.
+-  Nome da conta de serviço DE Tipo **MIMSyncGMSA** com símbolo \$ como no
+- imagem de imagem. Deixe a palavra-passe vazia.
 
 ![](media/38df9369bf13e1c3066a49ed20e09041.png)
 
-- Próxima\> instalação do próximo\>
-- Restaure o conjunto de chaves do arquivo. bin salvo.
+- Próxima\> Instalação de\>
+- Restaurar o teclado do ficheiro .bin guardado.
 
 ![](media/44cd474323584feb6d8b48b80cfceb9b.png)
 
 ![](media/03e7762f34750365e963f0b90e43717c.png)
 > [!NOTE]
-> A permissão SQL adicionada é a conta criada para logon, portanto, você deve permitir que o usuário aplique a permissão modo de alteração para adicionar conta e dbo no banco de dados do serviço de sincronização
+> A permissão SQL adicionada é a conta criada para login, pelo que deve permitir ao utilizador que aplica a permissão de modo de alteração para adicionar conta e dbo na base de dados do serviço de sincronização
 
 ## <a name="mim-service"></a>Serviço MIM
 -----------
 
 >[!IMPORTANT]
->O processo a seguir deve ser usado ao converter pela primeira vez as contas relacionadas ao serviço do MIM para serem gMSA contas. Os cmdlets do PowerShell indicados no apêndice só podem ser usados para alterar as informações da conta após a conclusão da configuração inicial. *
+>O processo seguinte deve ser utilizado quando converter as contas relacionadas com o Serviço MIM para serem contas gMSA. Os cmdlets PowerShell observados no Apêndice só podem ser utilizados para alterar a informação da conta uma vez feita a configuração inicial.*
 
-1.  Crie contas gerenciadas de grupo para o serviço do MIM, a API REST do PAM, o serviço de monitoramento do PAM, o serviço de componentes do PAM, o portal de registro SSPR, o portal de
+1.  Crie Contas Geridas pelo Grupo para o Serviço MIM, PAM Rest API, Serviço de Monitorização PAM, Serviço de Componentes PAM, Portal de Registo SSPR, Portal de Reset SSPR.
 
-    -   Certifique-se de atualizar a delegação e o SPN do gMSA
-        -   Set-ADServiceAccount-Identity \<conta\>-servicePrincipalName do \@{Add = "\<SPN\>"}
+    -   Certifique-se de atualizar a delegação da GMSA e a SPN
+        -   Set-ADServiceAccount -Identidade \<conta\> -ServicePrincipaNames \@{Add="\<SPN\>"}
         -   Delegação
-            -   Set-ADServiceAccount-Identity \<gsmaaccount\>-TrustedForDelegation \$true
-        -   Delegação Restrita
-            -   \$delspns = ' http/mim ', ' http/mim. contoso. com '
-            -   New-ADServiceAccount-Name \<gsmaaccount\>-DNSHostName \<gsmaaccount\>. contoso.com-PrincipalsAllowedToRetrieveManagedPassword \<Group\>-ServiceName \$SPNs-Outroattributes \@{' msDS-AllowedToDelegateTo ' =\$delspns}
+            -   Set-ADServiceAccount -Identidade \<gsmaaccount\> -TrustForDelegação \$verdadeira
+        -   Delegação restrita
+            -   \$delspns = 'http/mim', 'http/mim.contoso.com'
+            -   New-ADServiceAccount -Name \<gsmaaccount\> -DNSHostName \<gsmaaccount\>.contoso.com -DirectorsAllowedToRetrieveManagedPassword \<grupo\> -ServicePrincipaNames \$spns -OtherATributos \@{'msDS-AllowedToDelegateTo'=\$delspns }
 
-2.  Adicionar conta para o serviço do MIM em grupos de sincronização. É necessário para o SSPR.
+2.  Adicione a conta para o serviço MIM em Sync Groups. É necessário para a SSPR.
 
 ![](media/0201f0281325c80eb70f91cbf0ac4d5b.jpg)
 
-3.  **Observação**.  Problema conhecido que os serviços que usam a conta gerenciada travam após a reinicialização do servidor porque o serviço de distribuição de chaves da Microsoft não foi iniciado após a reinicialização do Windows. Não foi possível iniciar o serviço e o Windows também não pôde ser reiniciado. O problema é reproduzível pelo menos no Windows Server 2012 R2. A solução alternativa para esse problema é executar comando 
+3.  **NOTA.**  Problema conhecido que os serviços que utilizam a conta gerida ficam pendurados após reiniciar o servidor devido ao Microsoft Key Distribution Service não é iniciado após reiniciar o Windows. O serviço não pôde ser iniciado e o Windows também não pôde ser reiniciado. O problema é reprodutível pelo menos no Windows Server 2012 R2. Saque para esta questão é comando de execução 
 
--   **f triggerinfo kdssvc início/rede**
+-   **sc triggerinfo kdssvc start/networkon**
 
-    para iniciar o serviço de distribuição de chaves da Microsoft quando a rede estiver ativada (normalmente no início do ciclo de inicialização).
+    para iniciar o Serviço de Distribuição de Chaves da Microsoft quando a rede estiver ligado (tipicamente no início do ciclo de arranque).
 
-    Consulte a discussão sobre o problema semelhante: <https://social.technet.microsoft.com/Forums/a290c5c0-3112-409f-8cb0-ff23e083e5d1/ad-fs-windows-2012-r2-adfssrv-hangs-in-starting-mode?forum=winserverDS>
+    Ver discussão sobre questões semelhantes: <https://social.technet.microsoft.com/Forums/a290c5c0-3112-409f-8cb0-ff23e083e5d1/ad-fs-windows-2012-r2-adfssrv-hangs-in-starting-mode?forum=winserverDS>
 
-4.  Execute o MSI elevado do serviço MIM e selecione Alterar.
+4.  Executar MSI elevado do serviço MIM e selecionar alterações.
 
-5.  Na caixa de seleção "configurar a página de conexão do servidor principal", marque "usar conta diferente para o Exchange (para contas gerenciadas)". Aqui, você terá a opção de usar a conta antiga que tem uma caixa de correio ou usar a caixa de correio de nuvem.
-
+5.  Na "Configure página de ligação principal do servidor" verifique "Utilize uma conta diferente para a Troca (para contas geridas)". Aqui terá a opção de usar a conta antiga que tem uma caixa de correio ou usar caixa de correio na nuvem.
+    >[!NOTE]
+    >Quando a opção **Use Exchange Online** é selecionada, de forma a permitir ao Serviço MIM processar respostas de aprovação a partir do Add-On do OUTLOOK MIM, é necessário definir a chave de registo HKLM\SYSTEM\CurrentControlSet\Services\FIMService value of PollExchangeEnabled to 1 after installation.
+    
 ![](media/0cd8ce521ed7945c43bef6100f8eb222.png)
 
-6.  Na página "configurar conta de serviço do MIM", digite a conta de serviço com \$ símbolo no final. Digite também senha da conta de email do serviço. A senha da conta de serviço deve ser desabilitada.
+6.  Na conta de serviço de página "Configure MIM" com \$ símbolo no final. Também digite palavra-passe de conta de e-mail de serviço. Conta de serviço A palavra-passe deve ser desativada.
 
 ![](media/db0d543df6e1b0174a47135617c23fcb.png)
 
-7.  Como a função LogonUser não funciona para contas gerenciadas, a próxima página será aviso "Verifique se a conta de serviço é segura em sua configuração atual".
+7.  Como a função LogonUser não funciona para contas geridas, a página seguinte irá avisar "Por favor, verifique se a Conta de Serviço está segura na sua configuração atual".
 
-![CID: image007. png\@01D36EB 7.562 E6CF0](media/d350bc13751b2d0a884620db072ed019.png)
+![cid:image007.png\@01D36EB7.562E6CF0](media/d350bc13751b2d0a884620db072ed019.png)
 
-8.  Na página "configurar a API REST do Privileged Access Management", digite o nome da conta do pool de aplicativos com \$ símbolo no final e deixe o campo senha vazio.
+8.  Na página "Configure Privileged Access Management REST API", digite nome da conta de piscina de aplicação com símbolo \$ no final e deixe o campo password vazio.
 
 ![](media/88db2f6f291fff8bcdd0da5d538aafc6.png)
 
-9.  Na página "configurar serviço de componente do PAM", digite o nome da conta de serviço com \$ símbolo no final e deixe o campo senha vazio.
+9.  No "Configure PAM Component Service" tipo nome da conta de serviço com \$ símbolo no final e deixe o campo password vazio.
 
 ![](media/93cfbcefb4d17635dd35c5ead690fd1e.png)
 
-![CID: image010. png\@01D36EB8. A295A3F0](media/9d2b52f6faed10601e7e2166a339fb47.png)
+![cid:image010.png\@01D36EB8. A295A3F0](media/9d2b52f6faed10601e7e2166a339fb47.png)
 
-10.  No tipo de página "configurar serviço de monitoramento de Privileged Access Management", digite o nome da conta de serviço com \$ símbolo no final e deixe o campo de senha vazio.
+10.  No "Configure Privileged Access Management Management Monitoring Service" página tipo nome da conta de serviço com \$ símbolo no final e deixe o campo password vazio.
 
 ![](media/d1e824248edf12a77fc9ffb011475164.png)
 
-11.  Na página "configurar o portal de registro de senha do MIM", digite o nome da conta com \$ símbolo no final e deixe o campo senha vazio.
+11.  No "Configure MIM Password Registration Portal" tipo nome da conta com \$ símbolo no final e deixe o campo password vazio.
 
 ![](media/601e935cdfda298b61ae753a2a152996.png)
 
-12.  Na página "configurar o portal de redefinição de senha do MIM", digite o nome da conta com \$ símbolo no final e deixe o campo senha vazio.
+12.  No tipo de página "Configure MIM Password Reset Portal" tipo nome de conta com símbolo \$ no final e deixe o campo password vazio.
 
 ![](media/10c8cfa8ff2b6d703d14bd0b7ddc6949.png)
 
-13.  Concluir a instalação.
+13.  Instalação completa.
 
 Nota:
 
--  Após a instalação, duas novas chaves são criadas no registro por caminho
-    - "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Forefront Identity
-    - Gerenciador\\2010\\serviço "para armazenar a senha criptografada do Exchange. Um para
-    - Exchange Online e outro para o Exchange local (um deles deve ser
+-  Após a instalação, duas novas chaves são criadas no registo por caminho
+    - "HKEY_LOCAL_MACHINE software\\\\Microsoft\\Front Identity
+    - Manager\\2010\\Service" para armazenar senha de troca encriptada. Um para
+    - Troca online e outra para troca no local (um deles deve ser
     - vazio).
 
-![CID: image014. jpg\@01D36F 53.303 D5190](media/73e2b8a3c149a4ec6bacb4db2c749946.jpg)
+![cid:image014.jpg\@01D36F53.303D5190](media/73e2b8a3c149a4ec6bacb4db2c749946.jpg)
 
-- Para atualizar a senha, fornecemos um download de script [aqui](microsoft-identity-manager-2016-gmsascript.md) , portanto, o cliente não precisará executar o modo de alteração
+- Para atualizar a palavra-passe, fornecemos um download de script [aqui](microsoft-identity-manager-2016-gmsascript.md) para que o cliente não tenha que executar o modo de mudança
 
-- Para criptografar a senha do Exchange, o instalador cria um serviço adicional e
-    - executa-o na conta gerenciada. As seguintes mensagens serão adicionadas em
-    - Log de eventos do aplicativo durante a instalação.
+- Para encriptar a palavra-passe de troca, o instalador cria um serviço adicional e
+    - executa-o sob a conta gerida. As seguintes mensagens serão adicionadas em
+    - Registo de eventos de aplicação durante a instalação.
 
-![CID: image016. jpg\@01D36F 53.303 D5190](media/95b315454705cd4d939b55ac5ad910f5.jpg)
+![cid:image016.jpg\@01D36F53.303D5190](media/95b315454705cd4d939b55ac5ad910f5.jpg)

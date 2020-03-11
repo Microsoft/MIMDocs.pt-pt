@@ -4,19 +4,19 @@ description: Obter os passos para configurar e instalar o Portal e o Serviço MI
 keywords: ''
 author: EugeneSergeev
 ms.author: esergeev
-manager: aashiman
+manager: daveba
 ms.date: 10/18/2019
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: 4604c17d3e58c57f9819aaa036dc12a669aed55d
-ms.sourcegitcommit: d98a76d933d4d7ecb02c72c30d57abe3e7f5d015
+ms.openlocfilehash: e381bb418ce8215dafc369bf33782483a6e4de3e
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78289472"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79042445"
 ---
 # <a name="install-mim-2016-mim-service-and-portal"></a>Instalar o MIM 2016: Portal e Serviço MIM
 

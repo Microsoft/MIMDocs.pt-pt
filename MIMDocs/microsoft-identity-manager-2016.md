@@ -1,56 +1,56 @@
 ---
-title: Microsoft Identity Manager | Microsoft Docs
+title: Microsoft Identity Manager [ Gestor de Identidade da Microsoft] Microsoft Docs
 description: O MIM inclui as funcionalidades de gestão de acesso do FIM 2010 e ajuda-o a gerir utilizadores, credenciais, políticas e acesso dentro da sua organização.
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/18/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 1af53aee05d10fa7c7f77cef3c6dba1051be24b1
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: b2b63f4490b5f53f5a2d683d5130b3ac1e74dc04
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73329391"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044094"
 ---
 # <a name="microsoft-identity-manager-2016-news-and-updates"></a>Notícias e atualizações do Microsoft Identity Manager 2016
 
-Microsoft Identity Manager (MIM) 2016 baseia-se nos recursos de gerenciamento de identidade e acesso do Forefront Identity Manager. Tal como o respetivo antecessor, o MIM ajuda-o a gerir os utilizadores, as credenciais, as políticas e o acesso na sua organização.  Além disso, o MIM 2016 adiciona uma experiência híbrida, capacidades de gestão de acesso privilegiado e suporte para novas plataformas.
+O Microsoft Identity Manager (MIM) 2016 baseia-se nas capacidades de gestão de identidade e acesso do Gestor de Identidade de Forefront. Tal como o respetivo antecessor, o MIM ajuda-o a gerir os utilizadores, as credenciais, as políticas e o acesso na sua organização.  Além disso, o MIM 2016 adiciona uma experiência híbrida, capacidades de gestão de acesso privilegiado e suporte para novas plataformas.
 
 
-Com o MIM, uma organização pode simplificar o gerenciamento do ciclo de vida da identidade com fluxos de trabalho automatizados, regras de negócios e fácil integração com plataformas heterogêneas em todo o datacenter. O MIM permite que a organização tenha os usuários certos e direitos de acesso para Active Directory para aplicativos locais e Azure AD Connect pode, então, disponibilizar no Azure AD para Office 365 e aplicativos hospedados na nuvem. Os cenários comuns do MIM incluem:
- - Provisionamento automático de identidade e grupo com base na política de negócios e no provisionamento controlado por fluxo de trabalho
- - Integração do conteúdo de diretórios com sistemas de RH e outras fontes de autoridade
- - Sincronização de identidades entre diretórios, bancos de dados e aplicativos locais por meio de APIs e protocolos comuns, conectores entregues pela Microsoft e conectores entregues por parceiros
+Com a MIM, uma organização pode simplificar a gestão do ciclo de vida identitário com fluxos de trabalho automatizados, regras de negócio e fácil integração com plataformas heterogéneas em todo o datacenter. A MIM permite que a organização tenha os utilizadores certos e os direitos de acesso ao Ative Directory para aplicações no local, e o Azure AD Connect pode então disponibilizar em Azure AD para o Office 365 e aplicações hospedadas na nuvem. Os cenários comuns da MIM incluem:
+ - Fornecimento automático de identidade e grupo com base na política empresarial e no fornecimento orientado para o fluxo de trabalho
+ - Integração dos conteúdos de diretórios com sistemas de RH e outras fontes de autoridade
+ - Sincronizar identidades entre diretórios, bases de dados e aplicações no local através de APIs e protocolos comuns, conectores entregues pela Microsoft e conectores entregues por parceiros
 
-As versões atuais em suporte base são o MIM 2016 Service Pack 1 e Service Pack 2 (SP2).  Os clientes que executam versões do FIM ou do MIM anteriores ao MIM 2016 SP1 devem atualizar para o MIM 2016 SP2 ou um hotfix posterior.
+As atuais versões sob suporte mainstream são MIM 2016 Service Pack 1 e Service Pack 2 (SP2).  Os clientes que executam versões FIM ou MIM antes do MIM 2016 SP1 devem fazer upgrade para MIM 2016 SP2 ou um hotfix posterior.
 
-A Microsoft fornece regularmente atualizações para o MIM, incluindo aprimoramentos para solicitações de clientes e correções de bugs em um ciclo de lançamento em andamento.
+A Microsoft fornece regularmente atualizações para mim, incluindo melhorias para pedidos de clientes e correções de bugs, num ciclo de lançamento em curso.
 
-## <a name="updates-in-mim-2016-sp2"></a>Atualizações no MIM 2016 SP2
+## <a name="updates-in-mim-2016-sp2"></a>Atualizações em MIM 2016 SP2
 
-O MIM 2016 Service Pack 2 é um pacote cumulativo de hotfixes existentes desde o MIM 2016 SP1. Ele também apresenta a opção de configurar o uso de contas de serviço gerenciado de grupo para o serviço de sincronização do MIM e o serviço do MIM e permite que o MIM seja implantado com outro software de plataforma atualizado. Mais detalhes podem ser encontrados no [histórico de lançamento de versão do MIM 2016](./reference/version-history.md)
+Mim 2016 Service Pack 2 é um rollup de hotfixs existentes desde MIM 2016 SP1. Também introduz a opção de configurar a utilização de Contas de Serviço Geridas pelo Grupo para o Serviço de Sincronização MIM e o Serviço MIM, e permite que a MIM seja implementada com outro software de plataforma atualizado. Mais detalhes podem ser encontrados no Histórico de Lançamento da [Versão MIM 2016](./reference/version-history.md)
 
-### <a name="major-new-and-updated-scenarios"></a>Principais cenários novos e atualizados
+### <a name="major-new-and-updated-scenarios"></a>Grandes cenários novos e atualizados
 
-- [A colaboração B2B do Azure AD com o conector do grafo do mim e o proxy de aplicativo Azure é GA](microsoft-identity-manager-2016-graph-b2b-scenario.md), última atualização em julho de 2019
-- Os [relatórios híbridos do mim são GA](https://cloudblogs.microsoft.com/enterprisemobility/2018/02/23/hybrid-mim-reporting-now-available-in-azure-active-directory/), última atualização em abril de 2019
-- [Lista de recursos preteridos do mim revisado](microsoft-identity-manager-2016-deprecated-features.md), última atualização em fevereiro de 2018
+- [A colaboração azure AD B2B com o conector do gráfico MIM e o proxy da Aplicação Azure é GA,](microsoft-identity-manager-2016-graph-b2b-scenario.md)última atualização julho de 2019
+- [Relatório híbrido mim é GA](https://cloudblogs.microsoft.com/enterprisemobility/2018/02/23/hybrid-mim-reporting-now-available-in-azure-active-directory/), última atualização abril 2019
+- [Lista de funcionalidades deprecatada mim revista,](microsoft-identity-manager-2016-deprecated-features.md)última atualização fevereiro de 2018
 
-### <a name="recent-software-releases"></a>Versões recentes de software
+### <a name="recent-software-releases"></a>Lançamentos recentes de software
 
-- [Versões do conector do mim](./reference/microsoft-identity-manager-2016-connector-version-history.md), última atualização em julho de 2019
-- [Sincronização do mim, serviço, portal, cm, suplementos e versões do cliente](./reference/version-history.md) atualizados pela última vez em outubro de 2019
-- [Versões dos módulos do mim BHOLD](./reference/version-bhold-history.md) atualizados pela última vez em outubro de 2018
+- [Lançamentos do COnector MIM](./reference/microsoft-identity-manager-2016-connector-version-history.md), última atualização julho de 2019
+- [MIM Sync, Serviço, Portal, CM, Add-ins e lançamentos de clientes atualizados](./reference/version-history.md) pela última vez outubro de 2019
+- [Módulos MIM BHOLD lançam-se](./reference/version-bhold-history.md) pela última vez atualizado outubro de 2018
 
 
 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-Saiba mais sobre os cenários adicionados no MIM 2016 e anteriores no [Microsoft Identity manager 2016](microsoft-identity-manager-2016.md).
+Saiba mais sobre os cenários adicionados no MIM 2016 e anteriormente no [Microsoft Identity Manager 2016](microsoft-identity-manager-2016.md).
 
-Leia mais documentação sobre como implantar o MIM e a versão mais recente no [roteiro de documentação do mim](https://docs.microsoft.com/microsoft-identity-manager/).
+Leia mais documentação sobre a implementação do MIM e a versão mais recente no Roteiro de [Documentação MIM](https://docs.microsoft.com/microsoft-identity-manager/).
 

@@ -5,21 +5,21 @@ keywords: ''
 author: billmath
 ms.author: billmath
 ms.reviewer: fimguy
-manager: mtillman
+manager: daveba
 ms.date: 07/06/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
-ms.openlocfilehash: 6c3a2d87037a818a9a8784b0d4a7b86227fcaef4
-ms.sourcegitcommit: 28a20aaa1f08b428cc1ae0eae43ae47de4d9d22a
+ms.openlocfilehash: 512a1887329f9ec5c93fd69f0ce0b22495ba009c
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75684062"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043550"
 ---
 # <a name="using-azure-mfa-for-activation"></a>Utilizar o MFA do Azure para ativação
 > [!IMPORTANT]
-> Devido ao anúncio de substituição do kit de desenvolvimento de software da autenticação multifator do Azure, o SDK do Azure MFA terá suporte para clientes existentes até a data de desativação de 14 de novembro de 2018. Novos clientes e clientes atuais não poderão baixar mais o SDK do Azure MFA por meio do portal clássico do Azure. Para obter informações sobre como usar o servidor MFA do Azure, consulte [usando o servidor do Azure MFA no Pam ou SSPR](../working-with-mfaserver-for-mim.md).
+> Devido ao anúncio da Deprecation do Kit de Desenvolvimento de Software de Autenticação Multifactor Azure, o Azure MFA SDK será suportado para os clientes existentes até à data de reforma de 14 de novembro de 2018. Novos clientes e clientes atuais não poderão mais descarregar o Azure MFA SDK através do portal clássico Azure. Para obter informações sobre a utilização do Servidor Azure MFA, consulte a utilização do [servidor Azure MFA em PAM ou SSPR](../working-with-mfaserver-for-mim.md).
 
 
 
@@ -31,11 +31,11 @@ Quando configurar uma função de PAM, pode escolher como autorizar os utilizado
 
 Se nenhuma verificação estiver ativada, os utilizadores candidatos são automaticamente ativados para a respetiva função.
 
-O Multi-Factor Authentication do Microsoft Azure (MFA) é um serviço de autenticação que requer que os utilizadores verifiquem as tentativas de início de sessão com uma aplicação móvel, uma chamada telefónica ou uma mensagem de texto. Está disponível para utilizar com o Microsoft Azure Active Directory e como um serviço para aplicações empresariais na nuvem e no local. Para o cenário do PAM, o Azure MFA fornece um mecanismo de autenticação adicional. O Azure MFA pode ser usado para autorização, independentemente de como um usuário é autenticado para o domínio PRIV do Windows.
+O Multi-Factor Authentication do Microsoft Azure (MFA) é um serviço de autenticação que requer que os utilizadores verifiquem as tentativas de início de sessão com uma aplicação móvel, uma chamada telefónica ou uma mensagem de texto. Está disponível para utilizar com o Microsoft Azure Active Directory e como um serviço para aplicações empresariais na nuvem e no local. Para o cenário PAM, o Azure MFA fornece um mecanismo adicional de autenticação. O Azure MFA pode ser utilizado para autorização, independentemente da forma como um utilizador autenticado no domínio Priv do Windows.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para usar o Azure MFA com o MIM, você precisa:
+Para utilizar o Azure MFA com MIM, precisa de:
 
 - Acesso à Internet a partir de cada Serviço MIM que fornece o PAM, para contactar o serviço MFA do Azure
 - Uma subscrição do Azure
@@ -44,7 +44,7 @@ Para usar o Azure MFA com o MIM, você precisa:
 
 ## <a name="creating-an-azure-mfa-provider"></a>Criar um Fornecedor de MFA do Azure
 
-Nesta seção, você configura seu provedor de MFA do Azure no Microsoft Azure Active Directory.  Se você já estiver usando o Azure MFA, seja autônomo ou configurado com Azure Active Directory Premium, pule para a próxima seção.
+Nesta secção, configura o seu fornecedor De MFA Azure no Microsoft Azure Ative Directory.  Se já estiver a utilizar o Azure MFA, autónomo ou configurado com o Azure Ative Directory Premium, passe para a secção seguinte.
 
 1.  Abra um browser e aceda ao [Portal clássico do Azure](https://manage.windowsazure.com) como administrador de subscrição do Azure.
 
@@ -57,10 +57,10 @@ Nesta seção, você configura seu provedor de MFA do Azure no Microsoft Azure A
 ## <a name="downloading-the-azure-mfa-service-credentials"></a>Transferir as Credenciais do Serviço MFA do Azure
 
 > [!IMPORTANT]
-> O SDK do Azure MFA não está mais disponível. Para obter informações sobre como usar o servidor MFA do Azure, consulte [usando o servidor Azure MFA no Pam ou SSPR](../working-with-mfaserver-for-mim.md) em vez disso.
+> O Azure MFA SDK já não está disponível. Para obter informações sobre a utilização do Servidor Azure MFA, consulte a utilização do [Servidor Azure MFA em PAM ou SSPR.](../working-with-mfaserver-for-mim.md)
 
 
-Anteriormente, você geraria um arquivo que inclui o material de autenticação para o PAM entrar em contato com o Azure MFA.
+Anteriormente, geraria um ficheiro que inclui o material de autenticação para a PAM contactar o Azure MFA.
 
 1. Abra um browser e aceda ao [Portal clássico do Azure](https://manage.windowsazure.com) como administrador de subscrição do Azure.
 
@@ -87,9 +87,9 @@ Anteriormente, você geraria um arquivo que inclui o material de autenticação 
 
 2.  Crie uma nova pasta de diretório no diretório onde o Serviço MIM foi instalado, como ```C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\MfaCerts```.
 
-3.  Usando o Windows Explorer, navegue até a pasta ```pf\certs``` do arquivo ZIP baixado na seção anterior. Copie o arquivo ```cert\_key.p12``` para o novo diretório.
+3.  Utilizando o Windows Explorer, navegue na pasta ```pf\certs``` do ficheiro ZIP descarregado na secção anterior. Copie o ficheiro ```cert\_key.p12``` para o novo diretório.
 
-4.  Usando o Windows Explorer, navegue até a pasta ```pf``` do ZIP e abra o arquivo ```pf\_auth.cs``` em um editor de texto como o WordPad.
+4.  Utilizando o Windows Explorer, navegue na pasta ```pf``` do ZIP e abra o ficheiro ```pf\_auth.cs``` num editor de texto como o Wordpad.
 
 5. Encontre estes três parâmetros: ```LICENSE\_KEY```, ```GROUP\_KEY```, ```CERT\_PASSWORD```.
 
@@ -156,7 +156,7 @@ Para saber mais informações sobre as chamadas de telefone falhadas (evento 101
 
 6.  Quando o relatório for gerado, pode visualizá-lo no portal ou, se o relatório do MFA for extenso, transfira-o para um ficheiro CSV. Os valores **SDK** na coluna **AUTH TYPE** indicam as linhas relevantes como pedidos de ativação de PAM: são eventos com origem no MIM ou outro software no local. O campo **USERNAME** é a GUID do objeto de utilizador na base de dados do serviço MIM. Se uma chamada não tiver êxito, o valor na coluna **AUTHD** será **Não** e o valor da coluna **CALL RESULT** irá conter os detalhes do motivo da falha.
 
-## <a name="next-steps"></a>Próximos Passos
+## <a name="next-steps"></a>Passos Seguintes
 
-- [O que é a autenticação multifator do Azure](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
-- [Crie sua conta gratuita do Azure hoje mesmo](https://azure.microsoft.com/free/)
+- [O que é a autenticação de multi-factor estoque Azure](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
+- [Crie hoje a sua conta Azure gratuita](https://azure.microsoft.com/free/)

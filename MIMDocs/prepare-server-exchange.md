@@ -4,19 +4,19 @@ description: Como um passo opcional, implemente o Exchange Server para permitir 
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 11/30/2017
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 2994711949122aac7a545d3849db6c66f8cb09ed
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 07b1bdfc3bf11817a113791ace556d8a32faedc0
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73329311"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043584"
 ---
 # <a name="set-up-an-identity-management-server-exchange"></a>Configurar um servidor de gestão de identidades: Exchange
 

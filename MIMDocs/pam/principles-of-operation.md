@@ -4,19 +4,19 @@ description: A Gestão de Acesso Privilegiado partilha alguns componentes com o 
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 6498f68f-36d3-448c-8fe6-649ad5a7f97d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b0a101a06acfdd5b95deb576a7fddfda124a3853
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: accdda41616ba6c02959eda8549b6dbc322fc627
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518333"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043924"
 ---
 # <a name="understand-the-components-of-pam"></a>Compreender os componentes de PAM
 

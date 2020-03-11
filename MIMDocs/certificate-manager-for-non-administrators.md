@@ -4,19 +4,19 @@ description: Saiba como inscrever smart cards para utilizadores sem acesso de ad
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 4d66c566912f186bce175dde9f16346942afd72e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 91409b0272c0b21cac90dbc4c162e5bf4d9f8464
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64516657"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79042139"
 ---
 # <a name="enroll-smart-cards-for-non-administrators"></a>Inscrição de smart cards para não administradores
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
@@ -49,7 +49,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     4.  Edite o ficheiro denominado AppxManifest.xml
 
-    5.  No elemento &lt;Identity&gt;, modifique o valor do atributo Publisher para o assunto do seu certificado de autenticação, por exemplo, "CN = ABCD"
+    5.  No elemento &lt;Identidade&gt; modificar o valor do atributo da Editora ao objeto do seu certificado de assinatura, por exemplo, "CN=ABCD"
 
         Neste campo, o assunto deve ser o mesmo que o assunto do certificado de assinatura que estiver a utilizar para assinar a aplicação.
 
@@ -69,7 +69,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
 
-    2.  Aceda a **Administração** &gt; **Gerir Modelos de Perfil** e certifique-se de que seleciona a caixa junto ao modelo de perfil que criou e, em seguida, clique em Copiar um modelo de perfil selecionado.
+    2.  Vá à **Administração** &gt; **gerir os modelos** de perfil e certifique-se de que a caixa é verificada ao lado do modelo de perfil que criou e, em seguida, clique em Copiar um modelo de perfil selecionado.
 
     3.  Escreva o nome do modelo de perfil, adicione “nonAdmin” e clique em **OK**.
 

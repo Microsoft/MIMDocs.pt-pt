@@ -4,7 +4,7 @@ description: Prepare um servidor PAM que irá alojar o SQL e SharePoint para a i
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
@@ -12,12 +12,12 @@ ms.assetid: 68ec2145-6faa-485e-b79f-2b0c4ce9eff7
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e306748e982eb2eb123246bc7f309465823eaf35
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 7a0a0437e767f793150d875bcaf31213a7fdf627
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518221"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043669"
 ---
 # <a name="step-3--prepare-a-pam-server"></a>Passo 3 – Preparar um servidor de PAM
 
@@ -33,7 +33,7 @@ Numa terceira máquina virtual, instale o Windows Server 2012 R2, especificament
 
     ![Escolha Windows Server Standard com GUI - captura de ecrã](media/PAM_GS_Select_WS2012.png)
 
-2. Reveja e aceite os termos do licenciamento.
+2. Reveja e aceite os termos de licenciamento.
 
 3.  Uma vez que o disco estará vazio, selecione **Personalizar: instalar apenas o Windows** e utilizar o **espaço em disco não inicializado**.
 
@@ -41,7 +41,7 @@ Numa terceira máquina virtual, instale o Windows Server 2012 R2, especificament
 
 5.  Se a rede virtual não fornecer conectividade à Internet, adicione uma interface de rede adicional ao computador que forneça uma ligação à Internet.  Será necessário para a instalação do SharePoint e pode ser desativado após este passo estar concluído.
 
-6.  Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias.  Pode ser necessário reiniciar o servidor.
+6.  Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias.  Pode ser preciso reiniciar o servidor.
 
 7.  Depois de o servidor ser reiniciado, inicie sessão como Administrador, abra o Painel de Controlo e associe PAMSRV ao domínio PRIV (priv.contoso.local).  Será necessário fornecer o nome de utilizador e as credenciais de um administrador do domínio PRIV (PRIV\Administrador). Depois de aparecer a mensagem de boas-vindas, feche a caixa de diálogo e reinicie este servidor.
 
@@ -204,7 +204,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 ## <a name="set-the-website-as-the-local-intranet"></a>Definir o site como a intranet local
 
 1. Inicie o Internet Explorer e abra um novo separador do browser
-2. Navegue até http://pamsrv.priv.contoso.local:82/ e entre como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
+2. Navegue para http://pamsrv.priv.contoso.local:82/ e inscreva-se como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
 3. No Internet Explorer, abra as **Opções da Internet**, mude para o separador **Segurança**, selecione **Intranet local** e adicione o URL `http://pamsrv.priv.contoso.local:82/`.
 
 Se o início de sessão falhar, os SPNs Kerberos criados anteriormente no [Passo 2](step-2-prepare-priv-domain-controller.md) podem ter de ser atualizados.

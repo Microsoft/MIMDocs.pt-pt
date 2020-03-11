@@ -4,19 +4,19 @@ description: Plano para a instalação e MIM e configuração da mesma para Priv
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: c4ca5b58-ad0c-48af-a9eb-b71b22d0c67c
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fd444f9c67f1daeaf33883a988f54a97e12e685c
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: e80786bc6d59eb5f8acc7ef7999ebc52ddc84d7b
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518578"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044060"
 ---
 # <a name="configure-the-mim-environment-for-privileged-access-management"></a>Configuração do ambiente de MIM para Privileged Access Management
 

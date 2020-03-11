@@ -1,25 +1,25 @@
 ---
-title: Atualizando contas de serviços específicos do MIM para notificações e aprovações quando o gMSA está habilitado | Microsoft Docs
-description: Tópico que descreve as etapas básicas para configurar o gMSA.
+title: Atualizar as contas dos Serviços Específicos da MIM para notificação e aprovações quando o gMSA estiver habilitado Microsoft Docs
+description: Tópico descrevendo os passos básicos para configurar gMSA.
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 06/27/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: af293106b11651dfd720c03165938f8079a3e49b
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: a380135c82a6e4d1b317ae64a8c135ecc9e9ad45
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518838"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044196"
 ---
-# <a name="update-of-mim-specific-service-account-for-notifications-to-gmsa"></a>Atualização da conta de serviço específica do MIM para notificações para gMSA
+# <a name="update-of-mim-specific-service-account-for-notifications-to-gmsa"></a>Atualização da conta do Serviço Específico mim para notificações ao gMSA
 ===========================================
 
-Atualize a senha para contas armazenadas, abaixo está o PowerShell para que os clientes não precisem executar o modo de alteração
+Atualizar a palavra-passe para contas armazenadas, abaixo está a powershell para que os clientes não tenham que executar o modo de mudança
 
-PowerShell: atualização de conta do Office365:
+Powershell: Office365 Account Update( Office365 Update):
 
 ```powershell
 #O365update.ps1

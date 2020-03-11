@@ -1,183 +1,183 @@
 ---
-title: Manipulação de dados de Microsoft Identity Manager | Microsoft Docs
-description: Entenda Microsoft Identity Manager manipulação de dados para facilitar e relatar dados no ambiente, execute ações no sistema determinado com base em funções e requisitos operacionais.
+title: Tratamento de dados do Microsoft Identity Manager / Microsoft Docs
+description: Compreender o tratamento de dados do Microsoft Identity Manager para identificar e reportar dados dentro do ambiente, tomar medidas em determinado sistema com base em funções e requisitos operacionais.
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 12/02/2018
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
-ms.openlocfilehash: 6f861c5b1984de70a91edcac89276402f289e355
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: e95cf26b62e582eaa3c07c40e551bc5930d3b1b0
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68701488"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044111"
 ---
-# <a name="microsoft-identity-manager-data-handling"></a>Manipulação de dados de Microsoft Identity Manager 
+# <a name="microsoft-identity-manager-data-handling"></a>Tratamento de dados do Microsoft Identity Manager 
 
-Este artigo fornecerá orientação sobre como as organizações podem tomar decisões que podem ser aplicadas em várias fontes de dados conectadas.  Isso pode ser obtido por meio das operações de pesquisa, exclusão, atualização e relatório.  Antes de decidir sobre sua abordagem de exclusão ou atualização, uma compreensão do design e da configuração atuais do seu sistema de identidade Manager (MIM) é essencial. 
+Este artigo fornecerá orientações sobre como as organizações podem tomar decisões que podem ser aplicadas em muitas fontes de dados conectadas.  Isto pode ser conseguido através das operações de pesquisa, exclusão, atualização e reporte.  Antes de decidir sobre a sua abordagem de apagar ou atualizar, é fundamental uma compreensão do design atual e configuração do seu sistema de gestor de identidade (MIM). 
 
-A seguir, alguns cenários que os clientes precisarão considerar e responder às seguintes perguntas: 
+Abaixo estão alguns cenários que os clientes terão de considerar e responder às seguintes perguntas: 
 
-- Quais dados você precisa para o gerenciamento de identidades para ajudar no processo de negócios?
-- Onde os dados atuais serão armazenados no MIM?
-- Como você usará esses dados no sistema?
-- Você está compartilhando esses dados com qualquer fonte de dados de parceiros externos (exportação)
-- Qual é a fonte autoritativa para os dados e o processamento dele?
-- Qual será seu plano de retenção de dados e de exclusão de dados em vigor?
-- Você identificou toda a tecnologia de que precisa para processar e gerenciar dados?
+- Que dados precisa para que a gestão de identidade ajude no processo de negócio?
+- Onde é que os dados atuais vão ser armazenados em MIM?
+- Como é que vai utilizar estes dados no sistema?
+- Está a partilhar estes dados com quaisquer fontes de dados de parceiros externos (Exportação)
+- Qual é a fonte autoritária para os dados e o tratamento dos mesmos?
+- Qual será o seu plano de retenção de dados e eliminação de dados?
+- Identificou toda a tecnologia necessária para processar e gerir dados?
 
-Para ajudá-lo a entender um ambiente atual do MIM, você pode utilizar a seguinte ferramenta para documentar seu ambiente do MIM ou adiar para seus documentos de design de implementação.
-- [Documentador do MIM – permite exportar a configuração atual](https://github.com/Microsoft/MIMConfigDocumenter)
+Para ajudá-lo a compreender um ambiente MIM atual, pode utilizar a seguinte ferramenta para documentar o seu ambiente MIM, ou adiar para os seus documentos de design de implementação.
+- [MIM Documentor - Permite exportar configuração atual](https://github.com/Microsoft/MIMConfigDocumenter)
 
 ## <a name="searching-for-and-identifying-personal-data"></a>Procurar e identificar dados pessoais
-A pesquisa de dados no MIM dependerá da configuração e da instalação. A maioria dos ambientes é interconectada, mas para fins de clareza, nós os dividimos por um componente de alto nível.
+A pesquisa de dados dentro da MIM dependerá da configuração e configuração. A maioria dos ambientes estão interligados, mas para clareza, quebrámo-los por componentes de alto nível.
 
 ### <a name="synchronization-service"></a>Serviço de Sincronização
 
-Todos os dados no MIM relacionados a usuários são derivados de fontes de dados Active Directory (AD) e HR. Ao pesquisar dados pessoais, o primeiro lugar que você deve considerar a pesquisa é o AD ou as fontes de dados conectadas. 
+Todos os dados em MIM relacionados com os utilizadores são derivados de fontes de Dados de Ative (AD) e HR. Ao procurar dados pessoais, o primeiro local onde deve considerar procurar é a AD ou fontes de dados conectadas. 
 
-Se você não tiver certeza de que a fonte de autoridade pode controlar esse usuário no console do MIM Synchronization Service Manager, clique na barra de pesquisa do metaverso para exibir os dados pessoais identificáveis armazenados no banco de dados. Os usuários podem procurar um usuário ou atributo específico.
+Se não tiver a certeza da origem da autoridade, pode rastrear este utilizador a partir da consola MIM Synchronization Service Manager, clique na barra metaverse search para ver os dados pessoais identificáveis que estão armazenados na base de dados. Os utilizadores podem procurar um utilizador ou atributo específico.
 
-- Para executar uma revisão ou uma pesquisa de dados de objetos de usuário
-    - Abrir o cliente do serviço de sincronização
-        - Usar o designer de metaverso permite que você veja a precedência e as importações de fluxo de atributo.
-![mim-Privacy-compliance_1. PNG](media/mim-privacy-compliance/mim-privacy-compliance_1.PNG)
-        - Usar a pesquisa de metaverso permite pesquisar em qualquer objeto e atributo no banco de dados ![mim-Privacy-compliance_2. PNG](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)
+- Para efetuar uma revisão ou pesquisa de dados de objetos de utilizador
+    - Abra o cliente do serviço de sincronização
+        - A utilização do designer metaverso permite-lhe ver importações e precedência do fluxo de atributos.
+![mim-privacy-compliance_1.PNG](media/mim-privacy-compliance/mim-privacy-compliance_1.PNG)
+        - A utilização da pesquisa metaverso permite-lhe pesquisar qualquer objeto e atribuir dentro da base de dados ![mim-privacy-compliance_2.PNG](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)
  
-Depois de localizar o objeto, clicar no objeto abrirá a página de perfil do usuário. Os detalhes do objeto fornecem os detalhes abrangentes sobre o objeto, seus atributos, última modificação e fonte de autoridade e fonte de dados conectada relacionada, derivada do exemplo de configuração do agente de gerenciamento abaixo.
+Depois de encontrar o objeto, clicar no objeto abrirá a página do perfil do utilizador. Os detalhes do objeto fornecem-lhe os detalhes abrangentes sobre o objeto, os seus atributos, a última modificação e fonte de autoridade, e fonte de dados conectada relacionada derivada do exemplo de configuração do agente de gestão abaixo.
 
-![mim-privacidade-conformidade. PNG](media/mim-privacy-compliance/mim-privacy-compliance.PNG)
+![mim-privacidade-compliance. PNG](media/mim-privacy-compliance/mim-privacy-compliance.PNG)
 
-### <a name="service-and-portal--pam"></a>Serviço e portal/PAM
-Se você tiver uma instância do serviço e do portal ou do PAM instalado, a capacidade de Pesquisar usuários será importante. 
+### <a name="service-and-portal--pam"></a>Serviço e Portal / PAM
+Se tiver uma instância do Serviço e portal ou PAM instalada seleção de pesquisa para os utilizadores é importante. 
 
-Se você instalou o portal, poderá usar a interface do usuário para pesquisar qualquer atributo ou consulta para um usuário específico.
+Se instalou o Portal, pode utilizar o UI para pesquisar qualquer atributo ou consulta para um determinado utilizador.
 
-Se você tiver apenas o servidor de serviço (sem interface do usuário do Portal) instalado, poderá executar uma sintaxe de pesquisa baseada no [FIMAutomation PSSnapin], exemplo encontrado [aqui](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx).
+Se tiver apenas o servidor de serviço (sem portal UI) instalado, pode executar uma sintaxe de pesquisa com base no [FIMAutomation PSSnapin], exemplo [aqui](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx)encontrado .
 
-O PAM pode usar a mesma sintaxe acima ou você pode usar o [módulo MIMPAM](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1) especificamente o cmdlet Get-pamuser para pesquisar o usuário no ambiente do Pam.
+O PAM pode utilizar a mesma sintaxe acima ou pode utilizar o [Módulo MIMPAM](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1) especificamente o cmdlet get-pamuser para procurar o utilizador dentro do ambiente PAM.
 
-Outras opções de relatório para pesquisar dados disponíveis estão no portal e no serviço.
-- [Relatório híbrido](https://docs.microsoft.com/microsoft-identity-manager/identity-manager-hybrid-reporting-azure)
-- [Relatórios com SCSM](https://docs.microsoft.com/previous-versions/mim/jj133853%28v%3dws.10%29)
+Outras opções de reporte para pesquisar os dados disponíveis estão no serviço e no portal.
+- [Reportagem Híbrida](https://docs.microsoft.com/microsoft-identity-manager/identity-manager-hybrid-reporting-azure)
+- [Reportagem com SCSM](https://docs.microsoft.com/previous-versions/mim/jj133853%28v%3dws.10%29)
 
 ### <a name="bhold"></a>BHOLD
-O serviço Bhold Core tem uma interface do usuário que permite pesquisar um ou mais atributos. 
+O serviço Bhold Core tem um UI que lhe permite procurar um utilizador ou atributos. 
 
-![pesquisa do bhold](media/mim-privacy-compliance/mim-privacy-compliance-bhold.PNG)
+![pesquisa de bhold](media/mim-privacy-compliance/mim-privacy-compliance-bhold.PNG)
 
-Se você estiver sincronizando o BHOLD com o [Access Management Connector](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-access-management-connector-install) para o serviço de sincronização, poderá ver os objetos de usuário conectados e os atributos que você envia para o BHOLD Core.
+Se estiver a sincronizar o BHOLD com [o conector](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-access-management-connector-install) de gestão de acesso para o serviço de sincronização, poderá ver os objetos de utilizador conectados e os atributos que envia para o núcleo BHOLD.
 
-Além disso, você pode carregar o módulo relatório do BHOLD.
+Também pode carregar o módulo BHOLD Reporting.
 
-- [Relatórios do BHOLD](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-concepts-guide#reporting)
+- [Relatórios BHOLD](https://docs.microsoft.com/microsoft-identity-manager/bhold/bhold-concepts-guide#reporting)
 
 ### <a name="certificate-management"></a>Gestão de Certificados
-A pesquisa do serviço de gerenciamento de certificados é incorporada à interface do usuário. O administrador será iniciado e selecionará "localizar usuário e exibir ou gerenciar suas informações"  
+A pesquisa de serviçode gestão de certificados está incorporada na UI. O administrador lançará e selecionará o 'Localizar utilizador e visualizar ou gerir as suas informações'  
 
 ![pesquisa cm](media/mim-privacy-compliance/mim-privacy-compliance-cm.PNG)
 
 ## <a name="exporting-personal-data"></a>Exportar os dados pessoais
-Como os dados relacionados às entidades no MIM são derivados de várias fontes, a maioria dos dados é armazenada no banco de dado do serviço de sincronização. Por esse motivo, você deve exportar dados relacionados ao objeto da sincronização do MIM ou pode determinar o proprietário desses dados.
+Como os dados relacionados com entidades em MIM são derivados de várias fontes, a maioria dos dados é armazenado na base de dados do Serviço de Sincronização. Por esta razão, deve exportar dados relacionados com objetos a partir do MIM Sync ou pode determinar o proprietário destes dados.
 
 ### <a name="synchronization-service"></a>Serviço de Sincronização
-Os serviços de sincronização para exportar dados simplesmente selecionam os dados da interface do usuário de pesquisa e copiam e colam em um formato CSV ou preferencial. Outra maneira de exportar esses dados é criar um MA baseado em arquivo para remover os dados atuais necessários sobre um usuário sinalizado de interesse. Um exbordo do uso de MA baseada em arquivo pode ser encontrado [aqui](https://blogs.msdn.microsoft.com/connector_space/2016/11/17/management-agent-configuration-part-4-delimited-text-file-management-agent/).
+Os serviços de sincronização para dados de exportação simplesmente selecionam os dados da UI de pesquisa e copiam e colam num formato csv ou preferido. Outra forma de exportar estes dados é criar um MA baseado em Ficheiros para deixar cair os dados atuais necessários sobre um utilizador sinalizado de interesse. Um exmaple de usar MA baseado em ficheiros pode ser encontrado [aqui](https://blogs.msdn.microsoft.com/connector_space/2016/11/17/management-agent-configuration-part-4-delimited-text-file-management-agent/).
 
 
-### <a name="service-and-portal--pam"></a>Serviço e portal/PAM
-Serviço e portal juntamente com o PAM, você pode exportar esses dados executar uma sintaxe de pesquisa baseada no [FIMAutomation PSSnapin], exemplo encontrado [aqui](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx) e redirecioná-lo para [CSV](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-6).
+### <a name="service-and-portal--pam"></a>Serviço e Portal / PAM
+Serviço e portal juntamente com PAM pode exportar estes dados executar uma sintaxe de pesquisa com base no [FIMAutomation PSSnapin], Exemplo encontrado [aqui](https://social.technet.microsoft.com/wiki/contents/articles/22713.fim-portals-use-powershell-to-find-all-users-without-a-manager.aspx) e encaná-lo para [csv](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/export-csv?view=powershell-6).
 
-O PAM pode usar a mesma sintaxe acima ou você pode usar o [módulo MIMPAM](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1) especificamente o Get-pamuser para pesquisar o usuário no ambiente do Pam e redirecioná-lo a um CSV.
+O PAM pode utilizar a mesma sintaxe acima ou pode utilizar o [Módulo MIMPAM](https://docs.microsoft.com/powershell/module/mimpam/get-pamuser?view=idm-ps-2016sp1) especificamente o get-pamuser para procurar o utilizador dentro do ambiente PAM e encaná-lo para um csv.
 
-- [Exemplo consultando o serviço do MIM usando o PowerShell](https://gallery.technet.microsoft.com/Querying-The-FIMMIM-dcb82de3)
+- [Exemplo consulta do serviço MIM usando powershell](https://gallery.technet.microsoft.com/Querying-The-FIMMIM-dcb82de3)
 
 ### <a name="bhold"></a>BHOLD
-Os dados do Bhold podem ser exportados usando o módulo relatórios do Bhold para seu formato preferido.
+Os dados de isolo podem ser exportados utilizando o módulo de relatório de retenção para o seu formato preferido.
 
 ### <a name="certificate-management"></a>Gestão de Certificados
-Os dados de gerenciamento de certificados relacionados a dados pessoais são conectados ao Active Directory. Um administrador pode exportar esses dados usando Active Directory PowerShell.
+Os dados de gestão de certificados relacionados com dados pessoais estão ligados ao diretório ativo. Um administrador pode exportar estes dados usando powershell de Diretório Ativo.
 
 ## <a name="updating-personal-data"></a>A atualizar os dados pessoais
 
-Os dados pessoais sobre usuários ou objetos em soluções do MIM normalmente são derivados do objeto do usuário nas fontes de dados conectadas da sua organização. Como as alterações feitas no perfil de usuário na origem de RH ou outro sistema autoritativo de registro, como o AD, são refletidas no serviço de sincronização do MIM.
+Os dados pessoais sobre utilizadores ou objetos em Soluções MIM são normalmente derivados do objeto do utilizador nas fontes de dados conectadas da sua organização. Uma vez que quaisquer alterações feitas ao perfil do utilizador na fonte de RH, ou noutro sistema de registo sinuoso, como a AD são então refletidas no Serviço de Sincronização MIM.
 
 ### <a name="synchronization-service"></a>Serviço de Sincronização
 
-Para executar operações de gerenciamento, os administradores devem fazer parte das operações de sincronização ou do administrador definido [aqui](https://docs.microsoft.com/previous-versions/mim/jj590183(v%3dws.10)).
+Para realizar operações de gestão, os administradores devem fazer parte de operações de sincronização ou de administradores [aqui](https://docs.microsoft.com/previous-versions/mim/jj590183(v%3dws.10))definidos.
 
-A atualização de dados é feita pela definição de regras da origem da autoridade. O console de gerenciamento ajuda a identificar a origem de autoridade para atualizá-la na origem. Outra opção é criar regra de sincronização ou extensão de regra para controlar a atualização de dados se a origem, como dados de RH, ainda precisar permanecer. Essas são opções com suporte avialible.
+A atualização dos dados é feita através da definição de regras a partir da fonte de autoridade. A consola de gestão ajuda a identificar a fonte de autoridade para atualizá-la na fonte. Outra opção é criar regra de sincronização ou a extensão da regra para controlar a atualização de dados se os dados de origem como os dados de RH ainda precisarem de permanecer. Estas são opções apoiadas avializadas.
 
-Para obter mais informações sobre diferentes maneiras de atualizar o atributo, consulte abaixo. 
+Para obter mais informações sobre diferentes formas de atualizar o atributo, consulte abaixo. 
 
-- [Usando extensões de regras](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)
+- [Utilização de extensões de regras](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)
 - [Compreender a Sincronização de Dados com Sistemas Externos](https://docs.microsoft.com/previous-versions/mim/jj133850(v%3dws.10))
 
-### <a name="service-and-portal--pam"></a>Serviço e portal/PAM
+### <a name="service-and-portal--pam"></a>Serviço e Portal / PAM
 
-O serviço e o portal para incluir dados do PAM podem ser atualizados usando os cmdlets FIMAutomation ou PAM. Se você tiver o portal, também poderá atualizar diretamente pesquisando e modificando o objeto. Uma coisa a observar e, dependendo da configuração, basta atualizar do portal não significa que ela permanecerá. Como a origem da autoridade é altamente dependente da configuração geral.
+O serviço e o Portal para incluir dados PAM podem ser atualizados utilizando os cmdlets FIMAutomation ou PAM. Se tiver o Portal, também pode atualizar diretamente pesquisando e modificando o objeto. Uma coisa a notar e dependendo da configuração simplesmente atualizar a partir do portal não significa que permanecerá. Como fonte de autoridade é altamente dependente da configuração geral.
 
 ### <a name="bhold"></a>BHOLD
 
-Os usuários podem ser atualizados diretamente com a interface do usuário do BHOLD core ou com o conector de gerenciamento de acesso.
+Os utilizadores podem ser atualizados diretamente com a interface de utilizador BHOLD Core ou com o conector de gestão de acesso.
 
 ### <a name="certificate-management"></a>Gestão de Certificados
 
-Os usuários no serviço de gerenciamento de certificados são uma reflexão do Active Directory. Para atualizar, use Active Directory para alterar detalhes do objeto.
+Os utilizadores do serviço de gestão de certificados são uma reflexão do diretório ativo. Para atualizar utilize o Ative Directory para alterar os detalhes do objeto.
 
 ## <a name="deleting-personal-data"></a>A eliminar os dados pessoais
 
 >[!Note] 
-> Este artigo fornece orientação sobre maneiras de excluir dados pessoais de Microsoft Identity Manager e pode ser usado para dar suporte às suas obrigações no GDPR. Se quiser obter informações gerais sobre o RGPD, veja a [secção RGPD do Portal de Confiança do Serviço](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> Este artigo fornece orientações sobre formas de eliminar dados pessoais do Microsoft Identity Manager e pode ser usado para suportar as suas obrigações ao abrigo do RGPD. Se quiser obter informações gerais sobre o RGPD, veja a [secção RGPD do Portal de Confiança do Serviço](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-Os dados no MIM são sincronizados e sempre atualizados a partir de sua fonte de dados conectada. Quando um objeto é excluído no destino, os dados do objeto no MIM podem ser mantidos para fins de investigação de segurança. A exclusão de objetos é configurada por regras de fonte de dados conectadas ou por extensão de regra (código) e/ou regras de exclusão de objeto.
+Os dados em MIM são sincronizados e sempre atualizados a partir da sua fonte de dados conectada. Quando um objeto é eliminado no alvo, os dados do objeto em MIM podem ser mantidos para efeitos de investigação de segurança. A eliminação de objetos é configurada de acordo com as regras de origem de dados ligadas ou as regras de extensão de regras de extensão de regras de eliminação de regras de eliminação de objetos.ou/ou objetos.
 
 ### <a name="synchronization-service"></a>Serviço de Sincronização
-O serviço de sincronização tem várias maneiras de lidar com dados ou excluir dados, dependendo dos processos de negócios. Para ajudar a entender, veja abaixo alguns artigos para ajudar a entender as opções de exclusão e atualização de atributos: 
+Serviço de Sincronização tantas formas de lidar com dados ou apagar dados dependendo dos processos de negócio. Para ajudar a compreender, abaixo estão alguns artigos para ajudar a entender opções sobre alocamento e atualização: 
 
 - [Compreender o Desaprovisionamento](https://social.technet.microsoft.com/wiki/contents/articles/1270.understanding-deprovisioning-in-fim.aspx)
-- [Usando extensões de regras](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)
-- [Práticas recomendadas do MIM](https://docs.microsoft.com/microsoft-identity-manager/mim-best-practices)
+- [Utilização de extensões de regras](https://msdn.microsoft.com/library/windows/desktop/ms698810(v=vs.100).aspx)
+- [Boas Práticas mim](https://docs.microsoft.com/microsoft-identity-manager/mim-best-practices)
 
-### <a name="service-and-portal--pam"></a>Serviço e portal/PAM
+### <a name="service-and-portal--pam"></a>Serviço e Portal / PAM
 
-É recomendável para o portal de & de serviço que você mantenha a configuração padrão de retenção de recursos do sistema de 30 dias. Isso informa ao serviço quando ele será excluído, não apenas solicita dados, mas também qualquer objeto que precise ser limpo do sistema. Quando o processo ocorre, todos os dados vinculados a esse objeto são excluídos isso inclui todos os dados de registro do SSPR. Isso é reproduzido na configuração de exclusão de objeto acima. Temos uma tabela que armazenamos o GUID dos objetos. Para reduzir o tamanho geral da tabela no Build 4.4.1459, adicionamos um processo chamado FIM_DeleteExpiredSystemObjectsJob detalhes sobre esse processo podem ser encontrados [aqui](https://support.microsoft.com/en-us/help/4012498/hotfix-rollup-package-build-4-4-1459-0-is-available-for-microsoft-iden).
+Recomenda-se ao Serviço e Portal que mantenha a configuração de retenção de recursos do sistema padrão de 30 dias. Isto indica ao serviço quando irá apagar, não só solicitar dados, mas também qualquer objeto que precise de ser retirado do sistema. Uma vez que o processo ocorre, todos os dados ligados a este objeto são eliminados, isto inclui todos os dados de registo SSPR. Isto reproduz-se na configuração de eliminação do objeto acima. Temos uma mesa onde armazenamos o guia dos objetos. Para reduzir o tamanho total da tabela na construção 4.4.1459 adicionámos um processo chamado FIM_DeleteExpiredSystemObjectsJob detalhes sobre este processo podem ser encontrados [aqui](https://support.microsoft.com/en-us/help/4012498/hotfix-rollup-package-build-4-4-1459-0-is-available-for-microsoft-iden).
 
-![mim-privacidade-conformidade-SRRC. PNG](media/mim-privacy-compliance/mim-privacy-compliance-srrc.PNG)
+![mim-privacy-compliance-srrc. PNG](media/mim-privacy-compliance/mim-privacy-compliance-srrc.PNG)
 
 
 ### <a name="bhold"></a>BHOLD
 
-Bhold como a maioria dos sistemas conectados ao serviço de sincronização podem ser configurados para excluir uma vez que o objeto de origem, como HR, é removido. Isso é configurado no agente de gerenciamento. e controladas pelas regras de exclusão de objetos, conforme descrito nos recursos do serviço de sincronizações.
+A maior parte dos sistemas ligados ao serviço de sincronização pode ser configurada para eliminar assim que o objeto de origem como o RH for removido. Isto está configurado no agente de gestão. e controlado pelas regras de eliminação de objetos, conforme descrito nas funcionalidades de serviço de sincronização.
 
-Outra opção é remover o objeto de usuário da interface do usuário do BHOLD Core. Dependendo da configuração, isso pode funcionar bem, mas a lógica de provisionamento poderá recriar esse usuário se não for excluído na origem.
-![mim-Privacy-Compliance-bholdr.](media/mim-privacy-compliance/mim-privacy-compliance-bholdr.PNG) PNG
+Outra opção é remover o objeto do utilizador diretamente da interface De utilizador Core BHOLD. Dependendo da configuração, esta lógica de provisionamento de nota poderia recriar este utilizador se não fosse eliminado na fonte.
+![mim-privacy-compliance-bholdr.](media/mim-privacy-compliance/mim-privacy-compliance-bholdr.PNG) do PNG
 
 
 ### <a name="certificate-management"></a>Gestão de Certificados
-Para remover um usuário do CM, exclua o usuário que está no Active Directory.
+Para remover um utilizador de CM, elimine o utilizador no diretório ativo.
 
-Gerenciamento de certificados como ele armazenará apenas a UID do perfil dos serviços de certificados com o domínio sAMAccountName. Depois que o usuário é excluído do AD, o cache do usuário está presente apenas para os certificados, a bruxa que eles registraram. Não recomendamos a exclusão de nada no banco de dados, pois isso pode causar danos gerais à operação do ambiente.
+Gestão de certificados, uma vez que apenas armazenará o perfil uid dos serviços de certificado com domínio sAMAccountName. Uma vez que o utilizador é eliminado de AD, a cache do utilizador só está presente para os certificados, bruxa que eles inscreveram. Não recomendamos a apagar nada na base de dados, pois isso pode causar danos globais ao funcionamento do ambiente.
 
-## <a name="opt-out-of-telemetry"></a>Recusa de telemetria
-As compilações anteriores do FIM/MIM usadas para coletar telemetria anônima sobre cada implantação e transmite esses dados por HTTPS para servidores Microsoft. Esses dados foram usados pela Microsoft para ajudar a aprimorar versões futuras do FIM/MIM no passado.
+## <a name="opt-out-of-telemetry"></a>Opt-out da telemetria
+Anteriores construções FIM/MIM usadas para recolher telemetria anoonizada sobre cada implementação e transmite estes dados em HTTPS para servidores da Microsoft. Estes dados foram utilizados pela Microsoft para ajudar a melhorar futuras versões de FIM/MIM no passado.
 
 >[!Note] 
-> Em versões posteriores de 4.5. x. x ou mais, a coleta de dados será desabilitada.
+> Em lançamentos posteriores de 4.5.x.x ou maior recolha de dados serão desativados.
 
-Para desabilitar a coleta de dados na versão anterior, execute o modo de alteração e desmarque o seguinte prompt:
+Para desativar a recolha de dados no modo de alteração de execução da versão anterior e desseleccionar a seguinte solicitação:
 
-![mim-privacidade-conformidade-CEIP. PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip.PNG)
+![mim-privacy-compliance-ceip. PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip.PNG)
 
-ou edite o registro e defina o valor para 0: (componente) CEIP HKLM\SOFTWARE\Microsoft\Forefront identidade Manager\2010
+ou editar o registo e definir o valor para 0: (Componente)CEIP HKLM\SOFTWARE\Microsoft\Forefront Identity Manager\2010
 
-![mim-privacidade-conformidade-ceip2. PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip2.PNG)
+![mim-privacy-compliance-ceip2. PNG](media/mim-privacy-compliance/mim-privacy-compliance-ceip2.PNG)
 
-## <a name="next-steps"></a>Próximos Passos 
-- [Diretrizes de privacidade relacionadas ao SQL](https://docs.microsoft.com/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
-- [Seção GDPR do portal de confiança do serviço](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
-- [Arquivo do FIM 2010: crescimento-implementação do Forefront Identity Manager 2010](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)
+## <a name="next-steps"></a>Passos Seguintes 
+- [Para orientação de privacidade relacionada com SQL](https://docs.microsoft.com/sql/relational-databases/security/microsoft-sql-and-the-gdpr-requirements?view=sql-server-2017)
+- [Secção rGPD do portal Service Trust](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
+- [ARQUIVO FIM 2010: Ramp up - Implementação de Gestor de Identidade de Vanguarda 2010](https://social.technet.microsoft.com/wiki/contents/articles/35789.fim-2010-archive-ramp-up-implementing-forefront-identity-manager-2010.aspx)

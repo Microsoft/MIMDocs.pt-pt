@@ -3,16 +3,16 @@ title: Registo Dinâmico do Serviço MIM | Documentos da Microsoft
 description: Ative o registo dinâmico do serviço MIM sem ser necessário reiniciar o serviço de gestão
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/29/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 90ef2ab63be3914d1d48c7319821177e7e62f9e0
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 69ebe774ddea0176fb26ef74b8f4352e4bb5d039
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68701305"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79042173"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
 
@@ -31,11 +31,11 @@ Pode consultar os níveis do registo dinâmico [aqui](https://msdn.microsoft.com
 - Critical (crítico) = o serviço de nível predefinido só irá escrever eventos críticos
 - Atualize a Linha 8 (dynamicLogging mode="true" loggingLevel="Critical") com o valor de registo preferencial
 
-Configuração de log dinâmico localizada na linha 266: Microsoft. ResourceManagement. Service. exe. config
+Config de exploração madeireira dinâmica localizada na linha 266: Microsoft.ResourceManagement.Service.exe.config
 
 ![Secções realçadas a mostrar linhas com as várias áreas de registo disponíveis](media/mim-service-dynamic-logging/screen02.png)
 
-Por padrão, o local de log estará em * * C:\Arquivos de Programas\microsoft Forefront Identity Manager\2010\Service, a conta de serviço do FIM precisará de permissão de gravação para esse local para gerar o log dinâmico.
+Por defeito, a localização de registo será no **C:\Program Files\Microsoft Forefront Identity Manager\2010\Service, a conta do Serviço FIM precisará de uma permissão de escrita para este local para gerar o registo dinâmico.
 
 ![Localização da pasta dos registos](media/mim-service-dynamic-logging/screen03.png)
 
@@ -45,20 +45,20 @@ Por padrão, o local de log estará em * * C:\Arquivos de Programas\microsoft Fo
 > 2. "%TEMP%\Microsoft.ResourceManagement.Service.exe_Emergency.log"
 > 3. "% USERPROFILE %\Microsoft.ResourceManagement.Service.exe_Emergency.log"
 
-Para exibir o rastreamento, você pode usar a [ferramenta Visualizador de rastreamento de serviço](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx)
+Para ver o vestígio, pode utilizar a ferramenta do [visualizador Do Rastreio](https://msdn.microsoft.com//library/aa751795(v=vs.110).aspx) de Serviço
 
  ![Captura de ecrã do Visualizador de Rastreio de Serviços](media/mim-service-dynamic-logging/screen04.png)
 
-# <a name="updates-build-45xx-or-greater"></a>Atualizações: Build 4.5. x. x ou superior
+## <a name="updates-build-45xx-or-greater"></a>Atualizações: Construa 4.5.x.x ou maior
 
-Na Build 4.5. x. x, revisamos o recurso de log para especificar o nível de log padrão é **"Warning"** . O serviço grava mensagens em dois arquivos (os índices "00" e "01" são adicionados antes da extensão). Os arquivos estão localizados no diretório "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service". Quando o arquivo excede o tamanho máximo, o serviço começa a gravar em outro arquivo. Se outro arquivo existir, ele será substituído. O tamanho máximo padrão do arquivo é 1 GB. Para alterar o tamanho máximo padrão, é necessário adicionar o parâmetro **"maxOutputFileSizeKB"** com o valor de tamanho de arquivo máximo em KB no ouvinte (Veja o exemplo abaixo) e reiniciar o serviço mim. Quando o serviço é iniciado, ele acrescenta logs em um arquivo mais recente (se o limite de espaço for excedido, ele substituirá o arquivo mais antigo). 
-
-> [!NOTE] 
-> Como o tamanho do arquivo de verificação de serviço antes da mensagem ser gravada, o tamanho do arquivo pode ser maior que o tamanho máximo para o tamanho de uma mensagem. Por padrão, o tamanho dos logs pode ser de aproximadamente 6 GB (três > ouvintes com dois arquivos para um tamanho de GB).
+Na construção 4.5.x.x Revimos a função de registo para especificar que o nível de registo predefinido é **"Aviso".** O serviço escreve mensagens em dois ficheiros (os índices "00" e "01" são adicionados antes da extensão). Os ficheiros estão localizados no diretório "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service". Quando o ficheiro excede o tamanho máximo, o serviço começa a escrever noutro ficheiro. Se outro ficheiro existir, será substituído. O tamanho máximo padrão do ficheiro é de 1 GB. Para alterar o tamanho máximo predefinido, é necessário adicionar o parâmetro **"maxOutputFileSizeKB"** com valor do tamanho máximo do ficheiro kB no ouvinte (ver exemplo abaixo) e reiniciar o Serviço MIM. Quando o serviço é iniciado, apresta registos em ficheiros mais recentes (se o limite de espaço for ultrapassado, substitui o ficheiro mais antigo). 
 
 > [!NOTE] 
-> A conta de serviço deve ter permissões para gravar no diretório > "C:\Arquivos de Programas\microsoft Forefront Identity Manager\2010\Service" >. Caso a conta de serviço não tenha tais direitos, os arquivos de > não serão criados.
+> Como o tamanho do ficheiro de verificação de serviço antes da mensagem ser escrita, o tamanho do ficheiro pode ser maior do que o tamanho máximo para o tamanho de uma mensagem. por padrão, o tamanho dos registos pode ser de aproximadamente 6 GB (três ouvintes com dois ficheiros para um tamanho GB).
 
-Exemplo de como definir o tamanho máximo do arquivo para 200 MB (200 * 1024 KB) para arquivos svclog Connector e 100 MB * (100 * 1024 KB) para arquivos txt
+> [!NOTE] 
+> A conta de serviço deve ter permissões para escrever em >"C:\Program Files\Microsoft Forefront Identity Manager\2010\Service" >diretório. Caso a conta de serviço não tenha esses direitos, os ficheiros >não serão criados.
+
+Exemplo como definir o tamanho máximo do ficheiro para 200 MB (200 * 1024 KB) para ficheiros de svclog e 100 MB *(100 * 1024 KB) para ficheiros txt
 
 `<add initializeData="Microsoft.ResourceManagement.Service_tracelog.svclog" type="Microsoft.IdentityManagement.CircularTraceListener.CircularXmlTraceListener, Microsoft.IdentityManagement.CircularTraceListener, PublicKeyToken=31bf3856ad364e35" name="ServiceModelTraceListener" traceOutputOptions="LogicalOperationStack, DateTime, Timestamp, ProcessId, ThreadId, Callstack" maxOutputFileSizeKB="204800">`

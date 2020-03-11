@@ -4,19 +4,19 @@ description: Preparar o domínio CORP com identidades novas ou existentes para s
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: dda6a05337e9a9778135fc7d833a38369540b3e0
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: c21228dad923d80ab63c255c1184b7de04a0ff3d
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518189"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043737"
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>Passo 1 – preparar o anfitrião e o domínio CORP
 
@@ -37,9 +37,9 @@ Instale o Windows Server 2012 R2 ou a Pré-visualização Técnica 4 do Windows 
 
 1. Escolha  **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)** .
 
-2. Reveja e aceite os termos do licenciamento.
+2. Reveja e aceite os termos de licenciamento.
 
-3. Uma vez que o disco estará vazio, selecione **Personalizar: instalar apenas o Windows** e utilizar o espaço em disco não inicializado.
+3. Uma vez que o disco estará vazio, selecione **Personalizar: instalar o Windows apenas** e utilize o espaço em disco não inicializado.
 
 4. Inicie sessão no novo computador como administrador. Navegue para o Painel de Controlo. Defina o nome do computador como *CORPDC* e conceda-lhe um endereço IP estático na rede virtual. Reinicie o servidor.
 
@@ -66,7 +66,7 @@ Nesta secção, irá adicionar os Serviços de Domínio do Active Directory (AD 
 
    Esta ação irá solicitar uma Palavra-passe de Administrador de Modo Seguro a utilizar. Tenha em atenção que as definições de criptografia e a delegação de DNS serão apresentadas. Estas são normais.
 
-3. Após a conclusão da criação da floresta, saia. O servidor será reiniciado automaticamente.
+3. Depois da criação da floresta estar completa, assine. O servidor reiniciará automaticamente.
 
 4. Depois de reiniciar o servidor, inicie sessão no CORPDC como um administrador do domínio. É, geralmente, o Administrador\\CONTOSO do utilizador, que terá a palavra-passe que foi criada quando instalou o Windows no CORPDC.
 
@@ -129,9 +129,9 @@ Para cada domínio, inicie sessão no controlador de domínio como um administra
 
 3. Clique com o botão direito do rato em **Política de Controladores de Domínio Predefinida** e selecione **Editar**. Aparece uma nova janela.
 
-4. Na janela Editor de Gestão de Políticas de Grupo, na árvore da Política de Controladores de Domínio Predefinida, navegue para **Configuração do Computador** > **Políticas** > **Definições do Windows** > **Definições de Segurança** > **Políticas Locais** > **Política de Auditoria**.
+4. Na janela Editor de Gestão de Políticas de Grupo, na árvore da Política de Controladores de Domínio Predefinida, navegue para **Configuração do Computador** > **Políticas** > **Definições do Windows** > **Definições de Segurança** > **Políticas Locais** > **Política de auditoria**.
 
-5. No painel de detalhes, clique com o botão direito do rato em **Auditar a gestão de contas** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e em **OK**.
+5. No painel de detalhes, clique com o botão direito do rato em **Gestão de contas de auditoria** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e em **OK**.
 
 6. No painel de detalhes, clique com o botão direito do rato em **Auditar acesso ao serviço de diretórios** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e em **OK**.
 
@@ -159,7 +159,7 @@ Nesta secção irá configurar as definições de registo que são necessárias 
    Restart-Computer
    ```
 
-Esta ação irá reiniciar o controlador de domínio, CORPDC. Para obter mais informações sobre esta definição de registo, consulte [Como resolver problemas de migração sIDHistory entre florestas com o ADMTv2](http://support.microsoft.com/kb/322970).
+Esta ação irá reiniciar o controlador de domínio, CORPDC. Para obter mais informações sobre esta definição de registo, consulte [Como resolver problemas de migração sIDHistory entre florestas com o ADMTv2](https://support.microsoft.com/kb/322970).
 
 ## <a name="prepare-a-corp-workstation-and-resource"></a>Prepare um recurso e estação de trabalho CORP
 
@@ -172,7 +172,7 @@ Se ainda não tiver um computador de estação de trabalho associado ao domínio
 
 Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.1 Enterprise ou Windows 10 Enterprise para tornar um computador *CORPWKSTN*.
 
-1. Utilize as definições Express durante a instalação.
+1. Utilize as Definições rápidas durante a instalação.
 
 2. Tenha em atenção que a instalação poderá não conseguir estabelecer ligação à Internet. Selecione **Criar uma conta local**. Especifique um nome de utilizador diferente; não utilize "Administrador" ou "Joana".
 

@@ -4,24 +4,24 @@ description: Criar um controlador de domínio do Active Directory antes de insta
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/26/2017
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 4d1e555de6c926c65b76d01c341becb383b8930b
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 70ac40d38af06e6be98e00caf1dc73630b62334e
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73329347"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043482"
 ---
 # <a name="set-up-a-domain"></a>Configurar um domínio
 
 > [!div class="step-by-step"]
-> [Windows Server»](prepare-server-ws2016.md)
+> [Servidor windows »](prepare-server-ws2016.md)
 
 O Microsoft Identity Manager (MIM) funciona com o seu domínio do Active Directory (AD). Já deve ter o AD instalado, e certifique-se de que tem um controlador de domínio no seu ambiente para um domínio que possa administrar.
 
@@ -33,11 +33,11 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
-> - Nome do controlador de domínio- **corpdc**
+> - Nome do controlador de domínio - **corpdc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor do serviço do MIM- **corpservice**
-> - Nome do servidor de sincronização do MIM- **corpsync**
-> - Nome do SQL Server- **corpsql**
+> - Nome do Servidor de Serviço MIM - **corpservice**
+> - Nome do Servidor MIM Sync - **corpsync**
+> - Nome do Servidor SQL - **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 1. Inicie sessão no controlador de domínio como o administrador do domínio (*por exemplo, Contoso\Administrador*).
@@ -99,11 +99,11 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
     setspn -S FIMService/mim.contoso.com Contoso\MIMService
     setspn -S FIMService/corpservice.contoso.com Contoso\MIMService
     ```
-5.  Durante a instalação, precisamos adicionar os seguintes registros de DNS ' A ' para a resolução de nomes apropriada
+5.  Durante a Configuração, precisamos adicionar os seguintes registos DNS 'A' para resolução de nome adequado
 
-- mim.contoso.com apontar para o endereço IP físico do corpservice
-- passwordreset.contoso.com apontar para o endereço IP físico do corpservice
-- passwordregistration.contoso.com apontar para o endereço IP físico do corpservice
+- mim.contoso.com Ponto para o endereço ip físico do corpservice
+- passwordreset.contoso.com Ponto para o endereço ip físico do corpservice
+- passwordregistration.contoso.com Ponto para o endereço ip físico do corpservice
 
 > [!div class="step-by-step"]
-> [Windows Server»](prepare-server-ws2016.md)
+> [Servidor windows »](prepare-server-ws2016.md)

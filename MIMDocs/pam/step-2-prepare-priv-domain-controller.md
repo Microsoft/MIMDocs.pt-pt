@@ -4,25 +4,25 @@ description: Prepare o controlador de domínio PRIV, que irá fornecer o ambient
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 09/14/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0364b0d14d08ab3af32010675e0ba80d39404342
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 97b425fc4444b241ddce99e7d5e3abf564daf245
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518088"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043703"
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>Passo 2 - Preparar o primeiro controlador de domínio PRIV
 
 > [!div class="step-by-step"]
-> [« Passo 1](step-1-prepare-corp-domain.md)
-> [Passo 3 »](step-3-prepare-pam-server.md)
+> [«Passo 1](step-1-prepare-corp-domain.md)
+> [Passo 3»](step-3-prepare-pam-server.md)
 
 Neste passo, irá criar um novo domínio que vai fornecer o ambiente bastion para autenticação de administrador.  Esta floresta precisará de, pelo menos, um controlador de domínio e de, pelo menos, um servidor membro. O servidor membro será configurado no passo seguinte.
 
@@ -34,15 +34,15 @@ Nesta secção, irá configurar uma máquina virtual para funcionar como um cont
 
 Noutra máquina virtual nova sem nenhum software instalado, instale o Windows Server 2012 R2 para tornar um computador “PRIVDC”.
 
-1. Selecione executar uma instalação personalizada (não uma atualização) do Windows Server. Na instalação, especifique **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64**; _não selecione_ **Data Center ou Server Core**.
+1. Selecione executar uma instalação personalizada (não uma atualização) do Windows Server. Ao instalar, especifique o **Windows Server 2012 R2 Standard (Server com um GUI) x64;** _não selecione_ **Data Center ou Server Core**.
 
-2. Reveja e aceite os termos do licenciamento.
+2. Reveja e aceite os termos de licenciamento.
 
-3. Uma vez que o disco estará vazio, selecione **Personalizar: instalar apenas o Windows** e utilizar o espaço em disco não inicializado.
+3. Uma vez que o disco estará vazio, selecione **Personalizar: instalar o Windows apenas** e utilize o espaço em disco não inicializado.
 
 4. Depois de instalar a versão do sistema operativo, inicie sessão neste novo computador como o novo administrador. Utilize o Painel de Controlo para definir o nome do computador como *PRIVDC*, dê-lhe um endereço IP estático na rede virtual e configure o servidor DNS para ser o controlador de domínio instalado no passo anterior. Esta ação exige reiniciar o servidor.
 
-5. Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias. Pode ser necessário reiniciar o servidor.
+5. Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias. Pode ser preciso reiniciar o servidor.
 
 ### <a name="add-roles"></a>Adicionar funções
 
@@ -237,7 +237,7 @@ Com o PowerShell no PRIVDC, configure o reencaminhamento do nome DNS para que o 
    ```
 
 > [!NOTE]
-> Os passos seguintes deste documento descrevem como instalar os componentes do servidor MIM 2016 num único computador. Se planear adicionar outro servidor para elevada disponibilidade, precisará de configuração de Kerberos adicional, conforme descrito em [FIM 2010: Kerberos Authentication Setup (FIM 2010: Configuração de Autenticação Kerberos)](http://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx).
+> Os passos seguintes deste documento descrevem como instalar os componentes do servidor MIM 2016 num único computador. Se planear adicionar outro servidor para elevada disponibilidade, precisará de configuração de Kerberos adicional, conforme descrito em [FIM 2010: Kerberos Authentication Setup (FIM 2010: Configuração de Autenticação Kerberos)](https://social.technet.microsoft.com/wiki/contents/articles/3385.fim-2010-kerberos-authentication-setup.aspx).
 
 ### <a name="configure-delegation-to-give-mim-service-accounts-access"></a>Configurar a delegação para dar acesso a contas de serviço MIM
 
@@ -260,7 +260,7 @@ Execute os passos seguintes no PRIVDC como administrador do domínio.
     - **Eliminar todos os Objetos Subordinados**
     - **Ler Todas as Propriedades**
     - **Escrever Todas as Propriedades**
-    - **Migrar histórico SID** Clique em **Avançar** e em **concluir**.
+    - **História do SID migrado** Clique **em Seguida,** **em seguida, terminar**.
 
 11. Mais uma vez, clique com o botão direito do rato no domínio **priv.contoso.local** e selecione **Delegar Controlo**.  
 12. No separador Utilizadores e Grupos Selecionados, clique em **Adicionar**.  
@@ -291,7 +291,7 @@ Se ainda não tiver um computador de estação de trabalho que irá ser associad
 
 Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.1 Enterprise ou o Windows 10 Enterprise para tornar um computador *“PRIVWKSTN”* .
 
-1. Utilize as definições Express durante a instalação.
+1. Utilize as Definições rápidas durante a instalação.
 
 2. Tenha em atenção que a instalação poderá não conseguir estabelecer ligação à Internet. Clique em **Criar uma conta local**. Especifique um nome de utilizador diferente; não utilize "Administrador" ou "Joana".
 
@@ -304,5 +304,5 @@ Se quiser mais detalhes, veja [proteger estações de trabalho com acesso privil
 No próximo passo, irá preparar um servidor de PAM.
 
 > [!div class="step-by-step"]
-> [« Passo 1](step-1-prepare-corp-domain.md)
-> [Passo 3 »](step-3-prepare-pam-server.md)
+> [«Passo 1](step-1-prepare-corp-domain.md)
+> [Passo 3»](step-3-prepare-pam-server.md)

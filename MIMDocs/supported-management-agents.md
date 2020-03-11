@@ -4,7 +4,7 @@ description: Utilize conectores para gerir a transferência de dados entre mim e
 keywords: ''
 ms.assetid: 8bc2f6d2-9f53-4db6-aee6-a937ae468163
 author: EugeneSergeev
-manager: aashiman
+manager: daveba
 editor: ''
 reviewer: markwahl-msft
 ms.devlang: na
@@ -16,12 +16,12 @@ ms.date: 01/23/2019
 ms.author: esergeev
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: b189d80053dd357874c57a461553205d3394ab04
-ms.sourcegitcommit: 32c7a46b2f8ed3f2f9ebc6f79a4ecb0019fe62e0
+ms.openlocfilehash: f6e43abea8b58ccff7fa376b266a91cb138f5aa9
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77527910"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044395"
 ---
 # <a name="connect-to-your-directories"></a>Ligar aos diretórios
 

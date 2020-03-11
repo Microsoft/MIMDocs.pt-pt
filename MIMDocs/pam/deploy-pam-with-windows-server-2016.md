@@ -4,22 +4,22 @@ description: Saiba mais sobre como implementar o Privileged Access Management co
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 347eda5872792872a9bb30357c45835303f92e01
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 521b96c3ef9cae5a5f9151ddf125cfb534ae0332
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518524"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044026"
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>Implementar o PAM do MIM com o Windows Server 2016
 
 
-Este cenário permite que o MIM 2016 SP1 tire partido das funcionalidades do Windows Server 2016, como o controlador de domínio para a floresta "PRIV".  Quando esse cenário é configurado, o tíquete Kerberos de um usuário será limitado ao tempo restante de suas ativações de função. 
+Este cenário permite que o MIM 2016 SP1 tire partido das funcionalidades do Windows Server 2016, como o controlador de domínio para a floresta "PRIV".  Quando este cenário estiver configurado, o bilhete Kerberos de um utilizador será limitado ao tempo restante das suas ativações de funções. 
 
 > [!Note]
 > Não é possível utilizar pré-visualizações técnicas do Windows Server 2016 anteriores à Pré-visualização Técnica 5 com esta versão do MIM.
@@ -50,7 +50,7 @@ Faça a instalação tal como descrito no [Guia de introdução](privileged-iden
 
   - As alterações descritas em "Configurar a auditoria"(item n.º 8) e "Configurar as definições de registo" (item n.º 10) são **recomendadas, mas não são obrigatórias,** quando os controladores de domínio CORP e PRIV estão ao nível funcional do domínio do Windows Server 2016.
 
-- Se optar por utilizar o Windows Server 2012 R2 como o sistema operativo para CORPDC, tem de instalar as correções 2919442 e 2919355, [assim como a atualização 3155495](http://support.microsoft.com/kb/3156418), no CORPDC.
+- Se optar por utilizar o Windows Server 2012 R2 como o sistema operativo para CORPDC, tem de instalar as correções 2919442 e 2919355, [assim como a atualização 3155495](https://support.microsoft.com/kb/3156418), no CORPDC.
 
 - Siga as instruções no [Passo 2 - Preparar o controlador de domínio PRIV](step-2-prepare-priv-domain-controller.md), exceto estes ajustes:
 

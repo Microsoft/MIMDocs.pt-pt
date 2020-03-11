@@ -4,19 +4,19 @@ description: Utilize agentes de gestão e o Serviço de Sincronização do MIM p
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/12/2017
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 5e532b67-64a6-4af6-a806-980a6c11a82d
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 1627bae6aecdfc3d57261485de04a78feb264013
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 81cf34959ccdea5ad9eb463f85a25d26bc1d8ede
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73329329"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79042428"
 ---
 # <a name="install-mim-2016-synchronize-active-directory-and-mim-service"></a>Instalar o MIM 2016: Sincronizar o Active Directory e o Serviço MIM
 
@@ -37,13 +37,13 @@ O agente de gestão (MA) do MIM é um conetor da Sincronização do MIM para o S
 Quando configura um agente de gestão do MIM, tem de especificar uma conta de utilizador. Este documento utiliza **MIMMA** como o nome desta conta.
 
 > [!NOTE]
-> A conta que utiliza para o agente de gestão do MIM tem de ser a mesma conta que especificou durante a instalação do Serviço MIM. Se você planeja habilitar o recurso ' usar conta de MIMSync ', o serviço de sincronização do MIM deve ser instalado usando a conta de serviço gerenciado de grupo.
+> A conta que utiliza para o agente de gestão do MIM tem de ser a mesma conta que especificou durante a instalação do Serviço MIM. Se planeia ativar a funcionalidade 'Use mimSync', o Serviço de Sincronização MIM deve ser instalado utilizando a Conta de Serviço Gerida pelo Grupo.
 
 ### <a name="to-create-the-mim-ma"></a>Para criar o MA do MIM
 
 1.  Abra o Synchronization Service Manager.
 
-2.  Para abrir o assistente para criar agente de gerenciamento, altere para a página **agentes de gerenciamento** e, no menu **ações** , clique em **criar**.
+2.  Para abrir o assistente do Agente de Gestão Criar, mude para a página agentes de **gestão** e, em seguida, no menu **Ações,** clique em **Criar**.
 
 3.  Na página **Criar Agente de Gestão**, forneça as seguintes definições e, em seguida, clique em **Seguinte**.
 
@@ -56,7 +56,7 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     -   Base de dados: FIMService
 
-    -   Endereço básico do serviço do MIM: http://localhost:5725
+    -   Endereço de base do serviço MIM: http://localhost:5725
 
     -   Modo de autenticação: autenticação integrada do Windows
 
@@ -111,14 +111,14 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     | **Atributo de Origem de Dados** | **Direção do Fluxo** | **Atributo Metaverso** |
     |-|-|-|
-    | NomedaConta | Exportar | nomedaConta |
-    | Nome a Apresentar | Exportar | nomeaApresentar |
-    | Domínio | Exportar | domínio |
+    | NomedaConta | Exportar | accountName |
+    | DisplayName | Exportar | displayName |
+    | Domain | Exportar | domínio |
     | E-mail | Exportar | correio |
     | EmployeeID | Exportar | IDdefuncionário |
     | TipoDeFuncionário | Exportar | tipodeFuncionário |
-    | NomePróprio | Exportar | nomePróprio |
-    | Apelido | Exportar | apelido |
+    | NomePróprio | Exportar | firstName |
+    | Apelido | Exportar | lastName |
     | SIDobjeto | Exportar | sidObjeto |
 
     -   Selecione **Grupo** como o tipo de objeto de Origem de dados e de Metaverso.
@@ -137,9 +137,9 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
 
     | **Atributo de Origem de Dados** | **Direção do Fluxo** | **Atributo Metaverso** |
     |-|-|-|
-    | NomedaConta | Exportar | nomedaConta |
-    | Nome a Apresentar | Exportar | nomeaApresentar |
-    | Domínio | Exportar | domínio |
+    | NomedaConta | Exportar | accountName |
+    | DisplayName | Exportar | displayName |
+    | Domain | Exportar | domínio |
     | E-mail | Exportar | correio |
     | MailNickName | Exportar | mailNickName |
     | Membro | Exportar | membro |
@@ -148,9 +148,9 @@ Quando configura um agente de gestão do MIM, tem de especificar uma conta de ut
     | Tipo | Exportar | tipo |
     | MembershipAddWorkflow | Exportar | membershipAddWorkflow |
     | MembershipLocked | Exportar | membershipLocked |
-    | NomedaConta | Importar | nomedaConta |
+    | NomedaConta | Importar | accountName |
     | DisplayedOwner | Importar | displayedOwner |
-    | Nome a Apresentar | Importar | nomeaApresentar |
+    | DisplayName | Importar | displayName |
     | MailNickName | Importar | mailNickName |
     | Membro | Importar | membro |
     | Âmbito | Importar | âmbito |
@@ -196,20 +196,20 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 7. Na página **Selecionar Atributos**, selecione **Mostrar TUDO**, selecione os atributos seguintes e, em seguida, clique em **Seguinte**:
 
     -   empresa
-    -   nomeaApresentar
+    -   displayName
     -   IDdefuncionário
     -   tipodeFuncionário
-    -   nomeDado
+    -   givenName
     -   tipodeGrupo
     -   geridoPor
     -   gestor
     -   membro
     -   sidObjeto
-    -   nomeContaSAM
+    -   sAMAccountName
     -   tipoContaSAM
     -   sn
     -   pwdUnicode
-    -   controloContaUtilizador
+    -   userAccountControl
 
 8. Na página **Configurar Filtro de Conetor**, clique em **Seguinte**.
 
@@ -224,7 +224,7 @@ O agente de gestão do Active Directory é um conetor para os Serviços de Domí
 
 ## <a name="create-run-profiles"></a>Criar Perfis de Execução
 
-Crie perfis de execução para os conectores ADMA e MIMMA.
+Crie perfis de execução para os Conectores ADMA e MIMMA.
 
 ### <a name="create-run-profiles-for-the-adma-connector"></a>Criar perfis de execução para o conetor do ADMA
 
@@ -323,12 +323,12 @@ Para criar a regra de sincronização de entrada de utilizadores do AD:
 
     | Regra de Fluxo | Origem | Destino |
     |-|-|-|
-    |Regra 1|NomeContaSam|nomedaConta|
-    |Regra 2|nomeaApresentar|nomeaApresentar|
+    |Regra 1|NomeContaSam|accountName|
+    |Regra 2|displayName|displayName|
     |Regra 3|TipoDeFuncionário|tipodeFuncionário|
-    |Regra 4|nomeDado|nomePróprio|
-    |Regra 5|sn|apelido|
-    |Regra 6|Gestor|gestor|
+    |Regra 4|givenName|firstName|
+    |Regra 5|sn|lastName|
+    |Regra 6|Manager|gestor|
     |Regra 7|SIDobjeto|SIDobjeto|
     |Regra 8|"Contoso"|domínio|
 

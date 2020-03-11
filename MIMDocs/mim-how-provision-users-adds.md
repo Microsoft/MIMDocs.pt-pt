@@ -1,20 +1,20 @@
 ---
-title: Microsoft Identity Manager o provisionamento de usuário 2016 para o AD | Microsoft Docs
+title: Microsoft Identity Manager 2016 prestação de utilizadores à AD  Microsoft Docs
 description: Reveja o processo de criação de utilizadores no AD DS com o Microsoft Identity Manager 2016
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 77f1eb5d8355472c7aee7bc9f389ca8b24ab76a9
-ms.sourcegitcommit: 1ca298d61f6020623f1936f86346b47ec5105d44
+ms.openlocfilehash: 149339a6e1029f01378a518a98029c1d588de6f9
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76256619"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044179"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
 
@@ -169,10 +169,10 @@ A seguinte tabela indica as definições específicas do cenário mais important
 
 | Página de estruturador do agente de gestão                          | Configuração                                                  |
 |---------------------------------------------------------|----------------------------------------------------------------|
-| Criar agente de gestão                                 | 1. **agente de gerenciamento para:** AD DS  <br/> 2. **nome:** Fabrikam ADMA |
-| Ligar à floresta do Active Directory                      | 1. **selecione partições de diretório:** "DC = Fabrikam, DC = com"   <br/>   2. clique em **contêineres** para abrir a caixa de diálogo **selecionar contêineres** e verifique se **MIMObjects** é a única UO selecionada.        |
+| Criar agente de gestão                                 | 1. **Agente de gestão para:** AD DS  <br/> 2. **Nome:** Fabrikam ADMA |
+| Ligar à floresta do Active Directory                      | 1. **Selecione divisórias de diretório:** "DC=Fabrikam,DC=com"   <br/>   2. Clique em **recipientes** para abrir a caixa de diálogo **Select Containers** e **certifique-se** de que mimObjects é o único OU que é selecionado.        |
 | Selecionar Tipos de objeto                                     | Para além dos Tipos de objeto já selecionados, selecione **utilizador.** |
-| Selecionar atributos                                       | 1. clique em **Mostrar tudo.** <br/>   2. Selecione os seguintes atributos: <br/> &nbsp;&nbsp;&nbsp;&#176; **displayName** <br/> &nbsp;&nbsp;&nbsp;&#176; **givenName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **sn** <br/> &nbsp;&nbsp;&nbsp;&#176;  **SamAccountName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **unicodePwd** <br/> &nbsp;&nbsp;&nbsp;&#176;  **userAccountControl**     
+| Selecionar atributos                                       | 1. Clique **em mostrar tudo.** <br/>   2. Selecione os seguintes atributos: <br/> &nbsp;&nbsp;&nbsp;&#176; **displayName** <br/> &nbsp;&nbsp;&nbsp;&#176; **givenName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **sn** <br/> &nbsp;&nbsp;&nbsp;&#176;  **SamAccountName** <br/> &nbsp;&nbsp;&nbsp;&#176;  **unicodePwd** <br/> &nbsp;&nbsp;&nbsp;&#176;  **userAccountControl**     
 
 Para obter mais informações, veja os seguintes tópicos no menu Ajuda:
 - Criar um Agente de Gestão
@@ -193,8 +193,8 @@ A seguinte tabela indica as definições específicas do cenário mais important
 
 | Página de estruturador do agente de gestão | Configuração |
 |------------|------------------------------------|
-| Criar agente de gestão | 1. **agente de gerenciamento para: agente de gerenciamento de serviço do** fim <br/> 2. **nome** Fabrikam FIMMA da |
-| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183; **Base de dados:** FIMService <br/> &#183;**Endereço base do serviço fim:** http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
+| Criar agente de gestão | 1. **Agente de gestão para:** Agente de Gestão de Serviços FIM <br/> 2. **Nome** Fabrikam FIMMA |
+| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183; **Base de dados:** FIMService <br/> &#183;**Endereço de base do serviço FIM:** http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
 | Selecionar Tipos de objeto                                     | Para além dos Tipos de objeto selecionados, selecione **Pessoa.**   |
 | Configurar mapeamentos de Tipos de objetos                          | Para além dos mapeamentos de tipos de objetos existentes, adicione um mapeamento da pessoa **Tipo de Objeto Origem de Dados** à pessoa **Tipo de Objeto Metaverso**. |
 | Configurar fluxo de atributos                                | Para além dos mapeamentos de fluxos de atributos existentes, adicione os seguintes mapeamentos de fluxos de atributos: <br/><br/> ![Fluxo de atributos](media/how-provision-users-adds/image018.jpg) |
@@ -220,8 +220,8 @@ A seguinte tabela indica os perfis de execução que tem de criar para o cenári
 
 | Agente de gestão  | Perfil de execução     |
 |-------------------|--------------------------------------|
-| ADMA da Fabrikam     | 1. importação completa  <br/> 2. sincronização completa <br/> 3. importação Delta <br/> 4. sincronização Delta <br/> 5. exportar                                                                    |
-| FIMMA da Fabrikam   | 1. importação completa <br> 2. sincronização completa <br/> 3. importação Delta <br/> 4. sincronização Delta <br/> 5. exportar|                                                                                                                                                                                   
+| ADMA da Fabrikam     | 1. Importação integral  <br/> 2. Sincronização completa <br/> 3. Importação delta <br/> 4. Sincronização delta <br/> 5. Exportação                                                                    |
+| FIMMA da Fabrikam   | 1. Importação integral <br> 2. Sincronização completa <br/> 3. Importação Delta <br/> 4. Sincronização delta <br/> 5. Exportação|                                                                                                                                                                                   
 
 Crie perfis de execução para cada agente de gestão conforme a tabela anterior.
 
@@ -231,7 +231,7 @@ Crie perfis de execução para cada agente de gestão conforme a tabela anterior
 > 
 > 
 > [!Important]
->  Verifique se o aprovisionamento se encontra ativado no seu ambiente. Você pode fazer isso executando o script usando o Windows PowerShell para habilitar o provisionamento (https://go.microsoft.com/FWLink/p/?LinkId=189660).
+>  Verifique se o aprovisionamento se encontra ativado no seu ambiente. Pode fazê-lo executando o script, utilizando o Windows PowerShell para ativar o provisionamento (https://go.microsoft.com/FWLink/p/?LinkId=189660).
 
 
 ## <a name="configuring-the-fim-service"></a>Configurar o Serviço FIM
@@ -274,22 +274,22 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 | Critérios de relação                                                                                      | |
 |------------|----------|
 | Atributo ILM     | Atributo de Origem de Dados                                                       |
-| Atributo de Origem de Dados         | nomeContaSAM    |
+| Atributo de Origem de Dados         | sAMAccountName    |
 
 | Fluxos do atributo de saída iniciais        | |                                                             |
 |-------------------|---------------------- |---------------|
 | Permitir valores nulos                 | Destino                                                                 | Origem                                                    |
 | falso                       | dn                                                                          | \+("CN=",displayName,",OU=MIMObjects,DC=fabrikam,DC=com") |
-| falso                       | controloContaUtilizador                                                          | **Constante:** 512                                         |
-| falso                                                                     | unicodePwd                    | Constante: P\@\$\$W0rd                                    |
+| falso                       | userAccountControl                                                          | **Constante:** 512                                         |
+| falso                                                                     | pwdUnicode                    | Constante: P\@\$\$W0rd                                    |
 
 | Fluxos do atributo de saída persistentes  |                                                                     |                                                           |
 |--------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------|
 | Permitir valores nulos                                                                                                | Destino                                                                 | Origem                                                    |
-| falso                                                                                                      | nomeContaSAM                                                              | nomedaConta                                               |
-| falso                                                                                                      | nomeaApresentar                                                                 | nomeaApresentar                                               |
-| falso                                                                                                      | nomeDado                                                                   | nomePróprio                                                 |
-| falso                                                                                                      | sn                                                                          | apelido                                                  |
+| falso                                                                                                      | sAMAccountName                                                              | accountName                                               |
+| falso                                                                                                      | displayName                                                                 | displayName                                               |
+| falso                                                                                                      | givenName                                                                   | firstName                                                 |
+| falso                                                                                                      | sn                                                                          | lastName                                                  |
 
 
 
@@ -323,9 +323,9 @@ O tipo de MPR necessário é Transição de Conjunto e este é acionado quando u
 |--------------------------------------|-------------------------------------------------------------|
 | Nome                                 | Regra de Política de Gestão do Aprovisionamento de Utilizadores do AD                 |
 | Description                          |                                                             |
-| Type                                 | Transição de Conjunto                                              |
+| Tipo                                 | Transição de Conjunto                                              |
 | Concede Permissões                   | Falso                                                       |
-| Desativada                             | Falso                                                       |
+| Desativado                             | Falso                                                       |
 
 | Definição da transição                |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
@@ -334,7 +334,7 @@ O tipo de MPR necessário é Transição de Conjunto e este é acionado quando u
 
 | Fluxos de trabalho de políticas                     |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| Type                                 | Action                                                      |
+| Tipo                                 | Action                                                      |
 | Nome a Apresentar                         | Fluxo de Trabalho de Aprovisionamento de Utilizadores do Active Directory                 |
 
 
@@ -384,7 +384,7 @@ Esta secção tem como objetivo testar a sua configuração atual. Para testar a
 ### <a name="step-10-create-a-sample-user-in-mim"></a>Passo 10: criar um utilizador de exemplo no MIM
 
 
-A seguinte tabela indica as propriedades do utilizador de exemplo. Crie um usuário de exemplo de acordo com os dados na tabela a seguir.
+A seguinte tabela indica as propriedades do utilizador de exemplo. Crie um utilizador de amostra de acordo com os dados na tabela abaixo.
 
 | Atributo                              | Valor                                                          |
 |----------------------------------------|----------------------------------------------------------------|
@@ -392,7 +392,7 @@ A seguinte tabela indica as propriedades do utilizador de exemplo. Crie um usuá
 | Apelido                              | Almeida                                                          |
 | Nome a Apresentar                           | Eduarda Almeida                                                   |
 | Nome da Conta                           | EAlmeida                                                         |
-| Domínio                                 | Fabrikam                                                       |
+| Domain                                 | Fabrikam                                                       |
 | Tipo de Funcionário                          | Contratante                                                     |
 
 
@@ -415,9 +415,9 @@ Se verificar se o utilizador é membro do conjunto Todos os Contratantes, abra o
 
 ### <a name="step-12-verify-the-user-is-in-the-scope-of-the-outbound-synchronization-rule"></a>Passo 12: verifique se o utilizador está no âmbito da regra de sincronização de saída
 
-Para verificar se o usuário está no escopo da regra de sincronização, abra a página de propriedades do usuário e examine o atributo lista de regras esperadas na guia provisionamento. O atributo lista de regras esperadas deve listar o usuário do AD
+Para verificar se o utilizador está no âmbito da regra de sincronização, abra a página de propriedade do utilizador e reveja o atributo da Lista de Regras Esperadas no separador Provisioning. O atributo da Lista de Regras Esperadadeve listar o Utilizador AD
 
-Regra de Sincronização de Saída. A captura de tela a seguir mostra um exemplo do atributo de lista de regras esperado.
+Regra de Sincronização de Saída. A imagem que se segue mostra um exemplo do atributo da Lista de Regras Esperadas.
 
 ![Estado da regra de sincronização](media/how-provision-users-adds/image023.jpg)
 
@@ -455,11 +455,11 @@ Para efetuar estas tarefas, deve executar os seguintes perfis de execução.
 
 | Agente de gestão | Perfil de execução  |
 |------------------|--------------|
-| FIMMA da Fabrikam   | 1. importação Delta <br/> 2. sincronização Delta <br/> 3. exportar <br/> 4. importação Delta |
-| FIMMA da Fabrikam   | 1. exportar <br/> 2. importação Delta       |
+| FIMMA da Fabrikam   | 1. Importação delta <br/> 2. Sincronização Delta <br/> 3. Exportação <br/> 4. Importação delta |
+| FIMMA da Fabrikam   | 1. Exportação <br/> 2. Importação Delta       |
 
 
-Após a importação do banco de dados do serviço FIM, Brenda Simon e o objeto ExpectedRuleEntry que vincula Brenda à regra de sincronização de saída do usuário do AD são preparados no espaço do conector da Fabrikam FIMMA da. Ao examinar as propriedades do Brenda no espaço do conector, ao lado dos valores de atributo que você configurou no portal do FIM, você também encontrará uma referência válida para o objeto de entrada de regra esperado. A captura de tela a seguir mostra um exemplo disso.
+Após a importação da base de dados do Serviço FIM, Britta Simon e o objeto ExpectedRuleEntry que liga Britta à Regra de Sincronização de Saída do Utilizador AD são encenados no espaço do conector Fabrikam FIMMA. Ao rever as propriedades da Britta no espaço do conector, junto aos valores de atributo que configurado no Portal FIM, também encontra uma referência válida ao objeto de entrada de regras esperada. A imagem que se segue mostra um exemplo disso.
 
 ![Propriedades dos objetos de espaço conector](media/how-provision-users-adds/image025.jpg)
 
@@ -499,37 +499,33 @@ Para verificar se o seu utilizador de exemplo foi aprovisionado no AD DS, tem de
 
 ![Verifique se o seu utilizador de exemplo se encontra na UO FIMObjects.](media/how-provision-users-adds/image033.jpg)
 
-<a name="summary"></a>Resumo
-=======
+## <a name="summary"></a>Resumo
+
 
 O objetivo deste documento é apresentar-lhe os principais blocos modulares para sincronizar utilizadores no MIM com o AD DS. No seu teste inicial, deve começar por especificar o número mínimo de atributos necessários para concluir uma tarefa e adicionar mais atributos ao seu cenário quando os passos gerais funcionarem conforme o esperado. Reduzir a complexidade dos atributos ao mínimo possível simplifica o processo de resolução de problemas.
 
 Quando testar a sua configuração, é muito provável que tenha de eliminar e voltar a criar novos objetos de teste. Para objetos com um
 
-atributo ExpectedRulesList populado, isso pode resultar em objetos pode órfãos.
+atributo esperado De Regras Lista, isto pode resultar em objetos ERE órfãos.
 Para obter uma descrição sobre como pode remover estes objetos do seu ambiente de teste, veja [A Method to Remove Orphaned ExpectedRuleEntry Objects from Your Environment (Um Método para Remover Objetos ExpectedRuleEntry Isolados do seu Ambiente)](https://go.microsoft.com/FWLink/p/?LinkId=189667).
 
 Num cenário de sincronização típico que inclua o AD DS como destino da sincronização, o MIM não é obrigatório para todos os atributos de um objeto. Por exemplo, quando gerir objetos de utilizador no AD DS através do FIM, no mínimo é necessário que o domínio e os atributos objectSID sejam gerados pelo agente de gestão do AD DS.
 O nome, o domínio e os atributos objectSID da conta são necessários se quiser permitir que um utilizador possa iniciar sessão no Portal do FIM. Para preencher estes atributos do AD DS, é necessária uma regra de sincronização de entrada adicional para o espaço conector do AD DS. Quando gerir objetos com múltiplas origens de valores de atributos, certifique-se de que configura a precedência do fluxo de atributos corretamente. Se a precedência do fluxo de atributos não for configurada corretamente, o motor de sincronização impedirá o preenchimento dos valores de atributos. Encontrará mais informações sobre a precedência do fluxo de atributos no artigo [About Attribute Flow Precedence (Acerca da Precedência do Fluxo de Atributos)](https://go.microsoft.com/FWLink/p/?LinkId=189675).
 
-<a name="see-also"></a>Consulte Também
-=========
-
-<a name="other-resources"></a>Outros Recursos
----------------
+## <a name="next-steps"></a>Passos Seguintes
 
 [Using FIM to Enable or Disable Accounts in Active Directory (Utilizar o FIM para Ativar ou Desativar Contas no Active Directory)](https://go.microsoft.com/FWLink/p/?LinkId=189670)
 
-[Compreendendo o processamento de atributos de referência](https://go.microsoft.com/FWLink/p/?LinkId=189671)
+[Compreender o processamento de atributos de referência](https://go.microsoft.com/FWLink/p/?LinkId=189671)
 
-[Como gerenciar a conta do FIM MA](https://go.microsoft.com/FWLink/p/?LinkId=189672)
+[Como Gerir a Conta MA FIM](https://go.microsoft.com/FWLink/p/?LinkId=189672)
 
-[Detectando contas não autoritativas – parte 1: Previsão](https://go.microsoft.com/FWLink/p/?LinkId=189673)
+[Deteção de Contas Não Autorizadas – Parte 1: Visualização](https://go.microsoft.com/FWLink/p/?LinkId=189673)
 
-[Como detectar conectores](https://go.microsoft.com/FWLink/p/?LinkId=189674)
+[Como Detetar Conectores](https://go.microsoft.com/FWLink/p/?LinkId=189674)
 
-[Como configurar a conta do ADMA](https://go.microsoft.com/FWLink/p/?LinkId=189657)
+[Como configurar a Conta ADMA](https://go.microsoft.com/FWLink/p/?LinkId=189657)
 
 [About Attribute Flow Precedence (Acerca da Precedência do Fluxo de Atributos)](https://go.microsoft.com/FWLink/p/?LinkId=189675)
 
-[Noções básicas sobre exportações](https://social.technet.microsoft.com/wiki/contents/articles/1861.understanding-exports-in-ilm-2007.aspx)
+[Compreensão das Exportações](https://social.technet.microsoft.com/wiki/contents/articles/1861.understanding-exports-in-ilm-2007.aspx)

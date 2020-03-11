@@ -4,25 +4,25 @@ description: Este é o passo 5 da configuração do Privileged Identity Manager
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: 03c5b1cb52f16090e6b241d588bbded6be4c6687
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 58a70336af4f79d87d6175aa99dc79fc81aa62dd
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518409"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043788"
 ---
 # <a name="step-5-installingconfiguring-pam"></a>Passo 5: Instalar/configurar a PAM
 
 > [!div class="step-by-step"]
-> [«Passo 4](sp1-step4-configuring-sharepoint.md)
-> [Passo 6»](sp1-step6-setup-pam-trust.md)
+> [« Passo 4](sp1-step4-configuring-sharepoint.md)
+> [Passo 6 »](sp1-step6-setup-pam-trust.md)
 
 Para um PAMServer associado a um domínio, inicie sessão como MIMAdmin; caso contrário, inicie sessão como administrador local.
 1. Execute o PowerShell como Administrador
@@ -44,5 +44,5 @@ Depois de o PAMServer reiniciar, inicie sessão novamente no computador com a co
    Depois de concluída a instalação, o computador será reiniciado.
 
 > [!div class="step-by-step"]
-> [«Passo 4](sp1-step4-configuring-sharepoint.md)
-> [Passo 6»](sp1-step6-setup-pam-trust.md)
+> [« Passo 4](sp1-step4-configuring-sharepoint.md)
+> [Passo 6 »](sp1-step6-setup-pam-trust.md)

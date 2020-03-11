@@ -4,19 +4,19 @@ description: Comece a trabalhar com os componentes do MIM 2016 ao instalar e con
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/18/2019
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: b9bc580710a13b3a0868b0580d55469a753e7f33
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 8e4371c8d3caac06f7200d8439b30b7aa978a336
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73568088"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79042462"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>Instalar o MIM 2016: Serviço de Sincronização do MIM
 
@@ -26,20 +26,20 @@ ms.locfileid: "73568088"
  
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
-> - Nome do controlador de domínio- **corpdc**
+> - Nome do controlador de domínio - **corpdc**
 > - Nome de domínio – **contoso**
-> - Nome do servidor do serviço do MIM- **corpservice**
-> - Nome do servidor de sincronização do MIM- **corpsync**
-> - Nome do SQL Server- **corpsql**
+> - Nome do Servidor de Serviço MIM - **corpservice**
+> - Nome do Servidor MIM Sync - **corpsync**
+> - Nome do Servidor SQL - **corpsql**
 > - Palavra-passe – <strong>Pass@word1</strong>
 
 Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro o pacote de instalação.
 
-1. Entre como *contoso\miminstall* no servidor que você está usando para o servidor de sincronização de gerenciamento de identidade **corpsync**.
+1. Inscreva-se como *contoso\miminstall* para o servidor que está a usar para **sincronização**de sincronização de gestão de identidade .
 
-2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.  Se você não tiver esse DVD, consulte [Microsoft Identity Manager licenciamento e downloads](microsoft-identity-manager-licensing.md).
+2. Descompacte o pacote de instalação do MIM ou monte o DVD da imagem do MIM.  Se não tiver este DVD, consulte o [licenciamento e os downloads](microsoft-identity-manager-licensing.md)do Microsoft Identity Manager.
 
-## <a name="install-mim-2016-sp1-synchronization-service"></a>Instalar o serviço de sincronização do MIM 2016 SP1
+## <a name="install-mim-2016-sp1-synchronization-service"></a>Instalar serviço de sincronização MIM 2016 SP1
 
 1. Na pasta de instalação descompactada do MIM, navegue até à pasta **Serviço de Sincronização**.
 
@@ -57,13 +57,13 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
 6. No ecrã de configuração da base de dados do Serviço de Sincronização, selecione:
 
-   1.  O SQL Server está localizado em: **um computador remoto** chamado **corpsql.contoso.com**.
+   1.  O Servidor SQL está localizado em: **Uma máquina remota** chamada **corpsql.contoso.com**.
 
-   2.  A instância do SQL Server é: **A instância predefinida**
+   2.  A instância Do Servidor SQL é: **A instância padrão**
 
    ![Imagem de ligação à base de dados](media/install-mim-sync/MIM_Install3.png)
 
-    3. *MIM 2016 SP2 e posterior*: configurar o nome do banco de dados do serviço de sincronização do mim
+    3. *MIM 2016 SP2 e mais tarde:* Configure o nome de base de dados do serviço de sincronização MIM
 
 7. Configure a Conta do Serviço de Sincronização, de acordo com a conta que criou anteriormente:
 
@@ -74,7 +74,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
    3. Domínio da Conta de Serviço ou nome do computador local: *contoso*
 
     >[!NOTE]
-    >MIM 2016 SP2 e posterior: para contas de serviço gerenciado de grupo, verifique se o caractere **$** está no final do nome da conta de serviço, por exemplo, MIMSync $, e deixe o campo de senha vazio.
+    >MIM 2016 SP2 e mais tarde: para Contas de Serviço Geridas pelo Grupo, **certifique-se** de que o$personagem está no final do Nome da Conta de Serviço, por exemplo, MIMSync$, e deixe o campo password vazio.
 
     ![Imagem da conta de serviço](media/install-mim-sync/MIM_Install4.png)
 

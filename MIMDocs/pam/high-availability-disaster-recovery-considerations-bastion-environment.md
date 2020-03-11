@@ -4,25 +4,25 @@ description: Saiba como configurar Privileged Access Management para uma elevada
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 09/13/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0d0d55d4007ab88df4c2f3b5a30ca0fdedea9fe2
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 67ce70e6bc0603a991731cf1e5fb95751f5016c6
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518673"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043975"
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>Considerações para elevada disponibilidade e recuperação após desastre do ambiente bastion
 
 Este artigo descreve considerações de elevada disponibilidade e recuperação após desastre ao implementar os Serviços de Domínio do Active Directory (AD DS) e o Microsoft Identity Manager 2016 (MIM) para Gestão de Acesso Privilegiado (PAM).
 
-As empresas concentram-se na elevada disponibilidade e na recuperação após desastre para cargas de trabalho no Windows Server, SQL Server e do Active Directory. No entanto, a disponibilidade fiável do ambiente bastion para Gestão de Acesso Privilegiado também é importante. O ambiente bastion é uma parte crítica da sua organização de infraestrutura de TI, uma vez que os utilizadores interagem com os respetivos componentes para assumirem funções administrativas. Para obter mais informações sobre a disponibilidade elevada em geral, pode descarregar o documento técnico [Descrição Geral da Disponibilidade Elevada da Microsoft](http://download.microsoft.com/download/3/B/5/3B51A025-7522-4686-AA16-8AE2E536034D/Microsoft%20High%20Availability%20Strategy%20White%20Paper.doc).
+As empresas concentram-se na elevada disponibilidade e na recuperação após desastre para cargas de trabalho no Windows Server, SQL Server e do Active Directory. No entanto, a disponibilidade fiável do ambiente bastion para Gestão de Acesso Privilegiado também é importante. O ambiente bastion é uma parte crítica da sua organização de infraestrutura de TI, uma vez que os utilizadores interagem com os respetivos componentes para assumirem funções administrativas. Para obter mais informações sobre a disponibilidade elevada em geral, pode descarregar o documento técnico [Descrição Geral da Disponibilidade Elevada da Microsoft](https://download.microsoft.com/download/3/B/5/3B51A025-7522-4686-AA16-8AE2E536034D/Microsoft%20High%20Availability%20Strategy%20White%20Paper.doc).
 
 ## <a name="high-availability-and-disaster-recovery-scenarios"></a>Cenários de elevada disponibilidade e recuperação após desastre
 
@@ -36,12 +36,12 @@ O âmbito destas considerações provoca um impacto sobre o custo total da imple
 
 | **Função de floresta bastion** | **Prioridade relativa durante a recuperação** | **Mitigação se a função estiver indisponível** |
 | --------------------------- | --------------------- | -------------- |
-| Estabelecimento de confiança         | Baixo | Aguarde até que o ambiente bastion seja restaurado |
-| Mitigação de utilizadores e de grupos   | Baixo | Aguarde até que o ambiente bastion seja restaurado |
-| Administração do MIM          | Baixo | Aguarde até que o ambiente bastion seja restaurado |
+| Estabelecimento de confiança         | Baixa | Aguarde até que o ambiente bastion seja restaurado |
+| Mitigação de utilizadores e de grupos   | Baixa | Aguarde até que o ambiente bastion seja restaurado |
+| Administração do MIM          | Baixa | Aguarde até que o ambiente bastion seja restaurado |
 | Ativação de função com privilégios  | Média | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
 | Gestão de recursos         | Alto | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
-| Monitorização dos utilizadores e grupos na floresta existente | Baixo | Aguarde até que o ambiente bastion seja restaurado |
+| Monitorização dos utilizadores e grupos na floresta existente | Baixa | Aguarde até que o ambiente bastion seja restaurado |
 
 Agora vamos ver cada uma destas funções de floresta bastion por sua vez.
 
@@ -214,7 +214,7 @@ O Serviço MIM é necessário para processar os pedidos de ativação.  Para que
 
 #### <a name="preparation"></a>Preparação
 Recomenda-se que implemente o Serviço MIM em vários servidores associados ao domínio PRIV.
-Para elevada disponibilidade, consulte os documentos do Windows Server para [Opções de Armazenamento e Requisitos de Hardware de Clustering de Ativação Pós-falha](https://technet.microsoft.com/library/jj612869.aspx) e [Criar um Cluster de Ativação Pós-falha do Windows Server 2012](http://blogs.msdn.com/b/clustering/archive/2012/05/01/10299698.aspx).
+Para elevada disponibilidade, consulte os documentos do Windows Server para [Opções de Armazenamento e Requisitos de Hardware de Clustering de Ativação Pós-falha](https://technet.microsoft.com/library/jj612869.aspx) e [Criar um Cluster de Ativação Pós-falha do Windows Server 2012](https://blogs.msdn.com/b/clustering/archive/2012/05/01/10299698.aspx).
 
 Para implementação de produção por vários servidores, pode utilizar o Balanceamento de Carga na Rede (NLB) para distribuir a carga de processamento.  Também deverá ter um alias único (por exemplo, registos A ou CNAME) para que um nome comum seja exposto ao utilizador.
 

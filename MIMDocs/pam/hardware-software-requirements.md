@@ -4,26 +4,26 @@ description: Localize os requisitos de hardware e software para uma implementaç
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 09/06/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 4838e9e8a495866902a78e713bb3b226eaf9def1
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 79f9eeabdd9ac9206c4232217c7cbcdf870c3a3a
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64518831"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043992"
 ---
 # <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
 
 A Privileged Access Management não tem requisitos de hardware para além das plataformas de software subjacentes. Basta certificar-se de que tem suficiente memória ou espaço em disco e conectividade de rede.
 
 > [!IMPORTANT]
-> Este artigo fornece os requisitos mínimos para uma implementação básica. Ele não se destina a demonstrar desempenho, escalabilidade ou alta disponibilidade. Ele não representa uma topologia de implantação recomendada para grandes empresas ou ambientes de produção.
+> Este artigo fornece os requisitos mínimos para uma implementação básica. Não se destina a demonstrar desempenho, escalabilidade ou elevada disponibilidade. Não representa uma topologia de implantação recomendada para grandes empresas ou ambientes de produção.
 
 ## <a name="installing-from-software-packages"></a>Instalar a partir de pacotes de software
 
@@ -35,7 +35,7 @@ O software seguinte pode ser transferido a partir do Centro de Avaliação TechN
 
 O software seguinte pode ser transferido a partir do GitHub:
 
-- [PAMSamplePortal](https://github.com/Azure/identity-management-samples): contém aplicativo Web de exemplo para a API REST
+- [PAMSamplePortal](https://github.com/Azure/identity-management-samples): contém aplicação web de amostra para a API REST
 
 ## <a name="required-software"></a>Software necessário
 

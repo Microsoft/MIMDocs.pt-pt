@@ -4,19 +4,19 @@ description: Saiba mais sobre o modelo de camada que segrega o sistema com base 
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 08/30/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 8e7b7217714f0ef74c1d959eb51dac07018d6e77
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 4fb5689400d170adc19f15cbbc2d45915cb39fe3
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64517841"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043601"
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>Modelo de camada para criação de partições de privilégios administrativos
 
@@ -24,9 +24,9 @@ Este artigo descreve um modelo de segurança destinado a proteger contra a eleva
 
 ## <a name="elevation-of-privilege-in-active-directory-forests"></a>Elevação de Privilégios em florestas do Active Directory
 
-Os utilizadores, serviços ou contas de aplicações às quais são concedidos privilégios administrativos permanentes a florestas do Windows Server Active Directory (AD) introduzem uma quantidade significativa de risco para a missão e o negócio da sua organização. Essas contas são geralmente direcionadas aos invasores porque, se estiverem comprometidas, o invasor tem direitos para se conectar a outros servidores ou aplicativos no domínio.
+Os utilizadores, serviços ou contas de aplicações às quais são concedidos privilégios administrativos permanentes a florestas do Windows Server Active Directory (AD) introduzem uma quantidade significativa de risco para a missão e o negócio da sua organização. Estas contas são frequentemente alvo de atacantes porque se estiverem comprometidas, o intruso tem o direito de se conectar a outros servidores ou aplicações no domínio.
 
-O modelo de camada cria divisões entre os administradores com base nos recursos que gerem. Os administradores com controlo sobre as estações de trabalho do utilizador estão separados dos que controlam as aplicações ou gerem as identidades de empresa. Saiba mais sobre este modelo no [Material de referência para proteger o acesso privilegiado](http://aka.ms/tiermodel).
+O modelo de camada cria divisões entre os administradores com base nos recursos que gerem. Os administradores com controlo sobre as estações de trabalho do utilizador estão separados dos que controlam as aplicações ou gerem as identidades de empresa. Saiba mais sobre este modelo no [Material de referência para proteger o acesso privilegiado](https://aka.ms/tiermodel).
 
 ## <a name="restricting-credential-exposure-with-logon-restrictions"></a>Restringir a exposição de credenciais com restrições de início de sessão
 
@@ -49,7 +49,7 @@ As restrições de início de sessão devem ser impostas para assegurar que as c
 As restrições de início de sessão podem ser impostas com:
 
 - Restrições de Direitos de Início de Sessão da Política de Grupo, incluindo:
-    - Recusar acesso a este computador à rede
+    - Negar o acesso a este computador a partir da rede
     - Negar o início de sessão como uma tarefa de lote
     - Negar o início de sessão como um serviço
     - Negar o início de sessão localmente
@@ -60,4 +60,4 @@ As restrições de início de sessão podem ser impostas com:
 ## <a name="next-steps"></a>Próximos passos
 
 - O artigo seguinte, [Planear um ambiente bastion](planning-bastion-environment.md), descreve como adicionar uma floresta administrativa dedicada para o Microsoft Identity Manager para estabelecer as contas administrativas.
-- As [estações de trabalho de acesso privilegiado](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) fornecem um sistema operacional dedicado para tarefas confidenciais que são protegidas contra ataques da Internet e vetores de ameaça.
+- Os postos de [trabalho Priviledged Access](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) fornecem um sistema operativo dedicado para tarefas sensíveis protegidas contra ataques na Internet e vetores de ameaças.

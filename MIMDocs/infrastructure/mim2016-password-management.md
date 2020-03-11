@@ -4,17 +4,17 @@ description: ''
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 08/01/2017
 ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 45b46ed10f7eda506fe1fc1af94c4be06a1a37b9
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: b28c9623e3a05168adafc19c43634d686dc7e8e2
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64516589"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79042411"
 ---
 # <a name="microsoft-identity-manager-2016-password-management"></a>Gestão de Palavras-passe do Microsoft Identity Manager 2016
 
@@ -109,7 +109,7 @@ Para obter mais informações sobre como configurar a sincronização de palavra
 
 No seguinte diagrama, pode ver o processo de sincronização de um pedido de alteração de palavra-passe de um controlador de domínio do Active Directory para outras origens de dados ligadas:
 
-1.  O usuário inicia a solicitação de alteração de senha pressionando Ctrl + Alt + Del. A solicitação de alteração de senha, incluindo a nova senha, é enviada para o controlador de domínio mais próximo.
+1.  O utilizador inicia o pedido de alteração de palavra-passe premindo CTRL+Alt+Del. O pedido de alteração de palavra-passe, incluindo a nova palavra-passe, é enviado para o controlador de domínio mais próximo.
 
 2.  O controlador de domínio regista o pedido de alteração de palavra-passe e notifica o filtro de notificação de alteração de palavra-passe (Pcnsflt.dll).
 

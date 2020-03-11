@@ -4,23 +4,23 @@ description: Saiba como implementar a aplicação Gestor de Certificados para pe
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/16/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 8ff9edce6da865418e300095ff0827853a35d4eb
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 2adf1152aaf874d0ff0d93079fb4bfbfcf731b60
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64517208"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044298"
 ---
-# <a name="mim-certificate-manager-windows-store-application-deployment"></a>Implantação de aplicativos da Windows Store do Gerenciador de certificados do MIM
+# <a name="mim-certificate-manager-windows-store-application-deployment"></a>Implementação da aplicação da loja mim Certificate Manager Windows
 
-Depois que o MIM 2016 e o Gerenciador de certificados estiverem em funcionamento, você poderá implantar o aplicativo MIM Certificate Manager da Windows Store. O aplicativo da Windows Store permite que os usuários gerenciem seus cartões inteligentes físicos, cartões inteligentes virtuais e certificados de software. Os passos para implementar a aplicação MIM CM são os seguintes:
+Depois de ter MIM 2016 e Gestor de Certificados em funcionamento, pode implementar a aplicação mim Certificate Manager Windows store. A aplicação da Windows Store permite que os seus utilizadores gerem os seus cartões inteligentes físicos, cartões inteligentes virtuais e certificados de software. Os passos para implementar a aplicação MIM CM são os seguintes:
 
 1. Crie um modelo de certificado.
 
@@ -34,11 +34,11 @@ Depois que o MIM 2016 e o Gerenciador de certificados estiverem em funcionamento
 
 Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-se de que o modelo de certificado tem uma versão igual ou superior à 3.
 
-1. Faça logon no servidor que executa o AD CS (o servidor de certificado).
+1. Inicie sessão no servidor que executa AD CS (o servidor de certificado).
 
 2. Abra a MMC.
 
-3. Clique em **arquivo &gt; adicionar/remover snap-in**.
+3. Clique em **File &gt; Adicionar/Remover o Snap-in**.
 
 4. Na lista Snap-ins disponíveis, clique em **Modelos de Certificado** e, em seguida, em **Adicionar**.
 
@@ -46,10 +46,10 @@ Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-
 
 6. Clique com o botão direito do rato no modelo **Início de Sessão de Smart Card** e clique em **Duplicar Modelo**.
 
-7. Na guia Compatibilidade, em autoridade de certificação, selecione Windows Server 2008. Em destinatário do certificado, selecione Windows 8.1/Windows Server 2012 R2. A versão do modelo de versão é definida na primeira vez que você cria e salva o modelo de certificado. Se você não criou o modelo de certificado dessa forma, não há como modificá-lo para a versão correta.
+7. No separador Compatibilidade, sob a Autoridade de Certificação, selecione Windows Server 2008. No destinatário do certificado, selecione Windows 8.1/Windows Server 2012 R2. A versão do modelo da versão é definida na primeira vez que cria e guarda o modelo de certificado. Se não criou o modelo de certificado desta forma, não há como modificá-lo para a versão correta.
 
    > [!NOTE]
-   >  Essa etapa é crucial porque garante que você tenha um modelo de certificado da versão 3 (ou superior). Somente os modelos da versão 3 funcionam com o aplicativo Gerenciador de certificados.
+   >  Este passo é crucial porque garante que tem um modelo de certificado de versão 3 (ou superior). Apenas os modelos de versão 3 funcionam com a aplicação de gestor de certificados.
 
 8. No separador **Geral**, no campo **Nome a Apresentar**, escreva o nome que pretende ver apresentado na IU da aplicação, tal como **Início de Sessão de Smart Card Virtual**.
 
@@ -78,11 +78,11 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
 
-2.  Vá para administração &gt; gerenciar modelos de perfil. Verifique se a caixa está marcada ao lado de **mim cm modelo de perfil de log de cartão inteligente de exemplo** e clique em copiar um modelo de perfil selecionado.
+2.  Vá à Administração &gt; gerir modelos de perfil. Certifique-se de que a caixa é verificada ao lado do log de **cartão inteligente da amostra MIM CM no modelo de perfil** e, em seguida, clique em Copiar um modelo de perfil selecionado.
 
 3.  Escreva o nome do modelo de perfil e clique em **OK**.
 
-4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que seleciona a caixa junto ao nome da AC.
+4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que marca a caixa junto ao nome da AC.
 
 5.  Selecione a caixa junto ao nome do modelo de perfil **Início de Sessão** e clique em **Adicionar**.
 
@@ -96,11 +96,11 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 10. No painel esquerdo, clique em **Política de Renovação &gt; Alterar definições gerais**. Selecione **Reutilizar cartão ao renovar** e clique em **OK**.
 
-11. Você precisa Desabilitar itens de coleta de dados para cada política clicando na política no painel esquerdo. Em seguida, você precisa marcar a caixa ao lado de **item de dados de exemplo** clique em **excluir itens de coleta de dados** e, em seguida, clique em **OK**.
+11. Tem de desativar itens de recolha de dados para cada política clicando na política no painel esquerdo. Em seguida, tem de verificar a caixa ao lado do **item** de dados da Amostra clique em **eliminar itens** de recolha de dados e, em seguida, clicar **EM OK**.
 
 ## <a name="prepare-the-cm-app-for-deployment"></a>Preparar a aplicação CM para a implementação
 
-1. No prompt de comando, execute o seguinte comando para desempacotar o aplicativo. O comando irá extrair o conteúdo em uma nova subpasta chamada Appx e criar uma cópia para que você não modifique o arquivo original.
+1. No pedido de comando, execute o seguinte comando para desembalar a aplicação. O comando extrairá o conteúdo numa nova subpasta chamada appx e criará uma cópia para que não modifique o ficheiro original.
 
     ```cmd
     makeappx unpack /l /p <app package name>.appx /d ./appx
@@ -116,7 +116,7 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
    |                     |                                                                                                                                                                                                          |
    |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      URL de MIMCM      |                                              O FQDN do portal que utilizou para configurar a CM. Por exemplo, https://mimcmServerAddress/certificatemanagement                                              |
-   |      URL de ADFS       | Se planear utilizar o AD FS, introduza o URL de AD FS. Por exemplo, <https://adfsServerSame/adfs> </br> Se o ADFS não for usado, defina essa configuração com uma cadeia de caracteres vazia.  Por exemplo, ```<ADFS URL=""/>``` |
+   |      URL de ADFS       | Se planear utilizar o AD FS, introduza o URL de AD FS. Por exemplo, <https://adfsServerSame/adfs> </br> Se a ADFS não for utilizada, configure esta definição com uma corda vazia.  Por exemplo, ```<ADFS URL=""/>``` |
    |     PrivacyUrl      |                                         Pode incluir um URL numa página Web a explicar o que fazer com os detalhes de utilizador recolhidos para a inscrição de certificado.                                          |
    |     SupportMail     |                                                                           Pode incluir um endereço de e-mail para problemas de suporte.                                                                           |
    | LobComplianceEnable |                                                                     Pode definir esta opção para verdadeiro ou falso. A predefinição é verdadeiro.                                                                      |
@@ -124,7 +124,7 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
    |      NonAdmin       |           Pode definir esta opção para verdadeiro ou falso. A predefinição é falso. Só deve modificar esta opção se pretender que os utilizadores que não são administradores nos respetivos computadores possam inscrever e renovar certificados.            |
 
    > [!IMPORTANT]
-   > Um valor deve ser especificado para a URL do ADFS. Se nenhum valor for especificado, o aplicativo moderno gerará um erro no primeiro uso.
+   > Deve especificar-se um valor para o URL ADFS. Se não for especificado qualquer valor, a Aplicação Moderna irá errar na primeira utilização.
 4. Guarde o ficheiro e saia do editor.
 
 5. A assinatura do pacote cria um ficheiro de assinatura, pelo que terá de eliminar o ficheiro de assinatura original denominado AppxSignature.p7x.
@@ -256,7 +256,7 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
     - O serverFQDN é apenas o nome completo do computador do servidor MIMCM apenas.
 
-    - Para obter ajuda com o script **script configuremiimcmclientandrelyingparty. ps1** , execute: </br> 
+    - Para ajuda com o script **ConfigureMIimCMClientAndRelyingParty.ps1,** executar: </br> 
       ```Powershell
       get-help  -detailed ConfigureMimCMClientAndRelyingParty.ps1
       ```
@@ -267,5 +267,5 @@ Ao configurar a aplicação CM, no Centro de Transferências, transfira o fichei
 
 ## <a name="next-steps"></a>Próximos passos
 
-- [Configurando modelos de perfil](https://technet.microsoft.com/library/cc708656)
+- [Configurar modelos de perfil](https://technet.microsoft.com/library/cc708656)
 - [Gerir Aplicações para Smart Cards](https://technet.microsoft.com/library/cc708681)

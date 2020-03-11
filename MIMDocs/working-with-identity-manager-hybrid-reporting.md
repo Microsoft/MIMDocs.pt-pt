@@ -1,120 +1,120 @@
 ---
-title: Trabalhar com relatórios híbridos no Azure usando o Identity Manager 2016 | Microsoft Docs
+title: Trabalhar com reportagem híbrida em Azure através do Identity Manager 2016 [ Gestor de Identidade 2016] Microsoft Docs
 description: Saiba como combinar dados no local e na cloud em relatórios híbridos no Azure e como gerir e ver estes relatórios.
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 2/20/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.suite: ems
-ms.openlocfilehash: 18e4127b1d854a53734142bb58442627619491ef
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: fd0efd3e3d5c42f4b67d0abd42f6dab8254573e5
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64517503"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044349"
 ---
-# <a name="work-with-hybrid-reporting-in-identity-manager"></a>Trabalhar com relatórios híbridos no Identity Manager
+# <a name="work-with-hybrid-reporting-in-identity-manager"></a>Trabalhar com reporte híbrido em Gestor de Identidade
 
-Este artigo discute como combinar dados locais e na nuvem em relatórios híbridos no Azure e como gerenciar e exibir esses relatórios.
+Este artigo discute como combinar no local e dados em nuvem em relatórios híbridos em Azure, e como gerir e ver estes relatórios.
 
 ## <a name="available-hybrid-reports"></a>Relatórios híbridos disponíveis
-Os três primeiros Microsoft Identity Manager relatórios disponíveis no Azure Active Directory (AD do Azure) são os seguintes:
+Os três primeiros relatórios do Microsoft Identity Manager disponíveis no Azure Ative Directory (Azure AD) são os seguintes:
 
-- **Atividade de redefinição de senha**: exibe cada instância quando um usuário realizou a redefinição de senha usando a redefinição de senha de autoatendimento (SSPR) e fornece os Gates ou métodos usados para autenticação.
+- Atividade de reposição de **palavra-passe**: Mostra cada instância quando um utilizador executou o reset da palavra-passe utilizando o reset de palavra-passe self-service (SSPR) e fornece os portões ou métodos utilizados para a autenticação.
 
-- **Registro de redefinição de senha**: exibe cada vez que um usuário se registra para SSPR e os métodos usados para autenticação. Exemplos de métodos podem ser um número de telefone celular ou perguntas e respostas.
+- **Registo de redefinição de palavra-passe**: Mostra cada vez que um utilizador se regista para SSPR e os métodos utilizados para autenticar. Exemplos de métodos podem ser um número de telemóvel ou perguntas e respostas.
    > [!NOTE]
-   > Para relatórios de *registro de redefinição de senha* , nenhuma diferenciação é feita entre a porta do SMS e a porta MFA. Ambos são considerados métodos de telefone celular.
+   > Para *redefinir* relatórios de registo de passwords, não é feita diferenciação entre o portão SMS e o portão MFA. Ambos são considerados métodos de telemóvel.
 
-- **Atividade de grupos de autoatendimento**: exibe cada tentativa feita por alguém de adicioná-la ou excluí-la de uma criação de grupo e grupo.
+- **Atividade de grupos de self-service**: Exibe cada tentativa feita por alguém para adicioná-lo ou apagar-se de uma criação de grupo e grupo.
 
     ![Imagem da criação de relatórios híbridos do Azure – atividade de reposição de palavra-passe](media/MIM-Hybrid-passwordreset2.jpg)
 
 > [!NOTE]
-> * Os relatórios atualmente apresentam dados de até um mês de atividade.
-> * O agente de relatório híbrido anterior deve ser desinstalado.
-> * Para desinstalar os relatórios híbridos, desinstale o agente agente mimreportingagent. msi.
+> * Os relatórios apresentam atualmente dados para um mês de atividade.
+> * O anterior Agente de Informação Híbrido deve ser desinstalado.
+> * Para desinstalar relatórios híbridos, desinstale o agente MIMreportingAgent.msi.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Serviço Gerenciador de identidade do Identity Manager 2016 SP1, compilação recomendada [4.4.1749.0](https://support.microsoft.com/en-us/help/4050936/hotfix-rollup-package-build-4-4-1749-0-for-microsoft-identity-manager) .
+* Gestor de Identidade 2016 Serviço de Gestor de Identidade SP1, Recomendado construir [4.4.1749.0](https://support.microsoft.com/en-us/help/4050936/hotfix-rollup-package-build-4-4-1749-0-for-microsoft-identity-manager) .
 
-* Um locatário Azure AD Premium com um administrador licenciado em seu diretório.
+* Um inquilino Azure AD Premium com um administrador licenciado no seu diretório.
 
-* Conectividade de Internet de saída do servidor do Identity Manager para o Azure.
+* Conectividade de internet de saída do servidor Do Gestor de Identidade para o Azure.
 
 ## <a name="requirements"></a>Requisitos
-Os requisitos para usar o relatório híbrido do Identity Manager estão listados na tabela a seguir:
+Os requisitos para a utilização de relatórios híbridos do Gestor de Identidade estão listados na tabela seguinte:
 
 
 |                                         Requisito                                         |                                                                                                                                                                                                                                                                                    Description                                                                                                                                                                                                                                                                                     |
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                      Azure AD Premium                                       |                                                                                                        O relatório híbrido é um recurso Azure AD Premium e requer Azure AD Premium. </br>Para obter mais informações, consulte [introdução ao Azure ad Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium). </br>Obtenha uma [avaliação gratuita de 30 dias do Azure ad Premium](https://azure.microsoft.com/trial/get-started-active-directory/).                                                                                                         |
-|                     Você deve ser um administrador global do Azure AD                     |                                                                   Por padrão, somente os administradores globais podem instalar e configurar os agentes para começar, acessar o portal e executar qualquer operação no Azure. </br>**Importante**: a conta que você usa ao instalar os agentes deve ser uma conta corporativa ou de estudante. Não pode ser uma conta Microsoft. Para obter mais informações, consulte [inscrever-se no Azure como uma organização](https://docs.microsoft.com/azure/active-directory/sign-up-organization).                                                                   |
-| O agente híbrido do Identity Manager está instalado em cada servidor de serviço do Identity Manager de destino |                                                                                                                                                                                                       Para receber os dados e fornecer recursos de monitoramento e análise, os relatórios híbridos exigem que os agentes sejam instalados e configurados nos servidores de destino.  </br>                                                                                                                                                                                                       |
-|                    Conectividade de saída para os pontos finais de serviço do Azure                     | Durante a instalação e a execução, o agente precisa de conectividade aos pontos finais de serviço do Azure. Se a conectividade de saída estiver bloqueada por firewalls, verifique se os seguintes pontos de extremidade foram adicionados à lista de permissões:<ul><li>\*.blob.core.windows.net </li><li>\*. servicebus.windows.net-porta: 5671 </li><li>\*.adhybridhealth.azure.com/</li><li><https://management.azure.com> </li><li><https://policykeyservice.dc.ad.msft.net/></li><li><https://login.windows.net></li><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li></ul> |
-|                         Conectividade de saída com base em endereços IP                         |                                                                                                                                                                                                                      Para a filtragem baseada em endereços IP em firewalls, consulte os [intervalos de IP do Azure](https://www.microsoft.com/download/details.aspx?id=41653).                                                                                                                                                                                                                      |
-|                 A inspeção SSL para o tráfego de saída é filtrada ou desabilitada                 |                                                                                                                                                                                                               A etapa de registro do agente ou as operações de carregamento de dados poderão falhar se houver inspeção ou término de SSL para o tráfego de saída na camada de rede.                                                                                                                                                                                                                |
-|                      Portas de firewall no servidor que executa o agente                       |                                                                                                                                                                                                          Para se comunicar com os pontos de extremidade de serviço do Azure, o agente requer que as seguintes portas de firewall sejam abertas:<ul><li>Porta TCP 443</li><li>Porta TCP 5671</li></ul>                                                                                                                                                                                                          |
-|          Permitir determinados sites se a segurança aprimorada do Internet Explorer estiver habilitada           |                                                                                Se a segurança aprimorada do Internet Explorer estiver habilitada, os sites a seguir deverão ser permitidos no servidor que tem o agente instalado:<ul><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li><li><https://login.windows.net></li><li>O servidor de Federação da sua organização confiável por Azure Active Directory (por exemplo, <https://sts.contoso.com>).</li></ul>                                                                                |
+|                                      Azure AD Premium                                       |                                                                                                        O reporte híbrido é uma funcionalidade Azure AD Premium e requer Azure AD Premium. </br>Para mais informações, consulte [Começar com o Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium). </br>Obtenha um [teste gratuito de 30 dias do Azure AD Premium.](https://azure.microsoft.com/trial/get-started-active-directory/)                                                                                                         |
+|                     Deve ser administrador global do seu Anúncio Azure                     |                                                                   Por padrão, apenas os administradores globais podem instalar e configurar os agentes para começar, aceder ao portal e realizar quaisquer operações dentro do Azure. </br>**Importante**: A conta que utiliza quando instala os agentes deve ser uma conta de trabalho ou de escola. Não pode ser uma conta Microsoft. Para mais informações, consulte [o Signup para o Azure como uma organização](https://docs.microsoft.com/azure/active-directory/sign-up-organization).                                                                   |
+| O Agente Híbrido do Gestor de Identidade está instalado em cada servidor de Serviço de Gestor de Identidade direcionado |                                                                                                                                                                                                       Para receber os dados e fornecer capacidades de monitorização e análise, o relatório híbrido requer que os agentes sejam instalados e configurados em servidores direcionados.  </br>                                                                                                                                                                                                       |
+|                    Conectividade de saída para os pontos finais de serviço do Azure                     | Durante a instalação e a execução, o agente precisa de conectividade aos pontos finais de serviço do Azure. Se a conectividade de saída for bloqueada por firewalls, certifique-se de que os seguintes pontos finais são adicionados à lista permitida:<ul><li>\*.blob.core.windows.net </li><li>\*.servicebus.windows.net - Porto: 5671 </li><li>\*.adhybridhealth.azure.com/</li><li><https://management.azure.com> </li><li><https://policykeyservice.dc.ad.msft.net/></li><li><https://login.windows.net></li><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li></ul> |
+|                         Conectividade de saída com base em endereços IP                         |                                                                                                                                                                                                                      Para endereços IP filtrando em firewalls, consulte as [gamas IP Azure](https://www.microsoft.com/download/details.aspx?id=41653).                                                                                                                                                                                                                      |
+|                 A inspeção SSL para tráfego de saída é filtrada ou desativada                 |                                                                                                                                                                                                               A etapa de registo do agente ou as operações de upload de dados podem falhar se houver inspeção ou rescisão ssl para tráfego de saída na camada de rede.                                                                                                                                                                                                                |
+|                      Portas de firewall no servidor que executa o agente                       |                                                                                                                                                                                                          Para comunicar com os pontos finais do serviço Azure, o agente exige que as seguintes portas de firewall sejam abertas:<ul><li>Porta TCP 443</li><li>Porta TCP 5671</li></ul>                                                                                                                                                                                                          |
+|          Permitir certos sites se a segurança reforçada do Internet Explorer estiver ativada           |                                                                                Se a segurança reforçada do Internet Explorer estiver ativada, os seguintes websites devem ser autorizados no servidor que tem o agente instalado:<ul><li><https://login.microsoftonline.com></li><li><https://secure.aadcdn.microsoftonline-p.com></li><li><https://login.windows.net></li><li>O servidor da federação para a sua organização confiado pelo Azure Ative Directory (por exemplo, <https://sts.contoso.com>).</li></ul>                                                                                |
 
 </BR>
 
-## <a name="install-identity-manager-reporting-agent-in-azure-ad"></a>Instalar o agente de relatório do Identity Manager no Azure AD
-Após a instalação do agente de relatório, os dados da atividade do Identity Manager são exportados do Identity Manager para o log de eventos do Windows. O agente de relatório do Identity Manager processa os eventos e os carrega no Azure. No Azure, os eventos são analisados, desencriptados e filtrados para os relatórios necessários.
+## <a name="install-identity-manager-reporting-agent-in-azure-ad"></a>Instale o Agente de Informação do Gestor de Identidade em Azure AD
+Após a instalação do Agente de Informação, os dados da atividade do Gestor de Identidade são exportados do Gestor de Identidade para o Windows Event Log. O Agente de Relatórios do Gestor de Identidade processa os eventos e depois envia-os para o Azure. No Azure, os eventos são analisados, desencriptados e filtrados para os relatórios necessários.
 
-1.  Instale o Identity Manager 2016.
+1.  Instale o Gestor de Identidade 2016.
 
-2.  Baixe o agente de relatório do Identity Manager e, em seguida, faça o seguinte:
+2.  Baixe o Agente de Informação do Gestor de Identidade e, em seguida, faça o seguinte:
 
-    a. Entre no portal de gerenciamento do Azure AD e selecione **Active Directory**.
+    a. Inscreva-se no portal de gestão da AD Azure e, em seguida, **selecione Ative Directory**.
 
-    b. Clique duas vezes no diretório para o qual você é um administrador global e tem uma assinatura Azure AD Premium.
+    b. Clique duas vezes no diretório para o qual é administrador global e tem uma subscrição Azure AD Premium.
 
-    c. Selecione **configuração**e baixe agente de relatório.
+    c. **Selecione Configuração**e, em seguida, baixe o Reporting Agent.
 
-3.  Instale o agente de relatório fazendo o seguinte:
+3.  Instale o Agente de Informação fazendo o seguinte:
 
-    a.  Baixe o [arquivo MIMHReportingAgentSetup. exe](http://download.microsoft.com/download/7/3/1/731D81E1-8C1D-4382-B8EB-E7E7367C0BF2/MIMHReportingAgentSetup.exe) para o servidor de serviço do Identity Manager.
+    a.  Descarregue o [ficheiro MIMHReportingAgentSetup.exe](http://download.microsoft.com/download/7/3/1/731D81E1-8C1D-4382-B8EB-E7E7367C0BF2/MIMHReportingAgentSetup.exe) para o servidor do Serviço de Gestor de Identidade.
 
-    b.  Executar `MIMHReportingAgentSetup.exe`. 
+    b.  Corra `MIMHReportingAgentSetup.exe`. 
 
     c.  Execute o instalador do agente.
 
-    d.  Verifique se o serviço agente de relatório do Identity Manager está em execução.
+    d.  Certifique-se de que o serviço de agente de informação do Gestor de Identidade está em funcionamento.
 
-    e.  Reinicie o serviço Identity Manager.
+    e.  Reinicie o serviço de Gestor de Identidade.
 
-4.  Verifique se o agente de relatório do Identity Manager está funcionando no Azure.
+4.  Verifique se o Agente de Informação do Gestor de Identidade está a trabalhar no Azure.
 
-    Você pode criar dados de relatório usando o portal de redefinição de senha de autoatendimento do Identity Manager para redefinir a senha de um usuário. Verifique se a redefinição de senha foi concluída com êxito e, em seguida, verifique se os dados são exibidos no portal de gerenciamento do Azure AD.
+    Pode criar dados de relatório utilizando o portal de redefinição de palavra-passe self-service Do Gestor de Identidade para redefinir a palavra-passe de um utilizador. Certifique-se de que o reset da palavra-passe foi concluído com sucesso e, em seguida, verifique para se certificar de que os dados são apresentados no portal de gestão da AD Azure.
 
-## <a name="view-hybrid-reports-in-the-azure-portal"></a>Exibir relatórios híbridos no portal do Azure
+## <a name="view-hybrid-reports-in-the-azure-portal"></a>Ver relatórios híbridos no portal Azure
 
-1.  Entre no [portal do Azure](https://portal.azure.com/) com sua conta de administrador global para o locatário.
+1.  Inscreva-se no [portal Azure](https://portal.azure.com/) com a sua conta de administrador global para o inquilino.
 
-2.  Selecione **Azure Active Directory**.
+2.  Selecione **Diretório Ativo Azure**.
 
-3.  Na lista de diretórios disponíveis para sua assinatura, selecione o diretório do locatário.
+3.  Na lista de diretórios disponíveis para a sua subscrição, selecione o diretório de inquilinos.
 
 4.  Selecione **Registos de Auditoria**.
 
-5.  Na lista suspensa **categoria** , verifique se o **serviço mim** está selecionado.
+5.  Na lista de abandono da **categoria,** certifique-se de que o **Serviço MIM** é selecionado.
 
 > [!IMPORTANT]
-> Pode levar algum tempo para que os dados de auditoria do Identity Manager apareçam no portal do Azure.
+> Pode levar algum tempo para que os dados de auditoria do Gestor de Identidade apareçam no portal Azure.
 
 ## <a name="stop-creating-hybrid-reports"></a>Parar a criação de relatórios híbridos
-Se você quiser parar de carregar dados de auditoria de relatórios do Identity Manager para o Azure AD, desinstale o agente de relatório híbrido. Use a ferramenta Adicionar ou remover programas do Windows para desinstalar o relatório híbrido do Identity Manager.
+Se pretender parar de enviar dados de auditoria de reporte do Identity Manager para o Azure AD, desinstale o Agente de Informação Híbrido. Utilize a ferramenta Windows Add ou Remove Programs para desinstalar relatórios híbridos do Gestor de Identidade.
 
 ## <a name="windows-events-used-for-hybrid-reporting"></a>Eventos do Windows utilizados para a criação de relatórios híbridos
-Os eventos gerados pelo Identity Manager são armazenados no log de eventos do Windows. Você pode exibir os eventos na **Visualizador de eventos** selecionando **logs de aplicativos e serviços** > **log de solicitações do Identity Manager**. Cada solicitação do Identity Manager é exportada como um evento no log de eventos do Windows na estrutura JSON. Você pode exportar o resultado para o sistema SIEM (gerenciamento de eventos e informações de segurança).
+Os eventos gerados pelo Identity Manager são armazenados no Windows Event Log. Pode ver os eventos no Espectador de **Eventos** selecionando **registos** de Pedidos de Pedido de Pedido de Pedido de Gestor de **Identidade** > . Cada pedido do Gestor de Identidade é exportado como um evento no Windows Event Log na estrutura JSON. Pode exportar o resultado para o seu sistema de informação de segurança e gestão de eventos (SIEM).
 
 |Tipo de evento|ID|Detalhes do evento|
 |--------------|------|-----------------|
-|Informações|4121|Os dados de evento do Identity Manager que incluem todos os dados de solicitação.|
-|Informações|4137|A extensão do evento 4121 do Identity Manager, se houver muitos dados para um único evento. O cabeçalho nesse evento é exibido no seguinte formato: `"Request: <GUID> , message <xxx> out of <xxx>`.|
+|Informações|4121|Os dados do evento Do Gestor de Identidade que incluem todos os dados do pedido.|
+|Informações|4137|A extensão do Gestor de Identidade 4121, se houver demasiados dados para um único evento. O cabeçalho neste evento é apresentado no seguinte formato: `"Request: <GUID> , message <xxx> out of <xxx>`.|

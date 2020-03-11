@@ -4,7 +4,7 @@ description: Este artigo descreve como configurar o Conector LDAP genérico da M
 services: active-directory
 documentationcenter: ''
 author: billmath
-manager: mtillman
+manager: daveba
 editor: ''
 ms.assetid: 984beeb0-4d91-4908-ad81-c19797c4891b
 ms.reviewer: davidste
@@ -15,12 +15,12 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.date: 06/26/2018
 ms.author: billmath
-ms.openlocfilehash: b8ed1b605b0a3c01ffd69a329f26583f1cb0a019
-ms.sourcegitcommit: d98a76d933d4d7ecb02c72c30d57abe3e7f5d015
+ms.openlocfilehash: bb6460ebf4106aa8c9295be0db3ce9da426b0778
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78853707"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044396"
 ---
 # <a name="generic-ldap-connector-technical-reference"></a>Referência técnica genérica do conector LDAP
 Este artigo descreve o Conector Genérico LDAP. O artigo aplica-se aos seguintes produtos:

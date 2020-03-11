@@ -4,19 +4,19 @@ description: Saiba como utilizar o Gestor de Certificados para criar e renovar c
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: e9454643f425a6bd306c2828479129312d5a5d4f
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: b8a1b55ed836f46c184941ccf6ec25ef63ad4c30
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64516644"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79042105"
 ---
 # <a name="create-software-certificates-with-certificate-manager"></a>Criar certificados de software com o Gestor de Certificados
 Para se inscrever e renovar certificados de software, não tem de ser um administrador e não precisa de um smart card virtual. É importante salientar que, a determinada altura, será pedido que permita uma operação de certificado, mas isto é normal.
@@ -79,7 +79,7 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
 3.  Escreva o nome do modelo de perfil e clique em **OK**.
 
-4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que seleciona a caixa junto ao nome da AC.
+4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que marca a caixa junto ao nome da AC.
 
 5.  Marque a caixa junto ao nome do Certificado de Software Arquivado e clique em **Adicionar**.
 

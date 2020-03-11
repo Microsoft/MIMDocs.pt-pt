@@ -1,74 +1,74 @@
 ---
-title: Atualização do FIM 2010 R2 e do MIM 2016 SP2 para Microsoft Identity Manager 2016 Service Pack 2 | Microsoft Docs
-description: Saiba como atualizar seus componentes do FIM 2010 R2 ou do MIM 2016 SP2 e, em seguida, instale os componentes que são novos no MIM 2016.
+title: Upgrade de FIM 2010 R2 e MIM 2016 SP2 para Microsoft Identity Manager 2016 Service Pack 2  ) Microsoft Docs
+description: Saiba como atualizar os seus componentes FIM 2010 R2 ou MIM 2016 SP2 e, em seguida, instale os componentes que são novos em MIM 2016.
 keywords: ''
 author: EugeneSergeev
 ms.author: esergeev
-manager: aashiman
+manager: daveba
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: markwahl-msft
 ms.suite: ems
-ms.openlocfilehash: bdf34be4841b1a911fdb61673e5a3855e66e7320
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: bfe604795d44cdea61fe0d10bc2943f9b8433784
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73568064"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044157"
 ---
-# <a name="mim-2016-sp2-upgrade--from-forefront-identity--or-microsoft-identity-manager"></a>Atualização do MIM 2016 SP2 do Forefront Identity ou Microsoft Identity Manager
+# <a name="mim-2016-sp2-upgrade--from-forefront-identity--or-microsoft-identity-manager"></a>Mim 2016 SP2 upgrade da Front Front Identity ou Microsoft Identity Manager
 
-As organizações podem atualizar para Microsoft Identity Manager 2016 SP2 de versões anteriores do Microsoft Identity Manager ou do Forefront Identity Manager.  Cada seção deste artigo aborda um caminho de atualização com suporte.
+As organizações podem fazer upgrade para o Microsoft Identity Manager 2016 SP2 a partir de versões anteriores do Microsoft Identity Manager ou do Forefront Identity Manager.  Cada secção deste artigo cobre um caminho de atualização suportado.
 
-Há várias opções de atualização disponíveis. Se você já estiver executando o MIM 2016 e não precisar atualizar a plataforma subjacente (Windows Server, SQL, SharePoint, SCSM DW) ou executar os serviços do MIM usando contas de serviço gerenciado de grupo e não usar os pacotes de idioma do MIM, a opção mais fácil será a instalação in-loco/hotfix (. msp). Caso contrário, a instalação completa é recomendada.
+Existem várias opções de upgrade disponíveis. Se já estiver a executar mim 2016 e não precisar de atualizar a plataforma subjacente (Windows Server, SQL, SharePoint, SCSM DW) ou executar serviços MIM usando contas de serviço geridas pelo grupo, e não utilizar pacotes de idiomas MIM, então a opção mais fácil será a instalação de upgrade /hotfix (.msp). Caso contrário, recomenda-se a instalação completa.
 
 > [!IMPORTANT]
-> Verifique a seção de [pré-requisitos de software](prepare-server-ws2016.md#software-prerequisites) atualizados antes de instalar o mim 2016 SP2
+> Verifique a secção de [pré-requisitos](prepare-server-ws2016.md#software-prerequisites) do Software atualizado antes de instalar o MIM 2016 SP2
 
-## <a name="upgrade-from-fim-2010-r2-sp1-or-later-fim-builds"></a>Atualização do FIM 2010 R2 SP1 ou compilações do FIM posterior
+## <a name="upgrade-from-fim-2010-r2-sp1-or-later-fim-builds"></a>Upgrade a partir de FIM 2010 R2 SP1 ou posteriormente fim construções
 
 > [!NOTE]
-> A versão mínima com suporte do Forefront Identity Manager que pode ser atualizada diretamente para o MIM 2016 SP2 é o FIM 2010 R2 SP1 (Build 4.1.3419.0). Não há suporte para a atualização direta para o MIM 2016 SP2 de versões anteriores do FIM. Se você estiver executando compilações do FIM anteriores a 4.1.3419.0, precisará atualizar para o FIM 2010 R2 SP1 antes de atualizar para o MIM 2016 SP2.
+> A versão minimalista suportada do Gestor de Identidade da Vanguarda que pode ser diretamente atualizado para MIM 2016 SP2 é FIM 2010 R2 SP1 (construção 4.1.3419.0). Não é suportado o upgrade direto para MIM 2016 SP2 a partir de versões anteriores do FIM. Se estiver a executar as construções DO FIM mais cedo do que 4.1.3419.0 então tem de fazer upgrade para FIM 2010 R2 SP1 antes de fazer upgrade para MIM 2016 SP2.
 
-1. **Opção 1: instalação completa usando bancos de dados existentes**
-    1. Faça uma cópia de backup dos bancos de dados FIMSynchronizationService e FIMService.
-    1. Exporte todos os objetos RCDC do serviço FIM e as cadeias de caracteres de recurso RCDC nas quais você fez alterações.
-    1. Exportar chaves de criptografia do serviço de sincronização.
-    1. Backup miisserver. exe. config, pasta ' Extensions ' do servidor de sincronização, Microsoft. ResourceManagement. Service. exe. config como o instalador do MIM pode substituir alterações personalizadas feitas em arquivos de configuração.
-    1. Desinstalar **todos os** componentes do fim, incluindo pacotes de idiomas (para serem desinstalados primeiro).
-    1. *Opcional:* Mova os bancos de dados do FIM para outro SQL Server. É recomendável criar aliases do SQL em servidores MIM e usar esses aliases em vez do nome real do SQL Server para facilitar a migração de bancos de servidores do MIM no futuro.
-    1. Instale o MIM 2016 SP2 da mídia de instalação do. ISO no mesmo ou em outro servidor após o [Guia de implantação do mim](microsoft-identity-manager-deploy.md), escolha usar bancos de dados existentes quando solicitado, forneça chaves de criptografia do serviço de sincronização exportadas anteriormente.
-    1. Examine os arquivos miisserver. exe. config e Microsoft. ResourceManagement. Service. exe. config para obter os redirecionamentos do .net ausentes ou as seções personalizadas que você adicionou.
-    1. Instale os pacotes de idiomas do MIM 2016 SP2, se necessário.
-    1. Envie novamente as personalizações para objetos RCDC e cadeias de caracteres de recurso RCDC e localizações, se necessário.
-    1. Atualize Complementos do FIM e clientes de redefinição de senha, forneça o novo nome do servidor do serviço do MIM se o nome do servidor do serviço do MIM for alterado.
+1. **Opção 1: Instalação completa utilizando bases de dados existentes**
+    1. Faça uma cópia de cópia de cópia de cópia de segurança das suas bases de dados FIMSynchronizationService e FIMService.
+    1. Exportar todos os objetos RCDC do Serviço FIM e cordas de recursos RCDC a que fez alterações.
+    1. Chaves de encriptação do Serviço de Sincronização de Exportação.
+    1. A pasta 'Extensões' do Servidor de Sincronização, Microsoft.ResourceManagement.exe.config as Afumterer MIM pode substituir alterações personalizadas feitas em ficheiros config.
+    1. Desinstale **todos os** componentes DO, incluindo pacotes de idiomas (para desinstalar primeiro).
+    1. *Opcional:* Mova as bases de dados DO FIM para outro servidor SQL. Recomenda-se criar pseudónimos SQL nos servidores MIM e utilizar estes pseudónimos em vez de um nome real de servidor SQL para facilitar a migração de DBs MIM no futuro.
+    1. Instale mim 2016 SP2 a partir dos meios de instalação .iso no mesmo ou em outro servidor seguindo o guia de [implementação MIM](microsoft-identity-manager-deploy.md), opte por utilizar bases de dados existentes quando solicitado, fornecer chaves de encriptação do Serviço de Sincronização previamente exportadas.
+    1. Reveja os ficheiros miisserver.exe.config e Microsoft.ResourceManagement.Service.exe.config para os redirecionamentos de .net em falta ou quaisquer secções personalizadas que tenha adicionado.
+    1. Instale pacotes de idiomas MIM 2016 SP2, se necessário.
+    1. Reenvie as personalizações para objetos RCDC e cadeias de recursos RCDC e locais, se necessário.
+    1. Atualize os addons DO FIM e os clientes de Reset de Palavras-Passe, forneça um novo nome de servidor do Serviço MIM se o nome do servidor mim service for alterado.
     
-## <a name="upgrade-from-previous-mim-2016-builds"></a>Atualização de builds anteriores do MIM 2016
-1. Faça uma cópia de backup dos bancos de dados FIMSynchronizationService e FIMService.
-1. Exporte todas as localizações de serviço do FIM personalizadas feitas para objetos RCDC e cadeias de caracteres de recurso RCDC.
-1. Exportar chaves de criptografia do serviço de sincronização.
-1. Backup miisserver. exe. config, pasta ' Extensions ' do servidor de sincronização, Microsoft. ResourceManagement. Service. exe. config como o instalador do MIM pode substituir alterações personalizadas feitas em arquivos de configuração.
-1. Desinstale os pacotes de idiomas do MIM se forem usados.
-1. Interrompa os serviços do MIM.
-1. **Opção 1: atualização in-loco-instalação do hotfix**
-    1. Aplicar o [hotfix](https://www.microsoft.com/download/details.aspx?id=100412) do serviço de sincronização do mim 2016 SP2
-    1. Aplicar o [hotfix](https://www.microsoft.com/download/details.aspx?id=100412) do serviço mim 2016 SP2
-    1. Examine os arquivos miisserver. exe. config e Microsoft. ResourceManagement. Service. exe. config para obter os redirecionamentos do .net ausentes ou as seções personalizadas que devem ser adicionadas.
-    1. Instale os pacotes de idiomas do MIM 2016 SP2, se necessário.
-    1. Envie novamente as personalizações para objetos RCDC e cadeias de caracteres de recurso RCDC e localizações, se necessário.
-    1. Atualize os complementos e clientes de redefinição de senha do MIM 2016.
-1. **Opção 2: instalação completa usando bancos de dados existentes**
-    1. Desinstale **todos os** componentes do mim.
-    1. *Opcional:* Mova os bancos de dados do FIM para outro SQL Server. É recomendável criar aliases do SQL em servidores MIM e usar esses aliases em vez do nome real do SQL Server para facilitar a migração de bancos de servidores do MIM no futuro.
-    1. Instale o MIM 2016 SP2 da mídia de instalação do. ISO no mesmo ou em outro servidor após o [Guia de implantação do mim](microsoft-identity-manager-deploy.md), escolha usar bancos de dados existentes quando solicitado, forneça chaves de criptografia do serviço de sincronização exportadas anteriormente.
-    1. Examine os arquivos miisserver. exe. config e Microsoft. ResourceManagement. Service. exe. config para obter os redirecionamentos do .net ausentes ou as seções personalizadas que devem ser adicionadas.
-    1. Instale os pacotes de idiomas do MIM 2016 SP2, se necessário.
-    1. Envie novamente as personalizações para objetos RCDC e cadeias de caracteres de recurso RCDC e localizações, se necessário.
-    1. Atualize os complementos e clientes de redefinição de senha do MIM 2016, forneça o novo nome do servidor do serviço do MIM se o nome do servidor do serviço do MIM for alterado.
+## <a name="upgrade-from-previous-mim-2016-builds"></a>Upgrade das construções anteriores do MIM 2016
+1. Faça uma cópia de cópia de cópia de cópia de segurança das suas bases de dados FIMSynchronizationService e FIMService.
+1. Exportar todas as localidades personalizadas do Serviço FIM feitas para objetos RCDC e cadeias de recursos RCDC.
+1. Chaves de encriptação do Serviço de Sincronização de Exportação.
+1. A pasta 'Extensões' do Servidor de Sincronização, Microsoft.ResourceManagement.exe.config as Afumterer MIM pode substituir alterações personalizadas feitas em ficheiros config.
+1. Desinstale pacotes de idiomas MIM se utilizados.
+1. Pare os serviços mim.
+1. **Opção 1: Atualização no local - instalação hotfix**
+    1. Aplicar [hotfix](https://www.microsoft.com/download/details.aspx?id=100412) do Serviço de Sincronização MIM 2016 SP2
+    1. Aplicar [hotfix](https://www.microsoft.com/download/details.aspx?id=100412) de serviço MIM 2016 SP2
+    1. Revê miisserver.exe.config e Microsoft.ResourceManagement.Service.exe.config para ficheiros de falta de .net ou quaisquer secções personalizadas que devem ser adicionadas.
+    1. Instale pacotes de idiomas MIM 2016 SP2, se necessário.
+    1. Reenvie as personalizações para objetos RCDC e cadeias de recursos RCDC e locais, se necessário.
+    1. Atualize os clientes de Add-ons mim 2016 e reset de palavra-passe.
+1. **Opção 2: Instalação completa utilizando bases de dados existentes**
+    1. Desinstale **todos os** componentes MIM.
+    1. *Opcional:* Mova as bases de dados DO FIM para outro servidor SQL. Recomenda-se criar pseudónimos SQL nos servidores MIM e utilizar estes pseudónimos em vez de um nome real de servidor SQL para facilitar a migração de DBs MIM no futuro.
+    1. Instale mim 2016 SP2 a partir dos meios de instalação .iso no mesmo ou em outro servidor seguindo o guia de [implementação MIM](microsoft-identity-manager-deploy.md), opte por utilizar bases de dados existentes quando solicitado, fornecer chaves de encriptação do Serviço de Sincronização previamente exportadas.
+    1. Revê miisserver.exe.config e Microsoft.ResourceManagement.Service.exe.config para ficheiros de falta de .net ou quaisquer secções personalizadas que devem ser adicionadas.
+    1. Instale pacotes de idiomas MIM 2016 SP2, se necessário.
+    1. Reenvie as personalizações para objetos RCDC e cadeias de recursos RCDC e locais, se necessário.
+    1. Atualize os clientes Add-ons e Password Reset da MIM 2016, forneça um novo nome de servidor do Serviço MIM se o nome do servidor do Serviço MIM for alterado.
 
 > [!NOTE]
-> As atualizações de pacotes de idiomas após o MIM 2016 SP2 serão distribuídas como hotfixes (arquivos. msp), eliminando a necessidade de desinstalar/reinstalar pacotes de idiomas.
+> As atualizações do Idiom Packs após o MIM 2016 SP2 serão distribuídas como hotfixes (.ficheiros msp), eliminando a necessidade de desinstalar/reinstalar pacotes de idiomas.
 
-Informações mais detalhadas sobre os procedimentos de backup de atualização e de bancos de dados podem ser encontradas no artigo [atualizar para fim 2010 R2](https://docs.microsoft.com/previous-versions/mim/jj134291%28v%3dws.10%29) , aplicável a qualquer processo de atualização do fim ou do mim.
+Informações mais detalhadas sobre os procedimentos de backup de upgrade e bases de dados podem ser encontradas no artigo de [Upgrade para FIM 2010 R2,](https://docs.microsoft.com/previous-versions/mim/jj134291%28v%3dws.10%29) que é aplicável a qualquer processo de upgrade FIM ou MIM.

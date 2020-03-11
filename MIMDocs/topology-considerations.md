@@ -4,19 +4,19 @@ description: Compreenda os componentes do MIM 2016 e obtenha sugestões sobre co
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d9d749029d52c7e685e581ffe603aca63752ca3e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 7f2d78b487e3c20fbd656aad37b67a6382b67df0
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73636997"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044332"
 ---
 # <a name="topology-considerations"></a>Considerações sobre a topologia
 Pode implementar componentes do Microsoft Identity Manager (MIM) no mesmo servidor ou em vários servidores com várias configurações. A topologia que selecionar para a implementação afetará o desempenho que pode alcançar no MIM. Este artigo apresenta várias topologias de implementação que pode considerar implementar.
@@ -64,6 +64,6 @@ Tal como com a topologia com várias camadas padrão, pode aumentar o desempenho
 
 Os computadores que executam o SQL Server e que alojam o Serviço de Sincronização do MIM e a base de dados do Serviço MIM irão influenciar significativamente o desempenho global da implementação do MIM. Portanto, siga as recomendações apresentadas na documentação do SQL Server para otimizar o desempenho da base de dados. Para mais informações, consulte os seguintes documentos:
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- O guia de [planejamento de capacidade do fim (Forefront Identity Manager) 2010](https://www.microsoft.com/en-us/download/details.aspx?id=7437) que pode ser baixado apresenta mais detalhes sobre uma compilação de teste e resultados de testes de desempenho.
+- O Guia de Planeamento de [Capacidades (FIM) 2010](https://www.microsoft.com/en-us/download/details.aspx?id=7437) do Gestor de Identidade de Vanguarda (FIM) de 2010 entra em mais detalhes sobre os resultados de um teste de construção e testes de desempenho.

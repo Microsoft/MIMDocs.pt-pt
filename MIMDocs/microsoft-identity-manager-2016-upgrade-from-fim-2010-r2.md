@@ -4,19 +4,19 @@ description: Saiba como atualizar os componentes do FIM 2010 R2 e, em seguida, 
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 36b5e97675d5900bf3b5348ad4857827c426e60e
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 7df1a4ca7a33aa2a00ac0b2c3ef24056c9720b5b
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "64519480"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79043244"
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>Atualização do Forefront Identity Manager 2010 R2
 
@@ -41,7 +41,7 @@ Este guia pressupõe que já configurou o seguinte:
 
 2.  Em cada servidor onde os componentes do FIM 2010 R2 estejam instalados, por exemplo, *CORPIDM*, inicie sessão como Contoso\Administrador. Neste exemplo de implementação, os Direitos administrativos são necessários para atualizar o FIM 2010 R2 para o **MIM**.
 
-3.  Transfira ou descompacte o software MIM.  Se você não tiver esse software, consulte [Microsoft Identity Manager licenciamento e downloads](microsoft-identity-manager-licensing.md).
+3.  Transfira ou descompacte o software MIM.  Se não tiver este software, consulte o [licenciamento e os downloads](microsoft-identity-manager-licensing.md)do Microsoft Identity Manager.
 
 ## <a name="upgrade-the-synchronization-service"></a>Atualizar o Serviço de Sincronização
 
@@ -115,7 +115,7 @@ Este guia pressupõe que já configurou o seguinte:
 
 9. Introduza os detalhes do servidor de correio. Se o servidor de correio estiver localizado no servidor atual, introduza “localhost” como a localização do servidor de correio. Clique em **Seguinte** para continuar.
 
-    ![Imagem da configuração da ligação ao servidor de e-mail](media/MIM-UpgSP6.png)
+    ![Imagem da configuração da ligação ao servidor de correio](media/MIM-UpgSP6.png)
 
 10. Selecione um certificado para o Serviço a utilizar para validar os clientes. Deve utilizar o certificado existente do arquivo de certificados local que foi utilizado anteriormente pelo Serviço FIM.
 

@@ -1,46 +1,46 @@
 ---
-title: Trabalhando com redefinição de senha de autoatendimento | Microsoft Docs
+title: Trabalhar com a Palavra-passe self-service reset  Microsoft Docs
 description: Veja as novidades da Reposição Personalizada de Palavra-passe no MIM 2016, incluindo como o SSPR funciona com a autenticação multifator.
 keywords: ''
 author: billmath
 ms.author: billmath
-manager: mtillman
+manager: daveba
 ms.date: 05/11/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 90452391170114270765e9a7fe08e98eea0747e4
-ms.sourcegitcommit: a4f77aae75a317f5277d7d2a3187516cae1e3e19
+ms.openlocfilehash: 41aba931111d6ef46e60dfed173362e59c411dfe
+ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67690703"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79044281"
 ---
-# <a name="self-service-password-reset-deployment-options"></a>Opções de implantação de redefinição de senha de autoatendimento
+# <a name="self-service-password-reset-deployment-options"></a>Opções de implementação de reset de palavra-passe self-service
 
-Para novos clientes [licenciados para Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing), é recomendável usar a [redefinição de senha de autoatendimento do Azure ad](/azure/active-directory/authentication/concept-sspr-howitworks) para fornecer a experiência do usuário final.  A redefinição de senha de autoatendimento do Azure AD fornece uma experiência integrada com o Windows e baseada na Web para que um usuário Redefina sua própria senha e dá suporte a muitos dos mesmos recursos que o MIM, incluindo email alternativo e Q & um Gates.  Ao implantar a redefinição de senha de autoatendimento do Azure AD, Azure AD Connect dá suporte à [gravação de novas senhas para AD DS](/azure/active-directory/authentication/concept-sspr-writeback), e o [serviço de notificação de alteração de senha](deploying-mim-password-change-notification-service-on-domain-controller.md) do mim pode ser usado para encaminhar as senhas para outros sistemas, como o servidor de diretório de outro fornecedor também.  A implantação do MIM para o [Gerenciamento de senhas](infrastructure/mim2016-password-management.md) não exige que o serviço do mim ou os portais de registro ou redefinição de senha de autoatendimento do mim sejam implantados.  Em vez disso, você pode seguir estas etapas:
+Para novos clientes licenciados [para o Azure Ative Directory Premium,](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)recomendamos a utilização de [uma redefinição da palavra-passe autosserviço Azure AD](/azure/active-directory/authentication/concept-sspr-howitworks) para proporcionar a experiência do utilizador final.  O reset de palavras-passe autosserviço Azure AD fornece uma experiência baseada na Web e no Windows para um utilizador redefinir a sua própria palavra-passe, e suporta muitas das mesmas capacidades que mim, incluindo e-mails alternativos e portões de Q&A.  Ao implementar o reset de palavras-passe de autosserviço Azure AD, o Azure AD Connect suporta a [reescrita das novas palavras-passe para AD DS](/azure/active-directory/authentication/concept-sspr-writeback), e o Serviço de Notificação de Alterações de [Palavras-Passe](deploying-mim-password-change-notification-service-on-domain-controller.md) MIM pode ser usado para encaminhar as palavras-passe para outros sistemas, como o servidor de diretório de outro fornecedor, também.  A implementação de MIM para gestão de [passwords](infrastructure/mim2016-password-management.md) não requer a implementação do Serviço MIM ou do reset ou dos portais de registo do autosserviço MIM.  Em vez disso, pode seguir estes passos:
 
-- Primeiro, se você precisar enviar senhas a diretórios diferentes do Azure AD e AD DS, implante a sincronização do MIM com conectores para Active Directory Domain Services e quaisquer sistemas de destino adicionais, configure o MIM para o [Gerenciamento de senhas](infrastructure/mim2016-password-management.md) e implante o serviço de notificação de [alteração de senha](deploying-mim-password-change-notification-service-on-domain-controller.md).
-- Em seguida, se você precisar enviar senhas para diretórios diferentes do Azure AD, configure Azure AD Connect para [gravar as novas senhas para AD DS](/azure/active-directory/authentication/concept-sspr-writeback).
-- Opcionalmente, [registre os usuários previamente](/azure/active-directory/authentication/howto-sspr-authenticationdata).
-- Por fim, distribua [a redefinição de senha de autoatendimento do Azure ad para seus usuários finais](/azure/active-directory/authentication/howto-sspr-deployment).
+- Em primeiro lugar, se precisar de enviar senhas para diretórios que não o Azure AD e a AD DS, implemente o MIM Sync com conectores para Serviços de Domínio de Diretório Ativo e quaisquer sistemas de destino adicionais, configure mim para gestão de [passwords](infrastructure/mim2016-password-management.md) e implemente o Serviço de Notificação de [Alterações de Passwords.](deploying-mim-password-change-notification-service-on-domain-controller.md)
+- Em seguida, se precisar de enviar senhas para diretórios que não o Azure AD, configure o Azure AD Connect para [reescrever as novas palavras-passe para AD DS](/azure/active-directory/authentication/concept-sspr-writeback).
+- Opcionalmente, [utilizadores pré-registo.](/azure/active-directory/authentication/howto-sspr-authenticationdata)
+- Por fim, envie a [palavra-passe de autosserviço Azure AD para os utilizadores finais](/azure/active-directory/authentication/howto-sspr-deployment).
 
-Para os clientes existentes que implantaram anteriormente o Forefront Identity Manager (FIM) para a redefinição de senha de autoatendimento e são licenciados para Azure Active Directory Premium, recomendamos planejar a transição para a redefinição de senha de autoatendimento do Azure AD.  Você pode fazer a transição dos usuários finais para a redefinição de senha de autoatendimento do Azure AD sem precisar registrar novamente, [sincronizando ou configurando por meio do PowerShell um endereço de email alternativo do usuário ou número de telefone celular](/azure/active-directory/authentication/howto-sspr-authenticationdata). Depois que os usuários são registrados para a redefinição de senha de autoatendimento do Azure AD, o portal de redefinição de senha do FIM pode ser encerrado.
+Para os clientes existentes que já tinham implementado o Forefront Identity Manager (FIM) para reposição de passwords de self-service e que estão licenciados para o Azure Ative Directory Premium, recomendamos o planeamento da transição para o reset de senha de autosserviço da Azure AD.  Pode transitar os utilizadores finais para o reset da palavra-passe de autosserviço da AD Azure sem precisar que se registem novamente, [sincronizando ou definindo através do endereço de e-mail alternativo de um utilizador ou número](/azure/active-directory/authentication/howto-sspr-authenticationdata)de telemóvel . Depois de os utilizadores estarem registados para reset de palavra-passe autosserviço Azure AD, o portal de reset de palavra-passe FIM pode ser desativado.
 
-Para clientes que ainda não implantaram a redefinição de senha de autoatendimento do Azure AD para seus usuários, o MIM também fornece portais de redefinição de senha de autoatendimento.  Em comparação com o FIM, o MIM 2016 inclui as seguintes alterações:
+Para os clientes, que ainda não implementaram o reset de senha de autosserviço da Azure AD para os seus utilizadores, a MIM também fornece portais de redefinição de senha de autosserviço.  Em comparação com o FIM, mim 2016 inclui as seguintes alterações:
 
-- O portal de redefinição de senha de autoatendimento do MIM e a tela de logon do Windows permitem que os usuários desbloqueiem suas contas sem alterar suas senhas.
-- Um novo portão de autenticação, portão de telefone, foi adicionado ao MIM. Isso permite a autenticação do usuário por meio de chamada telefônica por meio do serviço de Autenticação Multifator do Microsoft Azure (MFA).
+- O portal de reset de palavras-passe autosserviço MIM e o ecrã de login do Windows permitem que os utilizadores desbloqueiem as suas contas sem alterarem as suas palavras-passe.
+- Um novo portão de autenticação, Phone Gate, foi adicionado à MIM. Isto permite a autenticação do utilizador através de uma chamada telefónica através do serviço de autenticação multi-factor (MFA) do Microsoft Azure.
 
-A versão 2016 do MIM se baseia na versão 4.5.26.0 que conta com o cliente para baixar o kit de desenvolvimento de software do Azure MFA (SDK do Azure da autenticação multifator).  Esse SDK foi preterido, e o SDK do Azure MFA terá suporte para clientes existentes somente até a data de desativação de 14 de novembro de 2018. Até essa data, os clientes devem entrar em contato com o suporte ao cliente do Azure para receber o pacote de credenciais do serviço MFA gerado, pois eles não poderão baixar o SDK do Azure MFA. 
+O lançamento do MIM 2016 acumula-se até à versão 4.5.26.0 contacom o cliente para descarregar o Kit de Desenvolvimento de Software de Autenticação Multifactor Azure (Azure MFA SDK).  O SDK foi depreciado e o Azure MFA SDK será suportado para os clientes existentes apenas até à data de reforma de 14 de novembro de 2018. Até essa data, os clientes devem contactar o suporte ao cliente da Azure para receber o seu pacote de Credenciais de Serviço MFA gerado, uma vez que não poderão descarregar o Azure MFA SDK. 
 
-#### <a name="new-update-current-azure-mfa-configuration-to-azure-multi-factor-authentication-server"></a>NOVIDADE! Atualizar a configuração atual do Azure MFA para o Azure Servidor de Autenticação Multifator
+#### <a name="new-update-current-azure-mfa-configuration-to-azure-multi-factor-authentication-server"></a>NOVIDADE! Atualizar a configuração atual do Azure MFA para o Servidor de Autenticação de Multi-Factors Azure
 
-Este [artigo](working-with-mfaserver-for-mim.md) descreve como atualizar o portal de redefinição de senha de autoatendimento e a configuração do Pam de implantação do mim usando o Azure servidor de autenticação multifator para autenticação multifator.
+Este [artigo](working-with-mfaserver-for-mim.md) descreve como atualizar o portal de redefinição de palavra-passe autosserviço MIM de implementação e configuração PAM, utilizando o Servidor de Autenticação Multi-Factor Azure para autenticação de vários fatores.
 
-## <a name="deploying-mim-self-service-password-reset-portal-using-azure-mfa-for-multi-factor-authentication"></a>Implantando o portal de redefinição de senha de autoatendimento do MIM usando o Azure MFA para autenticação multifator
+## <a name="deploying-mim-self-service-password-reset-portal-using-azure-mfa-for-multi-factor-authentication"></a>Implementação do portal de reset de palavra-passe self-service MIM utilizando o Azure MFA para autenticação multi-factor
 
-A seção a seguir descreve como implantar o portal de redefinição de senha de autoatendimento do MIM, usando o Azure MFA para autenticação multifator.  Essas etapas só são necessárias para clientes que não estão usando a redefinição de senha de autoatendimento do Azure AD para seus usuários.
+A secção seguinte descreve como implementar o portal de redefinição de senha de autosserviço MIM, utilizando o Azure MFA para a autenticação de vários fatores.  Estes passos são apenas necessários para os clientes que não estão a utilizar o reset de senha de autosserviço da Azure AD para os seus utilizadores.
 
 O Multi-Factor Authentication do Microsoft Azure é um serviço de autenticação que requer que os utilizadores verifiquem as tentativas de início de sessão com uma aplicação móvel, uma chamada telefónica ou uma mensagem de texto. Está disponível para utilizar com o Microsoft Azure Active Directory e como um serviço para as aplicações empresariais na nuvem e no local.
 
@@ -50,7 +50,7 @@ Ao utilizar o Azure MFA, os utilizadores autenticam-se no sistema para verificar
 
 ## <a name="prerequisites-to-set-up-self-service-account-unlock-and-password-reset-using-mfa"></a>Pré-requisitos para configurar o desbloqueio personalizado da conta e a reposição de palavra-passe através do MFA
 
-Esta seção pressupõe que você tenha baixado e concluído a implantação do Microsoft Identity Manager 2016 a [sincronização do mim, o serviço do mim e os componentes do portal do mim](microsoft-identity-manager-deploy.md), incluindo os seguintes componentes e serviços:
+Esta secção pressupõe que descarregou e concluiu a implementação dos componentes MIM Sync, MIM Service 2016 do Microsoft Identity [Manager, mim Service e mim Portal,](microsoft-identity-manager-deploy.md)incluindo os seguintes componentes e serviços:
 
 -   Foi configurado um Windows Server 2008 R2 ou posterior como um servidor do Active Directory, incluindo os Serviços de Domínio do AD e o Controlador de Domínio com um domínio designado (um domínio “empresarial”)
 
@@ -70,7 +70,7 @@ Esta seção pressupõe que você tenha baixado e concluído a implantação do 
 
 -   As Extensões e os Suplementos do MIM 2016, incluindo o cliente integrado do Início de Sessão do Windows SSPR, estão implementados no servidor ou num computador cliente separado.
 
-Esse cenário exige que você tenha CALs do MIM para seus usuários, bem como assinatura do Azure MFA.
+Este cenário requer que tenha CALs MIM para os seus utilizadores, bem como subscrição para O MFA Azure.
 
 ## <a name="prepare-mim-to-work-with-multi-factor-authentication"></a>Preparar o MIM para funcionar com a autenticação multifator
 Configure a Sincronização do MIM para Suportar a Reposição de Palavra-passe e a Funcionalidade de Desbloqueio de Conta. Para obter mais informações, consulte [Instalar Suplementos e Extensões do FIM](https://technet.microsoft.com/library/ff512688%28v=ws.10%29.aspx), [Instalar SSPR do FIM](https://technet.microsoft.com/library/hh322891%28v=ws.10%29.aspx), [Portas de Autenticação da SSPR](https://technet.microsoft.com/library/jj134288%28v=ws.10%29.aspx) e o [Guia do Laboratório de Teste da SSPR](https://technet.microsoft.com/library/hh826057%28v=ws.10%29.aspx)
@@ -79,9 +79,9 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 ### <a name="register-your-multi-factor-authentication-provider-in-azure"></a>Registar o fornecedor de autenticação multifator no Azure
 
-1.  Crie um [provedor de MFA](/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider).
+1.  Criar um fornecedor de [MFA.](/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)
 
-2. Abra um caso de suporte e solicite o SDK direto para C#ASP.NET 2,0. O SDK só será fornecido aos usuários atuais do MIM com MFA porque o SDK direto foi preterido. Novos clientes devem adotar a próxima versão do MIM que será integrada ao servidor MFA.
+2. Abra um caso de suporte e solicite o C#SDK direto para ASP.net 2.0 . O SDK só será fornecido aos utilizadores atuais de MIM com MFA porque o SDK direto foi depreciado. Os novos clientes devem adotar a próxima versão da MIM que se integrará com o servidor MFA.
 
 3. Copie o ficheiro ZIP resultante para todos os sistemas onde o serviço MIM estiver instalado.  Tenha em atenção que o ficheiro ZIP contém material para chaves, que é utilizado para efetuar a autenticação no serviço Azure MFA.
 
@@ -125,7 +125,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 4.  Selecione **Porta de Telefone** ou **Porta de SMS para Palavra-passe Monouso**, clique em **Selecione** e, em seguida, em **OK**.
 
-Observação: se estiver usando o servidor do Azure MFA ou outro provedor que gera a senha de uso único, verifique se o campo de comprimento configurado acima tem o mesmo comprimento que o gerado pelo provedor de MFA.  Esse comprimento deve ser 6 para o servidor do Azure MFA.  O servidor MFA do Azure também gera seu próprio texto de mensagem para que a mensagem de texto SMS seja ignorada.
+Nota: se utilizar o Servidor Azure MFA, ou outro fornecedor que gere a própria senha única, certifique-se de que o campo de comprimento configurado acima é o mesmo comprimento que o gerado pelo fornecedor de MFA.  Este comprimento deve ser de 6 para o Servidor Azure MFA.  O Azure MFA Server também gera o seu próprio texto de mensagem para que a mensagem de texto SMS seja ignorada.
 
 Os utilizadores na sua organização podem agora registar-se para a reposição de palavra-passe.  Durante este processo, deverão introduzir o respetivo número de telefone do trabalho ou do telemóvel para que o sistema possa contactá-los (ou enviar mensagens SMS).
 
@@ -192,7 +192,7 @@ Ao instalar os Suplementos e as Extensões do MIM num computador associado a um 
 
 4.  Após a autenticação com êxito, o utilizador terá duas opções: manter a palavra-passe atual ou definir uma nova.
 
-5.  ! [MIM AC
-6.  contar imagem de êxito desbloqueada] (mídia/MIM-SSPR-account-unlock. JPG)
+5.  ! [MIM ac
+6.  contar imagem de sucesso desbloqueada](media/MIM-SSPR-account-unlock.JPG)
 
 6.  Se o utilizador escolher repor a palavra-passe, terá de escrever uma nova palavra-passe duas vezes e clicar em **Seguinte** para alterar a palavra-passe.

@@ -9,17 +9,17 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 2f91a5c24df5475130755574c77b536f57e64d24
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 0d5f970168934f3fcc4c721aad0a439e2babcfe7
+ms.sourcegitcommit: c214bb0b1373b65b1c9c215379fd820ab0c13f0f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79044247"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "79381510"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>Colaboração Azure AD business-to-business (B2B) com microsoft Identity Manager (MIM) 2016 SP1 com Procuração de Aplicação Azure
 ============================================================================================================================
 
-O cenário inicial é a gestão externa do ciclo de vida da conta aD.   Neste cenário, uma organização convidou os hóspedes para o seu diretório Azure AD, e deseja dar a esses hóspedes acesso a aplicações integradas no Windows ou em Kerberos, através do proxy de [aplicação da AD Azure](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) ou de outros mecanismos de gateway. O representante da aplicação Azure AD exige que cada utilizador tenha a sua própria conta AD DS, para efeitos de identificação e delegação.
+O cenário inicial é a gestão externa do ciclo de vida da conta aD.   Neste cenário, uma organização convidou os hóspedes para o seu diretório Azure AD, e deseja dar a esses hóspedes acesso a aplicações integradas no Windows ou em Kerberos, através do proxy de [aplicação da AD Azure](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-publish) ou de outros mecanismos de gateway. O representante da aplicação Azure AD exige que cada utilizador tenha a sua própria conta AD DS, para efeitos de identificação e delegação.
 
 ## <a name="scenario-specific-guidance"></a>Orientação específica do cenário
 
@@ -73,8 +73,8 @@ Certifique-se de que o pedido foi autorizado para pelo menos uma destas permiss�
 ## <a name="create-the-new-management-agent"></a>Criar o Novo Agente de Gestão
 
 
-No UI gestor de serviços de sincronização, selecione **Conectores** e **Crie**.
-Selecione **Graph (Microsoft)**  e dê-lhe um nome descritivo.
+No UI gestor de serviços de sincronização, selecione **Conectores** e **Crie**.
+Selecione **Graph (Microsoft)** e dê-lhe um nome descritivo.
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/d95c6b2cc7951b607388cbd25920d7d0.png)
 

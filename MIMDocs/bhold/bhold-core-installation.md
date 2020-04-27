@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: c4dfb4184292ba1b5da8c4e3e176d53e6a885ed8
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042275"
 ---
 # <a name="bhold-core-installation"></a>Instalação BHOLD Core
@@ -70,7 +70,7 @@ O módulo BHOLD Core deve ser capaz de iniciar sessão no domínio com uma conta
 
 3.  No **Novo Objeto –** Caixa de diálogo de grupo, em **nome de grupo,** digite o nome do grupo (padrão BHOLD: BHOLDApplicationGroup) e, em seguida, clique EM **OK**.
 
-4.  Clique com botão direito do rato em **Utilizadores**, aponte para **Novo** e, em seguida, clique em **Utilizador**.
+4.  Clique no direito **Utilizadores,** aponte para **Novo**e, em seguida, clique no **Utilizador**.
 
 5.  Em **nome completo**, escreva um nome que o ajude a identificar a conta, por exemplo, a Conta de Serviço Core BHOLD.
 
@@ -94,22 +94,22 @@ Antes de começar a instalar o módulo BHOLD Core, tem de estar preparado para f
 
 ### <a name="account-settings"></a>Definições da conta
 
-| **Artigo**                                    | **Descrição**                                                                                                                                                                                                                                                                                             | **Valor**                                                                                                                                                          |
+| **Item**                                    | **Descrição**                                                                                                                                                                                                                                                                                             | **Valor**                                                                                                                                                          |
 |---------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilize o Fornecedor de Segurança no Domínio/Máquina** | Quando selecionado, especifica que a segurança dos Serviços de Domínio do Diretório Ativo controlará o acesso ao BHOLD Core.                                                                                                                                                                                                  | Selecione a caixa de verificação. **Importante:** A instalação falhará se esta caixa de verificação não for selecionada.                                                                 |
 | **Domínio**                                  | Especifica o domínio que contém o servidor BHOLD, a conta de serviço e o grupo de aplicações. **Importante:** Especifique o nome de domínio utilizando o nome NetBIOS (curto) e não o nome de domínio totalmente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como CONTOSO. | Escreva o nome de domínio aqui:                                                                                                                                        |
 | **Grupo de candidaturas**                       | Especifica o nome do grupo de segurança que criou anteriormente no [utilizador e grupo exigidos.](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx#rug)                                                                                                                                  | Escreva o nome de grupo aqui:                                                                                                                                         |
 | **Utilizador de serviço**                            | Especifica o nome de início de sessão da conta de utilizador de serviço que criou anteriormente no [utilizador e grupo exigidos](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx#rug).                                                                                                                      | Escreva aqui o nome da conta de utilizador:                                                                                                                                  |
 | **Palavra-passe**                                | Especifica a palavra-passe da conta de utilizador do serviço BHOLD Core.                                                                                                                                                                                                                                              | Escreva a palavra-passe aqui: **Importante:** Certifique-se de manter esta palavra-passe num local escondido e seguro.                                                                |
-| **Site IP/Porto**                         | Especifica o endereço IP e o número de porta do website a criar no servidor intranet. Altere o valor predefinido (\*) apenas se não utilizar o mesmo endereço IP que o website predefinido. Mude o número da porta para uma porta disponível apenas se a porta padrão (5151) já estiver em uso.             | Se um endereço IP não predefinido for utilizado pelo website predefinido, escreva-o aqui: Se o número de porta padrão já estiver em uso, escreva o número da porta do site BHOLD aqui: |
+| **Site IP/Porto**                         | Especifica o endereço IP e o número de porta do website a criar no servidor intranet. Altere o\*valor padrão () apenas se não utilizar o mesmo endereço IP que o website predefinido. Mude o número da porta para uma porta disponível apenas se a porta padrão (5151) já estiver em uso.             | Se um endereço IP não predefinido for utilizado pelo website predefinido, escreva-o aqui: Se o número de porta padrão já estiver em uso, escreva o número da porta do site BHOLD aqui: |
 
 ### <a name="database-settings"></a>Definições de base de dados
 
-| **Artigo**                                       | **Descrição**                                                                                                                                                                                                                                                           | **Valor**                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Item**                                       | **Descrição**                                                                                                                                                                                                                                                           | **Valor**                                                                                                                                                                                                                                                                                                                                                                                             |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilizar segurança integrada**                    | Especifica que a Autenticação do Windows é utilizada para aceder à base de dados.                                                                                                                                                                                                     | Selecione a caixa de verificação se a autenticação do Windows for utilizada para se ligar ao Servidor SQL. Limpe a caixa de verificação se for utilizada a autenticação do servidor SQL. A base de dados deve ter sido criada antes de executar a configuração do núcleo BHOLD se for utilizada a autenticação do servidor SQL. **Nota:** Se for utilizada a Autenticação do Windows, deve iniciar-se o seu login com uma conta que tenha a função de servidor de sisadmina no servidor de base de dados. |
 | **Palavra-passe** **do utilizador** e da base de dados | Especifica o nome de utilizador e a palavra-passe de um utilizador com a função do servidor sysadmin no servidor de base de dados. Estes valores só são fornecidos quando for utilizada a autenticação do servidor SQL.                                                                                               | Escreva aqui o nome de utilizador do SQL Server: Escreva aqui a palavra-passe do utilizador do SQL Server: **Nota:** Certifique-se de manter esta palavra-passe num local oculto e seguro.                                                                                                                                                                                                                                                  |
-| **Nome do servidor** de base de dados e **da base de dados**   | Especifica o nome NetBIOS do servidor de base de dados e o nome da base de dados (predefinido: b1) que a Configuração core bHOLD criará. Se não estiver a utilizar a instância de servidor de base de dados predefinido, especifique a instância do servidor de base de dados no formulário *\<servidor\>\\* \<instância *\>* . | Escreva aqui o nome do servidor (ou servidor e instância): Escreva o nome da base de dados aqui:                                                                                                                                                                                                                                                                                                                   |
+| **Nome do servidor** de base de dados e **da base de dados**   | Especifica o nome NetBIOS do servidor de base de dados e o nome da base de dados (predefinido: b1) que a Configuração core bHOLD criará. Se não estiver a utilizar a instância de servidor de base de dados predefinida, especifique a instância do servidor de base de dados na\\*\<instância\>* do * \<servidor\>* de formulários . | Escreva aqui o nome do servidor (ou servidor e instância): Escreva o nome da base de dados aqui:                                                                                                                                                                                                                                                                                                                   |
 | **Fazer restrições ao utilizador da base de dados**    | Obsoleto.                                                                                                                                                                                                                                                                 | Não alterar o valor padrão                                                                                                                                                                                                                                                                                                                                                                       |
 |                                                |                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                       |
 |                                                |                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -118,9 +118,9 @@ Antes de começar a instalar o módulo BHOLD Core, tem de estar preparado para f
 
 Para instalar o módulo BHOLD Core, inicie sessão como membro do grupo Domain Admins, descarregue o seguinte ficheiro e execute-o como administrador no servidor que pretende instalar o módulo BHOLD Core em: 
 
-- BholdCore *\<Versão\>* \_Release.msi
+- \_ * \<Versão\>* BholdCore Release.msi
 
-Substitua *\<Versão\>* com o número de versão da versão do lançamento BHOLD Core que está a instalar.
+Substitua * \<\> * a Versão pelo número de versão da versão do lançamento BHOLD Core que está a instalar.
 
 Para executar o ficheiro do programa como administrador, clique no ficheiro à direita e, em seguida, clique em **Executar como administrador**.
 
@@ -171,17 +171,17 @@ Se o nome de rede utilizado para contactar o website bHOLD não for o mesmo que 
 > [!IMPORTANT]
 > Se o módulo BHOLD Core estiver instalado no mesmo computador que o Portal FIM, deve criar registos de recursos DNS (CNAME ou A) com diferentes nomes de anfitriões para os servidores que executam o BHOLD Core e o servidor que executa o Portal FIM. Apenas um SPN pode ser estabelecido para um par de tipos de serviço/servidor-pseudónimo, e assim o BHOLD Core e o Portal FIM requerem SPNs separados porque normalmente funcionam sob contas diferentes. O comando setspn relata um erro se um SPN já tiver sido estabelecido sob outra conta.
 
-A associação a **Admins do Domínio**, ou equivalente, é o mínimo requerido para concluir este procedimento.
+A adesão aos Administradores de **Domínio**, ou equivalente, é o mínimo necessário para completar este procedimento.
 
 #### <a name="to-establish-the-spn-of-the-bhold-website"></a>Para estabelecer o SPN do website bHOLD
 
 1.  No controlador de domínio de domínio do Diretório Ativo, clique em **Iniciar,** clique em **Todos os programas,** clique em **Acessórios,** clique no motivo de **comando**do clique direito e, em seguida, clique em Executar **como administrador**.
 
-2.  No pedido de comando, digite o seguinte comando e, em seguida, prima ENTER: setspn -S HTTP/ *\<networkalias\> \<domínio\>* \\\<nome de conta *\>* onde:
+2.  No pedido de comando, digite o seguinte comando e, em seguida, prima ENTER: setspn –S HTTP/ \\ * \<networkalias\> \<\> nome* * \<\> * de conta de domínio onde:
 
-    -   *\<networkalias\>* é o endereço que os clientes usam para contactar o website da BHOLD
+    -   *networkalias\> é o endereço que os clientes usam para contactar o website da BHOLD \<*
 
-    -   *\<domínio\>* \\\<nome de *conta\>* é o domínio e o nome de utilizador da conta de serviço BHOLD Core que criou quando instalou o BHOLD Core.
+    -   *\<o\>*\\*\<nome\> * de conta de domínio é o domínio e o nome de utilizador da conta de serviço BHOLD Core que criou quando instalou o BHOLD Core.
 
 3.  Repita o passo anterior para todos os outros nomes que os clientes usam para contactar o website da BHOLD, por exemplo, pseudónimos CNAME, nomes que incluem um nome de domínio totalmente qualificado, ou nomes que incluam um nome de domínio NetBIOS (curto).
 
@@ -196,7 +196,7 @@ Para validar que a instalação do módulo BHOLD Core foi bem sucedida, abra o p
 | **Dias entre a Corrida da ABA**     | Detete to a um inteiro de dois dígitos para especificar o intervalo (em dias) entre duas execuções de autorização baseada no atributo (ABA). Por exemplo, para especificar que as corridas de ABA serão separadas por dois dias, tipo 02.                                                                                                                     |
 | **Hora de início da corrida da ABA**    | Detete to a um inteiro de dois dígitos para especificar a hora do dia em que ocorrerá uma execução de autorização baseada no atributo. Por exemplo, para especificar que a corrida da ABA terá lugar às 23h. (23:00), tipo 23.                                                                                                             |
 | **Cardeal do Sistema**       | Definido para N se não quiser um controlo de cardinalidade do sistema em BHOLD. O valor padrão é Y.                                                                                                                                                                                                                             |
-| **Exploração madeireira**                  | Set to N se não quiser que as alterações sejam registadas. O valor padrão é Y.                                                                                                                                                                                                                                            |
+| **Registo**                  | Set to N se não quiser que as alterações sejam registadas. O valor padrão é Y.                                                                                                                                                                                                                                            |
 | **Processamento de fila de sistemas**   | Set para N se não quiser o processamento da fila do sistema. Não altere este valor a menos que seja direcionado para o fazer através do suporte do produto.                                                                                                                                                                                           |
 
 Deve ser registado como membro do grupo Dedomínio Administradores para realizar este procedimento.
@@ -205,13 +205,13 @@ Deve ser registado como membro do grupo Dedomínio Administradores para realizar
 
 1.  Clique em **Iniciar,** clique em **Todos os Programas,** e depois clique no **Internet Explorer**.
 
-2.  Na caixa de endereços, escreva, onde *\<servidor\>* é o nome do servidor do website BHOLD e\<\>de *porta* é o número de porta ligado ao website.
+2.  Na caixa de endereços, escreva, onde * \<\> * o servidor é o nome do servidor do website BHOLD e * \<\> * a porta é o número de porta ligado ao website.
 
 3.  Clique em **Casa,** clique em **Valores,** e clique em **Modificar**.
 
 4.  Localize o nome do atributo que pretende alterar, digite o novo valor na caixa ao lado do nome do atributo e, em seguida, clique em **OK**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Depois de ter instalado o BHOLD Core e validado que a instalação foi bem sucedida, pode instalar módulos adicionais. Neste ponto, a base de dados BHOLD ficará essencialmente vazia, contendo apenas uma conta de utilizador, a conta raiz e uma unidade organizacional (orgunit), a orgunit raiz. Para adicionar mais utilizadores à base de dados BHOLD, pode instalar o módulo de Conector de Gestão de Acesso ou o módulo Gerador de Modelos BHOLD, dependendo das suas necessidades. Pode utilizar o módulo de Conector de Gestão de Acesso para importar dados dos utilizadores do Serviço de Sincronização FIM, ou pode utilizar o Gerador de Modelos BHOLD para importar dados dos utilizadores a partir de um conjunto de ficheiros estruturados. Para mais informações sobre a utilização do módulo de conector de gestão de acesso, consulte o Guia do [Laboratório de Teste: Conector de Gestão](https://technet.microsoft.com/library/jj853085(v=ws.10).aspx)de Acesso BHOLD .
 

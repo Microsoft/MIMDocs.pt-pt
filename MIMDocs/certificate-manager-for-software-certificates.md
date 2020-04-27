@@ -12,10 +12,10 @@ ms.assetid: fed5ada9-d80f-4825-aad7-4172ac5d71d3
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: b8a1b55ed836f46c184941ccf6ec25ef63ad4c30
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042105"
 ---
 # <a name="create-software-certificates-with-certificate-manager"></a>Criar certificados de software com o Gestor de Certificados
@@ -27,7 +27,7 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
 2.  Clique em **Ficheiro** e, em seguida, em **Adicionar/Remover Snap-in**.
 
-3.  Na lista Snap-ins disponíveis, clique em **Modelos de Certificado** e, em seguida, em **Adicionar**.
+3.  Na lista de snap-ins disponíveis, clique em Modelos de **Certificado,** e clique em **Adicionar**.
 
 4.  Agora, os **Modelos de Certificado** encontram-se na Raiz da Consola na MMC. Faça duplo clique para ver todos os modelos de certificado disponíveis.
 
@@ -75,11 +75,11 @@ Para se inscrever e renovar certificados de software, não tem de ser um adminis
 
 1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
 
-2.  Aceda a **Administração &gt; Gerir Modelos de Perfil**, certifique-se de que marca a caixa junto a **Modelo de Perfil de Início de Sessão do Smart Card de Exemplo MIM CM** e, em seguida, clique em **Copiar um modelo de perfil selecionado**.
+2.  Vá para **a Administração &gt; Gerir os modelos** de perfil e certifique-se de que a caixa é verificada ao lado do modelo de perfil de **logon** da amostra MIM CM e, em seguida, clique em **Copiar um modelo**de perfil selecionado .
 
 3.  Escreva o nome do modelo de perfil e clique em **OK**.
 
-4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que marca a caixa junto ao nome da AC.
+4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que seleciona a caixa junto ao nome da AC.
 
 5.  Marque a caixa junto ao nome do Certificado de Software Arquivado e clique em **Adicionar**.
 

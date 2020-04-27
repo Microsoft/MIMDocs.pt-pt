@@ -14,10 +14,10 @@ ms.suite: ems
 experimental: true
 experiment_id: kgremban_images
 ms.openlocfilehash: 1d00b232d8c7b09fea72e033a51dd590992291c3
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043907"
 ---
 # <a name="privileged-access-management-for-active-directory-domain-services"></a>Privileged Access Management para Serviços de Domínio do Active Directory
@@ -108,7 +108,7 @@ Partindo do princípio de que o pedido é aprovado, o fluxo de trabalho da açã
 
 Este fluxo de trabalho destina-se especificamente a estas contas administrativas. Os administradores (ou até mesmo os scripts) que precisem apenas de acesso ocasional a grupos com privilégios, podem pedir precisamente esse acesso. O MIM regista o pedido e as alterações no Active Directory, e pode visualizá-los no Visualizador de Eventos ou enviar os dados para soluções de monitorização empresariais, como o System Center 2012 - Serviços de Recolha de Auditorias (ACS) do Operations Manager, ou outras ferramentas de terceiros.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Ataques mitigadores pass-the-hash (PtH) e outros roubos credenciais, versões 1 e 2](https://www.microsoft.com/download/details.aspx?id=36036)
-- [Gestão de Acesso Privilegiado cmdlets](https://docs.microsoft.com/powershell/identitymanager/mimpam/vlatest/mimpam)
+- [Cmdlets de Gestão de Acesso Privilegiado](https://docs.microsoft.com/powershell/identitymanager/mimpam/vlatest/mimpam)

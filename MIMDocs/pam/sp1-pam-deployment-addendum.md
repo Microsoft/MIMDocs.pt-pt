@@ -12,10 +12,10 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 34a4fbc2ada0c54cabb128af5ca90e2e89e06517
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043873"
 ---
 # <a name="pam-deployment-scripts-addendum"></a>Adenda de scripts de implementação da PAM:
@@ -70,4 +70,4 @@ Prossiga com o Passo 8 indicado acima.
 
 ## <a name="addendum-4-if-something-goes-wrong"></a>Adenda 4: Se ocorrer um erro
 
-Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Comprima a pasta para um ficheiro Zip e envie por e-mail para [mim2016@microsoft.com](mailto:mim2016@microsoft.com), juntamente com os detalhes da operação e do erro.
+Todos os registos de script são guardados em %AppData%\MIMPAMInstall. Por favor, comprima a pasta num [mim2016@microsoft.com](mailto:mim2016@microsoft.com) ficheiro Zip e envie-a por e-mail juntamente com detalhes da operação e do erro.

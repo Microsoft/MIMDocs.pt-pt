@@ -1,5 +1,5 @@
 ---
-title: Utilize um fornecedor alternativo de autenticação multi-factor através de uma API para ativar pam ou em cenário SSPR  Microsoft Docs
+title: Utilize um fornecedor alternativo de autenticação multi-factor através de uma API para ativar pam ou em cenário SSPR [ Microsoft Docs
 description: Configurar o Custom MFA API como uma segunda camada de segurança quando os seus utilizadores ativarem funções na Gestão de Acesso Privilegiado e utilizarem o Reset de Passwords self service.
 keywords: ''
 author: billmath
@@ -10,10 +10,10 @@ ms.date: 09/04/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: b157b2a8716d20ce3b472d5655d393e64f2baa6b
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044366"
 ---
 # <a name="use-a-custom-multi-factor-authentication-provider-via-an-api-during-pam-role-activation-or-in-sspr"></a>Utilize um fornecedor personalizado de autenticação multi-factor através de uma API durante a ativação de funções PAM ou em SSPR
@@ -45,13 +45,13 @@ Descarregue e instale o hotfix [MIM 4.5.202.0](https://www.microsoft.com/downloa
 
 O DLL deve incluir uma classe, que implementa três métodos:
 
-- `InitiateCall`: O Serviço MIM invocará este método. O serviço passa o número de telefone e pede identificação como parâmetros.  O método deve devolver um `PhoneCallStatus` valor de `Pending`, `Success` ou `Failed`.
-- `GetCallStatus`: Se uma chamada anterior para `initiateCall` `Pending`devolvida, o Serviço MIM invocará este método. Este método também devolve `PhoneCallStatus` valor de `Pending`, `Success` ou `Failed`.
-- `GetFailureMessage`: Se uma invocação prévia de `InitiateCall` ou `GetCallStatus` `Failed`devolvidas, o Serviço MIM invocará este método. Este método devolve uma mensagem de diagnóstico.
+- `InitiateCall`: O Serviço MIM invocará este método. O serviço passa o número de telefone e pede identificação como parâmetros.  O método deve `PhoneCallStatus` devolver `Pending` `Success` um `Failed`valor de, ou .
+- `GetCallStatus`: Se uma chamada `initiateCall` `Pending`anterior para regressar, o Serviço MIM invocará este método. Este método `PhoneCallStatus` também `Pending`devolve `Success` `Failed`o valor de, ou .
+- `GetFailureMessage`: Se uma invocação `GetCallStatus` `Failed`anterior de `InitiateCall` ou devolva, o Serviço MIM invocará este método. Este método devolve uma mensagem de diagnóstico.
 
-As implementações destes métodos devem ser seguras e, além disso, a implementação do `GetCallStatus` e `GetFailureMessage` não deve assumir que serão chamadas pelo mesmo fio que um apelo anterior à `InitiateCall`.
+As implementações destes métodos devem ser seguras e, além disso, a implementação do `GetCallStatus` e `GetFailureMessage` não `InitiateCall`deve assumir que serão chamadas pelo mesmo fio que uma chamada anterior para .
 
-Guarde o DLL no diretório `C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\`.
+Guarde o DLL no `C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\` diretório.
 
 Código de amostra, que pode ser compilado usando o Visual Studio 2010 ou mais tarde.
 
@@ -156,6 +156,6 @@ Depois de o serviço ter reiniciado, utilize sSPR e/ou PAM para validar a funcio
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-- [Começando com o servidor de autenticação multi-factor Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)
+- [Introdução ao Servidor Multi-Factor Authentication do Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy)
 - [O que é a autenticação de multi-factor estoque Azure](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
 - [História de lançamento da versão MIM](./reference/version-history.md)

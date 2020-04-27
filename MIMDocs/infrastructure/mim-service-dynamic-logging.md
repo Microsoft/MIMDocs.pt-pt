@@ -8,10 +8,10 @@ ms.date: 10/29/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: 69ebe774ddea0176fb26ef74b8f4352e4bb5d039
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042173"
 ---
 # <a name="mim-sp1-4414360--service-dynamic-logging"></a>Registo Dinâmico do Serviço MIM SP1 (4.4.1436.0)
@@ -54,10 +54,10 @@ Para ver o vestígio, pode utilizar a ferramenta do [visualizador Do Rastreio](h
 Na construção 4.5.x.x Revimos a função de registo para especificar que o nível de registo predefinido é **"Aviso".** O serviço escreve mensagens em dois ficheiros (os índices "00" e "01" são adicionados antes da extensão). Os ficheiros estão localizados no diretório "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service". Quando o ficheiro excede o tamanho máximo, o serviço começa a escrever noutro ficheiro. Se outro ficheiro existir, será substituído. O tamanho máximo padrão do ficheiro é de 1 GB. Para alterar o tamanho máximo predefinido, é necessário adicionar o parâmetro **"maxOutputFileSizeKB"** com valor do tamanho máximo do ficheiro kB no ouvinte (ver exemplo abaixo) e reiniciar o Serviço MIM. Quando o serviço é iniciado, apresta registos em ficheiros mais recentes (se o limite de espaço for ultrapassado, substitui o ficheiro mais antigo). 
 
 > [!NOTE] 
-> Como o tamanho do ficheiro de verificação de serviço antes da mensagem ser escrita, o tamanho do ficheiro pode ser maior do que o tamanho máximo para o tamanho de uma mensagem. por padrão, o tamanho dos registos pode ser de aproximadamente 6 GB (três ouvintes com dois ficheiros para um tamanho GB).
+> Como o tamanho do ficheiro de verificação de serviço antes da mensagem ser escrita, o tamanho do ficheiro pode ser maior do que o tamanho máximo para o tamanho de uma mensagem. por padrão, o tamanho dos registos pode ser de aproximadamente 6 GB (três ouvintes >com dois ficheiros para um tamanho GB).
 
 > [!NOTE] 
-> A conta de serviço deve ter permissões para escrever em >"C:\Program Files\Microsoft Forefront Identity Manager\2010\Service" >diretório. Caso a conta de serviço não tenha esses direitos, os ficheiros >não serão criados.
+> A conta de serviço deve ter permissões para escrever em > "C:\Program Files\Microsoft Forefront Identity Manager\2010\Service" >diretório. Caso a conta de serviço não tenha esses direitos, os ficheiros >não serão criados.
 
 Exemplo como definir o tamanho máximo do ficheiro para 200 MB (200 * 1024 KB) para ficheiros de svclog e 100 MB *(100 * 1024 KB) para ficheiros txt
 

@@ -1,5 +1,5 @@
 ---
-title: Guia de conceitos da Suite Microsoft BHOLD  Microsoft Docs
+title: Guia de conceitos da Suite Microsoft BHOLD [ Microsoft Docs
 description: Comece a trabalhar com os componentes do MIM 2016 ao instalar e configurar o Serviço de Sincronização.
 keywords: ''
 author: billmath
@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.assetid: ''
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: f120709e517d82d4f94e72f4d0a44361f5552a1c
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042309"
 ---
 # <a name="microsoft-bhold-suite-concepts-guide"></a>Guia de conceitos da Suite BHOLD da Microsoft
@@ -25,7 +25,7 @@ O Microsoft BHOLD Suite alarga estas capacidades de MIM adicionando controlo de 
 Este guia ajuda-o a entender como a BHOLD Suite trabalha com mim e aborda os seguintes tópicos:
 
 - Controlo de acesso baseado em funções
-- Atestado
+- Atestação
 - Análise
 - Relatórios
 - Conector de Gestão de Acesso
@@ -33,13 +33,13 @@ Este guia ajuda-o a entender como a BHOLD Suite trabalha com mim e aborda os seg
 
 ## <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
 
-O método mais comum para controlar o acesso dos utilizadores a dados e aplicações é através do controlo discricionário de acesso (DAC). Na maioria das implementações comuns, cada objeto significativo tem um proprietário identificado. O proprietário tem a capacidade de conceder ou negar o acesso ao objeto a outros com base na identidade individual ou na adesão ao grupo. Na prática, o DAC normalmente resulta numa panóplia de grupos de segurança, alguns que refletem a estrutura organizacional, outros que representam agrupamentos funcionais (como tipos de trabalho ou atribuições de projetos), e outros que consistem em coleções improvisadas de utilizadores e dispositivos ligados para fins mais temporários. À medida que as organizações crescem, a adesão a estes grupos torna-se cada vez mais difícil de gerir. Por exemplo, se um trabalhador for transferido de um projeto para outro, os grupos que são utilizados para controlar o acesso aos ativos dos projetos devem ser atualizados manualmente. Nestes casos, não é incomum que ocorram erros, erros que podem impedir a segurança do projeto ou a produtividade.
+O método mais comum para controlar o acesso dos utilizadores a dados e aplicações é através do controlo discricionário de acesso (DAC). Na maioria das implementações comuns, cada objeto significativo tem um proprietário identificado. O proprietário tem a capacidade de conceder ou negar o acesso ao objeto a outros com base na identidade individual ou na adesão ao grupo. Na prática, o DAC normalmente resulta numa panóplia de grupos de segurança, alguns que refletem a estrutura organizacional, outros que representam agrupamentos funcionais (como tipos de trabalho ou atribuições de projetos), e outros que consistem em coleções improvisadas de utilizadores e dispositivos que estão ligados para fins mais temporários. À medida que as organizações crescem, a adesão a estes grupos torna-se cada vez mais difícil de gerir. Por exemplo, se um trabalhador for transferido de um projeto para outro, os grupos que são utilizados para controlar o acesso aos ativos dos projetos devem ser atualizados manualmente. Nestes casos, não é incomum que ocorram erros, erros que podem impedir a segurança do projeto ou a produtividade.
 
 A MIM inclui funcionalidades que ajudam a mitigar este problema, fornecendo controlo automatizado sobre a adesão ao grupo e à lista de distribuição. No entanto, isto não aborda a complexidade intrínseca de grupos em proliferação que não estão necessariamente relacionados uns com os outros de forma estruturada.
 
 Uma forma de reduzir significativamente esta proliferação é através da implementação do controlo de acesso baseado em funções (RBAC). O RBAC não desloca o DAC.  O RBAC baseia-se no DAC, fornecendo um quadro para classificar os utilizadores e os recursos de TI. Isto permite-lhe explicitar a sua relação e os direitos de acesso que são adequados de acordo com essa classificação. Por exemplo, atribuindo a um utilizador atributos que especificam o título de trabalho dos utilizadores e as atribuições de projeto, o utilizador pode ter acesso às ferramentas necessárias para o trabalho do utilizador e dados que o utilizador precisa para contribuir para um determinado projeto. Quando o utilizador assume um trabalho diferente e diferentes atribuições de projeto, alterando os atributos que especificam o título de trabalho do utilizador e os projetos bloqueiam automaticamente o acesso aos recursos necessários apenas para a posição anterior dos utilizadores.
 
-Uma vez que as funções podem ser contidas dentro de funções de forma hierárquica (por exemplo, as funções de gerente de vendas e representante de vendas podem ser contidas no papel mais geral das vendas), é fácil atribuir direitos adequados a papéis específicos e ainda assim fornecer direitos adequados para todos os que partilham o papel mais inclusivo também. Por exemplo, num hospital, todo o pessoal médico poderia ter o direito de ver os registos dos pacientes, mas apenas os médicos (uma subfunção do papel médico) poderiam ter o direito de introduzir prescrições para o paciente. Da mesma forma, os utilizadores pertencentes ao papel clerical poderiam ser impedidos de aceder aos registos dos pacientes, exceto para os funcionários de faturação (uma subfunção do papel clerical), que poderiam ter acesso às porções de um paciente que são obrigados a cobrar ao paciente por serviços fornecido pelo hospital.
+Uma vez que as funções podem ser contidas dentro de funções de forma hierárquica (por exemplo, as funções de gestor de vendas e representante de vendas podem ser contidas no papel mais geral das vendas), é fácil atribuir direitos adequados a papéis específicos e, no entanto, ainda assim fornecer direitos adequados a todos os que também partilham o papel mais inclusivo. Por exemplo, num hospital, todo o pessoal médico poderia ter o direito de ver os registos dos pacientes, mas apenas os médicos (uma subfunção do papel médico) poderiam ter o direito de introduzir prescrições para o paciente. Da mesma forma, os utilizadores pertencentes ao papel clerical poderiam ser impedidos de aceder aos registos dos pacientes, com exceção dos funcionários de faturação (uma subfunção do papel clerical), a quem seria concedido acesso às porções de registos de pacientes que são obrigados a cobrar ao doente os serviços prestados pelo hospital.
 
 Um benefício adicional do RBAC é a capacidade de definir e impor a separação de direitos (SoD). Isto permite que uma organização defina combinações de funções que concedem permissões que não devem ser detidas pelo mesmo utilizador, de modo a que um determinado utilizador não possa ser atribuído funções que permitam ao utilizador iniciar um pagamento e autorizar um pagamento, por exemplo. O RBAC oferece a capacidade de aplicar automaticamente essa política em vez de ter de avaliar a aplicação efetiva da política numa base por utilizador.
 
@@ -64,7 +64,7 @@ Embora não seja necessário, na maioria dos casos as unidades organizacionais s
 
 ![](media/bhold-concepts-guide/org-chart.png)
 
-Nesta amostra, o modelo seria organizacional unidade organizacional para a corporação como um todo (representado pelo presidente, porque o presidente não faz parte de uma unidade mororganizaçãoganizatina), ou da unidade organizacional de raiz BHOLD (que sempre faz parte de uma unidade mororganizaçãoganizatina), ou da unidade organizacional de raiz BHOLD (que sempre existe) poderia ser usado para esse fim. As OrgUnits que representam as divisões corporativas chefiadas pelos vice-presidentes seriam colocadas na unidade organizacional corporativa. Em seguida, as unidades organizacionais correspondentes aos diretores de marketing e vendas seriam adicionadas às unidades organizacionais de marketing e vendas, e as unidades organizacionais representativas dos gestores regionais de vendas seriam colocadas na unidade organizacional para o gestor de vendas da região leste. Os associados de vendas, que não gerem outros utilizadores, seriam membros da unidade organizacional do gestor de vendas da região leste. Note que os utilizadores podem ser membros de uma unidade organizacional a qualquer nível. Por exemplo, um assistente administrativo, que não é gerente e reporta diretamente a um vice-presidente, seria membro da unidade organizacional do vice-presidente.
+Nesta amostra, o modelo seria organizacional para a corporação como um todo (representado pelo presidente, porque o presidente não faz parte de uma unidade mororganizaçãoganizatina), ou a unidade organizacional de raiz BHOLD (que sempre existe) poderia ser usada para esse fim. As OrgUnits que representam as divisões corporativas chefiadas pelos vice-presidentes seriam colocadas na unidade organizacional corporativa. Em seguida, as unidades organizacionais correspondentes aos diretores de marketing e vendas seriam adicionadas às unidades organizacionais de marketing e vendas, e as unidades organizacionais representativas dos gestores regionais de vendas seriam colocadas na unidade organizacional do gestor de vendas da região leste. Os associados de vendas, que não gerem outros utilizadores, seriam membros da unidade organizacional do gestor de vendas da região leste. Note que os utilizadores podem ser membros de uma unidade organizacional a qualquer nível. Por exemplo, um assistente administrativo, que não é gerente e reporta diretamente a um vice-presidente, seria membro da unidade organizacional do vice-presidente.
 
 Além de representar a estrutura organizacional, as unidades organizacionais também podem ser usadas para agrupar utilizadores e outras unidades organizacionais de acordo com critérios funcionais, como projetos ou especialização. O diagrama seguinte mostra como as unidades organizacionais seriam usadas para agrupar associados de vendas de acordo com o tipo de cliente:
 
@@ -80,7 +80,7 @@ Como referido acima, cada utilizador deve pertencer a pelo menos uma unidade org
 
 Quando um utilizador não está ativo dentro da organização (enquanto estiver fora para licença médica, por exemplo), o utilizador pode ser suspenso, o que revoga todas as permissões do utilizador sem remover o utilizador do modelo de função. Ao voltar ao serviço, o utilizador pode ser reativado, o que restaura todas as permissões concedidas pelas funções do utilizador.
 
-Os objetos para os utilizadores podem ser criados individualmente no BHOLD através do portal web BHOLD Core, ou podem ser importados a granel utilizando o Gerador de Modelos BHOLD, ou utilizando o Connector de Gestão de Acesso com o Serviço de Sincronização FIM para importar informações dos utilizadores a partir de fontes como serviços de domínio de diretório ativo ou aplicações de recursos humanos.
+Os objetos para os utilizadores podem ser criados individualmente no BHOLD através do portal Web BHOLD Core, ou podem ser importados a granel utilizando o Gerador de Modelos BHOLD, ou utilizando o Connector de Gestão de Acesso com o Serviço de Sincronização FIM para importar informações dos utilizadores de fontes como serviços de domínio de diretório ativo ou aplicações de recursos humanos.
 
 Os utilizadores podem ser criados diretamente no BHOLD sem utilizar o Serviço de Sincronização FIM. Isto pode ser útil quando modelar papéis em ambiente de pré-produção ou teste. Também pode permitir que utilizadores externos (como empregados de um subcontratado) sejam atribuídos a funções e, assim, ter acesso aos recursos de TI sem serem adicionados à base de dados dos colaboradores; no entanto, estes utilizadores não poderão utilizar as funcionalidades de self-service BHOLD.
 
@@ -137,14 +137,14 @@ Depois de o Model Generator criar estas funções no modelo, pode então exporta
 
 Secções anteriores descreveram as características básicas do controlo de acesso baseado em funções (RBAC) em BHOLD. Esta secção descreve funcionalidades adicionais no BHOLD que podem proporcionar uma maior segurança e flexibilidade à implementação do RBAC pela sua organização. Esta secção fornece visões gerais das seguintes funcionalidades BHOLD:
 
-- Cardealidade
+- Cardinalidade
 - Separação de direitos
 - Permissões adaptáveis ao contexto
 - Autorização baseada no atributo
 - Tipos de atributos flexíveis
 
 
-#### <a name="cardinality"></a>Cardealidade
+#### <a name="cardinality"></a>Cardinalidade
 
 *Cardinalidade* refere-se à implementação de regras empresariais que visam limitar o número de vezes que duas entidades podem estar relacionadas entre si. No caso do BHOLD, podem ser estabelecidas regras de cardinalidade para funções, permissões e utilizadores.
 
@@ -168,11 +168,11 @@ Pode configurar um utilizador para limitar o seguinte:
 
 A separação de deveres (SoD) é um princípio comercial que procura impedir que os indivíduos ganhem a capacidade de realizar ações que não devem estar disponíveis para uma única pessoa. Por exemplo, um trabalhador não deve poder solicitar um pagamento e autorizar o pagamento. O princípio da SoD permite que as organizações implementem um sistema de controlos e saldos para minimizar a sua exposição ao risco de erro ou má conduta do trabalhador.
 
-BHOLD implementa SoD permitindo-lhe definir permissões incompatíveis. Quando estas permissões são definidas, o BHOLD aplica a SoD evitando a criação de funções que estão ligadas a permissões incompatíveis, quer estejam ligadas diretamente ou através de herança, e impedindo que os utilizadores sejam atribuídos a múltiplas funções que, quando estão ligadas combinado, concederia permissões incompatíveis, novamente por atribuição direta ou por herança. Opcionalmente, os conflitos podem ser ultrapassados.
+BHOLD implementa SoD permitindo-lhe definir permissões incompatíveis. Quando estas permissões são definidas, o BHOLD aplica a SoD evitando a criação de funções ligadas a permissões incompatíveis, quer estejam ligadas diretamente ou através de herança, e impedindo que os utilizadores sejam atribuídos a múltiplas funções que, quando combinadas, concederiam permissões incompatíveis, novamente por atribuição direta ou através de herança. Opcionalmente, os conflitos podem ser ultrapassados.
 
 #### <a name="context-adaptable-permissions"></a>Permissões adaptáveis ao contexto
 
-Ao criar permissões que podem ser modificadas automaticamente com base num atributo do objeto, pode reduzir o número total de permissões que tem de gerir. Permissões adaptáveis ao contexto (CAPs) permitem definir uma fórmula como um atributo de permissão que modifica a forma como a permissão é aplicada pela aplicação associada à permissão. Por exemplo, pode criar uma fórmula que altera a permissão de acesso a uma pasta de ficheiros (através de um grupo de segurança associado à lista de controlo de acesso da pasta) com base no facto de um utilizador pertencer a uma unidade organizacional (unidade organizacional) que contém empregados a tempo inteiro ou contratados. Se o utilizador for transferido de uma unidade organizacional para outra, a nova permissão é automaticamente aplicada e a antiga permissão é desativada. 
+Ao criar permissões que podem ser modificadas automaticamente com base num atributo do objeto, pode reduzir o número total de permissões que tem de gerir. Permissões adaptáveis ao contexto (CAPs) permitem definir uma fórmula como um atributo de permissão que modifica a forma como a permissão é aplicada pela aplicação associada à permissão. Por exemplo, pode criar uma fórmula que altera a permissão de acesso a uma pasta de ficheiros (através de um grupo de segurança associado à lista de controlo de acesso da pasta) com base no facto de um utilizador pertencer a uma unidade organizacional (unidade organizacional) que contenha funcionários a tempo inteiro ou contratados. Se o utilizador for transferido de uma unidade organizacional para outra, a nova permissão é automaticamente aplicada e a antiga permissão é desativada. 
 
 A fórmula CAP pode consultar os valores dos atributos que foram aplicados a aplicações, permissões, unidades organizacionais e utilizadores.
 
@@ -186,11 +186,11 @@ Uma forma de controlar se uma função que está ligada a uma unidade organizaci
 
 O sistema de atributos no BHOLD é altamente extensível. Pode definir novos tipos de atributos para objetos como utilizadores, unidades organizacionais (unidades organizacionais) e funções. Os atributos podem ser definidos para ter valores que são inteiros, Boolean (sim/não), alfanuméricos, data, hora e endereços de e-mail. Os atributos podem ser especificados como valores únicos ou uma lista de valor.
 
-## <a name="attestation"></a>Atestado
+## <a name="attestation"></a>Atestação
 
 O BHOLD Suite fornece ferramentas que pode utilizar para verificar se os utilizadores individuais receberam permissões adequadas para realizar as suas tarefas de negócio. O administrador pode utilizar o portal fornecido pelo módulo De Attestation BHOLD para conceber uma gestão do processo de atestado.
 
-O processo de atestado é conduzido através de campanhas em que os administradores de campanha têm a oportunidade e os meios para verificar se os utilizadores pelos quais são responsáveis têm acesso adequado a aplicações geridas pelo BHOLD e autorizações corretas no interior as aplicações. Um dono de campanha é designado para supervisionar a campanha e garantir que a campanha está a ser realizada corretamente. Uma campanha pode ser criada para ocorrer uma vez ou numa base recorrente.
+O processo de atestado é conduzido através de campanhas em que os administradores de campanha têm a oportunidade e os meios para verificar se os utilizadores pelos quais são responsáveis têm acesso adequado a aplicações geridas pelo BHOLD e autorizações corretas dentro dessas aplicações. Um dono de campanha é designado para supervisionar a campanha e garantir que a campanha está a ser realizada corretamente. Uma campanha pode ser criada para ocorrer uma vez ou numa base recorrente.
 
 Normalmente, o administrador de uma campanha será um gestor que irá atestar os direitos de acesso dos utilizadores pertencentes a uma ou mais unidades organizacionais pelas quais o gestor é responsável. Os administradores podem ser automaticamente selecionados para os utilizadores que estão a ser atestados numa campanha com base nos atributos dos utilizadores, ou os administradores para uma campanha podem ser definidos enumerando-os num ficheiro que mapeia todos os utilizadores que estão a ser atestados na campanha a um administrador.
 
@@ -235,7 +235,7 @@ Cada filtro é constituído por um tipo, um operador (que é dependente do tipo)
 |**Tipo:**   | Número de   |
 | **Chave:**  | Utilizadores  |
 | **Operador**  | >  |
-| **Valor:** | 10 |
+| **Value:** | 10 |
 
 Os filtros de regras podem ser de três tipos e utilizar operadores específicos do seu tipo, conforme indicado:
 
@@ -307,14 +307,14 @@ Utiliza o módulo BHOLD Reporting principalmente para produzir relatórios basea
 
 As categorias abrangidas pelos relatórios incorporados incluem:
 
-- Administration
-- Atestado
+- Administração
+- Atestação
 - Controlos
 - Controlo de Acesso Interno
 - Registo
-- Model
-- estatísticas
-- Fluxo de Trabalho
+- Modelo
+- Estatísticas
+- Fluxo de trabalho
 
 Pode criar relatórios e adicioná-los a estas categorias, ou pode definir as suas próprias categorias nas quais pode colocar relatórios personalizados e incorporados.
 
@@ -341,7 +341,7 @@ Uma característica importante e poderosa do Forefront Identity Manager 2010 e d
 
 É importante notar que as extensões bHOLD ao Portal MIM apoiam a função de autosserviço e a gestão do fluxo de trabalho, e reporte. Outras funções de administração BHOLD, bem como atestado, são fornecidas pelos portais web dos módulos BHOLD, que são hospedados separadamente do Portal MIM.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Guia de instalação BHOLD](bhold-installation-guide.md)
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)

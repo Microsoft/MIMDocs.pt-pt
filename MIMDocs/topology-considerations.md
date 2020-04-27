@@ -12,10 +12,10 @@ ms.assetid: 735dc357-dfba-4f68-a5b3-d66d6c018803
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 7f2d78b487e3c20fbd656aad37b67a6382b67df0
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044332"
 ---
 # <a name="topology-considerations"></a>Considerações sobre a topologia
@@ -64,6 +64,6 @@ Tal como com a topologia com várias camadas padrão, pode aumentar o desempenho
 
 Os computadores que executam o SQL Server e que alojam o Serviço de Sincronização do MIM e a base de dados do Serviço MIM irão influenciar significativamente o desempenho global da implementação do MIM. Portanto, siga as recomendações apresentadas na documentação do SQL Server para otimizar o desempenho da base de dados. Para mais informações, consulte os seguintes documentos:
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - O Guia de Planeamento de [Capacidades (FIM) 2010](https://www.microsoft.com/en-us/download/details.aspx?id=7437) do Gestor de Identidade de Vanguarda (FIM) de 2010 entra em mais detalhes sobre os resultados de um teste de construção e testes de desempenho.

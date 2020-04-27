@@ -12,22 +12,22 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: cfb49dd3a15fd115021ab58605d5aeee4d73a5c7
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043720"
 ---
 # <a name="step-7-set-up-sid-historysid-filtering"></a>Passo 7: Configurar o histórico/filtragem do SID
 
 > [!div class="step-by-step"]
 > [« Passo 6](sp1-step6-setup-pam-trust.md)
-> [Passo 8 »](sp1-step8-pam-deployment-verification.md)
+> [Passo 8»](sp1-step8-pam-deployment-verification.md)
 
 **A configuração não é necessária para um ambiente apenas PRIV**. Inicie sessão no PAMServer com a conta de MIMAdmin.
 
 1. Inicie sessão no DC do CORP como administrador
-2. Execute o PowerShell como Administrador
+2. Execute o PowerShell como administrador
 3. cd $env:SYSTEMDRIVE\PAM
 4. .\PAMDeployment.ps1
 5. Selecione a Opção 8 do Menu (Configurar histórico/filtragem do SID)
@@ -40,4 +40,4 @@ Para o histórico do SID: </br></br>
 
 > [!div class="step-by-step"]
 > [« Passo 6](sp1-step6-setup-pam-trust.md)
-> [Passo 8 »](sp1-step8-pam-deployment-verification.md)
+> [Passo 8»](sp1-step8-pam-deployment-verification.md)

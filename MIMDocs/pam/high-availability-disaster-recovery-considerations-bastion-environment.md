@@ -12,10 +12,10 @@ ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 67ce70e6bc0603a991731cf1e5fb95751f5016c6
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043975"
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>Considerações para elevada disponibilidade e recuperação após desastre do ambiente bastion
@@ -34,13 +34,13 @@ Ao planear a elevada disponibilidade e recuperação após desastre, tenha em co
 
 O âmbito destas considerações provoca um impacto sobre o custo total da implementação e das operações, para que as organizações possam atribuir mais ou menos prioridades a determinadas funções e aceitar o risco de falhas temporárias de funções de prioridade inferior. A seguinte tabela destaca uma classificação de prioridade potencial que uma organização pode utilizar:
 
-| **Função de floresta bastion** | **Prioridade relativa durante a recuperação** | **Mitigação se a função estiver indisponível** |
+| **Função de floresta de bastion** | **Prioridade relativa durante a recuperação** | **Mitigação se a função estiver indisponível** |
 | --------------------------- | --------------------- | -------------- |
 | Estabelecimento de confiança         | Baixa | Aguarde até que o ambiente bastion seja restaurado |
 | Mitigação de utilizadores e de grupos   | Baixa | Aguarde até que o ambiente bastion seja restaurado |
 | Administração do MIM          | Baixa | Aguarde até que o ambiente bastion seja restaurado |
-| Ativação de função com privilégios  | Média | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
-| Gestão de recursos         | Alto | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
+| Ativação de função com privilégios  | Médio | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
+| Gestão de recursos         | Alta | Contas de segurança com smartcard dedicadas para adicionar manualmente os utilizadores a grupos administrativos |
 | Monitorização dos utilizadores e grupos na floresta existente | Baixa | Aguarde até que o ambiente bastion seja restaurado |
 
 Agora vamos ver cada uma destas funções de floresta bastion por sua vez.
@@ -85,7 +85,7 @@ A monitorização exige que os controladores de domínio de floresta existentes 
 
 A [Descrição geral do ambiente](environment-overview.md) ilustra uma topologia básica adequada para aprender a tecnologia que não se destina a ser de elevada disponibilidade. Esta secção descreve como expandir mediante essa topologia para fornecer elevada disponibilidade, para organizações com um único local ou com vários.
 
-### <a name="networking"></a>Rede
+### <a name="networking"></a>Redes
 
 O tráfego de rede entre os computadores no ambiente bastion deve ser isolado das redes existentes, ao utilizar uma rede física ou virtual diferente.  Consoante os riscos para o ambiente bastion, também poderá ser necessário ter interconnects físicas independentes entre os computadores.  Algumas tecnologias de cluster de ativação pós-falha têm requisitos adicionais em interfaces de rede.
 

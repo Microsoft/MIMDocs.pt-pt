@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: fb3cf6e5b00c1bd0c01d86aff474dc2ff28c2815
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042258"
 ---
 # <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Guia de instalação Microsoft BHOLD Suite SP1 (6.0)
@@ -93,13 +93,13 @@ Para obter mais informações sobre as melhores práticas do SQL Server, consult
 ### <a name="trusted-certificates-list-update"></a>Atualização da lista de certificados fidedignos
 
 O Windows pode ser configurado para validar cadeias de certificados antes de iniciar um serviço. Nesses sistemas, um serviço não pode ser iniciado se o código executável do serviço foi assinado com um certificado que não esteja na lista de certificados fidedignos (TCL) do servidor. O software Microsoft BHOLD Suite SP1 é um código assinado utilizando uma cadeia de certificados de assinatura de código que tem origem no certificado Microsoft Root Certificate Authority 2010.
-O Windows pode ser configurado para recuperar certificados de raiz da Microsoft através de uma ligação à Internet. No entanto, num sistema desligado, o Windows Server inclui apenas os certificados que estavam presentes no programa raiz numa altura antes de o Windows ser lançado. Nos lançamentos do Windows Server antes do Windows Server 2010, estes certificados não incluirão o certificado raiz necessário para validar a cadeia de certificados de assinatura de código BHOLD Suite SP1. Se pretender instalar um ou mais módulos Microsoft BHOLD Suite SP1 num sistema que possa não ter um TCL atualizado, tem de descarregar e instalar o pacote de atualização de raízes, ou utilizar a Política do Grupo para instalar o pacote de atualização de raiz, antes de instalar um BHOLD Suite SP1 módulo. Para mais informações, consulte [os membros do programa de certificados](https://support.microsoft.com/kb/931125)de raiz do Windows .
+O Windows pode ser configurado para recuperar certificados de raiz da Microsoft através de uma ligação à Internet. No entanto, num sistema desligado, o Windows Server inclui apenas os certificados que estavam presentes no programa raiz numa altura antes de o Windows ser lançado. Nos lançamentos do Windows Server antes do Windows Server 2010, estes certificados não incluirão o certificado raiz necessário para validar a cadeia de certificados de assinatura de código BHOLD Suite SP1. Se pretender instalar um ou mais módulos Microsoft BHOLD Suite SP1 num sistema que possa não ter um TCL atualizado, tem de descarregar e instalar o pacote de atualização de raízes, ou utilizar a Política do Grupo para instalar o pacote de atualização de raiz, antes de instalar um módulo BHOLD Suite SP1. Para mais informações, consulte [os membros do programa de certificados](https://support.microsoft.com/kb/931125)de raiz do Windows .
 
 ### <a name="installing-bhold-suite-sp1-on-windows-server-20122016-required-step"></a>Instalação bhold Suite SP1 no Windows Server 2012/2016 Passo Obrigatório 
 
 ![IIS instalar BHOLD](media/bhold-installation-guide/iis-install-bhold.png)
 
-Se instalar o BHOLD Suite SP1 no Windows Server 2012 ou 2016, as páginas web do BHOLD não estarão disponíveis até modificar o ficheiro applicationHost.config localizado em ```C:\Windows\System32\inetsrv\config```. Na secção ```<globalModules>```, adicione ```preCondition="bitness64``` à entrada que começa ```<add name="SPNativeRequestModule"``` de modo a que leia o seguinte:
+Se instalar o BHOLD Suite SP1 no Windows Server 2012 ou 2016, as páginas web do BHOLD não estarão disponíveis até modificar o ficheiro applicationHost.config localizado em ```C:\Windows\System32\inetsrv\config```. Na ```<globalModules>``` secção, ```preCondition="bitness64``` adicione à entrada ```<add name="SPNativeRequestModule"``` que começa de modo a que leia o seguinte:
 
 ```<add name="SPNativeRequestModule" image="C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\isapi\spnativerequestmodule.dll" preCondition="bitness64"/>```
 
@@ -111,7 +111,7 @@ Depois de editar e guardar o ficheiro, executar o comando iisreset para redefini
 Não é possível atualizar uma instalação bhold suite existente. Em vez disso, tem de desinstalar uma instalação BHOLD Suite existente antes de atualizar os módulos BHOLD. Se tiver um modelo de função BHOLD existente, pode atualizar a base de dados BHOLD e utilizá-la quando instalar o módulo BHOLD Core atualizado. Para mais informações, consulte Substituir a [BHOLD Suite por BHOLD Suite SP1](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx).
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Referência para programadores do BHOLD](../reference/mim2016-bhold-developer-reference.md)
 - [Histórico de versões do BHOLD](../reference/version-bhold-history.md)

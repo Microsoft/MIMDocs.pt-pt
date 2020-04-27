@@ -12,10 +12,10 @@ ms.assetid: 66060045-d0be-4874-914b-5926fd924ede
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 2adf1152aaf874d0ff0d93079fb4bfbfcf731b60
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044298"
 ---
 # <a name="mim-certificate-manager-windows-store-application-deployment"></a>Implementação da aplicação da loja mim Certificate Manager Windows
@@ -38,7 +38,7 @@ Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-
 
 2. Abra a MMC.
 
-3. Clique em **File &gt; Adicionar/Remover o Snap-in**.
+3. Clique em **Adicionar ficheiros/remover &gt; o Snap-in**.
 
 4. Na lista Snap-ins disponíveis, clique em **Modelos de Certificado** e, em seguida, em **Adicionar**.
 
@@ -53,7 +53,7 @@ Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-
 
 8. No separador **Geral**, no campo **Nome a Apresentar**, escreva o nome que pretende ver apresentado na IU da aplicação, tal como **Início de Sessão de Smart Card Virtual**.
 
-9. No separador **Processamento de Pedidos**, defina o **Objetivo** para **Assinatura e encriptação** e em **Efetue o seguinte...** , selecione **Perguntar ao utilizador durante a inscrição**.
+9. No separador **Processamento de Pedidos**, defina o **Objetivo** para **Assinatura e encriptação** e em **Efetue o seguinte...**, selecione **Perguntar ao utilizador durante a inscrição**.
 
 10. No separador **Criptografia**, em **Categoria de Fornecedor**, selecione **O Fornecedor de Armazenamento de Chaves e os Pedidos podem utilizar qualquer fornecedor disponível no computador do indivíduo**.
 
@@ -66,7 +66,7 @@ Crie um modelo de certificado para a aplicação CM normalmente, mas certifique-
 
 13. Selecione **Ficheiro** e clique em **Adicionar/Remover Snap-in** para adicionar o snap-in Autoridade de Certificação à consola MMC. Quando lhe for pedido o computador que pretende gerir, selecione **Computador Local**.
 
-14. No painel esquerdo da MMC, expanda a **Autoridade de Certificação (Local)** e, em seguida, expanda a AC na lista de Autoridades de Certificação.
+14. No painel esquerdo do MMC, expanda a Autoridade de **Certificação (Local)** e, em seguida, expanda o seu CA dentro da lista da Autoridade de Certificação.
 
 15. Clique com botão direito do rato em **Modelos de Certificado**, clique em **Novo &gt; Modelo de Certificado** a Emitir.
 
@@ -78,11 +78,11 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
 
-2.  Vá à Administração &gt; gerir modelos de perfil. Certifique-se de que a caixa é verificada ao lado do log de **cartão inteligente da amostra MIM CM no modelo de perfil** e, em seguida, clique em Copiar um modelo de perfil selecionado.
+2.  Vá para &gt; a Administração Gerir modelos de perfil. Certifique-se de que a caixa é verificada ao lado do log de **cartão inteligente da amostra MIM CM no modelo de perfil** e, em seguida, clique em Copiar um modelo de perfil selecionado.
 
 3.  Escreva o nome do modelo de perfil e clique em **OK**.
 
-4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que marca a caixa junto ao nome da AC.
+4.  No ecrã seguinte, clique em **Adicionar novo modelo de certificado** e certifique-se de que seleciona a caixa junto ao nome da AC.
 
 5.  Selecione a caixa junto ao nome do modelo de perfil **Início de Sessão** e clique em **Adicionar**.
 
@@ -116,7 +116,7 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
    |                     |                                                                                                                                                                                                          |
    |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |      URL de MIMCM      |                                              O FQDN do portal que utilizou para configurar a CM. Por exemplo, https://mimcmServerAddress/certificatemanagement                                              |
-   |      URL de ADFS       | Se planear utilizar o AD FS, introduza o URL de AD FS. Por exemplo, <https://adfsServerSame/adfs> </br> Se a ADFS não for utilizada, configure esta definição com uma corda vazia.  Por exemplo, ```<ADFS URL=""/>``` |
+   |      URL de ADFS       | Se planear utilizar o AD FS, introduza o URL de AD FS. Por exemplo, <https://adfsServerSame/adfs> </br> Se a ADFS não for utilizada, configure esta definição com uma corda vazia.  Por exemplo```<ADFS URL=""/>``` |
    |     PrivacyUrl      |                                         Pode incluir um URL numa página Web a explicar o que fazer com os detalhes de utilizador recolhidos para a inscrição de certificado.                                          |
    |     SupportMail     |                                                                           Pode incluir um endereço de e-mail para problemas de suporte.                                                                           |
    | LobComplianceEnable |                                                                     Pode definir esta opção para verdadeiro ou falso. A predefinição é verdadeiro.                                                                      |
@@ -265,7 +265,7 @@ Quando cria um modelo de perfil, certifique-se de que o configura para criar/des
 
 Ao configurar a aplicação CM, no Centro de Transferências, transfira o ficheiro MIMDMModernApp_&lt;version&gt;_AnyCPU_Test.zip e extraia todos os respetivos conteúdos. O ficheiro .appx é o instalador. Pode implementá-la da forma que normalmente implementa aplicações da loja Windows, através do [System Center Configuration Manager](https://technet.microsoft.com/library/dn613840.aspx) ou do [Intune](https://technet.microsoft.com/library/dn613839.aspx) para o sideload da aplicação para que os utilizadores tenham de aceder através do Portal da Empresa ou obtenham a aplicação diretamente nos respetivos computadores.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Configurar modelos de perfil](https://technet.microsoft.com/library/cc708656)
-- [Gerir Aplicações para Smart Cards](https://technet.microsoft.com/library/cc708681)
+- [Gestão de Aplicações de Cartões Inteligentes](https://technet.microsoft.com/library/cc708681)

@@ -1,5 +1,5 @@
 ---
-title: Criar um gMSAs para o Microsoft Identity Manager 2016  Microsoft Docs
+title: Criar um gMSAs para o Microsoft Identity Manager 2016 [ Microsoft Docs
 description: Configurar contas de serviço geridas pelo grupo num domínio para o Microsoft Identity Manager 2016
 keywords: ''
 author: EugeneSergeev
@@ -12,10 +12,10 @@ ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: markwahl-msft
 ms.suite: ems
 ms.openlocfilehash: 32b346dd9cf99b617edfaca953389cba30d6681c
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043516"
 ---
 # <a name="configure-a-domain-for-group-managed-service-accounts-gmsa-scenario"></a>Configure um domínio para contas de serviço geridas pelo grupo (gMSA)
@@ -49,11 +49,11 @@ Os seguintes componentes MIM não suportam o funcionamento como contas gMSA:
 
 
 Mais informações sobre o gMSA podem ser encontradas nestes artigos:
--   [Visão geral das Contas de Serviço Geridas pelo Grupo](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
+-   [Descrição Geral das Contas de Serviço Geridas de Grupo](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
 
 -   [New-AdServiceAccount](https://docs.microsoft.com/powershell/module/addsadministration/new-adserviceaccount?view=win10-ps)
 
--   [Criar a chave raiz dos serviços de distribuição kDS](https://technet.microsoft.com/library/jj128430(v=ws.11).aspx)
+-   [Criar a Chave de Raiz KDS dos Serviços de Distribuição de Chaves](https://technet.microsoft.com/library/jj128430(v=ws.11).aspx)
 
 ## <a name="create-user-accounts-and-groups"></a>Configurar contas de utilizador e grupos
 
@@ -67,7 +67,7 @@ Todos os componentes de implementação do MIM têm as suas próprias identidade
 > - Nome do Servidor de Serviço MIM - **mimservice**
 > - Nome do Servidor Mim Sync - **mimsync**
 > - Nome do Servidor SQL - **sql**
-> - Palavra-passe – <strong>Pass@word1</strong>
+> - Senha -<strong>Pass@word1</strong>
 
 1. Inicie sessão no controlador de domínio como o administrador do domínio (*por exemplo, Contoso\Administrador*).
 
@@ -129,7 +129,7 @@ Se já existe uma chave-raiz para o domínio (use **Get-KdsRootKey** para verifi
     ```PowerShell
     Add-KDSRootKey –EffectiveImmediately
     ```
-    *–EffectiveImmediately* pode exigir um atraso de até \~10 horas, uma vez que terá de se replicar a todos os controladores de domínio. Este atraso foi de aproximadamente 1 hora para dois controladores de domínio.
+    *–EffectiveImmediately* pode exigir um \~atraso de até 10 horas, uma vez que terá de se replicar a todos os controladores de domínio. Este atraso foi de aproximadamente 1 hora para dois controladores de domínio.
 
     ![](media/7fbdf01a847ea0e330feeaf062e30668.png)
 

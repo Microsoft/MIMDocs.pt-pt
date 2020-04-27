@@ -12,10 +12,10 @@ ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: f05769a7d1db38ecde200e18e45c6ca29a75b756
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044043"
 ---
 # <a name="define-roles-for-privileged-access-management"></a>Definir funções para o Privileged Access Management
@@ -114,7 +114,7 @@ Em vez de grupos padrão como domain admins, crie novos grupos de segurança que
 
 A tabela seguinte fornece exemplos de permissões que seriam relevantes de incluir em funções para gerir o AD.
 
-| Função | Description |
+| Função | Descrição |
 | ---- | ---- |
 | Manutenção de Domínio/DC | A adesão ao grupo Domain\Administrators permite a resolução de problemas e a alteração do sistema operativo do controlador de domínio. Operações como promover um novo controlador de domínio para um domínio existente na floresta e delegação de papel da AD.
 |Gerir DCs Virtuais | Gerir máquinas virtuais de (VMs) de controladores de domínio (DC) com o software de gestão de virtualização. Este privilégio pode ser concedido através de controlo total de todas as máquinas virtuais na ferramenta de gestão ou da funcionalidade de controlo de acesso baseado em funções (RBAC). |
@@ -130,7 +130,7 @@ A tabela seguinte fornece exemplos de permissões que seriam relevantes de inclu
 
 O quadro seguinte dá exemplos de permissões que seriam relevantes para incluir em funções de gestão ou utilização dos dados detidos em AD.
 
-| Função | Description |
+| Função | Descrição |
 | ---- | ---- |
 | Modificar UO de Administrador de Camada 1                 | Modificar UOs que contêm objetos de Administrador de Camada 1 no Active Directory |
 | Modificar UO de Administrador de Camada 2                 | Modificar UOs que contêm objetos de Administrador de Camada 2 no Active Directory |
@@ -205,7 +205,7 @@ As funções para a gestão de utilizadores e computadores não administrativos 
 - Administradores de grupos de segurança
 - Suporte de deskside de estações de trabalho
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
-- [Assegurar material de referência de acesso privilegiado](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
+- [Proteger Material de Referência de Acesso Privilegiado](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
 - [Utilizar o MFA do Azure para ativação](use-azure-mfa-for-activation.md)

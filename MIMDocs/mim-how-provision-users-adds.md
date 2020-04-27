@@ -1,5 +1,5 @@
 ---
-title: Microsoft Identity Manager 2016 prestação de utilizadores à AD  Microsoft Docs
+title: Microsoft Identity Manager 2016 prestação de utilizadores à AD [ Microsoft Docs
 description: Reveja o processo de criação de utilizadores no AD DS com o Microsoft Identity Manager 2016
 keywords: ''
 author: billmath
@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 149339a6e1029f01378a518a98029c1d588de6f9
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044179"
 ---
 # <a name="how-do-i-provision-users-to-ad-ds"></a>Como Aprovisiono Utilizadores para o AD DS?
@@ -102,7 +102,7 @@ A seguinte tabela indica os componentes que fazem parte do cenário contido nest
 | ![Agentes de gestão e perfis de execução](media/how-provision-users-adds/image007.jpg)  | Agentes de gestão e perfis de execução | &#183; **ADMA da Fabrikam** – agente de gestão que troca dados com o AD DS. <br/> &#183; FIMMA da Fabrikam – agente de gestão que troca dados com o MIM.                                                                                 |
 | ![Regras de sincronização](media/how-provision-users-adds/image008.jpg)  | Regras de sincronização              | Regra de Sincronização de Saída de Grupo da Fabrikam – regra de sincronização de saída que aprovisiona utilizadores para o AD DS.                                     |
 | ![Conjuntos](media/how-provision-users-adds/image009.jpg)   | Conjuntos                               | Todos os Contratantes – conjunto com associação de grupo dinâmica de todos os objetos com o valor de atributo EmployeeType do Contratante.                                |
-| ![Fluxos de Trabalho](media/how-provision-users-adds/image010.jpg)  | Fluxos de Trabalho                          | Fluxo de Trabalho de Aprovisionamento do AD – fluxo de trabalho para incluir o utilizador do MIM no âmbito da Regra de Sincronização de Saída do AD.                                |
+| ![Fluxos de trabalho](media/how-provision-users-adds/image010.jpg)  | Fluxos de trabalho                          | Fluxo de Trabalho de Aprovisionamento do AD – fluxo de trabalho para incluir o utilizador do MIM no âmbito da Regra de Sincronização de Saída do AD.                                |
 | ![Regras de política de gestão](media/how-provision-users-adds/image011.jpg)   | Regras de política de gestão            | Regra de Política de Gestão de Aprovisionamento do AD – a regra de política de gestão (MPR) que é acionada quando um recurso se torna membro do conjunto Todos os Contratantes. |
 | ![Utilizadores do MIM](media/how-provision-users-adds/image012.jpg) | Utilizadores do MIM                          | Eduarda Almeida – utilizadora do MIM a aprovisionar ao AD DS.                                                                                             |
 
@@ -194,7 +194,7 @@ A seguinte tabela indica as definições específicas do cenário mais important
 | Página de estruturador do agente de gestão | Configuração |
 |------------|------------------------------------|
 | Criar agente de gestão | 1. **Agente de gestão para:** Agente de Gestão de Serviços FIM <br/> 2. **Nome** Fabrikam FIMMA |
-| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183; **Base de dados:** FIMService <br/> &#183;**Endereço de base do serviço FIM:** http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
+| Ligar à base de dados     | Utilize as seguintes definições: <br/> &#183; **Servidor:** localhost <br/> &#183; **Base de dados:** FIMService <br/> &#183; **endereço de base do serviço FIM:**http://localhost:5725 <br/> <br/> Forneça as informações relativas à conta que criou para este agente de gestão |
 | Selecionar Tipos de objeto                                     | Para além dos Tipos de objeto selecionados, selecione **Pessoa.**   |
 | Configurar mapeamentos de Tipos de objetos                          | Para além dos mapeamentos de tipos de objetos existentes, adicione um mapeamento da pessoa **Tipo de Objeto Origem de Dados** à pessoa **Tipo de Objeto Metaverso**. |
 | Configurar fluxo de atributos                                | Para além dos mapeamentos de fluxos de atributos existentes, adicione os seguintes mapeamentos de fluxos de atributos: <br/><br/> ![Fluxo de atributos](media/how-provision-users-adds/image018.jpg) |
@@ -231,7 +231,7 @@ Crie perfis de execução para cada agente de gestão conforme a tabela anterior
 > 
 > 
 > [!Important]
->  Verifique se o aprovisionamento se encontra ativado no seu ambiente. Pode fazê-lo executando o script, utilizando o Windows PowerShell para ativar o provisionamento (https://go.microsoft.com/FWLink/p/?LinkId=189660).
+>  Verifique se o aprovisionamento se encontra ativado no seu ambiente. Pode fazê-lo executando o script, utilizandohttps://go.microsoft.com/FWLink/p/?LinkId=189660)o Windows PowerShell para ativar o provisionamento .
 
 
 ## <a name="configuring-the-fim-service"></a>Configurar o Serviço FIM
@@ -243,7 +243,7 @@ Para o cenário descrito neste guia, tem de configurar uma política de aprovisi
 
 O objetivo desta política de aprovisionamento é incluir grupos no âmbito da Regra de Sincronização de Saída do AD. Ao incluir o seu recurso no âmbito da regra de sincronização, está a permitir que o motor de sincronização aprovisione o recurso no AD DS de acordo com a sua configuração.
 
-Para configurar o serviço FIM, navegue no Windows Internet Explorer® para http://localhost/identitymanagement. Na página do Portal do MIM Portal, para criar a política de aprovisionamento, aceda às páginas relacionadas da secção Administração. Para verificar a sua configuração, deve executar o script [Using Windows PowerShell to document your provisioning policy configuration (Utilizar o Windows PowerShell para documentar a configuração da sua política de aprovisionamento)](https://go.microsoft.com/FWLink/p/?LinkId=189661).
+Para configurar o serviço FIM, navegue http://localhost/identitymanagementno Windows Internet Explorer® para . Na página do Portal do MIM Portal, para criar a política de aprovisionamento, aceda às páginas relacionadas da secção Administração. Para verificar a sua configuração, deve executar o script [Using Windows PowerShell to document your provisioning policy configuration (Utilizar o Windows PowerShell para documentar a configuração da sua política de aprovisionamento)](https://go.microsoft.com/FWLink/p/?LinkId=189661).
 
 ### <a name="step-6-create-the-synchronization-rule"></a>Passo 6: criar a regra de sincronização
 
@@ -252,7 +252,7 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 | Configuração de regra de sincronização                                                                         |                                                                             |                                                           
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------|
 | Nome                                                                                                       | Regra de Sincronização de Saída de Utilizadores do Active Directory                         |                                                          
-| Description                                                                                               |                                                                             |                                                           
+| Descrição                                                                                               |                                                                             |                                                           
 | Precedência                                                                                                | 2                                                                           |                                                           
 | Direção do Fluxo de Dados   | Saída             |       
 | Dependência       |         |                                         
@@ -266,7 +266,7 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 
 
 
-| Relationship ||
+| Relação ||
 |------------|---------|
 | Criar Recurso no Sistema Externo                                                                         | Verdadeiro                                                                        |                                                           
 | Ativar Desaprovisionamento                                                                                      | Falso                                                                       |                                                           
@@ -279,17 +279,17 @@ As seguintes tabelas mostram a configuração da regra de sincronização de apr
 | Fluxos do atributo de saída iniciais        | |                                                             |
 |-------------------|---------------------- |---------------|
 | Permitir valores nulos                 | Destino                                                                 | Origem                                                    |
-| falso                       | dn                                                                          | \+("CN=",displayName,",OU=MIMObjects,DC=fabrikam,DC=com") |
-| falso                       | userAccountControl                                                          | **Constante:** 512                                         |
-| falso                                                                     | pwdUnicode                    | Constante: P\@\$\$W0rd                                    |
+| false                       | dn                                                                          | \+("CN=",displayName,",OU=MIMObjects,DC=fabrikam,DC=com") |
+| false                       | controloContaUtilizador                                                          | **Constante:** 512                                         |
+| false                                                                     | pwdUnicode                    | Constante: P\@\$\$W0rd                                    |
 
 | Fluxos do atributo de saída persistentes  |                                                                     |                                                           |
 |--------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------|
 | Permitir valores nulos                                                                                                | Destino                                                                 | Origem                                                    |
-| falso                                                                                                      | sAMAccountName                                                              | accountName                                               |
-| falso                                                                                                      | displayName                                                                 | displayName                                               |
-| falso                                                                                                      | givenName                                                                   | firstName                                                 |
-| falso                                                                                                      | sn                                                                          | lastName                                                  |
+| false                                                                                                      | sAMAccountName                                                              | accountName                                               |
+| false                                                                                                      | displayName                                                                 | displayName                                               |
+| false                                                                                                      | nomeDado                                                                   | nomePróprio                                                 |
+| false                                                                                                      | sn                                                                          | apelido                                                  |
 
 
 
@@ -303,14 +303,14 @@ O Fluxo de Trabalho de Aprovisionamento do AD tem como objetivo adicionar a regr
 | Configuração de fluxo de trabalho               |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
 | Nome                                 | Fluxo de Trabalho de Aprovisionamento de Utilizadores do Active Directory                     |
-| Description                          |                                                                 |
-| Tipo de Fluxo de Trabalho                        | Action                                                          |
+| Descrição                          |                                                                 |
+| Tipo de Fluxo de Trabalho                        | Ação                                                          |
 | Executar Na Atualização da Política                 | Falso                                                           |
 
 | Regra de sincronização                 |                                                                 |
 |--------------------------------------|-----------------------------------------------------------------|
 | Nome                                 | Regra de Sincronização de Saída de Utilizadores do Active Directory             |
-| Action                               | Adicionar                                                             |
+| Ação                               | Adicionar                                                             |
 
 
 
@@ -322,7 +322,7 @@ O tipo de MPR necessário é Transição de Conjunto e este é acionado quando u
 | Configuração de MPR                    |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
 | Nome                                 | Regra de Política de Gestão do Aprovisionamento de Utilizadores do AD                 |
-| Description                          |                                                             |
+| Descrição                          |                                                             |
 | Tipo                                 | Transição de Conjunto                                              |
 | Concede Permissões                   | Falso                                                       |
 | Desativado                             | Falso                                                       |
@@ -334,7 +334,7 @@ O tipo de MPR necessário é Transição de Conjunto e este é acionado quando u
 
 | Fluxos de trabalho de políticas                     |                                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| Tipo                                 | Action                                                      |
+| Tipo                                 | Ação                                                      |
 | Nome a Apresentar                         | Fluxo de Trabalho de Aprovisionamento de Utilizadores do Active Directory                 |
 
 
@@ -393,7 +393,7 @@ A seguinte tabela indica as propriedades do utilizador de exemplo. Crie um utili
 | Nome a Apresentar                           | Eduarda Almeida                                                   |
 | Nome da Conta                           | EAlmeida                                                         |
 | Domain                                 | Fabrikam                                                       |
-| Tipo de Funcionário                          | Contratante                                                     |
+| Tipo de Funcionário                          | Fornecedor                                                     |
 
 
 

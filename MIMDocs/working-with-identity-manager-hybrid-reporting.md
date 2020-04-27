@@ -1,6 +1,6 @@
 ---
 title: Trabalhar com reportagem híbrida em Azure através do Identity Manager 2016 [ Gestor de Identidade 2016] Microsoft Docs
-description: Saiba como combinar dados no local e na cloud em relatórios híbridos no Azure e como gerir e ver estes relatórios.
+description: Saiba como combinar dados no local e na nuvem em relatórios híbridos no Azure e como gerir e ver estes relatórios.
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -11,10 +11,10 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 68df2817-2040-407d-b6d2-f46b9a9a3dbb
 ms.suite: ems
 ms.openlocfilehash: fd0efd3e3d5c42f4b67d0abd42f6dab8254573e5
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044349"
 ---
 # <a name="work-with-hybrid-reporting-in-identity-manager"></a>Trabalhar com reporte híbrido em Gestor de Identidade
@@ -51,7 +51,7 @@ Os três primeiros relatórios do Microsoft Identity Manager disponíveis no Azu
 Os requisitos para a utilização de relatórios híbridos do Gestor de Identidade estão listados na tabela seguinte:
 
 
-|                                         Requisito                                         |                                                                                                                                                                                                                                                                                    Description                                                                                                                                                                                                                                                                                     |
+|                                         Requisito                                         |                                                                                                                                                                                                                                                                                    Descrição                                                                                                                                                                                                                                                                                     |
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                      Azure AD Premium                                       |                                                                                                        O reporte híbrido é uma funcionalidade Azure AD Premium e requer Azure AD Premium. </br>Para mais informações, consulte [Começar com o Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium). </br>Obtenha um [teste gratuito de 30 dias do Azure AD Premium.](https://azure.microsoft.com/trial/get-started-active-directory/)                                                                                                         |
 |                     Deve ser administrador global do seu Anúncio Azure                     |                                                                   Por padrão, apenas os administradores globais podem instalar e configurar os agentes para começar, aceder ao portal e realizar quaisquer operações dentro do Azure. </br>**Importante**: A conta que utiliza quando instala os agentes deve ser uma conta de trabalho ou de escola. Não pode ser uma conta Microsoft. Para mais informações, consulte [o Signup para o Azure como uma organização](https://docs.microsoft.com/azure/active-directory/sign-up-organization).                                                                   |
@@ -81,7 +81,7 @@ Após a instalação do Agente de Informação, os dados da atividade do Gestor 
 
     a.  Descarregue o [ficheiro MIMHReportingAgentSetup.exe](http://download.microsoft.com/download/7/3/1/731D81E1-8C1D-4382-B8EB-E7E7367C0BF2/MIMHReportingAgentSetup.exe) para o servidor do Serviço de Gestor de Identidade.
 
-    b.  Corra `MIMHReportingAgentSetup.exe`. 
+    b.  Execute `MIMHReportingAgentSetup.exe`. 
 
     c.  Execute o instalador do agente.
 
@@ -97,7 +97,7 @@ Após a instalação do Agente de Informação, os dados da atividade do Gestor 
 
 1.  Inscreva-se no [portal Azure](https://portal.azure.com/) com a sua conta de administrador global para o inquilino.
 
-2.  Selecione **Diretório Ativo Azure**.
+2.  Selecione **Azure Active Directory**.
 
 3.  Na lista de diretórios disponíveis para a sua subscrição, selecione o diretório de inquilinos.
 
@@ -112,9 +112,9 @@ Após a instalação do Agente de Informação, os dados da atividade do Gestor 
 Se pretender parar de enviar dados de auditoria de reporte do Identity Manager para o Azure AD, desinstale o Agente de Informação Híbrido. Utilize a ferramenta Windows Add ou Remove Programs para desinstalar relatórios híbridos do Gestor de Identidade.
 
 ## <a name="windows-events-used-for-hybrid-reporting"></a>Eventos do Windows utilizados para a criação de relatórios híbridos
-Os eventos gerados pelo Identity Manager são armazenados no Windows Event Log. Pode ver os eventos no Espectador de **Eventos** selecionando **registos** de Pedidos de Pedido de Pedido de Pedido de Gestor de **Identidade** > . Cada pedido do Gestor de Identidade é exportado como um evento no Windows Event Log na estrutura JSON. Pode exportar o resultado para o seu sistema de informação de segurança e gestão de eventos (SIEM).
+Os eventos gerados pelo Identity Manager são armazenados no Windows Event Log. Pode ver os eventos no Espectador de **Eventos** selecionando Registo de Pedido de**Pedido**de Pedido de Gestor de Identidade de **Aplicação e Serviços** > . Cada pedido do Gestor de Identidade é exportado como um evento no Windows Event Log na estrutura JSON. Pode exportar o resultado para o seu sistema de informação de segurança e gestão de eventos (SIEM).
 
 |Tipo de evento|ID|Detalhes do evento|
 |--------------|------|-----------------|
 |Informações|4121|Os dados do evento Do Gestor de Identidade que incluem todos os dados do pedido.|
-|Informações|4137|A extensão do Gestor de Identidade 4121, se houver demasiados dados para um único evento. O cabeçalho neste evento é apresentado no seguinte formato: `"Request: <GUID> , message <xxx> out of <xxx>`.|
+|Informações|4137|A extensão do Gestor de Identidade 4121, se houver demasiados dados para um único evento. O cabeçalho neste evento é apresentado `"Request: <GUID> , message <xxx> out of <xxx>`no seguinte formato: .|

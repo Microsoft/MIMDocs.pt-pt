@@ -1,5 +1,5 @@
 ---
-title: Upgrade de FIM 2010 R2 e MIM 2016 SP2 para Microsoft Identity Manager 2016 Service Pack 2  ) Microsoft Docs
+title: Upgrade de FIM 2010 R2 e MIM 2016 SP2 para Microsoft Identity Manager 2016 Service Pack 2 [ ) Microsoft Docs
 description: Saiba como atualizar os seus componentes FIM 2010 R2 ou MIM 2016 SP2 e, em seguida, instale os componentes que são novos em MIM 2016.
 keywords: ''
 author: EugeneSergeev
@@ -12,10 +12,10 @@ ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: markwahl-msft
 ms.suite: ems
 ms.openlocfilehash: bfe604795d44cdea61fe0d10bc2943f9b8433784
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044157"
 ---
 # <a name="mim-2016-sp2-upgrade--from-forefront-identity--or-microsoft-identity-manager"></a>Mim 2016 SP2 upgrade da Front Front Identity ou Microsoft Identity Manager

@@ -12,16 +12,16 @@ ms.assetid: 0e9993a0-b8ae-40e2-8228-040256adb7e2
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 97b425fc4444b241ddce99e7d5e3abf564daf245
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043703"
 ---
 # <a name="step-2---prepare-the-first-priv-domain-controller"></a>Passo 2 - Preparar o primeiro controlador de domínio PRIV
 
 > [!div class="step-by-step"]
-> [«Passo 1](step-1-prepare-corp-domain.md)
+> [« Passo 1](step-1-prepare-corp-domain.md)
 > [Passo 3»](step-3-prepare-pam-server.md)
 
 Neste passo, irá criar um novo domínio que vai fornecer o ambiente bastion para autenticação de administrador.  Esta floresta precisará de, pelo menos, um controlador de domínio e de, pelo menos, um servidor membro. O servidor membro será configurado no passo seguinte.
@@ -34,15 +34,15 @@ Nesta secção, irá configurar uma máquina virtual para funcionar como um cont
 
 Noutra máquina virtual nova sem nenhum software instalado, instale o Windows Server 2012 R2 para tornar um computador “PRIVDC”.
 
-1. Selecione executar uma instalação personalizada (não uma atualização) do Windows Server. Ao instalar, especifique o **Windows Server 2012 R2 Standard (Server com um GUI) x64;** _não selecione_ **Data Center ou Server Core**.
+1. Selecione executar uma instalação personalizada (não uma atualização) do Windows Server. Na instalação, especifique **Windows Server 2012 R2 Standard (Servidor com uma GUI) x64**; _não selecione_ **Data Center ou Server Core**.
 
-2. Reveja e aceite os termos de licenciamento.
+2. Reveja e aceite os termos do licenciamento.
 
-3. Uma vez que o disco estará vazio, selecione **Personalizar: instalar o Windows apenas** e utilize o espaço em disco não inicializado.
+3. Uma vez que o disco estará vazio, selecione **Custom: Instale apenas** o Windows e utilize o espaço do disco não inicializado.
 
 4. Depois de instalar a versão do sistema operativo, inicie sessão neste novo computador como o novo administrador. Utilize o Painel de Controlo para definir o nome do computador como *PRIVDC*, dê-lhe um endereço IP estático na rede virtual e configure o servidor DNS para ser o controlador de domínio instalado no passo anterior. Esta ação exige reiniciar o servidor.
 
-5. Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias. Pode ser preciso reiniciar o servidor.
+5. Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias. Pode ser necessário reiniciar o servidor.
 
 ### <a name="add-roles"></a>Adicionar funções
 
@@ -165,25 +165,25 @@ Tem de configurar a auditoria para que a configuração do PAM seja estabelecida
 
 1. Certifique-se de que tem sessão iniciada como administrador do domínio (PRIV\\Administrador).
 
-2. Aceda a **Iniciar** > **Ferramentas administrativas** > **Gestão de Políticas de Grupo**.
+2. Ir **iniciar** > a**Gestão política**do Grupo**de Ferramentas Administrativas.** > 
 
-3. Navegue para **Floresta: priv.contoso.local** > **Domínios** > **priv.contoso.local** > **Controladores de Domínio** > **Política de Controladores de Domínio Predefinida**. Será apresentada uma mensagem de aviso.
+3. Navegue para **a Floresta: priv.contoso.local** > **Domínios** > **priv.contoso.local** > **Domain Controllers** > **Padrão Controllers Policy**. Será apresentada uma mensagem de aviso.
 
 4. Clique com o botão direito do rato em **Política de Controladores de Domínio Predefinida** e selecione **Editar**.
 
-5. Na árvore da consola do Editor de Gestão de Políticas de Grupo, navegue para **Configuração do Computador** > **Políticas** > **Definições do Windows** > **Definições de Segurança** > **Políticas locais** > **Política de auditoria**.
+5. Na consola do Editor de Gestão de Políticas do Grupo, navegue para**as políticas** > de **configuração** > do computador**Definições de** > **segurança Definições** > **políticas políticas locais** > **Política de Auditoria**.
 
 6. No painel de detalhes, clique com o botão direito do rato em **Gestão de contas de auditoria** e selecione **Propriedades**. Clique em **Definir estas definições de política**, marque a caixa de verificação **Êxito**, marque a caixa de verificação **Falha**, clique em **Aplicar** e, em seguida, em **OK**.
 
 7. No painel Detalhes, clique com o botão direito do rato em **Auditar acesso ao serviço de diretórios** e selecione **Propriedades**. Clique em **Definir estas definições de política**, marque a caixa de verificação **Êxito**, marque a caixa de verificação **Falha**, clique em **Aplicar** e, em seguida, em **OK**.
 
-8. Navegue para **Configuração do Computador** > **Políticas** > **Definições do Windows** > **Definições de Segurança** > **Políticas de conta** > **Política Kerberos**.
+8. Navegar para políticas de **configuração** > de computador**Definições** > **de definições de** > **segurança Definições** > **de segurança Políticas** > de contas**Política Kerberos**.
 
 9. No painel Detalhes, com o botão direito do rato em **Duração máxima para autorização de utilizador** e selecione **Propriedades**. Clique em **Definir estas definições de política**, defina o número de horas como *1*, clique em **Aplicar** e, em seguida, em **OK**. Tenha em atenção que as outras definições na janela também serão alteradas.
 
 10. Na janela Gestão de Políticas de Grupo, selecione **Política de Domínio Predefinida**, clique com o botão direito do rato e selecione **Editar**.
 
-11. Expanda **Configuração do Computador** > **Políticas** > **Definições do Windows** > **Definições de Segurança** > **Políticas locais** e selecione **Atribuição de direitos de utilizadores**.
+11. Expandir**as políticas** > de configuração do **computador Definições** > de segurança**Definições** > **Security Settings** > de segurança**Políticas locais** e selecionar **a atribuição de direitos**de utilizador .
 
 12. No painel Detalhes, clique com o botão direito do rato em **Negar início de sessão como uma tarefa batch** e selecione **Propriedades**.
 
@@ -254,8 +254,8 @@ Execute os passos seguintes no PRIVDC como administrador do domínio.
 8. Na janela Selecionar Utilizadores, Computadores ou Grupos, introduza *MIMAdmin* e clique em **Verificar Nomes**. Depois de os nomes estarem sublinhados, clique em **OK** e em **seguinte**.
 9. Selecione **tarefa personalizada**, aplique a **Esta pasta**, com **Permissões gerais**.
 10. Na lista de permissões, selecione o seguinte:
-    - **Ler**
-    - **Escrever**
+    - **Leitura**
+    - **Escrita**
     - **Criar todos os Objetos Subordinados**
     - **Eliminar todos os Objetos Subordinados**
     - **Ler Todas as Propriedades**
@@ -264,7 +264,7 @@ Execute os passos seguintes no PRIVDC como administrador do domínio.
 
 11. Mais uma vez, clique com o botão direito do rato no domínio **priv.contoso.local** e selecione **Delegar Controlo**.  
 12. No separador Utilizadores e Grupos Selecionados, clique em **Adicionar**.  
-13. Na janela Selecionar Utilizadores, Computadores ou Grupos, introduza *MIMAdmin* e clique em **Verificar Nomes**. Depois de os nomes estarem sublinhados, clique em **OK** e em **seguinte**.  
+13. Na janela Selecionar Utilizadores, Computadores ou Grupos, introduza *MIMAdmin* e clique em **Verificar Nomes**. Depois de sublinharos os nomes, **clique**ok, em **seguida, Seguinte**.  
 14. Selecione **tarefa personalizada**, aplique a **Esta pasta** e clique em **Apenas objetos de utilizador**.    
 15. Na lista de permissões, selecione **Alterar palavra-passe** e **Repor palavra-passe**. Em seguida, clique em **Seguinte** e em **Concluir**.  
 16. Feche Computadores e Utilizadores do Active Directory.
@@ -289,9 +289,9 @@ Se ainda não tiver um computador de estação de trabalho que irá ser associad
 
 ### <a name="install-windows-81-or-windows-10-enterprise"></a>Instalar o Windows 8.1 ou o Windows 10 Enterprise
 
-Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.1 Enterprise ou o Windows 10 Enterprise para tornar um computador *“PRIVWKSTN”* .
+Noutra máquina virtual nova sem nenhum software instalado, instale o Windows 8.1 Enterprise ou o Windows 10 Enterprise para tornar um computador *“PRIVWKSTN”*.
 
-1. Utilize as Definições rápidas durante a instalação.
+1. Utilize as definições Express durante a instalação.
 
 2. Tenha em atenção que a instalação poderá não conseguir estabelecer ligação à Internet. Clique em **Criar uma conta local**. Especifique um nome de utilizador diferente; não utilize "Administrador" ou "Joana".
 
@@ -304,5 +304,5 @@ Se quiser mais detalhes, veja [proteger estações de trabalho com acesso privil
 No próximo passo, irá preparar um servidor de PAM.
 
 > [!div class="step-by-step"]
-> [«Passo 1](step-1-prepare-corp-domain.md)
+> [« Passo 1](step-1-prepare-corp-domain.md)
 > [Passo 3»](step-3-prepare-pam-server.md)

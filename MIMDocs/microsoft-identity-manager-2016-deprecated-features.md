@@ -10,10 +10,10 @@ ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 009d0e99e2da445d4df35dc9de81b297a65fe2a3
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044230"
 ---
 # <a name="deprecated-features"></a>Características depreciadas
@@ -47,7 +47,7 @@ A Microsoft não recomenda que os clientes iniciem novas implementações dos co
 | **Categoria**                | **Recurso depreciado**              | **Substituição e Comentário**           |
 |-----------------------------|-------------------------------------|----------------------------------------------|
 | Configuração Programática | Interface de configuração do Serviço Web | A capacidade de configurar o serviço de sincronização FIM através do serviço FIM será removida numa versão seguinte.                                                          |
-| Agentes de Gestão           | MAs incorporados                        | Os seguintes Estados-Maiores foram removidos em MIM 2016: </br> 1. **MA para gestão de certificados FIM </br>2. **MA para notas de lóloto</br> 3. **MA para SAP R/3 </br> As Notas de Lógoo e os SAP R/3 MAs foram substituídos por novas versões. Para mais informações, consulte o histórico e o download da versão do [conector mais recente](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-version-history)                                                                                                                                                                                                                                              |
+| Agentes de Gestão           | MAs incorporados                        | Os seguintes Estados-Maiores foram removidos em MIM 2016: </br> 1. **MA para gestão de certificados FIM </br>2. **MA para notas de lóloto</br> 3. **MA para SAP R/3 </br> As Notas de Lógoo e os SAP R/3 MAs foram substituídos por novas versões. Para mais informações, consulte o histórico de versão do [conector mais recente & download](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-connector-version-history)                                                                                                                                                                                                                                              |
 | Agentes de Gestão           | ECMA1                               | O quadro de extibilidade ECMA1/XMA foi substituído pelo ECMA 2.0. É necessário atualizar os agentes de gestão ecma1 existentes com conectores ECMA2.0.                                                                                                                                          |
 | Agentes de Gestão           | Conectores de execução fora de proc      | Esta funcionalidade não será substituída. O serviço de sincronização irá sempre ligar para o conector no mesmo processo. É da responsabilidade do conector iniciar e gerir o outro processo. |
 | Agentes de Gestão           | Configurar o nome do display da partição    | Esta funcionalidade não será substituída. Esta opção foi utilizada apenas para fornecer um nome alternativo para uma partilha nas interfaces WMI.                                                                                                                                                                       |
@@ -59,16 +59,16 @@ A Microsoft não recomenda que os clientes iniciem novas implementações dos co
 
 | **Categoria**                | **Recurso depreciado**              | **Substituição e Comentário**           |
 |--------|-------|---|    
-| Precedência do atributo | Precedência multi-mestria/igual                       | A mesma precedência será removida. Não há substituto para esta funcionalidade. Em vez disso, deve configurar a precedência manual. Pode continuar a utilizar esta funcionalidade se o seu ambiente tiver um agente de gestão do Serviço FIM implantado. Este agente de gestão não fornece precedência manual para evitar a exportação não precedente para o provisionamento declarativo. |
+| Precedência de Atributos | Precedência multi-mestria/igual                       | A mesma precedência será removida. Não há substituto para esta funcionalidade. Em vez disso, deve configurar a precedência manual. Pode continuar a utilizar esta funcionalidade se o seu ambiente tiver um agente de gestão do Serviço FIM implantado. Este agente de gestão não fornece precedência manual para evitar a exportação não precedente para o provisionamento declarativo. |
 | Aderir às Regras           | Junte-se ao tipo de objeto "Qualquer"                             | Esta funcionalidade não será substituída. Todas as regras de adesão devem definir explicitamente o tipo de objeto metaverso a que estão a tentar aderir.       |
 | Fluxos de atributos      | Desseleccionar "permitir nulos" para valores exportados            | Esta funcionalidade não será substituída. "Permitir nulos" será sempre selecionado. Deve certificar-se de que tem "Allow Nulls" selecionado no seu ambiente atual.  |
 | Fluxos de atributos      | "Não me lembro de atributos"                            | Esta funcionalidade não será substituída. Os atributos serão sempre recordados, que é a melhor prática.  |
 | Extensão de Regras      | Executar metaverso e ma regras extensão fora-de-proc | Esta funcionalidade não será substituída. As regras de fluxo metaverso e atributo serão executadas no mesmo processo que o motor de sincronização.       |
 | Extensão de Regras      | Propriedades de transações                                | Esta funcionalidade não será substituída. Deve evitar passar dados entre a entrada, o provisionamento e a sincronização de saída utilizando esta classe de utilidade.  |
-| Extensão de Regras      | ExchangeUtils: Criar 55 métodos de\*                     | Os métodos para criar objetos para os servidores Do Exchange 5.5 serão removidos.        |
+| Extensão de Regras      | ExchangeUtils: Criar\* métodos 55                     | Os métodos para criar objetos para os servidores Do Exchange 5.5 serão removidos.        |
 | Interface            | Mms_Metaverse                                        | Todos os membros da classe ClmUtils serão removidos numa próxima versão.   |
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 Saiba mais sobre:
 
 - Microsoft Identity Manager está ainda intimamente relacionado com o respetivo predecessor, o Forefront Identity Manager. Se ainda utilizar FIM ou desejar referir-se a documentação adicional, observe o [Mapa de Documentação do FIM 2010 R2](https://technet.microsoft.com/library/jj133885.aspx).

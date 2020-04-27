@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 3005e06606ec4b3b6854003213c712770376b35d
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042207"
 ---
 # <a name="bhold-fimmim-integration-installation"></a>Instalação de Integração BHOLD FIM/MIM
@@ -43,28 +43,28 @@ Além disso, é necessário estar preparado para fornecer a informação que o a
 
 ### <a name="bholdfim-account-settings"></a>Definições da conta BHOLDFim
 
-| **Artigo**                            | **Descrição**                                                                                                                                                                                                               | **Valor**                                                                                                                                                                                                                                                                                                            |
+| **Item**                            | **Descrição**                                                                                                                                                                                                               | **Valor**                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utilize o Fornecedor de Segurança no Domínio** | Quando selecionado, especifica que a segurança dos Serviços de Domínio do Diretório Ativo controlará o acesso ao BHOLD Core.                                                                                                                    | Selecione a caixa de verificação. **Importante:** A instalação falhará se esta caixa de verificação não for selecionada.                                                                                                                                                                                                                   |
 | **Domínio**                          | Especifica o domínio que contém a conta de **serviço** que criou ao instalar o BHOLD Core. Para mais informações, consulte [a Instalação BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx). | O nome de domínio é fornecido automaticamente pelo assistente. Mude o nome apenas se estiver incorreto. **Importante:** Especifique o nome de domínio utilizando o nome NetBIOS (curto) e não o nome de domínio totalmente qualificado (FQDN). Por exemplo, se o FQDN do domínio for fabrikam.com, especifique o nome de domínio como FABRIKAM. |
-| **Nome de Utilizador**                        | Especifica o nome de início de sessão da conta de utilizador do serviço BHOLD Core.                                                                                                                                                              | Escreva aqui o nome da conta de utilizador:                                                                                                                                                                                                                                                                                    |
+| **Nome de utilizador**                        | Especifica o nome de início de sessão da conta de utilizador do serviço BHOLD Core.                                                                                                                                                              | Escreva aqui o nome da conta de utilizador:                                                                                                                                                                                                                                                                                    |
 | **Palavra-passe**                        | Especifica a palavra-passe da conta de utilizador do serviço.                                                                                                                                                                           | Escreva a palavra-passe aqui: **Importante:** Certifique-se de manter esta palavra-passe num local escondido e seguro.                                                                                                                                                                                                                  |
 
 ### <a name="fim-service-settings"></a>Definições de serviço FIM
 
-| **Artigo**            | **Descrição**                                                                                                                                                                                                                               | **Valor**                                                                                           |
+| **Item**            | **Descrição**                                                                                                                                                                                                                               | **Valor**                                                                                           |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| **User**            | Especifica o nome de início de sessão de uma conta com privilégios de administrador para o FIM. A Microsoft recomenda vivamente que não utilize a conta associada ao utilizador raiz no BHOLD Core (por predefinição, a conta utilizada para instalar o BHOLD Core). | Escreva aqui o nome da conta de utilizador:                                                                   |
+| **Utilizador**            | Especifica o nome de início de sessão de uma conta com privilégios de administrador para o FIM. A Microsoft recomenda vivamente que não utilize a conta associada ao utilizador raiz no BHOLD Core (por predefinição, a conta utilizada para instalar o BHOLD Core). | Escreva aqui o nome da conta de utilizador:                                                                   |
 | **Palavra-passe**        | Especifica a palavra-passe da conta de utilizador do administrador FIM.                                                                                                                                                                                 | Escreva a palavra-passe aqui: **Importante:** Certifique-se de manter esta palavra-passe num local escondido e seguro. |
 | **Base de Dados FIM**    | Especifica o nome da base de dados do Serviço FIM.                                                                                                                                                                                               | SERVIÇO FIM                                                                                          |
 | **Site IP/Porto** | Especifica o nome ou endereço IP do servidor fim portal e da porta do site.                                                                                                                                                               | Escreva aqui o nome ou endereço do servidor e a porta:                                                     |
 
 ### <a name="bhold-core-connection"></a>Ligação Core BHOLD
 
-| **Artigo**               | **Descrição**                                                                                                                                                                                                                                                                                                                                                                               | **Valor**                                                                                           |
+| **Item**               | **Descrição**                                                                                                                                                                                                                                                                                                                                                                               | **Valor**                                                                                           |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | **Domínio**             | Especifica o nome do domínio da conta especificada no **Utilizador,** abaixo. Especifique o domínio no formato NetBIOS (curto).                                                                                                                                                                                                                                                                   | Escrever o nome de domínio da conta de utilizador aqui?                                                            |
-| **User**               | Especifica o nome de início de sessão da conta de **um utilizador BHOLD que é um supervisor** de todos os utilizadores e funções e tem permissão para ligar e desvincular as funções do utilizador. A Microsoft recomenda vivamente que não utilize a conta associada ao utilizador raiz no BHOLD Core (por predefinição, a conta utilizada para instalar o BHOLD Core). Esta conta pode ser a mesma conta que usa para ligar ao FIM | Escreva aqui o nome da conta de utilizador:                                                                   |
+| **Utilizador**               | Especifica o nome de início de sessão da conta de **um utilizador BHOLD que é um supervisor** de todos os utilizadores e funções e tem permissão para ligar e desvincular as funções do utilizador. A Microsoft recomenda vivamente que não utilize a conta associada ao utilizador raiz no BHOLD Core (por predefinição, a conta utilizada para instalar o BHOLD Core). Esta conta pode ser a mesma conta que usa para ligar ao FIM | Escreva aqui o nome da conta de utilizador:                                                                   |
 | **Palavra-passe**           | Especifica a palavra-passe da conta de utilizador especificada no **Utilizador**.                                                                                                                                                                                                                                                                                                                             | Escreva a palavra-passe aqui: **Importante:** Certifique-se de manter esta palavra-passe num local escondido e seguro. |
 | **Endereço IP/Máquina** | Especifica o endereço IP do servidor do website BHOLD Core. Não utilize o nome do servidor.                                                                                                                                                                                                                                                                                                        | Escreva o endereço IP aqui:                                                                          |
 | **Número da porta**        | Especifica o número de porta do website BHOLD Core.                                                                                                                                                                                                                                                                                                                                          | Escreva o número da porta aqui:                                                                         |
@@ -73,15 +73,15 @@ Além disso, é necessário estar preparado para fornecer a informação que o a
 
 Para instalar o módulo de integração BHOLD FIM, inicie sessão como membro do grupo Domain Admins, descarregue o seguinte ficheiro e execute-o como administrador no servidor que pretende instalar o módulo de integração BHOLD FIM em:
 
-- Versão\<de Integração BholdFIM<em>\></em>\_Release.msi
+- \_<em>\<Versão\></em>BholdFIMIntegration Version Release.msi
 
-Substitua *\<Versão\>* com o número de versão da versão da versão BHOLD FIM Integration que está a instalar.
+Substitua * \<\> * a Versão pelo número de versão da versão do lançamento de Integração BHOLD FIM que está a instalar.
 
 Para executar o ficheiro do programa como administrador, clique no ficheiro à direita e, em seguida, clique em **Executar como administrador**.
 
 ![execução msi](media/bhold-integration-installation/cmd.png)
 
-## <a name="post-installation-tasks"></a>Tarefas de instalação de postações
+## <a name="post-installation-tasks"></a>Tarefas de pós-instalação
 
 Depois de instalar a Integração BHOLD FIM, tem de configurar o Microsoft SharePoint para dar permissões ao site da conta de serviço BHOLD. Além disso, se o Portal FIM estiver configurado para utilizar a segurança Secure Sockets Layer (SSL), deve modificar ficheiros que contenham referências aos endereços das páginas BHOLD adicionadas ao Portal FIM.
 
@@ -95,7 +95,7 @@ Para funcionar corretamente, a Integração BHOLD FIM requer que a conta de serv
 
 2.  Clique em **Iniciar**, e depois clique em **Internet Exporer**.
 
-3.  Na barra de endereços, escreva <https://localhost> se o SharePoint estiver configurado para utilizar a segurança SSL, caso contrário, escreva <http://localhost>.
+3.  Na barra de <https://localhost> endereços, escreva se o SharePoint estiver <http://localhost>configurado para utilizar a segurança SSL, caso contrário escreva .
 
 4.  No lado esquerdo da página do Site da **equipa,** clique em **Pessoas e Grupos**.
 
@@ -111,7 +111,7 @@ Para funcionar corretamente, a Integração BHOLD FIM requer que a conta de serv
 
 ### <a name="configuring-bhold-to-support-ssl"></a>Configurar bHOLD para suportar SSL
 
-Se o Portal FIM estiver configurado para utilizar a segurança SSL, tem de modificar ficheiros no servidor FIM para que as ligações às páginas BHOLD sejam abertas. Os ficheiros encontram-se na seguinte pasta: ```C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\TEMPLATE\LAYOUTS\BHOLD```.
+Se o Portal FIM estiver configurado para utilizar a segurança SSL, tem de modificar ficheiros no servidor FIM para que as ligações às páginas BHOLD sejam abertas. Os ficheiros encontram-se ```C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\TEMPLATE\LAYOUTS\BHOLD```na seguinte pasta: .
 
 A tabela seguinte lista os ficheiros e as versões originais e alteradas das cordas a editar.
 
@@ -121,21 +121,21 @@ A tabela seguinte lista os ficheiros e as versões originais e alteradas das cor
 | AttestationCampaigns.aspx |    http://<BHOLD_Server>/bhold/Attestation/Campaigns.aspx?hideMenu=1 | https://<BHOLD_Server_FQDN>/bhold/Attestation/Campaigns.aspx?hideMenu=1 | 
 | AttestationMain.aspx      |  http://<BHOLD_Server>/bhold/Attestation/Dashboard.aspx?hideMenu=1        | https://<BHOLD_Server_FQDN>/bhold/Attestation/Dashboard.aspx?hideMenu=1 |
 | Reportagem.aspx            | http://<BHOLD_Server>/bhold/Reporting/index_fim.html |  https://<BHOLD_Server_FQDN>/bhold/Reporting/index_fim.html |
-| Selfservice.aspx          | RoleExchangePoint=http://\<*FIM_Server*\>: \<*FIM_Port*\>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport | RoleExchangePoint=https://\<*FIM_Server_FQDN*\>: \<*FIM_SSL_Port\>* \>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport |
+| Selfservice.aspx          | RoleExchangePoint=http://\<*FIM_Server*\>: \< *FIM_Port*\>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport | RoleExchangePoint=https://\<*FIM_Server_FQDN*\>: \< *FIM_SSL_Port\>*\>/BHOLD/RoleExchangePoint/ BHOLDRoleExchangePoint.svc,TransportMode=Transport |
 
 Em que:
 
--   *\<BHOLD_Server\>* especifica o nome do servidor BHOLD como encontrado na versão original do ficheiro
+-   BHOLD_Server especifica o nome do servidor BHOLD como encontrado na versão original do ficheiro * \<\> *
 
--   *\<MIM_Server\>* especifica o nome do servidor FIM como encontrado na versão original do ficheiro
+-   MIM_Server especifica o nome do servidor FIM como encontrado na versão original do ficheiro * \<\> *
 
--   *\<BHOLD_Server_FQDN\>* especifica o nome de domínio totalmente qualificado (FQDN) do servidor BHOLD
+-   BHOLD_Server_FQDN especifica o nome de domínio totalmente qualificado (FQDN) do servidor BHOLD * \<\> *
 
--   *\<MIM_Port\>* especifica o número de porta do servidor FIM, tal como encontrado na versão original do ficheiro.
+-   MIM_Port especifica o número de porta do servidor FIM como encontrado na versão original do ficheiro * \<\> *
 
--   *\<MIM_Server_FQDN\>* especifica o FQDN do servidor FIM
+-   MIM_Server_FQDN especifica o FQDN do servidor FIM * \<\> *
 
--   *\<MIM_SSL_Port\>* especifica uma porta diferente para utilização com SSL no servidor FIM
+-   MIM_SSL_Port especifica uma porta diferente para utilização com SSL no servidor FIM * \<\> *
 
 ### <a name="enable-approval-workflows-in-bhold-core"></a>Ativar fluxos de trabalho de aprovação em BHOLD Core
 
@@ -157,7 +157,7 @@ Se um aprovador para um pedido de função de autosserviço não for especificad
 
 2.  Clique em **Iniciar,** e depois clique no **Internet Explorer**.
 
-3.  Na barra de endereços do Internet Explorer, escreva <http://localhost:5151/bhold/core>, e, em seguida, prima a tecla Enter.
+3.  Na barra de endereços <http://localhost:5151/bhold/core>Do Internet Explorer, escreva e, em seguida, prima a tecla Enter.
 
 4.  Na página inicial do BHOLD Core, em **atributo def,** clique nos **tipos de Atributos**.
 
@@ -189,7 +189,7 @@ Se um aprovador para um pedido de função de autosserviço não for especificad
 
 18. Na **página unidade/raiz organizacional,** clique em **Modificar**.
 
-19. No formulário **Modificar atributos/página raiz** da unidade organizacional, no **Approver,** escreva o domínio e o nome do utilizador do utilizador que aprovará pedidos de atribuição de papéis, no formato *\<domínio\>* \\\<\>do *utilizador,* onde *\<domínio\>* é o nome de domínio NetBIOS (curto) e\<utilizador *\>* é o nome de início de sessão do utilizador.
+19. No grupo **Desacie atributos/página raiz** da unidade organizacional, no **Approver,** escreva o domínio e o nome de utilizador do utilizador que aprovará pedidos de atribuição de papéis, no*\<utilizador\>* do * \<\>domínio*\\do formato, onde * \<\> * o domínio é o nome de domínio NetBIOS (curto) e * \<\> * o utilizador é o nome de logon do utilizador.
 20. Clique em **OK**.
 
 > [!IMPORTANT]
@@ -205,9 +205,9 @@ Para proporcionar uma melhor segurança no fluxo de trabalho, para além dos apr
 
 - segurançaOficial<em>\<n\></em>
 
-- <em>notificação\<n\></em>
+- notificação<em>\<n\></em>
 
-quando *\<n\>* indica um sufixo numérico opcional para fornecer múltiplos atributos do mesmo tipo.
+onde * \<\> n* indica um sufixo numérico opcional para fornecer múltiplos atributos do mesmo tipo.
 
 ### <a name="verify-approval-workflows-configured-in-the-fim-service"></a>Verificar fluxos de trabalho de aprovação configurados no Serviço FIM
 
@@ -216,7 +216,7 @@ A instalação de integração BHOLD FIM cria conjuntos, definições de fluxo d
 > [!NOTE]
 > Antes de os utilizadores do Portal FIM poderem utilizar as funcionalidades de self-service fornecidas pelo BHOLD, as contas dos utilizadores devem ser sincronizadas na base de dados BHOLD do Serviço de Sincronização FIM. Em particular, deve haver um registo de utilizador na base de dados BHOLD Core e na base de dados do Serviço FIM para cada utilizador que possa fazer um pedido de self-service ou seja especificado como um aprovador ou escada rolante para pedidos de self-service.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para obter informações sobre a instalação do Portal FIM e outras funcionalidades do FIM, consulte [Planeamento e Arquitetura](https://technet.microsoft.com/library/ee808044.aspx) na Biblioteca Técnica Microsoft Forefront.
 - [Guia de instalação BHOLD](bhold-installation-guide.md)

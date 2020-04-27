@@ -1,5 +1,5 @@
 ---
-title: O conector do Microsoft Identity Manager para o Microsoft Graph  Microsoft Docs
+title: O conector do Microsoft Identity Manager para o Microsoft Graph [ Microsoft Docs
 author: fimguy
 description: O conector microsoft Identity Manager para o Microsoft Graph permite a gestão externa do ciclo de vida da conta aD do utilizador. Neste cenário, uma organização convidou os hóspedes para o seu diretório Azure AD, e deseja dar a esses hóspedes acesso a aplicações integradas no Windows ou as aplicações baseadas em Kerberos
 keywords: ''
@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.openlocfilehash: 462b649ca02519e5af5c3b1243506a74efa7052a
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044264"
 ---
 # <a name="microsoft-identity-manager-connector-for-microsoft-graph"></a>Conector do Microsoft Identity Manager para o Microsoft Graph
@@ -22,7 +22,7 @@ ms.locfileid: "79044264"
 ## <a name="summary"></a>Resumo 
 
 
-O [conector Microsoft Identity Manager para o Microsoft Graph](http://go.microsoft.com/fwlink/?LinkId=717495) permite cenários de integração adicionais para os clientes Azure AD Premium.  Aparece no metésículo de sincronização MIM objetos adicionais obtidos a partir do [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) v1 e beta.
+O [conector Microsoft Identity Manager para o Microsoft Graph](http://go.microsoft.com/fwlink/?LinkId=717495) permite cenários de integração adicionais para os clientes Azure AD Premium.  Aparece no conjunto de objetos metaversos de sincronização MIM obtidos a partir do [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) v1 e beta.
 
 ## <a name="scenarios-covered"></a>Cenários cobertos
 
@@ -50,15 +50,15 @@ O conector pode ser utilizado para outros cenários específicos de gestão de i
 
 ![](media/microsoft-identity-manager-2016-ma-graph/724d3fc33b4c405ab7eb9126e7fe831f.png)
 
-Imagem 1. Novo registo de candidaturas
+Imagem 1. Novo registo de aplicação
 
 2.  No portal Azure, abra a aplicação criada e guarde o ID de aplicação, como ID do Cliente para usar mais tarde na página de conectividade do MA:
 
 ![](media/microsoft-identity-manager-2016-ma-graph/ecfcb97674790290aa9ca2dcaccdafbc.png)
 
-Imagem 2. ID da Aplicação
+Imagem 2. ID da aplicação
 
-3.  Gere o novo Segredo do Cliente abrindo todas as definições -\> Keys. Defina alguma descrição da Chave e selecione duração necessária. Guarde as alterações. Um valor secreto não estará disponível depois de sair da página.
+3.  Gere o novo Segredo do\> Cliente abrindo todas as definições - Teclas. Defina alguma descrição da Chave e selecione duração necessária. Guarde as alterações. Um valor secreto não estará disponível depois de sair da página.
 
 ![](media/microsoft-identity-manager-2016-ma-graph/fdbae443f9e6ccb650a0cb73c9e1a56f.png)
 
@@ -68,14 +68,14 @@ Imagem 3. Novo Segredo de Cliente
 
 ![](media/microsoft-identity-manager-2016-ma-graph/908788fbf8c3c75101f7b663a8d78a4b.png)
 
-Imagem 4. Adicione nova API
+Imagem 4. Adicionar nova API
 
 A seguinte permissão deve ser adicionada à aplicação para permitir a utilização da "Microsoft Graph API", dependendo do cenário:
 
 | Operação com objeto | Permissão necessária                                                                  | Tipo de permissão |
 |-----------------------|--------------------------------------------------------------------------------------|-----------------|
 | Grupo de Importação          | `Group.Read.All` ou `Group.ReadWrite.All`                                                | Aplicação     |
-| Utilizador de Importação           | `User.Read.All`, `User.ReadWrite.All`, `Directory.Read.All` ou `Directory.ReadWrite.All` | Aplicação     |
+| Utilizador de Importação           | `User.Read.All`, `User.ReadWrite.All` `Directory.Read.All` ou.`Directory.ReadWrite.All` | Aplicação     |
 
 Mais detalhes sobre permissões necessárias podem ser encontrados [aqui.](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)
 
@@ -99,7 +99,7 @@ Mais detalhes sobre permissões necessárias podem ser encontrados [aqui.](https
 
 
 9.  No UI gestor de serviços de sincronização, selecione **Conectores** e **Crie**.
-Selecione **Graph (Microsoft)**  , crie um conector e dê-lhe um nome descritivo.
+Selecione **Graph (Microsoft)** , crie um conector e dê-lhe um nome descritivo.
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/d95c6b2cc7951b607388cbd25920d7d0.png)
 
@@ -132,7 +132,7 @@ A página de parâmetros globais contém as seguintes definições:
 
 12.   Configure o esquema.  O conector suporta a seguinte lista de tipos de objetos:
 
--   Função do
+-   Utilizador
 
     -   Importação Total/Delta
 
@@ -151,15 +151,15 @@ A lista dos tipos de atributos que são suportados:
 
 -   `Edm.String`
 
--   `Edm.DateTimeOffset` (corda no espaço do conector)
+-   `Edm.DateTimeOffset`(corda no espaço do conector)
 
--   `microsoft.graph.directoryObject` (referência no espaço do conector a qualquer um dos objetos suportados)
+-   `microsoft.graph.directoryObject`(referência no espaço do conector a qualquer um dos objetos suportados)
 
 -   `microsoft.graph.contact`
 
 Os atributos multivalorizados (Coleção) também são suportados para qualquer tipo da lista acima.
 
-O conector utiliza o atributo '`id`' para âncora e DN para todos os objetos.  Portanto, não é necessário mudar o nome, uma vez que a API do gráfico não permite que um objeto altere o seu atributo 'id'.
+O conector`id`utiliza o atributo ' ' para âncora e DN para todos os objetos.  Portanto, não é necessário mudar o nome, uma vez que a API do gráfico não permite que um objeto altere o seu atributo 'id'.
 
 
 ## <a name="access-token-lifetime"></a>Vida útil do token de acesso
@@ -175,12 +175,12 @@ Neste caso haverá duas iterações durante a importação, cada uma delas devol
 
 Durante a exportação será solicitado um novo sinal de acesso para cada objeto que deve ser adicionado/atualizado/eliminado.
 
-## <a name="troubleshooting"></a>Resolução de Problemas
+## <a name="troubleshooting"></a>Resolução de problemas
 
 
 **Ativar registos**
 
-Se houver algum problema no Graph, então os registos podem ser usados para localizar o problema. Assim, os vestígios podem ser ativados da mesma forma que para os [conectores genéricos](https://social.technet.microsoft.com/wiki/contents/articles/21086.fim-2010-r2-troubleshooting-how-to-enable-etw-tracing-for-connectors.aspx). Ou apenas adicionando o seguinte à `miiserver.exe.config` (dentro `system.diagnostics/sources` secção):
+Se houver algum problema no Graph, então os registos podem ser usados para localizar o problema. Assim, os vestígios podem ser ativados da mesma forma que para os [conectores genéricos](https://social.technet.microsoft.com/wiki/contents/articles/21086.fim-2010-r2-troubleshooting-how-to-enable-etw-tracing-for-connectors.aspx). Ou apenas adicionando `miiserver.exe.config` o `system.diagnostics/sources` seguinte a (secção interna):
 
 ```
 \<source name="ConnectorsLog" switchValue="Verbose"\>
@@ -200,7 +200,7 @@ DateTime, Timestamp, Call stack" /\>
 \</source\>
 ```
 >[!NOTE]
->Se estiver ativado o "executar este agente de gestão num processo separado", `dllhost.exe.config` deve ser utilizado em vez de `miiserver.exe.config`.
+>Se estiver ativado o "Executar este agente `dllhost.exe.config` de gestão `miiserver.exe.config`num processo separado", deve ser utilizado em vez de .
 
 **Erro expirado de acesso**
 
@@ -208,7 +208,7 @@ O conector pode devolver http error 401 Não autorizado, mensagem "Acesso de ace
 
 ![](media/microsoft-identity-manager-2016-ma-graph/ce9e23ffe17e3dac79b58bba31cb5a8d.png)
 
-Imagem 7. "O sinal de acesso expirou." Error
+Imagem 7. "O sinal de acesso expirou." Erro
 
 A causa deste problema pode ser a configuração do tempo de acesso do lado Azure. Por padrão, o sinal de acesso expira após 1 hora. Para aumentar o tempo de validade, consulte [este artigo](https://docs.microsoft.com/azure/active-directory/active-directory-configurable-token-lifetimes).
 
@@ -216,11 +216,11 @@ Exemplo disso usando lançamento público de [pré-visualização do módulo Pow
 
 ![](media/microsoft-identity-manager-2016-ma-graph/a26ded518f94b9b557064b73615c71f6.png)
 
-New-AzureADPolicy -Definition \@('{"TokenLifetimePolicy":{"Versão":1, **"AccessTokenLifetime":"5:00:00"** }}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault \$true -Type "TokenLifetimePolicy"
+New-AzureADPolicy -Definition \@('{"TokenLifetimePolicy":{"Versão":1, **"AccessTokenLifetime":"5:00:00"**}}') -DisplayName "OrganizationDefaultPolicyScenario" -IsOrganizationDefault \$true -Type "TokenLifetimePolicy"
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Graph Explorer, ótimo para problemas de resolução de problemas HTTP questões de chamada]( https://developer.microsoft.com/en-us/graph/graph-explorer)
 - [Verdição, suporte e quebra de políticas de mudança para o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/versioning_and_support)
 - [Baixe o conector do Microsoft Identity Manager para o Microsoft Graph](http://go.microsoft.com/fwlink/?LinkId=717495)
-MIM [B2B End to End Implementação]( ~/microsoft-identity-manager-2016-graph-b2b-scenario.md)
+[MIM B2B End to End Deployment]( ~/microsoft-identity-manager-2016-graph-b2b-scenario.md)

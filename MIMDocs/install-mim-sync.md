@@ -12,17 +12,17 @@ ms.assetid: 2585e9c5-ce34-46c7-bdcf-8c08773901dc
 ms.reviewer: markwahl-msft
 ms.suite: ems
 ms.openlocfilehash: 8e4371c8d3caac06f7200d8439b30b7aa978a336
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042462"
 ---
 # <a name="install-mim-2016-mim-synchronization-service"></a>Instalar o MIM 2016: Serviço de Sincronização do MIM
 
 > [!div class="step-by-step"]
-> [« Exchange Server](prepare-server-exchange.md)
-> [Serviço e Portal do MIM »](install-mim-service-portal.md)
+> [« Serviço](prepare-server-exchange.md)
+> e Portal do Servidor de Intercâmbio[MIM»](install-mim-service-portal.md)
  
 > [!NOTE]
 > Estas instruções utilizam valores e nomes de exemplo de uma empresa denominada Contoso. Substitua estas instruções pelas suas. Por exemplo:
@@ -31,7 +31,7 @@ ms.locfileid: "79042462"
 > - Nome do Servidor de Serviço MIM - **corpservice**
 > - Nome do Servidor MIM Sync - **corpsync**
 > - Nome do Servidor SQL - **corpsql**
-> - Palavra-passe – <strong>Pass@word1</strong>
+> - Senha -<strong>Pass@word1</strong>
 
 Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro o pacote de instalação.
 
@@ -59,7 +59,7 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
    1.  O Servidor SQL está localizado em: **Uma máquina remota** chamada **corpsql.contoso.com**.
 
-   2.  A instância Do Servidor SQL é: **A instância padrão**
+   2.  A instância do SQL Server é: **A instância predefinida**
 
    ![Imagem de ligação à base de dados](media/install-mim-sync/MIM_Install3.png)
 
@@ -69,12 +69,12 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
 
    1. Conta de serviço: *SincronizaçãoMIM*
 
-   2. Palavra-passe: <em>Pass@word1</em>
+   2. Senha:<em>Pass@word1</em>
 
    3. Domínio da Conta de Serviço ou nome do computador local: *contoso*
 
     >[!NOTE]
-    >MIM 2016 SP2 e mais tarde: para Contas de Serviço Geridas pelo Grupo, **certifique-se** de que o$personagem está no final do Nome da Conta de Serviço, por exemplo, MIMSync$, e deixe o campo password vazio.
+    >MIM 2016 SP2 e mais tarde: para Contas **$** de Serviço Geridas pelo Grupo, certifique-se de que o personagem está no final do Nome da Conta de Serviço, por exemplo, MIMSync$, e deixe o campo password vazio.
 
     ![Imagem da conta de serviço](media/install-mim-sync/MIM_Install4.png)
 
@@ -109,5 +109,5 @@ Para instalar componentes do Microsoft Identity Manager 2016, configure primeiro
     5. Tem de terminar e iniciar sessão novamente para que as alterações às associações a grupos sejam aplicadas. Clique em **Sim** para terminar sessão.
 
 > [!div class="step-by-step"]  
-> [« Exchange Server](prepare-server-exchange.md)
-> [Serviço e Portal do MIM »](install-mim-service-portal.md)
+> [« Serviço](prepare-server-exchange.md)
+> e Portal do Servidor de Intercâmbio[MIM»](install-mim-service-portal.md)

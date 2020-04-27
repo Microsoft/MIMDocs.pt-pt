@@ -12,17 +12,17 @@ ms.assetid: eef248c4-b3b6-4b28-9dd0-ae2f0b552425
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 0cf952c93c0a7b95fd41939efc767e9e8c20be5e
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043652"
 ---
 # <a name="step-5--establish-trust-between-priv-and-corp-forests"></a>Passo 5 - Estabelecer confiança entre florestas PRIV e CORP
 
 > [!div class="step-by-step"]
 > [« Passo 4](step-4-install-mim-components-on-pam-server.md)
-> [Passo 6 »](step-6-transition-group-to-pam.md)
+> [Passo 6»](step-6-transition-group-to-pam.md)
 
 Para cada domínio CORP, como contoso.local, os controladores de domínio PRIV e CONTOSO têm de estar vinculados por uma confiança. Isto permite aos utilizadores no domínio PRIV aceder aos recursos no domínio CORP.
 
@@ -40,7 +40,7 @@ Antes de estabelecer confiança, cada controlador de domínio tem de ser configu
     ```
     Verifique se a saída indica um registo nameserver para o domínio PRIV com o endereço IP correto.
 
-3.  Se o controlador de domínio não conseguir encaminhar o domínio PRIV, utilize o **Gestor de DNS** (localizado em **Iniciar** > **Ferramentas de Aplicação** > **DNS**) para configurar o encaminhamento de nomes DNS do domínio PRIV para o endereço IP de PRIVDC. Se for um domínio superior (por exemplo, contoso.local), expanda os nós para este controlador de domínio e o respetivo domínio, como **CORPDC** > **Zonas de Pesquisa Direta** > **contoso.local** e certifique-se de que existe uma chave denominada **priv** como um tipo de Servidor de Nomes (NS).
+3.  Se o controlador de domínio não conseguir encaminhar o domínio PRIV, utilize o **Gestor de DNS** (localizado em **Iniciar** > **Ferramentas de Aplicação** > **DNS**) para configurar o encaminhamento de nomes DNS do domínio PRIV para o endereço IP de PRIVDC. Se for um domínio superior (por exemplo, contoso.local), expanda os nós para este controlador de domínio e seu domínio, como AS Zonas de**contoso.local****Lookup Forward CORPDC** >  **CORPDC** > Forward, e certifique-se de que uma chave chamada **priv** está presente como um tipo de Servidor de Nome (NS).
 
     ![estrutura do ficheiro para a chave priv - captura de ecrã](./media/PAM_GS_DNS_Manager.png)
 
@@ -72,15 +72,15 @@ Para cada floresta existente, ative o acesso de leitura para o AD pelos administ
 
 1. Inicie sessão no controlador de domínio da floresta CORP existente, (CORPDC), como um administrador de domínio para o domínio de nível superior dessa floresta (Contoso\Administrator).  
 2. Inicie **Utilizadores e Computadores do Active Directory**.  
-3. Clique com o botão direito do rato no domínio **contoso.local** e selecione **Delegar Controlo**.  
+3. Clique com o botão direito do rato no domínio **contoso.local** e selecione **Delegar controlo**.  
 4. No separador Utilizadores e Grupos Selecionados, clique em **Adicionar**.  
-5. Na janela Selecionar Utilizadores, Computadores ou Grupos, clique em **Localizações** e altere a localização para *priv.contoso.local*.  No nome do objeto, escreva *Admins do domínio* e clique em **Verificar nomes**. Quando aparecer um pop-up, introduza o nome de utilizador *priv\administrator* e a respetiva palavra-passe.  
-6. A seguir a Admins do Domínio, adicione " *; MIMMonitor*". Depois de os nomes de **Admins do Domínio** e **MIMMonitor** estarem sublinhados, clique em **OK** e, em seguida, clique em **Seguinte**.  
+5. Na janela Selecionar Utilizadores, Computadores ou Grupos, clique em **Localizações** e altere a localização para *priv.contoso.local*.  No nome do objeto, escreva *Admins do Domínio* e clique em **Verificar Nomes**. Quando aparecer um pop-up, introduza o nome de utilizador *priv\administrator* e a respetiva palavra-passe.  
+6. A seguir a Admins do Domínio, adicione "*; MIMMonitor*". Depois de os nomes de **Admins do Domínio** e **MIMMonitor** estarem sublinhados, clique em **OK** e, em seguida, clique em **Seguinte**.  
 7. Na lista de tarefas comuns, selecione **Ler todas as informações do utilizador** e, em seguida, clique em **Seguinte** e em **Concluir**.  
 8. Feche Computadores e Utilizadores do Active Directory.
 
 9. Abra uma janela do PowerShell.
-10. Utilize `netdom` para garantir que o histórico de SIDs está ativado e a filtragem por SID está desativada. Tipo:
+10. Utilize `netdom` para garantir que o histórico de SIDs está ativado e a filtragem por SID está desativada. Escreva:
     ```cmd
     netdom trust contoso.local /quarantine:no /domain priv.contoso.local
     netdom trust /enablesidhistory:yes /domain priv.contoso.local
@@ -106,4 +106,4 @@ No próximo passo, irá mover um grupo para o PAM.
 
 > [!div class="step-by-step"]
 > [« Passo 4](step-4-install-mim-components-on-pam-server.md)
-> [Passo 6 »](step-6-transition-group-to-pam.md)
+> [Passo 6»](step-6-transition-group-to-pam.md)

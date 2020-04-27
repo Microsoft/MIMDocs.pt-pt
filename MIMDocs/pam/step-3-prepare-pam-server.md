@@ -13,17 +13,17 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 7a0a0437e767f793150d875bcaf31213a7fdf627
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043669"
 ---
 # <a name="step-3--prepare-a-pam-server"></a>Passo 3 – Preparar um servidor de PAM
 
 > [!div class="step-by-step"]
 > [« Passo 2](step-2-prepare-priv-domain-controller.md)
-> [Passo 4 »](step-4-install-mim-components-on-pam-server.md)
+> [Passo 4»](step-4-install-mim-components-on-pam-server.md)
 
 ## <a name="install-windows-server-2012-r2"></a>Instalar o Windows Server 2012 R2
 
@@ -33,7 +33,7 @@ Numa terceira máquina virtual, instale o Windows Server 2012 R2, especificament
 
     ![Escolha Windows Server Standard com GUI - captura de ecrã](media/PAM_GS_Select_WS2012.png)
 
-2. Reveja e aceite os termos de licenciamento.
+2. Reveja e aceite os termos do licenciamento.
 
 3.  Uma vez que o disco estará vazio, selecione **Personalizar: instalar apenas o Windows** e utilizar o **espaço em disco não inicializado**.
 
@@ -41,7 +41,7 @@ Numa terceira máquina virtual, instale o Windows Server 2012 R2, especificament
 
 5.  Se a rede virtual não fornecer conectividade à Internet, adicione uma interface de rede adicional ao computador que forneça uma ligação à Internet.  Será necessário para a instalação do SharePoint e pode ser desativado após este passo estar concluído.
 
-6.  Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias.  Pode ser preciso reiniciar o servidor.
+6.  Após o reinício do servidor, inicie sessão como administrador. Através do Painel de Controlo, configure o computador para verificar se existem atualizações e instale as atualizações necessárias.  Pode ser necessário reiniciar o servidor.
 
 7.  Depois de o servidor ser reiniciado, inicie sessão como Administrador, abra o Painel de Controlo e associe PAMSRV ao domínio PRIV (priv.contoso.local).  Será necessário fornecer o nome de utilizador e as credenciais de um administrador do domínio PRIV (PRIV\Administrador). Depois de aparecer a mensagem de boas-vindas, feche a caixa de diálogo e reinicie este servidor.
 
@@ -66,19 +66,19 @@ Adicione as funções de Servidor Web (IIS) e Servidor Aplicacional, as funciona
 
 Configure a política de segurança do servidor para permitir que as contas recentemente criadas sejam executadas como serviços.
 
-1.  Iniciar o programa **Política de Segurança Local**.   
-2.  Navegue até **Políticas Locais** > **Atribuição de Direitos de Utilizadores**.  
+1.  Lance o programa de **Política de Segurança Local.**   
+2.  Navegue para a atribuição de**direitos**dos utilizadores de **políticas** > locais.  
 3.  No painel de detalhes, clique com o botão direito do rato em **Iniciar sessão como um serviço** e selecione **Propriedades**.  
 4.  Clique em **Adicionar Utilizador ou Grupo** e, nos nomes de utilizadores e grupos, escreva *priv\mimmonitor; priv\MIMService; priv\SharePoint; priv\mimcomponent; priv\SqlServer*. Clique em **Verificar Nomes** e clique em **OK**.  
 
-5.  Clique em **OK** para fechar a janela Propriedades.
+5.  Clique **em OK** para fechar a janela Propriedades.
 6.  No painel de detalhes, clique com o botão direito do rato em **Negar acesso a este computador a partir da rede** e selecione **Propriedades**.  
 7.  Clique em **Adicionar Utilizador ou Grupo** e, nos nomes de utilizadores e grupos, escreva *priv\mimmonitor; priv\MIMService; priv\mimcomponent* e clique em **OK**.  
-8.  Clique em **OK** para fechar a janela Propriedades.
+8.  Clique em **OK** para fechar a janela de propriedades.
 
 9. No painel de detalhes, clique com o botão direito do rato em **Recusar início de sessão local** e selecione **Propriedades**.  
 10. Clique em **Adicionar Utilizador ou Grupo** e, nos nomes de utilizadores e grupos, escreva *priv\mimmonitor; priv\MIMService; priv\mimcomponent* e clique em **OK**.  
-11. Clique em **OK** para fechar a janela Propriedades.  
+11. Clique em **OK** para fechar a janela de propriedades.  
 12. Feche a janela Política de Segurança Local.  
 
 13. Abra o Painel de Controlo e mude para **Contas de Utilizador**.
@@ -136,14 +136,14 @@ Depois de instalar os pré-requisitos do SharePoint, instale o SharePoint Founda
 1.  Clique com o botão direito do rato no PowerShell e selecione **Executar como administrador**.  
 2.  Mude para o diretório onde o SharePoint foi descompactado.  
 3.  Escreva o comando `.\setup.exe`.  
-4.  Selecione o tipo de **servidor completo**.  
+4.  Selecione o tipo completo de **servidor.**  
 5.  Depois de concluída a instalação, selecione para executar o assistente.  
 
 ### <a name="configure-sharepoint"></a>Configurar o Sharepoint
 
 Execute o Assistente de Configuração de Produtos SharePoint para configurar o SharePoint.
 
-1.  No separador Ligar a um Farm de Servidores, mude para **Criar um novo farm de servidores**.  
+1.  No separador Connect to a Server Farm, altere para Criar uma nova quinta de **servidores**.  
 2.  Especifique **PAMSRV** como o servidor da base de dados de configuração e **PRIV\SharePoint** como a conta de acesso à base de dados para o SharePoint utilizar.  
 3.  Especifique uma palavra-passe como frase de acesso de segurança do farm (que não será utilizada posteriormente nestas instruções).  
 4.  Por agora, aceite as restantes predefinições do assistente de configuração do SharePoint para tornar um farm de servidor único.    
@@ -186,7 +186,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 
     Certifique-se de que variável **CompatibilityLevel** está definida como *14*. Se devolver *15*, a coleção de sites não foi criada para a versão da experiência de 2010; elimine a coleção de sites e reformule-a.
 
-2.  Execute os seguintes comandos do PowerShell na **Shell de Gestão do SharePoint 2013**. Isto desativará o viewstate do lado do servidor do SharePoint e a tarefa do SharePoint **Tarefa de Análise do Estado de Funcionamento (Hora a Hora, Temporizador do Microsoft SharePoint Foundation, Todos os Servidores)** .
+2.  Execute os seguintes comandos do PowerShell na **Shell de Gestão do SharePoint 2013**. Isto desativará o viewstate do lado do servidor do SharePoint e a tarefa do SharePoint **Tarefa de Análise do Estado de Funcionamento (Hora a Hora, Temporizador do Microsoft SharePoint Foundation, Todos os Servidores)**.
 
     ```PowerShell
     $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
@@ -204,7 +204,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 ## <a name="set-the-website-as-the-local-intranet"></a>Definir o site como a intranet local
 
 1. Inicie o Internet Explorer e abra um novo separador do browser
-2. Navegue para http://pamsrv.priv.contoso.local:82/ e inscreva-se como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
+2. Navegue http://pamsrv.priv.contoso.local:82/ para e inscreva-se como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
 3. No Internet Explorer, abra as **Opções da Internet**, mude para o separador **Segurança**, selecione **Intranet local** e adicione o URL `http://pamsrv.priv.contoso.local:82/`.
 
 Se o início de sessão falhar, os SPNs Kerberos criados anteriormente no [Passo 2](step-2-prepare-priv-domain-controller.md) podem ter de ser atualizados.
@@ -217,4 +217,4 @@ No Passo 4, começará a instalar os componentes do MIM no servidor de PAM.
 
 > [!div class="step-by-step"]
 > [« Passo 2](step-2-prepare-priv-domain-controller.md)
-> [Passo 4 »](step-4-install-mim-components-on-pam-server.md)
+> [Passo 4»](step-4-install-mim-components-on-pam-server.md)

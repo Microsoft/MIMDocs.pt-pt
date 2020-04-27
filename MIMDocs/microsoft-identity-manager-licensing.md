@@ -12,10 +12,10 @@ ms.assetid: ''
 ms.reviewer: billmath
 ms.suite: ems
 ms.openlocfilehash: 62a6b936dc30b8593c8758a6158244d0f6dbbc4f
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043023"
 ---
 # <a name="microsoft-identity-manager-2016-licensing-and-downloads"></a>Microsoft Identity Manager 2016 licenciamento e downloads
@@ -52,12 +52,12 @@ Se estiver a iniciar uma nova instalação, terá de descarregar os ficheiros de
 |Sincronização| Serviço de Sincronização (incluindo conector a AD) | Sim | `Synchronization Service` | |
 | Sincronização | PCNS | Não | `Password Change Notification Service` |  Para ser instalado em controladores de domínio |
 | Sincronização | Conectores para LDAP, SQL, Web Services, PowerShell, Lotus Domino, Graph | Não | N/D | Distribuído via Centro de Descarregamento |
-| Privileged Access Management | Serviço MIM | Sim | `Service and Portal` | |
-| Self-service | Serviço MIM, Portal MIM | Sim | `Service and Portal` | |
-| Self-service | Suplementos e extensões | Não | `Add-ins and extensions` | Para ser instalado em Computadores de utilizador final |
-| Self-service | Relatório scsm | Não | `Data Warehouse Support Scripts` | |
-| Self-service | Agente de reporte híbrido | Não | N/D | Distribuído via Centro de Descarregamento |
-| Self-service | Pacotes de idiomas | Não | `LANGUAGE Packs` | |
+| Gestão de Acesso Privilegiado | Serviço MIM | Sim | `Service and Portal` | |
+| Gestão personalizada | Serviço MIM, Portal MIM | Sim | `Service and Portal` | |
+| Gestão personalizada | Suplementos e extensões | Não | `Add-ins and extensions` | Para ser instalado em Computadores de utilizador final |
+| Gestão personalizada | Relatório scsm | Não | `Data Warehouse Support Scripts` | |
+| Gestão personalizada | Agente de reporte híbrido | Não | N/D | Distribuído via Centro de Descarregamento |
+| Gestão personalizada | Pacotes de idiomas | Não | `LANGUAGE Packs` | |
 | Gestão de Certificados | CM | Sim | `Certificate Management` | |
 | Gestão de Certificados | Cliente a granel CM | Não | `CM Bulk Client` | |
 | Gestão de Certificados | Cliente CM | Não | `CM Client`  | |
@@ -85,9 +85,9 @@ Para determinar quais os ficheiros de atualização necessários, esta tabela li
 | Cenário | Componente | Nome da pasta ISO DVD | Nome de ficheiro de patch de atualização correspondente |
 |----------|-----------|-   |-------------------|----------|--------------|
 |Sincronização| Serviço de Sincronização | `Synchronization Service` | `MIMSyncService_x64*.msp` |
-| Self-service | Serviço MIM, Portal MIM | `Service and Portal` | `MIMService_x64*msp` |
-| Self-service | Suplementos e extensões | `Add-ins and extensions` | `MIMAddinsExtensions*msp` |
-| Self-service | Pacotes de idiomas | `LANGUAGE Packs` | `LANGUAGE Packs.zip` |
+| Gestão personalizada | Serviço MIM, Portal MIM | `Service and Portal` | `MIMService_x64*msp` |
+| Gestão personalizada | Suplementos e extensões | `Add-ins and extensions` | `MIMAddinsExtensions*msp` |
+| Gestão personalizada | Pacotes de idiomas | `LANGUAGE Packs` | `LANGUAGE Packs.zip` |
 | Gestão de acessos (BHOLD) | BHOLD | `BHOLD` | `AccessManagementConnector.msi`, `BHOLD*.msi` |
 | Gestão de Certificados | CM |  `Certificate Management` | `MIMCM*.msp` |
 | Gestão de Certificados | Cliente a granel CM |  `CM Bulk Client` |`MIMCMBulkClient*msp` |
@@ -109,7 +109,7 @@ Os seguintes downloads também podem ser relevantes:
 
 - Se ainda não tiver um domínio de Diretório Ativo e estiver a criar um cenário PAM para experimentação, consulte os scripts de [implementação PAM MIM 2016 .](sp1-deployment-scripts.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Saiba mais sobre os cenários entregues no [Microsoft Identity Manager 2016](microsoft-identity-manager-2016.md).
 - Leia o guia de planeamento de [capacidades.](capacity-planning-guide.md)

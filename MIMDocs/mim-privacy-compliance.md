@@ -11,10 +11,10 @@ ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.suite: ems
 ms.openlocfilehash: e95cf26b62e582eaa3c07c40e551bc5930d3b1b0
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044111"
 ---
 # <a name="microsoft-identity-manager-data-handling"></a>Tratamento de dados do Microsoft Identity Manager 
@@ -47,7 +47,7 @@ Se não tiver a certeza da origem da autoridade, pode rastrear este utilizador a
     - Abra o cliente do serviço de sincronização
         - A utilização do designer metaverso permite-lhe ver importações e precedência do fluxo de atributos.
 ![mim-privacy-compliance_1.PNG](media/mim-privacy-compliance/mim-privacy-compliance_1.PNG)
-        - A utilização da pesquisa metaverso permite-lhe pesquisar qualquer objeto e atribuir dentro da base de dados ![mim-privacy-compliance_2.PNG](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)
+        - Utilizar a pesquisa metaverso permite-lhe pesquisar qualquer objeto ![e atribuir dentro da base de dados mim-privacy-compliance_2.PNG](media/mim-privacy-compliance/mim-privacy-compliance_2.PNG)
  
 Depois de encontrar o objeto, clicar no objeto abrirá a página do perfil do utilizador. Os detalhes do objeto fornecem-lhe os detalhes abrangentes sobre o objeto, os seus atributos, a última modificação e fonte de autoridade, e fonte de dados conectada relacionada derivada do exemplo de configuração do agente de gestão abaixo.
 
@@ -82,7 +82,7 @@ A pesquisa de serviçode gestão de certificados está incorporada na UI. O admi
 
 ![pesquisa cm](media/mim-privacy-compliance/mim-privacy-compliance-cm.PNG)
 
-## <a name="exporting-personal-data"></a>Exportar os dados pessoais
+## <a name="exporting-personal-data"></a>Exportar dados pessoais
 Como os dados relacionados com entidades em MIM são derivados de várias fontes, a maioria dos dados é armazenado na base de dados do Serviço de Sincronização. Por esta razão, deve exportar dados relacionados com objetos a partir do MIM Sync ou pode determinar o proprietário destes dados.
 
 ### <a name="synchronization-service"></a>Serviço de Sincronização
@@ -102,7 +102,7 @@ Os dados de isolo podem ser exportados utilizando o módulo de relatório de ret
 ### <a name="certificate-management"></a>Gestão de Certificados
 Os dados de gestão de certificados relacionados com dados pessoais estão ligados ao diretório ativo. Um administrador pode exportar estes dados usando powershell de Diretório Ativo.
 
-## <a name="updating-personal-data"></a>A atualizar os dados pessoais
+## <a name="updating-personal-data"></a>Atualizar dados pessoais
 
 Os dados pessoais sobre utilizadores ou objetos em Soluções MIM são normalmente derivados do objeto do utilizador nas fontes de dados conectadas da sua organização. Uma vez que quaisquer alterações feitas ao perfil do utilizador na fonte de RH, ou noutro sistema de registo sinuoso, como a AD são então refletidas no Serviço de Sincronização MIM.
 
@@ -129,10 +129,10 @@ Os utilizadores podem ser atualizados diretamente com a interface de utilizador 
 
 Os utilizadores do serviço de gestão de certificados são uma reflexão do diretório ativo. Para atualizar utilize o Ative Directory para alterar os detalhes do objeto.
 
-## <a name="deleting-personal-data"></a>A eliminar os dados pessoais
+## <a name="deleting-personal-data"></a>Eliminar dados pessoais
 
 >[!Note] 
-> Este artigo fornece orientações sobre formas de eliminar dados pessoais do Microsoft Identity Manager e pode ser usado para suportar as suas obrigações ao abrigo do RGPD. Se quiser obter informações gerais sobre o RGPD, veja a [secção RGPD do Portal de Confiança do Serviço](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> Este artigo fornece orientações sobre formas de eliminar dados pessoais do Microsoft Identity Manager e pode ser usado para suportar as suas obrigações ao abrigo do RGPD. Se estiver à procura de informações gerais sobre o GDPR, veja a [secção GDPR do Portal de Confiança do Serviço](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 Os dados em MIM são sincronizados e sempre atualizados a partir da sua fonte de dados conectada. Quando um objeto é eliminado no alvo, os dados do objeto em MIM podem ser mantidos para efeitos de investigação de segurança. A eliminação de objetos é configurada de acordo com as regras de origem de dados ligadas ou as regras de extensão de regras de extensão de regras de eliminação de regras de eliminação de objetos.ou/ou objetos.
 
@@ -145,7 +145,7 @@ Serviço de Sincronização tantas formas de lidar com dados ou apagar dados dep
 
 ### <a name="service-and-portal--pam"></a>Serviço e Portal / PAM
 
-Recomenda-se ao Serviço e Portal que mantenha a configuração de retenção de recursos do sistema padrão de 30 dias. Isto indica ao serviço quando irá apagar, não só solicitar dados, mas também qualquer objeto que precise de ser retirado do sistema. Uma vez que o processo ocorre, todos os dados ligados a este objeto são eliminados, isto inclui todos os dados de registo SSPR. Isto reproduz-se na configuração de eliminação do objeto acima. Temos uma mesa onde armazenamos o guia dos objetos. Para reduzir o tamanho total da tabela na construção 4.4.1459 adicionámos um processo chamado FIM_DeleteExpiredSystemObjectsJob detalhes sobre este processo podem ser encontrados [aqui](https://support.microsoft.com/en-us/help/4012498/hotfix-rollup-package-build-4-4-1459-0-is-available-for-microsoft-iden).
+Recomenda-se para o Portal & de Serviço suster a configuração de retenção de recursos do sistema padrão de 30 dias. Isto indica ao serviço quando irá apagar, não só solicitar dados, mas também qualquer objeto que precise de ser retirado do sistema. Uma vez que o processo ocorre, todos os dados ligados a este objeto são eliminados, isto inclui todos os dados de registo SSPR. Isto reproduz-se na configuração de eliminação do objeto acima. Temos uma mesa onde armazenamos o guia dos objetos. Para reduzir o tamanho total da tabela na construção 4.4.1459 adicionámos um processo chamado FIM_DeleteExpiredSystemObjectsJob detalhes sobre este processo podem ser encontrados [aqui](https://support.microsoft.com/en-us/help/4012498/hotfix-rollup-package-build-4-4-1459-0-is-available-for-microsoft-iden).
 
 ![mim-privacy-compliance-srrc. PNG](media/mim-privacy-compliance/mim-privacy-compliance-srrc.PNG)
 
@@ -155,7 +155,7 @@ Recomenda-se ao Serviço e Portal que mantenha a configuração de retenção de
 A maior parte dos sistemas ligados ao serviço de sincronização pode ser configurada para eliminar assim que o objeto de origem como o RH for removido. Isto está configurado no agente de gestão. e controlado pelas regras de eliminação de objetos, conforme descrito nas funcionalidades de serviço de sincronização.
 
 Outra opção é remover o objeto do utilizador diretamente da interface De utilizador Core BHOLD. Dependendo da configuração, esta lógica de provisionamento de nota poderia recriar este utilizador se não fosse eliminado na fonte.
-![mim-privacy-compliance-bholdr.](media/mim-privacy-compliance/mim-privacy-compliance-bholdr.PNG) do PNG
+![mim-privacidade-compliance-bholdr. PNG](media/mim-privacy-compliance/mim-privacy-compliance-bholdr.PNG)
 
 
 ### <a name="certificate-management"></a>Gestão de Certificados

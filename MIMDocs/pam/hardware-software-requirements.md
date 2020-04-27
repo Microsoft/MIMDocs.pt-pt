@@ -12,13 +12,13 @@ ms.assetid: 82a9085c-9667-4b3b-8079-657eab1d1e58
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 79f9eeabdd9ac9206c4232217c7cbcdf870c3a3a
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043992"
 ---
-# <a name="hardware-and-software-requirements"></a>Requisitos de hardware e software
+# <a name="hardware-and-software-requirements"></a>Hardware and software requirements (Requisitos de software e hardware)
 
 A Privileged Access Management não tem requisitos de hardware para além das plataformas de software subjacentes. Basta certificar-se de que tem suficiente memória ou espaço em disco e conectividade de rede.
 
@@ -39,7 +39,7 @@ O software seguinte pode ser transferido a partir do GitHub:
 
 ## <a name="required-software"></a>Software necessário
 
-- Windows Server 2012 R2
+- Windows Server 2012 R2
 - Windows 10 Enterprise
 - SQL Server 2012 Service Pack 1 ou SQL Server 2014
 
@@ -49,8 +49,8 @@ Caso não tenha licenças para o Windows, para o SQL Server ou para o Windows Se
 
 ### <a name="technet-evaluation-center"></a>Centro de avaliação TechNet
 
-- [Windows Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2)
-- [Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
+- [Windows Server 2012 R2](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2)
+- [Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
 
 ### <a name="microsoft-download-center"></a>Centro de Transferências da Microsoft
 
@@ -71,9 +71,9 @@ Para CORPWKSTN:
 
 Para PRIVDC:
 
-- [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
+- [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
 
 Para PAMSRV:
 
-- [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
+- [Windows Server 2012 R2](https://technet.microsoft.com/library/dn303418.aspx)
 - [SQL Server 2012](https://msdn.microsoft.com/library/ms143506(sql.110).aspx) ou [do SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)

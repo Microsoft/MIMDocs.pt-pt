@@ -12,10 +12,10 @@ ms.assetid: 479db14c-1bfb-4d7c-a344-cd718a01f328
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: c758bd924c6f7272a44567c2e9dc919215cdd273
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044009"
 ---
 # <a name="environment-overview"></a>Descrição geral do ambiente
@@ -31,7 +31,7 @@ As unidades onde as imagens do disco VM serão armazenadas precisam de pelo meno
 > [!IMPORTANT]
 > O armazenamento deve ser dedicado ao ambiente do bastião. Partilhar o armazenamento com outras cargas de trabalho fora do ambiente do bastião não é recomendado, pois poderia comprometer a integridade do ambiente do bastião.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [A Gestão de Acesso Privilegiado para Serviços](privileged-identity-management-for-active-directory-domain-services.md) de Domínio de Diretório Ativo é uma visão geral da PAM e como funciona.
 - [Compreender os componentes da PAM](principles-of-operation.md) é uma visão geral dos vários componentes da PAM.

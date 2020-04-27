@@ -12,17 +12,17 @@ ms.assetid: c01487f2-3de6-4fc4-8c3a-7d62f7c2496c
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 6597a7b364c1b7fa023e78bef917163ea2c19dac
-ms.sourcegitcommit: 87f94edf26fdb7f2c65c06c22cd0bc80d2f20450
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/28/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "80374303"
 ---
 # <a name="set-up-an-identity-management-server-sharepoint"></a>Configurar um servidor de gestão de identidades: SharePoint
 
 > [!div class="step-by-step"]
-> [«Servidor SQL](prepare-server-sql2016.md)
-> [Servidor de Câmbio »](prepare-server-exchange.md)
+> [«Servidor](prepare-server-sql2016.md)
+> de troca de servidor SQL»[Exchange Server »](prepare-server-exchange.md)
 > 
 
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "80374303"
 > - Nome do Servidor de Serviço MIM - **corpservice**
 > - Nome do Servidor MIM Sync - **corpsync**
 > - Nome do Servidor SQL - **corpsql**
-> - Palavra-passe – <strong>Pass@word1</strong>
+> - Senha -<strong>Pass@word1</strong>
 
 
 ## <a name="install-sharepoint-2016"></a>Instalar **o SharePoint 2016**
@@ -132,9 +132,9 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
    Get-SPTimerJob hourly-all-sptimerservice-health-analysis-job | disable-SPTimerJob
    ```
 
-4. No seu servidor de gestão de identidade, abra um novo separador de navegador web, navegue para `http://mim.contoso.com/` e faça login como *contoso\miminstall*.  Será apresentado um site do SharePoint vazio denominado *Portal do MIM*.
+4. No seu servidor de gestão de identidade, `http://mim.contoso.com/` abra um novo separador de navegador web, navegue e inicie sessão como *contoso\miminstall*.  Será apresentado um site do SharePoint vazio denominado *Portal do MIM*.
 
-    ![Portal MIM na imagem http://mim.contoso.com/](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
+    ![Portal MIM http://mim.contoso.com/ na imagem](media/prepare-server-sharepoint/MIM_DeploySP1new.png)
 
 5. Copie o URL, em seguida, no Internet Explorer, abra as **Opções da Internet**, mude para o **separador Segurança**, selecione **Intranet local** e clique em **Sites**.
 
@@ -145,5 +145,5 @@ Siga os passos delineados no **Assistente de Configuração de Produtos SharePoi
 7. Abra o programa **Ferramentas Administrativas**, navegue até **Serviços**, localize o serviço de Administração do SharePoint e inicie-o se ainda não estiver em execução.
 
 > [!div class="step-by-step"]  
-> [«Servidor SQL](prepare-server-sql2016.md)
-> [Servidor de Câmbio »](prepare-server-exchange.md)
+> [«Servidor](prepare-server-sql2016.md)
+> de troca de servidor SQL»[Exchange Server »](prepare-server-exchange.md)

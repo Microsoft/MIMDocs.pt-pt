@@ -1,5 +1,5 @@
 ---
-title: Converter serviços específicos do Microsoft Identity Manager para gMSA  Microsoft Docs
+title: Converter serviços específicos do Microsoft Identity Manager para gMSA [ Microsoft Docs
 description: Este artigo apresenta os pré-requisitos e passos básicos para a configuração de uma Conta de Serviço Gerida por grupo (gMSA).
 author: EugeneSergeev
 ms.author: esergeev
@@ -8,10 +8,10 @@ ms.date: 03/10/2020
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.openlocfilehash: 4586b9998a9526a867ffe7ace9489fe56fff146c
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044213"
 ---
 # <a name="convert-microsoft-identity-manager-specific-services-to-use-group-managed-service-accounts"></a>Converter serviços específicos do Microsoft Identity Manager para utilizar contas de serviço geridas pelo grupo
@@ -48,7 +48,7 @@ Este artigo é um guia para configurar serviços de Gestor de Identidade da Micr
     - As chaves-raiz são utilizadas pelo serviço Key Distribution Services (KDS) para gerar palavras-passe e outras informações sobre controladores de domínio.
     - Crie uma chave de raiz apenas uma vez por domínio, se for necessário.  
     - Incluir `Add-KDSRootKey –EffectiveImmediately`. "-EficazImediatamente" significa que pode levar até 10 horas para replicar a chave de raiz de todos os controladores de domínio. Pode levar cerca de 1 hora para replicar dois controladores de domínio. 
-    ![a](media/7fbdf01a847ea0e330feeaf062e30668.png) de cordas "-Eficazimediatamente"
+    ![A corda "-Eficaz Imediatamente"](media/7fbdf01a847ea0e330feeaf062e30668.png)
 
 ## <a name="actions-to-run-on-the-active-directory-domain-controller"></a>Ações a executar no controlador de domínio de diretório ativo
 
@@ -72,9 +72,9 @@ Este artigo é um guia para configurar serviços de Gestor de Identidade da Micr
 
 ## <a name="actions-to-run-on-the-microsoft-identity-manager-synchronization-server"></a>Ações para executar no servidor de sincronização do Gestor de Identidade da Microsoft
 
-1. No Gestor de Serviços de Sincronização, volte a fazer o backon da chave de encriptação. Será solicitado com a instalação do modo de alteração. efetue o seguinte:
+1. No Gestor de Serviços de Sincronização, volte a fazer o backon da chave de encriptação. Será solicitado com a instalação do modo de alteração. Faça o seguinte:
 
-    a. No servidor em que o Gestor de Serviços de Sincronização está instalado, procure a ferramenta de Gestão de Chaves do Serviço de Sincronização. O conjunto de **chaves de exportação** já está selecionado por defeito.
+    a. No servidor em que o Gestor de Serviços de Sincronização está instalado, procure a ferramenta de Gestão de Chaves do Serviço de Sincronização. O  **conjunto de chaves de exportação**já está selecionado por defeito.
 
     b. Selecione **Seguinte**. 
     
@@ -97,16 +97,16 @@ Este artigo é um guia para configurar serviços de Gestor de Identidade da Micr
 1. Depois de instalado o patch, pare o Serviço de Sincronização FIM fazendo o seguinte:
 
    a. No Painel de Controlo, selecione **Programas e Funcionalidades** > **Microsoft Identity Manager**.  
-   b. Na página do Serviço de **Sincronização,** selecione **Alterar** > **Seguinte**.  
+   b. Na página do Serviço de **Sincronização,** selecione **Change** > **Next**.  
    c. Na janela **Opções** de Manutenção, selecione **Configurar**.
 
    ![A janela Opções de Manutenção](media/dc98c011bec13a33b229a0e792b78404.png)
 
-   d. Na janela do Serviço de Sincronização do Gestor de Identidade da **Microsoft, limpe** o valor predefinido na caixa **de conta de serviço** e introduza o **MIMSyncGMSA$** . Certifique-se de incluir o símbolo do sinal do dólar ($), como mostra a imagem seguinte. Deixe a caixa **de palavra-passe** vazia.
+   d. Na janela do Serviço de Sincronização do Gestor de Identidade da **Microsoft, limpe** o valor predefinido na caixa **de conta de serviço** e introduza o **MIMSyncGMSA$**. Certifique-se de incluir o símbolo do sinal do dólar ($), como mostra a imagem seguinte. Deixe a caixa **de palavra-passe** vazia.
 
    ![A janela do Serviço de Sincronização do Gestor de Identidade da Microsoft](media/38df9369bf13e1c3066a49ed20e09041.png)
 
-   e. Selecione **Next** > **Next** > **Instalar**.  
+   e. Selecione **Next** > **Next** > **Install**.  
    f. Restaure o teclado do ficheiro *miiskeys.bin* que guardou anteriormente.
 
    ![Opção para restaurar a configuração do conjunto de chaves](media/44cd474323584feb6d8b48b80cfceb9b.png)

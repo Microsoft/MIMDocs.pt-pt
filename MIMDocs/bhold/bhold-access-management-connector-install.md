@@ -10,10 +10,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: ae9cc0bb4c63089c6733c06b7b035b2b9566fdd0
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79041868"
 ---
 # <a name="access-management-connector-installation"></a>Instalação de conector de gestão de acesso
@@ -33,7 +33,7 @@ Para instalar o módulo de Controlo de Gestão de Acesso, inicie sessão como me
 
 Para executar o ficheiro do programa como administrador, clique no ficheiro à direita e, em seguida, clique em **Executar como administrador**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Instalação de integração BHOLD FIM](https://technet.microsoft.com/library/jj134093(v=ws.10).aspx) Para ativar o autosserviço de funções do utilizador final, pode instalar o módulo de integração BHOLD FIM
 - [Guia de instalação BHOLD](bhold-installation-guide.md)

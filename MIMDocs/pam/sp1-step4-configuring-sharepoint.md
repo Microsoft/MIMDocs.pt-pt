@@ -12,10 +12,10 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 17776b882b6a3f67313e2e41b424cbdaf22b6a44
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043805"
 ---
 # <a name="step-4-configuring-sharepoint"></a>Passo 4: Configurar o SharePoint
@@ -28,14 +28,14 @@ O SharePoint tem de ser o SharePoint Foundation 2013 com o SP1.
 
 Para domínios associados a servidores, inicie sessão como MIMAdmin
 
-1. Execute o PowerShell como Administrador
+1. Execute o PowerShell como administrador
 2.  .\PAMDeployment.ps1
 3.  Selecione a Opção 4 do Menu (Configuração do SharePoint)
 
 
 Para servidores do grupo de trabalho
 
-1. Execute o PowerShell como Administrador
+1. Execute o PowerShell como administrador
 2.  cd $env:SYSTEMDRIVE\PAM
 3.  .\PAMDeployment.ps1
 4. Selecione a Opção 4 do Menu (Configuração do SharePoint)

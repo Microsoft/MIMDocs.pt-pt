@@ -12,10 +12,10 @@ ms.assetid: 9471ccc1-bafe-46ee-b169-1464262380e1
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 7df1a4ca7a33aa2a00ac0b2c3ef24056c9720b5b
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043244"
 ---
 # <a name="upgrade-from-forefront-identity-manager-2010-r2"></a>Atualização do Forefront Identity Manager 2010 R2
@@ -115,7 +115,7 @@ Este guia pressupõe que já configurou o seguinte:
 
 9. Introduza os detalhes do servidor de correio. Se o servidor de correio estiver localizado no servidor atual, introduza “localhost” como a localização do servidor de correio. Clique em **Seguinte** para continuar.
 
-    ![Imagem da configuração da ligação ao servidor de correio](media/MIM-UpgSP6.png)
+    ![Imagem da configuração da ligação ao servidor de e-mail](media/MIM-UpgSP6.png)
 
 10. Selecione um certificado para o Serviço a utilizar para validar os clientes. Deve utilizar o certificado existente do arquivo de certificados local que foi utilizado anteriormente pelo Serviço FIM.
 

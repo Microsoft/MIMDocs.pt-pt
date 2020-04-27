@@ -1,5 +1,5 @@
 ---
-title: Planeamento do Microsoft Identity Manager 2016 em ambiente TLS 1.2  Microsoft Docs
+title: Planeamento do Microsoft Identity Manager 2016 em ambiente TLS 1.2 [ Microsoft Docs
 description: Planeamento do Microsoft Identity Manager 2016 em ambiente TLS 1.2
 keywords: ''
 author: billmath
@@ -12,10 +12,10 @@ ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: f8d0be0cb9ffa0f32415f11b407954cb0c985024
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043448"
 ---
 # <a name="planning-mim-2016-sp2-in-tls-12-or-fips-mode-environments"></a>Planeamento MIM 2016 SP2 em ambientes tLS 1.2 ou modo FIPS

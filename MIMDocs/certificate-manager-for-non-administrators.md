@@ -12,10 +12,10 @@ ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 91409b0272c0b21cac90dbc4c162e5bf4d9f8464
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042139"
 ---
 # <a name="enroll-smart-cards-for-non-administrators"></a>Inscrição de smart cards para não administradores
@@ -49,7 +49,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     4.  Edite o ficheiro denominado AppxManifest.xml
 
-    5.  No elemento &lt;Identidade&gt; modificar o valor do atributo da Editora ao objeto do seu certificado de assinatura, por exemplo, "CN=ABCD"
+    5.  No &lt;elemento&gt; Identidade modificar o valor do atributo da Editora ao objeto do seu certificado de assinatura, por exemplo, "CN=ABCD"
 
         Neste campo, o assunto deve ser o mesmo que o assunto do certificado de assinatura que estiver a utilizar para assinar a aplicação.
 
@@ -69,13 +69,13 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     1.  Inicie sessão no portal do CM como um utilizador com privilégios administrativos.
 
-    2.  Vá à **Administração** &gt; **gerir os modelos** de perfil e certifique-se de que a caixa é verificada ao lado do modelo de perfil que criou e, em seguida, clique em Copiar um modelo de perfil selecionado.
+    2.  Aceda a **Administração** &gt; **Gerir Modelos de Perfil** e certifique-se de que seleciona a caixa junto ao modelo de perfil que criou e, em seguida, clique em Copiar um modelo de perfil selecionado.
 
     3.  Escreva o nome do modelo de perfil, adicione “nonAdmin” e clique em **OK**.
 
     4.  Quando as definições gerais do modelo de perfil forem apresentadas, desloque-se para baixo e, em **Configuração do Smart Card**, clique em **Alterar Definições**.
 
-    5.  Em **Valor inicial da chave admin (hex)** , introduza a chave de administrador predefinida: “010203040506070801020304050607080102030405060708”
+    5.  Em **Valor inicial da chave admin (hex)**, introduza a chave de administrador predefinida: “010203040506070801020304050607080102030405060708”
 
     6.  Desloque-se para baixo e clique em **OK**.
 

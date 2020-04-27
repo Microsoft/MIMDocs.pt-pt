@@ -12,17 +12,17 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 58a70336af4f79d87d6175aa99dc79fc81aa62dd
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043788"
 ---
 # <a name="step-5-installingconfiguring-pam"></a>Passo 5: Instalar/configurar a PAM
 
 > [!div class="step-by-step"]
 > [« Passo 4](sp1-step4-configuring-sharepoint.md)
-> [Passo 6 »](sp1-step6-setup-pam-trust.md)
+> [Passo 6»](sp1-step6-setup-pam-trust.md)
 
 Para um PAMServer associado a um domínio, inicie sessão como MIMAdmin; caso contrário, inicie sessão como administrador local.
 1. Execute o PowerShell como Administrador
@@ -45,4 +45,4 @@ Depois de o PAMServer reiniciar, inicie sessão novamente no computador com a co
 
 > [!div class="step-by-step"]
 > [« Passo 4](sp1-step4-configuring-sharepoint.md)
-> [Passo 6 »](sp1-step6-setup-pam-trust.md)
+> [Passo 6»](sp1-step6-setup-pam-trust.md)

@@ -12,10 +12,10 @@ ms.assetid: c6e3cd02-1e32-4194-a8ed-3a0b3d022a43
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 4fb5689400d170adc19f15cbbc2d45915cb39fe3
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043601"
 ---
 # <a name="tier-model-for-partitioning-administrative-privileges"></a>Modelo de camada para criação de partições de privilégios administrativos
@@ -49,7 +49,7 @@ As restrições de início de sessão devem ser impostas para assegurar que as c
 As restrições de início de sessão podem ser impostas com:
 
 - Restrições de Direitos de Início de Sessão da Política de Grupo, incluindo:
-    - Negar o acesso a este computador a partir da rede
+    - Recusar acesso a este computador à rede
     - Negar o início de sessão como uma tarefa de lote
     - Negar o início de sessão como um serviço
     - Negar o início de sessão localmente
@@ -57,7 +57,7 @@ As restrições de início de sessão podem ser impostas com:
 - Políticas de autenticação e silos, se utilizar o Windows Server 2012 ou posterior
 - Autenticação seletiva, se a conta estiver numa floresta administrativa dedicada
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - O artigo seguinte, [Planear um ambiente bastion](planning-bastion-environment.md), descreve como adicionar uma floresta administrativa dedicada para o Microsoft Identity Manager para estabelecer as contas administrativas.
 - Os postos de [trabalho Priviledged Access](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) fornecem um sistema operativo dedicado para tarefas sensíveis protegidas contra ataques na Internet e vetores de ameaças.

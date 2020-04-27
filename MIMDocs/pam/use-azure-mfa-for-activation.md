@@ -11,10 +11,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5134a112-f73f-41d0-a5a5-a89f285e1f73
 ms.openlocfilehash: 512a1887329f9ec5c93fd69f0ce0b22495ba009c
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043550"
 ---
 # <a name="using-azure-mfa-for-activation"></a>Utilizar o MFA do Azure para ativação
@@ -27,7 +27,7 @@ ms.locfileid: "79043550"
 Quando configurar uma função de PAM, pode escolher como autorizar os utilizadores que pedem para ativar a função. As opções que a atividade de autorização de PAM implementa são:
 
 - Aprovação do proprietário da função
-- [Multi-Factor Authentication do Azure (MFA)](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
+- [Azure Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
 
 Se nenhuma verificação estiver ativada, os utilizadores candidatos são automaticamente ativados para a respetiva função.
 
@@ -38,13 +38,13 @@ O Multi-Factor Authentication do Microsoft Azure (MFA) é um serviço de autenti
 Para utilizar o Azure MFA com MIM, precisa de:
 
 - Acesso à Internet a partir de cada Serviço MIM que fornece o PAM, para contactar o serviço MFA do Azure
-- Uma subscrição do Azure
+- Uma subscrição do Azure.
 - Licenças do Azure Active Directory Premium para utilizadores candidatos ou um meio alternativo de licenciamento do MFA do Azure
 - Números de telefone para todos os utilizadores candidatos
 
 ## <a name="creating-an-azure-mfa-provider"></a>Criar um Fornecedor de MFA do Azure
 
-Nesta secção, configura o seu fornecedor De MFA Azure no Microsoft Azure Ative Directory.  Se já estiver a utilizar o Azure MFA, autónomo ou configurado com o Azure Ative Directory Premium, passe para a secção seguinte.
+Nesta secção, configura o seu fornecedor De MFA Azure no Microsoft Azure Ative Directory.Se já estiver a utilizar o MFA do Azure, de forma autónoma ou configurado com o Azure Active Directory Premium, avance para a secção seguinte.
 
 1.  Abra um browser e aceda ao [Portal clássico do Azure](https://manage.windowsazure.com) como administrador de subscrição do Azure.
 
@@ -72,7 +72,7 @@ Anteriormente, geraria um ficheiro que inclui o material de autenticação para 
 
 5.  Na janela **Multi-Factor Authentication do Azure**, clique em **SDK**, em **Transferências**.
 
-6.  Clique na ligação **Transferir** na coluna ZIP do ficheiro com o idioma **SDK para ASP.net 2.0 C\#** .
+6.  Clique no link **Descarregamento** na coluna ZIP para o ficheiro com o idioma **\#SDK para ASP.net 2.0 C**.
 
 ![Transferir o SDK do Multi-Factor Authentication - captura de ecrã](media/PAM-Azure-MFA-Activation-Image-1.png)
 
@@ -87,11 +87,11 @@ Anteriormente, geraria um ficheiro que inclui o material de autenticação para 
 
 2.  Crie uma nova pasta de diretório no diretório onde o Serviço MIM foi instalado, como ```C:\Program Files\Microsoft Forefront Identity Manager\2010\Service\MfaCerts```.
 
-3.  Utilizando o Windows Explorer, navegue na pasta ```pf\certs``` do ficheiro ZIP descarregado na secção anterior. Copie o ficheiro ```cert\_key.p12``` para o novo diretório.
+3.  Utilizando o ```pf\certs``` Windows Explorer, navegue na pasta do ficheiro ZIP descarregado na secção anterior. Copie ```cert\_key.p12``` o ficheiro para o novo diretório.
 
-4.  Utilizando o Windows Explorer, navegue na pasta ```pf``` do ZIP e abra o ficheiro ```pf\_auth.cs``` num editor de texto como o Wordpad.
+4.  Utilizando o ```pf``` Windows Explorer, navegue na pasta ```pf\_auth.cs``` do ZIP e abra o ficheiro num editor de texto como o Wordpad.
 
-5. Encontre estes três parâmetros: ```LICENSE\_KEY```, ```GROUP\_KEY```, ```CERT\_PASSWORD```.
+5. Encontre estes três ```LICENSE\_KEY```parâmetros: . . ```GROUP\_KEY``` ```CERT\_PASSWORD```
 
 ![Copiar os valores do ficheiro pf\_auth.cs - captura de ecrã](media/PAM-Azure-MFA-Activation-Image-2.png)
 
@@ -99,11 +99,11 @@ Anteriormente, geraria um ficheiro que inclui o material de autenticação para 
 
 7. Copie os valores dos parâmetros LICENSE\_KEY, GROUP\_KEY e CERT\_PASSWORD no ficheiro pf\_auth.cs para os respetivos elementos xml no ficheiro MfaSettings.xml.
 
-8. No elemento XML **<CertFilePath>** , especifique o nome de caminho completo do ficheiro cert\_key.p12 extraído anteriormente.
+8. No **<CertFilePath>** elemento XML, especifique o\_nome completo do caminho completo do ficheiro cert key.p12 extraído anteriormente.
 
-9. No elemento **<username>** , introduza qualquer nome de utilizador.
+9. No **<username>** elemento introduza qualquer nome de utilizador.
 
-10. No elementos **<DefaultCountryCode>** , introduza o código de país para marcar os seus utilizadores, como 1 para os Estados Unidos e Canadá. Este valor é utilizado no caso dos utilizadores estarem registados com números de telefone que não tenham um código de país. Se o número de telefone de um utilizador tiver um código de país internacional distinto do configurado para a organização, esse código de país tem de ser incluído no número de telefone que será registado.
+10. No **<DefaultCountryCode>** elemento introduza o código do país para marcar os seus utilizadores, como 1 para os Estados Unidos e Canadá. Este valor é utilizado no caso dos utilizadores estarem registados com números de telefone que não tenham um código de país. Se o número de telefone de um utilizador tiver um código de país internacional distinto do configurado para a organização, esse código de país tem de ser incluído no número de telefone que será registado.
 
 11. Guarde e substitua o ficheiro **MfaSettings.xml** na pasta do Serviço MIM ```C:\Program Files\Microsoft Forefront Identity Manager\2010\\Service```.
 
@@ -132,13 +132,13 @@ Set-PAMRole (Get-PAMRole -DisplayName "R") -MFAEnabled 1
 
 O MFA do Azure pode ser desativado para uma função especificando o parâmetro "-MFAEnabled 0" no comando `Set-PAMRole`.
 
-## <a name="troubleshooting"></a>Resolução de Problemas
+## <a name="troubleshooting"></a>Resolução de problemas
 
 Os eventos seguintes podem ser encontrados no registo de eventos da Gestão de Acesso Privilegiado:
 
-| ID  | Gravidade | Gerado por | Description |
+| ID  | Gravidade | Gerado por | Descrição |
 |-----|----------|--------------|-------------|
-| 101 | Error       | Serviço MIM            | O utilizador não concluiu o MFA do Azure (por exemplo, não atendeu o telefone) |
+| 101 | Erro       | Serviço MIM            | O utilizador não concluiu o MFA do Azure (por exemplo, não atendeu o telefone) |
 | 103 | Informações | Serviço MIM            | O utilizador concluiu o MFA do Azure durante a ativação                       |
 | 825 | Aviso     | Serviço de Monitorização de PAM | O número de telefone foi alterado                                |
 

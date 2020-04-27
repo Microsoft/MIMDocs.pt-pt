@@ -10,10 +10,10 @@ ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: 72b77034d5591d0bc2ab420f185acee719fe8324
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043006"
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Melhores Práticas do Microsoft Identity Manager 2016
@@ -30,7 +30,7 @@ A configuração do SQL Server é fundamental para o desempenho ideal do sistema
 
 -   [Optimizing tempdb Performance (Otimizar o Desempenho de tempdb)](http://go.microsoft.com/fwlink/?LinkID=188267)
 
--   [SQL Server Best Practices Article (Artigo de Melhores Práticas do SQL Server)](http://go.microsoft.com/fwlink/?LinkID=188268)
+-   [Artigo de Melhores Práticas do SQL Server](http://go.microsoft.com/fwlink/?LinkID=188268)
 
 -   [Reorganizing and Rebuilding Indexes (Reorganizar e Reconstruir Índices)](http://go.microsoft.com/fwlink/?LinkID=188269)
 
@@ -127,7 +127,7 @@ Seguem-se as melhores práticas para configurar o Microsoft Exchange Server para
 
 - Configure a conta de serviço para que possa aceitar correio apenas de endereços de e-mail internos. Especificamente, a caixa de correio de conta de serviço nunca deve conseguir receber correio de servidores SMTP externos.
 
-#### <a name="to-configure-the-service-account"></a>Configurar a conta de serviço
+#### <a name="to-configure-the-service-account"></a>Para configurar a conta de serviço
 
 1.  Na Consola de Gestão do Exchange, selecione a **Conta de serviço do Serviço FIM**.
 
@@ -281,7 +281,7 @@ Para configurar os servidores a executar componentes do servidor MIM de uma form
 
 -   Negar o início de sessão localmente
 
--   Negar o acesso a este computador a partir da rede
+-   Recusar acesso a este computador à rede
 
 As contas de serviço não devem ser um membro do grupo de administradores locais.
 
@@ -358,7 +358,7 @@ Para implementar o SSL:
 
 29. Clique em http://servername.
 
-30. Mude http://servername para https://servernamee, em seguida, clique OK.
+30. Mude http://servername https://servernamepara, e depois clique OK.
 
 31. Clique em Iniciar, clique em Executar, escreva iisreset e, em seguida, clique em OK.
 
@@ -494,7 +494,7 @@ As condições negativas são as condições de associações que utilizam os se
 
 A utilização de condições com base em atributos de referência com vários valores deve ser minimizada porque um grande número destes conjuntos pode afetar o desempenho de operações no atributo utilizado na condição de associação.
 
-### <a name="password-reset"></a>Reposição de Palavra-passe
+### <a name="password-reset"></a>Repor palavra-passe
 
 #### <a name="kiosk-like-computers-that-are-used-for-password-reset-should-set-local-security-to-clear-the-virtual-memory-pagefile"></a>Os computadores semelhantes a quiosques que são utilizados para a reposição de palavras-passe devem definir segurança local para limpar o ficheiro de paginação de memória virtual
 
@@ -550,7 +550,7 @@ Existem 13 atributos principais atribuídos a todos os tipos de recurso. Não de
 
 -   DeletedTime
 
--   Description
+-   Descrição
 
 -   DetectedRulesList • DisplayName
 
@@ -558,7 +558,7 @@ Existem 13 atributos principais atribuídos a todos os tipos de recurso. Não de
 
 -   ExpirationTime
 
--   Locale
+-   Região
 
 -   MVObjectID
 
@@ -632,7 +632,7 @@ O objetivo da MIM é processar pedidos que possam ser iniciados por vários clie
 
 Para obter informações adicionais consulte [Understanding FIM Service Partitions](https://social.technet.microsoft.com/wiki/contents/articles/2363.understanding-fim-service-partitions.aspx).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 - [Guia de backup e restauro fim](http://go.microsoft.com/fwlink/?LinkID=165864)
 - [Como sincronizar utilizadores do Diretório Ativo para o FIM](http://go.microsoft.com/fwlink/?LinkID=188277) 
 - Visão geral do modelo de [recuperação.](http://go.microsoft.com/fwlink/?LinkID=185370)

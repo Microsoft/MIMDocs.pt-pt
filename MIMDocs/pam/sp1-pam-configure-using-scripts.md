@@ -12,10 +12,10 @@ ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
 ms.openlocfilehash: 102754fc88af32cb9abed40716ba9168a041d58e
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043890"
 ---
 # <a name="configure-pam-using-scripts"></a>Configurar a PAM através de scripts
@@ -43,9 +43,9 @@ Passos:
 
 Antes de proceder à atualização do PAMDeploymentConfig.xml e coloque a cópia atualizada em todas as máquinas.
 
-### <a name="setup"></a>Setup
+### <a name="setup"></a>Configuração
 
-|Machine   | Quem executar como   |Comandos   |
+|Máquina   | Quem executar como   |Comandos   |
 |---|---|---|
 |  PRIVDC |Administrador de Domínio PRIV   | .\PAMDeployment.ps1 Selecione a opção 1 do menu (Configuração da Floresta PRIV)   |
 |   |   |  O passo acima gera um SIDs.txt. Este ficheiro tem de ser copiado para $envDrive:PAM do CORPDC antes de executar o passo seguinte. |
@@ -57,7 +57,7 @@ Antes de proceder à atualização do PAMDeploymentConfig.xml e coloque a cópia
 
 ### <a name="validation"></a>Validação
 
-|  Machine | Quem executar como   | Comandos   |
+|  Máquina | Quem executar como   | Comandos   |
 |---|---|---|
 | CORPClient  | Utilizador CORP (administrador local)  |   .\PAMDeployment.ps1 Selecione a opção 7 do menu (Configuração do Cliente de PAM do MIM)  |
 | CORPDC  | Administrador de Domínio CORP   | Import-module .\PAMValidation.psm1 ; Create-PAMValidationCORPDCConfig   |

@@ -12,10 +12,10 @@ ms.assetid: 3ac5b990-1678-4996-996d-cbd84b8426b4
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 15eb35d01ed5c5c6e125c45f238bb2f7a7c564d7
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042122"
 ---
 # <a name="capacity-planning-guide"></a>Guia de planeamento de capacidade
@@ -43,7 +43,7 @@ Os principais fatores que afetam a capacidade e o desempenho de uma implantaçã
 | Hardware | O hardware físico (físico ou virtual) para cada componente MIM, incluindo CPU, memória, adaptador de rede e configuração de disco rígido. |
 | Objetos de configuração de políticas do MIM | O número e o tipo dos objetos de configuração de políticas do MIM, incluindo conjuntos, Regras de Política de Gestão (MPRs) e fluxos de trabalho. |
 | Escala | Os utilizadores, grupos, grupos calculados e tipos de objetos personalizados a gerir pela MIM 2016. Além disso, considere a complexidade dos grupos dinâmicos e não se esqueça de ter em consideração o aninhamento de grupos. |
-| Carga | Frequência de utilização. Operações como novo grupo ou criação de utilizadores, resets de passwords ou visitas de portal por minuto ou hora. Tenha em atenção que a carga pode variar no decorrer de uma hora, um dia, uma semana ou um ano. Consoante o componente, pode optar por conceber para o pico de carga ou a carga média. |
+| Carregar | Frequência de utilização. Operações como novo grupo ou criação de utilizadores, resets de passwords ou visitas de portal por minuto ou hora. Tenha em atenção que a carga pode variar no decorrer de uma hora, um dia, uma semana ou um ano. Consoante o componente, pode optar por conceber para o pico de carga ou a carga média. |
 
 ## <a name="hosting-microsoft-identity-manager-components"></a>Alojamento de componentes do Microsoft Identity Manager
 
@@ -93,7 +93,7 @@ A configuração de políticas do MIM também inclui as decisões sobre o aprovi
 
 - Pensa utilizar o aprovisionamento sem código? Se o fizer, isso afetará o número de entradas de regras esperadas, bem como os fluxos de trabalho e os pedidos associados no sistema.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Considerações sobre a topologia da implementação do MIM](topology-considerations.md)
 - O Guia de Planeamento de [Capacidades (FIM) 2010](https://www.microsoft.com/en-us/download/details.aspx?id=7437) do Gestor de Identidade de Vanguarda (FIM) de 2010 entra em mais detalhes sobre os resultados de um teste de construção e testes de desempenho.

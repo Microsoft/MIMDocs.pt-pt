@@ -9,10 +9,10 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
 ms.openlocfilehash: 05e05966bf90700885e67ba16f10ab0d7864cf10
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79043618"
 ---
 # <a name="step-7--elevate-a-users-access"></a>Passo 7 – Elevar o acesso de um utilizador
@@ -90,9 +90,9 @@ Ative pedindo acesso privilegiado através do portal de amostra de PAM.
     ```
 
 3. Quando lhe for pedido, escreva a palavra-passe para a conta PRIV.Jen. Será apresentada uma nova janela de browser.
-4. Navegue para http://pamsrv.priv.contoso.local:8090 e certifique-se de que uma página web do portal da amostra é visível.
-5. No Internet Explorer, selecione **Ferramentas** > **Opções da Internet** e clique no separador **Segurança**.
-6. Clique em **Zona de intranet local** > **Sites** > **Avançadas** e, em seguida, adicione o site à zona.
+4. Navegue http://pamsrv.priv.contoso.local:8090 para garantir que uma página web do portal da amostra seja visível.
+5. No Internet Explorer, selecione **Tools** > **Internet Options** e clique no separador **Segurança.**
+6. Clique na **zona** > intranet local**Sites** > **Avançados** e adicione o site à zona.
 7. Feche a caixa de diálogo **Opções da Internet**.
 8. No separador à esquerda, clique em **Ativar**. Selecione a **Função PAM** e, em seguida, clique em **Ativar**.
 

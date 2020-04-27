@@ -10,10 +10,10 @@ ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
 ms.openlocfilehash: b28c9623e3a05168adafc19c43634d686dc7e8e2
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79042411"
 ---
 # <a name="microsoft-identity-manager-2016-password-management"></a>Gestão de Palavras-passe do Microsoft Identity Manager 2016
@@ -45,7 +45,7 @@ A DLL de extensão de palavra-passe em .NET é chamada sempre que uma chamada de
 
 | A gestão de palavras-passe é suportada por predefinição nos agentes de gestão para: | Se utilizar uma extensão de palavra-passe, a gestão de palavras-passe também é suportada nos agentes de gestão para: |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Serviços de Domínio do                                                          | Ficheiros de texto de par atributo-valor                                                                    |
+| Active Directory                                                          | Ficheiros de texto de par atributo-valor                                                                    |
 | Serviços LDS do Active Directory (ADLDS)                   | Ficheiros de texto delimitado                                                                               |
 | Servidor de Diretório IBM                                                      | Directory Services Markup Language (DSML)                                                          |
 | Lotus Notes                                                               | Extensible Connectivity                                                                            |
@@ -53,7 +53,7 @@ A DLL de extensão de palavra-passe em .NET é chamada sempre que uma chamada de
 | Servidores de diretório Sun e Netscape                                        | Base de Dados Universal IBM DB2                                                                         |
 |                                                                           | LDAP Data Interchange Format (LDIF)                                                                |
 |                                                                           | Microsoft SQL Server                                                                               |
-|                                                                           | Base de Dados Oracle                                                                                    |
+|                                                                           | Base de dados Oracle                                                                                    |
 
 ## <a name="password-synchronization"></a>Sincronização de palavras-passe
 
@@ -148,14 +148,14 @@ Idealmente, sempre que um utilizador alterar uma palavra-passe, a alteração se
 
 Algumas falhas são graves o suficiente para que deixe de ser possível concluir a operação com êxito por muitas vezes que a tente repetir. Nestes casos, é registado um evento de erro e o processo é parado. Os seguintes eventos não são repetidos:
 
-| Evento | Gravidade    | Description                                                                                                                                                            |
+| Evento | Gravidade    | Descrição                                                                                                                                                            |
 |-------|-------------|-----------|
 | 6919  | Informações | Uma operação de definição de sincronização de palavra-passe não foi realizada porque o carimbo de data/hora estava desatualizado.                                                                      |
-| 6921  | Error       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está ativada no agente de gestão de destino.                                |
-| 6922  | Error       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está configurada no agente de gestão de destino.                             |
+| 6921  | Erro       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está ativada no agente de gestão de destino.                                |
+| 6922  | Erro       | A operação de definição de sincronização de palavra-passe não foi processada porque a gestão de palavras-passe não está configurada no agente de gestão de destino.                             |
 | 6923  | Aviso     | A operação de definição de sincronização de palavra-passe não foi processada porque o objeto do espaço conector de destino não foi encontrado no diretório ligado.                  |
-| 6927  | Error       | A operação de definição de sincronização de palavra-passe falhou porque a palavra-passe não cumpre a política de palavras-passe do sistema de destino.                                      |
-| 6928  | Error       | A operação de definição de sincronização de palavra-passe falhou porque a extensão de palavra-passe do agente de gestão de destino não está configurada para suportar operações de definição de palavra-passe. |
+| 6927  | Erro       | A operação de definição de sincronização de palavra-passe falhou porque a palavra-passe não cumpre a política de palavras-passe do sistema de destino.                                      |
+| 6928  | Erro       | A operação de definição de sincronização de palavra-passe falhou porque a extensão de palavra-passe do agente de gestão de destino não está configurada para suportar operações de definição de palavra-passe. |
 
 ## <a name="user-based-password-change-management"></a>Gestão da alteração de palavra-passe baseada no utilizador
 

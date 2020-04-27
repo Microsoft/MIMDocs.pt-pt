@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com a Palavra-passe self-service reset  Microsoft Docs
+title: Trabalhar com a Palavra-passe self-service reset [ Microsoft Docs
 description: Veja as novidades da Reposição Personalizada de Palavra-passe no MIM 2016, incluindo como o SSPR funciona com a autenticação multifator.
 keywords: ''
 author: billmath
@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
 ms.openlocfilehash: 41aba931111d6ef46e60dfed173362e59c411dfe
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79044281"
 ---
 # <a name="self-service-password-reset-deployment-options"></a>Opções de implementação de reset de palavra-passe self-service
 
-Para novos clientes licenciados [para o Azure Ative Directory Premium,](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)recomendamos a utilização de [uma redefinição da palavra-passe autosserviço Azure AD](/azure/active-directory/authentication/concept-sspr-howitworks) para proporcionar a experiência do utilizador final.  O reset de palavras-passe autosserviço Azure AD fornece uma experiência baseada na Web e no Windows para um utilizador redefinir a sua própria palavra-passe, e suporta muitas das mesmas capacidades que mim, incluindo e-mails alternativos e portões de Q&A.  Ao implementar o reset de palavras-passe de autosserviço Azure AD, o Azure AD Connect suporta a [reescrita das novas palavras-passe para AD DS](/azure/active-directory/authentication/concept-sspr-writeback), e o Serviço de Notificação de Alterações de [Palavras-Passe](deploying-mim-password-change-notification-service-on-domain-controller.md) MIM pode ser usado para encaminhar as palavras-passe para outros sistemas, como o servidor de diretório de outro fornecedor, também.  A implementação de MIM para gestão de [passwords](infrastructure/mim2016-password-management.md) não requer a implementação do Serviço MIM ou do reset ou dos portais de registo do autosserviço MIM.  Em vez disso, pode seguir estes passos:
+Para novos clientes licenciados [para o Azure Ative Directory Premium,](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-licensing)recomendamos a utilização de [uma redefinição da palavra-passe autosserviço Azure AD](/azure/active-directory/authentication/concept-sspr-howitworks) para proporcionar a experiência do utilizador final.  O reset de palavras-passe autosserviço Azure AD fornece uma experiência baseada na Web e no Windows para um utilizador redefinir a sua própria palavra-passe, e suporta muitas das mesmas capacidades que mim, incluindo e-mails alternativos e portões Q&A.  Ao implementar o reset de palavras-passe de autosserviço Azure AD, o Azure AD Connect suporta a [reescrita das novas palavras-passe para AD DS](/azure/active-directory/authentication/concept-sspr-writeback), e o Serviço de Notificação de Alterações de [Palavras-Passe](deploying-mim-password-change-notification-service-on-domain-controller.md) MIM pode ser usado para encaminhar as palavras-passe para outros sistemas, como o servidor de diretório de outro fornecedor, também.  A implementação de MIM para gestão de [passwords](infrastructure/mim2016-password-management.md) não requer a implementação do Serviço MIM ou do reset ou dos portais de registo do autosserviço MIM.  Em vez disso, pode seguir estes passos:
 
 - Em primeiro lugar, se precisar de enviar senhas para diretórios que não o Azure AD e a AD DS, implemente o MIM Sync com conectores para Serviços de Domínio de Diretório Ativo e quaisquer sistemas de destino adicionais, configure mim para gestão de [passwords](infrastructure/mim2016-password-management.md) e implemente o Serviço de Notificação de [Alterações de Passwords.](deploying-mim-password-change-notification-service-on-domain-controller.md)
 - Em seguida, se precisar de enviar senhas para diretórios que não o Azure AD, configure o Azure AD Connect para [reescrever as novas palavras-passe para AD DS](/azure/active-directory/authentication/concept-sspr-writeback).
@@ -81,7 +81,7 @@ Na secção seguinte, irá configurar o fornecedor do Azure MFA no Microsoft Azu
 
 1.  Criar um fornecedor de [MFA.](/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider)
 
-2. Abra um caso de suporte e solicite o C#SDK direto para ASP.net 2.0 . O SDK só será fornecido aos utilizadores atuais de MIM com MFA porque o SDK direto foi depreciado. Os novos clientes devem adotar a próxima versão da MIM que se integrará com o servidor MFA.
+2. Abra um caso de suporte e solicite o SDK direto para ASP.net 2.0 C#. O SDK só será fornecido aos utilizadores atuais de MIM com MFA porque o SDK direto foi depreciado. Os novos clientes devem adotar a próxima versão da MIM que se integrará com o servidor MFA.
 
 3. Copie o ficheiro ZIP resultante para todos os sistemas onde o serviço MIM estiver instalado.  Tenha em atenção que o ficheiro ZIP contém material para chaves, que é utilizado para efetuar a autenticação no serviço Azure MFA.
 

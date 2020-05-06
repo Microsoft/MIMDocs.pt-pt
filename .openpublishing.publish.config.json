@@ -2,7 +2,7 @@
   "build_entry_point": "docs.ps1",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
-"docsets_to_publish": [
+  "docsets_to_publish": [
     {
       "docset_name": "MIMDocs",
       "build_source_folder": "MIMDocs",
@@ -43,7 +43,7 @@
         "Conceptual": "Content"
       }
     },
-        {
+    {
       "docset_name": "MIMTroubleshoot",
       "build_source_folder": "MIMDocs/Troubleshoot",
       "build_output_subfolder": "MIMDocs-Troubleshoot",
@@ -61,7 +61,7 @@
     "master-oldev",
     "live-oldev",
     "live"
-      ],
+  ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/MIMDocs.pt-pt",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
@@ -83,5 +83,8 @@
       }
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }

@@ -12,18 +12,18 @@ ms.assetid: 68ec2145-6faa-485e-b79f-2b0c4ce9eff7
 ROBOTS: noindex,nofollow
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 7a0a0437e767f793150d875bcaf31213a7fdf627
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 3098816d07603384a28db47c0bc60ac92a340e8f
+ms.sourcegitcommit: 80507a128d2bc28ff3f1b96377c61fa97a4e7529
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043669"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83279985"
 ---
 # <a name="step-3--prepare-a-pam-server"></a>Passo 3 – Preparar um servidor de PAM
 
 > [!div class="step-by-step"]
-> [« Passo 2](step-2-prepare-priv-domain-controller.md)
-> [Passo 4»](step-4-install-mim-components-on-pam-server.md)
+> [« Passo 2](step-2-prepare-priv-domain-controller.md) 
+>  [Passo 4 »](step-4-install-mim-components-on-pam-server.md)
 
 ## <a name="install-windows-server-2012-r2"></a>Instalar o Windows Server 2012 R2
 
@@ -67,7 +67,7 @@ Adicione as funções de Servidor Web (IIS) e Servidor Aplicacional, as funciona
 Configure a política de segurança do servidor para permitir que as contas recentemente criadas sejam executadas como serviços.
 
 1.  Lance o programa de **Política de Segurança Local.**   
-2.  Navegue para a atribuição de**direitos**dos utilizadores de **políticas** > locais.  
+2.  Navegue para a atribuição de **direitos**dos utilizadores de políticas  >  **User Rights Assignment**locais.  
 3.  No painel de detalhes, clique com o botão direito do rato em **Iniciar sessão como um serviço** e selecione **Propriedades**.  
 4.  Clique em **Adicionar Utilizador ou Grupo** e, nos nomes de utilizadores e grupos, escreva *priv\mimmonitor; priv\MIMService; priv\SharePoint; priv\mimcomponent; priv\SqlServer*. Clique em **Verificar Nomes** e clique em **OK**.  
 
@@ -186,7 +186,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 
     Certifique-se de que variável **CompatibilityLevel** está definida como *14*. Se devolver *15*, a coleção de sites não foi criada para a versão da experiência de 2010; elimine a coleção de sites e reformule-a.
 
-2.  Execute os seguintes comandos do PowerShell na **Shell de Gestão do SharePoint 2013**. Isto desativará o viewstate do lado do servidor do SharePoint e a tarefa do SharePoint **Tarefa de Análise do Estado de Funcionamento (Hora a Hora, Temporizador do Microsoft SharePoint Foundation, Todos os Servidores)**.
+2.  Execute os seguintes comandos do PowerShell na **Shell de Gestão do SharePoint 2013**. Isto irá desativar o ViewState do lado do servidor SharePoint e o Trabalho de Análise de Saúde da tarefa SharePoint **(Hora, Microsoft SharePoint Foundation Timer, Todos os Servidores)**.
 
     ```PowerShell
     $contentService = [Microsoft.SharePoint.Administration.SPWebService]::ContentService;
@@ -204,7 +204,7 @@ Em seguida, crie uma Coleção de Sites do SharePoint associada a essa aplicaç�
 ## <a name="set-the-website-as-the-local-intranet"></a>Definir o site como a intranet local
 
 1. Inicie o Internet Explorer e abra um novo separador do browser
-2. Navegue http://pamsrv.priv.contoso.local:82/ para e inscreva-se como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
+2. Navegue `http://pamsrv.priv.contoso.local:82/` para e inscreva-se como PRIV\MIMAdmin.  Será apresentado um site do SharePoint vazio denominado ’’Portal do MIM’’.  
 3. No Internet Explorer, abra as **Opções da Internet**, mude para o separador **Segurança**, selecione **Intranet local** e adicione o URL `http://pamsrv.priv.contoso.local:82/`.
 
 Se o início de sessão falhar, os SPNs Kerberos criados anteriormente no [Passo 2](step-2-prepare-priv-domain-controller.md) podem ter de ser atualizados.
@@ -216,5 +216,5 @@ Utilizando os **Serviços** (localizado em Ferramentas Administrativas), inicie 
 No Passo 4, começará a instalar os componentes do MIM no servidor de PAM.
 
 > [!div class="step-by-step"]
-> [« Passo 2](step-2-prepare-priv-domain-controller.md)
-> [Passo 4»](step-4-install-mim-components-on-pam-server.md)
+> [« Passo 2](step-2-prepare-priv-domain-controller.md) 
+>  [Passo 4 »](step-4-install-mim-components-on-pam-server.md)

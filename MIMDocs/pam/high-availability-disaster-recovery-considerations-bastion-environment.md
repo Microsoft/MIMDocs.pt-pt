@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 03e521cd-cbf0-49f8-9797-dbc284c63018
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 67ce70e6bc0603a991731cf1e5fb95751f5016c6
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 2153fdb0559a78bcc82ca6901ee7cb0cabc01f23
+ms.sourcegitcommit: 80507a128d2bc28ff3f1b96377c61fa97a4e7529
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043975"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83280104"
 ---
 # <a name="high-availability-and-disaster-recovery-considerations-for-the-bastion-environment"></a>Considerações para elevada disponibilidade e recuperação após desastre do ambiente bastion
 
@@ -53,7 +53,7 @@ O estabelecimento de confiança exige que os controladores de domínio de flores
 
 ### <a name="user-and-group-migration"></a>Migração de utilizadores e de grupos
 
-Assim que a confiança tiver sido estabelecida, podem ser criados grupos de sombra no ambiente bastion, bem como contas de utilizador para os membros desses grupos e aprovadores. Isto permite aos utilizadores ativarem funções com privilégios e obterem novamente associações de grupo de forma eficaz.
+Assim que a confiança tiver sido estabelecida, podem ser criados grupos de sombra no ambiente bastion, bem como contas de utilizador para os membros desses grupos e aprovadores. Isto permite que esses utilizadores ativem papéis privilegiados e recuperem membros eficazes do grupo.
 
 A migração de grupos e de utilizadores exige que os controladores de domínio de floresta existentes estejam online, assim como os componentes de MIM e AD do ambiente bastion.   Se os controladores de domínio de floresta existentes estiverem inacessíveis, não podem ser adicionados outros utilizadores e grupos ao ambiente bastion, mas os utilizadores e os grupos existentes não são afetados. Se uma falha de qualquer um dos componentes ocorrer durante a migração, o administrador pode tentar novamente após a falha estar resolvida.
 
@@ -77,7 +77,7 @@ A gestão de recursos requer que um controlador de domínio para o domínio de r
 
 ### <a name="monitoring-of-users-and-groups-in-the-existing-forest"></a>Monitorização dos utilizadores e grupos na floresta existente
 
-O MIM também inclui um serviço de monitorização do PAM que verifica regularmente os utilizadores e os grupos nos domínios existentes, e atualiza a base de dados do MIM e do AD em conformidade.  Este serviço não tem de estar online para a ativação de função ou durante a gestão de recursos.
+A MIM também inclui um serviço de monitorização PAM, que verifica regularmente os utilizadores e grupos nos domínios existentes, e atualiza a base de dados mim e a AD em conformidade.  Este serviço não tem de estar online para a ativação de função ou durante a gestão de recursos.
 
 A monitorização exige que os controladores de domínio de floresta existentes estejam online, assim como os componentes de MIM e AD do ambiente bastion.  
 
@@ -95,7 +95,7 @@ Os computadores que alojam Serviços de Domínio do Active Directory e os que al
 - os utilizadores peçam ativação
 - os utilizadores tenham os pedidos de suporte do Kerberos consumíveis pelos recursos numa floresta existente
 - o MIM monitorize os domínios de floresta existentes
-- o MIM envie servidores de e-mail localizados numa floresta existente.
+- MIM para enviar e-mail através de servidores de correio localizados na floresta existente.
 
 ### <a name="minimal-high-availability-topologies"></a>Topologias de elevada disponibilidade mínimas
 
@@ -182,7 +182,7 @@ Uma implementação de produção normal da gestão de acesso privilegiado inclu
 
 Após uma falha, certifique-se de que se encontra disponível, pelo menos, um controlador de domínio no ambiente bastion antes de reiniciar outros servidores.
 
-Dentro de um domínio, o Active Directory, distribui as funções de Operação Mestre Única Flexível (FSMO) nos controladores de domínio, conforme descrito em [Como Funcionam as Operações Mestres](https://technet.microsoft.com/library/cc780487.aspx).  Se um controlador de domínio falhou, poderá ser necessário descarregar uma ou mais [Funções de Controlador de Domínio](https://technet.microsoft.com/library/cc786438.aspx) em que esse controlador de domínio foi atribuído.
+Dentro de um domínio, o Active Directory, distribui as funções de Operação Mestre Única Flexível (FSMO) nos controladores de domínio, conforme descrito em [Como Funcionam as Operações Mestres](https://technet.microsoft.com/library/cc780487.aspx).  Se um controlador de domínio tiver falhado, pode ser necessário transferir uma ou mais funções [domínio controller roles that domain controller).
 
 Após determinar que um controlador de domínio não será devolvido à produção, certifique-se de que verifica se foram atribuídas quaisquer funções a esse controlador de domínio e reatribua-os conforme necessário. Pode encontrar instruções em [Ver os Titulares da Função de Mestre das Operações](https://technet.microsoft.com/library/cc816893.aspx) e os respetivos artigos relacionados.
 
@@ -214,7 +214,7 @@ O Serviço MIM é necessário para processar os pedidos de ativação.  Para que
 
 #### <a name="preparation"></a>Preparação
 Recomenda-se que implemente o Serviço MIM em vários servidores associados ao domínio PRIV.
-Para elevada disponibilidade, consulte os documentos do Windows Server para [Opções de Armazenamento e Requisitos de Hardware de Clustering de Ativação Pós-falha](https://technet.microsoft.com/library/jj612869.aspx) e [Criar um Cluster de Ativação Pós-falha do Windows Server 2012](https://blogs.msdn.com/b/clustering/archive/2012/05/01/10299698.aspx).
+Para elevada disponibilidade, consulte os documentos do Windows Server para [Opções de Armazenamento e Requisitos de Hardware de Clustering de Ativação Pós-falha](https://technet.microsoft.com/library/jj612869.aspx) e [Criar um Cluster de Ativação Pós-falha do Windows Server 2012](https://techcommunity.microsoft.com/t5/failover-clustering/creating-a-windows-server-2012-failover-cluster/ba-p/371763).
 
 Para implementação de produção por vários servidores, pode utilizar o Balanceamento de Carga na Rede (NLB) para distribuir a carga de processamento.  Também deverá ter um alias único (por exemplo, registos A ou CNAME) para que um nome comum seja exposto ao utilizador.
 

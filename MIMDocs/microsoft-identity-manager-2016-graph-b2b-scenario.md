@@ -9,12 +9,12 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 0d5f970168934f3fcc4c721aad0a439e2babcfe7
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 60af5cee7d05eb8b8c5fb279f4f182d901e91632
+ms.sourcegitcommit: 80507a128d2bc28ff3f1b96377c61fa97a4e7529
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79381510"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83280121"
 ---
 <a name="azure-ad-business-to-business-b2b-collaboration-with-microsoft-identity-managermim-2016-sp1-with-azure-application-proxy"></a>Colaboração Azure AD business-to-business (B2B) com microsoft Identity Manager (MIM) 2016 SP1 com Procuração de Aplicação Azure
 ============================================================================================================================
@@ -68,7 +68,7 @@ Mais informações podem ser encontradas no [sincronizacro Azure AD Connect: Con
 
 
 Nota: Antes de criar em MIM Sync o agente de gestão para o conector gráfico, certifique-se de que reviu o guia para a implementação do [Conector gráfico,](microsoft-identity-manager-2016-connector-graph.md)e criou uma aplicação com um ID do cliente e segredo.
-Certifique-se de que o pedido foi autorizado `User.Read.All`para `User.ReadWrite.All` `Directory.Read.All` pelo `Directory.ReadWrite.All`menos uma destas permissões: , ou . 
+Certifique-se de que o pedido foi autorizado para pelo menos uma destas permissões: `User.Read.All` `User.ReadWrite.All` , ou `Directory.Read.All` `Directory.ReadWrite.All` . 
 
 ## <a name="create-the-new-management-agent"></a>Criar o Novo Agente de Gestão
 
@@ -108,7 +108,7 @@ Na página dos tipos de objetos, selecione os tipos de objetos que pretende impo
 
 #### <a name="select-attributes"></a>Selecionar Atributos
 
-No ecrã Select Atributos, selecione atributos do Azure AD que serão necessários para gerir os utilizadores B2B em AD. É necessário o atributo "ID".  Os `userPrincipalName` atributos serão `userType` utilizados mais tarde nesta configuração.  Outros atributos são opcionais, incluindo
+No ecrã Select Atributos, selecione atributos do Azure AD que serão necessários para gerir os utilizadores B2B em AD. É necessário o atributo "ID".  Os atributos `userPrincipalName` `userType` serão utilizados mais tarde nesta configuração.  Outros atributos são opcionais, incluindo
 
 -   `displayName`
 
@@ -132,7 +132,7 @@ No ecrã Configure Anchor, configurar o atributo de âncora é um passo necessá
 
 #### <a name="configure-connector-filter"></a>Configurar Filtro de Conector
 
-Na página de filtro de conector configurar, mim permite filtrar objetos com base no filtro do atributo. Neste cenário para o B2B, o objetivo é apenas `userType` trazer utilizadores `Guest`com o valor do atributo `member`que é igual , e não utilizadores com o utilizadorType que é igual .
+Na página de filtro de conector configurar, mim permite filtrar objetos com base no filtro do atributo. Neste cenário para o B2B, o objetivo é apenas trazer utilizadores com o valor do `userType` atributo que é igual `Guest` , e não utilizadores com o utilizadorType que é igual `member` .
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/d90691fce652ba41c7a98c9a863ee710.png)
 
@@ -209,24 +209,24 @@ No passo dos critérios de relacionamento, certifique-se de selecionar "Criar re
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/0ac7f4d0fd55f4bffd9e6508b494aa74.png)
 
-Configure as seguintes regras de fluxo de atributode de entrada.  Certifique-se de `accountName` `userPrincipalName` povoar os , e `uid` atributos como eles serão usados mais tarde neste cenário:
+Configure as seguintes regras de fluxo de atributode de entrada.  Certifique-se de povoar os `accountName` , `userPrincipalName` e `uid` atributos como eles serão usados mais tarde neste cenário:
 
 | **Apenas fluxo inicial** | **Usar como Teste de Existência** | **Fluxo (Valor Fonte ; Atributo FIM)**                          |
 |-----------------------|---------------------------|-----------------------------------------------------------------------|
-|                       |                           | [displayName ] displayName] (javascript:void(0);)                        |
-|                       |                           | [Esquerda(id,20)] contaNome] (javascript:void(0);)                        |
-|                       |                           | [idii] (javascript:void(0);)                                         |
-|                       |                           | [userType [ employeeType] (javascript:void(0);)                          |
-|                       |                           | [dado nome] (javascript:void(0);)                            |
-|                       |                           | [sobrenome sn] (javascript:void(0);)                                     |
-|                       |                           | [userPrincipalName [ userPrincipalName] (javascript:void(0);)            |
-|                       |                           | [id [cn] (javascript:void(0);)                                          |
-|                       |                           | [correio] (javascript:void(0);)                                      |
-|                       |                           | [mobilePhone] (javascript:void(0);)                        |
+|                       |                           | `[displayName⇒displayName](javascript:void(0);)`                        |
+|                       |                           | `[Left(id,20)⇒accountName](javascript:void(0);)`                        |
+|                       |                           | `[id⇒uid](javascript:void(0);)`                                         |
+|                       |                           | `[userType⇒employeeType](javascript:void(0);)`                          |
+|                       |                           | `[givenName⇒givenName](javascript:void(0);)`                            |
+|                       |                           | `[surname⇒sn](javascript:void(0);)`                                     |
+|                       |                           | `[userPrincipalName⇒userPrincipalName](javascript:void(0);)`            |
+|                       |                           | `[id⇒cn](javascript:void(0);)`                                          |
+|                       |                           | `[mail⇒mail](javascript:void(0);)`                                      |
+|                       |                           | `[mobilePhone⇒mobilePhone](javascript:void(0);)`                        |
 
 ### <a name="synchronization-rule-create-guest-user-account-to-active-directory"></a>Regra de sincronização: Criar a conta de utilizador convidado para o Diretório Ativo 
 
-Esta regra de sincronização cria o utilizador em Diretório Ativo.  Certifique-se de `dn` que o fluxo deve colocar o utilizador na unidade organizacional que foi excluída do Azure AD Connect.  Além disso, `unicodePwd` atualize o fluxo para cumprir a sua política de senha aD - o utilizador não precisará de saber a palavra-passe.  Note o `262656` valor `userAccountControl` de para `SMARTCARD_REQUIRED` codificar as bandeiras e `NORMAL_ACCOUNT`.
+Esta regra de sincronização cria o utilizador em Diretório Ativo.  Certifique-se de que o fluxo `dn` deve colocar o utilizador na unidade organizacional que foi excluída do Azure AD Connect.  Além disso, atualize o fluxo para `unicodePwd` cumprir a sua política de senha aD - o utilizador não precisará de saber a palavra-passe.  Note o valor de `262656` para `userAccountControl` codificar as bandeiras `SMARTCARD_REQUIRED` e `NORMAL_ACCOUNT` .
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/3463e11aeb9fb566685e775d4e1b825c.png)
 
@@ -249,9 +249,9 @@ Regras de fluxo:
 
 ### <a name="optional-synchronization-rule-import-b2b-guest-user-objects-sid-to-allow-for-login-to-mim"></a>Regra opcional de sincronização: Importar Objetos de utilizador convidado B2B SID para permitir o login para MIM 
 
-Esta regra de sincronização de entrada traz o atributo SID do utilizador do Ative Directory de volta para MIM, para que o utilizador possa aceder ao Portal MIM.  O Portal MIM requer que o `samAccountName` `domain` utilizador `objectSid` tenha os atributos e povoado na base de dados do Serviço MIM.
+Esta regra de sincronização de entrada traz o atributo SID do utilizador do Ative Directory de volta para MIM, para que o utilizador possa aceder ao Portal MIM.  O Portal MIM requer que o utilizador tenha os atributos `samAccountName` `domain` e `objectSid` povoado na base de dados do Serviço MIM.
 
-Configure o sistema externo `ADMA`de `objectSid` origem como o , uma vez que o atributo será definido automaticamente pela AD quando mim criar o utilizador.
+Configure o sistema externo de origem como o , uma vez que `ADMA` o `objectSid` atributo será definido automaticamente pela AD quando mim criar o utilizador.
  
 Note que se configurar os utilizadores a serem criados no Serviço MIM, certifique-se de que não estão no âmbito de quaisquer conjuntos destinados às regras de política de gestão de SSPR dos empregados.  Pode ser necessário alterar as definições definidas para excluir os utilizadores criados pelo fluxo B2B. 
 
@@ -276,15 +276,15 @@ Note que se configurar os utilizadores a serem criados no Serviço MIM, certifiq
 
 Em seguida, convidamos o utilizador e, em seguida, executamos as regras de sincronização do agente de gestão na seguinte ordem:
 
--   Importação completa e sincronização `MIMMA` no Agente de Gestão.  Isto garante que mim Sync tem as mais recentes regras de sincronização configuradas.
+-   Importação completa e sincronização no `MIMMA` Agente de Gestão.  Isto garante que mim Sync tem as mais recentes regras de sincronização configuradas.
 
--   Importação completa e sincronização `ADMA` no Agente de Gestão.  Isto garante que mim e Diretório Ativo são consistentes.  Neste momento, ainda não haverá exportações pendentes para os hóspedes.
+-   Importação completa e sincronização no `ADMA` Agente de Gestão.  Isto garante que mim e Diretório Ativo são consistentes.  Neste momento, ainda não haverá exportações pendentes para os hóspedes.
 
--   Importação completa e sincronização no Agente de Gestão de Gráficos B2B.  Isto traz os utilizadores convidados para o metaverso.  Neste momento, uma ou mais contas estarão pendentes de exportação para `ADMA`.  Se não houver exportações pendentes, verifique se os utilizadores convidados foram importados para o espaço do conector e que as regras foram configuradas para que lhes fossem dadas contas AD.
+-   Importação completa e sincronização no Agente de Gestão de Gráficos B2B.  Isto traz os utilizadores convidados para o metaverso.  Neste momento, uma ou mais contas estarão pendentes de exportação para `ADMA` .  Se não houver exportações pendentes, verifique se os utilizadores convidados foram importados para o espaço do conector e que as regras foram configuradas para que lhes fossem dadas contas AD.
 
--   Exportação, Delta Import e Sincronização `ADMA` no Agente de Gestão.  Se as exportações falharem, verifique a configuração da regra e determine se existem requisitos de esquema em falta. 
+-   Exportação, Delta Import e Sincronização no `ADMA` Agente de Gestão.  Se as exportações falharem, verifique a configuração da regra e determine se existem requisitos de esquema em falta. 
 
--   Exportação, Delta Import e Sincronização `MIMMA` no Agente de Gestão.  Quando isto estiver concluído, não deverá continuar a haver exportações pendentes.
+-   Exportação, Delta Import e Sincronização no `MIMMA` Agente de Gestão.  Quando isto estiver concluído, não deverá continuar a haver exportações pendentes.
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/506f0a093c8b58cbb62cc4341b251564.png)
 

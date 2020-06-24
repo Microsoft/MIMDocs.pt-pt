@@ -1,6 +1,6 @@
 ---
-title: Planeamento do Microsoft Identity Manager 2016 em ambiente TLS 1.2 [ Microsoft Docs
-description: Planeamento do Microsoft Identity Manager 2016 em ambiente TLS 1.2
+title: Planeamento microsoft Identity Manager 2016 em ambiente TLS 1.2 Microsoft Docs
+description: Planeamento microsoft Identity Manager 2016 em ambiente TLS 1.2
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -11,33 +11,36 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 50345fda-56d7-4b6e-a861-f49ff90a8376
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f8d0be0cb9ffa0f32415f11b407954cb0c985024
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 4e208e2f42c206ae50febefb6a8206dc3823e084
+ms.sourcegitcommit: c9f5f960fd39745bf5b57161a2fd0238c88d035a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043448"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85133537"
 ---
-# <a name="planning-mim-2016-sp2-in-tls-12-or-fips-mode-environments"></a>Planeamento MIM 2016 SP2 em ambientes tLS 1.2 ou modo FIPS
+# <a name="planning-mim-2016-sp2-in-tls-12-or-fips-mode-environments"></a>Planeamento MIM 2016 SP2 em ambientes TLS 1.2 ou modo FIPS
 
 
 > [!IMPORTANT]
-> Este artigo aplica-se apenas a MIM 2016 SP2
+> Este artigo aplica-se apenas ao MIM 2016 SP2
 
-Ao instalar o MIM 2016 SP2 no ambiente bloqueado que tem todos os protocolos de encriptação, mas TLS 1.2 desativado, aplicam-se os seguintes requisitos:
-- Para estabelecer componentes mim de ligação TLS 1.2 seguros, os componentes MIM de ligação TLS 1.2 requerem as mais recentes atualizações para o Windows Server e .NET Framework que permitem a instalação do suporte TLS 1.2 em .NET 3.5 Framework. Dependendo da configuração do *servidor, poderá* ser necessário ativar o [SystemDefaultTlsVersions para .NET Framework](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the-net-framework) e/ou [desativar todos os protocolos SCHANNEL, exceto TLS 1.2](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) no registo em subchaves *de Cliente* e *Servidor.*
+Ao instalar o MIM 2016 SP2 no ambiente bloqueado que tenha todos os protocolos de encriptação, mas tLS 1.2 desativado, aplicam-se os seguintes requisitos:
+- Para estabelecer componentes DE LIGAÇÃO TLS 1.2 seguros, as atualizações mais recentes para o Windows Server e o Quadro .NET permitem a instalação de suporte TLS 1.2 em .NET 3.5 Framework. Dependendo da configuração do servidor, *poderá* necessitar de [ativar as inversões SystemDefaultTls para .NET Framework](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the-net-framework) e/ou [desativar todos os protocolos SCHANNEL, exceto tls 1.2](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) no registo nas sub-tefes *cliente* e *servidor.*
 
 ## <a name="mim-synchronization-service-sql-ma"></a>Serviço de Sincronização MIM, SQL MA
 
-- Para estabelecer uma ligação TLS 1.2 segura com o servidor SQL, o Serviço de Sincronização MIM e o agente de gestão SQL incorporado requerem o [Cliente Nativo SQL 11.0.7001.0](https://www.microsoft.com/download/details.aspx?id=50402) ou mais tarde.
+- Para estabelecer uma ligação segura TLS 1.2 com o servidor SQL, o Serviço de Sincronização MIM e o agente de gestão SQL incorporado requerem [o SQL Native Client 11.0.7001.0](https://www.microsoft.com/download/details.aspx?id=50402) ou mais tarde.
 
 ## <a name="mim-service"></a>Serviço MIM
-- Os certificados auto-assinados não podem ser utilizados pelo Serviço MIM apenas em ambiente TLS 1.2. Escolha um certificado compatível com encriptação forte emitido pela Autoridade de Certificação fidedigna ao instalar o Serviço MIM.
-- O instalador de serviço mim requer ainda o Controlador Db OLE para a [versão 18.2 do Servidor SQL](https://www.microsoft.com/download/details.aspx?id=56730) ou posterior.
+   >[!NOTE]
+   >A instalação SEM vigilância DA MIM 2016 SP2 falha no ambiente TLS 1.2. Instale o Serviço MIM em modo interativo ou, se instalar sem vigilância, certifique-se de que o TLS 1.1 está ativado. Após a conclusão da instalação sem vigilância, aplique O TLS 1.2, se necessário.
 
-## <a name="fips-mode-considerations"></a>Considerações de modo FIPS
+- Os certificados auto-assinados não podem ser utilizados pelo Serviço MIM apenas em ambiente TLS 1.2. Escolha um certificado compatível com encriptação forte emitido pela Autoridade de Certificação Fidedigna ao instalar o Serviço MIM.
+- O instalador de serviço MIM requer ainda [o controlador OLE DB para a versão 18.2](https://www.microsoft.com/download/details.aspx?id=56730) do SQL Server ou posterior.
 
-Se instalar o Serviço MIM num servidor com o modo FIPS ativado, é necessário desativar a validação da política FIPS para permitir a execução dos fluxos de trabalho de serviço mim. Para tal, adicione o *enforceFIPSPolicy habilitado=elemento falso* na secção de tempo de *execução* da *Microsoft.ResourceManagement.exe.config* entre as secções de *execução* e montagemAs secções *de ligação* descritas abaixo:
+## <a name="fips-mode-considerations"></a>Considerações no modo FIPS
+
+Se instalar o Serviço MIM num servidor com o modo FIPS ativado, é necessário desativar a validação da política do FIPS para permitir a execução dos fluxos de trabalho do serviço MIM. Para tal, adicione *o elemento de aplicaçãoFIPSPolicy ativado=falso* elemento na secção de tempo de *funcionamento* do *ficheiroMicrosoft.ResourceManagement.Service.exe.config* entre o tempo de *execução* e a montagem As secções *de montagem,* conforme indicado abaixo:
 
 ```XML
 <runtime>

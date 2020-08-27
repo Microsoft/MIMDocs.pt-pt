@@ -8,19 +8,19 @@ manager: daveba
 ms.date: 10/18/2019
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 01d5427c3672354ff6c2dc4259c1f2e43e380a8c
-ms.sourcegitcommit: c9f5f960fd39745bf5b57161a2fd0238c88d035a
+ms.openlocfilehash: 66cb97afa69decfde8df9f3c78f15c48abd7982b
+ms.sourcegitcommit: d6178a67014d66d37056c13d10328ae03e3cd781
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85133554"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88970384"
 ---
 # <a name="microsoft-identity-manager-2016-news-and-updates"></a>Notícias e atualizações do Microsoft Identity Manager 2016
 
 O Microsoft Identity Manager (MIM) 2016 baseia-se nas capacidades de gestão de identidade e acesso do Gestor de Identidade da Vanguarda. Tal como o respetivo antecessor, o MIM ajuda-o a gerir os utilizadores, as credenciais, as políticas e o acesso na sua organização.  Além disso, o MIM 2016 adiciona uma experiência híbrida, capacidades de gestão de acesso privilegiado e suporte para novas plataformas.
 
 
-Com a MIM, uma organização pode simplificar a gestão do ciclo de vida da identidade com fluxos de trabalho automatizados, regras de negócio e fácil integração com plataformas heterogéneas em todo o datacenter. A MIM permite que a organização tenha os utilizadores certos e os direitos de acesso para o Ative Directory para aplicações no local, e o Azure AD Connect pode então disponibilizar em Azure AD para o Office 365 e aplicações hospedadas na nuvem. Os cenários comuns de MIM incluem:
+Com a MIM, uma organização pode simplificar a gestão do ciclo de vida da identidade com fluxos de trabalho automatizados, regras de negócio e fácil integração com plataformas heterogéneas em todo o datacenter. A MIM permite que a organização tenha os utilizadores certos e os direitos de acesso para o Ative Directory para aplicações no local, e o Azure AD Connect pode então disponibilizar em Azure AD para o Microsoft 365 e aplicações hospedadas na nuvem. Os cenários comuns de MIM incluem:
  - Fornecimento automático de identidade e grupo com base na política comercial e no fornecimento orientado para o fluxo de trabalho
  - Integração dos conteúdos dos diretórios com sistemas de RH e outras fontes de autoridade
  - Sincronizar identidades entre diretórios, bases de dados e aplicações no local através de APIs e protocolos comuns, conectores entregues pela Microsoft e conectores entregues por parceiros

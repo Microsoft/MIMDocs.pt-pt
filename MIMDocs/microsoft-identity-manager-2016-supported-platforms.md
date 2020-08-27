@@ -12,12 +12,12 @@ ms.assetid: 4978f60d-044d-4e84-8d93-65801fce1144
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: mim
-ms.openlocfilehash: 04e96f3c8eb71041dccb173f2a1dc7dbba46ef01
-ms.sourcegitcommit: cd503e8e9933d39d6fbf894c7d27bf9566301ac8
+ms.openlocfilehash: 4ef6c5aa5ba3814ab20dff445729da4acf96ecf7
+ms.sourcegitcommit: d6178a67014d66d37056c13d10328ae03e3cd781
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168342"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88970401"
 ---
 # <a name="supported-platforms-for-mim-2016"></a>Plataformas suportadas para o MIM 2016
 
@@ -46,7 +46,7 @@ A tabela seguinte descreve as plataformas suportadas e a versão de cada compone
 | **Portais de Registo e Reposição de Palavras-passe do MIM** | Windows Server | Windows Server 2008 R2 SP1 (NR)<br/>Windows Server 2012 (NR)<br/>Windows Server 2012 R2 <br/> Windows Server 2016 *<br/> Windows Server 2019 ** |
 | | Browser | Todos os principais navegadores suportados |
 | **Extensões e Suplementos do MIM** | Windows | Windows 7<br/>Windows 8<br/>Windows 8.1<br/>Windows 10 |
-| | Integração com o Outlook (opcional) | Outlook 2010 (no Windows, exceto Click-To-Run)<br/>Outlook 2013 (no Windows, exceto Click-To-Run) <br/> Outlook 2016 (no Windows 10, exceto Click-To-Run) *<br/>Outlook do Office 365 (no Windows 10, incluindo Click-To-Run) ** |
+| | Integração com o Outlook (opcional) | Outlook 2010 (no Windows, exceto Click-To-Run)<br/>Outlook 2013 (no Windows, exceto Click-To-Run) <br/> Outlook 2016 (no Windows 10, exceto Click-To-Run) *<br/>Perspetivas para o Microsoft 365 (no Windows 10, incluindo Click-To-Run) ** |
 | | Cmdlets de requerente do PowerShell de PAM (opcionais) | Windows 8.1<br/>Windows 10 |
 | **Gestão de Certificados do MIM** (integração com o Servidor e a AC) | Windows Server | Windows Server 2008 R2 SP1 (NR)<br/>Windows Server 2012 R2 <br/> Windows Server 2016 *<br/> Windows Server 2019 ** |
 | | Autoridade de certificação | Windows Server 2008 R2 SP1 (NR)<br/>Windows Server 2012<br/>Windows Server 2012 R2 <br/> Windows Server 2016 *<br/> Windows Server 2019 ** |

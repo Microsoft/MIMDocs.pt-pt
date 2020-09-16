@@ -9,12 +9,12 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 94a74f1c-2192-4748-9a25-62a526295338
-ms.openlocfilehash: 63ebdbc229c7d2dabbbb5a06f7dbbd5f3d367796
-ms.sourcegitcommit: cd503e8e9933d39d6fbf894c7d27bf9566301ac8
+ms.openlocfilehash: c426dff583ca51ca77bcb18fe024bf38698e3530
+ms.sourcegitcommit: 3ff309115a0f3de114e3dff4eb3927dd7b01df4d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88168359"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90570774"
 ---
 # <a name="microsoft-identity-manager-connector-for-microsoft-graph"></a>Conector do Gestor de Identidade da Microsoft para o Microsoft Graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "88168359"
 ## <a name="summary"></a>Resumo 
 
 
-O [conector Microsoft Identity Manager para o Microsoft Graph](https://go.microsoft.com/fwlink/?LinkId=717495) permite cenários de integração adicionais para clientes Azure AD Premium.  Surge na sincronização mim de objetos adicionais obtidos a partir do [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/)   v1 e beta.
+O [conector Microsoft Identity Manager para o Microsoft Graph](https://go.microsoft.com/fwlink/?LinkId=717495) permite cenários de integração adicionais para clientes Azure AD Premium.  Surge na sincronização mim de objetos adicionais obtidos a partir do [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) v1 e beta.
 
 ## <a name="scenarios-covered"></a>Cenários cobertos
 
@@ -37,7 +37,7 @@ Para aprender a configurar a sincronização mim para criar e manter automaticam
 ### <a name="other-identity-management-scenarios"></a>Outros cenários de gestão de identidade
 
 
-O conector pode ser utilizado para outros cenários específicos de gestão de identidade envolvendo criar, ler, atualizar e eliminar objetos de utilizador, grupo e contacto em Azure AD, além da sincronização do utilizador e do grupo para a Azure AD. Ao avaliar cenários potenciais, tenha em mente: este conector não pode ser operado num cenário que resultaria numa sobreposição de fluxo de dados, conflito de sincronização real ou potencial com uma implementação Azure AD Connect.  [Azure AD Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594)   é a abordagem recomendada para integrar diretórios no local com a Azure AD, sincronizando utilizadores e grupos de diretórios no local para Azure AD.  O Azure AD Connect tem muitas mais funcionalidades de sincronização e permite cenários como a palavra-passe e a gravação do dispositivo, que não são possíveis para objetos criados pela MIM. Se os dados estiverem a ser trazidos para DS AD, por exemplo, certifique-se de que é excluído do Azure AD Connect tentando combinar esses objetos de volta com o diretório AD AZure.  Este conector também não pode ser utilizado para fazer alterações aos objetos AD Azure, que foram criados pelo Azure AD Connect.
+O conector pode ser utilizado para outros cenários específicos de gestão de identidade envolvendo criar, ler, atualizar e eliminar objetos de utilizador, grupo e contacto em Azure AD, além da sincronização do utilizador e do grupo para a Azure AD. Ao avaliar cenários potenciais, tenha em mente: este conector não pode ser operado num cenário que resultaria numa sobreposição de fluxo de dados, conflito de sincronização real ou potencial com uma implementação Azure AD Connect.  [Azure AD Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594) é a abordagem recomendada para integrar diretórios no local com Azure AD, sincronizando utilizadores e grupos de diretórios no local para Azure AD.  O Azure AD Connect tem muitas mais funcionalidades de sincronização e permite cenários como a palavra-passe e a gravação do dispositivo, que não são possíveis para objetos criados pela MIM. Se os dados estiverem a ser trazidos para DS AD, por exemplo, certifique-se de que é excluído do Azure AD Connect tentando combinar esses objetos de volta com o diretório AD AZure.  Este conector também não pode ser utilizado para fazer alterações aos objetos AD Azure, que foram criados pelo Azure AD Connect.
 
 
 
@@ -75,7 +75,7 @@ A seguinte permissão deve ser adicionada à aplicação para permitir a sua uti
 | Operação com objeto | Permissão necessária                                                                  | Tipo de permissão |
 |-----------------------|--------------------------------------------------------------------------------------|-----------------|
 | Grupo de Importação          | `Group.Read.All` ou `Group.ReadWrite.All`                                                | Aplicação     |
-| Utilizador de Importação           | `User.Read.All`, `User.ReadWrite.All` `Directory.Read.All` ou`Directory.ReadWrite.All` | Aplicação     |
+| Utilizador de Importação           | `User.Read.All`, `User.ReadWrite.All` `Directory.Read.All` ou `Directory.ReadWrite.All` | Aplicação     |
 
 Mais detalhes sobre as permissões necessárias podem ser encontrados [aqui.](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)
 
@@ -98,8 +98,8 @@ Mais detalhes sobre as permissões necessárias podem ser encontrados [aqui.](ht
 
 
 
-9.  Na UI do Gestor de Serviço de Sincronização, selecione **Conectors**   e **Crie**.
-Selecione **Graph (Microsoft)**   , crie um conector e dê-lhe um nome descritivo.
+9.  Na UI do Gestor de Serviço de Sincronização, selecione **Conectors** e **Crie**.
+Selecione **Graph (Microsoft)**, crie um conector e dê-lhe um nome descritivo.
 
 ![](media/microsoft-identity-manager-2016-graph-b2b-scenario/d95c6b2cc7951b607388cbd25920d7d0.png)
 
@@ -138,7 +138,7 @@ A página de parâmetros globais contém as seguintes definições:
 
     -   Exportação (Adicionar, Atualizar, Excluir)
 
--   Grupo
+-   Group
 
     -   Importação Total/Delta
 
@@ -151,9 +151,9 @@ A lista de tipos de atributos suportados:
 
 -   `Edm.String`
 
--   `Edm.DateTimeOffset`(corda no espaço do conector)
+-   `Edm.DateTimeOffset` (corda no espaço do conector)
 
--   `microsoft.graph.directoryObject`(referência no espaço do conector a qualquer um dos objetos suportados)
+-   `microsoft.graph.directoryObject` (referência no espaço do conector a qualquer um dos objetos suportados)
 
 -   `microsoft.graph.contact`
 

@@ -1,5 +1,5 @@
 ---
-title: Instalação BHOLD SP1 Microsoft Docs
+title: Instalação BHOLD SP1 / Microsoft Docs
 description: Documentação de instalação BHOLD SP1
 keywords: ''
 author: billmath
@@ -9,46 +9,46 @@ ms.date: 09/11/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: fb3cf6e5b00c1bd0c01d86aff474dc2ff28c2815
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 848bdbb793de97eb9512de93febd939bb45a52d3
+ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79042258"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492298"
 ---
-# <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Guia de instalação Microsoft BHOLD Suite SP1 (6.0)
+# <a name="microsoft-bhold-suite-sp1-60-installation-guide"></a>Guia de instalação microsoft BHOLD Suite SP1 (6.0)
 
-Microsoft® BHOLD Suite Service Pack 1 (SP1) é uma coleção de aplicações que, quando utilizadas com o Microsoft Identity Manager 2016 SP1 (MIM), adiciona uma gestão eficaz de papéis, análise e atesta à MIM. O Microsoft BHOLD Suite SP1 é composto pelos seguintes módulos:
+Microsoft® BHOLD Suite Service Pack 1 (SP1) é uma coleção de aplicações que, quando usadas com o Microsoft Identity Manager 2016 SP1 (MIM), adiciona uma gestão eficaz de funções, análise e atestado à MIM. O Microsoft BHOLD Suite SP1 é composto pelos seguintes módulos:
 
 - Núcleo BHOLD
-- Conector de Gestão de Acesso
+- Conector de Gestão de Acessos
 - Integração BHOLD FIM/MIM
-- Gerador de modelo BHOLD
+- Gerador de modelos BHOLD
 - BHOLD Analytics
-- Relatórios BHOLD
-- Atestabção BHOLD
+- Relatório bhold
+- Atestado BHOLD
 
 
 > [!NOTE]
-> **Aplica-se a**: Microsoft Identity Manager 2016 SP1
+> **Aplica-se a** : Microsoft Identity Manager 2016 SP1 ou posterior
 
 ## <a name="what-this-document-covers"></a>O que este documento cobre
 
-Este documento explica como planear a sua implementação BHOLD para atender às necessidades do seu negócio e instalar cada módulo BHOLD. Para cada módulo, são detalhados os requisitos relevantes de hardware, infraestrutura e software, configuração da rede de pré-instalação, informação necessária durante a configuração e etapas de pós-instalação.
+Este documento explica como planear a sua implementação BHOLD para atender às necessidades do seu negócio e instalar cada módulo BHOLD. Para cada módulo, os requisitos de hardware, infraestrutura e software relevantes, configuração da rede de pré-instalação, informações necessárias durante a configuração e etapas de pós-instalação, caso existam, são detalhadas.
 
-## <a name="pre-requisite-knowledge"></a>Conhecimento pré-requisito
+## <a name="pre-requisite-knowledge"></a>Conhecimentos necessários
 
-Este documento pressupõe que tem uma compreensão básica de como instalar software em computadores de servidores. Também assume que tem conhecimentos básicos de Ative Directory® Domain Services, Microsoft Identity Manager SP1 (FIM) e microsoft SQL Server 2012 software de base de dados. Uma descrição de como configurar e configurar tecnologias dependentes, como AD DS e FIM, está fora do âmbito desta documentação. Para obter informações sobre as funções que os módulos Microsoft BHOLD desempenham, consulte [o guia de conceitos da suite Microsoft BHOLD](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx).
+Este documento pressupõe que tem uma compreensão básica de como instalar software em computadores de servidor. Também assume que tem conhecimentos básicos de Ative Directory® Domain Services, Fronte ou Microsoft Identity Manager (FIM) e software de base de dados Microsoft SQL Server 2012. Uma descrição de como configurar e configurar tecnologias dependentes, como a AD DS e a FIM, está fora do âmbito desta documentação. Para obter informações sobre as funções que os módulos Microsoft BHOLD desempenham, consulte [o guia de conceitos da suite Microsoft BHOLD](https://technet.microsoft.com/library/jj134102(v=ws.10).aspx).
 
 ## <a name="audience"></a>Audiência
 
-Este documento destina-se a planeadores de TI, arquitetos de sistemas, decisores tecnológicos, consultores, planeadores de infraestruturas e pessoal de TI que planeia minizar a Microsoft BHOLD Suite.
+Este documento destina-se a planeadores de TI, arquitetos de sistemas, decisores tecnológicos, consultores, planeadores de infraestruturas e pessoal de TI que planeiam implantar a Microsoft BHOLD Suite.
 
-## <a name="bhold-infrastructure-considerations"></a>Considerações de infraestruturas BHOLD
+## <a name="bhold-infrastructure-considerations"></a>Considerações de infraestrutura da BHOLD
 
-Na maioria das vezes, o BHOLD e o FIM são utilizados num grande ambiente de infraestruturas. Você pode adaptar a sua arquitetura BHOLD e FIM para atender às suas necessidades de negócio particulares. As seguintes secções fornecem algumas possíveis soluções arquitetónicas. Esta visão geral não é uma lista completa de todas as opções possíveis, mas sugere formas de implementar o BHOLD na sua rede.
+Na maioria das vezes, o BHOLD e o FIM são utilizados num grande ambiente de infraestruturas. Você pode personalizar a sua arquitetura BHOLD e FIM para atender às suas necessidades de negócio particulares. As seguintes secções fornecem algumas soluções arquitetónicas possíveis. Esta visão geral não é uma lista completa de todas as opções possíveis, mas sugere formas de implementar o BHOLD na sua rede.
  
-Esta secção aborda os seguintes tópicos:
+Esta secção abrange os seguintes tópicos:
 
 - Arquitetura de servidor único
 - Arquitetura de servidor duplo
@@ -57,25 +57,25 @@ Esta secção aborda os seguintes tópicos:
 
 ### <a name="single-server-architecture"></a>Arquitetura de servidor único
 
-Para implementação em pequenas organizações ou para fins de desenvolvimento, pode instalar BHOLD e FIM no mesmo servidor que o SQL Server e o AD DS, como mostra a figura seguinte.
+Para implementação em pequenas organizações ou para fins de desenvolvimento, pode instalar O BHOLD e o FIM no mesmo servidor que o SQL Server e o AD DS, como mostra o seguinte valor.
  
 ![Arquitetura de servidor único](media/bhold-installation-guide/single.png)
 
-Quando o BHOLD Suite SP1 e o Portal FIM estiverem instalados juntos num único servidor, deve criar diferentes pseudónimos de hospedeiro (CNAME ou A) em DNS para BHOLD e para o FIM. Isto permite a criação de nomes principais de serviço separados (SPNs) para os serviços BHOLD e FIM. Para mais informações, consulte [a Instalação BHOLD Core](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx).
-Para obter orientações sobre a instalação do FIM numa configuração de um único servidor, consulte a [Configuração Comum para Iniciar Guias](https://technet.microsoft.com/library/ff575965.aspx) na Biblioteca Microsoft TechNet.
+Quando o BHOLD Suite SP1 e o Portal FIM estiverem instalados juntos num único servidor, deve criar diferentes pseudónimos de anfitrião (CNAME ou registos A) em DNS para BHOLD e para FIM. Isto permite criar nomes principais de serviço separados (SPNs) para os serviços BHOLD e FIM. Para obter mais informações, consulte [a Instalação do Núcleo BHOLD.](https://technet.microsoft.com/library/jj134095(v=ws.10).aspx)
+Para obter orientações sobre a instalação do FIM numa configuração de um único servidor, consulte [a Configuração Comum para Obter Guias Iniciados](https://technet.microsoft.com/library/ff575965.aspx) na Biblioteca Microsoft TechNet.
 
 ### <a name="dual-server-architecture"></a>Arquitetura de servidor duplo
 
-A instalação do BHOLD Core e do FIM em servidores separados proporciona um maior desempenho e flexibilidade para organizações de tamanho médio que não requerem uma implementação mais complexa, como a fornecida por arquiteturas multimais. A figura que se segue mostra bHOLD e FIM instalados nos seus próprios servidores; o servidor FIM também está a executar o SQL Server para fornecer serviços de base de dados para BHOLD e FIM. O Serviço de Sincronização FIM em execução no servidor FIM sincroniza as alterações entre as bases de dados FIM e BHOLD. Note que se for necessário self-service de utilizador final, o módulo de integração BHOLD FIM deve ser instalado no mesmo servidor que o Serviço FIM e o Portal FIM. O módulo de integração BHOLD FIM requer que o Serviço FIM e o módulo de Integração BHOLD FIM sejam instalados no mesmo servidor.
+A instalação do BHOLD Core e fim em servidores separados proporciona um maior desempenho e flexibilidade para organizações de tamanho médio que não requerem uma implementação mais complexa, como a fornecida por arquiteturas multi-mais multi-diferentes. A seguinte figura mostra BHOLD e FIM instalados nos seus próprios servidores; o servidor FIM também está a executar o SQL Server para fornecer serviços de base de dados ao BHOLD e FIM. O Serviço de Sincronização FIM em execução no servidor FIM sincroniza as alterações entre as bases de dados FIM e BHOLD. Note que, se for necessário o autosserviço do utilizador final, o módulo de integração BHOLD FIM deve ser instalado no mesmo servidor que o Serviço FIM e o Portal FIM. O módulo de Integração BHOLD FIM requer que o Serviço FIM e o módulo de Integração BHOLD FIM estejam instalados no mesmo servidor.
 
 ![Arquitetura de servidor duplo](media/bhold-installation-guide/dual.png)
 
 > [!IMPORTANT]
-> A funcionalidade de reporte do módulo de integração BHOLD FIM requer que as bases de dados BHOLD e FIM sejam instaladas na mesma instância do Servidor SQL, e a conta de serviço BHOLD deve ter direitos de acesso à base de dados do Serviço FIM.
+> A funcionalidade de reporte do módulo de integração BHOLD FIM requer que as bases de dados BHOLD e FIM sejam instaladas na mesma instância do SQL Server, e a conta de serviço BHOLD deve ter direitos de acesso à base de dados do Serviço FIM.
 
 ### <a name="two-tier-architecture"></a>Arquitetura de dois níveis
 
-Na maioria dos ambientes, especialmente aqueles onde o desempenho é importante, você deve executar o BHOLD Suite SP1, FIM e SQL Server em servidores separados (arquitetura de dois níveis). Com uma arquitetura de dois níveis, os recursos de memória e CPU são dedicados para cada nível. A seguinte ilustração mostra uma maneira possível de configurar uma arquitetura de dois níveis. O Serviço de Sincronização FIM em execução no servidor FIM sincroniza as alterações entre as bases de dados FIM e BHOLD. Note que se for necessário self-service de utilizador final, o módulo de integração BHOLD FIM deve ser instalado no mesmo servidor que o Serviço FIM e portal.
+Na maioria dos ambientes, especialmente aqueles onde o desempenho é importante, você deve executar o BHOLD Suite SP1, FIM e SQL Server em servidores separados (arquitetura de dois níveis). Com uma arquitetura de dois níveis, a memória e os recursos da CPU são dedicados a cada nível. A seguinte ilustração mostra uma maneira possível de configurar uma arquitetura de dois níveis. O Serviço de Sincronização FIM em execução no servidor FIM sincroniza as alterações entre as bases de dados FIM e BHOLD. Note que, se for necessário o autosserviço do utilizador final, o módulo de integração BHOLD FIM deve ser instalado no mesmo servidor que o Serviço FIM e portal.
 
 ![arquitetura de dois níveis](media/bhold-installation-guide/two-tier.png)
 
@@ -83,32 +83,32 @@ Na maioria dos ambientes, especialmente aqueles onde o desempenho é importante,
 
 Se estiver a implementar o BHOLD numa grande organização, é altamente recomendável que siga estas diretrizes para a configuração da base de dados do Microsoft SQL Server:
 
-- Implemente o Servidor SQL num servidor separado de quaisquer serviços FIM ou BHOLD.
-- Isole o ficheiro de registo do ficheiro de dados ao nível do disco físico.
-- Se estiver a utilizar o RAID para fornecer redundância de armazenamento, utilize o nível RAID 10 (1+0). Não utilize o nível RAID 5.
-- Certifique-se de configurar as definições corretas quando utilizar mais de 2 GB de memória física para o servidor que executa o Servidor SQL.
+- Implemente o SQL Server num servidor separado de quaisquer serviços FIM ou BHOLD.
+- Isolar o ficheiro de registo do ficheiro de dados ao nível do disco físico.
+- Se estiver a utilizar o RAID para fornecer redundância de armazenamento, utilize o raid nível 10 (1+0). Não utilize o nível RAID 5.
+- Certifique-se de que configura as definições corretas quando utilizar mais de 2 GB de memória física para o servidor que executa o SQL Server.
 
-Para obter mais informações sobre as melhores práticas do SQL Server, consulte o [Storage Top 10 Best Practices](https://www.microsoft.com/technet/prodtechnol/sql/bestpractice/storage-top-10.mspx) na Microsoft TechNet Library.
+Para obter mais informações sobre as melhores práticas do SQL Server, consulte [o Storage Top 10 Best Practices](https://www.microsoft.com/technet/prodtechnol/sql/bestpractice/storage-top-10.mspx) na Microsoft TechNet Library.
 
 ### <a name="trusted-certificates-list-update"></a>Atualização da lista de certificados fidedignos
 
-O Windows pode ser configurado para validar cadeias de certificados antes de iniciar um serviço. Nesses sistemas, um serviço não pode ser iniciado se o código executável do serviço foi assinado com um certificado que não esteja na lista de certificados fidedignos (TCL) do servidor. O software Microsoft BHOLD Suite SP1 é um código assinado utilizando uma cadeia de certificados de assinatura de código que tem origem no certificado Microsoft Root Certificate Authority 2010.
-O Windows pode ser configurado para recuperar certificados de raiz da Microsoft através de uma ligação à Internet. No entanto, num sistema desligado, o Windows Server inclui apenas os certificados que estavam presentes no programa raiz numa altura antes de o Windows ser lançado. Nos lançamentos do Windows Server antes do Windows Server 2010, estes certificados não incluirão o certificado raiz necessário para validar a cadeia de certificados de assinatura de código BHOLD Suite SP1. Se pretender instalar um ou mais módulos Microsoft BHOLD Suite SP1 num sistema que possa não ter um TCL atualizado, tem de descarregar e instalar o pacote de atualização de raízes, ou utilizar a Política do Grupo para instalar o pacote de atualização de raiz, antes de instalar um módulo BHOLD Suite SP1. Para mais informações, consulte [os membros do programa de certificados](https://support.microsoft.com/kb/931125)de raiz do Windows .
+O Windows pode ser configurado para validar cadeias de certificados antes de iniciar um serviço. Nestes sistemas, um serviço não pode iniciar-se se o código executável do serviço tiver sido assinado com um certificado que não está na lista de certificados fidedignos (TCL) do servidor. O software Microsoft BHOLD Suite SP1 é assinado através de uma cadeia de certificados de assinatura de código que se origina com o certificado Microsoft Root Certificate Authority 2010.
+O Windows pode ser configurado para obter certificados de raiz da Microsoft através de uma ligação à Internet. Num sistema desligado, no entanto, o Windows Server inclui apenas os certificados que estavam presentes no programa raiz numa altura antes do Windows ser lançado. Nas versões do Windows Server antes do Windows Server 2010, estes certificados não incluirão o certificado raiz necessário para validar a cadeia de certificados de assinatura de código BHOLD Suite SP1. Se pretender instalar um ou mais módulos Microsoft BHOLD Suite SP1 num sistema que possa não ter um TCL atualizado, tem de descarregar e instalar o pacote de atualização de raiz, ou utilizar a Política de Grupo para instalar o pacote de atualização de raiz, antes de instalar um módulo BHOLD Suite SP1. Para obter mais informações, consulte [os membros do programa de certificados de raiz do Windows](https://support.microsoft.com/kb/931125).
 
-### <a name="installing-bhold-suite-sp1-on-windows-server-20122016-required-step"></a>Instalação bhold Suite SP1 no Windows Server 2012/2016 Passo Obrigatório 
+### <a name="installing-bhold-suite-sp1-on-windows-server-20122016-required-step"></a>Instalação da Suíte BHOLD SP1 no Windows Server 2012/2016 Passo Obrigatório 
 
 ![IIS instalar BHOLD](media/bhold-installation-guide/iis-install-bhold.png)
 
-Se instalar o BHOLD Suite SP1 no Windows Server 2012 ou 2016, as páginas web do BHOLD não estarão disponíveis até modificar o ficheiro applicationHost.config localizado em ```C:\Windows\System32\inetsrv\config```. Na ```<globalModules>``` secção, ```preCondition="bitness64``` adicione à entrada ```<add name="SPNativeRequestModule"``` que começa de modo a que leia o seguinte:
+Se instalar o BHOLD Suite SP1 no Windows Server 2012 ou 2016, as páginas web do BHOLD não estarão disponíveis até modificar o ficheiro applicationHost.config localizado em ```C:\Windows\System32\inetsrv\config``` . Na ```<globalModules>``` secção, adicione ```preCondition="bitness64``` à entrada que começa de modo a que leia o ```<add name="SPNativeRequestModule"``` seguinte:
 
 ```<add name="SPNativeRequestModule" image="C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\isapi\spnativerequestmodule.dll" preCondition="bitness64"/>```
 
-Depois de editar e guardar o ficheiro, executar o comando iisreset para redefinir o servidor IIS.
+Depois de editar e guardar o ficheiro, executar o comando iisreset para reiniciar o servidor IIS.
 
 
 ## <a name="upgrading-bhold-suite"></a>Upgrade BHOLD Suite
 
-Não é possível atualizar uma instalação bhold suite existente. Em vez disso, tem de desinstalar uma instalação BHOLD Suite existente antes de atualizar os módulos BHOLD. Se tiver um modelo de função BHOLD existente, pode atualizar a base de dados BHOLD e utilizá-la quando instalar o módulo BHOLD Core atualizado. Para mais informações, consulte Substituir a [BHOLD Suite por BHOLD Suite SP1](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx).
+Não é possível atualizar uma instalação BHOLD Suite existente. Em vez disso, tem de desinstalar uma instalação BHOLD Suite existente antes de poder atualizar os módulos BHOLD. Se tiver um modelo BHOLD existente, pode atualizar a base de dados BHOLD e usá-la quando instalar o módulo BHOLD Core atualizado. Para mais informações, consulte [substituir a Suíte BHOLD pela BHOLD Suite SP1](https://technet.microsoft.com/library/jj874043(v=ws.10).aspx).
 
 
 ## <a name="next-steps"></a>Passos seguintes

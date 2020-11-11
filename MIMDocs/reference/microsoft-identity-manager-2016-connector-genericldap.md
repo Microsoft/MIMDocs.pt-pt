@@ -16,11 +16,11 @@ ms.prod: microsoft-identity-manager
 ms.date: 06/26/2018
 ms.author: billmath
 ms.openlocfilehash: bb6460ebf4106aa8c9295be0db3ce9da426b0778
-ms.sourcegitcommit: c214bb0b1373b65b1c9c215379fd820ab0c13f0f
+ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "92762542"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492502"
 ---
 # <a name="generic-ldap-connector-technical-reference"></a>Referência técnica do Conector do LDAP Genérico
 Este artigo descreve o Conector LDAP Genérico. O artigo aplica-se aos seguintes produtos:
@@ -116,7 +116,7 @@ Para LDAPS, deve utilizar SSL 3.0 ou TLS. O SSL 2.0 não está suportado e não 
 Os seguintes controlos/funcionalidades LDAP devem estar disponíveis no servidor LDAP para que o conector funcione corretamente:  
 `1.3.6.1.4.1.4203.1.5.3` Filtros verdadeiros/falsos
 
-O filtro True/False não é frequentemente reportado como suportado por diretórios LDAP e pode aparecer na **Página Global** em **Funcionalidades Obrigatórias Não Encontradas** . É utilizado para criar filtros **OR** em consultas LDAP, por exemplo, quando importa vários tipos de objetos. Se puder importar mais do que um tipo de objeto, então o seu servidor LDAP suporta esta funcionalidade.
+O filtro True/False não é frequentemente reportado como suportado por diretórios LDAP e pode aparecer na **Página Global** em **Funcionalidades Obrigatórias Não Encontradas**. É utilizado para criar filtros **OR** em consultas LDAP, por exemplo, quando importa vários tipos de objetos. Se puder importar mais do que um tipo de objeto, então o seu servidor LDAP suporta esta funcionalidade.
 
 Se utilizar um diretório onde um identificador único é a âncora, também deve estar disponível (Para mais informações, consulte a secção [Âncoras configuradas):](#configure-anchors)  
 `1.3.6.1.4.1.4203.1.5.1` Todos os atributos operacionais
@@ -152,7 +152,7 @@ As seguintes funcionalidades LDAP não são suportadas:
 * Referências LDAP entre servidores (RFC 4511/4.1.10)
 
 ## <a name="create-a-new-connector"></a>Criar um novo Conector
-Para criar um conector LDAP genérico, no **Serviço de Sincronização** selecione **o Agente de Gestão** e **crie** . Selecione o **Conector LDAP Genérico (Microsoft).**
+Para criar um conector LDAP genérico, no **Serviço de Sincronização** selecione **o Agente de Gestão** e **crie**. Selecione o **Conector LDAP Genérico (Microsoft).**
 
 ![CriarConnector](./media/microsoft-identity-manager-2016-connector-genericldap/createconnector.png)
 
@@ -193,7 +193,7 @@ As caixas de verificação **suportadas controlam** o comportamento de determina
 * Se as três opções (pagedResultsControl, VLVControl e SortControl) não forem selecionadas, então o Conector importa todos os objetos numa única operação, o que pode falhar se for um grande diretório.
 * O ShowDeletedControl só é utilizado quando o método de importação Delta é USNChanged.
 
-O registo de alterações DN é o contexto de nomeação utilizado pelo registo de alteração delta, por exemplo **cn=changelog** . Este valor deve ser especificado para poder fazer importações delta.
+O registo de alterações DN é o contexto de nomeação utilizado pelo registo de alteração delta, por exemplo **cn=changelog**. Este valor deve ser especificado para poder fazer importações delta.
 
 Segue-se uma lista de DNs de registo de alteração predefinido:
 
@@ -271,5 +271,5 @@ Para a Novell eDirectory, a importação delta não deteta quaisquer exclusões 
 
 Para diretórios com um registo de alteração delta que se baseia na data/hora, é altamente recomendado executar uma importação completa em horários periódicos. Este processo permite que o motor de sincronização encontre e dissimilaridades entre o servidor LDAP e o que está atualmente no espaço do conector.
 
-## <a name="troubleshooting"></a>Resolução de problemas
+## <a name="troubleshooting"></a>Resolução de Problemas
 * Para obter informações sobre como permitir a sessão de registo para resolver problemas no conector, consulte o [Rastreio ETW para Conectores](http://go.microsoft.com/fwlink/?LinkId=335731).

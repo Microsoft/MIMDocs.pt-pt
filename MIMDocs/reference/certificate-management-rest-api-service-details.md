@@ -13,11 +13,11 @@ audience: developer
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 9a2dd84e121217772a8831653b2e4790436c32ec
-ms.sourcegitcommit: c214bb0b1373b65b1c9c215379fd820ab0c13f0f
+ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "92762532"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492451"
 ---
 # <a name="certificate-management-rest-api-service-details"></a>Detalhes do serviço API rest gestão de certificados
 As seguintes secções descrevem detalhes da API do Gestor de Identidade da Microsoft (MIM)
@@ -42,7 +42,7 @@ As chamadas API DE MIM CM REST são tratadas por controladores. A tabela a segui
 ## <a name="http-request-and-response-headers"></a>Http pedido e cabeçalhos de resposta
 Os pedidos HTTP enviados à API devem incluir os seguintes cabeçalhos (esta lista não é exaustiva):
 
-Cabeçalho | Descrição
+Cabeçalho | Description
 -------|------------
 Autorização | Obrigatório. O conteúdo depende do método de autenticação. O método é configurável e pode basear-se em Serviços de Autenticação Integrada do Windows (WIA)) ou serviços da Federação de Diretórios Ativos (ADFS).
 Content-Type | Obrigatório se o pedido tiver um corpo. Deve `application/json` ser.
@@ -52,7 +52,7 @@ Cookie | O biscoito da sessão. Pode ser necessário dependendo do método de au
 
 As respostas HTTP incluem os seguintes cabeçalhos (esta lista não é exaustiva):
 
-Cabeçalho | Descrição
+Cabeçalho | Description
 -------|------------
 Content-Type | A API regressa `application/json` sempre.
 Comprimento do conteúdo | O comprimento do corpo pedido, se presente, em bytes.

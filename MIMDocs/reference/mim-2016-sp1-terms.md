@@ -11,16 +11,16 @@ ms.prod: microsoft-identity-manager
 ms.assetid: b0b39631-66df-4c5f-80c9-a1774346f816
 ms.reviewer: fimguy
 ms.suite: ems
-ms.openlocfilehash: afe167cdcd6ca548ef34e802f5606bee6ba5b31e
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 6e6af5be6c091be74c7162ef9c960c89a3302ba2
+ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "92762451"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492570"
 ---
 # <a name="microsoft-identity-manager-2016-sp1-terminology"></a>Terminologia SP1 do Microsoft Identity Manager 2016
 
-Este documento é uma lista completa de termos que são referenciados no Microsoft Identity Manager 2016 SP1.
+Este documento é uma lista completa de termos que são referenciados no Microsoft Identity Manager 2016 SP1 e posteriormente.
 
 ## <a name="a"></a>A
 
@@ -189,11 +189,11 @@ Bandeira de criação de **recursos FIM /MIM** : Um parâmetro de uma regra de s
 
 **portão de bloqueio** : Uma atividade de fluxo de trabalho na fase de autenticação do processamento de pedidos para bloquear um utilizador que não tenha autenticado. Consulte também a entrada para "lockout" e para "QA gate".
 
-**limiar de bloqueio** : Trata-se de um controlo inteiro que especifica o número de vezes que um utilizador pode não completar o fluxo de trabalho de autenticação antes de ser bloqueado para a duração do bloqueio.A definição predefinição para isto é 3. O limite inferior é 0 e o limite superior é 99.
+**limiar de bloqueio** : Trata-se de um controlo inteiro que especifica o número de vezes que um utilizador pode não completar o fluxo de trabalho de autenticação antes de ser bloqueado para a duração do bloqueio. A definição predefinição para isto é 3. O limite inferior é 0 e o limite superior é 99.
 
-**duração do bloqueio** : Trata-se de um controlo inteiro que especifica a duração em minutos para que o utilizador esteja bloqueado depois de atingir o Limiar de Bloqueio.A definição predefinida para isto é de 15 minutos.O limite inferior para esta regulação é 1 e o limite superior é 9999.O limite superior permite ao administrador fixar o limite superior para maior do que um dia.
+**duração do bloqueio** : Trata-se de um controlo inteiro que especifica a duração em minutos para que o utilizador esteja bloqueado depois de atingir o Limiar de Bloqueio.  A definição predefinida para isto é de 15 minutos.  O limite inferior para esta regulação é 1 e o limite superior é 9999. O limite superior permite ao administrador fixar o limite superior para maior do que um dia.
 
-**contagem de limiares de bloqueio antes do bloqueio permanente** : Este é um controlo inteiro que permite ao administrador configurar um valor numérico para o número de vezes que um utilizador pode atingir o Limiar de Bloqueio antes de ser permanentemente bloqueado.  O bloqueio permanente implica que o utilizador deve ser desbloqueado pelo administrador do sistema. Por predefinição, este é definido para 3.O intervalo para esta definição é entre 1 e 99.
+**contagem de limiares de bloqueio antes do bloqueio permanente** : Este é um controlo inteiro que permite ao administrador configurar um valor numérico para o número de vezes que um utilizador pode atingir o Limiar de Bloqueio antes de ser permanentemente bloqueado.  O bloqueio permanente implica que o utilizador deve ser desbloqueado pelo administrador do sistema. Por predefinição, este é definido para 3. O intervalo para esta definição é entre 1 e 99.
 <br/>
 
 ## <a name="m"></a>M
@@ -499,7 +499,7 @@ Bandeira de criação de **recursos FIM /MIM** : Um parâmetro de uma regra de s
 
 **grupo desbloqueado** : Grupo em que a adesão ao grupo pode ser alterada por utilizadores que não o proprietário do grupo.
 
-**grupo universal** : Um grupo com âmbito universal é um grupo de Diretório Ativo que pode conter membros de uma determinada floresta. Um grupo universal pode ser atribuído permissões em qualquer domínio ou floresta. As listas de distribuição normalmente têm âmbito universal.Um grupo de segurança com âmbito universal pode garantir recursos dentro da mesma floresta.
+**grupo universal** : Um grupo com âmbito universal é um grupo de Diretório Ativo que pode conter membros de uma determinada floresta. Um grupo universal pode ser atribuído permissões em qualquer domínio ou floresta. As listas de distribuição normalmente têm âmbito universal.  Um grupo de segurança com âmbito universal pode garantir recursos dentro da mesma floresta.
 
 **pedido de atualização** : Um pedido para alterar os atributos de um recurso.
 

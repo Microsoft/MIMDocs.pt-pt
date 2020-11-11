@@ -7,12 +7,12 @@ manager: daveba
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: microsoft-identity-manager
-ms.openlocfilehash: 5985ded45a53a804728572404fb0db43e988ac1d
-ms.sourcegitcommit: f87be3d09cee6a8880b3a6babf32e0d064fde36b
+ms.openlocfilehash: 50e5da9c7e3ed7df8edb8dbc315708df5ac5250a
+ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87176766"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492553"
 ---
 # <a name="convert-microsoft-identity-manager-specific-services-to-use-group-managed-service-accounts"></a>Converter serviços específicos do Gestor de Identidade da Microsoft para utilizar contas de serviço geridas pelo grupo
 
@@ -52,7 +52,7 @@ Este artigo é um guia para configurar os serviços suportados do Microsoft Iden
 
 ## <a name="actions-to-run-on-the-active-directory-domain-controller"></a>Ações a executar no controlador de domínio do diretório ativo
 
-1.  Crie um grupo chamado *MIMSync_Servers*e adicione todos os servidores de sincronização.
+1.  Crie um grupo chamado *MIMSync_Servers* e adicione todos os servidores de sincronização.
 
     ![Criar um grupo MIMSync_Servers](media/a4dc3f6c0cb1f715ba690744f54dce5c.png)
 
@@ -74,21 +74,21 @@ Este artigo é um guia para configurar os serviços suportados do Microsoft Iden
 
 1. No Gestor de Serviço de Sincronização, reloque a chave de encriptação. Será solicitado com a instalação do modo de alteração. Faça o seguinte:
 
-    a. No servidor onde está instalado o Gestor de Serviços de Sincronização, procure a ferramenta de Gestão de Chaves de Serviço de Sincronização. O **conjunto de teclas exportação**   já está selecionado por padrão.
+    a. No servidor onde está instalado o Gestor de Serviços de Sincronização, procure a ferramenta de Gestão de Chaves de Serviço de Sincronização. O **conjunto de teclas exportação** já está selecionado por padrão.
 
     b. Selecione **Seguinte**. 
     
     c. No momento, insira e verifique as informações do Serviço de Sincronização do Gestor de Identidade da Microsoft ou do Gestor de Identidade (FIM) do Serviço de Sincronização:
 
-    -   **Nome da conta**: O nome da conta serviço de sincronização que é utilizada durante a instalação inicial.  
-    -   **Palavra-passe**: A palavra-passe da conta serviço de sincronização.  
-    -   **Domínio**: O domínio do qual a conta do Serviço de Sincronização faz parte.
+    -   **Nome da conta** : O nome da conta serviço de sincronização que é utilizada durante a instalação inicial.  
+    -   **Palavra-passe** : A palavra-passe da conta serviço de sincronização.  
+    -   **Domínio** : O domínio do qual a conta do Serviço de Sincronização faz parte.
 
     d. Selecione **Seguinte**.
 
-    Se tiver introduzido as informações da conta com sucesso, tem a opção de alterar o destino, ou exportar a localização do ficheiro, da chave de encriptação de backup. Por predefinição, a localização do ficheiro de exportação é *C:\Windows\system32\miiskeys-1.bin*.
+    Se tiver introduzido as informações da conta com sucesso, tem a opção de alterar o destino, ou exportar a localização do ficheiro, da chave de encriptação de backup. Por predefinição, a localização do ficheiro de exportação é *C:\Windows\system32\miiskeys-1.bin*.
 
-1. Instale o Microsoft Identity Manager SP1, que pode encontrar no Centro de Serviços de Licenciamento de Volume ou no site de Downloads MSDN. Depois de concluída a instalação, guarde o tecla *miiskeys.bin*.
+1. Instale o Microsoft Identity Manager 2016 SP1 ou posteriormente hotfix, que pode encontrar no Centro de Serviço de Licenciamento de Volume ou no site de Downloads MSDN. Depois de concluída a instalação, guarde o tecla *miiskeys.bin*.
 
    ![A janela de progresso do Serviço de Sincronização do Gestor de Identidade da Microsoft](media/ef5f16085ec1b2b1637fa3d577a95dbf.png)
 
@@ -141,7 +141,7 @@ Este artigo é um guia para configurar os serviços suportados do Microsoft Iden
     ![A janela ative directory users and computers](media/0201f0281325c80eb70f91cbf0ac4d5b.jpg)
 
     > [!NOTE]  
-    > Um problema conhecido no Windows Server 2012 R2 é que os serviços que utilizam uma conta gerida deixam de responder após o início do servidor, porque o Microsoft Key Distribution Service não é iniciado após o reinício do Windows. A solução para esta questão é executar o seguinte comando: 
+    > Um problema conhecido no Windows Server 2012 R2 é que os serviços que utilizam uma conta gerida deixam de responder após o início do servidor, porque o Microsoft Key Distribution Service não é iniciado após o reinício do Windows. A solução para esta questão é executar o seguinte comando: 
     >
     > `sc triggerinfo kdssvc start/networkon`
     >
@@ -191,7 +191,7 @@ Este artigo é um guia para configurar os serviços suportados do Microsoft Iden
 1.  Conclua a instalação.
 
     > [!NOTE]
-    > Durante a instalação, são criadas duas novas teclas no caminho do registo **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\Front Identity Manager\2010\Serviço** para armazenar a palavra-passe de Troca encriptada. Uma entrada é para *ExchangeOnline,* e a outra é para *ExchangeOnPremise*. Para uma das entradas, o valor na coluna **Data** deve estar vazio.
+    > Durante a instalação, são criadas duas novas teclas no caminho de registo **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Forefront Identity Manager\2010\Service** para armazenar a palavra-passe de Troca encriptada. Uma entrada é para *ExchangeOnline,* e a outra é para *ExchangeOnPremise*. Para uma das entradas, o valor na coluna **Data** deve estar vazio.
 
     > ![O Editor de Registos](media/73e2b8a3c149a4ec6bacb4db2c749946.jpg)
 

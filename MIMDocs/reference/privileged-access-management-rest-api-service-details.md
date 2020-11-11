@@ -13,11 +13,11 @@ audience: developer
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 00a2f4d9c44747d50139655d368e42b11fbd388c
-ms.sourcegitcommit: c214bb0b1373b65b1c9c215379fd820ab0c13f0f
+ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "92762522"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492434"
 ---
 # <a name="pam-rest-api-service-details"></a>Detalhes do serviço API PAM REST
 As secções seguintes discutem detalhes da API de Gestão de Acesso Privilegiado (PAM) do Gestor de Identidade da Microsoft (MIM).
@@ -26,7 +26,7 @@ As secções seguintes discutem detalhes da API de Gestão de Acesso Privilegiad
 
 Os pedidos HTTP que são enviados para a API devem incluir os seguintes cabeçalhos (esta lista não é exaustiva):
 
-Cabeçalho | Descrição
+Cabeçalho | Description
 -------|------------
 Autorização | Obrigatório. O conteúdo depende do método de autenticação, que é configurável e pode ser baseado na WIA (Autenticação Integrada do Windows) ou ADFS.
 Content-Type | Obrigatório se o pedido tiver um corpo. Deve ser definido para `application/json` .
@@ -37,7 +37,7 @@ Cookie | O biscoito da sessão. Pode ser necessário dependendo do método de au
 
 As respostas HTTP devem incluir os seguintes cabeçalhos (esta lista não é exaustiva):
 
-Cabeçalho | Descrição
+Cabeçalho | Description
 -------|------------
 Content-Type | A API regressa `application/json` sempre.
 Comprimento do conteúdo | O comprimento do corpo pedido, se presente, em bytes.
@@ -89,7 +89,7 @@ Os pedidos da API PAM REST podem incluir filtros para especificar as propriedade
 
 Os filtros podem especificar qualquer uma das propriedades dos Pedidos PAM, Funções PAM. ou pedidos de PAM pendentes. Por exemplo: *ExpirationTime* , *DisplayName,* ou qualquer outro imóvel válido de um Pedido PAM, Função PAM ou Pedido Pendente.
 
-A API suporta os seguintes operadores em expressões de filtro: *E,* *Equal,* *NotEqual,* *GreaterThan,* *LessThan,* *GreaterThenOrEqueal* , e *LessThanOrEqual* . 
+A API suporta os seguintes operadores em expressões de filtro: *E,* *Equal,* *NotEqual,* *GreaterThan,* *LessThan,* *GreaterThenOrEqueal* , e *LessThanOrEqual*. 
 
 Os seguintes pedidos de amostra incluem filtros:
 

@@ -2,19 +2,25 @@
 title: História da versão do Gestor de Identidades Microsoft Docs
 description: Este artigo documenta as várias alterações feitas no âmbito de atualizações ao MIM 2016
 keywords: ''
-author: billmath
-ms.author: billmath
-manager: daveba
-ms.date: 10/18/2019
-ms.topic: reference
+author: EugeneSergeev
+manager: aashiman
+editor: ''
+reviewer: markwahl-msft
+ms.devlang: na
 ms.prod: microsoft-identity-manager
-ms.assetid: ''
-ms.openlocfilehash: 530229a3e5217955e974021ba42870f415e66033
-ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
+ms.tgt_pltfrm: na
+ms.workload: identity
+ms.date: 11/11/2020
+ms.author: esergeev
+ms.reviewer: mwahl
+ms.suite: ems
+ms.topic: reference
+ms.openlocfilehash: 424381cca56223e80403bad9f858c33362bb819d
+ms.sourcegitcommit: dae61d97c9db5402d35e2757a1ce844d16236032
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492519"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94532142"
 ---
 # <a name="identity-manager-version-release-history"></a>Histórico de lançamento da versão do Gestor de Identidade
 

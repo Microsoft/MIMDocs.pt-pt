@@ -4,7 +4,7 @@ description: Este tópico lista todos os lançamentos dos Conectores para O Gest
 services: active-directory
 documentationcenter: ''
 author: EugeneSergeev
-manager: daveba
+manager: aashiman
 editor: ''
 reviewer: markwahl-msft
 ms.assetid: 6a0c66ab-55df-4669-a0c7-1fe1a091a7f9
@@ -13,16 +13,16 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 01/23/2019
+ms.date: 11/11/2020
 ms.author: esergeev
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 3062058bc53a75c66959803ebb5b33849c11868b
-ms.sourcegitcommit: babd0299472aa7e8c8d9af1b464bf4e91318aed8
+ms.openlocfilehash: ba69b18f3712384da79095d625eb9008a07b741e
+ms.sourcegitcommit: dae61d97c9db5402d35e2757a1ce844d16236032
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "92762582"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94532125"
 ---
 # <a name="connector-version-release-history"></a>Histórico de Versões do Conector
 
@@ -44,6 +44,17 @@ Links relacionados:
 * Documentação de referência [do conector PowerShell](microsoft-identity-manager-2016-connector-powershell.md)
 * [Documentação de referência do Conector Lotus Domino](microsoft-identity-manager-2016-connector-domino.md)
 * Documentação de referência do [conector da loja de utilizadores sharePoint](https://go.microsoft.com/fwlink/?LinkID=331344)
+
+## <a name="1113460-november-2020"></a>1.1.1346.0 (Novembro 2020)
+### <a name="fixed-issues"></a>Problemas corrigidos
+- Conector de gráficos
+  - Corrigiu um problema com a corrupção do conector local que causa falhas nas importações delta
+  - Corrigiu um problema com entradas duplicadas reportadas pelo conector durante a execução total das importações, causando erros de descoberta
+  - Corrigiu um problema com uma importação incorreta de tipos de dados complexos, por *exemplo, colaboradorOrgData*
+- Conector do SQL genérico
+  - Corrigi um problema com falha de autenticação nativa SQL devido à propriedade de cadeia de ligação DSN *TrustConnection* definido para *falso* 
+- Conector LDAP genérico
+  - Corrigi um problema com as entradas *openLDAP* *de acessoLog* de processamento na importação delta causando alterações incorretas de membros do grupo e outros erros
 
 ## <a name="1113020-september-2020"></a>1.1.1302.0 (Setembro de 2020)
 ### <a name="fixed-issues"></a>Problemas corrigidos
@@ -68,7 +79,7 @@ Links relacionados:
   > Se tiver usado o convite para hóspedes na construção 1.1.1170.0 do conector, por favor atualize as suas regras de sincronização com a seguinte lógica:
 
   - Fluxos de saída
-    - Um utilizador é convidado a exportar a criação do utilizador, e a exportação inclui um atributo *De Correio,* mas não um *atributo UserPrincipalName* .  Se o *UserPrincipalName* for fornecido, então um utilizador será criado em vez de convidado
+    - Um utilizador é convidado a exportar a criação do utilizador, e a exportação inclui um atributo *De Correio,* mas não um *atributo UserPrincipalName*.  Se o *UserPrincipalName* for fornecido, então um utilizador será criado em vez de convidado
     - O atributo *UserType* apenas define se um utilizador se tornará *membro* ou *convidado* (predefinição para *Membro* se não for definido)
   - Fluxos de entrada
     - Os valores do atributo *UserPrincipalName* dos utilizadores externos são renderizados "as-is"
@@ -311,7 +322,7 @@ Lançado: 2017 março
 ### <a name="enhancements"></a>Melhoramentos 
 
 * SQL genérico:</br>
-  **Sintomas do cenário:**   É uma limitação bem conhecida com o Conector SQL onde apenas permitimos uma referência a um tipo de objeto e requerem referência cruzada com os membros. </br>
+  **Sintomas do cenário:**  É uma limitação bem conhecida com o Conector SQL onde apenas permitimos uma referência a um tipo de objeto e requerem referência cruzada com os membros. </br>
   **Descrição da solução:** No passo de processamento para referências escolhidas é escolhida a opção "*", todas as combinações de tipos de objetos serão devolvidas ao motor de sincronização.
 
 > [!Important]

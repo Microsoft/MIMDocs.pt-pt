@@ -13,11 +13,11 @@ reviewer: markwahl-msft
 ms.reviewer: mwahl
 ms.suite: ems
 ms.openlocfilehash: 26dcaf121c4fd980d296ffee893af3ca66249c6c
-ms.sourcegitcommit: ea16fea5d69aff58b862468d4bebfb05100d037a
+ms.sourcegitcommit: dae61d97c9db5402d35e2757a1ce844d16236032
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "84749246"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96035621"
 ---
 # <a name="support-update-for-azure-ad-premium-customers-using-microsoft-identity-manager"></a>Atualização de suporte para clientes Azure AD Premium usando o Microsoft Identity Manager
 
@@ -39,7 +39,7 @@ Como opção de suporte adicional para o Microsoft Identity Manager, os clientes
 Um cliente pode criar um pedido de suporte Azure, utilizando as instruções de Como criar um pedido de [suporte Azure:](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request)
 1. selecionar *Tipo de emissão: Técnico*
 1. mudar para mostrar *Todos os Serviços*
-1. na lista de serviços no Azure Ative Directy seleciona *o Provisionamento do Utilizador e a Sincronização*
+1. na lista de serviços no Azure Ative Directy seleciona  *o Provisionamento do Utilizador e a Sincronização*
 1. selecionar *tipo de problema: Microsoft Identity Manager (MIM)*
 1. selecionar *subtipo de problemas*: *Conectores,* *Serviço e Portal* ou motor de *sincronização*
 

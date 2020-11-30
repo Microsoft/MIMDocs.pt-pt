@@ -15,12 +15,12 @@ ms.author: esergeev
 ms.reviewer: mwahl
 ms.suite: ems
 ms.topic: reference
-ms.openlocfilehash: 424381cca56223e80403bad9f858c33362bb819d
-ms.sourcegitcommit: dae61d97c9db5402d35e2757a1ce844d16236032
+ms.openlocfilehash: 59a853c03cd24d89ffa2e89550de51d372c6391d
+ms.sourcegitcommit: 7d7fdb47352282c2d98bf09274707a18fd1a22dc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94532142"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96321986"
 ---
 # <a name="identity-manager-version-release-history"></a>Histórico de lançamento da versão do Gestor de Identidade
 
@@ -33,12 +33,18 @@ A equipa do Microsoft Identity Manager lança regularmente atualizações. Este 
 >
 >O histórico da versão para os conectores genéricos LDAP, Generic SQL, web services, PowerShell, Graph e Lotus Domino pode ser encontrado no [Histórico de Lançamento da Versão Connector](microsoft-identity-manager-2016-connector-version-history.md).  
 
-## <a name="mim-version-463550"></a>Versão MIM 4.6.355.0
-- Estado: 6 de novembro de 2020
+## <a name="mim-version-463590"></a>Versão MIM 4.6.359.0
+- Estado: 29 de novembro de 2020
 - [Download de hotfix](https://www.microsoft.com/download/details.aspx?id=102301)
 - [Artigo KB 4585922](https://support.microsoft.com/help/4585922)
 
 Este hotfix contém atualizações para os componentes MIM Synchronization Manager, MIM Service e MIM Portal, e também contém atualizações cumulativas aos componentes MIM dos hotfixes anteriores para MIM 2016 SP2.
+Substitui a construção 4.6.355.0 para resolver problemas de desempenho do Serviço MIM.
+
+## <a name="mim-version-463550"></a>Versão MIM 4.6.355.0
+- Estado: 6 de novembro de 2020
+
+Substituído por 4.6.359.0
 
 
 ## <a name="mim-version-462630"></a>Versão MIM 4.6.263.0
@@ -230,7 +236,7 @@ Este hotfix contém atualizações para os componentes MIM Service, MIM Portal e
 - Atualização para os Módulos da Autoridade de Certificados MIM de 4.4.1302.0 para uma construção posterior a 4.4.1459, a configuração falha
 - Aplicação moderna para renovar, inscrever e substituir operações, o histórico de pedidos não contém todos os itens de estado de pedido registados como são gravados
 - A Atualização Online não completa e devolve a exceção "O registo foi atualizado ou eliminado por outro utilizador."  
-- O link "Certificado de Descarregamento" no Portal de Gestão de Certificados, o download do certificado (ficheiro.cer) era demasiado grande
+- O link "Certificado de Descarregamento" no Portal de Gestão de Certificados, o download do certificado (.cer ficheiro) era demasiado grande
 - O Cliente A granel de Gestão de Certificados MIM trabalhará com os TLS 1.1 e TLS 1.2.  
 
  
@@ -424,7 +430,7 @@ Os clientes que atualizarem para o Microsoft Identity Manager 2016 Service Pack�
 >[!Note]
 >Os clientes com o Forefront Identity Manager 2010 R2 SP1 ou anterior têm primeiro de atualizar o respetivo ambiente para o Microsoft Identity Manager 2016, lançado em agosto de 2015, e seguir os passos abaixo.
 
-Antes de começar
+Before you begin
 
 Tem de atualizar o motor de Sincronização do MIM antes de atualizar o portal e o serviço MIM.
 Tem de criar uma cópia de segurança das bases de dados de Sincronização do MIM e MIMService.

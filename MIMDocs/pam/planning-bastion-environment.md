@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 3b99bd6d8f10c993d65e026bab23deeb65c547e9
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: d6cd6c88992dc3c7dc80cd93d21907319ece0136
+ms.sourcegitcommit: 2bbb6815b7dfae877eec966c1dc40ea8da847d62
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043958"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96522154"
 ---
 # <a name="planning-a-bastion-environment"></a>Planear um ambiente bastion
 
@@ -42,7 +42,7 @@ De acordo com o [modelo de camada](tier-model-for-partitioning-administrative-pr
 
 A floresta *CORP* de produção deve confiar na floresta *PRIV* administrativa, mas não o inverso. Pode ser uma confiança de domínio ou uma confiança de floresta. O domínio de floresta de administração não precisa de confiar nas florestas e nos domínios geridos para gerir o Active Directory, embora as aplicações adicionais possam precisar de uma relação de confiança bilateral, de validação de segurança e de testes.
 
-A autenticação seletiva deve ser utilizada para garantir que as contas na floresta de administração utilizam apenas os anfitriões de produção adequados. Para manter os controladores de domínio e delegar direitos no Active Directory, normalmente é preciso conceder o direito "Autorizado a iniciar sessão" aos controladores de domínio para as contas de administrador de camada 0 designadas na floresta de administração. Consulte [configurar definições](https://technet.microsoft.com/library/cc816580.aspx) de autenticação seletiva para obter mais informações.
+A autenticação seletiva deve ser utilizada para garantir que as contas na floresta de administração utilizam apenas os anfitriões de produção adequados. Para manter os controladores de domínio e delegar direitos no Active Directory, normalmente é preciso conceder o direito "Autorizado a iniciar sessão" aos controladores de domínio para as contas de administrador de camada 0 designadas na floresta de administração. Consulte [configurar definições de autenticação seletiva](https://technet.microsoft.com/library/cc816580.aspx) para obter mais informações.
 
 ## <a name="maintain-logical-separation"></a>Manter a separação lógica
 
@@ -118,23 +118,23 @@ Embora inconveniente, podem ser precisas estações de trabalho protegidas separ
 
 - **Verifique se todos os elementos multimédia na compilação estão limpos** para atenuar os efeitos de software maligno instalado numa imagem original ou injetados num ficheiro de instalação durante a transferência ou o armazenamento.
 
-- **As linhas de base** de segurança devem ser utilizadas como configurações de início. O Microsoft Security Compliance Manager (SCM) pode ajudar a configurar as linhas de base em anfitriões administrativos.
+- **As linhas de base de segurança** devem ser utilizadas como configurações iniciais. O Microsoft Security Compliance Manager (SCM) pode ajudar a configurar as linhas de base em anfitriões administrativos.
 
-- **Secure Boot** para mitigar contra atacantes ou malware tentando carregar código não assinado no processo de arranque.
+- **Proteja** o Boot para mitigar contra os atacantes ou malware que tentam carregar código não assinado no processo de arranque.
 
-- **Restrição de software** para garantir que apenas é executado software administrativo autorizado nos anfitriões administrativos. Os clientes podem utilizar o AppLocker para esta tarefa com uma lista branca de aplicações autorizadas, para ajudar a impedir a execução de software malicioso e de aplicações não suportadas.
+- **Restrição de software** para garantir que apenas é executado software administrativo autorizado nos anfitriões administrativos. Os clientes podem utilizar o AppLocker para esta tarefa com uma lista aprovada de aplicações autorizadas, para ajudar a evitar que software malicioso e aplicações não apoiadas sejam executadas.
 
-- **Encriptação de volume total** para atenuar a perda física de computadores, tais como portáteis administrativos usados remotamente.
+- **Encriptação de volume total** para mitigar a perda física de computadores, como portáteis administrativos usados remotamente.
 
 - **Restrições de USB** para proteger contra infeção física.
 
-- **Isolamento** de rede para proteger contra ataques de rede e ações de administração inadvertidas. As firewalls do anfitrião devem bloquear todas as ligações de entrada, exceto aquelas explicitamente necessárias, e bloquear todo o acesso à Internet de saída desnecessário.
+- **Isolamento de rede** para proteger contra ataques de rede e ações de administração inadvertidas. As firewalls do anfitrião devem bloquear todas as ligações de entrada, exceto aquelas explicitamente necessárias, e bloquear todo o acesso à Internet de saída desnecessário.
 
 - **Antimalware** para proteger contra ameaças conhecidas e malware.
 
 - **Explorar atenuações** para atenuar os efeitos de exploits e ameaças desconhecidas, incluindo o Enhanced Mitigation Experience Toolkit (EMET).
 
-- **Ataque** análise de superfície para evitar a introdução de novos vetores de ataque no Windows durante a instalação de novo software. Ferramentas como o Attack Surface Analyzer (ASA) ajudam a avaliar as definições de configuração num anfitrião e a identificar vetores de ataques introduzidos por alterações de configuração ou software.
+- **Ataque análise de superfície** para evitar a introdução de novos vetores de ataque ao Windows durante a instalação de novo software. Ferramentas como o Attack Surface Analyzer (ASA) ajudam a avaliar as definições de configuração num anfitrião e a identificar vetores de ataques introduzidos por alterações de configuração ou software.
 
 - **Os privilégios administrativos** não devem ser concedidos aos utilizadores no respetivo computador local.
 
@@ -170,19 +170,19 @@ Tem de existir um grupo no domínio existente, cujo nome corresponde ao nome do 
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
 ```
 
-### <a name="2-success-and-failure-auditing"></a>2. Auditoria de sucesso e insucesso
+### <a name="2-success-and-failure-auditing"></a>2. Auditoria de sucesso e incumprimento
 
 As definições da política de grupo no controlador de domínio relativas a auditoria têm de incluir a auditoria dos êxitos e falhas para Auditar a gestão de contas e Auditar acesso ao serviço de diretórios. Isto pode ser feito com a Consola de Gestão de Políticas de Grupo, executada por um administrador do domínio existente e executada numa estação de trabalho associada ao domínio existente:
 
-3. Ir **iniciar** > a**Gestão política**do Grupo**de Ferramentas Administrativas.** > 
+3. Iniciar a **gestão** de políticas do grupo de  >  **ferramentas**  >  **administrativas.**
 
-4. Navegue para **a Floresta: contoso.local** > **Domínios** > **contoso.local** > **Domains** > Padrão Domain Controllers Política de**Controladores**de Domínio . Irá aparecer uma mensagem informativa.
+4. Navegue para a **floresta: contoso.local**  >  **Domains**  >  **contoso.local**  >  **Domain Controllers** Default  >  **Controllers Policy**. Irá aparecer uma mensagem informativa.
 
     ![Política de controladores de domínio predefinida - captura de ecrã](media/pam-group-policy-management.jpg)
 
 5. Clique com o botão direito do rato em **Política de Controladores de Domínio Predefinida** e selecione **Editar**. Será apresentada uma nova janela.
 
-6. Na janela do Editor de Gestão de Políticas do Grupo, sob a árvore política de controladores de domínio predefinido, navegue para**as políticas** > de **configuração** > do computador**Definições de** > **definições** > de segurança Política local De**auditoria** > **Audit Policy**Políticas .
+6. Na janela do Editor de Gestão de Políticas de Grupo, sob a árvore de política de controladores de domínio predefinido, navegue para políticas **de configuração de**  >  **Policies**  >  **computador, definições** de  >  **segurança Definições** de segurança Políticas  >  **locais**  >  **.**
 
     ![Editor de gestão de políticas de grupo - captura de ecrã](media/pam-group-policy-management-editor.jpg)
 
@@ -216,7 +216,7 @@ O cmdlet `New-PAMDomainConfiguration` tem de ser executado no computador do Serv
  New-PAMDomainConfiguration -SourceDomain "contoso" -Credentials (get-credential)
 ```
 
-### <a name="5-give-read-permissions-to-accounts"></a>5. Dar permissões de leitura para contas
+### <a name="5-give-read-permissions-to-accounts"></a>5. Dar permissões de leitura às contas
 
 As contas na floresta bastion utilizadas para estabelecer funções (os administradores que utilizam os cmdlets `New-PAMUser` e `New-PAMGroup`), bem como a conta utilizada pelo serviço de monitor MIM, precisam de permissões de leitura nesse domínio.
 
@@ -228,7 +228,7 @@ Os passos seguintes permitem o acesso de leitura do utilizador *PRIV\Administrat
 
 3. Clique com o botão direito do rato no domínio **contoso.local** e selecione **Delegar controlo**.
 
-4. No separador de utilizadores e grupos Selecionados, clique em **Adicionar**.
+4. No separador utilizadores e grupos selecionados, clique em **Adicionar**.
 
 5. No pop-up Selecionar Utilizadores, Computadores ou Grupos, clique em **Localizações** e altere a localização para *priv.contoso.local*. No nome do objeto, escreva *Admins do Domínio* e clique em **Verificar Nomes**. Quando aparecer um pop-up, para o nome de utilizador escreva *priv\administrator* e a palavra-passe.
 
@@ -238,11 +238,11 @@ Os passos seguintes permitem o acesso de leitura do utilizador *PRIV\Administrat
 
 18. Feche Computadores e Utilizadores do Active Directory.
 
-### <a name="6-a-break-glass-account"></a>6. Uma conta de vidro de rutura
+### <a name="6-a-break-glass-account"></a>6. Uma conta de vidro quebrado
 
 Se o objetivo do projeto Privileged Access Management for reduzir o número de contas com privilégios de Administrador de Domínio permanentemente atribuídos ao domínio, tem de existir uma conta *break glass* no domínio, no caso de existir um problema posterior com a relação de confiança. As contas para acesso de emergência à floresta de produção devem existir em cada domínio e só devem poder iniciar sessão nos controladores de domínio. Para organizações com vários sites, podem ser precisas contas adicionais para redundância.
 
-### <a name="7-update-permissions-in-the-bastion-environment"></a>7. Atualizar permissões no ambiente do bastião
+### <a name="7-update-permissions-in-the-bastion-environment"></a>7. Atualizar permissões no ambiente de bastião
 
 Reveja as permissões no objeto *AdminSDHolder* no contentor do sistema nesse domínio. O objeto *AdminSDHolder* tem uma lista de controlo de acesso (ACL) exclusiva, que serve para controlar as permissões de principais de segurança que são membros de grupos privilegiados do Active Directory incorporados. Repare se foram feitas alterações às permissões predefinidas, que possam afetar os utilizadores com privilégios administrativos no domínio, uma vez que essas permissões não se aplicarão a utilizadores cuja conta esteja no ambiente bastion.
 

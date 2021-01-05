@@ -13,16 +13,16 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 11/11/2020
+ms.date: 12/31/2020
 ms.author: esergeev
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ba69b18f3712384da79095d625eb9008a07b741e
-ms.sourcegitcommit: dae61d97c9db5402d35e2757a1ce844d16236032
+ms.openlocfilehash: 84eae9e65a2ea65c210e026ccafa58d95c434539
+ms.sourcegitcommit: 36752980300a51a0b30442ea23b9934eb8b5c752
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94532125"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97835317"
 ---
 # <a name="connector-version-release-history"></a>Histórico de Versões do Conector
 
@@ -44,6 +44,11 @@ Links relacionados:
 * Documentação de referência [do conector PowerShell](microsoft-identity-manager-2016-connector-powershell.md)
 * [Documentação de referência do Conector Lotus Domino](microsoft-identity-manager-2016-connector-domino.md)
 * Documentação de referência do [conector da loja de utilizadores sharePoint](https://go.microsoft.com/fwlink/?LinkID=331344)
+
+## <a name="1113470-december-2020"></a>1.1.1347.0 (Dezembro 2020)
+### <a name="fixed-issues"></a>Problemas corrigidos
+- Conector de gráficos
+  - Corrigiu um problema com o conector que envia incorretamente convites B2B ao criar um grupo ativado por correio ou um contacto
 
 ## <a name="1113460-november-2020"></a>1.1.1346.0 (Novembro 2020)
 ### <a name="fixed-issues"></a>Problemas corrigidos
@@ -101,10 +106,10 @@ Links relacionados:
    - Conceda permissões para convidar os hóspedes para a sua aplicação AD Azure associada ao conector Graph
    - Complete a secção de configuração do conector para convidar utilizadores externos: desacione o URL de redirecionamento de convite (obrigatório) e escolha se envia e-mails de convite
    - Desabrar os atributos obrigatórios na sua regra de sincronização de saída:
-     - "Guest"=> *userType* (apenas fluxo inicial)
-     - endereço de e-mail externo=> *nome do utilizadorPrincipal*
-     - CustomExpression ("CN="="="csObjectID+""OBJECT=user")=> *dn* (apenas fluxo inicial)
-     - csObjectID= *id* >(apenas fluxo inicial)
+     - "Guest"=>*userType* (apenas fluxo inicial)
+     - endereço de e-mail externo=>*nome do utilizadorPrincipal*
+     - CustomExpression ("CN="="="csObjectID+""OBJECT=user")=>*dn* (apenas fluxo inicial)
+     - csObjectID= *id*>(apenas fluxo inicial)
 
 ## <a name="1111300-february-2020"></a>1.1.1130.0 (Fevereiro de 2020)
 ### <a name="fixed-issues"></a>Problemas corrigidos
@@ -268,7 +273,7 @@ Links relacionados:
 * Serviços Web Genéricos:
   * Corrigiu um problema que impedia a criação de um projeto SOAP quando existiam dois ou mais pontos finais.
 * SQL genérico:
-  * No funcionamento da importação, o GSQL não estava a converter o tempo corretamente, quando guardado para o espaço do conector. A data e o formato de tempo padrão para o espaço do conector do GSQL foi alterado de 'yyyy-MM-dd hh:mm:mm:ssZ' para 'yyyy-MM-dd HH:mm:ssZ'.
+  * No funcionamento da importação, o GSQL não estava a converter o tempo corretamente, quando guardado para o espaço do conector. A data e o formato de tempo padrão para o espaço do conector do GSQL foi alterado de 'yy-MM-dd hh:mm:mm:ssZ' para 'yyyy-MM-dd HH:mm:ssZ'.
 
 ## <a name="115510-aadconnect-115530"></a>1.1.551.0 (AADConnect 1.1.553.0)
 
@@ -433,7 +438,7 @@ Antes de março de 2016, os Connectors foram lançados como tópicos de apoio.
 > [!NOTE]
 > Ao atualizar o Microsoft Identity Manager ou o AADConnect com a utilização de qualquer um dos conectores ECMA2. 
 
-Tem de atualizar a definição do conector no momento da atualização para corresponder ou receberá o seguinte erro no registo do evento de aplicação começando a reportar o ID 6947: "Versão de montagem na configuração do conector AAD ("X.X.XXX. X") é mais cedo do que a versão real ("X.X.XXX. X") de "C:\Program Files\Microsoft Azure AD Sync\Extensions\Microsoft.IAM.Connector.GenericLdap.dll".
+Tem de atualizar a definição do conector no upgrade para corresponder ou receberá o seguinte erro no registo do evento de aplicação começa a reportar o ID 6947: "A versão de montagem na configuração do conector AAD ("X.X.XXX.X") é mais cedo do que a versão real ("X.X.XXX.X") de "C:\Program Files\Microsoft Azure AD Sync\Extensions\Microsoft.IAM.Connector.GenericLdap.dll".
 
 Para refrescar a definição:
 * Abra as propriedades para a instância do conector

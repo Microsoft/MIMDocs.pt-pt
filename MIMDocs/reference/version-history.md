@@ -10,17 +10,17 @@ ms.devlang: na
 ms.prod: microsoft-identity-manager
 ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 11/11/2020
+ms.date: 11/29/2020
 ms.author: esergeev
 ms.reviewer: mwahl
 ms.suite: ems
 ms.topic: reference
-ms.openlocfilehash: 59a853c03cd24d89ffa2e89550de51d372c6391d
-ms.sourcegitcommit: 7d7fdb47352282c2d98bf09274707a18fd1a22dc
+ms.openlocfilehash: 67b74ccf993cd4238740d4325d926b24f654cc1c
+ms.sourcegitcommit: 8f81767ec92e1b80658aaebb9463aa4d62396d43
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96321986"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927681"
 ---
 # <a name="identity-manager-version-release-history"></a>Histórico de lançamento da versão do Gestor de Identidade
 
@@ -430,7 +430,7 @@ Os clientes que atualizarem para o Microsoft Identity Manager 2016 Service Pack�
 >[!Note]
 >Os clientes com o Forefront Identity Manager 2010 R2 SP1 ou anterior têm primeiro de atualizar o respetivo ambiente para o Microsoft Identity Manager 2016, lançado em agosto de 2015, e seguir os passos abaixo.
 
-Before you begin
+Antes de começar
 
 Tem de atualizar o motor de Sincronização do MIM antes de atualizar o portal e o serviço MIM.
 Tem de criar uma cópia de segurança das bases de dados de Sincronização do MIM e MIMService.

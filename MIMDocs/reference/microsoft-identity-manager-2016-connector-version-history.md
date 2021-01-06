@@ -17,12 +17,12 @@ ms.date: 12/31/2020
 ms.author: esergeev
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 84eae9e65a2ea65c210e026ccafa58d95c434539
-ms.sourcegitcommit: 36752980300a51a0b30442ea23b9934eb8b5c752
+ms.openlocfilehash: f0b61059f9010523fa4f7b6a6ced987e5ab2dc49
+ms.sourcegitcommit: 8f81767ec92e1b80658aaebb9463aa4d62396d43
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97835317"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97927698"
 ---
 # <a name="connector-version-release-history"></a>Histórico de Versões do Conector
 
@@ -32,7 +32,7 @@ Os conectores ligam fontes de dados conectadas específicas ao Microsoft Identit
 > Este tópico é principalmente apenas sobre FIM e MIM Connectors. A menos que explicitamente chamados abaixo, estes Conectores não são suportados para instalação no Azure AD Connect. Os Conectores libertados são pré-instalados no Azure AD Connect ao atualizar para a Build especificada.
 
 
-Este tópico lista todas as versões do pacote de conectores genéricos que foram lançados separadamente da MIM.  Para obter uma lista de conectores suportados com MIM, consulte [conectores suportados no MIM 2016 SP1](../supported-management-agents.md).  Alguns parceiros criaram os seus próprios conectores desta forma, estando disponível uma lista completa no wiki [FIM 2010 e MIM 2016: Management Agents from Partners](https://social.technet.microsoft.com/wiki/contents/articles/1589.fim-2010-mim-2016-management-agents-from-partners.aspx).
+Este tópico lista todas as versões do pacote de conectores genéricos que foram lançados separadamente da MIM.  Para obter uma lista de conectores suportados com MIM, consulte [conectores suportados no MIM 2016 SP2](../supported-management-agents.md).  Alguns parceiros criaram os seus próprios conectores desta forma, estando disponível uma lista completa no wiki [FIM 2010 e MIM 2016: Management Agents from Partners](https://social.technet.microsoft.com/wiki/contents/articles/1589.fim-2010-mim-2016-management-agents-from-partners.aspx).
 
 
 Links relacionados:
@@ -464,4 +464,8 @@ O Azure AD Connector for FIM foi uma tecnologia antiga para sincronizar informa�
 
 ## <a name="next-steps"></a>Passos seguintes
 
-Saiba mais sobre a documentação de referência [do Conector LDAP Genérico](microsoft-identity-manager-2016-connector-genericldap.md) Saiba mais sobre a documentação de referência[do Conector SQL Genérico](microsoft-identity-manager-2016-connector-genericsql.md) Saiba mais sobre a documentação de referência do [Conector de Serviços Web](microsoft-identity-manager-2016-ma-ws.md) Saiba mais sobre a documentação de referência do [Conector PowerShell](microsoft-identity-manager-2016-connector-powershell.md) Saiba mais sobre a documentação de referência [do Conector Lotus Domino](microsoft-identity-manager-2016-connector-domino.md)
+Saiba mais sobre a documentação de referência [genérica do Conector LDAP.](microsoft-identity-manager-2016-connector-genericldap.md)
+Saiba mais sobre a documentação de referência[do Conector GENÉRICO SQL.](microsoft-identity-manager-2016-connector-genericsql.md)
+Saiba mais sobre a documentação de referência do [Conector de Serviços Web.](microsoft-identity-manager-2016-ma-ws.md)
+Saiba mais sobre a documentação de referência do [Conector PowerShell.](microsoft-identity-manager-2016-connector-powershell.md)
+Saiba mais sobre a documentação de referência [do Conector Lotus Domino.](microsoft-identity-manager-2016-connector-domino.md)

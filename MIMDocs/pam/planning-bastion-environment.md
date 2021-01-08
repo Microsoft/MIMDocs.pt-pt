@@ -5,24 +5,27 @@ keywords: ''
 author: billmath
 ms.author: billmath
 manager: daveba
-ms.date: 09/13/2017
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: bfc7cb64-60c7-4e35-b36a-bbe73b99444b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: d6cd6c88992dc3c7dc80cd93d21907319ece0136
-ms.sourcegitcommit: 2bbb6815b7dfae877eec966c1dc40ea8da847d62
+ms.openlocfilehash: aeaf82e6875739cb6ff8ee7b7d96ced55e07adab
+ms.sourcegitcommit: 89511939730501458295fc8499490b2b378ce637
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96522154"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010749"
 ---
 # <a name="planning-a-bastion-environment"></a>Planear um ambiente bastion
 
-Adicionar um ambiente bastion com uma floresta administrativa dedicada a um Active Directory permite às organizações gerir facilmente contas administrativas, estações de trabalho e grupos num ambiente que tem controlos de segurança mais fortes que o respetivo ambiente de produção existente.
+A adição de um ambiente de bastião com uma floresta administrativa dedicada a um Diretório Ativo permite que as organizações gerem contas administrativas, estações de trabalho e grupos num ambiente que tenha controlos de segurança mais fortes do que o seu ambiente de produção existente.
 
-Esta arquitetura ativa vários controlos que não são possíveis ou facilmente configurados numa arquitetura de floresta única. Tal inclui o aprovisionamento de contas como utilizadores não privilegiados padrão na floresta administrativa, que são altamente privilegiados no ambiente de produção, permitindo uma maior imposição técnica de governação. Esta arquitetura também permite a utilização da funcionalidade de autenticação seletiva de uma fidedignidade como meio para restringir inícios de sessão (e exposição de credenciais) para apenas anfitriões autorizados. Em situações em que um maior nível de garantia é pretendido para a floresta de produção sem incorrer o custo e a complexidade de uma reconstrução completa, uma floresta administrativa pode fornecer um ambiente que aumenta o nível de garantia do ambiente de produção.
+> [!NOTE]
+> A abordagem PAM com um ambiente de bastião fornecido pela MIM destina-se a ser utilizada numa arquitetura personalizada para ambientes isolados onde o acesso à Internet não esteja disponível, onde esta configuração é exigida por regulamentação, ou em ambientes isolados de alto impacto, como laboratórios de investigação offline e tecnologia operacional desligada ou ambientes de controlo de supervisão e aquisição de dados. Se o seu Ative Directory faz parte de um ambiente ligado à Internet, consulte [a garantia de acesso privilegiado](/security/compass/overview) para obter mais informações sobre por onde começar.
+
+Esta arquitetura permite controlos que não são possíveis ou facilmente configurados numa única arquitetura florestal. Tal inclui o aprovisionamento de contas como utilizadores não privilegiados padrão na floresta administrativa, que são altamente privilegiados no ambiente de produção, permitindo uma maior imposição técnica de governação. Esta arquitetura também permite a utilização da funcionalidade de autenticação seletiva de uma fidedignidade como meio para restringir inícios de sessão (e exposição de credenciais) para apenas anfitriões autorizados. Em situações em que um maior nível de garantia é pretendido para a floresta de produção sem incorrer o custo e a complexidade de uma reconstrução completa, uma floresta administrativa pode fornecer um ambiente que aumenta o nível de garantia do ambiente de produção.
 
 Podem ser utilizadas técnicas adicionais para além da floresta administrativa dedicada. Estas incluem restringir os locais onde são expostas credenciais administrativas, limitar os privilégios de função de utilizadores nessa floresta e garantir que tarefas administrativas não são realizadas em anfitriões utilizados para atividades de utilizador padrão (por exemplo, e-mail e navegação na Web).
 
@@ -40,7 +43,7 @@ De acordo com o [modelo de camada](tier-model-for-partitioning-administrative-pr
 
 ### <a name="restricted-trust"></a>Confiança restrita
 
-A floresta *CORP* de produção deve confiar na floresta *PRIV* administrativa, mas não o inverso. Pode ser uma confiança de domínio ou uma confiança de floresta. O domínio de floresta de administração não precisa de confiar nas florestas e nos domínios geridos para gerir o Active Directory, embora as aplicações adicionais possam precisar de uma relação de confiança bilateral, de validação de segurança e de testes.
+A floresta *CORP* de produção deve confiar na floresta *PRIV* administrativa, mas não o inverso. Esta confiança pode ser uma confiança de domínio ou uma confiança florestal. O domínio de floresta de administração não precisa de confiar nas florestas e nos domínios geridos para gerir o Active Directory, embora as aplicações adicionais possam precisar de uma relação de confiança bilateral, de validação de segurança e de testes.
 
 A autenticação seletiva deve ser utilizada para garantir que as contas na floresta de administração utilizam apenas os anfitriões de produção adequados. Para manter os controladores de domínio e delegar direitos no Active Directory, normalmente é preciso conceder o direito "Autorizado a iniciar sessão" aos controladores de domínio para as contas de administrador de camada 0 designadas na floresta de administração. Consulte [configurar definições de autenticação seletiva](https://technet.microsoft.com/library/cc816580.aspx) para obter mais informações.
 
@@ -66,7 +69,7 @@ Uma vez que a administração de aplicações será transitada para o ambiente b
 
 - Implementar os Serviços de Domínio do Active Directory em vários computadores no ambiente bastion. Pelo menos são necessários dois para garantir a autenticação continuada, mesmo que um servidor seja temporariamente reiniciado para manutenção agendada. Podem ser necessários computadores adicionais para uma carga maior ou para gerir recursos e administradores com base em várias regiões geográficas.
 
-- Preparar contas «break glass» na floresta existente e na floresta administrativa dedicada, para fins de emergência.
+- Prepare contas de vidro quebrado na floresta existente e na floresta administrada dedicada, para fins de emergência.
 
 - Implementar o SQL Server e o Serviço MIM em vários computadores no ambiente bastion.
 
@@ -86,7 +89,7 @@ Ao criar o ambiente bastion, antes de instalar o Microsoft Identity Manager, ide
 
 - As **contas «break glass»** só devem conseguir iniciar sessão nos controladores de domínio do ambiente bastion.
 
-- Os **administradores "Red Card"** aprovisionam outras contas e executam manutenção agendada. Estas contas não recebem acesso às florestas ou aos sistemas existentes fora do ambiente bastion. As credenciais, por exemplo, um smart card, devem ser fisicamente protegidas e a utilização destas contas deve ser registada.
+- Os **administradores "Red Card"** aprovisionam outras contas e executam manutenção agendada. Estas contas não recebem acesso às florestas ou aos sistemas existentes fora do ambiente bastion. As credenciais, por exemplo, um smartcard, devem ser fisicamente seguras, e a utilização destas contas deve ser registada.
 
 - **Contas de serviço** necessárias ao Microsoft Identity Manager, ao SQL Server e a outro software.
 
@@ -128,7 +131,7 @@ Embora inconveniente, podem ser precisas estações de trabalho protegidas separ
 
 - **Restrições de USB** para proteger contra infeção física.
 
-- **Isolamento de rede** para proteger contra ataques de rede e ações de administração inadvertidas. As firewalls do anfitrião devem bloquear todas as ligações de entrada, exceto aquelas explicitamente necessárias, e bloquear todo o acesso à Internet de saída desnecessário.
+- **Isolamento de rede** para proteger contra ataques de rede e ações de administração inadvertidas. As firewalls hospedeiras devem bloquear todas as ligações recebidas, exceto as ligações expressamente necessárias, e bloquear todo o acesso à Internet de saída não necessário.
 
 - **Antimalware** para proteger contra ameaças conhecidas e malware.
 
@@ -164,7 +167,7 @@ Existem sete requisitos para permitir a gestão de um domínio existente.
 
 ### <a name="1-a-security-group-on-the-local-domain"></a>1. Um grupo de segurança no domínio local
 
-Tem de existir um grupo no domínio existente, cujo nome corresponde ao nome do domínio NetBIOS seguido de três cifrões, por exemplo, *CONTOSO$$$*. O âmbito do grupo tem de ser *local de domínio* e o tipo de grupo tem de ser *Segurança*. Isto é necessário para que os grupos sejam criados na floresta administrativa dedicada com o mesmo identificador de segurança que os grupos neste domínio. Crie este grupo com o seguinte comando do PowerShell, executado por um administrador do domínio existente e execute numa estação de trabalho associada ao domínio existente:
+Tem de existir um grupo no domínio existente, cujo nome corresponde ao nome do domínio NetBIOS seguido de três cifrões, por exemplo, *CONTOSO$$$*. O âmbito do grupo tem de ser *local de domínio* e o tipo de grupo tem de ser *Segurança*. Isto é necessário para que os grupos sejam criados na floresta administrativa dedicada com o mesmo identificador de segurança que os grupos neste domínio. Crie este grupo com o seguinte comando PowerShell, realizado por um administrador do domínio existente e executado numa estação de trabalho unida ao domínio existente:
 
 ```PowerShell
 New-ADGroup -name 'CONTOSO$$$' -GroupCategory Security -GroupScope DomainLocal -SamAccountName 'CONTOSO$$$'
@@ -182,7 +185,7 @@ As definições da política de grupo no controlador de domínio relativas a aud
 
 5. Clique com o botão direito do rato em **Política de Controladores de Domínio Predefinida** e selecione **Editar**. Será apresentada uma nova janela.
 
-6. Na janela do Editor de Gestão de Políticas de Grupo, sob a árvore de política de controladores de domínio predefinido, navegue para políticas **de configuração de**  >  **Policies**  >  **computador, definições** de  >  **segurança Definições** de segurança Políticas  >  **locais**  >  **.**
+6. Na janela do Editor de Gestão de Políticas de Grupo, sob a árvore de política de controladores de domínio predefinido, navegue para políticas **de configuração de**  >    >  **computador, definições** de  >  **segurança Definições** de segurança Políticas  >  **locais**  >  **.**
 
     ![Editor de gestão de políticas de grupo - captura de ecrã](media/pam-group-policy-management-editor.jpg)
 
@@ -248,4 +251,4 @@ Reveja as permissões no objeto *AdminSDHolder* no contentor do sistema nesse do
 
 ## <a name="select-users-and-groups-for-inclusion"></a>Selecionar utilizadores e grupos para inclusão
 
-O passo seguinte consiste em definir as funções de PAM, associando os utilizadores e grupos às quais devem ter acesso. Normalmente, será um subconjunto de utilizadores e grupos para a camada identificado como estando a ser gerida ambiente bastion. Pode encontrar mais informações em [Definir funções para o Privileged Access Management](defining-roles-for-pam.md).
+O passo seguinte consiste em definir as funções de PAM, associando os utilizadores e grupos às quais devem ter acesso. Estes utilizadores e grupos serão normalmente um subconjunto dos utilizadores e grupos para o nível identificado como sendo gerido no ambiente de bastião. Pode encontrar mais informações em [Definir funções para o Privileged Access Management](defining-roles-for-pam.md).

@@ -1,6 +1,6 @@
 ---
 title: Implementar o PAM Passo 1 – Domínio CORP| Documentos da Microsoft
-description: Preparar o domínio CORP com identidades novas ou existentes para ser gerido por Privileged Identity Manager
+description: Prepare o domínio CORP com identidades existentes ou novas a serem geridas pelo Microsoft Identity Manager
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: c21228dad923d80ab63c255c1184b7de04a0ff3d
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 4c9c5736d0215d0423eb989dc5a194a0a00c3c50
+ms.sourcegitcommit: 89511939730501458295fc8499490b2b378ce637
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043737"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010435"
 ---
 # <a name="step-1---prepare-the-host-and-the-corp-domain"></a>Passo 1 – preparar o anfitrião e o domínio CORP
 
@@ -33,13 +33,13 @@ Esta secção descreve como configurar um controlador de domínio para um domín
 
 ### <a name="install-windows-server"></a>Instale o Windows Server
 
-Instale o Windows Server 2012 R2 ou a Pré-visualização Técnica 4 do Windows Server 2016 ou posterior, numa máquina virtual, para criar um computador designado *CORPDC*.
+Instale o Windows Server 2012 R2 ou mais tarde numa máquina virtual para criar um computador chamado *CORPDC*.
 
-1. Escolha ** Windows Server 2012 R2 Standard (Servidor com uma GUI) x64** ou **Pré-visualização Técnica do Windows Server 2016 (Servidor com Experiência de Ambiente de Trabalho)**.
+1. Escolha **o Windows Server 2012 R2 Standard (Servidor com gui) x64** ou Windows Server **2016 (Servidor com Experiência de Ambiente de Trabalho)**.
 
 2. Reveja e aceite os termos do licenciamento.
 
-3. Uma vez que o disco estará vazio, selecione **Custom: Instale apenas** o Windows e utilize o espaço do disco não inicializado.
+3. Uma vez que o disco estará vazio, selecione **Custom: Instale apenas** o Windows e utilize o espaço de disco não iniciado.
 
 4. Inicie sessão no novo computador como administrador. Navegue para o Painel de Controlo. Defina o nome do computador como *CORPDC* e conceda-lhe um endereço IP estático na rede virtual. Reinicie o servidor.
 
@@ -117,19 +117,19 @@ Vamos criar um grupo de segurança denominado *CorpAdmins* e um utilizador com o
    Set-ADUser –identity Jen –Enabled 1 -DisplayName "Jen"
    ```
 
-### <a name="configure-auditing"></a>Configurar auditoria
+### <a name="configure-auditing"></a>Configurar a auditoria
 
 Tem de ativar a auditoria em florestas existentes para estabelecer a configuração de PAM nessas florestas.  
 
 Para cada domínio, inicie sessão no controlador de domínio como um administrador de domínio e execute os seguintes passos:
 
-1. Vá **iniciar** > **ferramentas administrativas** (ou, no Windows Server 2016, **Ferramentas Administrativas do Windows)** e lançar gestão de políticas do **grupo.**
+1. Inicie   >  **ferramentas administrativas** (ou, no Windows Server 2016, **Ferramentas Administrativas do Windows),** e lance **a Gestão de Políticas do Grupo**.
 
-2. Navegue para a política de controladores de domínio deste domínio.  Se criou um novo domínio para contoso.local, navegue para **a Floresta: contoso.local** > **Domains** > **contoso.local** > **Domains** > **Default DomainControllers Default Controllers Policy**. Aparece uma mensagem informativa.
+2. Navegue para a política de controladores de domínio deste domínio.  Se criou um novo domínio para contoso.local, navegue para **Forest: contoso.local**  >  **Domains**  >  **contoso.local**  >  **Domain Controllers** Default  >  **Controllers Policy**. Aparece uma mensagem informativa.
 
 3. Clique com o botão direito do rato em **Política de Controladores de Domínio Predefinida** e selecione **Editar**. Aparece uma nova janela.
 
-4. Na janela do Editor de Gestão de Políticas do Grupo, sob a árvore política de controladores de domínio predefinido, navegue para**as políticas** > de **configuração** > do computador**Definições de** > **definições** > de segurança Política local De**auditoria** > **Audit Policy**Políticas .
+4. Na janela do Editor de Gestão de Políticas de Grupo, sob a árvore de política de controladores de domínio predefinido, navegue para políticas **de configuração de**  >    >  **computador, definições** de  >  **segurança Definições** de segurança Políticas  >  **locais**  >  **.**
 
 5. No painel de detalhes, clique com o botão direito do rato em **Auditar a gestão de contas** e selecione **Propriedades**. Selecione **Definir estas definições de política**, marque a caixa de verificação **Êxito** e a caixa de verificação **Falha**, clique em **Aplicar** e **OK**.
 

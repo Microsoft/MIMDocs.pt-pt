@@ -9,28 +9,25 @@ ms.date: 08/18/2017
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 521b96c3ef9cae5a5f9151ddf125cfb534ae0332
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: c02904d7acb5c56e8b1e7f7a267b8d54c0a58d7a
+ms.sourcegitcommit: 89511939730501458295fc8499490b2b378ce637
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79044026"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010562"
 ---
 # <a name="deploy-mim-pam-with-windows-server-2016"></a>Implementar o PAM do MIM com o Windows Server 2016
 
 
-Este cenário permite que o MIM 2016 SP1 tire partido das funcionalidades do Windows Server 2016, como o controlador de domínio para a floresta "PRIV". Quando este cenário está configurado, a permissão Kerberos do utilizador terá um prazo limitado ao tempo restante das respetivas ativações da função. 
-
-> [!Note]
-> Não é possível utilizar pré-visualizações técnicas do Windows Server 2016 anteriores à Pré-visualização Técnica 5 com esta versão do MIM.
+Este cenário permite o MIM 2016 SP2 para o cenário PAM utilizando funcionalidades do Windows Server 2016 ou posteriormente como controlador de domínio para a floresta "PRIV".  Quando este cenário está configurado, a permissão Kerberos do utilizador terá um prazo limitado ao tempo restante das respetivas ativações da função.
 
 ## <a name="preparation"></a>Preparação
 
 São necessárias, no mínimo, duas VMs para o ambiente de laboratório:
 
--   A VM que aloja o Controlador de Domínio PRIV, a executar o Windows Server 2016
+-   VM acolhe o Controlador de Domínio PRIV, executando o Windows Server 2016 ou mais tarde
 
--   A VM que aloja o Serviço MIM, a executar o Windows Server 2016 (recomendado) ou o Windows Server 2012 R2
+-   O VM acolhe o Serviço MIM, executando o Windows Server 2016 ou mais tarde (recomendado) ou Windows Server 2012 R2
 
 > [!NOTE]
 > Se ainda não tiver um domínio "CORP" no seu ambiente de laboratório, é necessário um controlador de domínio adicional para esse domínio. O controlador de domínio "CORP" pode executar o Windows Server 2016 ou o Windows Server 2012 R2.
@@ -75,7 +72,7 @@ Faça a instalação tal como descrito no [Guia de introdução](privileged-iden
 
   - Depois de configurar a delegação e antes de reiniciar o servidor, autorize a conta do Serviço MIM e os administradores do MIM a criar e atualizar principais sombra.
 
-    a. Inicie uma janela do PowerShell e escreva ADSIEdit.
+    a. Lançar uma janela PowerShell e escrever ADSIEdit.
 
     b. No menu Ações, clique em "Ligar a". Na Definição do ponto de ligação, altere o contexto de nomenclatura de "Contexto de nomenclatura predefinido" para "Configuração" e clique em OK.
 
@@ -87,7 +84,7 @@ Faça a instalação tal como descrito no [Guia de introdução](privileged-iden
 
     f. Mude para as definições de Segurança Avançada. Na linha que permite o acesso ao MIMService, clique em Editar. Altere a definição "Aplica-se a" para "a este objeto e todos os objetos subordinados". Atualize esta definição de permissão e feche a caixa de diálogo de segurança.
 
-    g. Feche o Editor de ADSI.
+    exemplo, Feche o Editor de ADSI.
 
   - Depois de configurar a delegação e antes de reiniciar o servidor, autorize os administradores do MIM a criar e atualizar a política de autenticação.
 
@@ -125,7 +122,7 @@ Faça a instalação tal como descrito no [Guia de introdução](privileged-iden
 
 - Siga as instruções no [Passo 5 - Estabelecer confiança](step-5-establish-trust-between-priv-corp-forests.md), com estes ajustes:
 
-  - Ao estabelecer a confiança unidirecional, execute apenas os primeiros dois comandos do PowerShell (get-credential e New-PAMTrust), **não execute o comando New-PAMDomainConfiguration**.
+  - Ao estabelecer uma confiança unidirecional, execute apenas os dois primeiros comandos PowerShell (get-credencial e New-PAMTrust), **não execute o comando New-PAMDomainConfiguration**.
 
   - Depois de estabelecer confiança, inicie sessão no PRIVDC como PRIV\\Administrador, inicie o PowerShell e escreva os seguintes comandos:
     ```

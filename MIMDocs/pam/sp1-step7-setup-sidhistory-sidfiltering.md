@@ -1,6 +1,6 @@
 ---
 title: 'Passo 7: Configurar o histórico/filtragem do SID'
-description: Este é o Passo 7 da configuração do Privileged Identity Manager através de scripts. Este passo inclui a configuração do histórico do SID/da filtragem do SID.
+description: Passo 7 de configurar o Gestor de Identidade da Microsoft utilizando scripts. Este passo inclui a configuração do histórico do SID/da filtragem do SID.
 keywords: ''
 author: billmath
 ms.author: billmath
@@ -11,22 +11,22 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 4b524ae7-6610-40a0-8127-de5a08988a8a
 ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: cfb49dd3a15fd115021ab58605d5aeee4d73a5c7
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: c09649bbecfb4608391fef1cda3d8da87ded888b
+ms.sourcegitcommit: 89511939730501458295fc8499490b2b378ce637
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043720"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010647"
 ---
-# <a name="step-7-set-up-sid-historysid-filtering"></a>Passo 7: Configurar o histórico/filtragem do SID
+# <a name="step-7-setup-sid-historysid-filtering"></a>Passo 7: Configurar o histórico/filtragem do SID
 
 > [!div class="step-by-step"]
-> [« Passo 6](sp1-step6-setup-pam-trust.md)
-> [Passo 8»](sp1-step8-pam-deployment-verification.md)
+> [« Passo 6](sp1-step6-setup-pam-trust.md) 
+>  [Passo 8 »](sp1-step8-pam-deployment-verification.md)
 
-**A configuração não é necessária para um ambiente apenas PRIV**. Inicie sessão no PAMServer com a conta de MIMAdmin.
+**Os seguintes comandos não são necessários para um ambiente apenas PRIVA** Faça login no PAMServer com a conta MIMAdmin.
 
-1. Inicie sessão no DC do CORP como administrador
+1. Faça login na CORP DC como administrador
 2. Execute o PowerShell como administrador
 3. cd $env:SYSTEMDRIVE\PAM
 4. .\PAMDeployment.ps1
@@ -39,5 +39,5 @@ Para o histórico do SID: </br></br>
 “A ativar o histórico de SIDs para esta fidedignidade” ou “O histórico de SIDs já está ativado para esta fidedignidade”.
 
 > [!div class="step-by-step"]
-> [« Passo 6](sp1-step6-setup-pam-trust.md)
-> [Passo 8»](sp1-step8-pam-deployment-verification.md)
+> [« Passo 6](sp1-step6-setup-pam-trust.md) 
+>  [Passo 8 »](sp1-step8-pam-deployment-verification.md)

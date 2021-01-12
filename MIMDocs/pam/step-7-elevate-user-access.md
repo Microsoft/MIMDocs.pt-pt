@@ -8,12 +8,12 @@ ms.date: 01/17/2018
 ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.assetid: 5325fce2-ae35-45b0-9c1a-ad8b592fcd07
-ms.openlocfilehash: bdb02eed8e22b373c6cfa5028153cad6aee9a536
-ms.sourcegitcommit: 80507a128d2bc28ff3f1b96377c61fa97a4e7529
+ms.openlocfilehash: 0d7e9a1111e41008a989ff2bfd52c9d79debf104
+ms.sourcegitcommit: 41d399b16dc64c43da3cc3b2d77529082fe1d23a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83279968"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104042"
 ---
 # <a name="step-7--elevate-a-users-access"></a>Passo 7 – Elevar o acesso de um utilizador
 
@@ -36,10 +36,10 @@ Sem privilégios elevados, a Jen não pode aceder ao recurso com privilégios na
 ## <a name="request-privileged-access-from-mim"></a>Pedir acesso privilegiado do MIM.
 
 > [!NOTE]
-> Recomenda-se que a estação de trabalho seja uma estação de trabalho privilegiada (PAW).  Para mais informações consulte [PAW](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations).
+> Recomenda-se que a estação de trabalho seja uma estação de trabalho privilegiada (PAW).  Para obter mais informações consulte [dispositivos de fixação](/security/compass/privileged-access-devices).
 
-1. Na PRIVWKSTN, logon como PRIV\priv.jen.
-2. Clique em **Iniciar,** **Executar,** e **introduza PowerShell.exe**.
+1. No PRIVWKSTN, logor o início como PRIV\priv.jen.
+2. Clique **em Iniciar,** **Executar** e **introduzaPowerShell.exe**.
 3. Escreva o seguinte comando.
 
     ```cmd
@@ -90,9 +90,9 @@ Ative pedindo acesso privilegiado através do portal de amostra de PAM.
     ```
 
 3. Quando lhe for pedido, escreva a palavra-passe para a conta PRIV.Jen. Será apresentada uma nova janela de browser.
-4. Navegue `http://pamsrv.priv.contoso.local:8090` para garantir que uma página web do portal da amostra seja visível.
+4. Navegue `http://pamsrv.priv.contoso.local:8090` e certifique-se de que uma página web do portal da amostra é visível.
 5. No Internet Explorer, selecione **Tools**  >  **Internet Options** e clique no separador **Segurança.**
-6. Clique na **zona intranet local**  >  **Sites**  >  **Avançados** e adicione o site à zona.
+6. Clique na **zona intranet Local**  >  **Sites**  >  **Advanced** e adicione o site à zona.
 7. Feche a caixa de diálogo **Opções da Internet**.
 8. No separador à esquerda, clique em **Ativar**. Selecione a **Função PAM** e, em seguida, clique em **Ativar**.
 

@@ -11,20 +11,24 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 1a368e8e-68e1-4f40-a279-916e605581bc
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f05769a7d1db38ecde200e18e45c6ca29a75b756
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 11ac22be4425ef0b0a67f64c092d1e848ff7ad72
+ms.sourcegitcommit: 41d399b16dc64c43da3cc3b2d77529082fe1d23a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79044043"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104093"
 ---
 # <a name="define-roles-for-privileged-access-management"></a>Definir funções para o Privileged Access Management
 
 Com o Privileged Access Management, pode atribuir utilizadores a funções com privilégios, que estes podem ativar conforme necessário para obterem acesso just-in-time. Estas funções são definidas manualmente e estabelecidas no ambiente bastion. Este artigo orienta-o no processo de decidir que funções gerir através do PAM e como defini-las com as restrições e permissões adequadas.
 
+> [!IMPORTANT]
+> O modelo deste artigo destina-se apenas a ambientes isolados do Ative Directory utilizando o MIM PAM.  Para ambientes híbridos, consulte em vez disso a orientação no modelo de acesso à [empresa.](/security/compass/privileged-access-access-model)
+
+
 Uma abordagem simples à definição de funções para o Privileged Access Management consiste em compilar todas as informações numa folha de cálculo. Crie uma lista das funções nas funções e utilize as colunas para identificar os requisitos de governação e as permissões.
 
-Os requisitos de governação variam consoante as políticas de identidade e acesso existentes ou requisitos de conformidade. Os parâmetros para identificar para cada função podem incluir:
+Os requisitos de governação variam consoante as políticas de identidade e acesso existentes ou os requisitos de conformidade. Os parâmetros a identificar para cada função podem incluir:
 
 - O dono do papel.
 - Os utilizadores candidatos que podem estar nesse papel
@@ -42,7 +46,7 @@ Comece por identificar todas as funções que poderá querer gerir com o PAM. Na
 
 Para encontrar as funções adequadas, considere cada aplicação no âmbito de gestão:
 
-- A aplicação é de [nível 0, nível 1 ou nível 2?](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
+- A aplicação está na camada 0, na camada 1 ou na camada 2?
 - Quais são os privilégios que afetam a confidencialidade, a integridade ou a disponibilidade da aplicação?
 - A aplicação tem dependências de outros componentes do sistema? Por exemplo, tem dependências de bases de dados, networking, infraestruturas de segurança, virtualização ou plataforma de hospedagem?
 
@@ -84,23 +88,21 @@ Outras considerações na determinação do âmbito das permissões para incluir
 
 ## <a name="select-an-access-method"></a>Selecionar um método de acesso
 
-Pode haver múltiplas funções num sistema de gestão de acesso privilegiado com as mesmas permissões que lhes são atribuídas. Isto pode acontecer se diferentes comunidades de utilizadores tiverem requisitos distintos de governação de acesso. Por exemplo, uma organização pode aplicar políticas diferentes aos seus funcionários a tempo inteiro do que as políticas que aplica a funcionários de TI externos de outra organização.
+Pode haver múltiplas funções num sistema privilegiado de gestão de acessos com as mesmas permissões que lhes foram atribuídas. Isto pode acontecer se diferentes comunidades de utilizadores tiverem requisitos distintos de governação de acesso. Por exemplo, uma organização pode aplicar políticas diferentes aos seus funcionários a tempo inteiro do que as políticas que aplica a funcionários de TI externos de outra organização.
 
-Em alguns casos, um utilizador pode ser permanentemente atribuído a um papel. Nesse caso, não precisam de solicitar ou ativar uma atribuição de funções. Exemplos de cenários de atribuição permanente incluem:
+Em alguns casos, um utilizador pode ser permanentemente designado para uma função. Nesse caso, não precisam de solicitar ou ativar uma atribuição de funções. Exemplos de cenários de atribuição permanente incluem:
 
 - Uma conta de serviço gerida numa floresta existente
 
-- Uma conta de utilizador na floresta existente, com uma credencial gerida fora da PAM. Isto pode ser uma conta de "quebrar vidros". A conta de vidro de rutura pode precisar de um papel como "Manutenção de Domínio /DC" para corrigir problemas como confiança e problemas de saúde em DC. Como conta de vidro de rutura, teria o papel permanentemente atribuído com uma senha fisicamente segura)
+- Uma conta de utilizador na floresta existente, com uma credencial gerida fora da PAM. Isto pode ser uma conta de "quebrar vidros". A conta de vidro de rutura pode precisar de uma função como "Manutenção de Domínio/DC" para corrigir problemas como problemas de confiança e saúde em DC. Como uma conta de vidro quebrado teria o papel permanentemente atribuído com uma senha fisicamente segura)
 
-- Uma conta de utilizador na floresta administrativa que autentica com uma senha. Isto pode ser, um utilizador que necessite de permissões administrativas permanentes de 24x7 e login de um dispositivo que não suporta autenticação forte.
+- Uma conta de utilizador na floresta administrativa que autentica com uma senha. Isto pode ser, um utilizador que necessite de permissões administrativas permanentes de 24x7 e inicia sessão a partir de um dispositivo que não consegue suportar uma autenticação forte.
 
 - Uma conta de utilizador na floresta administrativa, com um smart card ou smart card virtual (por exemplo, uma conta com um smart card offline, necessária para tarefas de manutenção raras)
 
-Para as organizações preocupadas com a possibilidade de roubo ou de utilização indevida de credenciais, o guia [Utilizar o MFA do Azure para ativação](use-azure-mfa-for-activation.md) inclui instruções sobre como configurar o MIM para exigir uma verificação extraordinária no momento da ativação da função.
-
 ## <a name="delegate-active-directory-permissions"></a>Delegar permissões do Active Directory
 
-O Windows Server cria automaticamente grupos predefinidos, tais como "Admins do domínio" quando são criados novos domínios. Estes grupos simplificam a introdução e podem ser adequados para organizações mais pequenas. As organizações maiores, ou as que necessitam de um maior isolamento dos privilégios administrativos, devem esvaziar esses grupos e substituí-los por grupos que forneçam permissões de grãos finos.
+O Windows Server cria automaticamente grupos predefinidos, tais como "Admins do domínio" quando são criados novos domínios. Estes grupos simplificam a introdução e podem ser adequados para organizações mais pequenas. As organizações maiores, ou as que exigem um maior isolamento dos privilégios administrativos, devem esvaziar esses grupos e substituí-los por grupos que forneçam permissões de grãos finos.
 
 Uma limitação do grupo Admins do domínio é o facto de não poder ter membros de um domínio externo. Outra limitação é o facto de conceder permissões para três funções distintas:
 
@@ -108,15 +110,15 @@ Uma limitação do grupo Admins do domínio é o facto de não poder ter membros
 - Gerir os dados contidos no Active Directory
 - Ativar o início de sessão remoto em computadores associados a um domínio.
 
-Em vez de grupos padrão como domain admins, crie novos grupos de segurança que fornecem apenas as permissões necessárias. Em seguida, deve utilizar a MIM para fornecer dinamicamente contas de administradores com esses membros do grupo.
+Em vez de grupos predefinidos como Os Administradores de Domínio, crie novos grupos de segurança que fornecem apenas as permissões necessárias. Em seguida, deve utilizar a MIM para fornecer dinamicamente contas de administrador com esses membros do grupo.
 
-### <a name="service-management-permissions"></a>Permissões de gestão de serviços
+### <a name="service-management-permissions"></a>Permissões de Gestão de Serviços
 
 A tabela seguinte fornece exemplos de permissões que seriam relevantes de incluir em funções para gerir o AD.
 
 | Função | Descrição |
 | ---- | ---- |
-| Manutenção de Domínio/DC | A adesão ao grupo Domain\Administrators permite a resolução de problemas e a alteração do sistema operativo do controlador de domínio. Operações como promover um novo controlador de domínio para um domínio existente na floresta e delegação de papel da AD.
+| Manutenção de Domínio/DC | A adesão ao grupo Domain\Administrators permite a resolução de problemas e a alteração do sistema operativo do controlador de domínio. Operações como a promoção de um novo controlador de domínio para um domínio existente na floresta e delegação de papel de AD.
 |Gerir DCs Virtuais | Gerir máquinas virtuais de (VMs) de controladores de domínio (DC) com o software de gestão de virtualização. Este privilégio pode ser concedido através de controlo total de todas as máquinas virtuais na ferramenta de gestão ou da funcionalidade de controlo de acesso baseado em funções (RBAC). |
 | Expandir o esquema | Gerir o esquema, incluindo a adição de novas definições de objetos, alteração de permissões para objetos de esquema e alteração de permissões predefinidas de esquema para tipos de objeto |
 | Cópia de Segurança da Base de Dados do Active Directory | Fazer uma cópia de segurança da Base de Dados do Active Directory na íntegra, incluindo todos os segredos conferidos ao DC e ao Domínio. |
@@ -128,7 +130,7 @@ A tabela seguinte fornece exemplos de permissões que seriam relevantes de inclu
 
 ### <a name="data-management-permissions"></a>Permissões de gestão de dados
 
-O quadro seguinte dá exemplos de permissões que seriam relevantes para incluir em funções de gestão ou utilização dos dados detidos em AD.
+A tabela seguinte dá exemplos de permissões que seriam relevantes para incluir em funções de gestão ou utilização dos dados detidos em AD.
 
 | Função | Descrição |
 | ---- | ---- |
@@ -144,7 +146,7 @@ O quadro seguinte dá exemplos de permissões que seriam relevantes para incluir
 
 ## <a name="example-role-definitions"></a>Exemplo de definições de funções
 
-A escolha das definições de papéis depende do nível de gestão dos servidores. Isto também depende da escolha das candidaturas que estão a ser geridas. Aplicações como o Exchange ou produtos empresariais de terceiros, como o SAP, muitas vezes trarão as suas próprias definições de funções adicionais para a administração delegada.
+A escolha das definições de função depende do nível de gestão dos servidores. Isto também depende da escolha das aplicações que estão a ser geridas. Aplicações como a Exchange ou produtos empresariais de terceiros, como o SAP, trarão frequentemente as suas próprias definições adicionais de papel para a administração delegada.
 
 As secções seguintes fornecem exemplos para cenários típicos de empresas.
 
@@ -170,7 +172,7 @@ As funções adequadas à gestão das contas e recursos da floresta de produçã
 - Administradores de armazenamento
 - Administradores de antimalware para servidores de camada 0
 - Administradores do SCCM para o SCCM de camada 0
-- Administradores do SCOM para o SCOM de camada 0
+- Gestor de Operações do Centro de Sistemas Admins para Gestor de Operações de Nível 0
 - Administradores de cópia de segurança para a camada 0
 - Utilizadores de controladores BMC e fora de banda (para gestão integral ou de KVM) ligados a anfitriões de camada 0
 
@@ -183,7 +185,7 @@ As funções para a gestão e cópia de segurança de servidores na camada 1 pod
 - Conta de Analista de Segurança
 - Administradores de antimalware para servidores de camada 1
 - Administradores do SCCM para o SCCM de camada 1
-- Administradores do SCOM para o SCOM de camada 1
+- Administradores do System Center Operations Manager para Gestor de Operações de Nível 1
 - Administradores de cópia de segurança para servidores de camada 1
 - Utilizadores de controladores BMC e fora de banda (para gestão integral ou de KVM) ligados a anfitriões de camada 1
 
@@ -207,5 +209,5 @@ As funções para a gestão de utilizadores e computadores não administrativos 
 
 ## <a name="next-steps"></a>Passos seguintes
 
-- [Proteger Material de Referência de Acesso Privilegiado](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
-- [Utilizar o MFA do Azure para ativação](use-azure-mfa-for-activation.md)
+- [modelo de acesso à empresa](/security/compass/privileged-access-access-model)
+

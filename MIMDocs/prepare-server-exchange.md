@@ -11,24 +11,24 @@ ms.prod: microsoft-identity-manager
 ms.assetid: 34a8c16e-3bed-4e16-939b-b9fe17dd834b
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 07b1bdfc3bf11817a113791ace556d8a32faedc0
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 1ae8fe4718b81d67ac56adbb87789d6e2142298d
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835648"
 ---
 # <a name="set-up-an-identity-management-server-exchange"></a>Configurar um servidor de gestão de identidades: Exchange
 
 > [!div class="step-by-step"]
-> [« Serviço de](prepare-server-sharepoint.md)
-> Sincronização SharePoint[MIM»](install-mim-sync.md)
+> [« SharePoint](prepare-server-sharepoint.md) 
+>  [Serviço de Sincronização MIM »](install-mim-sync.md)
 
 ## <a name="deploy-microsoft-exchange-server"></a>Implementar o Microsoft Exchange Server
 Se pretender configurar o MIM para enviar e receber e-mails ou aprovisionar caixas de correio, é necessário ter o Exchange presente no ambiente. Se não tiver o Exchange já implementado, é possível instalar uma versão de avaliação para fins de avaliação:
 
-* Transferir e instalar a [Versão de avaliação de 180 dias do MS Exchange Server 2013](http://www.microsoft.com/evalcenter/evaluate-exchange-server-2013)
+* Transferir e instalar a [Versão de avaliação de 180 dias do MS Exchange Server 2013](https://www.microsoft.com/evalcenter/evaluate-exchange-server-2013)
 
 > [!div class="step-by-step"]  
-> [« Serviço de](prepare-server-sharepoint.md)
-> Sincronização SharePoint[MIM»](install-mim-sync.md)
+> [« SharePoint](prepare-server-sharepoint.md) 
+>  [Serviço de Sincronização MIM »](install-mim-sync.md)

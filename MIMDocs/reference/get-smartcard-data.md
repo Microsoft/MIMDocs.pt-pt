@@ -1,5 +1,5 @@
 ---
-title: Obtenha perfis de cartões inteligentes Microsoft Docs
+title: Obtenha perfis de cartões inteligentes | Microsoft Docs
 description: ''
 keywords: ''
 author: billmath
@@ -12,12 +12,12 @@ ms.assetid: 81f4b7cd-e4d9-4b11-b125-78cc9f183cf0
 audience: developer
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 0666a17abe63b0efbccd59aa0b9e0bb5daf80fe5
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 605dfe1359b5706b27682a086f039f53a5ddaa05
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "92762217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835693"
 ---
 # <a name="get-smart-card-profiles"></a>Obtenha perfis de cartões inteligentes
 Obtém uma lista de perfis de cartões inteligentes para um utilizador. A lista inclui as possíveis operações que podem ser realizadas pelo utilizador atual. Em seguida, pode ser iniciado um pedido para qualquer uma das operações especificadas.
@@ -36,16 +36,16 @@ GET     |/CertificadoManagement/api/v1.0/smartcards <br/> /CertificateManagement
 
 Propriedade| Descrição
 ---------|--------
-smartcarduid | Opcional. O cartão inteligente UUID, tal como denotado pelo Microsoft Identity Manager (MIM) Certificate Management (CM). O valor corresponde ao campo "uuid" no objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](http://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
+smartcarduid | Opcional. O cartão inteligente UUID, tal como denotado pelo Microsoft Identity Manager (MIM) Certificate Management (CM). O valor corresponde ao campo "uuid" no objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](https://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
 Propriedade| Descrição
 ---------|--------
-cardid | Opcional. O cartão inteligente UUID como denotado pela MIM CM. O valor corresponde ao campo "uuid" no objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](http://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
+cardid | Opcional. O cartão inteligente UUID como denotado pela MIM CM. O valor corresponde ao campo "uuid" no objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](https://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
 
 ### <a name="request-headers"></a>Cabeçalhos do pedido
-Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="request-body"></a>Corpo do pedido
 Nenhum.
@@ -55,7 +55,7 @@ Esta secção descreve a resposta.
 
 ### <a name="response-codes"></a>Códigos de resposta
 
-Código  |Descrição  
+Código  |Description  
 ---------|---------
 200 | OK
 204 | Sem conteúdo
@@ -63,10 +63,10 @@ Código  |Descrição
 500 | Erro Interno
 
 ### <a name="response-headers"></a>Cabeçalhos de resposta
-Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="response-body"></a>Corpo da resposta
-No sucesso, devolve um JSON-Serialized [objeto Microsoft.Clm.Shared.Smartcards.Smartcards](http://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx) com as seguintes propriedades:
+No sucesso, devolve um JSON-Serialized [objeto Microsoft.Clm.Shared.Smartcards.Smartcards](https://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx) com as seguintes propriedades:
 
 Nome | Descrição
 -----|-----------

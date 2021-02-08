@@ -1,5 +1,5 @@
 ---
-title: Obtenha resposta de autenticação de cartão inteligente / Microsoft Docs
+title: Obtenha resposta de autenticação de cartão inteligente | Microsoft Docs
 description: ''
 keywords: ''
 author: billmath
@@ -12,12 +12,12 @@ ms.assetid: e05ec898-06cd-4c17-a4f4-8f3545af0f14
 audience: developer
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ab320457c5d676cc381306e83f685fe288dc7ef9
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 62811bd5d225f981ded6a6439584c2b7730251c1
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "92762037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835596"
 ---
 # <a name="get-smart-card-authentication-response"></a>Obtenha resposta de autenticação de cartão inteligente
 Obtém a resposta a um desafio de autenticação de um prestador de serviços criptográficos base (CSP).
@@ -36,7 +36,7 @@ GET     |/CertificateManagement/api/v1.0/requests/{reqid}/smartcards/{scid}/auth
 Parâmetro | Descrição
 ---------|------------
 reqid | Obrigatório. O identificador de pedidos específico do Microsoft Identity Manager (MIM) Certificate Management (CM).
-scid | Obrigatório. O identificador de cartões inteligentes que é específico da MIM CM. O scid é obtido a partir do objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](http://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
+scid | Obrigatório. O identificador de cartões inteligentes que é específico da MIM CM. O scid é obtido a partir do objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](https://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
@@ -48,7 +48,7 @@ desafio | Obrigatório. Uma corda codificada base-64 que representa o desafio qu
 diversificado | Obrigatório. Uma bandeira booleana denotando se a chave de administração de cartões inteligentes foi diversificada.
 
 ### <a name="request-headers"></a>Cabeçalhos do pedido
-Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="request-body"></a>Corpo do pedido
 Nenhum.
@@ -58,7 +58,7 @@ Esta secção descreve a resposta.
 
 ### <a name="response-codes"></a>Códigos de resposta
 
-Código  |Descrição  
+Código  |Description  
 ---------|---------
 200 | OK
 204 | Sem conteúdo
@@ -66,7 +66,7 @@ Código  |Descrição
 500 | Erro Interno
 
 ### <a name="response-headers"></a>Cabeçalhos de resposta
-Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="response-body"></a>Corpo da resposta
 No sucesso, devolve um byte BLOB que representa a resposta do desafio.

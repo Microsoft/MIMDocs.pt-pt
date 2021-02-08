@@ -11,12 +11,12 @@ ms.prod: microsoft-identity-manager
 ms.assetid: bfabc562-a2f0-4cff-ac31-36927f41e102
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: 91409b0272c0b21cac90dbc4c162e5bf4d9f8464
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: c6e4e03524983944ee25343c24fa8247d770af27
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79042139"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835665"
 ---
 # <a name="enroll-smart-cards-for-non-administrators"></a>Inscrição de smart cards para não administradores
 Se um utilizador não for um administrador local no respetivo computador, não poderá inscrever smart cards no respetivo computador por predefinição. O procedimento seguinte permite-lhe contornar esta limitação.
@@ -25,7 +25,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
 1.  **Descompactar o ficheiro appx**
 
-    Obtenha um certificado de assinatura. Siga os passos para [Assinar aplicações do Windows 8 com um PKI interno](http://blogs.technet.com/b/deploymentguys/archive/2013/06/14/signing-windows-8-applications-using-an-internal-pki.aspx). Pare quando chegar a “Assinar a Aplicação”. Dê um nome ao ficheiro pfx exportado. Exporte também para um ficheiro .cer e importe-o para o cliente através do ficheiro cer do novo certificado de assinatura.
+    Obtenha um certificado de assinatura. Siga os passos para [Assinar aplicações do Windows 8 com um PKI interno](https://blogs.technet.com/b/deploymentguys/archive/2013/06/14/signing-windows-8-applications-using-an-internal-pki.aspx). Pare quando chegar a “Assinar a Aplicação”. Dê um nome ao ficheiro pfx exportado. Exporte também para um ficheiro .cer e importe-o para o cliente através do ficheiro cer do novo certificado de assinatura.
 
     Execute o seguinte para descompactar o ficheiro appx:
 
@@ -49,7 +49,7 @@ Se um utilizador não for um administrador local no respetivo computador, não p
 
     4.  Edite o ficheiro denominado AppxManifest.xml
 
-    5.  No &lt;elemento&gt; Identidade modificar o valor do atributo da Editora ao objeto do seu certificado de assinatura, por exemplo, "CN=ABCD"
+    5.  No &lt; elemento Identidade &gt; modificam o valor do Atributo Editor ao objeto do seu certificado de assinatura, por exemplo" CN=ABCD"
 
         Neste campo, o assunto deve ser o mesmo que o assunto do certificado de assinatura que estiver a utilizar para assinar a aplicação.
 

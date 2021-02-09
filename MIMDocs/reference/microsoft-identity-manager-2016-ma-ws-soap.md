@@ -1,5 +1,5 @@
 ---
-title: Guia de fluxo de trabalho do Conector de Serviço Web para SOAP / Microsoft Docs
+title: Guia de fluxo de trabalho do conector do serviço web para | SOAP Microsoft Docs
 description: Este artigo descreve como criar um novo projeto para a sua fonte de dados SOAP utilizando a Ferramenta de Configuração do Serviço Web.
 keywords: ''
 author: billmath
@@ -9,12 +9,12 @@ ms.date: 11/30/2017
 ms.topic: conceptual
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 54f9eb08ce8c400aac5c66467a797bcd3cb097a0
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 455988722b3aeb9e29b00696342e1800e9ad82c7
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "92762411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835976"
 ---
 # <a name="web-service-connector-workflow-guide-for-soap"></a>Guia de fluxo de trabalho do conector do serviço web para SOAP
 
@@ -24,18 +24,18 @@ Este artigo descreve como criar um novo projeto para a sua fonte de dados na Fer
 
     ![Ferramenta de configuração de serviço web](media/microsoft-identity-manager-2016-ma-ws-soap/web-service-configuration-tool-01.png)
 
-2.  Selecione **SOAP Project** e, em seguida, selecione **Adicionar** .
+2.  Selecione **SOAP Project** e, em seguida, selecione **Adicionar**.
 
     ![Projeto SOAP](media/microsoft-identity-manager-2016-ma-ws-soap/web-service-configuration-tool-02.png)
 
-3.  Na página seguinte, forneça as seguintes informações e, em seguida, selecione **Seguinte** :
+3.  Na página seguinte, forneça as seguintes informações e, em seguida, selecione **Seguinte**:
 
     - O novo nome do serviço web
     - Endereço (caminho WSDL) para recuperar os serviços expostos, pontos finais e operações
     - Espaço de Nomes
     - Modo de segurança (tipo de autenticação)
   
-4.  Nesta amostra, a página **Credenciais** é mostrada com os requisitos para o modo de segurança *Básico* (o modo que foi selecionado no passo anterior). Se "Nenhum" fosse especificado para o modo de segurança, então uma página de Credenciais não seria exibida. Selecione **Seguinte** .
+4.  Nesta amostra, a página **Credenciais** é mostrada com os requisitos para o modo de segurança *Básico* (o modo que foi selecionado no passo anterior). Se "Nenhum" fosse especificado para o modo de segurança, então uma página de Credenciais não seria exibida. Selecione **Seguinte**.
 
     ![Ecrã de serviço SOAP com nome de utilizador e senha](media/microsoft-identity-manager-2016-ma-ws-soap/soap-service.png)
 
@@ -43,7 +43,7 @@ Este artigo descreve como criar um novo projeto para a sua fonte de dados na Fer
 
     ![serviço web baixar ecrã de progresso](media/microsoft-identity-manager-2016-ma-ws-soap/web-service-progress.png)
 
-6.  Uma vez realizada a descoberta, então ele lista o ponto final e as operações que são descobertas. Selecione **Concluir** .
+6.  Uma vez realizada a descoberta, então ele lista o ponto final e as operações que são descobertas. Selecione **Concluir**.
 
     ![Pontos finais e operações de serviço SOAP descobertos](media/microsoft-identity-manager-2016-ma-ws-soap/soap-service-endpoints.png)
 
@@ -59,7 +59,7 @@ Este artigo descreve como criar um novo projeto para a sua fonte de dados na Fer
 
     ![Pontos finais expandidos](media/microsoft-identity-manager-2016-ma-ws-soap/get-employee-byid.png)
 
-10. O próximo passo é definir o esquema de espaço do conector, que é conseguido criando o Tipo de Objeto e definindo os seus tipos de objetos. Selecione **Os Tipos de Objetos** e, em seguida, selecione **Adicionar** . Na nova janela, adicione um novo tipo de objeto e forneça um nome. Selecione **OK** .
+10. O próximo passo é definir o esquema de espaço do conector, que é conseguido criando o Tipo de Objeto e definindo os seus tipos de objetos. Selecione **Os Tipos de Objetos** e, em seguida, selecione **Adicionar**. Na nova janela, adicione um novo tipo de objeto e forneça um nome. Selecione **OK**.
 
     ![Definição do tipo de objeto](media/microsoft-identity-manager-2016-ma-ws-soap/object-types.png)
 
@@ -67,7 +67,7 @@ Este artigo descreve como criar um novo projeto para a sua fonte de dados na Fer
 
     ![visualização do tipo de objeto recém-criado](media/microsoft-identity-manager-2016-ma-ws-soap/object-type-employee.png)
 
-12. O painel direito correspondente ao tipo de objeto permite-lhe manter os atributos e as suas propriedades para o tipo de objeto selecionado. Selecione **Adicionar** . Abre-se uma nova janela para adicionar atributos:
+12. O painel direito correspondente ao tipo de objeto permite-lhe manter os atributos e as suas propriedades para o tipo de objeto selecionado. Selecione **Adicionar**. Abre-se uma nova janela para adicionar atributos:
 
     ![Atributo e tipo de dados](media/microsoft-identity-manager-2016-ma-ws-soap/object-type-firstname.png)
 
@@ -105,7 +105,7 @@ O próximo passo é configurar os fluxos de trabalho para o tipo de objeto. Os f
 - Ligação de teste: Configure um fluxo de trabalho para verificar se a ligação com o servidor de fonte de dados está estabelecida com sucesso.
 
 >[!NOTE]
->Pode configurar estes fluxos de trabalho para o seu projeto ou descarregar o projeto padrão a partir do [Microsoft Download Center.](http://www.microsoft.com/download/details.aspx?id=29944)
+>Pode configurar estes fluxos de trabalho para o seu projeto ou descarregar o projeto padrão a partir do [Microsoft Download Center.](https://www.microsoft.com/download/details.aspx?id=29944)
 
 
 ### <a name="workflow-designer"></a>Designer de fluxo de trabalho
@@ -115,33 +115,33 @@ O Workflow Designer abre a área de trabalho para configurar o fluxo de trabalho
 
 O Workflow Designer é composto pelos seguintes elementos de UI:
 
-   - **Nós no painel esquerdo** : Estes ajudam-no a selecionar qual o fluxo de trabalho que pretende conceber.
+   - **Nós no painel esquerdo**: Estes ajudam-no a selecionar qual o fluxo de trabalho que pretende conceber.
 
-   - **Central Workflow Designer** : Aqui pode deixar cair as atividades para configurar os fluxos de trabalho. Para realizar várias operações MIM (Exportação, Importação, Gestão de Passwords), pode utilizar as atividades de fluxo de trabalho padrão e personalizado do Quadro de Fluxo de Trabalho .NET 4. A ferramenta de configuração do serviço web utiliza atividades de fluxo de trabalho padrão e personalizadas. Para obter mais informações sobre as atividades padrão, consulte [utilizando designers de atividades.](http://msdn.microsoft.com/library/ee829528.aspx)
+   - **Central Workflow Designer**: Aqui pode deixar cair as atividades para configurar os fluxos de trabalho. Para realizar várias operações MIM (Exportação, Importação, Gestão de Passwords), pode utilizar as atividades de fluxo de trabalho padrão e personalizado do Quadro de Fluxo de Trabalho .NET 4. A ferramenta de configuração do serviço web utiliza atividades de fluxo de trabalho padrão e personalizadas. Para obter mais informações sobre as atividades padrão, consulte [utilizando designers de atividades.](https://msdn.microsoft.com/library/ee829528.aspx)
 
       - No Central Workflow Designer, um círculo vermelho com ponto de exclamação ao lado de qualquer atividade indica que a operação caiu e não está definida corretamente e completamente. Passe sobre o círculo vermelho para descobrir o erro exato. Após a definição correta da atividade, o círculo vermelho altera-se na marca de informação amarela.
       
       - No Central Workflow Designer, uma marca de informação de triângulo amarelo ao lado de qualquer atividade indica que a atividade está definida, mas há mais que pode fazer para completar a atividade. Paire sobre o triângulo amarelo para ver mais informações.
 
-   - **Toolbox** : Embala todas as ferramentas, incluindo sistemas e atividades personalizadas e declarações predefinidas para conceber o fluxo de trabalho. Para mais informações, consulte [Toolbox](http://msdn.microsoft.com/library/aa480213.aspx).
+   - **Toolbox**: Embala todas as ferramentas, incluindo sistemas e atividades personalizadas e declarações predefinidas para conceber o fluxo de trabalho. Para mais informações, consulte [Toolbox](https://msdn.microsoft.com/library/aa480213.aspx).
    
-   - **Secções Toolbox** : A Caixa de Ferramentas tem as seguintes secções e categorias:
+   - **Secções Toolbox**: A Caixa de Ferramentas tem as seguintes secções e categorias:
    
-      - **Descrição** : O cabeçalho da caixa de ferramentas. Um separador acede à Caixa de Ferramentas e às propriedades da atividade de fluxo de trabalho selecionado. 
+      - **Descrição**: O cabeçalho da caixa de ferramentas. Um separador acede à Caixa de Ferramentas e às propriedades da atividade de fluxo de trabalho selecionado. 
 
-      - **Fluxo de trabalho de importação** : Atividades personalizadas para configurar fluxos de trabalho de importação.
+      - **Fluxo de trabalho de importação**: Atividades personalizadas para configurar fluxos de trabalho de importação.
       
-      - **Fluxo de trabalho de exportação** : Atividades personalizadas para configurar fluxos de trabalho de exportação.
+      - **Fluxo de trabalho de exportação**: Atividades personalizadas para configurar fluxos de trabalho de exportação.
       
-      - **Comum** : Atividades personalizadas para configurar qualquer fluxo de trabalho.
+      - **Comum**: Atividades personalizadas para configurar qualquer fluxo de trabalho.
       
-      - **Debug** : Atividades de fluxo de trabalho do sistema para depurar definido no Fluxo de Trabalho 4. Estas atividades permitem o rastreio de emissão para um fluxo de trabalho.
+      - **Debug**: Atividades de fluxo de trabalho do sistema para depurar definido no Fluxo de Trabalho 4. Estas atividades permitem o rastreio de emissão para um fluxo de trabalho.
       
-      - **Declarações** : Atividades de fluxo de trabalho do sistema definidas no Fluxo de Trabalho 4. Para obter mais informações, consulte [utilizando designers de atividades.](http://msdn.microsoft.com/library/ee829528.aspx)            
+      - **Declarações**: Atividades de fluxo de trabalho do sistema definidas no Fluxo de Trabalho 4. Para obter mais informações, consulte [utilizando designers de atividades.](https://msdn.microsoft.com/library/ee829528.aspx)            
 
-   - **Propriedades** : O separador de propriedades exibe as propriedades de uma determinada atividade de fluxo de trabalho que é largada na área do designer e selecionada. A figura à esquerda mostra as propriedades da atividade **de Atribuição.** Para cada atividade, as propriedades diferem e são utilizadas ao configurar o fluxo de trabalho personalizado. Este separador permite-lhe definir os atributos da ferramenta selecionada que foi deixada no designer central de fluxos de trabalho. Para mais informações, consulte [propriedades.](http://msdn.microsoft.com/library/ee342461.aspx)
+   - **Propriedades**: O separador de propriedades exibe as propriedades de uma determinada atividade de fluxo de trabalho que é largada na área do designer e selecionada. A figura à esquerda mostra as propriedades da atividade **de Atribuição.** Para cada atividade, as propriedades diferem e são utilizadas ao configurar o fluxo de trabalho personalizado. Este separador permite-lhe definir os atributos da ferramenta selecionada que foi deixada no designer central de fluxos de trabalho. Para mais informações, consulte [propriedades.](https://msdn.microsoft.com/library/ee342461.aspx)
 
-   - **Barra de Tarefa:** A barra de tarefas inclui três elementos: **Variáveis,** **Argumentos** e **Importações.** Estes elementos são utilizados juntamente com atividades de fluxo de trabalho. Para obter mais informações, consulte [a introdução de um desenvolvedor à Windows Workflow Foundation (WF) em .NET 4](http://msdn.microsoft.com/library/ee342461.aspx).
+   - **Barra de Tarefa:** A barra de tarefas inclui três elementos: **Variáveis,** **Argumentos** e **Importações.** Estes elementos são utilizados juntamente com atividades de fluxo de trabalho. Para obter mais informações, consulte [a introdução de um desenvolvedor à Windows Workflow Foundation (WF) em .NET 4](https://msdn.microsoft.com/library/ee342461.aspx).
 
 
 <h2 id="full-import-workflows">Configure um fluxo de trabalho de importação completo na Ferramenta de Configuração do Serviço Web</h2>
@@ -162,7 +162,7 @@ Os passos a seguir mostram como configurar fluxos de trabalho de importação co
    
     ![Atividade de sequência](media/microsoft-identity-manager-2016-ma-ws-soap/full-import-sequence.png)
 
-3. Para adicionar uma variável, localizar **Criar Variável** . Tipo _wsResponse_ para o **Nome,** selecione o **tipo de paragem variável** e, em seguida, selecione Procurar para **tipos** . É apresentado um diálogo. Selecione resposta **generated**  >  **padrão** gerada  >  **Response** . Mantenha os valores **de Âmbito** e **Predefinidos** não selecionados. Em alternativa, desa esta medida utilizando a vista **Propriedades.**
+3. Para adicionar uma variável, localizar **Criar Variável**. Tipo _wsResponse_ para o **Nome,** selecione o **tipo de paragem variável** e, em seguida, selecione Procurar para **tipos**. É apresentado um diálogo. Selecione resposta   >  **padrão** gerada  >  . Mantenha os valores **de Âmbito** e **Predefinidos** não selecionados. Em alternativa, desa esta medida utilizando a vista **Propriedades.**
 
    ![Resposta padrão](media/microsoft-identity-manager-2016-ma-ws-soap/default-response.png)
 
@@ -180,10 +180,10 @@ Os passos a seguir mostram como configurar fluxos de trabalho de importação co
 
    Para utilizar a operação de serviço Web, desemote as seguintes propriedades:
    
-      - **Nome de serviço** : Introduza um nome para o serviço web.
-      - **Nome do ponto final** : Especifique um nome de ponto final para o serviço selecionado.
-      - **Operação Nome** : Especifique a respetiva operação para o serviço.
-      - **Argumento** : Selecione **Argumentos** . No diálogo seguinte, atribua os valores do argumento, como mostrado na figura seguinte:
+      - **Nome de serviço**: Introduza um nome para o serviço web.
+      - **Nome do ponto final**: Especifique um nome de ponto final para o serviço selecionado.
+      - **Operação Nome**: Especifique a respetiva operação para o serviço.
+      - **Argumento**: Selecione **Argumentos**. No diálogo seguinte, atribua os valores do argumento, como mostrado na figura seguinte:
       
          ![Atribuir argumentos](media/microsoft-identity-manager-2016-ma-ws-soap/get-employeebyid.png)
 
@@ -245,11 +245,11 @@ As secções seguintes mostram como exportar os seus fluxos de trabalho utilizan
 <h3 id="attribute-change-anchor">Adicionar fluxos de trabalho</h3>
 Adicione fluxos de trabalho de exportação seguindo estes passos na Ferramenta de Configuração do Serviço Web.
 
-1. Selecione o fluxo de trabalho de exportação para configurar. Em **Exportação** , **selecione Add** . Os **Argumentos** e Importações já estão **definidos** e são específicos das atividades. Consulte os seguintes ecrãs para obter referência.
+1. Selecione o fluxo de trabalho de exportação para configurar. Em **Exportação**, **selecione Add**. Os **Argumentos** e Importações já estão **definidos** e são específicos das atividades. Consulte os seguintes ecrãs para obter referência.
 
     ![Adicionar](media/microsoft-identity-manager-2016-ma-ws-soap/add.png)
 
-2. Adicione uma atividade **de sequência.** Arraste o designer de **atividades de sequência** da caixa de **ferramentas** e deixe-o cair na superfície do Windows Workflow Designer. A atividade [sequência](https://msdn.microsoft.com/library/system.activities.statements.sequence.aspx) contém uma coleção ordenada de atividades infantis que executa por ordem. Selecione **Criar Variável** . Atribua os valores às variáveis que vai usar para a sua lógica.
+2. Adicione uma atividade **de sequência.** Arraste o designer de **atividades de sequência** da caixa de **ferramentas** e deixe-o cair na superfície do Windows Workflow Designer. A atividade [sequência](https://msdn.microsoft.com/library/system.activities.statements.sequence.aspx) contém uma coleção ordenada de atividades infantis que executa por ordem. Selecione **Criar Variável**. Atribua os valores às variáveis que vai usar para a sua lógica.
 
     ![Exportar](media/microsoft-identity-manager-2016-ma-ws-soap/export-add.png)
 
@@ -262,7 +262,7 @@ Adicione fluxos de trabalho de exportação seguindo estes passos na Ferramenta 
 
     ![Definir as propriedades para a atividade ForEach](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-sequence.png)
 
-5. Definir **DisplayName** como **ForEach \< AnchorAttribute \>**
+5. Definir **DisplayName** como **\<AnchorAttribute\> ForEach**
 
    ![Definir o nome do visor](media/microsoft-identity-manager-2016-ma-ws-soap/add-sequence.png)
 
@@ -270,7 +270,7 @@ Adicione fluxos de trabalho de exportação seguindo estes passos na Ferramenta 
 
    ![Definir o argumento do tipo](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-anchor.png)
 
-7. Adicione uma atividade **switch** dentro do corpo **forEach** do **AnchorAttribute** .
+7. Adicione uma atividade **switch** dentro do corpo **forEach** do **AnchorAttribute**.
 
    ![Adicione uma atividade switch](media/microsoft-identity-manager-2016-ma-ws-soap/select-net-types.png)
 
@@ -278,7 +278,7 @@ Adicione fluxos de trabalho de exportação seguindo estes passos na Ferramenta 
 
    ![Adicione uma expressão](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-switch.png)
 
-9. **Selecione Adicione um novo caso** e introduza um valor para o **EmployeeId** . Arraste uma atividade **de sequência** e dentro dela adicione uma atividade **De atribuir.**
+9. **Selecione Adicione um novo caso** e introduza um valor para o **EmployeeId**. Arraste uma atividade **de sequência** e dentro dela adicione uma atividade **De atribuir.**
 
     ![Adicione um novo caso e atribua-o à sequência](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-employeeid.png)
 
@@ -298,11 +298,11 @@ Adicione fluxos de trabalho de exportação seguindo estes passos na Ferramenta 
 
     ![Adicione uma expressão para a atividade do interruptor](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-expression.png)
 
-14. **Selecione Adicione um novo caso** e introduza um valor para o Primeiro **Nome** . Arraste uma atividade **de sequência** e dentro dela adicione uma atividade **De atribuir.** Atribuir as propriedades **de To** **and Value** para a atividade **Atribuir.**
+14. **Selecione Adicione um novo caso** e introduza um valor para o Primeiro **Nome**. Arraste uma atividade **de sequência** e dentro dela adicione uma atividade **De atribuir.** Atribuir as propriedades **de To** **and Value** para a atividade **Atribuir.**
 
     ![Adicione um novo caso para a sequência](media/microsoft-identity-manager-2016-ma-ws-soap/switch-firstname.png)
 
-15. Adicione valores para os atributos necessários como **LastName** , **Email,** e assim por diante. 
+15. Adicione valores para os atributos necessários como **LastName**, **Email,** e assim por diante. 
 
     ![Adicionar valores para atributos necessários](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-switch-anchor.png)
 
@@ -325,11 +325,11 @@ Guarde este projeto no `%FIM_INSTALL_FOLDER%\Synchronization Service\Extensions`
 ### <a name="delete-workflows"></a>Eliminar fluxos de trabalho
 Elimine os fluxos de trabalho de exportação seguindo estes passos na Ferramenta de Configuração do Serviço Web.
 
-1. Selecione o fluxo de trabalho de exportação para configurar. Em **Exportação** , **selecione Delete** . Os **Argumentos** e Importações já estão **definidos** e são específicos das atividades. Consulte os seguintes ecrãs para obter referência.
+1. Selecione o fluxo de trabalho de exportação para configurar. Em **Exportação**, **selecione Delete**. Os **Argumentos** e Importações já estão **definidos** e são específicos das atividades. Consulte os seguintes ecrãs para obter referência.
 
    ![Exportação eliminar fluxos de trabalho](media/microsoft-identity-manager-2016-ma-ws-soap/export-delete.png)
 
-2. Adicione uma atividade **de sequência.** Selecione **Criar Variável** . Atribua os valores às variáveis que vai utilizar para a sua lógica.
+2. Adicione uma atividade **de sequência.** Selecione **Criar Variável**. Atribua os valores às variáveis que vai utilizar para a sua lógica.
 
    ![Adicione uma atividade de sequência](media/microsoft-identity-manager-2016-ma-ws-soap/sequence-variables.png)
 
@@ -350,7 +350,7 @@ Elimine os fluxos de trabalho de exportação seguindo estes passos na Ferrament
 
    ![Definir o argumento do tipo](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-type-argument.png)
 
-7. Adicione uma atividade **switch** dentro do corpo **forEach** do **AnchorAttribute** .
+7. Adicione uma atividade **switch** dentro do corpo **forEach** do **AnchorAttribute**.
 
    ![Adicione uma atividade switch](media/microsoft-identity-manager-2016-ma-ws-soap/select-net-type.png)
 
@@ -358,7 +358,7 @@ Elimine os fluxos de trabalho de exportação seguindo estes passos na Ferrament
 
    ![Adicione uma expressão](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-switch.png)
 
-9. **Selecione Adicione um novo caso** e introduza um valor para o **EmployeeId** . Arraste uma atividade **de sequência** e dentro dela adicione uma atividade **De atribuir.**
+9. **Selecione Adicione um novo caso** e introduza um valor para o **EmployeeId**. Arraste uma atividade **de sequência** e dentro dela adicione uma atividade **De atribuir.**
 
    ![Adicione um novo caso e atribua-o à sequência](media/microsoft-identity-manager-2016-ma-ws-soap/foreach-default.png)
 
@@ -387,15 +387,15 @@ Guarde este projeto no `%FIM_INSTALL_FOLDER%\Synchronization Service\Extensions`
 ### <a name="replace-workflows"></a>Substituir fluxos de trabalho
 Substitua os fluxos de trabalho de exportação seguindo estes passos na Ferramenta de Configuração do Serviço Web.
 
-1. Selecione o fluxo de trabalho de exportação para configurar. Em **Exportação** , selecione **Substitua.** Os **Argumentos** e Importações já estão **definidos** e são específicos das atividades. Consulte abaixo o ecrã para obter referência.
+1. Selecione o fluxo de trabalho de exportação para configurar. Em **Exportação**, selecione **Substitua.** Os **Argumentos** e Importações já estão **definidos** e são específicos das atividades. Consulte abaixo o ecrã para obter referência.
 
    ![Substitua um fluxo de trabalho](media/microsoft-identity-manager-2016-ma-ws-soap/replace.png)
 
 2. Adicione uma atividade **de sequência.**
 
-3. Arraste uma atividade **ForEach** para o **\< anchorAttribute>.**
+3. Arraste uma atividade **forEach** para o **\<AnchorAttribute> .**
 
-4. Adicione outra atividade **forEach \< AttributeChange>** para atribuir valores não-âncora.
+4. Adicione outra atividade **ForEach \<AttributeChange>** para atribuir valores não-âncora.
 
 5. Finalmente, o ecrã parece a seguinte figura. As instruções para a configuração desta atividade são fornecidas na secção para <a href="#attribute-change-anchor">a adição de fluxos de trabalho de exportação</a>.
 
@@ -442,13 +442,13 @@ Na caixa de texto, escreva a mensagem de que quer ser visível no alvo do escrit
 
 Para utilizar a atividade **WriteLine,** descreva as seguintes propriedades. As propriedades são visíveis quando seleciona a atividade no Workflow Designer e vê as **Propriedades** para a atividade.
 
-- **Nível de registo** : Especifica a quantidade de conteúdo para escrever no valor do registo. Os valores possíveis são:
+- **Nível de registo**: Especifica a quantidade de conteúdo para escrever no valor do registo. Os valores possíveis são:
 
     - Alto: Escreva a mensagem **LogText** no ficheiro de registo se a gravidade do registo estiver definida para Alta.
     - Verbose: Escreva a mensagem **LogText** no ficheiro de registo se a gravidade do registo estiver definida para Verbose.
     - Desativado: Não escreva no ficheiro de registo.
-- **LogText** : Especifica o conteúdo do texto para escrever no registo.
-- **Tag** : Adiciona uma etiqueta ao texto para identificar o tipo de conteúdo que está a ser escrito no registo. Os valores possíveis são: Erro, rastreio ou aviso.
+- **LogText**: Especifica o conteúdo do texto para escrever no registo.
+- **Tag**: Adiciona uma etiqueta ao texto para identificar o tipo de conteúdo que está a ser escrito no registo. Os valores possíveis são: Erro, rastreio ou aviso.
 
 <!-- log severity is not defined in this document -->
 

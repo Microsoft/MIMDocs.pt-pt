@@ -1,5 +1,5 @@
 ---
-title: Obter pedido / Microsoft Docs
+title: Obter | de pedido Microsoft Docs
 description: ''
 keywords: ''
 author: billmath
@@ -12,12 +12,12 @@ ms.assetid: dcacf36c-0670-44d7-9f40-388667235271
 audience: developer
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: ad660c562b457890ea75d33325ada8d0f63feb8f
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 1bc42eb0fb1e54a3425586350ae5ad20495534c5
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "92762236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835710"
 ---
 # <a name="get-request"></a>Obter pedido
 Obtém um ou mais pedidos especificados do Microsoft Identity Manager (MIM) Certificate Management (CM).
@@ -45,7 +45,7 @@ targetuser| Opcional. O utilizador-alvo do pedido. Se não for especificado nenh
 status| Opcional. Indica o estado do pedido de recuperação. Os tipos de estado possíveis são "Aprovados", "Cancelados", "Concluídos", "Negados", "Executando", "Falhado", "Nenhum" e "Pendente". <br/>Se não for especificado nenhum estado, todos os pedidos, independentemente do estado, são devolvidos.
 
 ### <a name="request-headers"></a>Cabeçalhos do pedido
-Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="request-body"></a>Corpo do pedido
 Nenhum.
@@ -55,7 +55,7 @@ Esta secção descreve a resposta.
 
 ### <a name="response-codes"></a>Códigos de resposta
 
-Código  |Descrição  
+Código  |Description  
 ---------|---------
 200 | OK
 204 | Sem conteúdo
@@ -63,7 +63,7 @@ Código  |Descrição
 500 | Erro Interno
 
 ### <a name="response-headers"></a>Cabeçalhos de resposta
-Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="response-body"></a>Corpo da resposta
 No sucesso, devolve um ou mais objetos [de pedido](https://msdn.microsoft.com/library/windows/desktop/microsoft.clm.shared.requests.request.aspx) com as seguintes propriedades:
@@ -176,6 +176,6 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>Ver também
 
-- [Microsoft.Clm.Provision.FindOperations.FindRequest método](http://msdn.microsoft.com/library/windows/desktop/microsoft.clm.provision.findoperations.findrequests.aspx)
-- [Microsoft.Clm.Shared.RequestPermission enumeração](http://msdn.microsoft.com/library/windows/desktop/microsoft.clm.shared.requestpermission.aspx)
+- [Microsoft.Clm.Provision.FindOperations.FindRequest método](https://msdn.microsoft.com/library/windows/desktop/microsoft.clm.provision.findoperations.findrequests.aspx)
+- [Microsoft.Clm.Shared.RequestPermission enumeração](https://msdn.microsoft.com/library/windows/desktop/microsoft.clm.shared.requestpermission.aspx)
 - [Microsoft.Clm.Shared.Requests.Requests.Request class](https://msdn.microsoft.com/library/windows/desktop/microsoft.clm.shared.requests.request.aspx)

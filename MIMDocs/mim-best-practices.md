@@ -9,12 +9,12 @@ ms.date: 01/05/2018
 ms.topic: reference
 ms.prod: microsoft-identity-manager
 ms.assetid: ''
-ms.openlocfilehash: 72b77034d5591d0bc2ab420f185acee719fe8324
-ms.sourcegitcommit: a96944ac96f19018c43976617686b7c3696267d7
+ms.openlocfilehash: 71ac80f10fd01e7c784ec1462a9383295e5f8ddb
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79043006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835872"
 ---
 # <a name="microsoft-identity-manager-2016-best-practices"></a>Melhores Práticas do Microsoft Identity Manager 2016
 
@@ -26,17 +26,17 @@ Este tópico descreve as melhores práticas para implementar e operar o Microsof
 
 A configuração do SQL Server é fundamental para o desempenho ideal do sistema. Atingir o desempenho ideal do MIM em implementações de grande escala depende da aplicação das melhores práticas para um servidor a executar o SQL. Para obter mais informações, veja os seguintes tópicos sobre as melhores práticas do SQL:
 
--   [Storage Top 10 Best Practices (Dez Melhores Práticas de Armazenamento)](http://go.microsoft.com/fwlink/?LinkID=183663)
+-   [Storage Top 10 Best Practices (Dez Melhores Práticas de Armazenamento)](https://go.microsoft.com/fwlink/?LinkID=183663)
 
--   [Optimizing tempdb Performance (Otimizar o Desempenho de tempdb)](http://go.microsoft.com/fwlink/?LinkID=188267)
+-   [Optimizing tempdb Performance (Otimizar o Desempenho de tempdb)](https://go.microsoft.com/fwlink/?LinkID=188267)
 
--   [Artigo de Melhores Práticas do SQL Server](http://go.microsoft.com/fwlink/?LinkID=188268)
+-   [Artigo de Melhores Práticas do SQL Server](https://go.microsoft.com/fwlink/?LinkID=188268)
 
--   [Reorganizing and Rebuilding Indexes (Reorganizar e Reconstruir Índices)](http://go.microsoft.com/fwlink/?LinkID=188269)
+-   [Reorganizing and Rebuilding Indexes (Reorganizar e Reconstruir Índices)](https://go.microsoft.com/fwlink/?LinkID=188269)
 
 ### <a name="presize-data-and-log-files"></a>Pré-dimensionar ficheiros de registo e dados
 
-Não confie no aumento automático. Em vez disso, faça a gestão do crescimento destes ficheiros manualmente. Pode deixar o aumento automático ativado por motivos de segurança, mas deve gerir proativamente o crescimento dos ficheiros de dados. Para obter tamanhos de exemplo da base de dados do MIM, veja [FIM Capacity Planning Guide (Guia de Planeamento de Capacidade do FIM)](http://go.microsoft.com/fwlink/?LinkID=185246).
+Não confie no aumento automático. Em vez disso, faça a gestão do crescimento destes ficheiros manualmente. Pode deixar o aumento automático ativado por motivos de segurança, mas deve gerir proativamente o crescimento dos ficheiros de dados. Para obter tamanhos de exemplo da base de dados do MIM, veja [FIM Capacity Planning Guide (Guia de Planeamento de Capacidade do FIM)](https://go.microsoft.com/fwlink/?LinkID=185246).
 
 ### <a name="to-presize-sql-data-and-log-files"></a>Para pré-dimensionar os ficheiros de registo e dados do SQL
 
@@ -64,7 +64,7 @@ Para um desempenho ideal, recomendamos que crie um ficheiro de dados por núcleo
 
 ### <a name="ensure-adequate-space-for-log-files"></a>Garantir o espaço adequado para os ficheiros de registo
 
-É importante compreender os requisitos de disco do seu modelo de recuperação. O modo de recuperação Simples pode ser adequado durante o carregamento do sistema inicial, para limitar a utilização do espaço em disco, mas os dados criados após a cópia de segurança mais recente serão expostos a perda de dados. Ao utilizar o modo de recuperação Completo, tem de gerir a utilização do disco através de cópias de segurança que incluem cópias de segurança frequentes do registo de transações para impedir a utilização elevada de espaço em disco. Para obter mais informações, veja [Recovery Model Overview (Descrição Geral do Modelo de Recuperação)](http://go.microsoft.com/fwlink/?LinkID=185370).
+É importante compreender os requisitos de disco do seu modelo de recuperação. O modo de recuperação Simples pode ser adequado durante o carregamento do sistema inicial, para limitar a utilização do espaço em disco, mas os dados criados após a cópia de segurança mais recente serão expostos a perda de dados. Ao utilizar o modo de recuperação Completo, tem de gerir a utilização do disco através de cópias de segurança que incluem cópias de segurança frequentes do registo de transações para impedir a utilização elevada de espaço em disco. Para obter mais informações, veja [Recovery Model Overview (Descrição Geral do Modelo de Recuperação)](https://go.microsoft.com/fwlink/?LinkID=185370).
 
 ### <a name="limit-sql-server-memory"></a>Limitar a memória do SQL Server
 
@@ -89,7 +89,7 @@ Dependendo da quantidade de memória que tem no SQL Server e consoante partilhe 
    WITH OVERRIDE
    ```
 
-   Este exemplo reconfigura o servidor SQL para não utilizar mais de 12 gigabytes (GB) de memória.
+   Este exemplo reconfigura o servidor SQL para utilizar não mais do que 12 gigabytes (GB) de memória.
 
 4. Verifique a definição ao utilizar a seguinte consulta:
 
@@ -107,16 +107,16 @@ Dependendo da quantidade de memória que tem no SQL Server e consoante partilhe 
 
 ### <a name="backup-and-recovery-configuration"></a>Configuração de cópia de segurança e recuperação
 
-Em geral, deve trabalhar com o administrador da sua base de dados para conceber uma estratégia de backup e recuperação. Algumas recomendações incluem:
-- Execute cópias de dados de backup de acordo com a política de backup da sua organização. 
+Em geral, deve trabalhar com o administrador da sua base de dados para desenhar uma estratégia de backup e recuperação. Algumas recomendações incluem:
+- Execute cópias de segurança da base de dados de acordo com a política de backup da sua organização. 
 - Se as cópias de segurança de registos incrementais não forem planeadas, a base de dados deve ser definida para o modo de recuperação Simples. 
-- Certifique-se de que compreende as implicações dos diferentes modelos de recuperação antes de implementar a sua estratégia de backup. Aprenda os requisitos de espaço do disco para estes modelos. O modelo de recuperação completo necessita de cópias de segurança de registos frequentes para evitar a utilização elevada do espaço em disco. 
+- Certifique-se de que compreende as implicações dos diferentes modelos de recuperação antes de implementar a sua estratégia de backup. Aprenda os requisitos de espaço em disco para estes modelos. O modelo de recuperação completo necessita de cópias de segurança de registos frequentes para evitar a utilização elevada do espaço em disco. 
 
-Para obter mais informações, veja [Recovery Model Overview (Descrição Geral do Modelo de Recuperação)](http://go.microsoft.com/fwlink/?LinkID=185370) e [FIM 2010 Backup and Restore Guide (Guia de Criação de Cópias de Segurança e de Restauro do FIM 2010)](http://go.microsoft.com/fwlink/?LinkID=165864).
+Para obter mais informações, veja [Recovery Model Overview (Descrição Geral do Modelo de Recuperação)](https://go.microsoft.com/fwlink/?LinkID=185370) e [FIM 2010 Backup and Restore Guide (Guia de Criação de Cópias de Segurança e de Restauro do FIM 2010)](https://go.microsoft.com/fwlink/?LinkID=165864).
 
-## <a name="create-a-backup-administrator-account-for-the-fim-service-after-installation"></a>Criar uma conta de Administrador de Backup para o Serviço FIM após a instalação
+## <a name="create-a-backup-administrator-account-for-the-fim-service-after-installation"></a>Criar uma conta de administrador de backup para o serviço FIM após a instalação
 
-Os membros do conjunto de Administradores DO FIMService têm permissões únicas críticas ao funcionamento da sua implementação MIM. Se não conseguir iniciar sessão como parte do conjunto de Administradores, a única resolução é voltar a uma cópia de segurança anterior do sistema. Para atenuar esta situação, recomendamos que adicione outros utilizadores ao conjunto Administrativo do FIM como parte da sua configuração de pós-instalação.
+Os membros do conjunto fimService Administrators têm permissões únicas críticas ao funcionamento da sua implementação MIM. Se não conseguir iniciar sessão como parte do conjunto de Administradores, a única resolução é reverter para uma cópia de segurança anterior do sistema. Para atenuar esta situação, recomendamos que adicione outros utilizadores ao conjunto Administrativo do FIM como parte da sua configuração de pós-instalação.
 
 ## <a name="fim-service"></a>Serviço FIM
 
@@ -135,18 +135,18 @@ Seguem-se as melhores práticas para configurar o Microsoft Exchange Server para
 
 3.  Selecione a caixa de verificação **Exigir a autenticação de todos os remetentes**.
 
-Para obter mais informações, veja [Configure Message Delivery Restrictions (Configurar Restrições de Entrega da Mensagem)](http://go.microsoft.com/fwlink/?LinkID=183625).
+Para obter mais informações, veja [Configure Message Delivery Restrictions (Configurar Restrições de Entrega da Mensagem)](https://go.microsoft.com/fwlink/?LinkID=183625).
 
--   Configure a conta de serviço para que rejeite correio com um tamanho superior a 1 MB. Siga as melhores práticas para [Configure Message Size Limits (Configurar Limites de Tamanho de Mensagem)](http://go.microsoft.com/fwlink/?LinkID=183626) para uma Caixa de Correio ou uma Pasta Pública com Capacidade de Correio.
+-   Configure a conta de serviço para que rejeite correio com um tamanho superior a 1 MB. Siga as melhores práticas para [Configure Message Size Limits (Configurar Limites de Tamanho de Mensagem)](https://go.microsoft.com/fwlink/?LinkID=183626) para uma Caixa de Correio ou uma Pasta Pública com Capacidade de Correio.
 
--   Configure a conta de serviço para que tenha uma quota de armazenamento de caixa de correio de 5 GB. Para obter os resultados ideais, siga as melhores práticas indicadas em [Configure Storage Quotas for a Mailbox (Configurar Quotas de Armazenamento para uma Caixa de Correio)](http://go.microsoft.com/fwlink/?LinkID=156929).
+-   Configure a conta de serviço para que tenha uma quota de armazenamento de caixa de correio de 5 GB. Para obter os resultados ideais, siga as melhores práticas indicadas em [Configure Storage Quotas for a Mailbox (Configurar Quotas de Armazenamento para uma Caixa de Correio)](https://go.microsoft.com/fwlink/?LinkID=156929).
 
 ## <a name="mim-portal"></a>Portal do MIM
 
 
 ### <a name="disable-sharepoint-indexing"></a>Desativar a indexação do SharePoint
 
-Recomendamos que desative a indexação do Microsoft Office SharePoint®. Não há documentos que precisem de ser indexados. A indexação causa muitas entradas de registo de erros e potenciais problemas de desempenho em MIM. Para desativar a indexação do SharePoint, execute os passos abaixo:
+Recomendamos que desative a indexação do Microsoft Office SharePoint®. Não há documentos que precisem de ser indexados. A indexação causa muitas entradas de registo de erros e potenciais problemas de desempenho na MIM. Para desativar a indexação do SharePoint execute os passos abaixo:
 
 1.  No servidor que aloja o Portal do MIM 2016, clique em Iniciar.
 
@@ -166,16 +166,16 @@ Recomendamos que desative a indexação do Microsoft Office SharePoint®. Não h
 
 ## <a name="mim-2016-initial-data-load"></a>Carregamento de Dados Inicial do MIM 2016
 
-Esta secção enumera uma série de etapas para aumentar o desempenho da carga inicial de dados do sistema externo para mim. É importante compreender que alguns destes passos só são realizados durante a população inicial do sistema. Devem ser reiniciados após a conclusão da carga. Esta é uma operação única e não é uma sincronização contínua.
+Esta secção enumera uma série de passos para aumentar o desempenho da carga inicial de dados do sistema externo para o MIM. É importante compreender que alguns destes passos só são realizados durante a população inicial do sistema. Devem ser reiniciados após a conclusão da carga. Esta é uma operação única e não é uma sincronização contínua.
 
 > [!NOTE]
-> Para obter mais informações sobre utilizadores sincronizados entre mim e Ative Directory Domain Services (AD DS), consulte [Como sincronizar os utilizadores do Diretório Ativo para](http://go.microsoft.com/fwlink/?LinkID=188277) o FIM na documentação do FIM.
+> Para obter mais informações sobre a sincronização dos utilizadores entre mim e Ative Directory Domain Services (AD DS), consulte [como sincronizar os utilizadores do Ative Directory para o FIM](https://go.microsoft.com/fwlink/?LinkID=188277) na documentação FIM.
 > 
 > [!IMPORTANT]
 > Certifique-se de que aplicou as melhores práticas abrangidas na secção de configuração do SQL deste guia. 
 
 ### <a name="step-1-configure-the-sql-server-for-initial-data-load"></a>Passo 1: configurar o SQL Server para o carregamento de dados inicial
-A carga inicial de dados pode ser um processo moroso. Quando planeia carregar inicialmente muitos dados, pode encurtar o tempo que leva para povoar a base de dados, desligando temporariamente a pesquisa de texto completo e ligando-a novamente após a exportação do agente de gestão MIM 2016 (FIM MA) ter concluído.
+A carga inicial de dados pode ser um processo moroso. Quando planeia inicialmente carregar muitos dados, pode encurtar o tempo necessário para preencher a base de dados desligando temporariamente a pesquisa por texto completo e ligando-a novamente após a exportação do agente de gestão MIM 2016 (FIM MA) ter terminado.
 
 Para desativar temporariamente a pesquisa em texto completo:
 
@@ -191,7 +191,7 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = MANUAL
 ```
 
 > [!IMPORTANT]
-> Não implementar estes procedimentos pode resultar na utilização elevada do espaço em disco, fazendo com que fique sem espaço em disco. Pode encontrar detalhes adicionais sobre este tópico em [Recovery Model Overview (Descrição Geral do Modelo de Recuperação)](http://go.microsoft.com/fwlink/?LinkID=185370). [O FIM Backup and Restore Guide (Guia de Criação de Cópias de Segurança e de Restauro do FIM)](http://go.microsoft.com/fwlink/?LinkID=165864) contém informações adicionais.
+> Não implementar estes procedimentos pode resultar na utilização elevada do espaço em disco, fazendo com que fique sem espaço em disco. Pode encontrar detalhes adicionais sobre este tópico em [Recovery Model Overview (Descrição Geral do Modelo de Recuperação)](https://go.microsoft.com/fwlink/?LinkID=185370). [O FIM Backup and Restore Guide (Guia de Criação de Cópias de Segurança e de Restauro do FIM)](https://go.microsoft.com/fwlink/?LinkID=165864) contém informações adicionais.
 
 ### <a name="step-2-apply-the-minimum-necessary-mim-configuration-during-the-load-process"></a>Passo 2: aplicar a configuração do MIM mínima necessária durante o processo de carregamento
 
@@ -199,7 +199,7 @@ Durante o processo de carregamento inicial, só deve aplicar a configuração m�
 
 ### <a name="step-3-configure-and-populate-the-fim-service-with-external-identity-data"></a>Passo 3: configurar e preencher o Serviço FIM com dados de identidade externa
 
-Neste momento deverá seguir os procedimentos descritos no How I Synchronize Users from Ative Directory Domain Services to FIM guide to configure and synchronize your system with users from Ative Directy. Se precisar de sincronizar as informações do Grupo, os procedimentos para esse processo são descritos no [guia How I Synchronize Groups from Ative Directory Domain Services to FIM](https://technet.microsoft.com/library/ff686936(v=ws.10).aspx) guide.
+Neste momento, deverá seguir os procedimentos descritos no Como Sincronizar os Utilizadores dos Serviços de Domínio do Diretório Ativo para o FIM orientar para configurar e sincronizar o seu sistema com utilizadores do Ative Directory. Se necessitar de sincronizar as informações do Grupo, os procedimentos para esse processo são descritos nos [Grupos de Sincronização como faço para sincronizar grupos dos Serviços de Domínio do Diretório Ativo para](https://technet.microsoft.com/library/ff686936(v=ws.10).aspx) o guia FIM.
 
 #### <a name="synchronization-and-export-sequences"></a>Sequências de sincronização e exportação
 
@@ -222,7 +222,7 @@ Dependendo dos cenários, isto poderá incluir a criação de conjuntos adiciona
 
 ### <a name="step-5-reconfigure-sql-to-previous-settings"></a>Passo 5: reconfigurar o SQL para as definições anteriores
 
-Lembre-se de alterar a definição do SQL para as definições normais. Isto inclui:
+Lembre-se de alterar a definição do SQL para as definições normais. O que está incluído:
 
 -   Ativar a pesquisa em texto completo
 
@@ -236,7 +236,7 @@ ALTER FULLTEXT INDEX ON [fim].[ObjectValueString] SET CHANGE_TRACKING = AUTO
 ALTER FULLTEXT INDEX ON [fim].[ObjectValueXml] SET CHANGE_TRACKING = AUTO
 ```
 
-Se tiver de mudar para o modo de recuperação Simples, certifique-se de que reconfigura a sua agenda de cópias de segurança de acordo com a política de cópias de segurança da sua organização. Estão disponíveis detalhes adicionais de agendas de cópias de segurança do FIM em [FIM Backup and Restore Guide (Guia de Criação de Cópias de Segurança e de Restauro do FIM)](http://go.microsoft.com/fwlink/?LinkID=165864).
+Se tiver de mudar para o modo de recuperação Simples, certifique-se de que reconfigura a sua agenda de cópias de segurança de acordo com a política de cópias de segurança da sua organização. Estão disponíveis detalhes adicionais de agendas de cópias de segurança do FIM em [FIM Backup and Restore Guide (Guia de Criação de Cópias de Segurança e de Restauro do FIM)](https://go.microsoft.com/fwlink/?LinkID=165864).
 
 ## <a name="configuration-migration"></a>Migração de Configuração
 
@@ -356,9 +356,9 @@ Para implementar o SSL:
 
 28. Clique em Operações e, em seguida, clique em Mapeamentos de Acesso Alternativos.
 
-29. Clique em http://servername.
+29. Clique em https://servername.
 
-30. Mude http://servername https://servernamepara, e depois clique OK.
+30. Mude https://servername para https://servername , e, em seguida, clique EM OK.
 
 31. Clique em Iniciar, clique em Executar, escreva iisreset e, em seguida, clique em OK.
 
@@ -368,9 +368,9 @@ Para obter uma configuração de desempenho ideal:
 
 -   Aplique as melhores práticas de configuração do SQL conforme descrito na secção de configuração do SQL neste documento.
 
--   Desligue a Indexação sharePoint no site do Portal MIM. Para obter mais informações, veja a secção Desativar a indexação do SharePoint neste documento.
+-   Desligue o Índice De SharePoint no site do Portal MIM. Para obter mais informações, veja a secção Desativar a indexação do SharePoint neste documento.
 
-## <a name="feature-specific-best-practices"></a>Funcionalidade Boas Práticas Específicas 
+## <a name="feature-specific-best-practices"></a>Características Melhores Práticas Específicas 
 
 
 ### <a name="request-management"></a>Gestão de Pedidos
@@ -386,7 +386,7 @@ O MIM fornece dois tipos de MPRs, Pedido e Transição de Conjunto:
 - MPR de Pedido (RMPR)
 
   - Utilizado para definir a política de controlo de acesso (autenticação, autorização e ação) para as operações Criar, Ler, Atualizar ou Eliminar (CRUD) relativamente aos recursos.
-  - Aplicada quando uma operação CRUD é emitida contra um recurso-alvo em MIM.
+  - Aplicado quando uma operação CRUD é emitida contra um recurso-alvo na MIM.
   - Confinado pelos critérios de correspondência definidos na regra, isto é, a que pedidos CRUD se aplica a regra.
 
 - MPR de Transição de Conjunto (TMPR)
@@ -394,11 +394,12 @@ O MIM fornece dois tipos de MPRs, Pedido e Transição de Conjunto:
   - Aplicado quando um recurso entra ou sai de um conjunto associado.
   - Confinado aos membros do conjunto.
 
->[NOTA] Para obter detalhes adicionais, veja [Designing Business Policy Rules (Criar Regras de Políticas Empresariais)](http://go.microsoft.com/fwlink/?LinkID=183691).
+> [!NOTE]
+> Para mais informações, consulte [as Regras de Política Comercial](https://go.microsoft.com/fwlink/?LinkID=183691)de Design.
 
 #### <a name="only-enable-mprs-as-necessary"></a>Ativar MPRs apenas consoante necessário
 
-Utilize o princípio do menor privilégio ao aplicar a sua configuração. Os MPRs controlam a política de acesso à sua implantação MIM. Permita apenas as funcionalidades utilizadas pela maioria dos seus utilizadores. Por exemplo, nem todos os utilizadores utilizam MIM para gestão de grupos, pelo que os MPRs de gestão de grupoassociados devem ser desativados. Por predefinição, as naves MIM com a maioria das permissões não administradores desativadas.
+Utilize o princípio do menor privilégio ao aplicar a sua configuração. Os MPRs controlam a política de acesso à sua implementação MIM. Permita apenas as funcionalidades utilizadas pela maioria dos seus utilizadores. Por exemplo, nem todos os utilizadores usam MIM para gestão de grupos, pelo que os MPRs de gestão de grupos associados devem ser desativados. Por predefinição, os navios MIM com a maioria das permissões não-administradoras desativadas.
 
 #### <a name="duplicate-built-in-mprs-instead-of-directly-modifying"></a>Duplicar MPRs incorporados em vez de modificar diretamente
 Quando precisar de modificar os MPRs incorporados, deve criar um novo MPR com a configuração necessária e desativar o MPR incorporado. Esta ação garante que as alterações futuras aos MPRs incorporados que são introduzidas através do processo de atualização não afetam negativamente a configuração do seu sistema.
@@ -425,11 +426,11 @@ Para os atributos com os mesmos requisitos de acesso que não se espera que seja
 
 #### <a name="avoid-giving-unrestricted-access-even-to-selected-principal-groups"></a>Evitar fornecer acesso sem restrições, mesmo a grupos principais selecionados
 
-Em MIM, as permissões são definidas como uma afirmação positiva. Como a MIM não suporta permissões de Negação, dar acesso ilimitado a um recurso complica o fornecimento de quaisquer exclusões nas permissões. Como melhor prática, conceda apenas as permissões necessárias.
+Na MIM, as permissões são definidas como uma afirmação positiva. Como a MIM não suporta permissões de Deny, dar acesso ilimitado a um recurso complica fornecer quaisquer exclusões nas permissões. Como melhor prática, conceda apenas as permissões necessárias.
 
 #### <a name="use-tmprs-to-define-custom-entitlements"></a>Utilizar TMPRs para definir direitos personalizados
 
-Utilize MPRs de Transição de Conjunto (TMPRs) em vez de RMPRs para definir direitos personalizados. Os TMPRs fornecem um modelo baseado no estado para atribuir ou remover direitos com base na associação nos Conjuntos de Transições definidos, ou funções, e as atividades de fluxo de trabalho complementares. Os TMPRs devem ser sempre definidos em pares, um para a transição de recursos e outro para a transição de recursos. Além disso, cada MPR de transição deve conter fluxos de trabalho separados para atividades de provisionamento e de deprovisionamento.
+Utilize MPRs de Transição de Conjunto (TMPRs) em vez de RMPRs para definir direitos personalizados. Os TMPRs fornecem um modelo baseado no estado para atribuir ou remover direitos com base na associação nos Conjuntos de Transições definidos, ou funções, e as atividades de fluxo de trabalho complementares. Os TMPRs devem ser sempre definidos em pares, um para os recursos em transição e outro para os recursos em transição. Além disso, cada PMR de transição deve conter fluxos de trabalho separados para atividades de provisionamento e de desprovisionamento.
 
 > [!NOTE]
 > Qualquer fluxo de trabalho de desaprovisionamento deve garantir que o atributo Executar na Atualização da Política está definido para verdadeiro.
@@ -464,7 +465,7 @@ Para remover um direito do sistema (e revogá-lo de todos os membros que têm at
 
 3.  Desative o TMPR de Saída.
 
-Para remover um direito, mas deixar os membros atuais em paz (por exemplo, pare de usar mim para gerir o direito):
+Para remover um direito, mas deixar os atuais membros em paz (por exemplo, parar de usar a MIM para gerir o direito):
 
 1.  Desative o TMPR de Entrada. Esta ação evita novas concessões.
 
@@ -498,11 +499,11 @@ A utilização de condições com base em atributos de referência com vários v
 
 #### <a name="kiosk-like-computers-that-are-used-for-password-reset-should-set-local-security-to-clear-the-virtual-memory-pagefile"></a>Os computadores semelhantes a quiosques que são utilizados para a reposição de palavras-passe devem definir segurança local para limpar o ficheiro de paginação de memória virtual
 
-Ao implementar a reposição da palavra-passe MIM numa estação de trabalho destinada a ser um quiosque, recomendamos que a definição de política de segurança local de página de memória virtual seja ativada para garantir que as informações sensíveis da memória do processo não estejam disponíveis para utilizadores não autorizados.
+Ao implementar a palavra-passe MIM reiniciada numa estação de trabalho destinada a ser um quiosque, recomendamos que a definição de política de segurança local do ficheiro de página de memória virtual: Limpar a definição da política de segurança local do ficheiro de memória virtual seja ativada para garantir que informações sensíveis da memória do processo não estejam disponíveis para utilizadores não autorizados.
 
 #### <a name="users-should-always-register-for-a-password-reset-on-a-computer-that-they-are-logged-on-to"></a>Os utilizadores devem sempre registar-se numa reposição de palavra-passe num computador em que tenham sessão iniciada
 
-Quando um utilizador tenta registar-se para reset de palavra-passe através de um portal Web, a MIM inicia sempre o registo em nome do utilizador registado, independentemente de quem esteja registado no Web site. Os utilizadores devem sempre registar-se numa reposição de palavra-passe num computador em que tenham sessão iniciada.
+Quando um utilizador tenta registar-se para a redefinição da palavra-passe através de um portal Web, a MIM inicia sempre o registo em nome do utilizador com sessão iniciada, independentemente de quem esteja registado no Web site. Os utilizadores devem sempre registar-se numa reposição de palavra-passe num computador em que tenham sessão iniciada.
 
 #### <a name="do-not-set-the-avoidpdconwan-registry-key-to-true"></a>Não defina a chave de registo AvoidPdcOnWan para verdadeiro
 
@@ -514,7 +515,7 @@ Se esta chave de registo for definida para verdadeiro, o utilizador irá muito p
 
 É possível registar palavras-passe em texto não encriptado ao ativar o rastreio de Nível de Serviço de diagnóstico no Windows
 
-Communication Foundation (WCF). Esta opção não está ativada por predefinição e não deve ativá-la nos ambientes de produção. Estas palavras-passe são visíveis como elementos de texto não encriptado numa mensagem de SOAP (Simple Object Access Protocol) encriptada quando os utilizadores se registam para a reposição de palavra-passe. Para obter mais informações, veja [(Configuring Message Logging) Configurar o Registo de Mensagens](http://go.microsoft.com/fwlink/?LinkID=168572).
+Communication Foundation (WCF). Esta opção não está ativada por predefinição e não deve ativá-la nos ambientes de produção. Estas palavras-passe são visíveis como elementos de texto não encriptado numa mensagem de SOAP (Simple Object Access Protocol) encriptada quando os utilizadores se registam para a reposição de palavra-passe. Para obter mais informações, veja [(Configuring Message Logging) Configurar o Registo de Mensagens](https://go.microsoft.com/fwlink/?LinkID=168572).
 
 #### <a name="do-not-map-an-authorization-workflow-to-the-password-reset-process"></a>Não mapeie um fluxo de trabalho de autorização para o processo de reposição de palavra-passe
 
@@ -532,7 +533,7 @@ Ao adicionar, remover ou alterar a ordem das atividades de autenticação num fl
 
 #### <a name="consider-adding-a-privacy-disclaimer-to-the-user-profile-page"></a>Pondere adicionar uma exclusão de responsabilidade de privacidade à página de perfil do utilizador
 
-No MIM, por predefinição, algumas informações de perfil poderão ser apresentadas para outros utilizadores. Como cortesia para os utilizadores, os administradores devem ponderar adicionar texto personalizado consistente com as políticas da empresa à página de Perfil do Utilizador. Para obter mais informações sobre como adicionar texto personalizado a uma página do portal do MIM, veja [Introduction to Configuring and Customizing the FIM Portal (Introdução para Configurar e Personalizar o Portal do FIM)](http://go.microsoft.com/fwlink/?LinkID=165848).
+No MIM, por predefinição, algumas informações de perfil poderão ser apresentadas para outros utilizadores. Como cortesia para os utilizadores, os administradores devem ponderar adicionar texto personalizado consistente com as políticas da empresa à página de Perfil do Utilizador. Para obter mais informações sobre como adicionar texto personalizado a uma página do portal do MIM, veja [Introduction to Configuring and Customizing the FIM Portal (Introdução para Configurar e Personalizar o Portal do FIM)](https://go.microsoft.com/fwlink/?LinkID=165848).
 
 ### <a name="schema"></a>Esquema
 
@@ -550,7 +551,7 @@ Existem 13 atributos principais atribuídos a todos os tipos de recurso. Não de
 
 -   DeletedTime
 
--   Descrição
+-   Description
 
 -   DetectedRulesList • DisplayName
 
@@ -584,17 +585,17 @@ O atributo Membro exposto para o motor de sincronização é mapeado atualmente 
 
 #### <a name="leading-and-trailing-spaces-in-strings-are-ignored"></a>Os espaços à esquerda e à direita em cadeias são ignorados
 
-Em MIM, você pode entrar cordas com espaços de liderança e de trailing, mas o sistema MIM ignora esses espaços. Se submeter uma cadeia sem um espaço à esquerda e à direita, o motor de sincronização e os serviços Web irão ignorar os espaços.
+Na MIM, pode introduzir cordas com espaços de liderança e de fuga, mas o sistema MIM ignora esses espaços. Se submeter uma cadeia sem um espaço à esquerda e à direita, o motor de sincronização e os serviços Web irão ignorar os espaços.
 
 #### <a name="empty-strings-do-not-equal-null"></a>As cadeias vazias não são iguais a nulo
 
-Cordas vazias não são iguais a nulas nesta libertação de MIM. A entrada de cadeia vazia é considerada um valor válido. Não presente é considerado um valor nulo.
+As cordas vazias não são iguais a nulas nesta libertação de MIM. A entrada de cadeia vazia é considerada um valor válido. Não presente é considerado um valor nulo.
 
 ### <a name="workflow-and-request-processing"></a>Processamento de Pedido e Fluxo de Trabalho
 
 #### <a name="do-not-delete-default-workflows-that-are-shipped-with-mim-2016"></a>Não elimine fluxos de trabalho predefinidos que são fornecidos com o MIM 2016
 
-Os seguintes fluxos de trabalho são enviados com MIM e não devem ser eliminados:
+Os seguintes fluxos de trabalho são enviados com MIM e não devem ser suprimidos:
 
 -   Fluxo de Trabalho de Expiração
 
@@ -628,11 +629,11 @@ Evite utilizar atividades que modificam os recursos do MIM, tal como a Atividade
 
 ### <a name="understanding-fim-service-partitions"></a>Compreender as Partições do Serviço FIM
 
-O objetivo da MIM é processar pedidos que possam ser iniciados por vários clientes MIM, como o serviço de sincronização FIM e os componentes de self-service de acordo com as suas políticas de negócio configuradas. Por predefinição, cada instância do serviço FIM pertence a um grupo lógico que consiste numa ou mais instâncias do serviço FIM, que também é conhecida como uma partição do serviço FIM. Se apenas tiver uma instância do serviço FIM implementada para processar todos os pedidos, é possível que ocorram latências de processamento. Algumas operações podem exceder os valores de tempo limite predefinidos que são adequados para operações de gestão personalizada. As partições do serviço FIM podem ajudá-lo a resolver este problema.
+O objetivo da MIM é processar pedidos que possam ser iniciados por vários clientes MIM, como o serviço de sincronização FIM e os componentes de self-service de acordo com as suas políticas comerciais configuradas. Por predefinição, cada instância do serviço FIM pertence a um grupo lógico que consiste numa ou mais instâncias do serviço FIM, que também é conhecida como uma partição do serviço FIM. Se apenas tiver uma instância do serviço FIM implementada para processar todos os pedidos, é possível que ocorram latências de processamento. Algumas operações podem exceder os valores de tempo limite predefinidos que são adequados para operações de gestão personalizada. As partições do serviço FIM podem ajudá-lo a resolver este problema.
 
-Para obter informações adicionais consulte [Understanding FIM Service Partitions](https://social.technet.microsoft.com/wiki/contents/articles/2363.understanding-fim-service-partitions.aspx).
+Para obter informações adicionais consulte [As partilhas do serviço Understanding FIM](https://social.technet.microsoft.com/wiki/contents/articles/2363.understanding-fim-service-partitions.aspx).
 
 ## <a name="next-steps"></a>Passos seguintes
-- [Guia de backup e restauro fim](http://go.microsoft.com/fwlink/?LinkID=165864)
-- [Como sincronizar utilizadores do Diretório Ativo para o FIM](http://go.microsoft.com/fwlink/?LinkID=188277) 
-- Visão geral do modelo de [recuperação.](http://go.microsoft.com/fwlink/?LinkID=185370)
+- [Guia de backup e restauro do FIM](https://go.microsoft.com/fwlink/?LinkID=165864)
+- [Como posso sincronizar os utilizadores do Ative Directy para o FIM](https://go.microsoft.com/fwlink/?LinkID=188277) 
+- [Visão geral do modelo de recuperação](https://go.microsoft.com/fwlink/?LinkID=185370).

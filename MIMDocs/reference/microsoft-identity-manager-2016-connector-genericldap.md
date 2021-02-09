@@ -1,5 +1,5 @@
 ---
-title: Conector LDAP Genérico Microsoft Docs
+title: '| genérico do conector LDAP Microsoft Docs'
 description: Este artigo descreve como configurar o Conector LDAP Genérico da Microsoft.
 services: active-directory
 documentationcenter: ''
@@ -15,12 +15,12 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.date: 06/26/2018
 ms.author: billmath
-ms.openlocfilehash: bb6460ebf4106aa8c9295be0db3ce9da426b0778
-ms.sourcegitcommit: 78c2d7e5ba4bec276d5a9bf8860bc126d9bd9c33
+ms.openlocfilehash: 5b19b4fd9d45797fcc6b02091386a27aec3c0abf
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835728"
 ---
 # <a name="generic-ldap-connector-technical-reference"></a>Referência técnica do Conector do LDAP Genérico
 Este artigo descreve o Conector LDAP Genérico. O artigo aplica-se aos seguintes produtos:
@@ -29,7 +29,7 @@ Este artigo descreve o Conector LDAP Genérico. O artigo aplica-se aos seguintes
 * Gestor de Identidades Da Vanguarda 2010 R2 (FIM2010R2)
   * Deve utilizar o hotfix 4.1.3671.0 ou mais tarde [KB3092178](https://support.microsoft.com/kb/3092178).
 
-Para MIM2016 e FIM2010R2, o Conector está disponível como download do [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=717495).
+Para MIM2016 e FIM2010R2, o Conector está disponível como download do [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717495).
 
 Quando se refere aos RFCs do IETF, este documento está a utilizar o formato (RFC [número RFC]/[secção no documento RFC]), por exemplo (RFC 4512/4.3).
 Pode encontrar mais informações em [https://tools.ietf.org/](https://tools.ietf.org/) . No painel esquerdo, introduza um número RFC na caixa de diálogo **doc fetch** e teste-o para se certificar de que é válido.
@@ -271,5 +271,5 @@ Para a Novell eDirectory, a importação delta não deteta quaisquer exclusões 
 
 Para diretórios com um registo de alteração delta que se baseia na data/hora, é altamente recomendado executar uma importação completa em horários periódicos. Este processo permite que o motor de sincronização encontre e dissimilaridades entre o servidor LDAP e o que está atualmente no espaço do conector.
 
-## <a name="troubleshooting"></a>Resolução de Problemas
-* Para obter informações sobre como permitir a sessão de registo para resolver problemas no conector, consulte o [Rastreio ETW para Conectores](http://go.microsoft.com/fwlink/?LinkId=335731).
+## <a name="troubleshooting"></a>Resolução de problemas
+* Para obter informações sobre como permitir a sessão de registo para resolver problemas no conector, consulte o [Rastreio ETW para Conectores](https://go.microsoft.com/fwlink/?LinkId=335731).

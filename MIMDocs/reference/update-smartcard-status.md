@@ -1,5 +1,5 @@
 ---
-title: Atualizar o estado do cartão inteligente ! Microsoft Docs
+title: Atualizar o estado do cartão inteligente | Microsoft Docs
 description: ''
 keywords: ''
 author: billmath
@@ -12,12 +12,12 @@ ms.assetid: 598dace3-c6f2-447a-9301-c0b63ee38276
 audience: developer
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: fe6d59377ef3218fde0df99365506ef9ec143a6f
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 2c49c86fd57d363bec0eb2fd6d1fbe9ee261ee7a
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "92762511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835916"
 ---
 # <a name="update-smart-card-status"></a>Atualizar o estado do cartão inteligente
 Atualiza o estado de um cartão inteligente.
@@ -36,10 +36,10 @@ GET     |/CertificateManagement/api/v1.0/requests/{reqid}/smartcards/{scid}
 Parâmetro | Descrição
 ---------|------------
 reqid | Obrigatório. O identificador de pedidos específico do Microsoft Identity Manager (MIM) Certificate Management (CM).
-scid | Obrigatório. O identificador de cartões inteligentes que é específico da MIM CM. O valor corresponde ao campo "uuid" no objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](http://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
+scid | Obrigatório. O identificador de cartões inteligentes que é específico da MIM CM. O valor corresponde ao campo "uuid" no objeto [Microsoft.Clm.Shared.Smartcards.Smartcards.Smartcard.](https://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx)
 
 ### <a name="request-headers"></a>Cabeçalhos do pedido
-Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de pedido comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="request-body"></a>Corpo do pedido
 O organismo de pedido contém as seguintes propriedades:
@@ -53,7 +53,7 @@ Esta secção descreve a resposta.
 
 ### <a name="response-codes"></a>Códigos de resposta
 
-Código  |Descrição  
+Código  |Description  
 ---------|---------
 200     | OK
 204 | Sem conteúdo
@@ -61,10 +61,10 @@ Código  |Descrição
 500 | Erro Interno
 
 ### <a name="response-headers"></a>Cabeçalhos de resposta
-Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API* .
+Para cabeçalhos de resposta comuns, consulte [os cabeçalhos de pedido e resposta HTTP](certificate-management-rest-api-service-details.md#http-request-and-response-headers) nos *dados do serviço cm REST API*.
 
 ### <a name="response-body"></a>Corpo da resposta
-No sucesso, devolve um JSON-Serialized [objeto Microsoft.Clm.Shared.Smartcards.Smartcards](http://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx) com as seguintes propriedades:
+No sucesso, devolve um JSON-Serialized [objeto Microsoft.Clm.Shared.Smartcards.Smartcards](https://msdn.microsoft.com/library/microsoft.clm.shared.smartcards.smartcard.aspx) com as seguintes propriedades:
 
 Nome | Descrição
 -----|-----------

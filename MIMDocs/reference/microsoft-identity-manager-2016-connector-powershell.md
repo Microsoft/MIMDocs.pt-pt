@@ -1,5 +1,5 @@
 ---
-title: Conector PowerShell Microsoft Docs
+title: '| do conector PowerShell Microsoft Docs'
 description: Este artigo descreve como configurar o Conector Windows PowerShell da Microsoft.
 services: active-directory
 documentationcenter: ''
@@ -14,12 +14,12 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.date: 04/02/2018
 ms.author: billmath
-ms.openlocfilehash: a26d7f0fdc157f3f4dd8d3fedadaf7d63bac89c9
-ms.sourcegitcommit: 7e8c3b85dd3c3965de9cb407daf74521e4cc5515
+ms.openlocfilehash: 0dcba300f70756dbfa7a29011a37839247e6bf8a
+ms.sourcegitcommit: 78f3f18f0b7afb44fcf7444e446a4edffb1f8f12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "92762166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835935"
 ---
 # <a name="windows-powershell-connector-technical-reference"></a>Referência técnica do Conector do Windows PowerShell
 Este artigo descreve o Conector Windows PowerShell. O artigo aplica-se aos seguintes produtos:
@@ -28,7 +28,7 @@ Este artigo descreve o Conector Windows PowerShell. O artigo aplica-se aos segui
 * Gestor de Identidades Da Vanguarda 2010 R2 (FIM2010R2)
   * Deve utilizar o hotfix 4.1.3671.0 ou mais tarde [KB3092178](https://support.microsoft.com/kb/3092178).
 
-Para MIM2016 e FIM2010R2, o Conector está disponível como download do [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=717495).
+Para MIM2016 e FIM2010R2, o Conector está disponível como download do [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717495).
 
 ## <a name="overview-of-the-powershell-connector"></a>Visão geral do Conector PowerShell
 O Conector PowerShell permite-lhe integrar o serviço de sincronização com sistemas externos que oferecem APIs baseados no Windows PowerShell. O conector fornece uma ponte entre as capacidades da estrutura extensível de gestão de conectividade extensível 2 (ECMA2) baseada em chamadas e o Windows PowerShell. Para obter mais informações sobre o quadro da ECMA, consulte a Referência do [Agente de Gestão extensível da Conectividade 2.2](https://msdn.microsoft.com/library/windows/desktop/hh859557.aspx).
@@ -47,7 +47,7 @@ Para criar um conector Windows PowerShell no serviço de sincronização, deve f
 
 O conector Windows PowerShell foi concebido para armazenar cada um dos scripts dentro da base de dados do Serviço de Sincronização. Embora seja possível executar scripts que são armazenados no sistema de ficheiros, é mais fácil inserir o corpo de cada script diretamente na configuração do conector.
 
-Para criar um conector PowerShell, no **Serviço de Sincronização** selecione **o Agente de Gestão** e **crie** . Selecione o **Conector PowerShell (Microsoft).**
+Para criar um conector PowerShell, no **Serviço de Sincronização** selecione **o Agente de Gestão** e **crie**. Selecione o **Conector PowerShell (Microsoft).**
 
 ![Criar Conector](./media/microsoft-identity-manager-2016-connector-powershell/createconnector.png)
 
@@ -65,7 +65,7 @@ Pode configurar os seguintes parâmetros de conectividade:
 |--------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                Servidor                |    <Blank>    |                                                                                                                                                                                             O nome do servidor a que o conector deve ligar-se.                                                                                                                                                                                              |
 |                Domínio                |    <Blank>    |                                                                                                                                                                                    Domínio da credencial para armazenar para utilização quando o conector é executado.                                                                                                                                                                                    |
-|                 Utilizador                 |    <Blank>    |                                                                                                                                                                                   Nome de utilizador da credencial para armazenar para utilização quando o conector é executado.                                                                                                                                                                                   |
+|                 User                 |    <Blank>    |                                                                                                                                                                                   Nome de utilizador da credencial para armazenar para utilização quando o conector é executado.                                                                                                                                                                                   |
 |               Palavra-passe               |    <Blank>    |                                                                                                                                                                                   Palavra-passe da credencial para armazenar para utilização quando o conector é executado.                                                                                                                                                                                   |
 |    Imitar Conta de Conector     |     Falso     | Quando é verdade, o serviço de sincronização executa os scripts Windows PowerShell no contexto das credenciais fornecidas. Quando possível, recomenda-se que o **parâmetro $Credentials** seja passado a cada script em vez de personificação. Para obter mais informações sobre permissões adicionais que sejam necessárias para utilizar esta opção, consulte [Configuração Adicional para personificação](#additional-configuration-for-impersonation). |
 | Carregue o perfil do utilizador ao fazer-se passar |     Falso     |                          Instrui o Windows a carregar o perfil do utilizador das credenciais do conector durante a personificação. Se o utilizador personificado tiver um perfil de roaming, o conector não carrega o perfil de roaming. Para obter mais informações sobre permissões adicionais necessárias para utilizar este parâmetro, consulte [Configuração Adicional para personificação](#additional-configuration-for-impersonation).                           |
@@ -90,7 +90,7 @@ O Script de Validação é um script opcional do Windows PowerShell que pode ser
 
 O script de validação recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameterPage |[ConfigParameterPage][cpp] |O separador de configuração ou diálogo que desencadeou o pedido de validação. |
 | ConfigParameters |[KeyedCollection][keyk] [string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
@@ -103,7 +103,7 @@ O guião do Schema Discovery é obrigatório. Este script devolve os tipos de ob
 
 O script de descoberta de esquemas recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk] [string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -150,7 +150,7 @@ Uma divisória é um espaço de nome separado dentro de um esquema compartilhado
 
 O script de descoberta de partição recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -162,7 +162,7 @@ O script de descoberta da hierarquia só é usado quando a capacidade de Estilo 
 
 O script de descoberta da hierarquia recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -178,7 +178,7 @@ O roteiro de importação inicial é executado no início de um passo de importa
 
 O roteiro de importação iniciante recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -187,12 +187,12 @@ O roteiro de importação iniciante recebe os seguintes parâmetros do conector:
 
 O script deve devolver um único objeto [OpenImportConnectionResults][oicres] ao oleoduto, por exemplo: `Write-Output (New-Object Microsoft.MetadirectoryServices.OpenImportConnectionResults)`
 
-**Dados de Importação**  
+**Importar Dados**  
 O script de dados de importação é chamado pelo conector até que o script indique que não há mais dados para importar. O conector Windows PowerShell tem um tamanho de página de 9.999 objetos. Se o seu script devolver mais de 9.999 objetos para importação, deve suportar a chamada. O conector expõe uma propriedade de dados personalizada que pode usar para armazenar uma marca de água para que cada vez que o script de dados de importação seja chamado, o seu script recomeça a importar objetos onde este foi deixado.
 
 O roteiro de dados de importação recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -207,7 +207,7 @@ No final da corrida de importação, o roteiro de Fim de Importação é executa
 
 O script de importação final recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -224,7 +224,7 @@ O roteiro de exportação inicial é executado no início de um passo de exporta
 
 O roteiro de exportação iniciante recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -238,7 +238,7 @@ O Serviço de Sincronização chama o script de Dados de Exportação quantas ve
 
 O roteiro de dados de exportação recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -253,7 +253,7 @@ No final da corrida à exportação, o guião "Fim de Exportação" será execut
 
 O script de exportação final recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
@@ -267,15 +267,15 @@ Os conectores Windows PowerShell podem ser usados como alvo para alterações/re
 
 O script da palavra-passe recebe os seguintes parâmetros do conector:
 
-| Nome | Tipo de Dados | Descrição |
+| Name | Tipo de Dados | Descrição |
 | --- | --- | --- |
 | ConfigParameters |[KeyedCollection][keyk][string, [ConfigParameter][cp]] |Tabela de parâmetros de configuração para o Conector. |
 | Credencial |[PSCredential][pscred] |Contém quaisquer credenciais inseridas pelo administrador no separador Conectividade. |
 | Partição |[Partição][part] |Partição do diretório em que o CSEntry está. |
 | CSEntry |[CSEntry][cse] |Entrada de espaço do conector para o objeto que é recebido uma alteração de palavra-passe ou reset. |
-| Tipo de Operação |String |Indica se a operação é um reset **(SetPassword)** ou uma alteração **(ChangePassword** ). |
-| Opções password |[Opções password][pwdopt] |Bandeiras que especificam o comportamento pretendido de reposição da palavra-passe. Este parâmetro só está disponível se o OperationType for **o SetPassword** . |
-| Palavra-velho |String |Preenchido com a antiga senha do objeto para alterações de senha. Este parâmetro só está disponível se o OperationType for **ChangePassword** . |
+| Tipo de Operação |String |Indica se a operação é um reset **(SetPassword)** ou uma alteração **(ChangePassword**). |
+| Opções password |[Opções password][pwdopt] |Bandeiras que especificam o comportamento pretendido de reposição da palavra-passe. Este parâmetro só está disponível se o OperationType for **o SetPassword**. |
+| Palavra-velho |String |Preenchido com a antiga senha do objeto para alterações de senha. Este parâmetro só está disponível se o OperationType for **ChangePassword**. |
 | Palavra-passe nova |String |Preenchido com a nova senha do objeto que o script deve definir. |
 
 Não se espera que o script da palavra-passe devolva quaisquer resultados ao pipeline Windows PowerShell. Se ocorrer um erro no script da palavra-passe, o script deve lançar uma das seguintes exceções para informar o Serviço de Sincronização sobre o problema:
@@ -312,7 +312,7 @@ Leia o acesso às seguintes pastas do sistema de ficheiros:
 Substitua o nome do conector Windows PowerShell para o espaço reservado {ConnectorName}.
 
 ## <a name="troubleshooting"></a>Resolução de problemas
-* Para obter informações sobre como permitir a sessão de registo para resolver problemas no conector, consulte o [Rastreio ETW para Conectores](http://go.microsoft.com/fwlink/?LinkId=335731).
+* Para obter informações sobre como permitir a sessão de registo para resolver problemas no conector, consulte o [Rastreio ETW para Conectores](https://go.microsoft.com/fwlink/?LinkId=335731).
 
 <!--Reference style links - using these makes the source content way more readable than using inline links-->
 [cpp]: https://msdn.microsoft.com/library/windows/desktop/microsoft.metadirectoryservices.configparameterpage.aspx
@@ -343,4 +343,4 @@ Substitua o nome do conector Windows PowerShell para o espaço reservado {Connec
 [pwdex1]: https://msdn.microsoft.com/library/windows/desktop/microsoft.metadirectoryservices.passwordpolicyviolationexception.aspx
 [pwdex2]: https://msdn.microsoft.com/library/windows/desktop/microsoft.metadirectoryservices.passwordillformedexception.aspx
 [pwdex3]: https://msdn.microsoft.com/library/windows/desktop/microsoft.metadirectoryservices.passwordextensionexception.aspx
-[samp]: http://go.microsoft.com/fwlink/?LinkId=394291
+[samp]: https://go.microsoft.com/fwlink/?LinkId=394291

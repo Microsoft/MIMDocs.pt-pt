@@ -1,5 +1,5 @@
 ---
-title: História do lançamento da versão do conector Microsoft Docs
+title: Histórico de versão do conector | Microsoft Docs
 description: Este tópico lista todos os lançamentos dos Conectores para O Gestor de Identidade da Vanguarda (FIM) e Do Gestor de Identidade da Microsoft (MIM)
 services: active-directory
 documentationcenter: ''
@@ -13,16 +13,16 @@ ms.topic: article
 ms.prod: microsoft-identity-manager
 ms.tgt_pltfrm: na
 ms.workload: identity
-ms.date: 12/31/2020
+ms.date: 2/15/2021
 ms.author: esergeev
 ms.reviewer: mwahl
 ms.suite: ems
-ms.openlocfilehash: f0b61059f9010523fa4f7b6a6ced987e5ab2dc49
-ms.sourcegitcommit: 8f81767ec92e1b80658aaebb9463aa4d62396d43
+ms.openlocfilehash: 1fccc237f77e4d21a372194e87697b100eb60c28
+ms.sourcegitcommit: 07ac1b84829e3ef4f4271d5b50179cbc2120ce05
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97927698"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100530030"
 ---
 # <a name="connector-version-release-history"></a>Histórico de Versões do Conector
 
@@ -44,6 +44,13 @@ Links relacionados:
 * Documentação de referência [do conector PowerShell](microsoft-identity-manager-2016-connector-powershell.md)
 * [Documentação de referência do Conector Lotus Domino](microsoft-identity-manager-2016-connector-domino.md)
 * Documentação de referência do [conector da loja de utilizadores sharePoint](https://go.microsoft.com/fwlink/?LinkID=331344)
+
+## <a name="1113810-february-2021"></a>1.1.1381.0 (Fevereiro de 2021)
+### <a name="fixed-issues"></a>Problemas corrigidos
+- Conector de gráficos
+  - Corrigiu um problema com atributos de corda multi-valorizados manuseados incorretamente ao enviar convites B2B
+- Conector LDAP genérico
+  - Melhor processamento de entradas de alterações do Diretório Unificado da Oracle
 
 ## <a name="1113470-december-2020"></a>1.1.1347.0 (Dezembro 2020)
 ### <a name="fixed-issues"></a>Problemas corrigidos
@@ -273,7 +280,7 @@ Links relacionados:
 * Serviços Web Genéricos:
   * Corrigiu um problema que impedia a criação de um projeto SOAP quando existiam dois ou mais pontos finais.
 * SQL genérico:
-  * No funcionamento da importação, o GSQL não estava a converter o tempo corretamente, quando guardado para o espaço do conector. A data e o formato de tempo padrão para o espaço do conector do GSQL foi alterado de 'yy-MM-dd hh:mm:mm:ssZ' para 'yyyy-MM-dd HH:mm:ssZ'.
+  * No funcionamento da importação, o GSQL não estava a converter o tempo corretamente, quando guardado para o espaço do conector. A data e o formato de tempo padrão para o espaço do conector do GSQL foi alterado de 'yyyy-MM-dd hh:mm:mm:ssZ' para 'yyyy-MM-dd HH:mm:ssZ'.
 
 ## <a name="115510-aadconnect-115530"></a>1.1.551.0 (AADConnect 1.1.553.0)
 
